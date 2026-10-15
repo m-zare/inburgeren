@@ -102,8 +102,13 @@ function speakButton(title, onClick) {
   return b;
 }
 
+// Lenient comparison: ignore case, punctuation, extra spaces and accents
+// (é = e, ë = e), and treat curly apostrophes like a plain one.
 function normalize(s) {
   return s
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’‘`´]/g, "'")
     .toLowerCase()
     .replace(/[.,!?;:]/g, " ")
     .replace(/\s+/g, " ")
