@@ -168,17 +168,24 @@ function renderExercise(ex) {
 
   el.append(parts, row, feedback);
 
+  // The hint is always available; once opened it stays open.
+  let hintShown = false;
+  const hintEl = () => {
+    if (hintShown) return textEl("span", "hint", ex.hint);
+    return button("Hint", () => {
+      hintShown = true;
+      showResult(state.result, state.revealed);
+    });
+  };
+
   const showResult = (result, revealed) => {
     updateListen();
     mark.className = "mark";
     mark.textContent = "";
     feedback.innerHTML = "";
-    if (!result) return;
-
-    const hintButton = () => {
-      const b = button("Hint", () => b.replaceWith(document.createTextNode(ex.hint)));
-      return b;
-    };
+    const tools = document.createElement("div");
+    tools.className = "tools";
+    tools.append(hintEl());
 
     if (result === "ok" || result === "alt") {
       mark.classList.add("ok");
@@ -187,32 +194,25 @@ function renderExercise(ex) {
         feedback.append("Correct! The standard order is: ");
         feedback.append(answerEl(ex.answer, ex.senses));
       }
-      const tools = document.createElement("div");
-      tools.className = "tools";
-      tools.append(hintButton());
-      feedback.append(tools);
-    } else {
+    } else if (result === "bad") {
       mark.classList.add("bad");
       mark.textContent = "✘";
-      const tools = document.createElement("div");
-      tools.className = "tools";
-      const hintBtn = hintButton();
-      const showBtn = button("Show answer", () => {
-        state.revealed = true;
-        progress[ex.id] = state;
-        save();
-        showResult(result, true);
-      });
       if (revealed) {
         feedback.append("Correct answer: ");
         feedback.append(answerEl(ex.answer, ex.senses));
-        tools.append(hintBtn);
       } else {
         feedback.append("Not quite. Try again.");
-        tools.append(hintBtn, showBtn);
+        tools.append(
+          button("Show answer", () => {
+            state.revealed = true;
+            progress[ex.id] = state;
+            save();
+            showResult(result, true);
+          })
+        );
       }
-      feedback.append(tools);
     }
+    feedback.append(tools);
   };
 
   input.addEventListener("input", () => {
