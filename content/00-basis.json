@@ -16,6 +16,7 @@
         "om acht uur luistert de man naar de radio"
       ],
       "hint": "Verb in 2nd place. Time (om acht uur) comes early; “naar de radio” belongs to the verb “luisteren naar” and goes to the end.",
+      "en": "The man listens to the radio at eight o'clock.",
       "covers": []
     },
     {
@@ -34,6 +35,7 @@
         "vandaag praat zij een uur met haar buurman"
       ],
       "hint": "TMP rule: Tijd (vandaag een uur) before Manier (met haar buurman).",
+      "en": "She talks with her neighbour for an hour today.",
       "covers": []
     },
     {
@@ -53,6 +55,7 @@
         "in de supermarkt werkt hij met zijn beste vriend"
       ],
       "hint": "TMP rule: Manier (met zijn beste vriend) before Plaats (in de supermarkt).",
+      "en": "He works with his best friend in the supermarket.",
       "covers": []
     },
     {
@@ -72,6 +75,7 @@
         "in de woonkamer zitten jullie met vrienden"
       ],
       "hint": "Subject first, verb second, then Manier (met vrienden) before Plaats (in de woonkamer).",
+      "en": "You are sitting in the living room with friends.",
       "covers": []
     }
   ],

@@ -16,6 +16,7 @@
         "het liefst draag ik een spijkerbroek en een zachte trui"
       ],
       "hint": "Verb in 2nd place; “het liefst” (most of all) comes right after the verb, or first with inversion.",
+      "en": "I prefer to wear jeans and a soft jumper.",
       "covers": [
         "het liefst"
       ]
@@ -34,6 +35,7 @@
       "answer": "mijn gele jas ziet er nogal oud uit",
       "alternatives": [],
       "hint": "Separable verb eruitzien: “ziet” is in 2nd place, “er … uit” goes around the description, “uit” at the end.",
+      "en": "My yellow coat looks rather old.",
       "covers": [
         "eruitzien"
       ]
@@ -56,6 +58,7 @@
         "ik draag altijd mijn warme schoenen in de sneeuw"
       ],
       "hint": "When a phrase like “in de sneeuw” starts the sentence, the verb stays 2nd and the subject follows (inversion).",
+      "en": "In the snow I always wear my warm shoes.",
       "covers": []
     },
     {
@@ -74,6 +77,7 @@
         "ik draag vaak sportkleding omdat ik graag actief ben"
       ],
       "hint": "“omdat” sends the verb (ben) to the end; a sentence that starts with the omdat-clause continues with verb + subject (draag ik).",
+      "en": "Because I like being active, I often wear sportswear.",
       "covers": []
     },
     {
@@ -92,6 +96,7 @@
         "ik draag op kantoor praktische kleding in een rustige stijl"
       ],
       "hint": "Place phrase first → inversion: verb (draag) 2nd, subject (ik) 3rd.",
+      "en": "At the office I wear practical clothes in a sober style.",
       "covers": []
     },
     {
@@ -108,6 +113,7 @@
       "answer": "de verkoopster zegt dat de trui te wijd is",
       "alternatives": [],
       "hint": "After “dat” the verb (is) goes to the end of the clause.",
+      "en": "The shop assistant says the jumper is too loose.",
       "covers": []
     },
     {
@@ -124,6 +130,7 @@
       "answer": "de jas past niet, want hij is te klein bij de borst",
       "alternatives": [],
       "hint": "“want” (because) does not change word order: subject + verb follow normally (hij is).",
+      "en": "The coat doesn't fit, because it's too small across the chest.",
       "covers": []
     },
     {
@@ -140,6 +147,7 @@
       "answer": "heeft u deze schoenen ook in een andere maat?",
       "alternatives": [],
       "hint": "Yes/no question: the verb comes first, then the subject.",
+      "en": "Do you also have these shoes in a different size?",
       "covers": []
     },
     {
@@ -158,6 +166,7 @@
         "ik koop een nieuwe jurk omdat mijn zus gaat trouwen"
       ],
       "hint": "In the omdat-clause the verbs go to the end (gaat trouwen); after that clause the main sentence starts with the verb (koop ik).",
+      "en": "Because my sister is getting married, I'm buying a new dress.",
       "covers": []
     },
     {
@@ -176,6 +185,7 @@
         "op de derde verdieping van het winkelcentrum is de kledingzaak"
       ],
       "hint": "Verb in 2nd place; the place phrase can also start the sentence with inversion.",
+      "en": "The clothes shop is on the third floor of the shopping centre.",
       "covers": []
     },
     {
@@ -194,6 +204,7 @@
         "de arbeiders verdienen in de fabriek nauwelijks geld"
       ],
       "hint": "The verb (verdienen) is 2nd; “de arbeiders in de fabriek” together is the subject.",
+      "en": "The workers in the factory earn hardly any money.",
       "covers": []
     },
     {
@@ -209,6 +220,7 @@
       "answer": "de deur van de supermarkt gaat automatisch open",
       "alternatives": [],
       "hint": "Separable verb opengaan: “gaat” in 2nd place, the particle “open” at the end.",
+      "en": "The supermarket door opens automatically.",
       "covers": []
     },
     {
@@ -227,6 +239,7 @@
         "u bent na die mevrouw aan de beurt"
       ],
       "hint": "Starting with “na die mevrouw” causes inversion: bent u.",
+      "en": "You're next after that lady.",
       "covers": []
     },
     {
@@ -245,6 +258,7 @@
         "wilt u pinnen of contant betalen, meneer?"
       ],
       "hint": "Question: modal verb (wilt) before the subject, infinitives (pinnen, betalen) at the end.",
+      "en": "Sir, would you like to pay by card or in cash?",
       "covers": []
     },
     {
@@ -265,6 +279,7 @@
         "ik sta al een poos bij de kassa in de rij"
       ],
       "hint": "TMP: time (al een poos) before place (in de rij bij de kassa).",
+      "en": "I've been standing in the queue at the till for a while.",
       "covers": [
         "een poos"
       ]
@@ -285,6 +300,7 @@
         "Nederlanders eten volgens een onderzoek elke dag brood"
       ],
       "hint": "“volgens een onderzoek” first → inversion: verb (eten) before subject (Nederlanders).",
+      "en": "According to a study, Dutch people eat bread every day.",
       "covers": []
     },
     {
@@ -301,6 +317,7 @@
       "answer": "mijn huisarts zegt dat ik minder vlees moet eten",
       "alternatives": [],
       "hint": "In a dat-clause both verbs go to the end: … moet eten.",
+      "en": "My GP says I should eat less meat.",
       "covers": []
     },
     {
@@ -319,6 +336,7 @@
         "mensen eten in de westerse samenleving veel vlees en weinig groente"
       ],
       "hint": "Place phrase first → inversion: eten mensen.",
+      "en": "In Western society people eat a lot of meat and few vegetables.",
       "covers": []
     },
     {
@@ -337,6 +355,7 @@
         "samen eten is in onze cultuur een belangrijke traditie"
       ],
       "hint": "Verb (is) in 2nd place; “samen eten” is the subject and comes after the verb when you start with “in onze cultuur”.",
+      "en": "In our culture, eating together is an important tradition.",
       "covers": []
     },
     {
@@ -354,6 +373,7 @@
         "al meer dan een eeuw bestaat deze markt"
       ],
       "hint": "Subject, verb 2nd, then the time phrase.",
+      "en": "This market has existed for more than a century.",
       "covers": []
     },
     {
@@ -370,6 +390,7 @@
       "answer": "de jonge generatie doet vaak online boodschappen",
       "alternatives": [],
       "hint": "Verb 2nd; frequency words like “vaak” come right after the verb.",
+      "en": "The young generation often does its shopping online.",
       "covers": []
     },
     {
@@ -386,6 +407,7 @@
       "answer": "reclame beïnvloedt vaak wat mensen kopen",
       "alternatives": [],
       "hint": "In the clause “wat mensen kopen” the verb goes to the end.",
+      "en": "Advertising often influences what people buy.",
       "covers": []
     },
     {
@@ -401,6 +423,7 @@
       "answer": "deze lekkere kaas komt van het eiland Texel",
       "alternatives": [],
       "hint": "Subject (deze lekkere kaas), verb 2nd (komt), then where it comes from.",
+      "en": "This delicious cheese comes from the island of Texel.",
       "covers": []
     },
     {
@@ -420,6 +443,7 @@
         "wij doen soms over de grens boodschappen"
       ],
       "hint": "Verb 2nd; start with “soms” and the subject moves behind the verb (soms doen wij).",
+      "en": "We sometimes do our shopping across the border.",
       "covers": []
     },
     {
@@ -439,6 +463,7 @@
         "ik koop pleisters en verband bij de drogist"
       ],
       "hint": "Place first → inversion (koop ik).",
+      "en": "At the chemist I buy plasters and bandages.",
       "covers": []
     },
     {
@@ -454,6 +479,7 @@
       "answer": "gezond eten en sporten zijn goed voor je lichaam",
       "alternatives": [],
       "hint": "Two things together form a plural subject, so the verb is plural: zijn.",
+      "en": "Healthy eating and exercise are good for your body.",
       "covers": []
     },
     {
@@ -473,6 +499,7 @@
         "omdat hij een zwakke maag heeft, eet mijn vader geen pittig eten"
       ],
       "hint": "“omdat” sends the verb (heeft) to the end of its clause.",
+      "en": "My father doesn't eat spicy food, because he has a weak stomach.",
       "covers": []
     },
     {
@@ -491,6 +518,7 @@
         "ik heb na het winkelen pijnlijke voeten"
       ],
       "hint": "Time phrase first (na het winkelen) → inversion: heb ik.",
+      "en": "After shopping my feet hurt.",
       "covers": []
     },
     {
@@ -507,6 +535,7 @@
       "answer": "deze sjaal houdt mijn nek lekker warm",
       "alternatives": [],
       "hint": "Verb 2nd; “warm houden”: the adjective (warm) comes after the object.",
+      "en": "This scarf keeps my neck nice and warm.",
       "covers": []
     },
     {
@@ -525,6 +554,7 @@
         "aan de aardappels van de markt zit er nog aarde"
       ],
       "hint": "“er zit …” = there is: er first, verb 2nd.",
+      "en": "There's still soil on the potatoes from the market.",
       "covers": []
     },
     {
@@ -541,6 +571,7 @@
       "answer": "bewaar het brood niet op een vochtige plek",
       "alternatives": [],
       "hint": "Imperative: the verb comes first. “niet” comes after the object and before the place.",
+      "en": "Don't keep the bread in a damp place.",
       "covers": []
     },
     {
@@ -560,6 +591,7 @@
         "de bakker bakt in de nacht het brood"
       ],
       "hint": "Verb 2nd; a time phrase at the start causes inversion.",
+      "en": "The baker bakes the bread during the night.",
       "covers": []
     },
     {
@@ -578,6 +610,7 @@
         "volgende week begint de kookcursus op dinsdagavond"
       ],
       "hint": "Time first (volgende week) → verb before subject: begint de kookcursus.",
+      "en": "The cooking course starts next week on Tuesday evening.",
       "covers": []
     },
     {
@@ -594,6 +627,7 @@
       "answer": "ik wil graag leren hoe je een gezond gerecht maakt",
       "alternatives": [],
       "hint": "Modal (wil) 2nd, then the infinitive (leren); in the hoe-clause the verb (maakt) goes to the end.",
+      "en": "I would like to learn how to make a healthy dish.",
       "covers": []
     },
     {
@@ -610,6 +644,7 @@
       "answer": "de docent legt alles duidelijk uit",
       "alternatives": [],
       "hint": "Separable verb uitleggen: “legt” in 2nd place, “uit” at the end.",
+      "en": "The teacher explains everything clearly.",
       "covers": [
         "uitleggen"
       ]
@@ -632,6 +667,7 @@
         "we bespreken elke keer in de les een nieuw recept"
       ],
       "hint": "Verb 2nd; start with a place or time phrase and the subject follows the verb.",
+      "en": "In every lesson we discuss a new recipe.",
       "covers": []
     },
     {
@@ -648,6 +684,7 @@
       "answer": "iedereen kookt eerst individueel en daarna eten we samen",
       "alternatives": [],
       "hint": "After “daarna” (a time word) the verb comes before the subject: daarna eten we.",
+      "en": "Everyone cooks individually first and then we eat together.",
       "covers": []
     },
     {
@@ -664,6 +701,7 @@
       "answer": "ben je al klaar met de soep?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then subject.",
+      "en": "Have you finished the soup yet?",
       "covers": []
     },
     {
@@ -682,6 +720,7 @@
         "in de keuken is mijn partner bezig met het eten"
       ],
       "hint": "“bezig zijn met” = to be busy with. Verb (is) 2nd.",
+      "en": "My partner is in the kitchen making dinner.",
       "covers": []
     },
     {
@@ -700,6 +739,7 @@
         "het water voor de pasta kookt intussen"
       ],
       "hint": "“intussen” first → inversion: kookt het water.",
+      "en": "Meanwhile, the water for the pasta is boiling.",
       "covers": []
     },
     {
@@ -717,6 +757,7 @@
       "answer": "je moet de soep nog vijf minuten zacht laten koken",
       "alternatives": [],
       "hint": "Modal (moet) 2nd; “laten + infinitive” goes to the end: … laten koken.",
+      "en": "You have to let the soup simmer for another five minutes.",
       "covers": []
     },
     {
@@ -735,6 +776,7 @@
         "de soep is te zout, dus maak ik hem opnieuw"
       ],
       "hint": "After “dus” you may use normal order (dus ik maak) or inversion (dus maak ik).",
+      "en": "The soup is too salty, so I'm making it again.",
       "covers": []
     },
     {
@@ -753,6 +795,7 @@
         "eerst maak ik de saus af"
       ],
       "hint": "Separable verb afmaken: “maak” 2nd, “af” at the very end.",
+      "en": "I'll finish the sauce first.",
       "covers": [
         "afmaken"
       ]
@@ -771,6 +814,7 @@
       "answer": "vind jij deze koffie ook zo bitter?",
       "alternatives": [],
       "hint": "Yes/no question: verb (vind) first, subject (jij) second.",
+      "en": "Do you also find this coffee so bitter?",
       "covers": []
     },
     {
@@ -787,6 +831,7 @@
       "answer": "de ober brengt ons twee glazen water",
       "alternatives": [],
       "hint": "Verb 2nd; the person (ons) comes before the thing (twee glazen water).",
+      "en": "The waiter brings us two glasses of water.",
       "covers": []
     },
     {
@@ -803,6 +848,7 @@
       "answer": "wat drinken jullie bij het eten?",
       "alternatives": [],
       "hint": "W-question: question word, verb, subject.",
+      "en": "What are you all drinking with your meal?",
       "covers": []
     },
     {
@@ -819,6 +865,7 @@
       "answer": "wat is jouw oordeel over dit nieuwe restaurant?",
       "alternatives": [],
       "hint": "W-question: question word (wat), then verb (is), then subject.",
+      "en": "What's your opinion of this new restaurant?",
       "covers": []
     },
     {
@@ -838,6 +885,7 @@
         "rond zes uur eten we meestal"
       ],
       "hint": "Verb 2nd; whatever starts the sentence, the verb stays in 2nd place.",
+      "en": "We usually eat at around six o'clock.",
       "covers": []
     },
     {
@@ -854,6 +902,7 @@
       "answer": "ik heb honger, want ik heb nog niet gegeten",
       "alternatives": [],
       "hint": "“want” keeps normal order; in the perfect tense the participle (gegeten) goes to the end.",
+      "en": "I'm hungry, because I haven't eaten yet.",
       "covers": []
     },
     {
@@ -872,6 +921,7 @@
         "straks ga ik naar de bakker, want het brood is bijna op"
       ],
       "hint": "TMP: time (straks) before place (naar de bakker). After “want” the order stays normal.",
+      "en": "I'm going to the baker's in a bit, because the bread has almost run out.",
       "covers": []
     },
     {
@@ -891,6 +941,7 @@
         "op zaterdag loop ik naar de markt, want die is dichtbij"
       ],
       "hint": "TMP: time (op zaterdag) before place (naar de markt).",
+      "en": "On Saturdays I walk to the market, because it is close by.",
       "covers": []
     },
     {
@@ -907,6 +958,7 @@
       "answer": "de supermarkt is niet ver, maar ik ga toch met de fiets",
       "alternatives": [],
       "hint": "“maar” does not change word order: ik ga …",
+      "en": "The supermarket isn't far, but I still go by bike.",
       "covers": []
     },
     {
@@ -922,6 +974,7 @@
       "answer": "de afstand naar de markt is ongeveer twee kilometer",
       "alternatives": [],
       "hint": "The whole phrase “de afstand naar de markt” is the subject; the verb (is) comes right after it.",
+      "en": "The distance to the market is about two kilometres.",
       "covers": []
     },
     {
@@ -940,6 +993,7 @@
         "bij het stoplicht moet u oversteken"
       ],
       "hint": "Modal verb (moet) 2nd, infinitive (oversteken) at the end.",
+      "en": "You have to cross at the traffic lights.",
       "covers": []
     },
     {
@@ -958,6 +1012,7 @@
         "bij de volgende halte moet u uitstappen"
       ],
       "hint": "Modal + infinitive: a separable verb stays one word at the end (uitstappen).",
+      "en": "You have to get off at the next stop.",
       "covers": []
     },
     {
@@ -974,6 +1029,7 @@
       "answer": "kom jij morgen mee naar de markt?",
       "alternatives": [],
       "hint": "Question with separable verb meekomen: kom … mee.",
+      "en": "Are you coming to the market with me tomorrow?",
       "covers": [
         "meekomen"
       ]
@@ -994,6 +1050,7 @@
         "mijn nieuwe schoenen komen morgen met de post aan"
       ],
       "hint": "Separable verb aankomen: “komen” 2nd, “aan” at the end; time first → inversion.",
+      "en": "Tomorrow my new shoes are arriving in the post.",
       "covers": [
         "aankomen"
       ]
@@ -1016,6 +1073,7 @@
         "ik haal het pakket straks op"
       ],
       "hint": "Separable verb ophalen: “haal” 2nd, “op” at the end.",
+      "en": "I'll pick up the parcel in a bit.",
       "covers": [
         "ophalen"
       ]
@@ -1039,6 +1097,7 @@
         "morgen kom ik met de bon terug"
       ],
       "hint": "Separable verb terugkomen: “kom” 2nd, “terug” usually at the end.",
+      "en": "I'll come back tomorrow with the receipt.",
       "covers": [
         "terugkomen"
       ]
@@ -1057,6 +1116,7 @@
       "answer": "zolang je de bon hebt, kun je de jas ruilen",
       "alternatives": [],
       "hint": "“zolang” sends the verb (hebt) to the end; the main clause then starts with the verb (kun je).",
+      "en": "As long as you have the receipt, you can exchange the coat.",
       "covers": []
     },
     {
@@ -1075,6 +1135,7 @@
         "u heeft met de bon recht op uw geld terug"
       ],
       "hint": "Starting with “met de bon” → inversion: heeft u.",
+      "en": "With the receipt you are entitled to your money back.",
       "covers": []
     },
     {
@@ -1091,6 +1152,7 @@
       "answer": "ik ben de bon kwijt, maar ik wil de jas toch ruilen",
       "alternatives": [],
       "hint": "“kwijt zijn” = to have lost. After maar: modal (wil) 2nd, infinitive (ruilen) at the end.",
+      "en": "I've lost the receipt, but I still want to exchange the coat.",
       "covers": []
     },
     {
@@ -1107,6 +1169,7 @@
       "answer": "de winkel stuurt mij een e-mail met de datum en de tijd",
       "alternatives": [],
       "hint": "Verb 2nd; the person (mij) comes before the thing (een e-mail).",
+      "en": "The shop sends me an email with the date and the time.",
       "covers": []
     },
     {
@@ -1127,6 +1190,7 @@
         "iemand heeft gisteren mijn fiets bij de supermarkt gestolen"
       ],
       "hint": "Perfect tense: heeft in 2nd place, participle (gestolen) at the end.",
+      "en": "Someone stole my bike at the supermarket yesterday.",
       "covers": []
     },
     {
@@ -1143,6 +1207,7 @@
       "answer": "de supermarkt neemt maatregelen tegen de lange rijen bij de kassa",
       "alternatives": [],
       "hint": "Subject, verb 2nd (neemt), then object.",
+      "en": "The supermarket is taking measures against the long queues at the tills.",
       "covers": []
     },
     {
@@ -1163,6 +1228,7 @@
         "je mag volgens de regeling de schoenen binnen dertig dagen ruilen"
       ],
       "hint": "Modal (mag) 2nd, infinitive (ruilen) at the end; starting with “volgens de regeling” → mag je.",
+      "en": "Under the policy, you can exchange the shoes within thirty days.",
       "covers": []
     },
     {
@@ -1179,6 +1245,7 @@
       "answer": "ik krijg tien procent korting op deze jas",
       "alternatives": [],
       "hint": "Subject, verb 2nd, object, then “op …”.",
+      "en": "I'm getting ten percent off this coat.",
       "covers": []
     },
     {
@@ -1195,6 +1262,7 @@
       "answer": "in de uitverkoop krijg je een flinke korting op kleding",
       "alternatives": [],
       "hint": "Phrase first (in de uitverkoop) → inversion: krijg je (no -t with je after the verb).",
+      "en": "In the sales you get a big discount on clothes.",
       "covers": []
     },
     {
@@ -1211,6 +1279,7 @@
       "answer": "de jas is nogal duur, maar hij is tenminste warm",
       "alternatives": [],
       "hint": "“maar” joins two main clauses; both have the verb in 2nd place.",
+      "en": "The coat is rather expensive, but at least it is warm.",
       "covers": []
     },
     {
@@ -1229,6 +1298,7 @@
         "op de markt is groente relatief goedkoop"
       ],
       "hint": "Place first → inversion: is groente.",
+      "en": "Vegetables are relatively cheap at the market.",
       "covers": []
     },
     {
@@ -1248,6 +1318,7 @@
         "er is altijd veel keuze op de markt"
       ],
       "hint": "“er is” = there is. With the place first, the order becomes: op de markt is er …",
+      "en": "There is always a lot of choice at the market.",
       "covers": []
     },
     {
@@ -1264,6 +1335,7 @@
       "answer": "de verkoopster geeft me goede raad",
       "alternatives": [],
       "hint": "Verb 2nd; the person (me) before the thing (goede raad).",
+      "en": "The shop assistant gives me good advice.",
       "covers": []
     },
     {
@@ -1280,6 +1352,7 @@
       "answer": "ik heb goede ervaringen met deze kledingzaak",
       "alternatives": [],
       "hint": "Subject, verb 2nd, object.",
+      "en": "I have had good experiences with this clothes shop.",
       "covers": []
     },
     {
@@ -1296,6 +1369,7 @@
       "answer": "geef eens een voorbeeld van een gezond ontbijt",
       "alternatives": [],
       "hint": "Imperative: verb first. “eens” makes the request softer.",
+      "en": "Give an example of a healthy breakfast.",
       "covers": []
     },
     {
@@ -1312,6 +1386,7 @@
       "answer": "ken jij deze Nederlandse uitdrukking over eten?",
       "alternatives": [],
       "hint": "Yes/no question: verb first. With jij after the verb, the -t drops: ken jij.",
+      "en": "Do you know this Dutch expression about food?",
       "covers": []
     },
     {
@@ -1328,6 +1403,7 @@
       "answer": "mijn voorstel is om vanavond samen te koken",
       "alternatives": [],
       "hint": "“om … te + infinitive”: te koken comes at the end.",
+      "en": "My suggestion is that we cook together this evening.",
       "covers": []
     },
     {
@@ -1344,6 +1420,7 @@
       "answer": "mag ik u een verzoek doen?",
       "alternatives": [],
       "hint": "Question: modal (mag) first, infinitive (doen) at the end.",
+      "en": "May I ask you a favour?",
       "covers": []
     },
     {
@@ -1359,6 +1436,7 @@
       "answer": "ik weet niet of de verkoper de waarheid zegt",
       "alternatives": [],
       "hint": "“of” (whether) sends the verb (zegt) to the end.",
+      "en": "I don't know whether the salesman is telling the truth.",
       "covers": []
     },
     {
@@ -1375,6 +1453,7 @@
       "answer": "je hebt geluk, want dit is de laatste jas in jouw maat",
       "alternatives": [],
       "hint": "“want” keeps normal main-clause order: dit is …",
+      "en": "You're lucky, because this is the last coat in your size.",
       "covers": []
     },
     {
@@ -1390,6 +1469,7 @@
       "answer": "deze tweedehands fiets is nog in goede staat",
       "alternatives": [],
       "hint": "Subject, verb 2nd, then the rest. “in goede staat” = in good condition.",
+      "en": "This second-hand bike is still in good condition.",
       "covers": []
     },
     {
@@ -1405,6 +1485,7 @@
       "answer": "mijn nieuwe computer heeft veel handige functies",
       "alternatives": [],
       "hint": "Subject, verb 2nd, object.",
+      "en": "My new computer has lots of useful features.",
       "covers": []
     },
     {
@@ -1425,6 +1506,7 @@
         "ik heb een nieuw bureau voor mijn kamer gekocht"
       ],
       "hint": "Perfect: heb 2nd, participle (gekocht) at the end; a phrase first causes inversion.",
+      "en": "I've bought a new desk for my room.",
       "covers": []
     },
     {
@@ -1443,6 +1525,7 @@
         "ik ga na een lange dag winkelen vroeg naar bed"
       ],
       "hint": "Time first → inversion: ga ik. TMP: time (vroeg) before place (naar bed).",
+      "en": "After a long day of shopping I'm going to bed early.",
       "covers": []
     },
     {
@@ -1461,6 +1544,7 @@
         "ik eet voor de lunch meestal een broodje kaas"
       ],
       "hint": "Time first (voor de lunch) → inversion: eet ik.",
+      "en": "For lunch I usually have a cheese roll.",
       "covers": []
     },
     {
@@ -1480,6 +1564,7 @@
         "we gaan na het winkelen nog naar een museum"
       ],
       "hint": "Time first → inversion (gaan we); place (naar een museum) at the end.",
+      "en": "After shopping we're going to a museum as well.",
       "covers": []
     },
     {
@@ -1496,6 +1581,7 @@
       "answer": "de supermarkt verkoopt geen sigaretten meer",
       "alternatives": [],
       "hint": "“geen … meer” = no longer any; “meer” comes after the noun.",
+      "en": "The supermarket no longer sells cigarettes.",
       "covers": []
     },
     {
@@ -1514,6 +1600,7 @@
         "mensen betaalden in het verleden vaak contant"
       ],
       "hint": "Time first (in het verleden) → inversion: betaalden mensen.",
+      "en": "In the past people often paid in cash.",
       "covers": []
     },
     {
@@ -1534,6 +1621,7 @@
         "in de winkel pin ik nu bijna altijd"
       ],
       "hint": "Time word first (nu) → verb before subject: pin ik.",
+      "en": "Now I almost always pay by card in the shop.",
       "covers": []
     },
     {
@@ -1552,6 +1640,7 @@
         "iedereen mag in de speelgoedwinkel één ding kiezen"
       ],
       "hint": "Modal (mag) 2nd, infinitive (kiezen) at the end.",
+      "en": "In the toy shop everyone may choose one thing.",
       "covers": []
     },
     {
@@ -1570,6 +1659,7 @@
         "terwijl wij winkelen, spelen de kinderen in de speelhoek"
       ],
       "hint": "“terwijl” (while) sends the verb (winkelen) to the end.",
+      "en": "The children play in the play area while we shop.",
       "covers": []
     },
     {
@@ -1588,6 +1678,7 @@
         "boodschappen doen is in ons gezin mijn taak"
       ],
       "hint": "Verb (is) stays 2nd; with “in ons gezin” first, the subject comes after the verb.",
+      "en": "In our family, doing the shopping is my job.",
       "covers": []
     },
     {
@@ -1606,6 +1697,7 @@
         "ik moet op zaterdag stofzuigen en boodschappen doen"
       ],
       "hint": "Modal (moet) 2nd, infinitives at the end; time first → inversion.",
+      "en": "On Saturdays I have to vacuum and do the shopping.",
       "covers": []
     },
     {
@@ -1624,6 +1716,7 @@
         "vanavond zorg ik voor het eten"
       ],
       "hint": "“zorgen voor” = take care of; time (vanavond) comes before the “voor …” part.",
+      "en": "I'll take care of dinner this evening.",
       "covers": []
     },
     {
@@ -1642,6 +1735,7 @@
         "ik heb thuis mijn tas vergeten"
       ],
       "hint": "Perfect: heb 2nd, participle (vergeten) at the end.",
+      "en": "I left my bag at home.",
       "covers": []
     },
     {
@@ -1657,6 +1751,7 @@
       "answer": "het is dom om met honger boodschappen te doen",
       "alternatives": [],
       "hint": "“om … te + infinitive”: te doen at the very end.",
+      "en": "It's silly to go shopping when you're hungry.",
       "covers": []
     },
     {
@@ -1676,6 +1771,7 @@
         "ik zie opeens dat mijn tas weg is"
       ],
       "hint": "“opeens” first → inversion (zie ik); after “dat” the verb (is) goes to the end.",
+      "en": "Suddenly I see that my bag is gone.",
       "covers": []
     },
     {
@@ -1696,6 +1792,7 @@
         "ik heb mijn leraar gisteren toevallig in de supermarkt ontmoet"
       ],
       "hint": "Perfect: heb 2nd, participle (ontmoet) at the end. Time (gisteren) early.",
+      "en": "Yesterday I happened to meet my teacher in the supermarket.",
       "covers": []
     },
     {
@@ -1711,6 +1808,7 @@
       "answer": "doe de groeten aan je vader",
       "alternatives": [],
       "hint": "Imperative: verb (doe) first. “de groeten doen aan” = say hello to.",
+      "en": "Say hello to your father for me.",
       "covers": []
     },
     {
@@ -1727,6 +1825,7 @@
       "answer": "hallo, ik zoek een cadeau voor mijn vriendin",
       "alternatives": [],
       "hint": "Greeting first, then a normal sentence: subject + verb (ik zoek).",
+      "en": "Hello, I'm looking for a present for my girlfriend.",
       "covers": []
     },
     {
@@ -1743,6 +1842,7 @@
       "answer": "de verkoper wenst ons een fijne dag",
       "alternatives": [],
       "hint": "Verb 2nd; the person (ons) before the thing (een fijne dag).",
+      "en": "The salesman wishes us a nice day.",
       "covers": []
     },
     {
@@ -1761,6 +1861,7 @@
         "we doen voor ons vertrek nog snel boodschappen"
       ],
       "hint": "Time phrase first (voor ons vertrek) → inversion: doen we.",
+      "en": "Before we leave, we quickly do some shopping.",
       "covers": []
     },
     {
@@ -1776,6 +1877,7 @@
       "answer": "onze nieuwe woning ligt vlak bij een grote supermarkt",
       "alternatives": [],
       "hint": "Subject, verb 2nd (ligt), then the place.",
+      "en": "Our new home is very close to a big supermarket.",
       "covers": []
     },
     {
@@ -1792,6 +1894,7 @@
       "answer": "wanneer gaat de nieuwe kledingzaak open?",
       "alternatives": [],
       "hint": "W-question with separable verb opengaan: wanneer + gaat + subject + open.",
+      "en": "When is the new clothes shop opening?",
       "covers": []
     },
     {
@@ -1810,6 +1913,7 @@
         "ook bij slecht weer gaat de markt door"
       ],
       "hint": "Separable verb doorgaan (to go ahead): gaat 2nd, door at the end.",
+      "en": "The market also goes ahead in bad weather.",
       "covers": [
         "doorgaan"
       ]
@@ -1827,6 +1931,7 @@
       "answer": "ik hoor dat de nieuwe bakker lekkere taart verkoopt",
       "alternatives": [],
       "hint": "After “dat” the verb (verkoopt) goes to the end.",
+      "en": "I hear that the new baker sells delicious cake.",
       "covers": []
     },
     {
@@ -1845,6 +1950,7 @@
         "wij gebruiken bij het koken weinig zout"
       ],
       "hint": "Phrase first (bij het koken) → inversion: gebruiken wij.",
+      "en": "We use little salt when we cook.",
       "covers": []
     },
     {
@@ -1861,6 +1967,7 @@
       "answer": "hoeveel kost een kilo appels op de markt?",
       "alternatives": [],
       "hint": "W-question: hoeveel + verb + subject.",
+      "en": "How much does a kilo of apples cost at the market?",
       "covers": []
     },
     {
@@ -1876,6 +1983,7 @@
       "answer": "deze verse vruchten komen uit Spanje",
       "alternatives": [],
       "hint": "Subject, verb 2nd, then where from.",
+      "en": "This fresh fruit comes from Spain.",
       "covers": []
     },
     {
@@ -1892,6 +2000,7 @@
       "answer": "een bekende kok leidt de kookcursus in het buurthuis",
       "alternatives": [],
       "hint": "Subject, verb 2nd (leidt), object, then place.",
+      "en": "A well-known chef runs the cooking course at the community centre.",
       "covers": []
     },
     {
@@ -1908,6 +2017,7 @@
       "answer": "we gaan pas weg als alles klaar is",
       "alternatives": [],
       "hint": "Separable verb weggaan: gaan … weg. After “als” the verb (is) goes to the end.",
+      "en": "We won't leave until everything is ready.",
       "covers": [
         "weggaan"
       ]
@@ -1928,6 +2038,7 @@
         "ik heb inmiddels de jas teruggebracht"
       ],
       "hint": "Perfect of a separable verb: the participle is one word (teruggebracht) at the end.",
+      "en": "I have taken the coat back in the meantime.",
       "covers": []
     },
     {
@@ -1943,6 +2054,7 @@
       "answer": "kinderen, het eten is gauw klaar",
       "alternatives": [],
       "hint": "Subject (het eten), verb 2nd (is), then the rest.",
+      "en": "Children, dinner will be ready soon.",
       "covers": []
     },
     {
@@ -1959,6 +2071,7 @@
       "answer": "ik koop mijn vlees altijd bij mijn vaste slager",
       "alternatives": [],
       "hint": "Verb 2nd; “altijd” after the object, the place at the end.",
+      "en": "I always buy my meat from my regular butcher.",
       "covers": []
     },
     {
@@ -1974,6 +2087,7 @@
       "answer": "de nieuwe supermarkt is ruim en licht",
       "alternatives": [],
       "hint": "Subject, verb 2nd, then adjectives.",
+      "en": "The new supermarket is spacious and bright.",
       "covers": []
     },
     {
@@ -1992,6 +2106,7 @@
         "je ziet er in dat pak knap uit"
       ],
       "hint": "Separable verb eruitzien: ziet … er … uit.",
+      "en": "You look handsome in that suit.",
       "covers": [
         "eruitzien"
       ]
@@ -2012,6 +2127,7 @@
         "ben jij bereid om meer voor biologisch vlees te betalen?"
       ],
       "hint": "Yes/no question: verb first. “bereid zijn om … te + infinitive”.",
+      "en": "Are you willing to pay more for organic meat?",
       "covers": []
     },
     {
@@ -2028,6 +2144,7 @@
       "answer": "in het algemeen eten wij gezond, maar soms halen we patat",
       "alternatives": [],
       "hint": "Time/frequency phrase first → inversion in both parts: eten wij, soms halen we.",
+      "en": "In general we eat healthily, but sometimes we get chips.",
       "covers": []
     },
     {
@@ -2044,6 +2161,7 @@
       "answer": "ik doe dagelijks boodschappen bij de supermarkt om de hoek",
       "alternatives": [],
       "hint": "TMP: time (dagelijks) before place (bij de supermarkt).",
+      "en": "I go shopping every day at the supermarket around the corner.",
       "covers": []
     },
     {
@@ -2062,6 +2180,7 @@
         "we eten een enkele keer in een restaurant"
       ],
       "hint": "Time phrase first (een enkele keer) → inversion: eten we.",
+      "en": "Once in a while we eat in a restaurant.",
       "covers": []
     },
     {
@@ -2077,6 +2196,7 @@
       "answer": "de helft van onze groente komt uit de tuin",
       "alternatives": [],
       "hint": "“de helft van …” is the subject; verb 2nd.",
+      "en": "Half of our vegetables come from the garden.",
       "covers": []
     },
     {
@@ -2093,6 +2213,7 @@
       "answer": "te veel suiker eten heeft slechte gevolgen voor je tanden",
       "alternatives": [],
       "hint": "“te veel suiker eten” is the subject; the verb (heeft) comes right after it.",
+      "en": "Eating too much sugar has bad consequences for your teeth.",
       "covers": []
     },
     {
@@ -2109,6 +2230,7 @@
       "answer": "is dit gerecht makkelijk of moeilijk om te maken?",
       "alternatives": [],
       "hint": "Yes/no question: verb first. “om te maken” at the end.",
+      "en": "Is this dish easy or difficult to make?",
       "covers": []
     },
     {
@@ -2129,6 +2251,7 @@
         "ik koop misschien morgen een nieuwe jas"
       ],
       "hint": "“misschien” first → inversion: koop ik.",
+      "en": "Maybe I'll buy a new coat tomorrow.",
       "covers": []
     },
     {
@@ -2144,6 +2267,7 @@
       "answer": "de prijzen in de supermarkt gaan steeds verder omhoog",
       "alternatives": [],
       "hint": "Subject, verb 2nd (gaan), “omhoog” at the end.",
+      "en": "Prices in the supermarket keep going up.",
       "covers": []
     },
     {
@@ -2162,6 +2286,7 @@
         "koken is voor mijn oma een grote vreugde"
       ],
       "hint": "Phrase first (voor mijn oma) → inversion: is koken.",
+      "en": "For my grandma, cooking is a great joy.",
       "covers": []
     },
     {
@@ -2180,6 +2305,7 @@
         "de kinderen hebben op de camping veel vrijheid"
       ],
       "hint": "Place first → inversion: hebben de kinderen.",
+      "en": "At the campsite the children have a lot of freedom.",
       "covers": []
     },
     {
@@ -2198,6 +2324,7 @@
         "gezond eten is in theorie makkelijk"
       ],
       "hint": "Verb (is) 2nd; with “in theorie” first, the subject follows the verb.",
+      "en": "In theory, eating healthily is easy.",
       "covers": []
     },
     {
@@ -2216,6 +2343,7 @@
         "de kinderen doen op school een project over gezond eten"
       ],
       "hint": "Place first → inversion: doen de kinderen.",
+      "en": "At school the children are doing a project on healthy eating.",
       "covers": []
     },
     {
@@ -2234,6 +2362,7 @@
         "de jassen staan op de website in de categorie winterkleding"
       ],
       "hint": "Phrase first → inversion: staan de jassen.",
+      "en": "On the website the coats are in the winter clothing category.",
       "covers": []
     },
     {
@@ -2249,6 +2378,7 @@
       "answer": "de jongeman achter de kassa is erg vriendelijk",
       "alternatives": [],
       "hint": "The whole phrase “de jongeman achter de kassa” is the subject; verb (is) follows.",
+      "en": "The young man at the till is very friendly.",
       "covers": []
     },
     {
@@ -2264,6 +2394,7 @@
       "answer": "de schrijver van dit kookboek komt uit Marokko",
       "alternatives": [],
       "hint": "Long subject, then the verb in 2nd position.",
+      "en": "The author of this cookbook is from Morocco.",
       "covers": []
     },
     {
@@ -2280,6 +2411,7 @@
       "answer": "ik koop een blik tomaten voor de soep",
       "alternatives": [],
       "hint": "Subject, verb 2nd, object, then purpose (voor de soep).",
+      "en": "I'm buying a tin of tomatoes for the soup.",
       "covers": []
     },
     {
@@ -2296,6 +2428,7 @@
       "answer": "deze kledingzaak verkoopt jassen in verschillende kleuren",
       "alternatives": [],
       "hint": "Subject, verb 2nd (verkoopt), then object.",
+      "en": "This clothes shop sells coats in different colours.",
       "covers": []
     },
     {
@@ -2314,6 +2447,7 @@
         "ik ga even bij de bakker een boodschap doen"
       ],
       "hint": "gaan + infinitive: ga 2nd, the infinitive (doen) at the end.",
+      "en": "I'm just popping to the baker's for some shopping.",
       "covers": []
     },
     {
@@ -2332,6 +2466,7 @@
         "rauw vlees kan een gevaar voor je gezondheid zijn"
       ],
       "hint": "Modal (kan) 2nd, infinitive (zijn) near the end.",
+      "en": "Raw meat can be a danger to your health.",
       "covers": []
     }
   ],

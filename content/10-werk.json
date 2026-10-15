@@ -17,6 +17,7 @@
         "morgen neemt mijn collega mijn taken over, omdat ik ziek ben"
       ],
       "hint": "Separable verb \"overnemen\": \"neemt\" is 2nd, \"over\" goes to the end; \"omdat\" sends \"ben\" to the end.",
+      "en": "My colleague is taking over my tasks tomorrow because I'm ill.",
       "covers": [
         "overnemen"
       ]
@@ -35,6 +36,7 @@
       "answer": "ik ben moe, want ik ben al sinds vijf uur wakker",
       "alternatives": [],
       "hint": "\"want\" does not change the word order: after \"want\" comes subject + verb, as normal.",
+      "en": "I'm tired, because I've been awake since five o'clock.",
       "covers": []
     },
     {
@@ -54,6 +56,7 @@
         "ik sluit de winkel om zes uur met de sleutel af"
       ],
       "hint": "Time first, so inversion (sluit ik); the particle \"af\" of \"afsluiten\" goes to the very end.",
+      "en": "At six o'clock I lock the shop with the key.",
       "covers": [
         "afsluiten"
       ]
@@ -72,6 +75,7 @@
       "answer": "ik zal een briefje voor mijn collega op de kast leggen",
       "alternatives": [],
       "hint": "\"zullen\" is in 2nd place; the infinitive (leggen) goes to the end.",
+      "en": "I will put a note for my colleague on the cupboard.",
       "covers": [
         "briefje"
       ]
@@ -90,6 +94,7 @@
       "answer": "de klant is boos en legt de telefoon neer",
       "alternatives": [],
       "hint": "\"neerleggen\" is separable: \"legt\" in 2nd place, \"neer\" at the end.",
+      "en": "The customer is angry and puts down the phone.",
       "covers": [
         "neerleggen"
       ]
@@ -108,6 +113,7 @@
       "answer": "heeft u deze broek ook in een andere maat?",
       "alternatives": [],
       "hint": "Yes/no question: the verb comes first, then the subject.",
+      "en": "Do you also have these trousers in a different size?",
       "covers": []
     },
     {
@@ -124,6 +130,7 @@
       "answer": "wij zoeken een collega die goed Nederlands spreekt",
       "alternatives": [],
       "hint": "In a \"die\" clause (who/that) the verb goes to the end.",
+      "en": "We are looking for a colleague who speaks good Dutch.",
       "covers": []
     },
     {
@@ -143,6 +150,7 @@
         "gisteren heb ik een prettig gesprek met de directeur gehad"
       ],
       "hint": "Perfect tense: \"heb\" in 2nd place, the participle \"gehad\" at the end.",
+      "en": "Yesterday I had a pleasant conversation with the director.",
       "covers": []
     },
     {
@@ -159,6 +167,7 @@
       "answer": "de chef zegt dat de beslissing nog niet definitief is",
       "alternatives": [],
       "hint": "\"dat\" starts a subordinate clause: the verb \"is\" goes to the end.",
+      "en": "The boss says that the decision is not final yet.",
       "covers": []
     },
     {
@@ -176,6 +185,7 @@
         "ik werk meestal van negen tot vijf uur"
       ],
       "hint": "When an adverb like \"meestal\" comes first, the verb stays 2nd and the subject follows it.",
+      "en": "I usually work from nine to five.",
       "covers": []
     },
     {
@@ -191,6 +201,7 @@
       "answer": "je hoeft morgen niet te werken, want de winkel is gesloten",
       "alternatives": [],
       "hint": "\"hoeven\" + niet + te + infinitive at the end; \"want\" keeps normal word order.",
+      "en": "You don't have to work tomorrow, because the shop is closed.",
       "covers": []
     },
     {
@@ -207,6 +218,7 @@
       "answer": "kunt u de vraag nog een keer herhalen?",
       "alternatives": [],
       "hint": "Polite question: modal verb first, infinitive (herhalen) at the end.",
+      "en": "Could you repeat the question once more?",
       "covers": []
     },
     {
@@ -225,6 +237,7 @@
         "de chef legt langzaam de nieuwe methode uit"
       ],
       "hint": "Separable verb \"uitleggen\": \"legt\" 2nd, \"uit\" at the end.",
+      "en": "The boss explains the new method slowly.",
       "covers": [
         "uitleggen"
       ]
@@ -244,6 +257,7 @@
         "ik bel meneer Jansen zodra ik thuis ben"
       ],
       "hint": "\"zodra\" sends its verb to the end; a sentence that starts with that clause continues with verb + subject.",
+      "en": "As soon as I get home, I'll call Mr Jansen.",
       "covers": []
     },
     {
@@ -261,6 +275,7 @@
         "ik ben bang dat ik morgen op mijn werk te laat kom"
       ],
       "hint": "After \"dat\" the verb (kom) goes to the end of the sentence.",
+      "en": "I'm afraid I'll be late for work tomorrow.",
       "covers": []
     },
     {
@@ -276,6 +291,7 @@
       "answer": "zij is erg tevreden over haar nieuwe baan",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the rest; \"tevreden over\" = satisfied with.",
+      "en": "She is very happy with her new job.",
       "covers": []
     },
     {
@@ -292,6 +308,7 @@
       "answer": "mijn vriendin is kunstenaar en maakt mooie beelden",
       "alternatives": [],
       "hint": "Two main clauses joined by \"en\": both have the verb right after the subject.",
+      "en": "My friend is an artist and makes beautiful sculptures.",
       "covers": []
     },
     {
@@ -307,6 +324,7 @@
       "answer": "de eigenaar van het restaurant kookt zelf heerlijke vis",
       "alternatives": [],
       "hint": "The whole subject \"de eigenaar van het restaurant\" counts as one place; the verb follows it.",
+      "en": "The owner of the restaurant cooks delicious fish himself.",
       "covers": []
     },
     {
@@ -326,6 +344,7 @@
         "het is in de zomer op het terras altijd erg druk"
       ],
       "hint": "Time first, so inversion (is het); time comes before place.",
+      "en": "In summer it is always very busy on the terrace.",
       "covers": []
     },
     {
@@ -343,6 +362,7 @@
         "ik sta in de winter om zes uur op"
       ],
       "hint": "Separable verb \"opstaan\": \"sta\" 2nd, \"op\" at the end.",
+      "en": "In winter I get up at six o'clock.",
       "covers": [
         "opstaan"
       ]
@@ -363,6 +383,7 @@
         "ik neem de bus als de trein niet rijdt"
       ],
       "hint": "\"als\" sends its verb (rijdt) to the end; after the \"als\" clause comes verb + subject.",
+      "en": "If the train isn't running, I take the bus.",
       "covers": []
     },
     {
@@ -381,6 +402,7 @@
         "elke dag reis ik ongeveer veertig kilometer naar mijn werk"
       ],
       "hint": "Time (elke dag) before place (naar mijn werk).",
+      "en": "I travel about forty kilometres to work every day.",
       "covers": []
     },
     {
@@ -400,6 +422,7 @@
         "na het werk drinken wij op vrijdag een biertje"
       ],
       "hint": "Time first, so inversion: verb (drinken) before subject (wij).",
+      "en": "On Fridays we have a beer after work.",
       "covers": []
     },
     {
@@ -416,6 +439,7 @@
       "answer": "in de krant staat een interessant artikel over de economie",
       "alternatives": [],
       "hint": "Place first, so the verb comes 2nd and the subject (een interessant artikel) after it.",
+      "en": "There is an interesting article about the economy in the newspaper.",
       "covers": []
     },
     {
@@ -434,6 +458,7 @@
         "wij vieren vrijdag het huwelijk van onze collega"
       ],
       "hint": "Time first, so inversion: \"vieren wij\".",
+      "en": "On Friday we are celebrating our colleague's wedding.",
       "covers": []
     },
     {
@@ -452,6 +477,7 @@
         "doe jij zaterdag ook aan de cursus mee?"
       ],
       "hint": "Yes/no question with separable \"meedoen\": verb first, \"mee\" near the end.",
+      "en": "Are you joining the course on Saturday too?",
       "covers": [
         "meedoen"
       ]
@@ -469,6 +495,7 @@
       "answer": "zij biedt de klant een kop koffie aan",
       "alternatives": [],
       "hint": "Separable verb \"aanbieden\": \"biedt\" 2nd, \"aan\" at the end.",
+      "en": "She offers the customer a cup of coffee.",
       "covers": [
         "aanbieden"
       ]
@@ -489,6 +516,7 @@
         "ik doe om negen uur de deur van de winkel open"
       ],
       "hint": "Separable verb \"opendoen\": \"doe\" 2nd, \"open\" at the end.",
+      "en": "At nine o'clock I open the door of the shop.",
       "covers": [
         "opendoen"
       ]
@@ -509,6 +537,7 @@
         "een eigen restaurant in het noorden is mijn droom"
       ],
       "hint": "Simple main clause: subject, verb in 2nd place, then the rest.",
+      "en": "My dream is a restaurant of my own in the north.",
       "covers": []
     },
     {
@@ -528,6 +557,7 @@
         "mijn oom werkte vroeger als bewaker in de gevangenis"
       ],
       "hint": "Time word first (vroeger), so inversion: \"werkte mijn oom\".",
+      "en": "My uncle used to work as a guard in the prison.",
       "covers": []
     },
     {
@@ -546,6 +576,7 @@
         "in 1990 ben ik in een klein dorp geboren"
       ],
       "hint": "\"ik ben geboren\": the participle \"geboren\" goes to the end; time before place.",
+      "en": "I was born in a small village in 1990.",
       "covers": []
     },
     {
@@ -564,6 +595,7 @@
         "ik heb twee jaar aan de universiteit geschiedenis gestudeerd"
       ],
       "hint": "Perfect tense: \"heb\" 2nd, participle \"gestudeerd\" at the end.",
+      "en": "I studied history at university for two years.",
       "covers": []
     },
     {
@@ -580,6 +612,7 @@
       "answer": "wat is het verschil tussen een vast en een tijdelijk contract?",
       "alternatives": [],
       "hint": "Question word first, then the verb.",
+      "en": "What is the difference between a permanent and a temporary contract?",
       "covers": []
     },
     {
@@ -598,6 +631,7 @@
         "meneer Jansen wil de reden graag weten"
       ],
       "hint": "Modal verb (wil) 2nd, infinitive (weten) at the end.",
+      "en": "Mr Jansen would like to know the reason.",
       "covers": []
     },
     {
@@ -615,6 +649,7 @@
         "kunt u mij over mijn contract advies geven?"
       ],
       "hint": "Question: modal verb first; \"over mijn contract\" may also come after the infinitive.",
+      "en": "Can you give me advice about my contract?",
       "covers": []
     },
     {
@@ -633,6 +668,7 @@
         "ik heb van het bedrijf nog geen antwoord gekregen"
       ],
       "hint": "Perfect tense: \"heb\" 2nd, participle \"gekregen\" at the end.",
+      "en": "I haven't received an answer from the company yet.",
       "covers": []
     },
     {
@@ -649,6 +685,7 @@
       "answer": "dit werk is niet gemakkelijk, want je moet sterk zijn",
       "alternatives": [],
       "hint": "After \"want\" normal order: subject, verb, ... infinitive (zijn) at the end.",
+      "en": "This work isn't easy, because you have to be strong.",
       "covers": []
     },
     {
@@ -669,6 +706,7 @@
         "je moet in de keuken met het vuur voorzichtig zijn"
       ],
       "hint": "Place first, so inversion (moet je); \"zijn\" goes to the end of the middle part.",
+      "en": "In the kitchen you have to be careful with the fire.",
       "covers": []
     },
     {
@@ -687,6 +725,7 @@
         "elke ochtend zet ik een pot thee voor mijn collega's"
       ],
       "hint": "Time (elke ochtend) comes early, straight after the verb.",
+      "en": "Every morning I make a pot of tea for my colleagues.",
       "covers": []
     },
     {
@@ -703,6 +742,7 @@
       "answer": "mag ik mijn koffer even in de gang zetten?",
       "alternatives": [],
       "hint": "Question with a modal: \"mag ik\" first, infinitive (zetten) at the end.",
+      "en": "May I put my suitcase in the hallway for a moment?",
       "covers": []
     },
     {
@@ -719,6 +759,7 @@
       "answer": "ik werk graag met mensen, want ik ben erg sociaal",
       "alternatives": [],
       "hint": "\"graag\" comes right after the verb; \"want\" keeps normal word order.",
+      "en": "I like working with people, because I'm very sociable.",
       "covers": []
     },
     {
@@ -736,6 +777,7 @@
         "op mijn werk voel ik me veilig"
       ],
       "hint": "Reflexive verb \"zich voelen\": \"me\" comes right after the verb (or after the subject in inversion).",
+      "en": "I feel safe at work.",
       "covers": []
     },
     {
@@ -753,6 +795,7 @@
         "ik heb een druk leven door mijn werk en mijn gezin"
       ],
       "hint": "A long first part still counts as one place, so the verb follows: \"heb ik\".",
+      "en": "Because of my work and my family, I have a busy life.",
       "covers": []
     },
     {
@@ -771,6 +814,7 @@
         "door de oude stoel op kantoor heb ik pijn in mijn rug"
       ],
       "hint": "Subject + verb, then the rest; if you start with \"door ...\", invert: \"heb ik\".",
+      "en": "My back hurts because of the old chair at the office.",
       "covers": []
     },
     {
@@ -789,6 +833,7 @@
         "ik heb pijn in mijn buik, dus blijf ik vandaag thuis"
       ],
       "hint": "After \"dus\" both orders are fine: \"dus ik blijf\" or \"dus blijf ik\".",
+      "en": "I have a stomach ache, so I'm staying at home today.",
       "covers": []
     },
     {
@@ -806,6 +851,7 @@
         "mijn voeten doen pijn na een lange dag"
       ],
       "hint": "Time first, so inversion: \"doen mijn voeten\".",
+      "en": "After a long day my feet hurt.",
       "covers": []
     },
     {
@@ -823,6 +869,7 @@
         "ik ga in het weekend lekker rusten"
       ],
       "hint": "\"gaan\" + infinitive: \"ga\" 2nd, \"rusten\" at the end.",
+      "en": "At the weekend I'm going to have a nice rest.",
       "covers": []
     },
     {
@@ -839,6 +886,7 @@
       "answer": "welke dienst wil jij met mij ruilen?",
       "alternatives": [],
       "hint": "Question: \"welke dienst\" first, then the modal verb, infinitive at the end.",
+      "en": "Which shift do you want to swap with me?",
       "covers": []
     },
     {
@@ -857,6 +905,7 @@
         "morgen ga ik persoonlijk met de directeur praten"
       ],
       "hint": "TMP: time (morgen), manner (persoonlijk), then \"met de directeur\"; infinitive at the end.",
+      "en": "Tomorrow I'm going to talk to the director in person.",
       "covers": []
     },
     {
@@ -872,6 +921,7 @@
       "answer": "het werk is leuk en bovendien verdien ik goed",
       "alternatives": [],
       "hint": "\"bovendien\" counts as the first place, so inversion follows: \"verdien ik\".",
+      "en": "The work is enjoyable and, what's more, I earn well.",
       "covers": []
     },
     {
@@ -890,6 +940,7 @@
         "ik ben overigens volgende week op vakantie"
       ],
       "hint": "\"overigens\" first, so inversion: \"ben ik\".",
+      "en": "By the way, I'm on holiday next week.",
       "covers": []
     },
     {
@@ -908,6 +959,7 @@
         "ik heb ergens in de bus mijn portemonnee verloren"
       ],
       "hint": "Perfect tense: \"heb\" 2nd, participle \"verloren\" at the end.",
+      "en": "I lost my wallet somewhere on the bus.",
       "covers": []
     },
     {
@@ -925,6 +977,7 @@
         "het risico is zonder helm te groot"
       ],
       "hint": "Starting with \"zonder helm\" causes inversion: \"is het risico\".",
+      "en": "Without a helmet the risk is too great.",
       "covers": []
     },
     {
@@ -940,6 +993,7 @@
       "answer": "hij heeft het probleem met de computer snel opgelost",
       "alternatives": [],
       "hint": "Perfect tense: \"heeft\" 2nd, participle \"opgelost\" at the end.",
+      "en": "He quickly solved the problem with the computer.",
       "covers": []
     },
     {
@@ -957,6 +1011,7 @@
         "je moet dat zelf aan de chef vragen"
       ],
       "hint": "Object \"dat\" first, so inversion (moet je); infinitive at the end.",
+      "en": "You'll have to ask the boss that yourself.",
       "covers": []
     },
     {
@@ -972,6 +1027,7 @@
       "answer": "aan het begin van het gesprek stel je jezelf voor",
       "alternatives": [],
       "hint": "Separable \"voorstellen\": \"stel\" 2nd (inversion after the time phrase), \"voor\" at the end.",
+      "en": "At the start of the interview you introduce yourself.",
       "covers": [
         "voorstellen"
       ]
@@ -993,6 +1049,7 @@
         "elke ochtend maak ik in het hotel de slaapkamers schoon"
       ],
       "hint": "Separable \"schoonmaken\": \"maak\" 2nd, \"schoon\" at the end.",
+      "en": "In the hotel I clean the bedrooms every morning.",
       "covers": [
         "schoonmaken"
       ]
@@ -1012,6 +1069,7 @@
         "ik moet in de keuken vaak afwassen"
       ],
       "hint": "Modal + infinitive: the separable verb stays together as infinitive at the end (afwassen).",
+      "en": "In the kitchen I often have to do the washing-up.",
       "covers": []
     },
     {
@@ -1030,6 +1088,7 @@
         "sinds een jaar woon ik samen met mijn vriendin"
       ],
       "hint": "Separable \"samenwonen\": \"woon\" 2nd, \"samen\" goes after the time phrase.",
+      "en": "I have been living with my girlfriend for a year.",
       "covers": [
         "samenwonen"
       ]
@@ -1048,6 +1107,7 @@
       "answer": "ik stuur mijn cv met een foto naar het bedrijf",
       "alternatives": [],
       "hint": "Manner (met een foto) before place (naar het bedrijf).",
+      "en": "I'm sending my CV with a photo to the company.",
       "covers": []
     },
     {
@@ -1066,6 +1126,7 @@
         "we gaan vrijdag met collega's naar de film"
       ],
       "hint": "TMP: time (vrijdag), manner (met collega's), place (naar de film).",
+      "en": "On Friday we're going to the cinema with colleagues.",
       "covers": []
     },
     {
@@ -1086,6 +1147,7 @@
         "omdat ik naar de kerk ga, werk ik op zondag niet"
       ],
       "hint": "\"omdat\" sends the verb (ga) to the end.",
+      "en": "I don't work on Sundays, because I go to church.",
       "covers": []
     },
     {
@@ -1102,6 +1164,7 @@
       "answer": "voor deze baan heb je geen speciaal diploma nodig",
       "alternatives": [],
       "hint": "\"nodig hebben\": \"heb\" 2nd, \"nodig\" at the end.",
+      "en": "You don't need a special diploma for this job.",
       "covers": []
     },
     {
@@ -1117,6 +1180,7 @@
       "answer": "mijn eerste werkdag was een heel bijzondere dag",
       "alternatives": [],
       "hint": "Subject first, past tense verb \"was\" in 2nd place.",
+      "en": "My first day at work was a very special day.",
       "covers": []
     },
     {
@@ -1135,6 +1199,7 @@
         "ik werk morgen gewoon weer in de winkel"
       ],
       "hint": "Time first, so inversion: \"werk ik\".",
+      "en": "Tomorrow I'm just working in the shop again as usual.",
       "covers": []
     },
     {
@@ -1150,6 +1215,7 @@
       "answer": "ik ben net begonnen bij een nieuw bedrijf",
       "alternatives": [],
       "hint": "Perfect with \"zijn\": \"ben\" 2nd, \"begonnen\" late in the sentence.",
+      "en": "I've just started at a new company.",
       "covers": []
     },
     {
@@ -1165,6 +1231,7 @@
       "answer": "hoe lang werkt u hier al?",
       "alternatives": [],
       "hint": "Question word first (hoe lang), then verb, then subject.",
+      "en": "How long have you been working here?",
       "covers": []
     },
     {
@@ -1183,6 +1250,7 @@
         "ja, zaterdag kan ik voor jou werken"
       ],
       "hint": "\"ja,\" does not count as a place: the sentence after it starts normally.",
+      "en": "Yes, I can work for you on Saturday.",
       "covers": []
     },
     {
@@ -1198,6 +1266,7 @@
       "answer": "mijn salaris is geen geheim",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the rest.",
+      "en": "My salary is no secret.",
       "covers": []
     },
     {
@@ -1213,6 +1282,7 @@
       "answer": "ik twijfel nog over het nieuwe contract",
       "alternatives": [],
       "hint": "Verb in 2nd place; \"nog\" comes right after the verb.",
+      "en": "I'm still undecided about the new contract.",
       "covers": []
     },
     {
@@ -1232,6 +1302,7 @@
         "morgen neem ik met het uitzendbureau contact op"
       ],
       "hint": "\"contact opnemen met\": \"neem\" 2nd, \"op\" near the end.",
+      "en": "Tomorrow I'll get in touch with the employment agency.",
       "covers": []
     },
     {
@@ -1250,6 +1321,7 @@
         "ik werk elke zaterdag als vrijwilliger bij een vereniging"
       ],
       "hint": "Time first, so inversion: \"werk ik\".",
+      "en": "Every Saturday I work as a volunteer at a club.",
       "covers": []
     },
     {
@@ -1268,6 +1340,7 @@
         "omdat mijn vlucht vroeg vertrekt, wil ik vrijdag vrij hebben"
       ],
       "hint": "\"omdat\" sends \"vertrekt\" to the end; modal \"wil\" + infinitive \"hebben\" at the end.",
+      "en": "I'd like to have Friday off, because my flight leaves early.",
       "covers": []
     },
     {
@@ -1283,6 +1356,7 @@
       "answer": "heeft u morgen tijd voor een kort gesprek?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then subject, then time.",
+      "en": "Do you have time for a short meeting tomorrow?",
       "covers": []
     },
     {
@@ -1300,6 +1374,7 @@
         "het werkt op deze manier veel sneller"
       ],
       "hint": "\"op deze manier\" first, so inversion: \"werkt het\".",
+      "en": "This way it works much faster.",
       "covers": []
     },
     {
@@ -1318,6 +1393,7 @@
         "tijdens de eerste ontmoeting waren mijn toekomstige collega's erg lief"
       ],
       "hint": "Verb \"waren\" in 2nd place; with the time phrase first, invert.",
+      "en": "My future colleagues were very kind at our first meeting.",
       "covers": []
     },
     {
@@ -1334,6 +1410,7 @@
       "answer": "wil je koffie met melk en suiker?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then subject.",
+      "en": "Would you like coffee with milk and sugar?",
       "covers": []
     },
     {
@@ -1351,6 +1428,7 @@
         "het kantoor is na zes uur helemaal leeg"
       ],
       "hint": "Time first, so inversion: \"is het kantoor\".",
+      "en": "After six o'clock the office is completely empty.",
       "covers": []
     },
     {
@@ -1368,6 +1446,7 @@
         "ik haal voor het gesprek diep adem"
       ],
       "hint": "Time phrase first, so inversion: \"haal ik\".",
+      "en": "Before the interview I take a deep breath.",
       "covers": []
     },
     {
@@ -1385,6 +1464,7 @@
         "de winkel is op nationale feestdagen dicht"
       ],
       "hint": "Time first, so inversion: \"is de winkel\".",
+      "en": "On public holidays the shop is closed.",
       "covers": []
     },
     {
@@ -1402,6 +1482,7 @@
         "in de technische sector is er veel werk"
       ],
       "hint": "\"er is\" = there is; with the place first, invert: \"is er\".",
+      "en": "There is a lot of work in the technical sector.",
       "covers": []
     },
     {
@@ -1419,6 +1500,7 @@
         "het formulier is zonder verklaring van de huisarts niet volledig"
       ],
       "hint": "Starting with \"zonder ...\" causes inversion: \"is het formulier\".",
+      "en": "Without a statement from the GP, the form is not complete.",
       "covers": []
     },
     {
@@ -1435,6 +1517,7 @@
       "answer": "je hebt gelijk, de winkel gaat om zes uur dicht",
       "alternatives": [],
       "hint": "\"dichtgaan\" (to close) is separable: \"gaat\" 2nd, \"dicht\" at the end.",
+      "en": "You're right, the shop closes at six o'clock.",
       "covers": []
     },
     {
@@ -1450,6 +1533,7 @@
       "answer": "het salaris van deze baan is erg aantrekkelijk",
       "alternatives": [],
       "hint": "The subject \"het salaris van deze baan\" is one block; the verb follows it.",
+      "en": "The salary for this job is very attractive.",
       "covers": []
     },
     {
@@ -1467,6 +1551,7 @@
         "de winkel is met de krachtige stofzuiger snel schoon"
       ],
       "hint": "Starting with \"met ...\" causes inversion: \"is de winkel\".",
+      "en": "With the powerful vacuum cleaner the shop is clean in no time.",
       "covers": []
     },
     {
@@ -1485,6 +1570,7 @@
         "een werkdag op kantoor lijkt soms eindeloos"
       ],
       "hint": "\"soms\" first, so inversion: \"lijkt een werkdag\".",
+      "en": "Sometimes a working day at the office seems endless.",
       "covers": []
     },
     {
@@ -1502,6 +1588,7 @@
         "ik vertel in het gesprek over mijn achtergrond"
       ],
       "hint": "Phrase first, so inversion: \"vertel ik\".",
+      "en": "In the interview I talk about my background.",
       "covers": []
     },
     {
@@ -1520,6 +1607,7 @@
         "ik zit de hele dag op kantoor, dus heb ik weinig beweging"
       ],
       "hint": "After \"dus\" both \"dus ik heb\" and \"dus heb ik\" are correct.",
+      "en": "I sit in the office all day, so I don't get much exercise.",
       "covers": []
     },
     {
@@ -1538,6 +1626,7 @@
         "ik heb morgen een behandeling bij de fysiotherapeut"
       ],
       "hint": "Time first, so inversion: \"heb ik\".",
+      "en": "Tomorrow I have a treatment at the physiotherapist's.",
       "covers": []
     },
     {
@@ -1554,6 +1643,7 @@
       "answer": "de plant in de winkel is dood, want niemand geeft hem water",
       "alternatives": [],
       "hint": "\"want\" keeps normal order: subject (niemand) + verb (geeft).",
+      "en": "The plant in the shop is dead, because nobody waters it.",
       "covers": []
     },
     {
@@ -1570,6 +1660,7 @@
       "answer": "deze winkel verkoopt alleen producten uit Nederland",
       "alternatives": [],
       "hint": "Subject first, verb 2nd; \"alleen\" comes just before what it limits.",
+      "en": "This shop only sells products from the Netherlands.",
       "covers": []
     },
     {
@@ -1585,6 +1676,7 @@
       "answer": "wij maken geen onderscheid tussen mannen en vrouwen",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, object, then the \"tussen\" phrase.",
+      "en": "We make no distinction between men and women.",
       "covers": []
     },
     {
@@ -1603,6 +1695,7 @@
         "wij bespreken vandaag de doelstellingen voor dit jaar"
       ],
       "hint": "Time first, so inversion: \"bespreken wij\".",
+      "en": "Today we are discussing the goals for this year.",
       "covers": []
     },
     {
@@ -1620,6 +1713,7 @@
         "wij schrijven een gedicht voor het afscheid van meneer Jansen"
       ],
       "hint": "Long first phrase, still one place: then verb + subject.",
+      "en": "We are writing a poem for Mr Jansen's farewell.",
       "covers": []
     },
     {
@@ -1637,6 +1731,7 @@
         "ik werk in de zomer in een kamp voor kinderen"
       ],
       "hint": "Time first, so inversion; time comes before place.",
+      "en": "In summer I work at a camp for children.",
       "covers": []
     },
     {
@@ -1653,6 +1748,7 @@
       "answer": "het bedrijf groeit snel en verdient nu een miljoen euro per jaar",
       "alternatives": [],
       "hint": "Two verbs with one subject, joined by \"en\": no subject is repeated.",
+      "en": "The company is growing fast and now earns a million euros a year.",
       "covers": []
     },
     {
@@ -1669,6 +1765,7 @@
       "answer": "de verpleegkundige voelt aan het voorhoofd van de patiënt",
       "alternatives": [],
       "hint": "Subject first, verb 2nd, then the \"aan\" phrase.",
+      "en": "The nurse feels the patient's forehead.",
       "covers": []
     },
     {
@@ -1684,6 +1781,7 @@
       "answer": "de sleutel van de winkel ligt op de bodem van mijn tas",
       "alternatives": [],
       "hint": "Subject block first, verb \"ligt\" 2nd, then the place.",
+      "en": "The key to the shop is at the bottom of my bag.",
       "covers": []
     },
     {
@@ -1699,6 +1797,7 @@
       "answer": "pas op, het glas staat op de rand van de tafel",
       "alternatives": [],
       "hint": "\"pas op\" (imperative of oppassen): verb first; then a normal main clause.",
+      "en": "Careful, the glass is on the edge of the table.",
       "covers": []
     },
     {
@@ -1717,6 +1816,7 @@
         "ik verspreid elke zaterdag folders in de wijk"
       ],
       "hint": "Time first, so inversion: \"verspreid ik\".",
+      "en": "Every Saturday I hand out leaflets in the neighbourhood.",
       "covers": []
     },
     {
@@ -1734,6 +1834,7 @@
         "de vacature is helaas al vervuld"
       ],
       "hint": "\"helaas\" first, so inversion: \"is de vacature\".",
+      "en": "Unfortunately the vacancy has already been filled.",
       "covers": []
     },
     {
@@ -1752,6 +1853,7 @@
         "op 1 mei gaat mijn nieuwe contract in"
       ],
       "hint": "Separable \"ingaan\" (to start): \"gaat\" 2nd, \"in\" at the very end.",
+      "en": "My new contract starts on 1 May.",
       "covers": [
         "ingaan"
       ]
@@ -1770,6 +1872,7 @@
       "answer": "ik stap op de fiets en ga naar mijn werk",
       "alternatives": [],
       "hint": "Two verbs with one subject joined by \"en\".",
+      "en": "I get on my bike and go to work.",
       "covers": []
     },
     {
@@ -1790,6 +1893,7 @@
         "het bedrijf plaatst de vacature morgen op internet"
       ],
       "hint": "Time first, so inversion: \"plaatst het bedrijf\".",
+      "en": "Tomorrow the company is posting the vacancy online.",
       "covers": []
     },
     {
@@ -1808,6 +1912,7 @@
         "ik heb na drie pogingen eindelijk een baan gevonden"
       ],
       "hint": "Perfect tense with inversion: \"heb ik ... gevonden\".",
+      "en": "After three attempts I finally found a job.",
       "covers": []
     },
     {
@@ -1823,6 +1928,7 @@
       "answer": "wat betekent deze zin in mijn contract?",
       "alternatives": [],
       "hint": "Question word first, verb second, then subject.",
+      "en": "What does this sentence in my contract mean?",
       "covers": []
     },
     {
@@ -1838,6 +1944,7 @@
       "answer": "ik dank u voor het prettige gesprek",
       "alternatives": [],
       "hint": "Subject, verb, object (u), then the \"voor\" phrase.",
+      "en": "Thank you for the pleasant conversation.",
       "covers": []
     },
     {
@@ -1853,6 +1960,7 @@
       "answer": "ik houd echt van mijn werk in de kledingzaak",
       "alternatives": [],
       "hint": "\"houden van\" = to love; \"echt\" comes right after the verb.",
+      "en": "I really love my work in the clothes shop.",
       "covers": []
     },
     {
@@ -1870,6 +1978,7 @@
         "ik wil later graag verpleegkundige worden"
       ],
       "hint": "Modal \"wil\" 2nd, infinitive \"worden\" at the end.",
+      "en": "Later on I would like to become a nurse.",
       "covers": []
     },
     {
@@ -1887,6 +1996,7 @@
         "ik draag een pak voor het sollicitatiegesprek"
       ],
       "hint": "Phrase first, so inversion: \"draag ik\".",
+      "en": "I wear a suit for the job interview.",
       "covers": []
     },
     {
@@ -1903,6 +2013,7 @@
       "answer": "eerst stofzuig ik de winkel en daarna hang ik de kleren op",
       "alternatives": [],
       "hint": "\"eerst\" and \"daarna\" both cause inversion; \"ophangen\" splits: \"hang ... op\".",
+      "en": "First I vacuum the shop and then I hang up the clothes.",
       "covers": [
         "ophangen"
       ]
@@ -1923,6 +2034,7 @@
         "ik heb verder geen vragen over het contract"
       ],
       "hint": "\"verder\" first, so inversion: \"heb ik\".",
+      "en": "Apart from that, I have no questions about the contract.",
       "covers": []
     },
     {
@@ -1938,6 +2050,7 @@
       "answer": "ik ben op de hoogte van de nieuwe regels",
       "alternatives": [],
       "hint": "\"op de hoogte zijn van\" = to be informed about; verb 2nd.",
+      "en": "I am aware of the new rules.",
       "covers": []
     },
     {
@@ -1955,6 +2068,7 @@
         "nu is het project in de laatste fase"
       ],
       "hint": "Verb 2nd; \"nu\" comes right after the verb.",
+      "en": "The project is now in its final phase.",
       "covers": []
     },
     {
@@ -1971,6 +2085,7 @@
       "answer": "de nieuwe chef wil veel veranderingen in de winkel",
       "alternatives": [],
       "hint": "Subject first, verb 2nd; here \"wil\" is used without an infinitive.",
+      "en": "The new boss wants a lot of changes in the shop.",
       "covers": []
     },
     {
@@ -1986,6 +2101,7 @@
       "answer": "ik ben blij dat ik eindelijk een vaste baan heb",
       "alternatives": [],
       "hint": "After \"dat\" the verb (heb) goes to the end.",
+      "en": "I'm glad that I finally have a permanent job.",
       "covers": []
     },
     {
@@ -2003,6 +2119,7 @@
         "ik begin volgende maand bij een nieuw bedrijf"
       ],
       "hint": "Time first, so inversion: \"begin ik\".",
+      "en": "Next month I'm starting at a new company.",
       "covers": []
     },
     {
@@ -2019,6 +2136,7 @@
       "answer": "de kledingzaak is in een drukke straat in het centrum",
       "alternatives": [],
       "hint": "Subject first, verb 2nd; the smaller place (straat) before the bigger one (centrum).",
+      "en": "The clothes shop is on a busy street in the town centre.",
       "covers": []
     },
     {
@@ -2035,6 +2153,7 @@
       "answer": "ik kan niet goed tegen de warmte in de keuken",
       "alternatives": [],
       "hint": "\"tegen iets kunnen\" = to be able to stand something; \"kan\" is 2nd, \"niet goed\" follows it.",
+      "en": "I can't really cope with the heat in the kitchen.",
       "covers": []
     },
     {
@@ -2050,6 +2169,7 @@
       "answer": "een goed evenwicht tussen werk en vrije tijd is belangrijk",
       "alternatives": [],
       "hint": "The long subject \"een goed evenwicht tussen werk en vrije tijd\" is one block; the verb follows it.",
+      "en": "A good balance between work and free time is important.",
       "covers": []
     }
   ],

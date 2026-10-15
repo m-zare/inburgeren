@@ -66,6 +66,7 @@ contents.forEach((data, i) => {
       answer: ex.answer,
       alternatives: ex.alternatives || [],
       hint: ex.hint,
+      en: ex.en,
       grammar: ex.grammar,
       level: ex.level,
       ...(Object.keys(senses).length && { senses }),

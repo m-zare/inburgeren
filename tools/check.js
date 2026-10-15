@@ -68,6 +68,7 @@ for (const f of allFiles) {
       if (sortedKey(alt) !== key) err(`alternative uses different words: "${alt}"`);
     }
     if (!ex.hint) err("missing hint");
+    if (!ex.en) err("missing English translation (en)");
     const tokens = tokenize(ex.answer);
     if (report && tokens.length > 14) warn.push(`${where}: long sentence (${tokens.length} words)`);
 

@@ -17,6 +17,7 @@
         "morgen kan ik helaas niet naar de toets komen"
       ],
       "hint": "Modal verb (kan) in 2nd place, the infinitive (komen) goes to the end.",
+      "en": "Unfortunately I can't come to the test tomorrow.",
       "covers": []
     },
     {
@@ -35,6 +36,7 @@
         "ik bied u mijn excuses voor de fout aan"
       ],
       "hint": "Separable verb aanbieden: the stem (bied) is in 2nd place, the particle (aan) goes to the end of the core sentence.",
+      "en": "I apologise to you for the mistake.",
       "covers": [
         "aanbieden"
       ]
@@ -53,6 +55,7 @@
       "answer": "kan ik de toets een dag eerder maken?",
       "alternatives": [],
       "hint": "Yes/no question: the verb comes first, then the subject; the infinitive goes to the end.",
+      "en": "Can I take the test a day earlier?",
       "covers": []
     },
     {
@@ -69,6 +72,7 @@
       "answer": "is het mogelijk om de afspraak naar donderdag te verzetten?",
       "alternatives": [],
       "hint": "Question with verb first; in an om … te construction the te-infinitive comes last.",
+      "en": "Is it possible to move the appointment to Thursday?",
       "covers": []
     },
     {
@@ -84,6 +88,7 @@
       "answer": "heeft u een voorkeur voor dinsdag of donderdag?",
       "alternatives": [],
       "hint": "Yes/no question: verb (heeft) first, then the subject (u).",
+      "en": "Do you have a preference for Tuesday or Thursday?",
       "covers": []
     },
     {
@@ -105,6 +110,7 @@
         "volgende week kunnen wij wellicht een nieuwe afspraak maken"
       ],
       "hint": "After an adverb at the start (wellicht) comes inversion: verb, then subject. The infinitive goes last.",
+      "en": "Perhaps we can make a new appointment next week.",
       "covers": []
     },
     {
@@ -120,6 +126,7 @@
       "answer": "ik stuur u alvast mijn nieuwe telefoonnummer",
       "alternatives": [],
       "hint": "Verb in 2nd place; the short pronoun u comes right after the verb, the adverb alvast before the object.",
+      "en": "I'm sending you my new phone number in advance.",
       "covers": []
     },
     {
@@ -136,6 +143,7 @@
       "answer": "ik wacht nog op een reactie van meneer Bakker",
       "alternatives": [],
       "hint": "Verb in 2nd place; wachten op: the op-phrase follows the adverb nog.",
+      "en": "I'm still waiting for a response from Mr Bakker.",
       "covers": []
     },
     {
@@ -155,6 +163,7 @@
         "ik mail vandaag mevrouw Jansen over de nieuwe datum"
       ],
       "hint": "Verb in 2nd place. If you start with vandaag, the subject moves behind the verb.",
+      "en": "I'm emailing Mrs Jansen today about the new date.",
       "covers": []
     },
     {
@@ -171,6 +180,7 @@
       "answer": "mag ik jouw boek tot vrijdag lenen?",
       "alternatives": [],
       "hint": "Question with a modal verb: modal first, subject second, infinitive (lenen) at the end.",
+      "en": "May I borrow your book until Friday?",
       "covers": []
     },
     {
@@ -189,6 +199,7 @@
         "volgende week krijgt zij haar boek terug"
       ],
       "hint": "Separable verb terugkrijgen: krijgt in 2nd place, terug at the end.",
+      "en": "She is getting her book back next week.",
       "covers": [
         "terugkrijgen"
       ]
@@ -207,6 +218,7 @@
       "answer": "ik wil graag een cursus gezond koken volgen",
       "alternatives": [],
       "hint": "Modal verb (wil) in 2nd place, the infinitive (volgen) at the end.",
+      "en": "I would like to take a healthy cooking course.",
       "covers": []
     },
     {
@@ -226,6 +238,7 @@
         "ik heb gisteren het aanmeldformulier ingevuld"
       ],
       "hint": "Perfect tense: heb in 2nd place, the past participle (ingevuld) at the end.",
+      "en": "I filled in the registration form yesterday.",
       "covers": []
     },
     {
@@ -242,6 +255,7 @@
       "answer": "de groep op dinsdagavond is helaas al vol",
       "alternatives": [],
       "hint": "The whole subject (de groep op dinsdagavond) comes first, then the verb.",
+      "en": "Unfortunately the Tuesday evening group is already full.",
       "covers": []
     },
     {
@@ -258,6 +272,7 @@
       "answer": "de kookcursus is een initiatief van de gemeente",
       "alternatives": [],
       "hint": "Subject first, verb (is) in 2nd place.",
+      "en": "The cooking course is an initiative of the municipality.",
       "covers": []
     },
     {
@@ -276,6 +291,7 @@
         "er zitten in totaal twaalf mensen in de groep"
       ],
       "hint": "After in totaal at the start, the verb comes 2nd; er + verb introduces a new, indefinite subject.",
+      "en": "There are twelve people in the group in total.",
       "covers": []
     },
     {
@@ -294,6 +310,7 @@
         "in de keuken van de kookcursus ruikt het lekker"
       ],
       "hint": "Verb in 2nd place; manner (lekker) before place (in de keuken).",
+      "en": "It smells nice in the kitchen of the cooking course.",
       "covers": []
     },
     {
@@ -310,6 +327,7 @@
       "answer": "de soep heeft een mooie kleur en een goede smaak",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the objects joined by en.",
+      "en": "The soup has a lovely colour and a good flavour.",
       "covers": []
     },
     {
@@ -326,6 +344,7 @@
       "answer": "de gemeente helpt mij financieel, want de opleiding is duur",
       "alternatives": [],
       "hint": "After want the normal main-clause order stays: subject + verb.",
+      "en": "The municipality is helping me financially, because the training is expensive.",
       "covers": []
     },
     {
@@ -342,6 +361,7 @@
       "answer": "ik betaal de rekening van de cursus via de bank",
       "alternatives": [],
       "hint": "Verb in 2nd place, the object (de rekening van de cursus) before the way of paying (via de bank).",
+      "en": "I pay the bill for the course through the bank.",
       "covers": []
     },
     {
@@ -359,6 +379,7 @@
       "answer": "de school stuurt een herinnering, want wij hebben nog niet betaald",
       "alternatives": [],
       "hint": "Want keeps main-clause order: wij hebben … betaald (participle at the end).",
+      "en": "The school is sending a reminder, because we haven't paid yet.",
       "covers": []
     },
     {
@@ -375,6 +396,7 @@
       "answer": "de opleiding duurt een jaar en eindigt in juni",
       "alternatives": [],
       "hint": "Two verbs sharing one subject: both stay in 2nd position of their part.",
+      "en": "The training lasts a year and ends in June.",
       "covers": []
     },
     {
@@ -391,6 +413,7 @@
       "answer": "ik zoek een computercursus bij mij in de buurt",
       "alternatives": [],
       "hint": "Verb in 2nd place, the object before the place.",
+      "en": "I'm looking for a computer course near me.",
       "covers": []
     },
     {
@@ -407,6 +430,7 @@
       "answer": "de docent van de computercursus heeft veel verstand van computers",
       "alternatives": [],
       "hint": "Long subject first, verb in 2nd place. Verstand hebben van = to know a lot about.",
+      "en": "The teacher of the computer course knows a lot about computers.",
       "covers": []
     },
     {
@@ -427,6 +451,7 @@
         "ik heb gisteren mijn laptop in de klas vergeten"
       ],
       "hint": "Perfect tense: heb 2nd, participle (vergeten) last; time before place.",
+      "en": "I left my laptop in the classroom yesterday.",
       "covers": []
     },
     {
@@ -443,6 +468,7 @@
       "answer": "wilt u hier uw achternaam en telefoonnummer invullen?",
       "alternatives": [],
       "hint": "Polite question: wilt u … + infinitive at the end.",
+      "en": "Would you fill in your surname and phone number here?",
       "covers": []
     },
     {
@@ -460,6 +486,7 @@
       "answer": "de docent spreekt mijn naam altijd verkeerd uit",
       "alternatives": [],
       "hint": "Separable verb uitspreken: spreekt in 2nd place, uit at the end.",
+      "en": "The teacher always pronounces my name wrong.",
       "covers": []
     },
     {
@@ -479,6 +506,7 @@
         "ik heb na de les een gesprek met de docent gehad"
       ],
       "hint": "Time phrase first → inversion (heb ik). The participle gehad goes last.",
+      "en": "After the lesson I had a talk with the teacher.",
       "covers": []
     },
     {
@@ -498,6 +526,7 @@
         "wij hebben in de klas een discussie over dit onderwerp gehad"
       ],
       "hint": "Place phrase first → inversion. Participle (gehad) at the end.",
+      "en": "In class we had a discussion about this topic.",
       "covers": []
     },
     {
@@ -513,6 +542,7 @@
       "answer": "weet jij de betekenis van dit woord?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then subject.",
+      "en": "Do you know the meaning of this word?",
       "covers": []
     },
     {
@@ -528,6 +558,7 @@
       "answer": "waarom antwoord jij niet op mijn vraag?",
       "alternatives": [],
       "hint": "W-question: question word, verb, subject. With jij after the verb the -t drops: antwoord jij.",
+      "en": "Why don't you answer my question?",
       "covers": []
     },
     {
@@ -543,6 +574,7 @@
       "answer": "het is vreemd dat de docent er vandaag niet is",
       "alternatives": [],
       "hint": "In a dat-clause the verb (is) goes to the end.",
+      "en": "It's strange that the teacher isn't here today.",
       "covers": []
     },
     {
@@ -561,6 +593,7 @@
         "meneer Bakker is vandaag blijkbaar ziek"
       ],
       "hint": "Adverb first (blijkbaar) → inversion: verb before subject.",
+      "en": "Apparently Mr Bakker is ill today.",
       "covers": []
     },
     {
@@ -576,6 +609,7 @@
       "answer": "is het waar dat de toets morgen is?",
       "alternatives": [],
       "hint": "Question with verb first; in the dat-clause the verb goes to the end.",
+      "en": "Is it true that the test is tomorrow?",
       "covers": []
     },
     {
@@ -591,6 +625,7 @@
       "answer": "de toets van gisteren was inderdaad heel moeilijk",
       "alternatives": [],
       "hint": "Subject first, verb (was) in 2nd place, then the adverb.",
+      "en": "Yesterday's test was indeed very difficult.",
       "covers": []
     },
     {
@@ -609,6 +644,7 @@
         "de leerlingen hebben allemaal de toets gehaald"
       ],
       "hint": "Perfect tense: hebben 2nd, participle (gehaald) at the end.",
+      "en": "The pupils all passed the test.",
       "covers": []
     },
     {
@@ -624,6 +660,7 @@
       "answer": "het resultaat van mijn toets was boven verwachting",
       "alternatives": [],
       "hint": "Long subject first, then the verb in 2nd place.",
+      "en": "The result of my test was better than expected.",
       "covers": []
     },
     {
@@ -640,6 +677,7 @@
       "answer": "de docent geeft mij nog een kans voor de toets",
       "alternatives": [],
       "hint": "Verb 2nd; indirect object (mij) before direct object (een kans).",
+      "en": "The teacher is giving me another chance at the test.",
       "covers": []
     },
     {
@@ -660,6 +698,7 @@
         "omdat ik slecht geslapen heb, heb ik weinig energie"
       ],
       "hint": "Omdat sends the verbs to the end of the clause.",
+      "en": "I have little energy because I slept badly.",
       "covers": []
     },
     {
@@ -676,6 +715,7 @@
       "answer": "ik heb behoefte aan meer tijd voor mijn huiswerk",
       "alternatives": [],
       "hint": "Verb 2nd; behoefte hebben aan = to need.",
+      "en": "I need more time for my homework.",
       "covers": []
     },
     {
@@ -694,6 +734,7 @@
         "vandaag heb ik een hoop huiswerk voor de cursus"
       ],
       "hint": "Time (vandaag) comes right after the verb, or at the start with inversion.",
+      "en": "Today I have a lot of homework for the course.",
       "covers": []
     },
     {
@@ -712,6 +753,7 @@
         "mijn zoon werkt hard en doet zijn huiswerk zelfs in het weekend"
       ],
       "hint": "Two verbs with the same subject joined by en; each keeps its place after the subject.",
+      "en": "My son works hard and even does his homework at the weekend.",
       "covers": []
     },
     {
@@ -728,6 +770,7 @@
       "answer": "het kind van mijn broer zit in dezelfde klas als mijn zoon",
       "alternatives": [],
       "hint": "Long subject first, then the verb (zit) in 2nd place.",
+      "en": "My brother's child is in the same class as my son.",
       "covers": []
     },
     {
@@ -748,6 +791,7 @@
         "mijn zuster brengt elke ochtend de kinderen naar school"
       ],
       "hint": "TMP: time (elke ochtend) before place (naar school). Time first → inversion.",
+      "en": "My sister takes the children to school every morning.",
       "covers": []
     },
     {
@@ -763,6 +807,7 @@
       "answer": "de meester is streng maar eigenlijk ook heel vrolijk",
       "alternatives": [],
       "hint": "Maar joins two parts; the adverbs eigenlijk and ook come before the adjective.",
+      "en": "The teacher is strict but actually also very cheerful.",
       "covers": []
     },
     {
@@ -779,6 +824,7 @@
       "answer": "de kinderen lachen vaak om de grappen van de meester",
       "alternatives": [],
       "hint": "Verb 2nd, adverb (vaak) right after the verb; lachen om = laugh at.",
+      "en": "The children often laugh at the teacher's jokes.",
       "covers": []
     },
     {
@@ -798,6 +844,7 @@
         "gewoonlijk drinken wij in de pauze koffie of thee"
       ],
       "hint": "Time phrase first → inversion: verb, then subject.",
+      "en": "During the break we usually drink coffee or tea.",
       "covers": []
     },
     {
@@ -815,6 +862,7 @@
         "ik lees na het eten de krant of een tijdschrift"
       ],
       "hint": "Time phrase first → inversion (lees ik).",
+      "en": "After dinner I read the newspaper or a magazine.",
       "covers": []
     },
     {
@@ -833,6 +881,7 @@
         "in de pauze spelen de kinderen buiten op het gras"
       ],
       "hint": "TMP: time (in de pauze) before place (buiten op het gras).",
+      "en": "During the break the children play outside on the grass.",
       "covers": []
     },
     {
@@ -850,6 +899,7 @@
         "de kinderen blijven binnen als het regent"
       ],
       "hint": "Als-clause first (verb at its end), then the main verb immediately follows: blijven de kinderen.",
+      "en": "When it rains, the children stay inside.",
       "covers": []
     },
     {
@@ -867,6 +917,7 @@
         "de kinderen zingen en dansen op het feest van de school"
       ],
       "hint": "Place phrase first → inversion: verbs before the subject.",
+      "en": "At the school party the children sing and dance.",
       "covers": []
     },
     {
@@ -882,6 +933,7 @@
       "answer": "de kinderen hebben een prachtig lied gezongen",
       "alternatives": [],
       "hint": "Perfect tense: hebben 2nd, participle gezongen at the end.",
+      "en": "The children sang a beautiful song.",
       "covers": []
     },
     {
@@ -898,6 +950,7 @@
       "answer": "mijn dochter interesseert zich voor dieren en de natuur",
       "alternatives": [],
       "hint": "Reflexive verb: zich comes right after the conjugated verb.",
+      "en": "My daughter is interested in animals and nature.",
       "covers": []
     },
     {
@@ -913,6 +966,7 @@
       "answer": "mijn zoon heeft een rustige persoonlijkheid",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place.",
+      "en": "My son has a calm personality.",
       "covers": []
     },
     {
@@ -929,6 +983,7 @@
       "answer": "mijn dochter heeft een goed geheugen voor nieuwe woorden",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the object.",
+      "en": "My daughter has a good memory for new words.",
       "covers": []
     },
     {
@@ -947,6 +1002,7 @@
         "wij praten op de ouderavond over de ontwikkeling van ons kind"
       ],
       "hint": "Time/place phrase first → inversion. Praten over goes near the end.",
+      "en": "At the parents' evening we talk about our child's development.",
       "covers": []
     },
     {
@@ -963,6 +1019,7 @@
       "answer": "de juf zegt dat het gedrag van mijn zoon beter is",
       "alternatives": [],
       "hint": "In a dat-clause the verb (is) goes to the end.",
+      "en": "The teacher says that my son's behaviour is better.",
       "covers": []
     },
     {
@@ -981,6 +1038,7 @@
         "omdat ik een goede houding heb, is de docent blij"
       ],
       "hint": "Omdat sends the verb (heb) to the end.",
+      "en": "The teacher is pleased because I have a good attitude.",
       "covers": []
     },
     {
@@ -996,6 +1054,7 @@
       "answer": "een jongen uit de klas doet gemeen tegen mijn zoon",
       "alternatives": [],
       "hint": "Long subject first, then the verb. Gemeen doen tegen = to be mean to.",
+      "en": "A boy from the class is being mean to my son.",
       "covers": []
     },
     {
@@ -1016,6 +1075,7 @@
         "omdat hij zijn huiswerk niet gemaakt heeft, krijgt hij straf"
       ],
       "hint": "Omdat sends the verbs to the end; niet comes before them.",
+      "en": "He is being punished because he didn't do his homework.",
       "covers": []
     },
     {
@@ -1033,6 +1093,7 @@
         "de juf gaat goed met moeilijke kinderen om"
       ],
       "hint": "Separable verb omgaan met: gaat 2nd, om at the end, met-phrase after it.",
+      "en": "The teacher is good with difficult children.",
       "covers": [
         "omgaan met"
       ]
@@ -1051,6 +1112,7 @@
       "answer": "de juf geeft de kinderen veel liefde en aandacht",
       "alternatives": [],
       "hint": "Verb 2nd; indirect object (de kinderen) before direct object.",
+      "en": "The teacher gives the children a lot of love and attention.",
       "covers": []
     },
     {
@@ -1069,6 +1131,7 @@
         "ik ben te laat omdat het erg druk was bij het station"
       ],
       "hint": "Omdat sends the verb (was) to the end of the clause.",
+      "en": "I'm late because it was very busy at the station.",
       "covers": []
     },
     {
@@ -1085,6 +1148,7 @@
       "answer": "ik heb haast want de les begint over vijf minuten",
       "alternatives": [],
       "hint": "Want does not change word order: de les begint.",
+      "en": "I'm in a hurry because the lesson starts in five minutes.",
       "covers": []
     },
     {
@@ -1103,6 +1167,7 @@
         "de les begint normaal om negen uur"
       ],
       "hint": "Adverb first (normaal) → inversion: begint de les.",
+      "en": "The lesson normally starts at nine o'clock.",
       "covers": []
     },
     {
@@ -1119,6 +1184,7 @@
       "answer": "ik ben ziek, daarom kom ik vandaag niet naar de les",
       "alternatives": [],
       "hint": "Daarom at the start of a clause causes inversion: daarom kom ik.",
+      "en": "I'm ill, so I'm not coming to the lesson today.",
       "covers": []
     },
     {
@@ -1136,6 +1202,7 @@
         "ik kende niemand toen ik naar Holland kwam"
       ],
       "hint": "Toen-clause: verb at the end (kwam). After it, the main verb comes first: kende ik.",
+      "en": "When I came to Holland, I didn't know anyone.",
       "covers": []
     },
     {
@@ -1152,6 +1219,7 @@
       "answer": "veel mensen in mijn klas zijn uit hun land gevlucht",
       "alternatives": [],
       "hint": "Perfect with zijn (movement): zijn 2nd, participle gevlucht at the end.",
+      "en": "Many people in my class have fled their country.",
       "covers": []
     },
     {
@@ -1168,6 +1236,7 @@
       "answer": "in een nieuw land heb je veel moed nodig",
       "alternatives": [],
       "hint": "Place first → inversion (heb je; the -t drops before je). Nodig goes to the end.",
+      "en": "In a new country you need a lot of courage.",
       "covers": []
     },
     {
@@ -1184,6 +1253,7 @@
       "answer": "er zijn grote verschillen tussen de scholen hier en in mijn land",
       "alternatives": [],
       "hint": "Er zijn + subject: introduces something new.",
+      "en": "There are big differences between the schools here and in my country.",
       "covers": []
     },
     {
@@ -1200,6 +1270,7 @@
       "answer": "de combinatie van werk en studie is soms zwaar",
       "alternatives": [],
       "hint": "Long subject first, verb (is) in 2nd place.",
+      "en": "Combining work and study is sometimes hard.",
       "covers": []
     },
     {
@@ -1215,6 +1286,7 @@
       "answer": "wat is jouw plan na de inburgeringscursus?",
       "alternatives": [],
       "hint": "W-question: question word, verb, then subject.",
+      "en": "What is your plan after the integration course?",
       "covers": []
     },
     {
@@ -1231,6 +1303,7 @@
       "answer": "mijn broer studeert literatuur aan de universiteit",
       "alternatives": [],
       "hint": "Verb 2nd; object before place.",
+      "en": "My brother studies literature at university.",
       "covers": []
     },
     {
@@ -1252,6 +1325,7 @@
         "ik ben vanochtend een oude vriendin in de bus tegengekomen"
       ],
       "hint": "Tegenkomen takes zijn in the perfect; the participle tegengekomen goes last.",
+      "en": "This morning I ran into an old friend on the bus.",
       "covers": []
     },
     {
@@ -1270,6 +1344,7 @@
         "vroeger heeft mijn oom op een boot op zee gewerkt"
       ],
       "hint": "Perfect: heeft 2nd, participle last; time (vroeger) before place.",
+      "en": "My uncle used to work on a boat at sea.",
       "covers": []
     },
     {
@@ -1289,6 +1364,7 @@
         "de klas gaat in juni een dag naar de kust"
       ],
       "hint": "Time first → inversion. TMP: time before place (naar de kust).",
+      "en": "In June the class is going to the coast for a day.",
       "covers": []
     },
     {
@@ -1308,6 +1384,7 @@
         "de kinderen voetballen na school op het veld bij de rivier"
       ],
       "hint": "Time first → inversion: verb, then subject; place at the end.",
+      "en": "After school the children play football on the field by the river.",
       "covers": []
     },
     {
@@ -1327,6 +1404,7 @@
         "wij ruimen na de les samen de troep op"
       ],
       "hint": "Separable verb opruimen: ruimen 2nd, op at the very end.",
+      "en": "After the lesson we clean up the mess together.",
       "covers": [
         "opruimen"
       ]
@@ -1345,6 +1423,7 @@
       "answer": "wij wassen onze handen omdat ze vies zijn",
       "alternatives": [],
       "hint": "Omdat sends the verb (zijn) to the end.",
+      "en": "We wash our hands because they are dirty.",
       "covers": []
     },
     {
@@ -1361,6 +1440,7 @@
       "answer": "de kinderen hebben de wand groen en wit geverfd",
       "alternatives": [],
       "hint": "Perfect tense: hebben 2nd, participle geverfd at the end.",
+      "en": "The children painted the wall green and white.",
       "covers": []
     },
     {
@@ -1376,6 +1456,7 @@
       "answer": "ik vind die kleur een beetje lelijk",
       "alternatives": [],
       "hint": "Vinden + object + opinion: ik vind die kleur lelijk.",
+      "en": "I think that colour is a bit ugly.",
       "covers": []
     },
     {
@@ -1394,6 +1475,7 @@
         "de docent doet het raam open omdat het heet is"
       ],
       "hint": "Omdat-clause first → main verb comes next (doet de docent). Opendoen splits: open at the end.",
+      "en": "Because it's hot, the teacher opens the window.",
       "covers": [
         "opendoen"
       ]
@@ -1415,6 +1497,7 @@
         "de voorzitter opent om acht uur de vergadering"
       ],
       "hint": "Verb 2nd. Time first → inversion.",
+      "en": "The chair opens the meeting at eight o'clock.",
       "covers": []
     },
     {
@@ -1432,6 +1515,7 @@
         "ik kies na overleg met de docent een andere groep"
       ],
       "hint": "Phrase first → inversion: kies ik.",
+      "en": "After talking it over with the teacher, I'm choosing a different group.",
       "covers": []
     },
     {
@@ -1450,6 +1534,7 @@
         "er komt vandaag een psycholoog als gast in de klas"
       ],
       "hint": "Time first → inversion; er introduces a new subject (een psycholoog).",
+      "en": "Today a psychologist is coming to the class as a guest.",
       "covers": []
     },
     {
@@ -1468,6 +1553,7 @@
         "een agent van de politie komt morgen op school"
       ],
       "hint": "Time first → inversion: komt + subject.",
+      "en": "Tomorrow a police officer is coming to the school.",
       "covers": []
     },
     {
@@ -1486,6 +1572,7 @@
         "wat moet je doen als er in het gebouw brand is?"
       ],
       "hint": "W-question with modal: wat moet je … doen. In the als-clause the verb goes to the end.",
+      "en": "What should you do if there is a fire in the building?",
       "covers": []
     },
     {
@@ -1502,6 +1589,7 @@
       "answer": "mijn vrouw werkt op een afdeling in het ziekenhuis",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place, then place.",
+      "en": "My wife works on a ward in the hospital.",
       "covers": []
     },
     {
@@ -1520,6 +1608,7 @@
         "hij heeft na de gymles pijn aan zijn been en zijn schouder"
       ],
       "hint": "Time phrase first → inversion: heeft hij.",
+      "en": "After the PE lesson his leg and shoulder hurt.",
       "covers": []
     },
     {
@@ -1539,6 +1628,7 @@
         "vandaag heeft mijn zoontje op school een tand verloren"
       ],
       "hint": "TMP: time (vandaag) before place (op school); participle at the end.",
+      "en": "My little son lost a tooth at school today.",
       "covers": []
     },
     {
@@ -1555,6 +1645,7 @@
       "answer": "hij heeft een rode neus omdat hij verkouden is",
       "alternatives": [],
       "hint": "Omdat sends the verb (is) to the end.",
+      "en": "He has a red nose because he has a cold.",
       "covers": []
     },
     {
@@ -1571,6 +1662,7 @@
       "answer": "mijn zoon is niet ernstig ziek, maar hij blijft thuis",
       "alternatives": [],
       "hint": "Maar keeps normal word order: hij blijft.",
+      "en": "My son isn't seriously ill, but he is staying at home.",
       "covers": []
     },
     {
@@ -1587,6 +1679,7 @@
       "answer": "de docent neemt mijn vraag altijd serieus",
       "alternatives": [],
       "hint": "Verb 2nd; the definite object comes before altijd.",
+      "en": "The teacher always takes my question seriously.",
       "covers": []
     },
     {
@@ -1605,6 +1698,7 @@
         "ik ben na het sporten altijd een beetje stijf"
       ],
       "hint": "Time phrase first → inversion: ben ik.",
+      "en": "After exercising I'm always a bit stiff.",
       "covers": []
     },
     {
@@ -1621,6 +1715,7 @@
       "answer": "neem een deken mee voor het schoolkamp",
       "alternatives": [],
       "hint": "Imperative: verb first. Meenemen splits: mee goes after the object.",
+      "en": "Bring a blanket for the school camp.",
       "covers": [
         "meenemen"
       ]
@@ -1639,6 +1734,7 @@
       "answer": "mijn zoon draagt zijn spullen in een tas van leer",
       "alternatives": [],
       "hint": "Verb 2nd; object before the place.",
+      "en": "My son carries his things in a leather bag.",
       "covers": []
     },
     {
@@ -1655,6 +1751,7 @@
       "answer": "pak je boek, want wij gaan verder met de les",
       "alternatives": [],
       "hint": "Imperative first; after want normal order. Verdergaan splits: gaan … verder.",
+      "en": "Get your book out, because we're carrying on with the lesson.",
       "covers": [
         "verdergaan"
       ]
@@ -1673,6 +1770,7 @@
       "answer": "u kunt uw tas bij de deur neerzetten",
       "alternatives": [],
       "hint": "Modal (kunt) 2nd; with a modal the separable verb stays whole at the end: neerzetten.",
+      "en": "You can put your bag down by the door.",
       "covers": []
     },
     {
@@ -1692,6 +1790,7 @@
         "elke dag geef ik mijn zoon een boterham mee"
       ],
       "hint": "Meegeven splits: geef 2nd, mee at the end.",
+      "en": "Every day I give my son a sandwich to take with him.",
       "covers": [
         "meegeven"
       ]
@@ -1713,6 +1812,7 @@
         "als je kind ziek is, bel de school onmiddellijk op"
       ],
       "hint": "Imperative: verb first, particle op at the end; the als-clause has its verb last.",
+      "en": "Call the school immediately if your child is ill.",
       "covers": [
         "opbellen"
       ]
@@ -1731,6 +1831,7 @@
       "answer": "ik wil het boek kopen, maar de prijs is hoog",
       "alternatives": [],
       "hint": "Modal + infinitive at the end; after maar normal order.",
+      "en": "I want to buy the book, but the price is high.",
       "covers": []
     },
     {
@@ -1749,6 +1850,7 @@
         "de kinderen verkopen voor het feest koekjes op de markt"
       ],
       "hint": "Phrase first → inversion: verkopen de kinderen.",
+      "en": "For the party the children are selling biscuits at the market.",
       "covers": []
     },
     {
@@ -1768,6 +1870,7 @@
         "de winkel levert morgen de nieuwe boeken op school"
       ],
       "hint": "TMP: time (morgen) before place (op school).",
+      "en": "The shop is delivering the new books to the school tomorrow.",
       "covers": []
     },
     {
@@ -1786,6 +1889,7 @@
         "volgende week neemt de directeur een besluit over de groep"
       ],
       "hint": "Time before the indefinite object; time first → inversion.",
+      "en": "Next week the head teacher will make a decision about the group.",
       "covers": []
     },
     {
@@ -1804,6 +1908,7 @@
         "wij zoeken samen een oplossing voor het probleem"
       ],
       "hint": "Adverb first (samen) → inversion: zoeken wij.",
+      "en": "Together we look for a solution to the problem.",
       "covers": []
     },
     {
@@ -1822,6 +1927,7 @@
         "als de cursus klaar is, krijgt u een bewijs"
       ],
       "hint": "Als-clause: verb at the end. Als-clause first → inversion (krijgt u).",
+      "en": "You will get a certificate when the course is finished.",
       "covers": []
     },
     {
@@ -1837,6 +1943,7 @@
       "answer": "heeft u een specifieke vraag over de toets?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then subject.",
+      "en": "Do you have a specific question about the test?",
       "covers": []
     },
     {
@@ -1854,6 +1961,7 @@
         "een cursus in de avond is voor mij ideaal"
       ],
       "hint": "Phrase first → inversion: is + subject.",
+      "en": "For me, an evening course is ideal.",
       "covers": []
     },
     {
@@ -1870,6 +1978,7 @@
       "answer": "er is schade aan het dak van de school",
       "alternatives": [],
       "hint": "Er is + new subject (schade).",
+      "en": "There is damage to the school roof.",
       "covers": []
     },
     {
@@ -1887,6 +1996,7 @@
         "je mag op het terrein van de school niet roken"
       ],
       "hint": "Place first → inversion; modal (mag) 2nd, infinitive at the end.",
+      "en": "You are not allowed to smoke on the school grounds.",
       "covers": []
     },
     {
@@ -1903,6 +2013,7 @@
       "answer": "de ouders wachten buiten op de stoep",
       "alternatives": [],
       "hint": "Verb 2nd; general place (buiten) before specific place (op de stoep).",
+      "en": "The parents are waiting outside on the pavement.",
       "covers": []
     },
     {
@@ -1921,6 +2032,7 @@
         "elke dag loop ik door het park naar school"
       ],
       "hint": "TMP: time (elke dag) first, then the route and destination.",
+      "en": "Every day I walk through the park to school.",
       "covers": []
     },
     {
@@ -1936,6 +2048,7 @@
       "answer": "is de docent van de computercursus al weg?",
       "alternatives": [],
       "hint": "Yes/no question: verb (is) first.",
+      "en": "Has the computer course teacher already left?",
       "covers": []
     },
     {
@@ -1953,6 +2066,7 @@
         "de kinderen zijn op woensdagmiddag vrij"
       ],
       "hint": "Time first → inversion: zijn de kinderen.",
+      "en": "On Wednesday afternoons the children are off.",
       "covers": []
     },
     {
@@ -1969,6 +2083,7 @@
       "answer": "mijn broer heeft een eigen zaak in de stad",
       "alternatives": [],
       "hint": "Subject first, verb 2nd.",
+      "en": "My brother has his own business in town.",
       "covers": []
     },
     {
@@ -1985,6 +2100,7 @@
       "answer": "mijn dochter wil een verhaal over onze kat schrijven",
       "alternatives": [],
       "hint": "Modal (wil) 2nd, infinitive (schrijven) at the end.",
+      "en": "My daughter wants to write a story about our cat.",
       "covers": []
     },
     {
@@ -2004,6 +2120,7 @@
         "volgend jaar wil de minister meer geld aan scholen geven"
       ],
       "hint": "Modal 2nd, infinitive last; time first → inversion.",
+      "en": "The minister wants to give more money to schools next year.",
       "covers": []
     },
     {
@@ -2022,6 +2139,7 @@
         "mijn opa was vroeger soldaat in het leger"
       ],
       "hint": "Time word first (vroeger) → inversion: was mijn opa.",
+      "en": "My grandad used to be a soldier in the army.",
       "covers": []
     },
     {
@@ -2039,6 +2157,7 @@
         "wij praten in de les over geloof en cultuur"
       ],
       "hint": "Phrase first → inversion; praten over at the end.",
+      "en": "In class we talk about religion and culture.",
       "covers": []
     },
     {
@@ -2054,6 +2173,7 @@
       "answer": "het is typisch voor hem dat hij altijd te laat komt",
       "alternatives": [],
       "hint": "In a dat-clause the verb (komt) goes to the end.",
+      "en": "It's typical of him that he's always late.",
       "covers": []
     },
     {
@@ -2070,6 +2190,7 @@
       "answer": "de koffie staat beneden in de kantine",
       "alternatives": [],
       "hint": "Verb 2nd; general place (beneden) before specific place.",
+      "en": "The coffee is downstairs in the canteen.",
       "covers": []
     },
     {
@@ -2086,6 +2207,7 @@
       "answer": "u kunt zich uitsluitend via de website aanmelden",
       "alternatives": [],
       "hint": "Modal 2nd, zich right after it, infinitive (aanmelden) at the end.",
+      "en": "You can only register via the website.",
       "covers": []
     }
   ],

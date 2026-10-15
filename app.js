@@ -232,12 +232,12 @@ function renderExercise(ex) {
 
   el.append(parts, row, feedback);
 
-  // The hint is always available; once opened it stays open.
-  let hintShown = false;
-  const hintEl = () => {
-    if (hintShown) return textEl("span", "hint", ex.hint);
-    return button("Hint", () => {
-      hintShown = true;
+  // Hint and translation are always available; once opened they stay open.
+  const opened = { hint: false, en: false };
+  const revealEl = (key, label, text) => {
+    if (opened[key]) return textEl("span", "hint", text);
+    return button(label, () => {
+      opened[key] = true;
       showResult(state.result, state.revealed);
     });
   };
@@ -249,7 +249,8 @@ function renderExercise(ex) {
     feedback.innerHTML = "";
     const tools = document.createElement("div");
     tools.className = "tools";
-    tools.append(hintEl());
+    tools.append(revealEl("hint", "Hint", ex.hint));
+    if (ex.en) tools.append(revealEl("en", "Translation", ex.en));
 
     if (result === "ok" || result === "alt") {
       mark.classList.add("ok");

@@ -20,6 +20,7 @@
         "in de stad heeft iemand gisteren mijn zwarte tas gestolen"
       ],
       "hint": "Perfect tense: “heeft” is in 2nd place and the participle “gestolen” goes to the very end.",
+      "en": "Someone stole my black bag in town yesterday.",
       "covers": []
     },
     {
@@ -38,6 +39,7 @@
         "ik wil graag bij de politie aangifte doen"
       ],
       "hint": "The modal verb “wil” is in 2nd place; the infinitive “doen” goes to the end of its phrase.",
+      "en": "I would like to report a crime to the police.",
       "covers": []
     },
     {
@@ -57,6 +59,7 @@
         "in het centrum is het twee dagen geleden gebeurd"
       ],
       "hint": "A time phrase at the start causes inversion (is het); the participle “gebeurd” goes to the end.",
+      "en": "It happened in the centre two days ago.",
       "covers": []
     },
     {
@@ -75,6 +78,7 @@
         "mijn horloge is heel dun en grijs"
       ],
       "hint": "Subject first, then the verb “is”, then the description.",
+      "en": "My watch is grey and very thin.",
       "covers": []
     },
     {
@@ -91,6 +95,7 @@
       "answer": "mijn sleutel zat ook in de zak van mijn jas",
       "alternatives": [],
       "hint": "Verb in 2nd place; “ook” follows the verb; the place phrase comes last.",
+      "en": "My key was also in my coat pocket.",
       "covers": []
     },
     {
@@ -107,6 +112,7 @@
       "answer": "de agent heeft nog een vraag over mijn nieuwe laptop",
       "alternatives": [],
       "hint": "Verb “heeft” in 2nd place; the “over …” phrase comes after the object.",
+      "en": "The officer has another question about my new laptop.",
       "covers": []
     },
     {
@@ -123,6 +129,7 @@
       "answer": "de politie vraagt naar mijn gegevens en mijn woonplaats",
       "alternatives": [],
       "hint": "Subject – verb – rest: “vragen naar” = to ask for.",
+      "en": "The police ask for my details and my place of residence.",
       "covers": []
     },
     {
@@ -141,6 +148,7 @@
         "voordat je naar de huisarts gaat, moet je dit aanmeldformulier invullen"
       ],
       "hint": "“voordat” sends the verb (gaat) to the end of its clause; the modal “moet” takes the infinitive at the end.",
+      "en": "You have to fill in this registration form before you go to the GP.",
       "covers": []
     },
     {
@@ -160,6 +168,7 @@
         "ik bel de huisarts meteen, omdat mijn knie veel pijn doet"
       ],
       "hint": "“omdat” sends the verb (doet) to the end. If the omdat-clause comes first, the main clause starts with the verb (bel ik).",
+      "en": "I call the GP straight away, because my knee hurts a lot.",
       "covers": []
     },
     {
@@ -178,6 +187,7 @@
         "mijn dochter heeft het koud en zij heeft rode ogen"
       ],
       "hint": "“en” joins two main clauses: both keep normal order (subject – verb).",
+      "en": "My daughter has red eyes and she is cold.",
       "covers": []
     },
     {
@@ -194,6 +204,7 @@
       "answer": "ik heb pijn in mijn hals en in mijn hoofd",
       "alternatives": [],
       "hint": "Subject – verb – object – place: “pijn hebben in …”.",
+      "en": "I have a pain in my neck and in my head.",
       "covers": []
     },
     {
@@ -210,6 +221,7 @@
       "answer": "de hond van de buren heeft mijn zoon gebeten",
       "alternatives": [],
       "hint": "Perfect tense: “heeft” in 2nd place, the participle “gebeten” at the end.",
+      "en": "The neighbours' dog bit my son.",
       "covers": []
     },
     {
@@ -227,6 +239,7 @@
         "het is volgens de dokter niet gevaarlijk"
       ],
       "hint": "When “volgens de dokter” starts the sentence, the verb comes next and the subject follows (inversion).",
+      "en": "According to the doctor, it is not dangerous.",
       "covers": []
     },
     {
@@ -248,6 +261,7 @@
         "op de brug heb ik gisteren een ongeluk gehad"
       ],
       "hint": "Perfect tense with “heb … gehad”; time (gisteren) comes early, or first with inversion.",
+      "en": "I had an accident on the bridge yesterday.",
       "covers": []
     },
     {
@@ -266,6 +280,7 @@
         "u belt bij een ongeluk meteen het nummer 112"
       ],
       "hint": "The sentence starts with “bij een ongeluk”, so verb and subject swap: belt u.",
+      "en": "In case of an accident, call 112 immediately.",
       "covers": []
     },
     {
@@ -282,6 +297,7 @@
       "answer": "we moeten 112 bellen, want hij verliest veel bloed",
       "alternatives": [],
       "hint": "After “want” the word order stays normal (subject – verb); after a modal the infinitive goes to the end.",
+      "en": "We have to call 112, because he is losing a lot of blood.",
       "covers": []
     },
     {
@@ -300,6 +316,7 @@
         "de ambulance was er gelukkig heel snel"
       ],
       "hint": "“gelukkig” at the start causes inversion: was de ambulance.",
+      "en": "Fortunately, the ambulance got there very quickly.",
       "covers": []
     },
     {
@@ -319,6 +336,7 @@
         "ik meld me vandaag bij mijn baas ziek"
       ],
       "hint": "“zich ziek melden”: the verb is 2nd, “me” follows it, “ziek” comes after the time word.",
+      "en": "Today I am calling in sick to my boss.",
       "covers": []
     },
     {
@@ -336,6 +354,7 @@
         "je moet thuis blijven als je ziek bent"
       ],
       "hint": "“als” sends the verb (bent) to the end; after the als-clause, the main clause starts with the verb (moet je).",
+      "en": "If you are ill, you have to stay at home.",
       "covers": []
     },
     {
@@ -354,6 +373,7 @@
         "op dinsdagavond en donderdagavond is de apotheek open"
       ],
       "hint": "Time phrase after the verb, or first with inversion; “open” comes last.",
+      "en": "The pharmacy is open on Tuesday evening and Thursday evening.",
       "covers": []
     },
     {
@@ -373,6 +393,7 @@
         "ik neem in de zomer altijd water naar het strand mee"
       ],
       "hint": "Separable verb “meenemen”: “neem” is in 2nd place and “mee” goes near the end.",
+      "en": "In summer I always take water with me to the beach.",
       "covers": [
         "meenemen"
       ]
@@ -393,6 +414,7 @@
         "ik gebruik in de zomer zonnebrand met factor 30"
       ],
       "hint": "A time phrase at the start causes inversion: gebruik ik.",
+      "en": "In summer I use sunscreen with factor 30.",
       "covers": []
     },
     {
@@ -409,6 +431,7 @@
       "answer": "de tandarts zegt dat mijn tand los zit",
       "alternatives": [],
       "hint": "“dat” sends the verb (zit) to the end of the clause.",
+      "en": "The dentist says that my tooth is loose.",
       "covers": []
     },
     {
@@ -425,6 +448,7 @@
       "answer": "mijn zorgverzekering betaalt niet alle medische kosten",
       "alternatives": [],
       "hint": "“niet” comes before the part it negates (alle medische kosten).",
+      "en": "My health insurance does not pay all the medical costs.",
       "covers": []
     },
     {
@@ -441,6 +465,7 @@
       "answer": "hij heeft een klacht over het personeel van het ziekenhuis",
       "alternatives": [],
       "hint": "Subject – verb – object – “over …” phrase.",
+      "en": "He has a complaint about the hospital staff.",
       "covers": []
     },
     {
@@ -459,6 +484,7 @@
         "vorige week heb ik een brief van de overheid gekregen"
       ],
       "hint": "Perfect tense: “heb” in 2nd place, “gekregen” at the end; time before the object.",
+      "en": "Last week I received a letter from the government.",
       "covers": []
     },
     {
@@ -476,6 +502,7 @@
         "iedereen moet volgens de wet een zorgverzekering hebben"
       ],
       "hint": "Inversion after “volgens de wet”; the infinitive “hebben” goes to the end.",
+      "en": "By law, everyone must have health insurance.",
       "covers": []
     },
     {
@@ -492,6 +519,7 @@
       "answer": "de burgemeester is de leider van de gemeente",
       "alternatives": [],
       "hint": "Simple sentence: subject – verb – rest.",
+      "en": "The mayor is the head of the municipality.",
       "covers": []
     },
     {
@@ -507,6 +535,7 @@
       "answer": "deze organisatie helpt mensen met schulden",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place.",
+      "en": "This organisation helps people with debts.",
       "covers": []
     },
     {
@@ -523,6 +552,7 @@
       "answer": "ik heb hulp nodig bij het invullen van deze lijst",
       "alternatives": [],
       "hint": "“hulp nodig hebben bij …”: “nodig” comes right after the object.",
+      "en": "I need help filling in this list.",
       "covers": []
     },
     {
@@ -539,6 +569,7 @@
       "answer": "de dief heeft het raam van mijn auto kapotgemaakt",
       "alternatives": [],
       "hint": "Perfect tense of the separable verb “kapotmaken”: kapot + gemaakt = kapotgemaakt, at the very end.",
+      "en": "The thief broke the window of my car.",
       "covers": []
     },
     {
@@ -557,6 +588,7 @@
         "de man droeg een rode jas en een grijze hoed"
       ],
       "hint": "Past tense: the verb “droeg” is in 2nd place.",
+      "en": "The man was wearing a grey hat and a red coat.",
       "covers": []
     },
     {
@@ -573,6 +605,7 @@
       "answer": "hij rende snel langs de supermarkt naar het station",
       "alternatives": [],
       "hint": "TMP: manner (snel) before the place/direction phrases.",
+      "en": "He ran quickly past the supermarket to the station.",
       "covers": []
     },
     {
@@ -589,6 +622,7 @@
       "answer": "ik heb hem niet goed gezien, want het ging heel snel",
       "alternatives": [],
       "hint": "After “want” you use normal main-clause order (het ging).",
+      "en": "I didn't see him properly, because it happened very fast.",
       "covers": []
     },
     {
@@ -605,6 +639,7 @@
       "answer": "ik weet het niet zeker, maar hij was waarschijnlijk jong",
       "alternatives": [],
       "hint": "“maar” joins two main clauses; both keep subject – verb order.",
+      "en": "I'm not sure, but he was probably young.",
       "covers": []
     },
     {
@@ -622,6 +657,7 @@
         "trouwens ontbreekt mijn portemonnee ook"
       ],
       "hint": "Verb in 2nd place; “trouwens” at the start causes inversion.",
+      "en": "My wallet is missing too, by the way.",
       "covers": []
     },
     {
@@ -640,6 +676,7 @@
         "krijg ik later mijn laptop terug?"
       ],
       "hint": "Yes/no question: the verb comes first. Separable “terugkrijgen”: “terug” goes to the end.",
+      "en": "Will I get my laptop back later?",
       "covers": [
         "terugkrijgen"
       ]
@@ -658,6 +695,7 @@
       "answer": "het verlies van mijn laptop is een groot probleem",
       "alternatives": [],
       "hint": "The whole subject “het verlies van mijn laptop” comes before the verb.",
+      "en": "The loss of my laptop is a big problem.",
       "covers": []
     },
     {
@@ -676,6 +714,7 @@
         "het was een verschrikkelijk moment voor mij"
       ],
       "hint": "“voor mij” at the start causes inversion: was het.",
+      "en": "For me it was a terrible moment.",
       "covers": []
     },
     {
@@ -692,6 +731,7 @@
       "answer": "ik ben enorm geschrokken van de dief",
       "alternatives": [],
       "hint": "“schrikken” takes “zijn” in the perfect: ik ben geschrokken.",
+      "en": "The thief gave me a terrible fright.",
       "covers": []
     },
     {
@@ -708,6 +748,7 @@
       "answer": "de agent bleef kalm en praatte rustig met mij",
       "alternatives": [],
       "hint": "Two verbs share one subject: de agent bleef … en praatte ….",
+      "en": "The officer stayed calm and talked to me quietly.",
       "covers": []
     },
     {
@@ -726,6 +767,7 @@
         "de agent schrijft nauwkeurig alle details op"
       ],
       "hint": "Separable verb “opschrijven”: “op” goes to the end of the sentence.",
+      "en": "The officer writes down all the details carefully.",
       "covers": [
         "opschrijven"
       ]
@@ -747,6 +789,7 @@
         "ik heb via de website mijn nieuwe adres aan DUO doorgegeven"
       ],
       "hint": "Perfect tense of a separable verb: door + ge + geven = doorgegeven, at the end.",
+      "en": "I gave DUO my new address via the website.",
       "covers": []
     },
     {
@@ -762,6 +805,7 @@
       "answer": "als student krijg je geld van DUO",
       "alternatives": [],
       "hint": "“als student” (as a student) at the start causes inversion; with inversion “jij/je” drops the -t: krijg je.",
+      "en": "As a student, you get money from DUO.",
       "covers": []
     },
     {
@@ -780,6 +824,7 @@
         "volgend jaar studeert mijn dochter af"
       ],
       "hint": "Separable verb “afstuderen”: “af” goes to the end.",
+      "en": "My daughter graduates next year.",
       "covers": [
         "afstuderen"
       ]
@@ -797,6 +842,7 @@
       "answer": "welk beroep wil je later kiezen?",
       "alternatives": [],
       "hint": "W-question: question word + noun, then the verb, then the subject; the infinitive at the end.",
+      "en": "Which profession do you want to choose later?",
       "covers": []
     },
     {
@@ -814,6 +860,7 @@
         "hij heeft sinds oktober geen werk meer"
       ],
       "hint": "Time phrase first causes inversion: heeft hij.",
+      "en": "He has been out of work since October.",
       "covers": []
     },
     {
@@ -830,6 +877,7 @@
       "answer": "ik volg een cursus om de taal beter te leren",
       "alternatives": [],
       "hint": "“om … te + infinitive” explains the purpose; the infinitive is last.",
+      "en": "I am taking a course to learn the language better.",
       "covers": []
     },
     {
@@ -846,6 +894,7 @@
       "answer": "mijn opa vertelt vaak een verhaal over de oorlog",
       "alternatives": [],
       "hint": "Verb in 2nd place, then “vaak”, then the object.",
+      "en": "My grandad often tells a story about the war.",
       "covers": []
     },
     {
@@ -862,6 +911,7 @@
       "answer": "de koning en de regering werken in Den Haag",
       "alternatives": [],
       "hint": "Two subjects joined by “en” take a plural verb: werken.",
+      "en": "The King and the government work in The Hague.",
       "covers": []
     },
     {
@@ -879,6 +929,7 @@
         "we werken op ons werk goed samen"
       ],
       "hint": "Separable verb “samenwerken”: “samen” goes to the end; place first causes inversion.",
+      "en": "At work we work well together.",
       "covers": [
         "samenwerken"
       ]
@@ -897,6 +948,7 @@
       "answer": "Utrecht is een kleine provincie in het midden van het land",
       "alternatives": [],
       "hint": "Subject – verb – rest.",
+      "en": "Utrecht is a small province in the middle of the country.",
       "covers": []
     },
     {
@@ -913,6 +965,7 @@
       "answer": "de rechter heeft de dief een straf gegeven",
       "alternatives": [],
       "hint": "Indirect object (de dief) before the direct object (een straf); participle at the end.",
+      "en": "The judge gave the thief a sentence.",
       "covers": []
     },
     {
@@ -928,6 +981,7 @@
       "answer": "geweld is in Nederland verboden, ook thuis",
       "alternatives": [],
       "hint": "Subject – verb – place – adjective; “ook thuis” is added at the end.",
+      "en": "Violence is forbidden in the Netherlands, at home too.",
       "covers": []
     },
     {
@@ -945,6 +999,7 @@
         "je mag in Nederland geen wapen hebben"
       ],
       "hint": "Place first causes inversion (mag je); the infinitive “hebben” is last.",
+      "en": "In the Netherlands you are not allowed to have a weapon.",
       "covers": []
     },
     {
@@ -961,6 +1016,7 @@
       "answer": "het bestuur van de school heeft een brief gestuurd",
       "alternatives": [],
       "hint": "Perfect tense: “heeft … gestuurd”.",
+      "en": "The school board has sent a letter.",
       "covers": []
     },
     {
@@ -976,6 +1032,7 @@
       "answer": "vrijwilligerswerk is goed voor de maatschappij",
       "alternatives": [],
       "hint": "Subject – verb – rest.",
+      "en": "Volunteering is good for society.",
       "covers": []
     },
     {
@@ -992,6 +1049,7 @@
       "answer": "ik doe de gordijnen dicht, want het licht doet pijn aan mijn ogen",
       "alternatives": [],
       "hint": "Separable “dichtdoen”: “dicht” goes after the object. After “want” normal order.",
+      "en": "I close the curtains, because the light hurts my eyes.",
       "covers": [
         "dichtdoen"
       ]
@@ -1009,6 +1067,7 @@
       "answer": "ik kan niet opruimen, want de stofzuiger is kapot",
       "alternatives": [],
       "hint": "After a modal (kan) the separable verb stays together as an infinitive: opruimen.",
+      "en": "I can't tidy up, because the vacuum cleaner is broken.",
       "covers": []
     },
     {
@@ -1025,6 +1084,7 @@
       "answer": "gooi oude medicijnen niet weg, maar breng ze naar de apotheek",
       "alternatives": [],
       "hint": "Imperative: the verb comes first. Separable “weggooien”: “weg” goes to the end.",
+      "en": "Don't throw away old medicines, but take them to the pharmacy.",
       "covers": [
         "weggooien"
       ]
@@ -1046,6 +1106,7 @@
         "ik zet op dinsdagavond de vuilniszak buiten"
       ],
       "hint": "TMP: time (op dinsdagavond) before place (buiten).",
+      "en": "I put the rubbish bag outside on Tuesday evening.",
       "covers": []
     },
     {
@@ -1062,6 +1123,7 @@
       "answer": "hij heeft de spiegel aan de muur opgehangen",
       "alternatives": [],
       "hint": "Perfect of a separable verb: op + ge + hangen = opgehangen, at the end.",
+      "en": "He hung the mirror on the wall.",
       "covers": []
     },
     {
@@ -1077,6 +1139,7 @@
       "answer": "het regent binnen, want het dak is kapot",
       "alternatives": [],
       "hint": "After “want” you keep main-clause order: het dak is kapot.",
+      "en": "It's raining indoors, because the roof is broken.",
       "covers": []
     },
     {
@@ -1092,6 +1155,7 @@
       "answer": "het kleed in de woonkamer is heel oud",
       "alternatives": [],
       "hint": "The subject “het kleed in de woonkamer” comes before the verb.",
+      "en": "The rug in the living room is very old.",
       "covers": []
     },
     {
@@ -1108,6 +1172,7 @@
       "answer": "in de wijkkrant staat een verhaal over de nieuwe huisarts",
       "alternatives": [],
       "hint": "Place first, then the verb (staat), then the subject: inversion.",
+      "en": "There is a story about the new GP in the neighbourhood newspaper.",
       "covers": []
     },
     {
@@ -1125,6 +1190,7 @@
         "mijn mama woont ver weg, dus mis ik haar"
       ],
       "hint": "After “dus” you may use normal order (ik mis) or inversion (mis ik).",
+      "en": "My mum lives far away, so I miss her.",
       "covers": [
         "ver weg"
       ]
@@ -1143,6 +1209,7 @@
       "answer": "je moet snel instappen, want de bus vertrekt meteen",
       "alternatives": [],
       "hint": "After a modal the separable verb stays whole at the end: instappen.",
+      "en": "You have to get on quickly, because the bus is leaving right away.",
       "covers": []
     },
     {
@@ -1160,6 +1227,7 @@
         "je mag met deze medicijnen geen auto rijden"
       ],
       "hint": "Inversion after “met deze medicijnen”; the infinitive “rijden” is last.",
+      "en": "You are not allowed to drive with these medicines.",
       "covers": []
     },
     {
@@ -1176,6 +1244,7 @@
       "answer": "mijn dochter is van een paard gevallen",
       "alternatives": [],
       "hint": "“vallen” takes “zijn” in the perfect: is gevallen.",
+      "en": "My daughter fell off a horse.",
       "covers": []
     },
     {
@@ -1195,6 +1264,7 @@
         "zondag hebben we een lange tocht door het bos gemaakt"
       ],
       "hint": "Perfect tense; time (zondag) comes early or first with inversion.",
+      "en": "On Sunday we went on a long walk through the woods.",
       "covers": []
     },
     {
@@ -1212,6 +1282,7 @@
         "als ik zwanger ben, mag ik vliegen?"
       ],
       "hint": "Yes/no question starts with the verb; “als” sends “ben” to the end.",
+      "en": "Am I allowed to fly if I'm pregnant?",
       "covers": []
     },
     {
@@ -1229,6 +1300,7 @@
         "ik droom sinds het ongeluk vaak slecht"
       ],
       "hint": "Time phrase first causes inversion: droom ik.",
+      "en": "Since the accident I often have bad dreams.",
       "covers": []
     },
     {
@@ -1247,6 +1319,7 @@
         "hij had na de dood van zijn vader veel verdriet"
       ],
       "hint": "A long time phrase at the start still causes inversion: had hij.",
+      "en": "After his father's death he was very sad.",
       "covers": []
     },
     {
@@ -1262,6 +1335,7 @@
       "answer": "na een ongeluk heb je vaak sterke emoties",
       "alternatives": [],
       "hint": "Inversion after the time phrase; with inversion “je” drops the -t: heb je.",
+      "en": "After an accident you often have strong emotions.",
       "covers": []
     },
     {
@@ -1278,6 +1352,7 @@
       "answer": "de verpleegkundige helpt mij altijd met een glimlach",
       "alternatives": [],
       "hint": "Object pronoun (mij) right after the verb, then time (altijd), then manner.",
+      "en": "The nurse always helps me with a smile.",
       "covers": []
     },
     {
@@ -1296,6 +1371,7 @@
         "in het ziekenhuis werk ik met veel plezier"
       ],
       "hint": "TMP: manner (met veel plezier) before place (in het ziekenhuis).",
+      "en": "I really enjoy working in the hospital.",
       "covers": []
     },
     {
@@ -1311,6 +1387,7 @@
       "answer": "het bezoek van mijn vrienden was heel gezellig",
       "alternatives": [],
       "hint": "The whole subject comes before the verb “was”.",
+      "en": "My friends' visit was very enjoyable.",
       "covers": []
     },
     {
@@ -1326,6 +1403,7 @@
       "answer": "de nieuwe huisarts maakt een goede indruk",
       "alternatives": [],
       "hint": "“een goede indruk maken” = to make a good impression.",
+      "en": "The new GP makes a good impression.",
       "covers": []
     },
     {
@@ -1341,6 +1419,7 @@
       "answer": "mijn baas heeft veel begrip voor mijn omstandigheden",
       "alternatives": [],
       "hint": "Subject – verb – object – “voor …”.",
+      "en": "My boss is very understanding about my circumstances.",
       "covers": []
     },
     {
@@ -1359,6 +1438,7 @@
         "u mag in het ziekenhuis absoluut niet roken"
       ],
       "hint": "Modal (mag) in 2nd place, infinitive (roken) later; place first causes inversion.",
+      "en": "You are absolutely not allowed to smoke in the hospital.",
       "covers": []
     },
     {
@@ -1374,6 +1454,7 @@
       "answer": "de uitslag van de test is positief",
       "alternatives": [],
       "hint": "Subject – verb – adjective.",
+      "en": "The test result is positive.",
       "covers": []
     },
     {
@@ -1389,6 +1470,7 @@
       "answer": "deze medicijnen hebben nog geen effect",
       "alternatives": [],
       "hint": "Plural subject, plural verb: hebben.",
+      "en": "These medicines are not having any effect yet.",
       "covers": []
     },
     {
@@ -1404,6 +1486,7 @@
       "answer": "stress heeft veel invloed op je gezondheid",
       "alternatives": [],
       "hint": "“invloed hebben op” = to have influence on.",
+      "en": "Stress has a big influence on your health.",
       "covers": []
     },
     {
@@ -1419,6 +1502,7 @@
       "answer": "gezond voedsel is van groot belang voor kinderen",
       "alternatives": [],
       "hint": "“van groot belang zijn” = to be very important.",
+      "en": "Healthy food is very important for children.",
       "covers": []
     },
     {
@@ -1435,6 +1519,7 @@
       "answer": "er is geen noodzaak om naar het ziekenhuis te gaan",
       "alternatives": [],
       "hint": "“om … te + infinitive”: the infinitive closes the sentence.",
+      "en": "There is no need to go to the hospital.",
       "covers": []
     },
     {
@@ -1450,6 +1535,7 @@
       "answer": "mijn opa heeft moeilijkheden met lopen",
       "alternatives": [],
       "hint": "Subject – verb – object – “met …”.",
+      "en": "My grandad has difficulty walking.",
       "covers": []
     },
     {
@@ -1465,6 +1551,7 @@
       "answer": "het buurthuis heeft veel activiteiten voor ouderen",
       "alternatives": [],
       "hint": "Subject – verb – object.",
+      "en": "The community centre has lots of activities for older people.",
       "covers": []
     },
     {
@@ -1481,6 +1568,7 @@
       "answer": "neem uw pasje mee, anders kunt u niet betalen",
       "alternatives": [],
       "hint": "Imperative first; “anders” (otherwise) causes inversion: kunt u.",
+      "en": "Bring your card, otherwise you can't pay.",
       "covers": [
         "meenemen"
       ]
@@ -1499,6 +1587,7 @@
       "answer": "de conclusie van de dokter is dat ik rust nodig heb",
       "alternatives": [],
       "hint": "“dat” sends the verb (heb) to the very end.",
+      "en": "The doctor's conclusion is that I need rest.",
       "covers": []
     },
     {
@@ -1514,6 +1603,7 @@
       "answer": "het Rode Kruis helpt mensen over de hele wereld",
       "alternatives": [],
       "hint": "Subject – verb – object – place.",
+      "en": "The Red Cross helps people all over the world.",
       "covers": []
     },
     {
@@ -1531,6 +1621,7 @@
         "mag ik even uw tong zien?"
       ],
       "hint": "Polite question: modal first, infinitive (zien) at the end.",
+      "en": "May I see your tongue for a moment?",
       "covers": []
     },
     {
@@ -1547,6 +1638,7 @@
       "answer": "ik heb bijna geen stem meer, want ik ben verkouden",
       "alternatives": [],
       "hint": "After “want” the order stays normal: ik ben.",
+      "en": "I've almost lost my voice, because I have a cold.",
       "covers": []
     },
     {
@@ -1564,6 +1656,7 @@
         "je moet in het ziekenhuis stil zijn"
       ],
       "hint": "Place first causes inversion; the infinitive “zijn” is last.",
+      "en": "You have to be quiet in the hospital.",
       "covers": []
     },
     {
@@ -1580,6 +1673,7 @@
       "answer": "de dief zat achter het stuur van een grijze auto",
       "alternatives": [],
       "hint": "Past tense verb “zat” in 2nd place.",
+      "en": "The thief was behind the wheel of a grey car.",
       "covers": []
     },
     {
@@ -1598,6 +1692,7 @@
         "in de wachtkamer is voor iedereen genoeg ruimte"
       ],
       "hint": "Place first, then the verb, then the subject (genoeg ruimte).",
+      "en": "There is enough room for everyone in the waiting room.",
       "covers": []
     },
     {
@@ -1615,6 +1710,7 @@
         "mijn bloeddruk is volgens de huisarts te laag"
       ],
       "hint": "Inversion after “volgens de huisarts”: is mijn bloeddruk.",
+      "en": "According to the GP, my blood pressure is too low.",
       "covers": []
     },
     {
@@ -1630,6 +1726,7 @@
       "answer": "de afspraak is aan het eind van de middag",
       "alternatives": [],
       "hint": "Subject – verb – time.",
+      "en": "The appointment is at the end of the afternoon.",
       "covers": []
     },
     {
@@ -1646,6 +1743,7 @@
       "answer": "ik heb nog steeds hetzelfde probleem met mijn rug",
       "alternatives": [],
       "hint": "Verb in 2nd place; “nog steeds” comes before the object.",
+      "en": "I still have the same problem with my back.",
       "covers": []
     },
     {
@@ -1663,6 +1761,7 @@
         "gisteren vochten twee mannen voor de supermarkt"
       ],
       "hint": "TMP: time (gisteren) before place (voor de supermarkt).",
+      "en": "Two men were fighting in front of the supermarket yesterday.",
       "covers": []
     },
     {
@@ -1678,6 +1777,7 @@
       "answer": "zijn team heeft de wedstrijd gewonnen",
       "alternatives": [],
       "hint": "Perfect tense: “heeft … gewonnen”.",
+      "en": "His team won the match.",
       "covers": []
     },
     {
@@ -1695,6 +1795,7 @@
         "pas volgende week heeft de huisarts tijd"
       ],
       "hint": "Time before the object; time first causes inversion.",
+      "en": "The GP doesn't have time until next week.",
       "covers": []
     },
     {
@@ -1711,6 +1812,7 @@
       "answer": "we zouden graag een afspraak willen maken",
       "alternatives": [],
       "hint": "Polite form: “zouden” in 2nd place, both infinitives at the end.",
+      "en": "We would like to make an appointment.",
       "covers": []
     },
     {
@@ -1728,6 +1830,7 @@
         "de politie heeft uiteindelijk mijn tas gevonden"
       ],
       "hint": "“uiteindelijk” first causes inversion; the participle is last.",
+      "en": "In the end the police found my bag.",
       "covers": []
     },
     {
@@ -1743,6 +1846,7 @@
       "answer": "neem deze tabletten na de maaltijd",
       "alternatives": [],
       "hint": "Imperative: the verb comes first.",
+      "en": "Take these tablets after the meal.",
       "covers": []
     },
     {
@@ -1758,6 +1862,7 @@
       "answer": "u kunt bij de kassa afrekenen",
       "alternatives": [],
       "hint": "After a modal the separable verb stays whole at the end: afrekenen.",
+      "en": "You can pay at the till.",
       "covers": []
     },
     {
@@ -1773,6 +1878,7 @@
       "answer": "bedankt voor uw hulp bij de aangifte",
       "alternatives": [],
       "hint": "“bedankt voor …” = thanks for …",
+      "en": "Thank you for your help with the police report.",
       "covers": []
     },
     {
@@ -1788,6 +1894,7 @@
       "answer": "mag ik mij even voorstellen?",
       "alternatives": [],
       "hint": "Question with a modal: the infinitive “voorstellen” goes to the end.",
+      "en": "May I introduce myself?",
       "covers": []
     },
     {
@@ -1803,6 +1910,7 @@
       "answer": "de zorg in dit ziekenhuis is uitstekend",
       "alternatives": [],
       "hint": "The whole subject comes before the verb.",
+      "en": "The care in this hospital is excellent.",
       "covers": []
     },
     {
@@ -1820,6 +1928,7 @@
         "iemand heeft tot mijn verbazing mijn tas teruggebracht"
       ],
       "hint": "Inversion after “tot mijn verbazing”; participle at the end.",
+      "en": "To my surprise, someone brought my bag back.",
       "covers": []
     },
     {
@@ -1837,6 +1946,7 @@
         "op zondag zijn vrijwel alle apotheken dicht"
       ],
       "hint": "Subject first, or time first with inversion.",
+      "en": "Almost all pharmacies are closed on Sunday.",
       "covers": []
     },
     {
@@ -1852,6 +1962,7 @@
       "answer": "ik kan niet komen, ik ben namelijk ziek",
       "alternatives": [],
       "hint": "“namelijk” (you see) comes after the verb, never at the start.",
+      "en": "I can't come; I'm ill, you see.",
       "covers": []
     },
     {
@@ -1868,6 +1979,7 @@
       "answer": "u moet gezond eten, zoals groente en fruit",
       "alternatives": [],
       "hint": "Modal in 2nd place, infinitive (eten) at the end of the clause.",
+      "en": "You should eat healthily, such as vegetables and fruit.",
       "covers": []
     },
     {
@@ -1883,6 +1995,7 @@
       "answer": "dat is nu eenmaal zo",
       "alternatives": [],
       "hint": "Verb in 2nd place; “nu eenmaal” sits between the verb and “zo”.",
+      "en": "That's just the way it is.",
       "covers": []
     },
     {
@@ -1898,6 +2011,7 @@
       "answer": "ik blijf thuis, ik ben tenslotte ziek",
       "alternatives": [],
       "hint": "Adverbs like “tenslotte” come right after the verb.",
+      "en": "I'm staying at home; after all, I'm ill.",
       "covers": []
     },
     {
@@ -1916,6 +2030,7 @@
         "de apotheek is echter op zondag gesloten"
       ],
       "hint": "Time first causes inversion; “echter” (however) comes after the verb/subject.",
+      "en": "On Sunday, however, the pharmacy is closed.",
       "covers": []
     },
     {
@@ -1934,6 +2049,7 @@
         "ik ben in tegenstelling tot mijn broer bijna nooit ziek"
       ],
       "hint": "A long phrase at the start still causes inversion: ben ik.",
+      "en": "Unlike my brother, I am hardly ever ill.",
       "covers": []
     },
     {
@@ -1949,6 +2065,7 @@
       "answer": "wat zijn de kenmerken van griep?",
       "alternatives": [],
       "hint": "W-question: question word, then the verb.",
+      "en": "What are the symptoms of flu?",
       "covers": []
     },
     {
@@ -1964,6 +2081,7 @@
       "answer": "dat meen je niet!",
       "alternatives": [],
       "hint": "Inversion: object “dat” first, then verb, then subject; “meen je” drops the -t.",
+      "en": "You can't be serious!",
       "covers": []
     },
     {
@@ -1979,6 +2097,7 @@
       "answer": "dit medicijn bevat geen suiker",
       "alternatives": [],
       "hint": "Subject – verb – object.",
+      "en": "This medicine does not contain any sugar.",
       "covers": []
     },
     {
@@ -1996,6 +2115,7 @@
         "vanavond eten we een traditionele maaltijd"
       ],
       "hint": "Time before the object; time first causes inversion.",
+      "en": "We are having a traditional meal tonight.",
       "covers": []
     },
     {
@@ -2012,6 +2132,7 @@
       "answer": "de aanvraag bij de IND is een lang proces",
       "alternatives": [],
       "hint": "The whole subject “de aanvraag bij de IND” comes before the verb.",
+      "en": "The application to the IND is a long process.",
       "covers": []
     },
     {
@@ -2029,6 +2150,7 @@
         "op school is Nederlands mijn favoriete vak"
       ],
       "hint": "Subject – verb – rest; place first causes inversion.",
+      "en": "Dutch is my favourite subject at school.",
       "covers": []
     },
     {
@@ -2045,6 +2167,7 @@
       "answer": "de chirurg heeft een plaat in mijn been gezet",
       "alternatives": [],
       "hint": "Perfect tense: “heeft … gezet”, object before place.",
+      "en": "The surgeon put a plate in my leg.",
       "covers": []
     },
     {
@@ -2060,6 +2183,7 @@
       "answer": "schrijf uw naam bovenaan het blad",
       "alternatives": [],
       "hint": "Imperative: the verb comes first, then object, then place.",
+      "en": "Write your name at the top of the sheet.",
       "covers": []
     },
     {
@@ -2075,6 +2199,7 @@
       "answer": "kan ik jou morgen bellen?",
       "alternatives": [],
       "hint": "Yes/no question: modal first; object pronoun before time; infinitive last.",
+      "en": "Can I call you tomorrow?",
       "covers": []
     },
     {
@@ -2090,6 +2215,7 @@
       "answer": "wat voor soort pijn heeft u?",
       "alternatives": [],
       "hint": "W-question: the question phrase “wat voor soort pijn” comes first, then the verb, then the subject.",
+      "en": "What kind of pain do you have?",
       "covers": []
     }
   ],

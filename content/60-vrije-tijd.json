@@ -17,6 +17,7 @@
         "ik ga op zondag met mijn familie naar het bos"
       ],
       "hint": "Time first (op zondag) causes inversion: verb before subject. Then Manier (met mijn familie) before Plaats (naar het bos).",
+      "en": "On Sunday I go to the woods with my family.",
       "covers": []
     },
     {
@@ -35,6 +36,7 @@
         "volgend jaar vieren mijn ouders hun gouden bruiloft"
       ],
       "hint": "Verb in 2nd place; the time phrase (volgend jaar) comes before the object.",
+      "en": "Next year my parents are celebrating their golden wedding anniversary.",
       "covers": []
     },
     {
@@ -53,6 +55,7 @@
         "tien vrienden komen op mijn verjaardag langs"
       ],
       "hint": "Separable verb langskomen: komen goes in 2nd place, the particle langs goes to the end.",
+      "en": "Ten friends are coming round on my birthday.",
       "covers": [
         "langskomen"
       ]
@@ -72,6 +75,7 @@
       "answer": "kun je morgen een fles wijn meebrengen?",
       "alternatives": [],
       "hint": "Yes/no question: the modal (kun) comes first, the infinitive (meebrengen) goes to the end.",
+      "en": "Can you bring a bottle of wine tomorrow?",
       "covers": []
     },
     {
@@ -88,6 +92,7 @@
       "answer": "ik reserveer een tafel voor vier personen",
       "alternatives": [],
       "hint": "Subject + verb, then the object (een tafel) and the extra information (voor vier personen).",
+      "en": "I'm booking a table for four people.",
       "covers": []
     },
     {
@@ -108,6 +113,7 @@
         "wij hebben vorige week een leuke reis naar Spanje gemaakt"
       ],
       "hint": "Perfect tense: hebben in 2nd place, the past participle (gemaakt) at the end. Time first causes inversion.",
+      "en": "Last week we went on a nice trip to Spain.",
       "covers": []
     },
     {
@@ -129,6 +135,7 @@
         "daar is het in de zomer warm en droog"
       ],
       "hint": "Time first (in de zomer) causes inversion: is before het.",
+      "en": "In summer it is warm and dry there.",
       "covers": []
     },
     {
@@ -149,6 +156,7 @@
         "buiten is het in de herfst nat en koel"
       ],
       "hint": "Time first causes inversion (is het). The adjectives (nat en koel) come at the end.",
+      "en": "In autumn it is wet and cool outside.",
       "covers": []
     },
     {
@@ -168,6 +176,7 @@
         "ik neem voor de zekerheid een paraplu mee"
       ],
       "hint": "Separable verb meenemen: neem in 2nd place, mee at the very end.",
+      "en": "I'm taking an umbrella just in case.",
       "covers": [
         "meenemen"
       ]
@@ -189,6 +198,7 @@
         "we kunnen vanavond de maan en de sterren zien"
       ],
       "hint": "Modal verb (kunnen) in 2nd place, the infinitive (zien) at the end.",
+      "en": "Tonight we can see the moon and the stars.",
       "covers": []
     },
     {
@@ -209,6 +219,7 @@
         "ik geef mijn moeder voor haar verjaardag bloemen"
       ],
       "hint": "Inversion after the first phrase; the person (mijn moeder) comes before the thing (bloemen).",
+      "en": "I'm giving my mother flowers for her birthday.",
       "covers": []
     },
     {
@@ -227,6 +238,7 @@
         "over een smal pad lopen we naar de top van de heuvel"
       ],
       "hint": "Manier (over een smal pad) before Plaats/direction (naar de top van de heuvel).",
+      "en": "We walk along a narrow path to the top of the hill.",
       "covers": []
     },
     {
@@ -246,6 +258,7 @@
         "we kijken op zaterdag met de hele familie naar het voetbal"
       ],
       "hint": "Time first causes inversion. “kijken naar” = to watch; the naar-part goes to the end.",
+      "en": "On Saturday we watch the football with the whole family.",
       "covers": []
     },
     {
@@ -265,6 +278,7 @@
         "al tien jaar ken ik hem"
       ],
       "hint": "Verb in 2nd place; a short object pronoun (hem) comes right after the verb.",
+      "en": "I have known him for ten years.",
       "covers": []
     },
     {
@@ -281,6 +295,7 @@
       "answer": "weet jij hoe laat het feest begint?",
       "alternatives": [],
       "hint": "Yes/no question with verb first. In the indirect question (hoe laat …) the verb goes to the end.",
+      "en": "Do you know what time the party starts?",
       "covers": []
     },
     {
@@ -301,6 +316,7 @@
         "ik ontmoet mijn vrienden zaterdag in het café"
       ],
       "hint": "Time first causes inversion (ontmoet ik); Plaats (in het café) at the end.",
+      "en": "On Saturday I'm meeting my friends in the café.",
       "covers": []
     },
     {
@@ -319,6 +335,7 @@
         "elk jaar organiseert mijn bedrijf een groot feest"
       ],
       "hint": "Verb in 2nd place; time (elk jaar) before the object.",
+      "en": "My company organises a big party every year.",
       "covers": []
     },
     {
@@ -340,6 +357,7 @@
         "zaterdagavond gaan we in de stad uit"
       ],
       "hint": "Separable verb uitgaan: gaan in 2nd place, uit near the end. Time first causes inversion.",
+      "en": "On Saturday evening we're going out in town.",
       "covers": [
         "uitgaan"
       ]
@@ -361,6 +379,7 @@
         "kun je even je adres en postcode opschrijven?"
       ],
       "hint": "Question with the modal first; the infinitive (opschrijven) goes to the end.",
+      "en": "Can you write down your address and postcode?",
       "covers": []
     },
     {
@@ -378,6 +397,7 @@
       "answer": "op het formulier vul je je burgerlijke staat in",
       "alternatives": [],
       "hint": "Separable verb invullen: vul in 2nd place, in at the end. After inversion jij/je loses the -t: vul je.",
+      "en": "On the form you fill in your marital status.",
       "covers": [
         "invullen"
       ]
@@ -398,6 +418,7 @@
         "sinds een jaar is mijn zoon lid van de zwemclub"
       ],
       "hint": "Verb in 2nd place; time (sinds een jaar) before the rest.",
+      "en": "My son has been a member of the swimming club for a year.",
       "covers": []
     },
     {
@@ -416,6 +437,7 @@
         "ik sport op mijn leeftijd niet meer zoveel"
       ],
       "hint": "A phrase first (op mijn leeftijd) causes inversion: sport ik.",
+      "en": "At my age I don't do as much sport any more.",
       "covers": []
     },
     {
@@ -435,6 +457,7 @@
         "ik vind in het bos rust en stilte"
       ],
       "hint": "Place first causes inversion: vind ik.",
+      "en": "In the woods I find peace and quiet.",
       "covers": []
     },
     {
@@ -451,6 +474,7 @@
       "answer": "speelt jouw zoon ook een instrument?",
       "alternatives": [],
       "hint": "Yes/no question: the verb comes first, then the subject.",
+      "en": "Does your son play an instrument too?",
       "covers": []
     },
     {
@@ -471,6 +495,7 @@
         "omdat de vakantie voorbij is, zijn de kinderen verdrietig"
       ],
       "hint": "omdat sends the verb (is) to the end of its clause. If the omdat-clause comes first, the main verb follows directly: zijn de kinderen.",
+      "en": "The children are sad because the holiday is over.",
       "covers": []
     },
     {
@@ -490,6 +515,7 @@
         "we geven elkaar bij het afscheid een hand"
       ],
       "hint": "A phrase first causes inversion (geven we). “elkaar een hand geven” = to shake hands.",
+      "en": "When we say goodbye, we shake hands.",
       "covers": []
     },
     {
@@ -508,6 +534,7 @@
         "boven slaapt de baby in zijn eigen kamer"
       ],
       "hint": "Verb in 2nd place; the short place word (boven) comes before the longer place phrase.",
+      "en": "The baby sleeps upstairs in his own room.",
       "covers": []
     },
     {
@@ -527,6 +554,7 @@
         "ik heb na een lange reis veel slaap nodig"
       ],
       "hint": "Time first causes inversion. “nodig hebben”: nodig goes to the end.",
+      "en": "After a long journey I need a lot of sleep.",
       "covers": []
     },
     {
@@ -546,6 +574,7 @@
         "we betalen in het restaurant de rekening samen"
       ],
       "hint": "Place first causes inversion: betalen we.",
+      "en": "In the restaurant we pay the bill together.",
       "covers": []
     },
     {
@@ -562,6 +591,7 @@
       "answer": "ik vind het fijn om elke dag te bewegen",
       "alternatives": [],
       "hint": "“om … te + infinitive”: the infinitive (te bewegen) comes at the end.",
+      "en": "I like to exercise every day.",
       "covers": []
     },
     {
@@ -581,6 +611,7 @@
         "we krijgen in de zomer veel bezoek van familie"
       ],
       "hint": "Time first causes inversion: krijgen we.",
+      "en": "In summer we get lots of visits from family.",
       "covers": []
     },
     {
@@ -597,6 +628,7 @@
       "answer": "ik heb veel hobby's, bijvoorbeeld zwemmen en fietsen",
       "alternatives": [],
       "hint": "Main clause first; bijvoorbeeld introduces the examples after the comma.",
+      "en": "I have lots of hobbies, for example swimming and cycling.",
       "covers": []
     },
     {
@@ -615,6 +647,7 @@
         "de bladeren van de bomen worden in de herfst bruin"
       ],
       "hint": "Time first causes inversion: the verb (worden) comes before the long subject.",
+      "en": "In autumn the leaves on the trees turn brown.",
       "covers": []
     },
     {
@@ -633,6 +666,7 @@
         "de lucht is vandaag helemaal blauw"
       ],
       "hint": "Time first (vandaag) causes inversion: is de lucht.",
+      "en": "Today the sky is completely blue.",
       "covers": []
     },
     {
@@ -649,6 +683,7 @@
       "answer": "de chef maakt een eenvoudig gerecht met vis",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the object.",
+      "en": "The chef makes a simple fish dish.",
       "covers": []
     },
     {
@@ -668,6 +703,7 @@
         "we gaan eerst naar het strand en dan eten we daar een ijsje"
       ],
       "hint": "eerst and dan at the start cause inversion: gaan we, eten we.",
+      "en": "First we go to the beach and then we have an ice cream there.",
       "covers": []
     },
     {
@@ -683,6 +719,7 @@
       "answer": "een deel van mijn familie woont in Marokko",
       "alternatives": [],
       "hint": "The whole subject (een deel van mijn familie) comes first, then the verb.",
+      "en": "Part of my family lives in Morocco.",
       "covers": []
     },
     {
@@ -701,6 +738,7 @@
         "we gaan het grootste gedeelte van de reis met de trein"
       ],
       "hint": "A time/extent phrase first causes inversion: gaan we.",
+      "en": "We are doing most of the journey by train.",
       "covers": []
     },
     {
@@ -719,6 +757,7 @@
         "mijn man heeft op zondag een late dienst"
       ],
       "hint": "Time first causes inversion: heeft mijn man.",
+      "en": "On Sunday my husband has a late shift.",
       "covers": []
     },
     {
@@ -736,6 +775,7 @@
       "answer": "we vieren het suikerfeest, want het is een belangrijk feest in onze godsdienst",
       "alternatives": [],
       "hint": "want does not change the word order: after want the verb stays in 2nd place (het is …).",
+      "en": "We celebrate Eid al-Fitr, because it is an important festival in our religion.",
       "covers": []
     },
     {
@@ -755,6 +795,7 @@
         "ik ga na het werk direct naar de sportschool"
       ],
       "hint": "Time first causes inversion; direct comes before the place (naar de sportschool).",
+      "en": "After work I go straight to the gym.",
       "covers": []
     },
     {
@@ -771,6 +812,7 @@
       "answer": "mijn doel is om elke week te sporten",
       "alternatives": [],
       "hint": "“om … te + infinitive”: te sporten comes at the end.",
+      "en": "My goal is to do sport every week.",
       "covers": []
     },
     {
@@ -788,6 +830,7 @@
         "in een grote doos liggen de cadeaus"
       ],
       "hint": "Subject, verb in 2nd place, then the place.",
+      "en": "The presents are in a big box.",
       "covers": []
     },
     {
@@ -806,6 +849,7 @@
         "het is eindelijk weer zomer"
       ],
       "hint": "An adverb first (eindelijk) causes inversion: is het.",
+      "en": "At last it's summer again.",
       "covers": []
     },
     {
@@ -821,6 +865,7 @@
       "answer": "de bruiloft van mijn zus was heel emotioneel",
       "alternatives": [],
       "hint": "The long subject comes first, then the verb (was) in 2nd place.",
+      "en": "My sister's wedding was very emotional.",
       "covers": []
     },
     {
@@ -840,6 +885,7 @@
         "het is in dit gebied verboden om te fietsen"
       ],
       "hint": "Place first causes inversion (is het). “om te + infinitive” at the end.",
+      "en": "Cycling is forbidden in this area.",
       "covers": []
     },
     {
@@ -856,6 +902,7 @@
       "answer": "een verjaardag is een goede gelegenheid om de familie te zien",
       "alternatives": [],
       "hint": "“om … te + infinitive”: te zien comes at the end.",
+      "en": "A birthday is a good opportunity to see the family.",
       "covers": []
     },
     {
@@ -874,6 +921,7 @@
         "met gemak loopt hij tienduizend stappen per dag"
       ],
       "hint": "Verb in 2nd place; the manner (met gemak) before the object.",
+      "en": "He easily walks ten thousand steps a day.",
       "covers": []
     },
     {
@@ -894,6 +942,7 @@
         "ik kom zaterdag in elk geval naar je feest"
       ],
       "hint": "Verb in 2nd place; time (zaterdag) before place (naar je feest).",
+      "en": "I'm coming to your party on Saturday in any case.",
       "covers": []
     },
     {
@@ -909,6 +958,7 @@
       "answer": "de vakantie in Italië was geweldig",
       "alternatives": [],
       "hint": "The subject (de vakantie in Italië) first, then the verb, then the adjective.",
+      "en": "The holiday in Italy was fantastic.",
       "covers": []
     },
     {
@@ -924,6 +974,7 @@
       "answer": "de zon schijnt in mijn gezicht",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place, then the place.",
+      "en": "The sun is shining in my face.",
       "covers": []
     },
     {
@@ -943,6 +994,7 @@
         "mijn arm doet na het tennis pijn"
       ],
       "hint": "Time first causes inversion. In “pijn doen”, pijn goes to the end.",
+      "en": "After tennis my arm hurts.",
       "covers": []
     },
     {
@@ -963,6 +1015,7 @@
         "hij heeft bij het voetbal zijn vinger gebroken"
       ],
       "hint": "Perfect tense: heeft in 2nd place, gebroken at the end of the main part.",
+      "en": "He broke his finger playing football.",
       "covers": []
     },
     {
@@ -978,6 +1031,7 @@
       "answer": "de tandarts kijkt in mijn mond",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place, then the place.",
+      "en": "The dentist looks in my mouth.",
       "covers": []
     },
     {
@@ -993,6 +1047,7 @@
       "answer": "het weer is gunstig voor een fietstocht",
       "alternatives": [],
       "hint": "Subject + verb, then the adjective and its phrase.",
+      "en": "The weather is good for a bike ride.",
       "covers": []
     },
     {
@@ -1011,6 +1066,7 @@
         "waar gaan jullie heen in de vakantie?"
       ],
       "hint": "W-question: question word, verb, subject. “waar … heen” = where to; heen goes to the end.",
+      "en": "Where are you going on holiday?",
       "covers": []
     },
     {
@@ -1026,6 +1082,7 @@
       "answer": "het café is op de hoek van de straat",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the place.",
+      "en": "The café is on the corner of the street.",
       "covers": []
     },
     {
@@ -1045,6 +1102,7 @@
         "de heuvels in deze streek zijn erg hoog"
       ],
       "hint": "Place first causes inversion: zijn de heuvels.",
+      "en": "In this region the hills are very high.",
       "covers": []
     },
     {
@@ -1064,6 +1122,7 @@
         "we slapen in de vakantie in een kleine hut in het bos"
       ],
       "hint": "Time first causes inversion; Tijd before Plaats (TMP).",
+      "en": "On holiday we sleep in a small cabin in the woods.",
       "covers": []
     },
     {
@@ -1079,6 +1138,7 @@
       "answer": "op de website staat informatie over het festival",
       "alternatives": [],
       "hint": "Place first causes inversion: the verb (staat) before the subject (informatie).",
+      "en": "There is information about the festival on the website.",
       "covers": []
     },
     {
@@ -1098,6 +1158,7 @@
         "ik speelde in mijn jeugd elke dag buiten"
       ],
       "hint": "Time first causes inversion: speelde ik. Tijd (elke dag) before Plaats (buiten).",
+      "en": "In my childhood I played outside every day.",
       "covers": []
     },
     {
@@ -1114,6 +1175,7 @@
       "answer": "is dit de juiste trein naar Utrecht?",
       "alternatives": [],
       "hint": "Yes/no question: the verb (is) comes first.",
+      "en": "Is this the right train to Utrecht?",
       "covers": []
     },
     {
@@ -1129,6 +1191,7 @@
       "answer": "mijn zus heeft een vrolijk karakter",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place, then the object.",
+      "en": "My sister has a cheerful personality.",
       "covers": []
     },
     {
@@ -1148,6 +1211,7 @@
         "er zijn op zaterdag veel klanten in de winkel"
       ],
       "hint": "Time first causes inversion; “er zijn” = there are.",
+      "en": "On Saturday there are lots of customers in the shop.",
       "covers": []
     },
     {
@@ -1167,6 +1231,7 @@
         "de koningin heeft vorig jaar onze stad bezocht"
       ],
       "hint": "Perfect tense: heeft in 2nd place, bezocht at the end. Time first causes inversion.",
+      "en": "Last year the Queen visited our town.",
       "covers": []
     },
     {
@@ -1185,6 +1250,7 @@
         "ik heb na de griep weinig kracht"
       ],
       "hint": "Time first causes inversion: heb ik.",
+      "en": "After the flu I don't have much strength.",
       "covers": []
     },
     {
@@ -1203,6 +1269,7 @@
         "onder leiding van een gids wandelen we door het bos"
       ],
       "hint": "Manier (onder leiding van een gids) before Plaats (door het bos).",
+      "en": "We walk through the woods led by a guide.",
       "covers": []
     },
     {
@@ -1221,6 +1288,7 @@
         "u gaat bij de kerk naar links"
       ],
       "hint": "A place first causes inversion: gaat u.",
+      "en": "At the church, turn left.",
       "covers": []
     },
     {
@@ -1236,6 +1304,7 @@
       "answer": "de machine op het station is kapot",
       "alternatives": [],
       "hint": "The subject with its place (de machine op het station) first, then the verb.",
+      "en": "The machine at the station is broken.",
       "covers": []
     },
     {
@@ -1251,6 +1320,7 @@
       "answer": "wat is jouw mening over het feest?",
       "alternatives": [],
       "hint": "W-question: question word (wat), then the verb, then the subject.",
+      "en": "What do you think of the party?",
       "covers": []
     },
     {
@@ -1266,6 +1336,7 @@
       "answer": "het zwembad is vijfentwintig meter lang",
       "alternatives": [],
       "hint": "Subject, verb, then the measurement (vijfentwintig meter lang).",
+      "en": "The swimming pool is twenty-five metres long.",
       "covers": []
     },
     {
@@ -1282,6 +1353,7 @@
       "answer": "ik reis met het openbaar vervoer, want dat is beter voor het milieu",
       "alternatives": [],
       "hint": "want keeps normal word order: the verb stays in 2nd place (dat is).",
+      "en": "I travel by public transport, because it is better for the environment.",
       "covers": []
     },
     {
@@ -1298,6 +1370,7 @@
       "answer": "het museum met moderne kunst is echt de moeite waard",
       "alternatives": [],
       "hint": "The long subject (het museum met moderne kunst) first, then the verb. “de moeite waard” = worth it.",
+      "en": "The museum of modern art is really worth a visit.",
       "covers": []
     },
     {
@@ -1317,6 +1390,7 @@
         "nee, ik kan zaterdag niet komen"
       ],
       "hint": "nee does not count as a position. Time first causes inversion (kan ik); the infinitive at the end.",
+      "en": "No, I can't come on Saturday.",
       "covers": []
     },
     {
@@ -1333,6 +1407,7 @@
       "answer": "in dit dorp is niks te doen",
       "alternatives": [],
       "hint": "Place first, then the verb. “niks te doen” = nothing to do.",
+      "en": "There is nothing to do in this village.",
       "covers": []
     },
     {
@@ -1349,6 +1424,7 @@
       "answer": "ik kan mijn fietssleutel nergens vinden",
       "alternatives": [],
       "hint": "Modal (kan) in 2nd place, infinitive (vinden) at the end; nergens comes before the infinitive.",
+      "en": "I can't find my bike key anywhere.",
       "covers": []
     },
     {
@@ -1368,6 +1444,7 @@
         "een paspoort is voor deze reis noodzakelijk"
       ],
       "hint": "A phrase first causes inversion: is een paspoort.",
+      "en": "A passport is required for this trip.",
       "covers": []
     },
     {
@@ -1386,6 +1463,7 @@
         "een kaart is op reis heel nuttig"
       ],
       "hint": "A phrase first causes inversion: is een kaart.",
+      "en": "When travelling, a map is very useful.",
       "covers": []
     },
     {
@@ -1402,6 +1480,7 @@
       "answer": "je bakt de vis in een beetje olie",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, object, then the manner (in een beetje olie).",
+      "en": "You fry the fish in a little oil.",
       "covers": []
     },
     {
@@ -1421,6 +1500,7 @@
         "we gaan ondanks de regen toch fietsen"
       ],
       "hint": "A phrase first (ondanks de regen) causes inversion; the infinitive (fietsen) goes to the end.",
+      "en": "Despite the rain, we're going cycling anyway.",
       "covers": []
     },
     {
@@ -1436,6 +1516,7 @@
       "answer": "het wordt ongetwijfeld een gezellig feest",
       "alternatives": [],
       "hint": "Verb in 2nd place; the adverb (ongetwijfeld) comes right after the verb.",
+      "en": "It will undoubtedly be a fun party.",
       "covers": []
     },
     {
@@ -1453,6 +1534,7 @@
       "answer": "ben jij ooit in Amsterdam geweest?",
       "alternatives": [],
       "hint": "Question in the perfect: ben first, geweest at the end.",
+      "en": "Have you ever been to Amsterdam?",
       "covers": []
     },
     {
@@ -1468,6 +1550,7 @@
       "answer": "wat is de oorzaak van de vertraging?",
       "alternatives": [],
       "hint": "W-question: question word, verb, then the subject.",
+      "en": "What is the cause of the delay?",
       "covers": []
     },
     {
@@ -1486,6 +1569,7 @@
         "mijn dochter wil na haar opleiding reizen"
       ],
       "hint": "Modal (wil) in 2nd place, infinitive (reizen) at the end. Time first causes inversion.",
+      "en": "After her studies my daughter wants to travel.",
       "covers": []
     },
     {
@@ -1503,6 +1587,7 @@
         "na het eten komen de overige gasten"
       ],
       "hint": "Verb in 2nd place. With time first, the subject comes after the verb.",
+      "en": "The other guests are coming after dinner.",
       "covers": []
     },
     {
@@ -1521,6 +1606,7 @@
         "de bus passeert elk half uur ons huis"
       ],
       "hint": "Time first causes inversion: passeert de bus.",
+      "en": "Every half hour the bus passes our house.",
       "covers": []
     },
     {
@@ -1536,6 +1622,7 @@
       "answer": "is deze plaats nog vrij?",
       "alternatives": [],
       "hint": "Yes/no question: the verb (is) comes first.",
+      "en": "Is this seat free?",
       "covers": []
     },
     {
@@ -1554,6 +1641,7 @@
         "het werd plotseling donker"
       ],
       "hint": "An adverb first (plotseling) causes inversion: werd het.",
+      "en": "Suddenly it got dark.",
       "covers": []
     },
     {
@@ -1572,6 +1660,7 @@
         "we zien op het nieuws de president van Amerika"
       ],
       "hint": "A phrase first causes inversion: zien we.",
+      "en": "On the news we see the President of America.",
       "covers": []
     },
     {
@@ -1587,6 +1676,7 @@
       "answer": "deze boerderij produceert kaas en melk",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place, then the object.",
+      "en": "This farm produces cheese and milk.",
       "covers": []
     },
     {
@@ -1603,6 +1693,7 @@
       "answer": "mijn nicht is studente psychologie in Utrecht",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the rest.",
+      "en": "My cousin is a psychology student in Utrecht.",
       "covers": []
     },
     {
@@ -1619,6 +1710,7 @@
       "answer": "het hotel was redelijk goedkoop en de mensen waren erg vriendelijk",
       "alternatives": [],
       "hint": "Two main clauses joined by en: each has the verb in 2nd place.",
+      "en": "The hotel was fairly cheap and the people were very friendly.",
       "covers": []
     },
     {
@@ -1637,6 +1729,7 @@
         "we blijven de rest van de dag thuis"
       ],
       "hint": "Time first causes inversion: blijven we.",
+      "en": "We're staying at home for the rest of the day.",
       "covers": []
     },
     {
@@ -1655,6 +1748,7 @@
         "ik maak een reis om de wereld als ik rijk word"
       ],
       "hint": "als sends the verb (word) to the end. After the als-clause the main verb comes first: maak ik.",
+      "en": "If I get rich, I'll travel around the world.",
       "covers": []
     },
     {
@@ -1671,6 +1765,7 @@
       "answer": "er komt veel rook van de barbecue",
       "alternatives": [],
       "hint": "“er” takes the first place; the verb (komt) follows in 2nd place.",
+      "en": "There is a lot of smoke coming from the barbecue.",
       "covers": []
     },
     {
@@ -1687,6 +1782,7 @@
       "answer": "het straatfeest is een samenwerking van alle buren",
       "alternatives": [],
       "hint": "Subject first, verb in 2nd place.",
+      "en": "The street party is a joint effort by all the neighbours.",
       "covers": []
     },
     {
@@ -1707,6 +1803,7 @@
         "we maken na het feest samen het huis schoon"
       ],
       "hint": "Separable verb schoonmaken: maken in 2nd place, schoon at the end.",
+      "en": "After the party we clean the house together.",
       "covers": [
         "schoonmaken"
       ]
@@ -1726,6 +1823,7 @@
         "over tien seconden vertrekt de trein op spoor vijf"
       ],
       "hint": "The whole subject (de trein op spoor vijf) counts as one position; the verb comes next.",
+      "en": "The train on platform five leaves in ten seconds.",
       "covers": []
     },
     {
@@ -1745,6 +1843,7 @@
         "ik zet altijd mijn fiets op slot"
       ],
       "hint": "Verb in 2nd place. “op slot zetten”: op slot comes at the end.",
+      "en": "I always lock my bike.",
       "covers": []
     },
     {
@@ -1760,6 +1859,7 @@
       "answer": "de trein rijdt met een hoge snelheid",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the manner.",
+      "en": "The train is travelling at high speed.",
       "covers": []
     },
     {
@@ -1779,6 +1879,7 @@
         "er is voor de wedstrijd veel spanning"
       ],
       "hint": "Time first causes inversion: is er.",
+      "en": "There is a lot of tension before the match.",
       "covers": []
     },
     {
@@ -1794,6 +1895,7 @@
       "answer": "de bus stopt voor de deur van het hotel",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the place.",
+      "en": "The bus stops in front of the hotel.",
       "covers": []
     },
     {
@@ -1811,6 +1913,7 @@
       "answer": "ik wens je veel succes met je examen",
       "alternatives": [],
       "hint": "Verb in 2nd place; the person (je) before the thing (veel succes).",
+      "en": "Good luck with your exam!",
       "covers": []
     },
     {
@@ -1831,6 +1934,7 @@
         "ik schrijf een korte tekst over mijn weekend voor de wijkkrant"
       ],
       "hint": "A phrase first causes inversion: schrijf ik.",
+      "en": "I'm writing a short piece about my weekend for the neighbourhood newspaper.",
       "covers": []
     },
     {
@@ -1849,6 +1953,7 @@
         "dat woord ken ik niet"
       ],
       "hint": "niet comes after the object (dat woord), at the end.",
+      "en": "I don't know that word.",
       "covers": []
     },
     {
@@ -1865,6 +1970,7 @@
       "answer": "mijn zoon is goed in techniek",
       "alternatives": [],
       "hint": "Subject, verb, then the adjective. “goed in” = good at.",
+      "en": "My son is good at technical things.",
       "covers": []
     },
     {
@@ -1883,6 +1989,7 @@
         "ik lees een boek terwijl de kinderen zwemmen"
       ],
       "hint": "terwijl sends the verb (zwemmen) to the end. After the terwijl-clause the main verb comes first: lees ik.",
+      "en": "While the children are swimming, I read a book.",
       "covers": []
     },
     {
@@ -1902,6 +2009,7 @@
         "ik wil in de toekomst een eigen huis kopen"
       ],
       "hint": "Modal (wil) in 2nd place, infinitive (kopen) at the end.",
+      "en": "In the future I want to buy a house of my own.",
       "covers": []
     },
     {
@@ -1919,6 +2027,7 @@
         "op de trap spelen de kinderen"
       ],
       "hint": "Subject, verb in 2nd place, then the place.",
+      "en": "The children are playing on the stairs.",
       "covers": []
     },
     {
@@ -1935,6 +2044,7 @@
       "answer": "ik heb twee broers en ze komen allebei naar mijn feest",
       "alternatives": [],
       "hint": "Two main clauses joined by en; allebei comes right after the verb.",
+      "en": "I have two brothers and they are both coming to my party.",
       "covers": []
     },
     {
@@ -1953,6 +2063,7 @@
         "er valt in de winter soms sneeuw"
       ],
       "hint": "Time first causes inversion: valt er.",
+      "en": "In winter it sometimes snows.",
       "covers": []
     },
     {
@@ -1972,6 +2083,7 @@
         "het weer verandert in Nederland snel"
       ],
       "hint": "Place first causes inversion: verandert het weer.",
+      "en": "In the Netherlands the weather changes quickly.",
       "covers": []
     },
     {
@@ -1988,6 +2100,7 @@
       "answer": "onze club heeft de wedstrijd verloren",
       "alternatives": [],
       "hint": "Perfect tense: heeft in 2nd place, verloren at the end.",
+      "en": "Our club lost the match.",
       "covers": []
     },
     {
@@ -2004,6 +2117,7 @@
       "answer": "ik schrijf een verslag van onze reis",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the object.",
+      "en": "I'm writing a report of our trip.",
       "covers": []
     },
     {
@@ -2022,6 +2136,7 @@
         "eerst eten we en vervolgens gaan we dansen"
       ],
       "hint": "vervolgens at the start of a clause causes inversion: gaan we.",
+      "en": "We eat first and then we go dancing.",
       "covers": []
     },
     {
@@ -2039,6 +2154,7 @@
         "op de vloer zitten de kinderen"
       ],
       "hint": "Subject, verb in 2nd place, then the place.",
+      "en": "The children are sitting on the floor.",
       "covers": []
     },
     {
@@ -2058,6 +2174,7 @@
         "ik voel me vandaag niet zo goed"
       ],
       "hint": "Time first causes inversion; the reflexive pronoun (me) comes right after the subject.",
+      "en": "I don't feel very well today.",
       "covers": []
     },
     {
@@ -2074,6 +2191,7 @@
       "answer": "het voordeel van de fiets is dat je geen file hebt",
       "alternatives": [],
       "hint": "dat sends the verb (hebt) to the end of its clause.",
+      "en": "The advantage of the bike is that you don't get stuck in traffic jams.",
       "covers": []
     },
     {
@@ -2092,6 +2210,7 @@
         "ik vraag naar mijn tas bij gevonden voorwerpen"
       ],
       "hint": "Verb in 2nd place. “vragen naar” = ask about; the naar-part usually goes to the end.",
+      "en": "I ask at lost property about my bag.",
       "covers": []
     },
     {
@@ -2112,6 +2231,7 @@
         "ik vul mijn fles met water voor de wandeling"
       ],
       "hint": "A phrase first causes inversion: vul ik.",
+      "en": "Before the walk I fill my bottle with water.",
       "covers": []
     },
     {
@@ -2128,6 +2248,7 @@
       "answer": "we wachten op de bus naar het strand",
       "alternatives": [],
       "hint": "Verb in 2nd place. “wachten op” = to wait for.",
+      "en": "We are waiting for the bus to the beach.",
       "covers": []
     },
     {
@@ -2147,6 +2268,7 @@
         "deze week is mijn man voor zaken in Duitsland"
       ],
       "hint": "TMP: Tijd (deze week), Manier/reason (voor zaken), Plaats (in Duitsland).",
+      "en": "My husband is in Germany on business this week.",
       "covers": []
     },
     {
@@ -2166,6 +2288,7 @@
         "op vakantie maakt hij veel foto's van zichzelf"
       ],
       "hint": "Verb in 2nd place; op vakantie before the object.",
+      "en": "On holiday he takes lots of photos of himself.",
       "covers": []
     },
     {
@@ -2182,6 +2305,7 @@
       "answer": "ik ga vroeg naar bed, zodat ik morgen fit ben",
       "alternatives": [],
       "hint": "zodat sends the verb (ben) to the end of its clause.",
+      "en": "I'm going to bed early so that I'm fit tomorrow.",
       "covers": []
     },
     {
@@ -2200,6 +2324,7 @@
         "een groot aantal mensen komt dit jaar naar het festival"
       ],
       "hint": "Time first causes inversion: komt before the subject.",
+      "en": "This year a large number of people are coming to the festival.",
       "covers": []
     },
     {
@@ -2219,6 +2344,7 @@
         "ik accepteer graag de uitnodiging"
       ],
       "hint": "Verb in 2nd place; graag can go after the verb or after the object.",
+      "en": "I'm happy to accept the invitation.",
       "covers": []
     },
     {
@@ -2238,6 +2364,7 @@
         "we nemen na de picknick ons afval mee"
       ],
       "hint": "Separable verb meenemen: nemen in 2nd place, mee at the end.",
+      "en": "After the picnic we take our rubbish with us.",
       "covers": [
         "meenemen"
       ]
@@ -2256,6 +2383,7 @@
       "answer": "mijn zoon doet alsof hij slaapt",
       "alternatives": [],
       "hint": "alsof sends the verb (slaapt) to the end of its clause.",
+      "en": "My son is pretending to be asleep.",
       "covers": []
     },
     {
@@ -2274,6 +2402,7 @@
         "hij heeft angst voor water, dus zwemt hij niet"
       ],
       "hint": "After dus both orders are used: “dus hij zwemt” and “dus zwemt hij”.",
+      "en": "He is afraid of water, so he doesn't swim.",
       "covers": []
     },
     {
@@ -2293,6 +2422,7 @@
         "iedereen behalve mijn broer komt naar het feest"
       ],
       "hint": "Verb in 2nd place; a phrase first (behalve mijn broer) causes inversion.",
+      "en": "Everyone is coming to the party except my brother.",
       "covers": []
     },
     {
@@ -2309,6 +2439,7 @@
       "answer": "een pet is een goede bescherming tegen de zon",
       "alternatives": [],
       "hint": "Subject, verb in 2nd place, then the rest.",
+      "en": "A cap is good protection against the sun.",
       "covers": []
     },
     {
@@ -2328,6 +2459,7 @@
         "ik schrijf een briefje over ons feest voor de buren"
       ],
       "hint": "Verb in 2nd place, then the object and the extra phrases.",
+      "en": "I'm writing a note to the neighbours about our party.",
       "covers": []
     },
     {
@@ -2348,6 +2480,7 @@
         "ik luister op zondag het liefst naar muziek op de radio"
       ],
       "hint": "Time first causes inversion. “het liefst” = most of all; naar-phrase near the end.",
+      "en": "On Sunday I like listening to music on the radio best.",
       "covers": [
         "het liefst"
       ]
@@ -2369,6 +2502,7 @@
         "ik fiets in het weekend met een paar vrienden langs de zee"
       ],
       "hint": "TMP: Tijd (in het weekend), Manier (met een paar vrienden), Plaats (langs de zee).",
+      "en": "At the weekend I cycle along the sea with a few friends.",
       "covers": [
         "een paar"
       ]
@@ -2389,6 +2523,7 @@
         "mijn familie woont ver weg, dus bel ik ze vaak op"
       ],
       "hint": "Separable verb opbellen: bel in 2nd place, op at the end.",
+      "en": "My family lives far away, so I often call them.",
       "covers": [
         "ver weg",
         "opbellen"
@@ -2410,6 +2545,7 @@
         "meestal duurt het feest vier uur"
       ],
       "hint": "Verb in 2nd place; an adverb first (meestal) causes inversion.",
+      "en": "The party usually lasts four hours.",
       "covers": []
     },
     {
@@ -2429,6 +2565,7 @@
         "elk jaar gaan mijn echtgenoot en ik op vakantie naar Turkije"
       ],
       "hint": "“mijn echtgenoot en ik” is one subject (= wij), so the verb is gaan. Time before place.",
+      "en": "My husband and I go on holiday to Turkey every year.",
       "covers": []
     },
     {
@@ -2448,6 +2585,7 @@
         "de gemeente verbiedt met oud en nieuw vuurwerk in het centrum"
       ],
       "hint": "Time first (met oud en nieuw) causes inversion: verbiedt de gemeente.",
+      "en": "On New Year's Eve the municipality bans fireworks in the centre.",
       "covers": []
     }
   ],

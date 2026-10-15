@@ -86,6 +86,7 @@ const EXERCISES = [
   "answer": "mijn salaris is geen geheim",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the rest.",
+  "en": "My salary is no secret.",
   "grammar": "basis",
   "level": 1
  },
@@ -102,6 +103,7 @@ const EXERCISES = [
    "op mijn werk voel ik me veilig"
   ],
   "hint": "Reflexive verb \"zich voelen\": \"me\" comes right after the verb (or after the subject in inversion).",
+  "en": "I feel safe at work.",
   "grammar": "basis",
   "level": 1
  },
@@ -117,6 +119,7 @@ const EXERCISES = [
   "answer": "deze winkel verkoopt alleen producten uit Nederland",
   "alternatives": [],
   "hint": "Subject first, verb 2nd; \"alleen\" comes just before what it limits.",
+  "en": "This shop only sells products from the Netherlands.",
   "grammar": "basis",
   "level": 2
  },
@@ -131,6 +134,7 @@ const EXERCISES = [
   "answer": "ik dank u voor het prettige gesprek",
   "alternatives": [],
   "hint": "Subject, verb, object (u), then the \"voor\" phrase.",
+  "en": "Thank you for the pleasant conversation.",
   "grammar": "basis",
   "level": 2
  },
@@ -145,6 +149,7 @@ const EXERCISES = [
   "answer": "zij is erg tevreden over haar nieuwe baan",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the rest; \"tevreden over\" = satisfied with.",
+  "en": "She is very happy with her new job.",
   "grammar": "basis",
   "level": 2
  },
@@ -159,6 +164,7 @@ const EXERCISES = [
   "answer": "mijn eerste werkdag was een heel bijzondere dag",
   "alternatives": [],
   "hint": "Subject first, past tense verb \"was\" in 2nd place.",
+  "en": "My first day at work was a very special day.",
   "grammar": "basis",
   "level": 2
  },
@@ -175,6 +181,7 @@ const EXERCISES = [
    "in de technische sector is er veel werk"
   ],
   "hint": "\"er is\" = there is; with the place first, invert: \"is er\".",
+  "en": "There is a lot of work in the technical sector.",
   "grammar": "basis",
   "level": 2
  },
@@ -189,6 +196,7 @@ const EXERCISES = [
   "answer": "het salaris van deze baan is erg aantrekkelijk",
   "alternatives": [],
   "hint": "The subject \"het salaris van deze baan\" is one block; the verb follows it.",
+  "en": "The salary for this job is very attractive.",
   "grammar": "basis",
   "level": 2
  },
@@ -205,6 +213,7 @@ const EXERCISES = [
    "nu is het project in de laatste fase"
   ],
   "hint": "Verb 2nd; \"nu\" comes right after the verb.",
+  "en": "The project is now in its final phase.",
   "grammar": "basis",
   "level": 2
  },
@@ -223,6 +232,7 @@ const EXERCISES = [
    "in de supermarkt werkt hij met zijn beste vriend"
   ],
   "hint": "TMP rule: Manier (met zijn beste vriend) before Plaats (in de supermarkt).",
+  "en": "He works with his best friend in the supermarket.",
   "grammar": "basis",
   "level": 2
  },
@@ -237,6 +247,7 @@ const EXERCISES = [
   "answer": "de eigenaar van het restaurant kookt zelf heerlijke vis",
   "alternatives": [],
   "hint": "The whole subject \"de eigenaar van het restaurant\" counts as one place; the verb follows it.",
+  "en": "The owner of the restaurant cooks delicious fish himself.",
   "grammar": "basis",
   "level": 2
  },
@@ -254,6 +265,7 @@ const EXERCISES = [
    "een eigen restaurant in het noorden is mijn droom"
   ],
   "hint": "Simple main clause: subject, verb in 2nd place, then the rest.",
+  "en": "My dream is a restaurant of my own in the north.",
   "grammar": "basis",
   "level": 2
  },
@@ -271,6 +283,7 @@ const EXERCISES = [
    "elke dag reis ik ongeveer veertig kilometer naar mijn werk"
   ],
   "hint": "Time (elke dag) before place (naar mijn werk).",
+  "en": "I travel about forty kilometres to work every day.",
   "grammar": "basis",
   "level": 2
  },
@@ -288,6 +301,7 @@ const EXERCISES = [
    "elke ochtend zet ik een pot thee voor mijn collega's"
   ],
   "hint": "Time (elke ochtend) comes early, straight after the verb.",
+  "en": "Every morning I make a pot of tea for my colleagues.",
   "grammar": "basis",
   "level": 2
  },
@@ -303,6 +317,7 @@ const EXERCISES = [
   "answer": "ik stuur mijn cv met een foto naar het bedrijf",
   "alternatives": [],
   "hint": "Manner (met een foto) before place (naar het bedrijf).",
+  "en": "I'm sending my CV with a photo to the company.",
   "grammar": "basis",
   "level": 2
  },
@@ -317,6 +332,7 @@ const EXERCISES = [
   "answer": "ik twijfel nog over het nieuwe contract",
   "alternatives": [],
   "hint": "Verb in 2nd place; \"nog\" comes right after the verb.",
+  "en": "I'm still undecided about the new contract.",
   "grammar": "basis",
   "level": 3
  },
@@ -331,6 +347,7 @@ const EXERCISES = [
   "answer": "wij maken geen onderscheid tussen mannen en vrouwen",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, object, then the \"tussen\" phrase.",
+  "en": "We make no distinction between men and women.",
   "grammar": "basis",
   "level": 3
  },
@@ -345,6 +362,7 @@ const EXERCISES = [
   "answer": "ik houd echt van mijn werk in de kledingzaak",
   "alternatives": [],
   "hint": "\"houden van\" = to love; \"echt\" comes right after the verb.",
+  "en": "I really love my work in the clothes shop.",
   "grammar": "basis",
   "level": 3
  },
@@ -359,6 +377,7 @@ const EXERCISES = [
   "answer": "ik ben op de hoogte van de nieuwe regels",
   "alternatives": [],
   "hint": "\"op de hoogte zijn van\" = to be informed about; verb 2nd.",
+  "en": "I am aware of the new rules.",
   "grammar": "basis",
   "level": 3
  },
@@ -374,6 +393,7 @@ const EXERCISES = [
   "answer": "de nieuwe chef wil veel veranderingen in de winkel",
   "alternatives": [],
   "hint": "Subject first, verb 2nd; here \"wil\" is used without an infinitive.",
+  "en": "The new boss wants a lot of changes in the shop.",
   "grammar": "basis",
   "level": 3
  },
@@ -389,6 +409,7 @@ const EXERCISES = [
   "answer": "de kledingzaak is in een drukke straat in het centrum",
   "alternatives": [],
   "hint": "Subject first, verb 2nd; the smaller place (straat) before the bigger one (centrum).",
+  "en": "The clothes shop is on a busy street in the town centre.",
   "grammar": "basis",
   "level": 3
  },
@@ -406,6 +427,7 @@ const EXERCISES = [
    "door de oude stoel op kantoor heb ik pijn in mijn rug"
   ],
   "hint": "Subject + verb, then the rest; if you start with \"door ...\", invert: \"heb ik\".",
+  "en": "My back hurts because of the old chair at the office.",
   "grammar": "basis",
   "level": 3
  },
@@ -420,6 +442,7 @@ const EXERCISES = [
   "answer": "de sleutel van de winkel ligt op de bodem van mijn tas",
   "alternatives": [],
   "hint": "Subject block first, verb \"ligt\" 2nd, then the place.",
+  "en": "The key to the shop is at the bottom of my bag.",
   "grammar": "basis",
   "level": 3
  },
@@ -435,6 +458,7 @@ const EXERCISES = [
   "answer": "de verpleegkundige voelt aan het voorhoofd van de patiënt",
   "alternatives": [],
   "hint": "Subject first, verb 2nd, then the \"aan\" phrase.",
+  "en": "The nurse feels the patient's forehead.",
   "grammar": "basis",
   "level": 4
  },
@@ -452,6 +476,7 @@ const EXERCISES = [
    "tijdens de eerste ontmoeting waren mijn toekomstige collega's erg lief"
   ],
   "hint": "Verb \"waren\" in 2nd place; with the time phrase first, invert.",
+  "en": "My future colleagues were very kind at our first meeting.",
   "grammar": "basis",
   "level": 4
  },
@@ -466,6 +491,7 @@ const EXERCISES = [
   "answer": "een goed evenwicht tussen werk en vrije tijd is belangrijk",
   "alternatives": [],
   "hint": "The long subject \"een goed evenwicht tussen werk en vrije tijd\" is one block; the verb follows it.",
+  "en": "A good balance between work and free time is important.",
   "grammar": "basis",
   "level": 4
  },
@@ -482,6 +508,7 @@ const EXERCISES = [
    "het werkt op deze manier veel sneller"
   ],
   "hint": "\"op deze manier\" first, so inversion: \"werkt het\".",
+  "en": "This way it works much faster.",
   "grammar": "inversie",
   "level": 2
  },
@@ -498,6 +525,7 @@ const EXERCISES = [
    "ik werk meestal van negen tot vijf uur"
   ],
   "hint": "When an adverb like \"meestal\" comes first, the verb stays 2nd and the subject follows it.",
+  "en": "I usually work from nine to five.",
   "grammar": "inversie",
   "level": 2
  },
@@ -514,6 +542,7 @@ const EXERCISES = [
    "mijn voeten doen pijn na een lange dag"
   ],
   "hint": "Time first, so inversion: \"doen mijn voeten\".",
+  "en": "After a long day my feet hurt.",
   "grammar": "inversie",
   "level": 2
  },
@@ -531,6 +560,7 @@ const EXERCISES = [
    "we gaan vrijdag met collega's naar de film"
   ],
   "hint": "TMP: time (vrijdag), manner (met collega's), place (naar de film).",
+  "en": "On Friday we're going to the cinema with colleagues.",
   "grammar": "inversie",
   "level": 2
  },
@@ -548,6 +578,7 @@ const EXERCISES = [
    "ik werk morgen gewoon weer in de winkel"
   ],
   "hint": "Time first, so inversion: \"werk ik\".",
+  "en": "Tomorrow I'm just working in the shop again as usual.",
   "grammar": "inversie",
   "level": 2
  },
@@ -564,6 +595,7 @@ const EXERCISES = [
    "het kantoor is na zes uur helemaal leeg"
   ],
   "hint": "Time first, so inversion: \"is het kantoor\".",
+  "en": "After six o'clock the office is completely empty.",
   "grammar": "inversie",
   "level": 2
  },
@@ -581,6 +613,7 @@ const EXERCISES = [
    "ik heb morgen een behandeling bij de fysiotherapeut"
   ],
   "hint": "Time first, so inversion: \"heb ik\".",
+  "en": "Tomorrow I have a treatment at the physiotherapist's.",
   "grammar": "inversie",
   "level": 2
  },
@@ -597,6 +630,7 @@ const EXERCISES = [
    "ik begin volgende maand bij een nieuw bedrijf"
   ],
   "hint": "Time first, so inversion: \"begin ik\".",
+  "en": "Next month I'm starting at a new company.",
   "grammar": "inversie",
   "level": 2
  },
@@ -613,6 +647,7 @@ const EXERCISES = [
    "ik werk in de zomer in een kamp voor kinderen"
   ],
   "hint": "Time first, so inversion; time comes before place.",
+  "en": "In summer I work at a camp for children.",
   "grammar": "inversie",
   "level": 2
  },
@@ -630,6 +665,7 @@ const EXERCISES = [
    "ik ben overigens volgende week op vakantie"
   ],
   "hint": "\"overigens\" first, so inversion: \"ben ik\".",
+  "en": "By the way, I'm on holiday next week.",
   "grammar": "inversie",
   "level": 3
  },
@@ -646,6 +682,7 @@ const EXERCISES = [
    "het risico is zonder helm te groot"
   ],
   "hint": "Starting with \"zonder helm\" causes inversion: \"is het risico\".",
+  "en": "Without a helmet the risk is too great.",
   "grammar": "inversie",
   "level": 3
  },
@@ -662,6 +699,7 @@ const EXERCISES = [
    "ik haal voor het gesprek diep adem"
   ],
   "hint": "Time phrase first, so inversion: \"haal ik\".",
+  "en": "Before the interview I take a deep breath.",
   "grammar": "inversie",
   "level": 3
  },
@@ -678,6 +716,7 @@ const EXERCISES = [
    "de winkel is op nationale feestdagen dicht"
   ],
   "hint": "Time first, so inversion: \"is de winkel\".",
+  "en": "On public holidays the shop is closed.",
   "grammar": "inversie",
   "level": 3
  },
@@ -695,6 +734,7 @@ const EXERCISES = [
    "een werkdag op kantoor lijkt soms eindeloos"
   ],
   "hint": "\"soms\" first, so inversion: \"lijkt een werkdag\".",
+  "en": "Sometimes a working day at the office seems endless.",
   "grammar": "inversie",
   "level": 3
  },
@@ -711,6 +751,7 @@ const EXERCISES = [
    "ik draag een pak voor het sollicitatiegesprek"
   ],
   "hint": "Phrase first, so inversion: \"draag ik\".",
+  "en": "I wear a suit for the job interview.",
   "grammar": "inversie",
   "level": 3
  },
@@ -728,6 +769,7 @@ const EXERCISES = [
    "wij vieren vrijdag het huwelijk van onze collega"
   ],
   "hint": "Time first, so inversion: \"vieren wij\".",
+  "en": "On Friday we are celebrating our colleague's wedding.",
   "grammar": "inversie",
   "level": 3
  },
@@ -744,6 +786,7 @@ const EXERCISES = [
    "ik vertel in het gesprek over mijn achtergrond"
   ],
   "hint": "Phrase first, so inversion: \"vertel ik\".",
+  "en": "In the interview I talk about my background.",
   "grammar": "inversie",
   "level": 3
  },
@@ -761,6 +804,7 @@ const EXERCISES = [
    "ik verspreid elke zaterdag folders in de wijk"
   ],
   "hint": "Time first, so inversion: \"verspreid ik\".",
+  "en": "Every Saturday I hand out leaflets in the neighbourhood.",
   "grammar": "inversie",
   "level": 3
  },
@@ -780,6 +824,7 @@ const EXERCISES = [
    "het bedrijf plaatst de vacature morgen op internet"
   ],
   "hint": "Time first, so inversion: \"plaatst het bedrijf\".",
+  "en": "Tomorrow the company is posting the vacancy online.",
   "grammar": "inversie",
   "level": 3
  },
@@ -797,6 +842,7 @@ const EXERCISES = [
    "ik heb verder geen vragen over het contract"
   ],
   "hint": "\"verder\" first, so inversion: \"heb ik\".",
+  "en": "Apart from that, I have no questions about the contract.",
   "grammar": "inversie",
   "level": 3
  },
@@ -815,6 +861,7 @@ const EXERCISES = [
    "na het werk drinken wij op vrijdag een biertje"
   ],
   "hint": "Time first, so inversion: verb (drinken) before subject (wij).",
+  "en": "On Fridays we have a beer after work.",
   "grammar": "inversie",
   "level": 3
  },
@@ -833,6 +880,7 @@ const EXERCISES = [
    "mijn oom werkte vroeger als bewaker in de gevangenis"
   ],
   "hint": "Time word first (vroeger), so inversion: \"werkte mijn oom\".",
+  "en": "My uncle used to work as a guard in the prison.",
   "grammar": "inversie",
   "level": 3
  },
@@ -848,6 +896,7 @@ const EXERCISES = [
   "answer": "voor deze baan heb je geen speciaal diploma nodig",
   "alternatives": [],
   "hint": "\"nodig hebben\": \"heb\" 2nd, \"nodig\" at the end.",
+  "en": "You don't need a special diploma for this job.",
   "grammar": "inversie",
   "level": 3
  },
@@ -865,6 +914,7 @@ const EXERCISES = [
    "ik werk elke zaterdag als vrijwilliger bij een vereniging"
   ],
   "hint": "Time first, so inversion: \"werk ik\".",
+  "en": "Every Saturday I work as a volunteer at a club.",
   "grammar": "inversie",
   "level": 3
  },
@@ -881,6 +931,7 @@ const EXERCISES = [
    "de winkel is met de krachtige stofzuiger snel schoon"
   ],
   "hint": "Starting with \"met ...\" causes inversion: \"is de winkel\".",
+  "en": "With the powerful vacuum cleaner the shop is clean in no time.",
   "grammar": "inversie",
   "level": 3
  },
@@ -896,6 +947,7 @@ const EXERCISES = [
   "answer": "in de krant staat een interessant artikel over de economie",
   "alternatives": [],
   "hint": "Place first, so the verb comes 2nd and the subject (een interessant artikel) after it.",
+  "en": "There is an interesting article about the economy in the newspaper.",
   "grammar": "inversie",
   "level": 3
  },
@@ -914,6 +966,7 @@ const EXERCISES = [
    "het is in de zomer op het terras altijd erg druk"
   ],
   "hint": "Time first, so inversion (is het); time comes before place.",
+  "en": "In summer it is always very busy on the terrace.",
   "grammar": "inversie",
   "level": 3
  },
@@ -930,6 +983,7 @@ const EXERCISES = [
    "ik heb een druk leven door mijn werk en mijn gezin"
   ],
   "hint": "A long first part still counts as one place, so the verb follows: \"heb ik\".",
+  "en": "Because of my work and my family, I have a busy life.",
   "grammar": "inversie",
   "level": 3
  },
@@ -947,6 +1001,7 @@ const EXERCISES = [
    "wij bespreken vandaag de doelstellingen voor dit jaar"
   ],
   "hint": "Time first, so inversion: \"bespreken wij\".",
+  "en": "Today we are discussing the goals for this year.",
   "grammar": "inversie",
   "level": 4
  },
@@ -963,6 +1018,7 @@ const EXERCISES = [
    "het formulier is zonder verklaring van de huisarts niet volledig"
   ],
   "hint": "Starting with \"zonder ...\" causes inversion: \"is het formulier\".",
+  "en": "Without a statement from the GP, the form is not complete.",
   "grammar": "inversie",
   "level": 4
  },
@@ -979,6 +1035,7 @@ const EXERCISES = [
    "wij schrijven een gedicht voor het afscheid van meneer Jansen"
   ],
   "hint": "Long first phrase, still one place: then verb + subject.",
+  "en": "We are writing a poem for Mr Jansen's farewell.",
   "grammar": "inversie",
   "level": 4
  },
@@ -993,6 +1050,7 @@ const EXERCISES = [
   "answer": "hoe lang werkt u hier al?",
   "alternatives": [],
   "hint": "Question word first (hoe lang), then verb, then subject.",
+  "en": "How long have you been working here?",
   "grammar": "vraag",
   "level": 1
  },
@@ -1008,6 +1066,7 @@ const EXERCISES = [
   "answer": "wil je koffie met melk en suiker?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then subject.",
+  "en": "Would you like coffee with milk and sugar?",
   "grammar": "vraag",
   "level": 1
  },
@@ -1022,6 +1081,7 @@ const EXERCISES = [
   "answer": "heeft u morgen tijd voor een kort gesprek?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then subject, then time.",
+  "en": "Do you have time for a short meeting tomorrow?",
   "grammar": "vraag",
   "level": 2
  },
@@ -1037,6 +1097,7 @@ const EXERCISES = [
   "answer": "heeft u deze broek ook in een andere maat?",
   "alternatives": [],
   "hint": "Yes/no question: the verb comes first, then the subject.",
+  "en": "Do you also have these trousers in a different size?",
   "grammar": "vraag",
   "level": 2
  },
@@ -1051,6 +1112,7 @@ const EXERCISES = [
   "answer": "wat betekent deze zin in mijn contract?",
   "alternatives": [],
   "hint": "Question word first, verb second, then subject.",
+  "en": "What does this sentence in my contract mean?",
   "grammar": "vraag",
   "level": 3
  },
@@ -1066,6 +1128,7 @@ const EXERCISES = [
   "answer": "wat is het verschil tussen een vast en een tijdelijk contract?",
   "alternatives": [],
   "hint": "Question word first, then the verb.",
+  "en": "What is the difference between a permanent and a temporary contract?",
   "grammar": "vraag",
   "level": 4
  },
@@ -1083,6 +1146,7 @@ const EXERCISES = [
    "meneer Jansen wil de reden graag weten"
   ],
   "hint": "Modal verb (wil) 2nd, infinitive (weten) at the end.",
+  "en": "Mr Jansen would like to know the reason.",
   "grammar": "modaal",
   "level": 2
  },
@@ -1099,6 +1163,7 @@ const EXERCISES = [
    "ik ga in het weekend lekker rusten"
   ],
   "hint": "\"gaan\" + infinitive: \"ga\" 2nd, \"rusten\" at the end.",
+  "en": "At the weekend I'm going to have a nice rest.",
   "grammar": "modaal",
   "level": 2
  },
@@ -1115,6 +1180,7 @@ const EXERCISES = [
    "ik moet in de keuken vaak afwassen"
   ],
   "hint": "Modal + infinitive: the separable verb stays together as infinitive at the end (afwassen).",
+  "en": "In the kitchen I often have to do the washing-up.",
   "grammar": "modaal",
   "level": 2
  },
@@ -1132,6 +1198,7 @@ const EXERCISES = [
    "ja, zaterdag kan ik voor jou werken"
   ],
   "hint": "\"ja,\" does not count as a place: the sentence after it starts normally.",
+  "en": "Yes, I can work for you on Saturday.",
   "grammar": "modaal",
   "level": 2
  },
@@ -1147,6 +1214,7 @@ const EXERCISES = [
   "answer": "kunt u de vraag nog een keer herhalen?",
   "alternatives": [],
   "hint": "Polite question: modal verb first, infinitive (herhalen) at the end.",
+  "en": "Could you repeat the question once more?",
   "grammar": "modaal",
   "level": 2
  },
@@ -1162,6 +1230,7 @@ const EXERCISES = [
   "answer": "mag ik mijn koffer even in de gang zetten?",
   "alternatives": [],
   "hint": "Question with a modal: \"mag ik\" first, infinitive (zetten) at the end.",
+  "en": "May I put my suitcase in the hallway for a moment?",
   "grammar": "modaal",
   "level": 2
  },
@@ -1178,6 +1247,7 @@ const EXERCISES = [
    "ik wil later graag verpleegkundige worden"
   ],
   "hint": "Modal \"wil\" 2nd, infinitive \"worden\" at the end.",
+  "en": "Later on I would like to become a nurse.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1193,6 +1263,7 @@ const EXERCISES = [
   "answer": "welke dienst wil jij met mij ruilen?",
   "alternatives": [],
   "hint": "Question: \"welke dienst\" first, then the modal verb, infinitive at the end.",
+  "en": "Which shift do you want to swap with me?",
   "grammar": "modaal",
   "level": 3
  },
@@ -1209,6 +1280,7 @@ const EXERCISES = [
    "kunt u mij over mijn contract advies geven?"
   ],
   "hint": "Question: modal verb first; \"over mijn contract\" may also come after the infinitive.",
+  "en": "Can you give me advice about my contract?",
   "grammar": "modaal",
   "level": 3
  },
@@ -1226,6 +1298,7 @@ const EXERCISES = [
    "morgen ga ik persoonlijk met de directeur praten"
   ],
   "hint": "TMP: time (morgen), manner (persoonlijk), then \"met de directeur\"; infinitive at the end.",
+  "en": "Tomorrow I'm going to talk to the director in person.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1242,6 +1315,7 @@ const EXERCISES = [
    "je moet dat zelf aan de chef vragen"
   ],
   "hint": "Object \"dat\" first, so inversion (moet je); infinitive at the end.",
+  "en": "You'll have to ask the boss that yourself.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1261,6 +1335,7 @@ const EXERCISES = [
    "je moet in de keuken met het vuur voorzichtig zijn"
   ],
   "hint": "Place first, so inversion (moet je); \"zijn\" goes to the end of the middle part.",
+  "en": "In the kitchen you have to be careful with the fire.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1276,6 +1351,7 @@ const EXERCISES = [
   "answer": "ik kan niet goed tegen de warmte in de keuken",
   "alternatives": [],
   "hint": "\"tegen iets kunnen\" = to be able to stand something; \"kan\" is 2nd, \"niet goed\" follows it.",
+  "en": "I can't really cope with the heat in the kitchen.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1291,6 +1367,7 @@ const EXERCISES = [
   "answer": "ik zal een briefje voor mijn collega op de kast leggen",
   "alternatives": [],
   "hint": "\"zullen\" is in 2nd place; the infinitive (leggen) goes to the end.",
+  "en": "I will put a note for my colleague on the cupboard.",
   "grammar": "modaal",
   "level": 3
  },
@@ -1308,6 +1385,7 @@ const EXERCISES = [
    "de chef legt langzaam de nieuwe methode uit"
   ],
   "hint": "Separable verb \"uitleggen\": \"legt\" 2nd, \"uit\" at the end.",
+  "en": "The boss explains the new method slowly.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1325,6 +1403,7 @@ const EXERCISES = [
    "doe jij zaterdag ook aan de cursus mee?"
   ],
   "hint": "Yes/no question with separable \"meedoen\": verb first, \"mee\" near the end.",
+  "en": "Are you joining the course on Saturday too?",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1339,6 +1418,7 @@ const EXERCISES = [
   "answer": "zij biedt de klant een kop koffie aan",
   "alternatives": [],
   "hint": "Separable verb \"aanbieden\": \"biedt\" 2nd, \"aan\" at the end.",
+  "en": "She offers the customer a cup of coffee.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1357,6 +1437,7 @@ const EXERCISES = [
    "morgen neem ik met het uitzendbureau contact op"
   ],
   "hint": "\"contact opnemen met\": \"neem\" 2nd, \"op\" near the end.",
+  "en": "Tomorrow I'll get in touch with the employment agency.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1374,6 +1455,7 @@ const EXERCISES = [
    "op 1 mei gaat mijn nieuwe contract in"
   ],
   "hint": "Separable \"ingaan\" (to start): \"gaat\" 2nd, \"in\" at the very end.",
+  "en": "My new contract starts on 1 May.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1390,6 +1472,7 @@ const EXERCISES = [
    "ik sta in de winter om zes uur op"
   ],
   "hint": "Separable verb \"opstaan\": \"sta\" 2nd, \"op\" at the end.",
+  "en": "In winter I get up at six o'clock.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1407,6 +1490,7 @@ const EXERCISES = [
    "sinds een jaar woon ik samen met mijn vriendin"
   ],
   "hint": "Separable \"samenwonen\": \"woon\" 2nd, \"samen\" goes after the time phrase.",
+  "en": "I have been living with my girlfriend for a year.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1422,6 +1506,7 @@ const EXERCISES = [
   "answer": "je hebt gelijk, de winkel gaat om zes uur dicht",
   "alternatives": [],
   "hint": "\"dichtgaan\" (to close) is separable: \"gaat\" 2nd, \"dicht\" at the end.",
+  "en": "You're right, the shop closes at six o'clock.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1439,6 +1524,7 @@ const EXERCISES = [
    "ik doe om negen uur de deur van de winkel open"
   ],
   "hint": "Separable verb \"opendoen\": \"doe\" 2nd, \"open\" at the end.",
+  "en": "At nine o'clock I open the door of the shop.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1453,6 +1539,7 @@ const EXERCISES = [
   "answer": "pas op, het glas staat op de rand van de tafel",
   "alternatives": [],
   "hint": "\"pas op\" (imperative of oppassen): verb first; then a normal main clause.",
+  "en": "Careful, the glass is on the edge of the table.",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -1467,6 +1554,7 @@ const EXERCISES = [
   "answer": "aan het begin van het gesprek stel je jezelf voor",
   "alternatives": [],
   "hint": "Separable \"voorstellen\": \"stel\" 2nd (inversion after the time phrase), \"voor\" at the end.",
+  "en": "At the start of the interview you introduce yourself.",
   "grammar": "scheidbaar",
   "level": 4
  },
@@ -1485,6 +1573,7 @@ const EXERCISES = [
    "elke ochtend maak ik in het hotel de slaapkamers schoon"
   ],
   "hint": "Separable \"schoonmaken\": \"maak\" 2nd, \"schoon\" at the end.",
+  "en": "In the hotel I clean the bedrooms every morning.",
   "grammar": "scheidbaar",
   "level": 4
  },
@@ -1503,6 +1592,7 @@ const EXERCISES = [
    "ik sluit de winkel om zes uur met de sleutel af"
   ],
   "hint": "Time first, so inversion (sluit ik); the particle \"af\" of \"afsluiten\" goes to the very end.",
+  "en": "At six o'clock I lock the shop with the key.",
   "grammar": "scheidbaar",
   "level": 4
  },
@@ -1519,6 +1609,7 @@ const EXERCISES = [
    "de vacature is helaas al vervuld"
   ],
   "hint": "\"helaas\" first, so inversion: \"is de vacature\".",
+  "en": "Unfortunately the vacancy has already been filled.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1533,6 +1624,7 @@ const EXERCISES = [
   "answer": "ik ben net begonnen bij een nieuw bedrijf",
   "alternatives": [],
   "hint": "Perfect with \"zijn\": \"ben\" 2nd, \"begonnen\" late in the sentence.",
+  "en": "I've just started at a new company.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1550,6 +1642,7 @@ const EXERCISES = [
    "in 1990 ben ik in een klein dorp geboren"
   ],
   "hint": "\"ik ben geboren\": the participle \"geboren\" goes to the end; time before place.",
+  "en": "I was born in a small village in 1990.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1567,6 +1660,7 @@ const EXERCISES = [
    "ik heb twee jaar aan de universiteit geschiedenis gestudeerd"
   ],
   "hint": "Perfect tense: \"heb\" 2nd, participle \"gestudeerd\" at the end.",
+  "en": "I studied history at university for two years.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1584,6 +1678,7 @@ const EXERCISES = [
    "ik heb van het bedrijf nog geen antwoord gekregen"
   ],
   "hint": "Perfect tense: \"heb\" 2nd, participle \"gekregen\" at the end.",
+  "en": "I haven't received an answer from the company yet.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1601,6 +1696,7 @@ const EXERCISES = [
    "ik heb ergens in de bus mijn portemonnee verloren"
   ],
   "hint": "Perfect tense: \"heb\" 2nd, participle \"verloren\" at the end.",
+  "en": "I lost my wallet somewhere on the bus.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1615,6 +1711,7 @@ const EXERCISES = [
   "answer": "hij heeft het probleem met de computer snel opgelost",
   "alternatives": [],
   "hint": "Perfect tense: \"heeft\" 2nd, participle \"opgelost\" at the end.",
+  "en": "He quickly solved the problem with the computer.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1633,6 +1730,7 @@ const EXERCISES = [
    "gisteren heb ik een prettig gesprek met de directeur gehad"
   ],
   "hint": "Perfect tense: \"heb\" in 2nd place, the participle \"gehad\" at the end.",
+  "en": "Yesterday I had a pleasant conversation with the director.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -1650,6 +1748,7 @@ const EXERCISES = [
    "ik heb na drie pogingen eindelijk een baan gevonden"
   ],
   "hint": "Perfect tense with inversion: \"heb ik ... gevonden\".",
+  "en": "After three attempts I finally found a job.",
   "grammar": "perfectum",
   "level": 4
  },
@@ -1665,6 +1764,7 @@ const EXERCISES = [
   "answer": "ik stap op de fiets en ga naar mijn werk",
   "alternatives": [],
   "hint": "Two verbs with one subject joined by \"en\".",
+  "en": "I get on my bike and go to work.",
   "grammar": "nevenschikkend",
   "level": 2
  },
@@ -1680,6 +1780,7 @@ const EXERCISES = [
   "answer": "mijn vriendin is kunstenaar en maakt mooie beelden",
   "alternatives": [],
   "hint": "Two main clauses joined by \"en\": both have the verb right after the subject.",
+  "en": "My friend is an artist and makes beautiful sculptures.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1695,6 +1796,7 @@ const EXERCISES = [
   "answer": "de klant is boos en legt de telefoon neer",
   "alternatives": [],
   "hint": "\"neerleggen\" is separable: \"legt\" in 2nd place, \"neer\" at the end.",
+  "en": "The customer is angry and puts down the phone.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1710,6 +1812,7 @@ const EXERCISES = [
   "answer": "ik werk graag met mensen, want ik ben erg sociaal",
   "alternatives": [],
   "hint": "\"graag\" comes right after the verb; \"want\" keeps normal word order.",
+  "en": "I like working with people, because I'm very sociable.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1725,6 +1828,7 @@ const EXERCISES = [
   "answer": "ik ben moe, want ik ben al sinds vijf uur wakker",
   "alternatives": [],
   "hint": "\"want\" does not change the word order: after \"want\" comes subject + verb, as normal.",
+  "en": "I'm tired, because I've been awake since five o'clock.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1742,6 +1846,7 @@ const EXERCISES = [
    "ik heb pijn in mijn buik, dus blijf ik vandaag thuis"
   ],
   "hint": "After \"dus\" both orders are fine: \"dus ik blijf\" or \"dus blijf ik\".",
+  "en": "I have a stomach ache, so I'm staying at home today.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1759,6 +1864,7 @@ const EXERCISES = [
    "ik zit de hele dag op kantoor, dus heb ik weinig beweging"
   ],
   "hint": "After \"dus\" both \"dus ik heb\" and \"dus heb ik\" are correct.",
+  "en": "I sit in the office all day, so I don't get much exercise.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -1773,6 +1879,7 @@ const EXERCISES = [
   "answer": "het werk is leuk en bovendien verdien ik goed",
   "alternatives": [],
   "hint": "\"bovendien\" counts as the first place, so inversion follows: \"verdien ik\".",
+  "en": "The work is enjoyable and, what's more, I earn well.",
   "grammar": "nevenschikkend",
   "level": 4
  },
@@ -1788,6 +1895,7 @@ const EXERCISES = [
   "answer": "dit werk is niet gemakkelijk, want je moet sterk zijn",
   "alternatives": [],
   "hint": "After \"want\" normal order: subject, verb, ... infinitive (zijn) at the end.",
+  "en": "This work isn't easy, because you have to be strong.",
   "grammar": "nevenschikkend",
   "level": 4
  },
@@ -1803,6 +1911,7 @@ const EXERCISES = [
   "answer": "de plant in de winkel is dood, want niemand geeft hem water",
   "alternatives": [],
   "hint": "\"want\" keeps normal order: subject (niemand) + verb (geeft).",
+  "en": "The plant in the shop is dead, because nobody waters it.",
   "grammar": "nevenschikkend",
   "level": 4
  },
@@ -1818,6 +1927,7 @@ const EXERCISES = [
   "answer": "het bedrijf groeit snel en verdient nu een miljoen euro per jaar",
   "alternatives": [],
   "hint": "Two verbs with one subject, joined by \"en\": no subject is repeated.",
+  "en": "The company is growing fast and now earns a million euros a year.",
   "grammar": "nevenschikkend",
   "level": 4
  },
@@ -1833,6 +1943,7 @@ const EXERCISES = [
   "answer": "eerst stofzuig ik de winkel en daarna hang ik de kleren op",
   "alternatives": [],
   "hint": "\"eerst\" and \"daarna\" both cause inversion; \"ophangen\" splits: \"hang ... op\".",
+  "en": "First I vacuum the shop and then I hang up the clothes.",
   "grammar": "nevenschikkend",
   "level": 5
  },
@@ -1847,6 +1958,7 @@ const EXERCISES = [
   "answer": "je hoeft morgen niet te werken, want de winkel is gesloten",
   "alternatives": [],
   "hint": "\"hoeven\" + niet + te + infinitive at the end; \"want\" keeps normal word order.",
+  "en": "You don't have to work tomorrow, because the shop is closed.",
   "grammar": "om-te",
   "level": 5
  },
@@ -1862,6 +1974,7 @@ const EXERCISES = [
   "answer": "wij zoeken een collega die goed Nederlands spreekt",
   "alternatives": [],
   "hint": "In a \"die\" clause (who/that) the verb goes to the end.",
+  "en": "We are looking for a colleague who speaks good Dutch.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1878,6 +1991,7 @@ const EXERCISES = [
    "ik bel meneer Jansen zodra ik thuis ben"
   ],
   "hint": "\"zodra\" sends its verb to the end; a sentence that starts with that clause continues with verb + subject.",
+  "en": "As soon as I get home, I'll call Mr Jansen.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1895,6 +2009,7 @@ const EXERCISES = [
    "ik neem de bus als de trein niet rijdt"
   ],
   "hint": "\"als\" sends its verb (rijdt) to the end; after the \"als\" clause comes verb + subject.",
+  "en": "If the train isn't running, I take the bus.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1910,6 +2025,7 @@ const EXERCISES = [
   "answer": "de chef zegt dat de beslissing nog niet definitief is",
   "alternatives": [],
   "hint": "\"dat\" starts a subordinate clause: the verb \"is\" goes to the end.",
+  "en": "The boss says that the decision is not final yet.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1924,6 +2040,7 @@ const EXERCISES = [
   "answer": "ik ben blij dat ik eindelijk een vaste baan heb",
   "alternatives": [],
   "hint": "After \"dat\" the verb (heb) goes to the end.",
+  "en": "I'm glad that I finally have a permanent job.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1943,6 +2060,7 @@ const EXERCISES = [
    "omdat ik naar de kerk ga, werk ik op zondag niet"
   ],
   "hint": "\"omdat\" sends the verb (ga) to the end.",
+  "en": "I don't work on Sundays, because I go to church.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -1960,6 +2078,7 @@ const EXERCISES = [
    "omdat mijn vlucht vroeg vertrekt, wil ik vrijdag vrij hebben"
   ],
   "hint": "\"omdat\" sends \"vertrekt\" to the end; modal \"wil\" + infinitive \"hebben\" at the end.",
+  "en": "I'd like to have Friday off, because my flight leaves early.",
   "grammar": "bijzin",
   "level": 5
  },
@@ -1978,6 +2097,7 @@ const EXERCISES = [
    "morgen neemt mijn collega mijn taken over, omdat ik ziek ben"
   ],
   "hint": "Separable verb \"overnemen\": \"neemt\" is 2nd, \"over\" goes to the end; \"omdat\" sends \"ben\" to the end.",
+  "en": "My colleague is taking over my tasks tomorrow because I'm ill.",
   "grammar": "bijzin",
   "level": 5
  },
@@ -1994,6 +2114,7 @@ const EXERCISES = [
    "ik ben bang dat ik morgen op mijn werk te laat kom"
   ],
   "hint": "After \"dat\" the verb (kom) goes to the end of the sentence.",
+  "en": "I'm afraid I'll be late for work tomorrow.",
   "grammar": "bijzin",
   "level": 5
  },
@@ -2009,6 +2130,7 @@ const EXERCISES = [
   "answer": "mijn broer studeert literatuur aan de universiteit",
   "alternatives": [],
   "hint": "Verb 2nd; object before place.",
+  "en": "My brother studies literature at university.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2027,6 +2149,7 @@ const EXERCISES = [
   "answer": "ik vind die kleur een beetje lelijk",
   "alternatives": [],
   "hint": "Vinden + object + opinion: ik vind die kleur lelijk.",
+  "en": "I think that colour is a bit ugly.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2045,6 +2168,7 @@ const EXERCISES = [
   "answer": "de ouders wachten buiten op de stoep",
   "alternatives": [],
   "hint": "Verb 2nd; general place (buiten) before specific place (op de stoep).",
+  "en": "The parents are waiting outside on the pavement.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2063,6 +2187,7 @@ const EXERCISES = [
   "answer": "de koffie staat beneden in de kantine",
   "alternatives": [],
   "hint": "Verb 2nd; general place (beneden) before specific place.",
+  "en": "The coffee is downstairs in the canteen.",
   "grammar": "basis",
   "level": 2
  },
@@ -2081,6 +2206,7 @@ const EXERCISES = [
    "de voorzitter opent om acht uur de vergadering"
   ],
   "hint": "Verb 2nd. Time first → inversion.",
+  "en": "The chair opens the meeting at eight o'clock.",
   "grammar": "basis",
   "level": 2
  },
@@ -2096,6 +2222,7 @@ const EXERCISES = [
   "answer": "ik wacht nog op een reactie van meneer Bakker",
   "alternatives": [],
   "hint": "Verb in 2nd place; wachten op: the op-phrase follows the adverb nog.",
+  "en": "I'm still waiting for a response from Mr Bakker.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2120,6 +2247,7 @@ const EXERCISES = [
    "ik mail vandaag mevrouw Jansen over de nieuwe datum"
   ],
   "hint": "Verb in 2nd place. If you start with vandaag, the subject moves behind the verb.",
+  "en": "I'm emailing Mrs Jansen today about the new date.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2140,6 +2268,7 @@ const EXERCISES = [
    "in de keuken van de kookcursus ruikt het lekker"
   ],
   "hint": "Verb in 2nd place; manner (lekker) before place (in de keuken).",
+  "en": "It smells nice in the kitchen of the cooking course.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2160,6 +2289,7 @@ const EXERCISES = [
   "answer": "ik zoek een computercursus bij mij in de buurt",
   "alternatives": [],
   "hint": "Verb in 2nd place, the object before the place.",
+  "en": "I'm looking for a computer course near me.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2181,6 +2311,7 @@ const EXERCISES = [
    "vandaag heb ik een hoop huiswerk voor de cursus"
   ],
   "hint": "Time (vandaag) comes right after the verb, or at the start with inversion.",
+  "en": "Today I have a lot of homework for the course.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2203,6 +2334,7 @@ const EXERCISES = [
    "mijn zuster brengt elke ochtend de kinderen naar school"
   ],
   "hint": "TMP: time (elke ochtend) before place (naar school). Time first → inversion.",
+  "en": "My sister takes the children to school every morning.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2222,6 +2354,7 @@ const EXERCISES = [
   "answer": "de juf geeft de kinderen veel liefde en aandacht",
   "alternatives": [],
   "hint": "Verb 2nd; indirect object (de kinderen) before direct object.",
+  "en": "The teacher gives the children a lot of love and attention.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2240,6 +2373,7 @@ const EXERCISES = [
   "answer": "mijn vrouw werkt op een afdeling in het ziekenhuis",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place, then place.",
+  "en": "My wife works on a ward in the hospital.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2262,6 +2396,7 @@ const EXERCISES = [
    "elke dag loop ik door het park naar school"
   ],
   "hint": "TMP: time (elke dag) first, then the route and destination.",
+  "en": "Every day I walk through the park to school.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2282,6 +2417,7 @@ const EXERCISES = [
   "answer": "mijn broer heeft een eigen zaak in de stad",
   "alternatives": [],
   "hint": "Subject first, verb 2nd.",
+  "en": "My brother has his own business in town.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2300,6 +2436,7 @@ const EXERCISES = [
   "answer": "de soep heeft een mooie kleur en een goede smaak",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the objects joined by en.",
+  "en": "The soup has a lovely colour and a good flavour.",
   "grammar": "basis",
   "level": 2
  },
@@ -2315,6 +2452,7 @@ const EXERCISES = [
   "answer": "ik betaal de rekening van de cursus via de bank",
   "alternatives": [],
   "hint": "Verb in 2nd place, the object (de rekening van de cursus) before the way of paying (via de bank).",
+  "en": "I pay the bill for the course through the bank.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2333,6 +2471,7 @@ const EXERCISES = [
   "answer": "de docent geeft mij nog een kans voor de toets",
   "alternatives": [],
   "hint": "Verb 2nd; indirect object (mij) before direct object (een kans).",
+  "en": "The teacher is giving me another chance at the test.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2353,6 +2492,7 @@ const EXERCISES = [
   "answer": "de kinderen lachen vaak om de grappen van de meester",
   "alternatives": [],
   "hint": "Verb 2nd, adverb (vaak) right after the verb; lachen om = laugh at.",
+  "en": "The children often laugh at the teacher's jokes.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2373,6 +2513,7 @@ const EXERCISES = [
    "in de pauze spelen de kinderen buiten op het gras"
   ],
   "hint": "TMP: time (in de pauze) before place (buiten op het gras).",
+  "en": "During the break the children play outside on the grass.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -2391,6 +2532,7 @@ const EXERCISES = [
   "answer": "mijn zoon heeft een rustige persoonlijkheid",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place.",
+  "en": "My son has a calm personality.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2408,6 +2550,7 @@ const EXERCISES = [
   "answer": "ik stuur u alvast mijn nieuwe telefoonnummer",
   "alternatives": [],
   "hint": "Verb in 2nd place; the short pronoun u comes right after the verb, the adverb alvast before the object.",
+  "en": "I'm sending you my new phone number in advance.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2427,6 +2570,7 @@ const EXERCISES = [
   "answer": "de docent neemt mijn vraag altijd serieus",
   "alternatives": [],
   "hint": "Verb 2nd; the definite object comes before altijd.",
+  "en": "The teacher always takes my question seriously.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2446,6 +2590,7 @@ const EXERCISES = [
   "answer": "de groep op dinsdagavond is helaas al vol",
   "alternatives": [],
   "hint": "The whole subject (de groep op dinsdagavond) comes first, then the verb.",
+  "en": "Unfortunately the Tuesday evening group is already full.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2465,6 +2610,7 @@ const EXERCISES = [
   "answer": "de kookcursus is een initiatief van de gemeente",
   "alternatives": [],
   "hint": "Subject first, verb (is) in 2nd place.",
+  "en": "The cooking course is an initiative of the municipality.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2482,6 +2628,7 @@ const EXERCISES = [
   "answer": "de toets van gisteren was inderdaad heel moeilijk",
   "alternatives": [],
   "hint": "Subject first, verb (was) in 2nd place, then the adverb.",
+  "en": "Yesterday's test was indeed very difficult.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2499,6 +2646,7 @@ const EXERCISES = [
   "answer": "het resultaat van mijn toets was boven verwachting",
   "alternatives": [],
   "hint": "Long subject first, then the verb in 2nd place.",
+  "en": "The result of my test was better than expected.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2519,6 +2667,7 @@ const EXERCISES = [
   "answer": "ik heb behoefte aan meer tijd voor mijn huiswerk",
   "alternatives": [],
   "hint": "Verb 2nd; behoefte hebben aan = to need.",
+  "en": "I need more time for my homework.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2538,6 +2687,7 @@ const EXERCISES = [
   "answer": "de meester is streng maar eigenlijk ook heel vrolijk",
   "alternatives": [],
   "hint": "Maar joins two parts; the adverbs eigenlijk and ook come before the adjective.",
+  "en": "The teacher is strict but actually also very cheerful.",
   "grammar": "basis",
   "level": 3
  },
@@ -2553,6 +2703,7 @@ const EXERCISES = [
   "answer": "mijn dochter interesseert zich voor dieren en de natuur",
   "alternatives": [],
   "hint": "Reflexive verb: zich comes right after the conjugated verb.",
+  "en": "My daughter is interested in animals and nature.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2572,6 +2723,7 @@ const EXERCISES = [
   "answer": "mijn dochter heeft een goed geheugen voor nieuwe woorden",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the object.",
+  "en": "My daughter has a good memory for new words.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2595,6 +2747,7 @@ const EXERCISES = [
    "de winkel levert morgen de nieuwe boeken op school"
   ],
   "hint": "TMP: time (morgen) before place (op school).",
+  "en": "The shop is delivering the new books to the school tomorrow.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2614,6 +2767,7 @@ const EXERCISES = [
   "answer": "er is schade aan het dak van de school",
   "alternatives": [],
   "hint": "Er is + new subject (schade).",
+  "en": "There is damage to the school roof.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2634,6 +2788,7 @@ const EXERCISES = [
   "answer": "de docent van de computercursus heeft veel verstand van computers",
   "alternatives": [],
   "hint": "Long subject first, verb in 2nd place. Verstand hebben van = to know a lot about.",
+  "en": "The teacher of the computer course knows a lot about computers.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2652,6 +2807,7 @@ const EXERCISES = [
   "answer": "een jongen uit de klas doet gemeen tegen mijn zoon",
   "alternatives": [],
   "hint": "Long subject first, then the verb. Gemeen doen tegen = to be mean to.",
+  "en": "A boy from the class is being mean to my son.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2671,6 +2827,7 @@ const EXERCISES = [
   "answer": "mijn zoon draagt zijn spullen in een tas van leer",
   "alternatives": [],
   "hint": "Verb 2nd; object before the place.",
+  "en": "My son carries his things in a leather bag.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2691,6 +2848,7 @@ const EXERCISES = [
   "answer": "het kind van mijn broer zit in dezelfde klas als mijn zoon",
   "alternatives": [],
   "hint": "Long subject first, then the verb (zit) in 2nd place.",
+  "en": "My brother's child is in the same class as my son.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2711,6 +2869,7 @@ const EXERCISES = [
   "answer": "er zijn grote verschillen tussen de scholen hier en in mijn land",
   "alternatives": [],
   "hint": "Er zijn + subject: introduces something new.",
+  "en": "There are big differences between the schools here and in my country.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -2730,6 +2889,7 @@ const EXERCISES = [
   "answer": "de combinatie van werk en studie is soms zwaar",
   "alternatives": [],
   "hint": "Long subject first, verb (is) in 2nd place.",
+  "en": "Combining work and study is sometimes hard.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -2751,6 +2911,7 @@ const EXERCISES = [
    "volgende week neemt de directeur een besluit over de groep"
   ],
   "hint": "Time before the indefinite object; time first → inversion.",
+  "en": "Next week the head teacher will make a decision about the group.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -2774,6 +2935,7 @@ const EXERCISES = [
    "de les begint normaal om negen uur"
   ],
   "hint": "Adverb first (normaal) → inversion: begint de les.",
+  "en": "The lesson normally starts at nine o'clock.",
   "grammar": "inversie",
   "level": 1
  },
@@ -2790,6 +2952,7 @@ const EXERCISES = [
    "de kinderen zijn op woensdagmiddag vrij"
   ],
   "hint": "Time first → inversion: zijn de kinderen.",
+  "en": "On Wednesday afternoons the children are off.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -2813,6 +2976,7 @@ const EXERCISES = [
    "gewoonlijk drinken wij in de pauze koffie of thee"
   ],
   "hint": "Time phrase first → inversion: verb, then subject.",
+  "en": "During the break we usually drink coffee or tea.",
   "grammar": "inversie",
   "level": 2
  },
@@ -2829,6 +2993,7 @@ const EXERCISES = [
    "ik lees na het eten de krant of een tijdschrift"
   ],
   "hint": "Time phrase first → inversion (lees ik).",
+  "en": "After dinner I read the newspaper or a magazine.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -2850,6 +3015,7 @@ const EXERCISES = [
    "de klas gaat in juni een dag naar de kust"
   ],
   "hint": "Time first → inversion. TMP: time before place (naar de kust).",
+  "en": "In June the class is going to the coast for a day.",
   "grammar": "inversie",
   "level": 2
  },
@@ -2867,6 +3033,7 @@ const EXERCISES = [
    "meneer Bakker is vandaag blijkbaar ziek"
   ],
   "hint": "Adverb first (blijkbaar) → inversion: verb before subject.",
+  "en": "Apparently Mr Bakker is ill today.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -2887,6 +3054,7 @@ const EXERCISES = [
    "wij zoeken samen een oplossing voor het probleem"
   ],
   "hint": "Adverb first (samen) → inversion: zoeken wij.",
+  "en": "Together we look for a solution to the problem.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -2909,6 +3077,7 @@ const EXERCISES = [
    "mijn opa was vroeger soldaat in het leger"
   ],
   "hint": "Time word first (vroeger) → inversion: was mijn opa.",
+  "en": "My grandad used to be a soldier in the army.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -2931,6 +3100,7 @@ const EXERCISES = [
    "er zitten in totaal twaalf mensen in de groep"
   ],
   "hint": "After in totaal at the start, the verb comes 2nd; er + verb introduces a new, indefinite subject.",
+  "en": "There are twelve people in the group in total.",
   "grammar": "inversie",
   "level": 3
  },
@@ -2946,6 +3116,7 @@ const EXERCISES = [
   "answer": "in een nieuw land heb je veel moed nodig",
   "alternatives": [],
   "hint": "Place first → inversion (heb je; the -t drops before je). Nodig goes to the end.",
+  "en": "In a new country you need a lot of courage.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -2968,6 +3139,7 @@ const EXERCISES = [
    "een agent van de politie komt morgen op school"
   ],
   "hint": "Time first → inversion: komt + subject.",
+  "en": "Tomorrow a police officer is coming to the school.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -2990,6 +3162,7 @@ const EXERCISES = [
    "ik ben na het sporten altijd een beetje stijf"
   ],
   "hint": "Time phrase first → inversion: ben ik.",
+  "en": "After exercising I'm always a bit stiff.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3009,6 +3182,7 @@ const EXERCISES = [
    "een cursus in de avond is voor mij ideaal"
   ],
   "hint": "Phrase first → inversion: is + subject.",
+  "en": "For me, an evening course is ideal.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3029,6 +3203,7 @@ const EXERCISES = [
    "wij praten in de les over geloof en cultuur"
   ],
   "hint": "Phrase first → inversion; praten over at the end.",
+  "en": "In class we talk about religion and culture.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3048,6 +3223,7 @@ const EXERCISES = [
    "ik kies na overleg met de docent een andere groep"
   ],
   "hint": "Phrase first → inversion: kies ik.",
+  "en": "After talking it over with the teacher, I'm choosing a different group.",
   "grammar": "inversie",
   "level": 3
  },
@@ -3065,6 +3241,7 @@ const EXERCISES = [
    "de kinderen verkopen voor het feest koekjes op de markt"
   ],
   "hint": "Phrase first → inversion: verkopen de kinderen.",
+  "en": "For the party the children are selling biscuits at the market.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3086,6 +3263,7 @@ const EXERCISES = [
    "de kinderen zingen en dansen op het feest van de school"
   ],
   "hint": "Place phrase first → inversion: verbs before the subject.",
+  "en": "At the school party the children sing and dance.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3109,6 +3287,7 @@ const EXERCISES = [
    "de kinderen voetballen na school op het veld bij de rivier"
   ],
   "hint": "Time first → inversion: verb, then subject; place at the end.",
+  "en": "After school the children play football on the field by the river.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3131,6 +3310,7 @@ const EXERCISES = [
    "hij heeft na de gymles pijn aan zijn been en zijn schouder"
   ],
   "hint": "Time phrase first → inversion: heeft hij.",
+  "en": "After the PE lesson his leg and shoulder hurt.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -3152,6 +3332,7 @@ const EXERCISES = [
    "er komt vandaag een psycholoog als gast in de klas"
   ],
   "hint": "Time first → inversion; er introduces a new subject (een psycholoog).",
+  "en": "Today a psychologist is coming to the class as a guest.",
   "grammar": "inversie",
   "level": 4
  },
@@ -3169,6 +3350,7 @@ const EXERCISES = [
    "wij praten op de ouderavond over de ontwikkeling van ons kind"
   ],
   "hint": "Time/place phrase first → inversion. Praten over goes near the end.",
+  "en": "At the parents' evening we talk about our child's development.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -3189,6 +3371,7 @@ const EXERCISES = [
   "answer": "weet jij de betekenis van dit woord?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then subject.",
+  "en": "Do you know the meaning of this word?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -3207,6 +3390,7 @@ const EXERCISES = [
   "answer": "waarom antwoord jij niet op mijn vraag?",
   "alternatives": [],
   "hint": "W-question: question word, verb, subject. With jij after the verb the -t drops: antwoord jij.",
+  "en": "Why don't you answer my question?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -3226,6 +3410,7 @@ const EXERCISES = [
   "answer": "wat is jouw plan na de inburgeringscursus?",
   "alternatives": [],
   "hint": "W-question: question word, verb, then subject.",
+  "en": "What is your plan after the integration course?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -3243,6 +3428,7 @@ const EXERCISES = [
   "answer": "heeft u een voorkeur voor dinsdag of donderdag?",
   "alternatives": [],
   "hint": "Yes/no question: verb (heeft) first, then the subject (u).",
+  "en": "Do you have a preference for Tuesday or Thursday?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -3261,6 +3447,7 @@ const EXERCISES = [
   "answer": "heeft u een specifieke vraag over de toets?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then subject.",
+  "en": "Do you have a specific question about the test?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -3279,6 +3466,7 @@ const EXERCISES = [
   "answer": "is de docent van de computercursus al weg?",
   "alternatives": [],
   "hint": "Yes/no question: verb (is) first.",
+  "en": "Has the computer course teacher already left?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -3298,6 +3486,7 @@ const EXERCISES = [
   "answer": "mag ik jouw boek tot vrijdag lenen?",
   "alternatives": [],
   "hint": "Question with a modal verb: modal first, subject second, infinitive (lenen) at the end.",
+  "en": "May I borrow your book until Friday?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -3317,6 +3506,7 @@ const EXERCISES = [
   "answer": "kan ik de toets een dag eerder maken?",
   "alternatives": [],
   "hint": "Yes/no question: the verb comes first, then the subject; the infinitive goes to the end.",
+  "en": "Can I take the test a day earlier?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -3335,6 +3525,7 @@ const EXERCISES = [
   "answer": "ik wil graag een cursus gezond koken volgen",
   "alternatives": [],
   "hint": "Modal verb (wil) in 2nd place, the infinitive (volgen) at the end.",
+  "en": "I would like to take a healthy cooking course.",
   "grammar": "modaal",
   "level": 3
  },
@@ -3350,6 +3541,7 @@ const EXERCISES = [
   "answer": "wilt u hier uw achternaam en telefoonnummer invullen?",
   "alternatives": [],
   "hint": "Polite question: wilt u … + infinitive at the end.",
+  "en": "Would you fill in your surname and phone number here?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -3368,6 +3560,7 @@ const EXERCISES = [
   "answer": "u kunt uw tas bij de deur neerzetten",
   "alternatives": [],
   "hint": "Modal (kunt) 2nd; with a modal the separable verb stays whole at the end: neerzetten.",
+  "en": "You can put your bag down by the door.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -3390,6 +3583,7 @@ const EXERCISES = [
    "morgen kan ik helaas niet naar de toets komen"
   ],
   "hint": "Modal verb (kan) in 2nd place, the infinitive (komen) goes to the end.",
+  "en": "Unfortunately I can't come to the test tomorrow.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -3408,6 +3602,7 @@ const EXERCISES = [
   "answer": "mijn dochter wil een verhaal over onze kat schrijven",
   "alternatives": [],
   "hint": "Modal (wil) 2nd, infinitive (schrijven) at the end.",
+  "en": "My daughter wants to write a story about our cat.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -3429,6 +3624,7 @@ const EXERCISES = [
    "je mag op het terrein van de school niet roken"
   ],
   "hint": "Place first → inversion; modal (mag) 2nd, infinitive at the end.",
+  "en": "You are not allowed to smoke on the school grounds.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -3450,6 +3646,7 @@ const EXERCISES = [
   "answer": "u kunt zich uitsluitend via de website aanmelden",
   "alternatives": [],
   "hint": "Modal 2nd, zich right after it, infinitive (aanmelden) at the end.",
+  "en": "You can only register via the website.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -3473,6 +3670,7 @@ const EXERCISES = [
    "volgende week kunnen wij wellicht een nieuwe afspraak maken"
   ],
   "hint": "After an adverb at the start (wellicht) comes inversion: verb, then subject. The infinitive goes last.",
+  "en": "Perhaps we can make a new appointment next week.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -3495,6 +3693,7 @@ const EXERCISES = [
    "volgend jaar wil de minister meer geld aan scholen geven"
   ],
   "hint": "Modal 2nd, infinitive last; time first → inversion.",
+  "en": "The minister wants to give more money to schools next year.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -3515,6 +3714,7 @@ const EXERCISES = [
    "volgende week krijgt zij haar boek terug"
   ],
   "hint": "Separable verb terugkrijgen: krijgt in 2nd place, terug at the end.",
+  "en": "She is getting her book back next week.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -3533,6 +3733,7 @@ const EXERCISES = [
   "answer": "neem een deken mee voor het schoolkamp",
   "alternatives": [],
   "hint": "Imperative: verb first. Meenemen splits: mee goes after the object.",
+  "en": "Bring a blanket for the school camp.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -3554,6 +3755,7 @@ const EXERCISES = [
   "answer": "de docent spreekt mijn naam altijd verkeerd uit",
   "alternatives": [],
   "hint": "Separable verb uitspreken: spreekt in 2nd place, uit at the end.",
+  "en": "The teacher always pronounces my name wrong.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -3576,6 +3778,7 @@ const EXERCISES = [
    "ik bied u mijn excuses voor de fout aan"
   ],
   "hint": "Separable verb aanbieden: the stem (bied) is in 2nd place, the particle (aan) goes to the end of the core sentence.",
+  "en": "I apologise to you for the mistake.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -3600,6 +3803,7 @@ const EXERCISES = [
    "wij ruimen na de les samen de troep op"
   ],
   "hint": "Separable verb opruimen: ruimen 2nd, op at the very end.",
+  "en": "After the lesson we clean up the mess together.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -3621,6 +3825,7 @@ const EXERCISES = [
    "elke dag geef ik mijn zoon een boterham mee"
   ],
   "hint": "Meegeven splits: geef 2nd, mee at the end.",
+  "en": "Every day I give my son a sandwich to take with him.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -3642,6 +3847,7 @@ const EXERCISES = [
    "de juf gaat goed met moeilijke kinderen om"
   ],
   "hint": "Separable verb omgaan met: gaat 2nd, om at the end, met-phrase after it.",
+  "en": "The teacher is good with difficult children.",
   "grammar": "scheidbaar",
   "level": 4,
   "senses": {
@@ -3659,6 +3865,7 @@ const EXERCISES = [
   "answer": "de kinderen hebben een prachtig lied gezongen",
   "alternatives": [],
   "hint": "Perfect tense: hebben 2nd, participle gezongen at the end.",
+  "en": "The children sang a beautiful song.",
   "grammar": "perfectum",
   "level": 2
  },
@@ -3677,6 +3884,7 @@ const EXERCISES = [
    "ik heb gisteren het aanmeldformulier ingevuld"
   ],
   "hint": "Perfect tense: heb in 2nd place, the past participle (ingevuld) at the end.",
+  "en": "I filled in the registration form yesterday.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -3697,6 +3905,7 @@ const EXERCISES = [
    "de leerlingen hebben allemaal de toets gehaald"
   ],
   "hint": "Perfect tense: hebben 2nd, participle (gehaald) at the end.",
+  "en": "The pupils all passed the test.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -3716,6 +3925,7 @@ const EXERCISES = [
    "ik heb gisteren mijn laptop in de klas vergeten"
   ],
   "hint": "Perfect tense: heb 2nd, participle (vergeten) last; time before place.",
+  "en": "I left my laptop in the classroom yesterday.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -3734,6 +3944,7 @@ const EXERCISES = [
   "answer": "de kinderen hebben de wand groen en wit geverfd",
   "alternatives": [],
   "hint": "Perfect tense: hebben 2nd, participle geverfd at the end.",
+  "en": "The children painted the wall green and white.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -3752,6 +3963,7 @@ const EXERCISES = [
    "vandaag heeft mijn zoontje op school een tand verloren"
   ],
   "hint": "TMP: time (vandaag) before place (op school); participle at the end.",
+  "en": "My little son lost a tooth at school today.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -3774,6 +3986,7 @@ const EXERCISES = [
    "ik heb na de les een gesprek met de docent gehad"
   ],
   "hint": "Time phrase first → inversion (heb ik). The participle gehad goes last.",
+  "en": "After the lesson I had a talk with the teacher.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -3792,6 +4005,7 @@ const EXERCISES = [
   "answer": "veel mensen in mijn klas zijn uit hun land gevlucht",
   "alternatives": [],
   "hint": "Perfect with zijn (movement): zijn 2nd, participle gevlucht at the end.",
+  "en": "Many people in my class have fled their country.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -3815,6 +4029,7 @@ const EXERCISES = [
    "vroeger heeft mijn oom op een boot op zee gewerkt"
   ],
   "hint": "Perfect: heeft 2nd, participle last; time (vroeger) before place.",
+  "en": "My uncle used to work on a boat at sea.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -3838,6 +4053,7 @@ const EXERCISES = [
    "wij hebben in de klas een discussie over dit onderwerp gehad"
   ],
   "hint": "Place phrase first → inversion. Participle (gehad) at the end.",
+  "en": "In class we had a discussion about this topic.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -3862,6 +4078,7 @@ const EXERCISES = [
    "ik ben vanochtend een oude vriendin in de bus tegengekomen"
   ],
   "hint": "Tegenkomen takes zijn in the perfect; the participle tegengekomen goes last.",
+  "en": "This morning I ran into an old friend on the bus.",
   "grammar": "perfectum",
   "level": 5,
   "senses": {
@@ -3880,6 +4097,7 @@ const EXERCISES = [
   "answer": "de opleiding duurt een jaar en eindigt in juni",
   "alternatives": [],
   "hint": "Two verbs sharing one subject: both stay in 2nd position of their part.",
+  "en": "The training lasts a year and ends in June.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -3895,6 +4113,7 @@ const EXERCISES = [
   "answer": "ik heb haast want de les begint over vijf minuten",
   "alternatives": [],
   "hint": "Want does not change word order: de les begint.",
+  "en": "I'm in a hurry because the lesson starts in five minutes.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -3913,6 +4132,7 @@ const EXERCISES = [
   "answer": "mijn zoon is niet ernstig ziek, maar hij blijft thuis",
   "alternatives": [],
   "hint": "Maar keeps normal word order: hij blijft.",
+  "en": "My son isn't seriously ill, but he is staying at home.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -3931,6 +4151,7 @@ const EXERCISES = [
   "answer": "pak je boek, want wij gaan verder met de les",
   "alternatives": [],
   "hint": "Imperative first; after want normal order. Verdergaan splits: gaan … verder.",
+  "en": "Get your book out, because we're carrying on with the lesson.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -3951,6 +4172,7 @@ const EXERCISES = [
   "answer": "ik wil het boek kopen, maar de prijs is hoog",
   "alternatives": [],
   "hint": "Modal + infinitive at the end; after maar normal order.",
+  "en": "I want to buy the book, but the price is high.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -3969,6 +4191,7 @@ const EXERCISES = [
   "answer": "ik ben ziek, daarom kom ik vandaag niet naar de les",
   "alternatives": [],
   "hint": "Daarom at the start of a clause causes inversion: daarom kom ik.",
+  "en": "I'm ill, so I'm not coming to the lesson today.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -3984,6 +4207,7 @@ const EXERCISES = [
   "answer": "de gemeente helpt mij financieel, want de opleiding is duur",
   "alternatives": [],
   "hint": "After want the normal main-clause order stays: subject + verb.",
+  "en": "The municipality is helping me financially, because the training is expensive.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -4004,6 +4228,7 @@ const EXERCISES = [
    "mijn zoon werkt hard en doet zijn huiswerk zelfs in het weekend"
   ],
   "hint": "Two verbs with the same subject joined by en; each keeps its place after the subject.",
+  "en": "My son works hard and even does his homework at the weekend.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -4025,6 +4250,7 @@ const EXERCISES = [
   "answer": "de school stuurt een herinnering, want wij hebben nog niet betaald",
   "alternatives": [],
   "hint": "Want keeps main-clause order: wij hebben … betaald (participle at the end).",
+  "en": "The school is sending a reminder, because we haven't paid yet.",
   "grammar": "nevenschikkend",
   "level": 5,
   "senses": {
@@ -4043,6 +4269,7 @@ const EXERCISES = [
   "answer": "is het mogelijk om de afspraak naar donderdag te verzetten?",
   "alternatives": [],
   "hint": "Question with verb first; in an om … te construction the te-infinitive comes last.",
+  "en": "Is it possible to move the appointment to Thursday?",
   "grammar": "om-te",
   "level": 5,
   "senses": {
@@ -4063,6 +4290,7 @@ const EXERCISES = [
    "de kinderen blijven binnen als het regent"
   ],
   "hint": "Als-clause first (verb at its end), then the main verb immediately follows: blijven de kinderen.",
+  "en": "When it rains, the children stay inside.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -4082,6 +4310,7 @@ const EXERCISES = [
   "answer": "wij wassen onze handen omdat ze vies zijn",
   "alternatives": [],
   "hint": "Omdat sends the verb (zijn) to the end.",
+  "en": "We wash our hands because they are dirty.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -4101,6 +4330,7 @@ const EXERCISES = [
   "answer": "hij heeft een rode neus omdat hij verkouden is",
   "alternatives": [],
   "hint": "Omdat sends the verb (is) to the end.",
+  "en": "He has a red nose because he has a cold.",
   "grammar": "bijzin",
   "level": 3
  },
@@ -4115,6 +4345,7 @@ const EXERCISES = [
   "answer": "is het waar dat de toets morgen is?",
   "alternatives": [],
   "hint": "Question with verb first; in the dat-clause the verb goes to the end.",
+  "en": "Is it true that the test is tomorrow?",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4135,6 +4366,7 @@ const EXERCISES = [
    "ik kende niemand toen ik naar Holland kwam"
   ],
   "hint": "Toen-clause: verb at the end (kwam). After it, the main verb comes first: kende ik.",
+  "en": "When I came to Holland, I didn't know anyone.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -4154,6 +4386,7 @@ const EXERCISES = [
    "omdat ik slecht geslapen heb, heb ik weinig energie"
   ],
   "hint": "Omdat sends the verbs to the end of the clause.",
+  "en": "I have little energy because I slept badly.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4174,6 +4407,7 @@ const EXERCISES = [
    "als de cursus klaar is, krijgt u een bewijs"
   ],
   "hint": "Als-clause: verb at the end. Als-clause first → inversion (krijgt u).",
+  "en": "You will get a certificate when the course is finished.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4191,6 +4425,7 @@ const EXERCISES = [
   "answer": "het is vreemd dat de docent er vandaag niet is",
   "alternatives": [],
   "hint": "In a dat-clause the verb (is) goes to the end.",
+  "en": "It's strange that the teacher isn't here today.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4211,6 +4446,7 @@ const EXERCISES = [
    "omdat ik een goede houding heb, is de docent blij"
   ],
   "hint": "Omdat sends the verb (heb) to the end.",
+  "en": "The teacher is pleased because I have a good attitude.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -4226,6 +4462,7 @@ const EXERCISES = [
   "answer": "de juf zegt dat het gedrag van mijn zoon beter is",
   "alternatives": [],
   "hint": "In a dat-clause the verb (is) goes to the end.",
+  "en": "The teacher says that my son's behaviour is better.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4245,6 +4482,7 @@ const EXERCISES = [
   "answer": "het is typisch voor hem dat hij altijd te laat komt",
   "alternatives": [],
   "hint": "In a dat-clause the verb (komt) goes to the end.",
+  "en": "It's typical of him that he's always late.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4269,6 +4507,7 @@ const EXERCISES = [
    "ik ben te laat omdat het erg druk was bij het station"
   ],
   "hint": "Omdat sends the verb (was) to the end of the clause.",
+  "en": "I'm late because it was very busy at the station.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -4295,6 +4534,7 @@ const EXERCISES = [
    "omdat hij zijn huiswerk niet gemaakt heeft, krijgt hij straf"
   ],
   "hint": "Omdat sends the verbs to the end; niet comes before them.",
+  "en": "He is being punished because he didn't do his homework.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -4315,6 +4555,7 @@ const EXERCISES = [
    "de docent doet het raam open omdat het heet is"
   ],
   "hint": "Omdat-clause first → main verb comes next (doet de docent). Opendoen splits: open at the end.",
+  "en": "Because it's hot, the teacher opens the window.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -4337,6 +4578,7 @@ const EXERCISES = [
    "als je kind ziek is, bel de school onmiddellijk op"
   ],
   "hint": "Imperative: verb first, particle op at the end; the als-clause has its verb last.",
+  "en": "Call the school immediately if your child is ill.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -4359,6 +4601,7 @@ const EXERCISES = [
    "wat moet je doen als er in het gebouw brand is?"
   ],
   "hint": "W-question with modal: wat moet je … doen. In the als-clause the verb goes to the end.",
+  "en": "What should you do if there is a fire in the building?",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -4381,6 +4624,7 @@ const EXERCISES = [
    "vooral in de zomer gebruik ik de tuin"
   ],
   "hint": "Verb in 2nd place; the object (de tuin) comes before “vooral in de zomer”.",
+  "en": "I mainly use the garden in summer.",
   "grammar": "basis",
   "level": 1
  },
@@ -4395,6 +4639,7 @@ const EXERCISES = [
   "answer": "ik verlang naar mijn oude buurt",
   "alternatives": [],
   "hint": "“verlangen naar” = long for; the “naar …” phrase follows the verb.",
+  "en": "I miss my old neighbourhood.",
   "grammar": "basis",
   "level": 2
  },
@@ -4409,6 +4654,7 @@ const EXERCISES = [
   "answer": "ik was verbaasd over de hoge huur",
   "alternatives": [],
   "hint": "Subject + verb (was) + adjective; “verbaasd over” = surprised about.",
+  "en": "I was surprised by the high rent.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4429,6 +4675,7 @@ const EXERCISES = [
    "vandaag praat zij een uur met haar buurman"
   ],
   "hint": "TMP rule: Tijd (vandaag een uur) before Manier (met haar buurman).",
+  "en": "She talks with her neighbour for an hour today.",
   "grammar": "basis",
   "level": 2
  },
@@ -4446,6 +4693,7 @@ const EXERCISES = [
    "al de hele dag liggen de vuilniszakken op straat"
   ],
   "hint": "Verb in 2nd place; time (al de hele dag) before place (op straat).",
+  "en": "The rubbish bags have been lying in the street all day.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4469,6 +4717,7 @@ const EXERCISES = [
    "al twintig jaar woont mijn tante tegenover het café"
   ],
   "hint": "TMP: time (al twintig jaar) before place (tegenover het café).",
+  "en": "My aunt has lived opposite the café for twenty years.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4487,6 +4736,7 @@ const EXERCISES = [
   "answer": "wij wonen in een historisch huis aan de gracht",
   "alternatives": [],
   "hint": "Subject + verb + place. Note: “een historisch huis” — no -e with een + het-word.",
+  "en": "We live in a historic house on the canal.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4505,6 +4755,7 @@ const EXERCISES = [
   "answer": "beide slaapkamers liggen aan de kant van de tuin",
   "alternatives": [],
   "hint": "Subject + verb (liggen) + place.",
+  "en": "Both bedrooms are on the garden side.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4524,6 +4775,7 @@ const EXERCISES = [
   "answer": "mijn buurman is een beetje gek, maar zeer aardig",
   "alternatives": [],
   "hint": "Subject + verb (is) + description; “maar” adds a contrast.",
+  "en": "My neighbour is a bit crazy, but very nice.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4542,6 +4794,7 @@ const EXERCISES = [
   "answer": "ons huis ligt in het hart van de stad",
   "alternatives": [],
   "hint": "Subject + verb (ligt) + place.",
+  "en": "Our house is in the heart of the city.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4564,6 +4817,7 @@ const EXERCISES = [
    "wij huren een klein appartement voor een korte periode"
   ],
   "hint": "Time phrase (voor een korte periode) usually right after the verb.",
+  "en": "We're renting a small apartment for a short period.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4581,6 +4835,7 @@ const EXERCISES = [
   "answer": "ik heb een goede relatie met mijn jonge buren",
   "alternatives": [],
   "hint": "Subject + verb + object; the “met …” phrase at the end.",
+  "en": "I have a good relationship with my young neighbours.",
   "grammar": "basis",
   "level": 2
  },
@@ -4596,6 +4851,7 @@ const EXERCISES = [
   "answer": "de bus rijdt in de richting van het centrum",
   "alternatives": [],
   "hint": "Subject + verb + direction.",
+  "en": "The bus goes in the direction of the city centre.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4615,6 +4871,7 @@ const EXERCISES = [
   "answer": "de gemeente heeft een nieuw systeem voor het afval",
   "alternatives": [],
   "hint": "Subject + verb + object. “een nieuw systeem”: no -e with een + het-word.",
+  "en": "The council has a new system for rubbish.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4634,6 +4891,7 @@ const EXERCISES = [
   "answer": "mijn grootste wens is een huis met een tuin",
   "alternatives": [],
   "hint": "Subject (mijn grootste wens) + verb (is) + the rest.",
+  "en": "My biggest wish is a house with a garden.",
   "grammar": "basis",
   "level": 2
  },
@@ -4649,6 +4907,7 @@ const EXERCISES = [
   "answer": "ons huis ligt op vijf minuten lopen van het station",
   "alternatives": [],
   "hint": "Subject + verb (ligt) + place. “op vijf minuten lopen van” = a five-minute walk from.",
+  "en": "Our house is a five-minute walk from the station.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4671,6 +4930,7 @@ const EXERCISES = [
   "answer": "de bewonersvergadering is in de grote zaal van het buurthuis",
   "alternatives": [],
   "hint": "Subject + verb (is) + place.",
+  "en": "The residents' meeting is in the large hall of the community centre.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4689,6 +4949,7 @@ const EXERCISES = [
   "answer": "de praktijk van de dokter is vlak bij ons huis",
   "alternatives": [],
   "hint": "Subject + verb (is) + place.",
+  "en": "The doctor's surgery is very close to our house.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4708,6 +4969,7 @@ const EXERCISES = [
   "answer": "de kat van de buren klimt altijd over de schutting",
   "alternatives": [],
   "hint": "Verb in 2nd place, “altijd” right after it, place at the end.",
+  "en": "The neighbours' cat always climbs over the fence.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4726,6 +4988,7 @@ const EXERCISES = [
   "answer": "de hond van de buren heeft pijn aan zijn poot",
   "alternatives": [],
   "hint": "The whole subject (de hond van de buren) first, then the verb.",
+  "en": "The neighbours' dog has a sore paw.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4747,6 +5010,7 @@ const EXERCISES = [
    "elke avond staat de televisie van de buren heel hard"
   ],
   "hint": "TMP: time (elke avond) before manner (heel hard).",
+  "en": "The neighbours' television is on very loud every evening.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4766,6 +5030,7 @@ const EXERCISES = [
   "answer": "ik maak me zorgen over het gat in de stoep",
   "alternatives": [],
   "hint": "“zich zorgen maken over” = to worry about; the reflexive “me” comes right after the verb.",
+  "en": "I'm worried about the hole in the pavement.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4788,6 +5053,7 @@ const EXERCISES = [
    "al twee weken is de lift in onze flat kapot"
   ],
   "hint": "Subject + verb (is); time (al twee weken) before the rest.",
+  "en": "The lift in our block of flats has been broken for two weeks.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4808,6 +5074,7 @@ const EXERCISES = [
   "answer": "de auto van de buren staat vaak dwars op de stoep",
   "alternatives": [],
   "hint": "Verb in 2nd place; “vaak” comes right after the verb, the place at the end.",
+  "en": "The neighbours' car is often parked across the pavement.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4827,6 +5094,7 @@ const EXERCISES = [
   "answer": "de auteur van dit artikel woont al jaren in onze wijk",
   "alternatives": [],
   "hint": "The whole subject (de auteur van dit artikel) comes first, then the verb; time before place.",
+  "en": "The author of this article has lived in our neighbourhood for years.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4851,6 +5119,7 @@ const EXERCISES = [
    "elke dag vertelt mijn buurvrouw mij het nieuws uit de straat"
   ],
   "hint": "A short pronoun (mij) comes right after the verb, before the time phrase.",
+  "en": "My neighbour tells me the news from the street every day.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4873,6 +5142,7 @@ const EXERCISES = [
   "answer": "de buurvrouw bakt zoete koekjes voor alle kinderen in de straat",
   "alternatives": [],
   "hint": "Subject + verb + object; the “voor …” phrase after the object.",
+  "en": "The neighbour bakes sweet biscuits for all the children in the street.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4892,6 +5162,7 @@ const EXERCISES = [
   "answer": "mijn ouders wonen in een dorp in het westen van het land",
   "alternatives": [],
   "hint": "Subject + verb, then the place phrases: small place (dorp) before the larger area.",
+  "en": "My parents live in a village in the west of the country.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -4910,6 +5181,7 @@ const EXERCISES = [
   "answer": "de communicatie met de verhuurder is erg slecht",
   "alternatives": [],
   "hint": "The whole subject (de communicatie met de verhuurder) comes first, then the verb.",
+  "en": "Communication with the landlord is very poor.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -4928,6 +5200,7 @@ const EXERCISES = [
   "answer": "de woningcorporatie heeft strenge eisen voor nieuwe huurders",
   "alternatives": [],
   "hint": "Subject + verb + object; the “voor …” phrase at the end.",
+  "en": "The housing association has strict requirements for new tenants.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -4946,6 +5219,7 @@ const EXERCISES = [
   "answer": "de gemeente doet een experiment met nieuwe afvalcontainers",
   "alternatives": [],
   "hint": "Subject + verb (doet) + object.",
+  "en": "The council is running an experiment with new waste containers.",
   "grammar": "basis",
   "level": 3
  },
@@ -4960,6 +5234,7 @@ const EXERCISES = [
   "answer": "de uitspraak van onze straatnaam is erg moeilijk",
   "alternatives": [],
   "hint": "The whole subject first, then the verb (is).",
+  "en": "The pronunciation of our street name is very difficult.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -4978,6 +5253,7 @@ const EXERCISES = [
   "answer": "de verhuurder koopt altijd goedkoop materiaal van slechte kwaliteit",
   "alternatives": [],
   "hint": "Verb in 2nd place, “altijd” right after the verb.",
+  "en": "The landlord always buys cheap, poor-quality materials.",
   "grammar": "basis",
   "level": 3
  },
@@ -4993,6 +5269,7 @@ const EXERCISES = [
   "answer": "veel buitenlandse studenten in onze straat spreken alleen Engels",
   "alternatives": [],
   "hint": "The whole subject (veel buitenlandse studenten in onze straat) comes first, then the verb.",
+  "en": "Many foreign students in our street only speak English.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -5012,6 +5289,7 @@ const EXERCISES = [
   "answer": "wij kiezen bewust voor een woning dicht bij het station",
   "alternatives": [],
   "hint": "Verb in 2nd place; “bewust” (manner) right after the verb.",
+  "en": "We are deliberately choosing a home close to the station.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -5036,6 +5314,7 @@ const EXERCISES = [
    "elke ochtend fietsen de leerlingen van de school door onze straat"
   ],
   "hint": "TMP: time (elke ochtend) before place (door onze straat).",
+  "en": "The pupils from the school cycle through our street every morning.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -5058,6 +5337,7 @@ const EXERCISES = [
    "er ligt in het park overal afval"
   ],
   "hint": "“er” + verb in 2nd place; place (in het park) at the end.",
+  "en": "There is rubbish everywhere in the park.",
   "grammar": "inversie",
   "level": 1,
   "senses": {
@@ -5078,6 +5358,7 @@ const EXERCISES = [
    "parkeren is in onze straat bijna onmogelijk"
   ],
   "hint": "Place phrase first → inversion: the verb (is) comes before the subject (parkeren).",
+  "en": "In our street, parking is almost impossible.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5100,6 +5381,7 @@ const EXERCISES = [
    "ik lees de wijkkrant altijd op zondag"
   ],
   "hint": "Time first → inversion: “lees ik”.",
+  "en": "On Sundays I always read the neighbourhood newspaper.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5121,6 +5403,7 @@ const EXERCISES = [
    "ik help je natuurlijk met de verhuizing"
   ],
   "hint": "“natuurlijk” first → inversion: “help ik”.",
+  "en": "Of course I'll help you with the move.",
   "grammar": "inversie",
   "level": 2
  },
@@ -5138,6 +5421,7 @@ const EXERCISES = [
    "wij verhuizen volgende maand naar een goedkoper huis"
   ],
   "hint": "Time first → inversion: verb (verhuizen) before subject (wij).",
+  "en": "Next month we are moving to a cheaper house.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5158,6 +5442,7 @@ const EXERCISES = [
    "de vuilniswagen komt op dinsdag om half acht"
   ],
   "hint": "Time first → inversion: verb (komt) before subject.",
+  "en": "On Tuesdays the bin lorry comes at half past seven.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5178,6 +5463,7 @@ const EXERCISES = [
   "answer": "er hangt een vieze geur in het trappenhuis",
   "alternatives": [],
   "hint": "“er” + verb in 2nd place; the place comes at the end.",
+  "en": "There is a nasty smell in the stairwell.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5197,6 +5483,7 @@ const EXERCISES = [
    "ik heb in deze buurt een veilig gevoel"
   ],
   "hint": "Place first → inversion: “heb ik”.",
+  "en": "I feel safe in this neighbourhood.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5218,6 +5505,7 @@ const EXERCISES = [
    "in ons huis is er sinds gisteren geen stroom"
   ],
   "hint": "Time phrase first → inversion: “is er”.",
+  "en": "Since yesterday there has been no electricity in our house.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5241,6 +5529,7 @@ const EXERCISES = [
    "de huur van onze woning stijgt dit jaar weer"
   ],
   "hint": "Time first → inversion: verb (stijgt) before the subject.",
+  "en": "This year the rent for our home is going up again.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5260,6 +5549,7 @@ const EXERCISES = [
   "answer": "in de kelder staat een oude kist met speelgoed",
   "alternatives": [],
   "hint": "Place first → inversion: the verb (staat) comes before the subject.",
+  "en": "In the cellar there is an old chest of toys.",
   "grammar": "inversie",
   "level": 2
  },
@@ -5277,6 +5567,7 @@ const EXERCISES = [
    "een boer met veel koeien woont naast ons huis"
   ],
   "hint": "Place first → inversion: verb (woont) before subject (een boer).",
+  "en": "Next to our house lives a farmer with lots of cows.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5298,6 +5589,7 @@ const EXERCISES = [
    "ik vond de buurt in het begin erg stil"
   ],
   "hint": "Time phrase first → inversion: “vond ik”.",
+  "en": "At first I found the neighbourhood very quiet.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5319,6 +5611,7 @@ const EXERCISES = [
    "ik schrijf deze maand een kort stukje voor de wijkkrant"
   ],
   "hint": "Time first → inversion: “schrijf ik”.",
+  "en": "This month I'm writing a short piece for the neighbourhood newspaper.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5341,6 +5634,7 @@ const EXERCISES = [
    "ik koop op de markt in onze wijk vers fruit"
   ],
   "hint": "Place first → inversion: “koop ik”.",
+  "en": "I buy fresh fruit at the market in our neighbourhood.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5364,6 +5658,7 @@ const EXERCISES = [
    "al drie weken zit er een groot gat in de stoep"
   ],
   "hint": "Verb in 2nd place after “er”; time (al drie weken) comes before place (in de stoep).",
+  "en": "There has been a big hole in the pavement for three weeks.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5386,6 +5681,7 @@ const EXERCISES = [
    "ik zit in de zomer graag in de schaduw van de boom"
   ],
   "hint": "Time first → inversion (zit ik); place (in de schaduw …) at the end.",
+  "en": "In summer I like to sit in the shade of the tree.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -5405,6 +5701,7 @@ const EXERCISES = [
    "wij zien vanuit ons raam een mooi landschap"
   ],
   "hint": "Place first → inversion: “zien wij”.",
+  "en": "From our window we see a beautiful landscape.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5426,6 +5723,7 @@ const EXERCISES = [
    "het buurthuis heeft elke maand een cultureel programma"
   ],
   "hint": "Time first → inversion: “heeft het buurthuis”.",
+  "en": "Every month the community centre has a cultural programme.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5447,6 +5745,7 @@ const EXERCISES = [
    "alle huurders krijgen volgend jaar een helemaal nieuwe keuken"
   ],
   "hint": "Time first → inversion: verb (krijgen) before subject (alle huurders).",
+  "en": "Next year all tenants will get a completely new kitchen.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5468,6 +5767,7 @@ const EXERCISES = [
    "mijn buurman speelt elke avond heel hard klassieke muziek"
   ],
   "hint": "TMP: time (elke avond) before manner (heel hard).",
+  "en": "Every evening my neighbour plays classical music very loudly.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5489,6 +5789,7 @@ const EXERCISES = [
    "ik zoek voor mijn gezondheid een woning zonder trap"
   ],
   "hint": "Phrase first → inversion: “zoek ik”.",
+  "en": "For health reasons I'm looking for a home without stairs.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5510,6 +5811,7 @@ const EXERCISES = [
    "de wijkkrant publiceert elke maand een bijdrage van een bewoner"
   ],
   "hint": "Time first → inversion: verb (publiceert) before subject (de wijkkrant).",
+  "en": "Every month the neighbourhood newspaper publishes a contribution from a resident.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5532,6 +5834,7 @@ const EXERCISES = [
    "samen met de buren organiseren wij op zaterdag een straatfeest"
   ],
   "hint": "TMP: time (op zaterdag) before manner (samen met de buren).",
+  "en": "On Saturday we're organising a street party together with the neighbours.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5554,6 +5857,7 @@ const EXERCISES = [
    "een groep jongeren maakt elke avond lawaai op het plein"
   ],
   "hint": "Time first → inversion: verb (maakt) before subject (een groep jongeren).",
+  "en": "Every evening a group of young people makes noise in the square.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5577,6 +5881,7 @@ const EXERCISES = [
    "mijn buurvrouw doet na mijn operatie de boodschappen voor mij"
   ],
   "hint": "Time first → inversion: “doet mijn buurvrouw”.",
+  "en": "Since my operation, my neighbour has been doing the shopping for me.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5599,6 +5904,7 @@ const EXERCISES = [
    "de kinderen spelen op woensdagmiddag een spel in het buurthuis"
   ],
   "hint": "Time first → inversion: verb (spelen) before subject (de kinderen).",
+  "en": "On Wednesday afternoons the children play a game at the community centre.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5621,6 +5927,7 @@ const EXERCISES = [
    "mijn vrienden helpen mij bij het verhuizen met de zware dozen"
   ],
   "hint": "Phrase first → inversion: verb (helpen) before subject (mijn vrienden).",
+  "en": "When I move house, my friends help me with the heavy boxes.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5645,6 +5952,7 @@ const EXERCISES = [
    "het onderwijs is in de omgeving van ons huis erg goed"
   ],
   "hint": "Place first → inversion: verb (is) before subject (het onderwijs).",
+  "en": "In the area around our house, the schools are very good.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5669,6 +5977,7 @@ const EXERCISES = [
    "wij hebben op vrijdagavond vaak last van het geluid van de buren"
   ],
   "hint": "Inversion: after a time phrase at the start, the verb comes before the subject.",
+  "en": "On Friday evenings we are often bothered by the noise from the neighbours.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5691,6 +6000,7 @@ const EXERCISES = [
    "de sfeer in de wijk is sinds het nieuwe buurthuis veel beter"
   ],
   "hint": "Time phrase first → inversion: verb (is) before subject (de sfeer).",
+  "en": "Since the new community centre opened, the atmosphere in the neighbourhood has been much better.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5715,6 +6025,7 @@ const EXERCISES = [
    "ik heb door het lawaai van de buren pijn aan mijn oren"
   ],
   "hint": "Phrase first → inversion: “heb ik”.",
+  "en": "My ears hurt because of the neighbours' noise.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5737,6 +6048,7 @@ const EXERCISES = [
    "wij krijgen over een paar weken de sleutel van onze nieuwe woning"
   ],
   "hint": "Time first → inversion: “krijgen wij”.",
+  "en": "In a few weeks we'll get the key to our new home.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -5758,6 +6070,7 @@ const EXERCISES = [
    "dit huis is in vergelijking met ons oude huis erg groot"
   ],
   "hint": "Phrase first → inversion: “is dit huis”.",
+  "en": "Compared with our old house, this house is very big.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -5778,6 +6091,7 @@ const EXERCISES = [
   "answer": "heeft u nog vragen of opmerkingen?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then the subject.",
+  "en": "Do you have any questions or comments?",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -5798,6 +6112,7 @@ const EXERCISES = [
   "answer": "heeft u een goed idee voor de wijkkrant?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, subject second.",
+  "en": "Do you have a good idea for the neighbourhood newspaper?",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -5816,6 +6131,7 @@ const EXERCISES = [
   "answer": "hoeveel huur betaalt u per maand?",
   "alternatives": [],
   "hint": "W-question: question phrase (hoeveel huur) first, then verb, then subject.",
+  "en": "How much rent do you pay per month?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5834,6 +6150,7 @@ const EXERCISES = [
   "answer": "wat zijn de maten van de slaapkamer?",
   "alternatives": [],
   "hint": "W-question: question word first, then the verb.",
+  "en": "What are the measurements of the bedroom?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5852,6 +6169,7 @@ const EXERCISES = [
   "answer": "nou, wat vind je van het nieuwe huis?",
   "alternatives": [],
   "hint": "W-question: question word (wat) first, then the verb, then the subject. “nou” stands outside the sentence.",
+  "en": "So, what do you think of the new house?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5871,6 +6189,7 @@ const EXERCISES = [
   "answer": "geef de sleutel van het huis aan de buurvrouw",
   "alternatives": [],
   "hint": "Imperative: the verb (geef) comes first, without a subject.",
+  "en": "Give the house key to the neighbour.",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5891,6 +6210,7 @@ const EXERCISES = [
   "answer": "wat is de titel van uw stukje voor de wijkkrant?",
   "alternatives": [],
   "hint": "W-question: question word first, then the verb.",
+  "en": "What is the title of your piece for the neighbourhood newspaper?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5913,6 +6233,7 @@ const EXERCISES = [
    "is er in de schuur voldoende ruimte voor een fiets?"
   ],
   "hint": "Yes/no question: the verb comes first (is er …).",
+  "en": "Is there enough room for a bike in the shed?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -5933,6 +6254,7 @@ const EXERCISES = [
    "mag ik morgen uw ladder even lenen?"
   ],
   "hint": "Question with a modal: “mag ik” first, infinitive (lenen) at the end.",
+  "en": "May I borrow your ladder tomorrow?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -5954,6 +6276,7 @@ const EXERCISES = [
    "kunt u uw voornaam en postcode hier invullen?"
   ],
   "hint": "Yes/no question: verb first, then the subject; the infinitive goes to the end.",
+  "en": "Could you fill in your first name and postcode here?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -5974,6 +6297,7 @@ const EXERCISES = [
    "ik wil u allen voor uw hulp bedanken"
   ],
   "hint": "Modal verb (wil) in 2nd place, infinitive (bedanken) near the end.",
+  "en": "I would like to thank you all for your help.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -6000,6 +6324,7 @@ const EXERCISES = [
    "ik wil graag dit probleem melden bij de gemeente"
   ],
   "hint": "Modal verb (wil) in 2nd place, the infinitive (melden) goes to the end.",
+  "en": "I would like to report this problem to the council.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -6022,6 +6347,7 @@ const EXERCISES = [
    "kunt u even naar dit formulier meekijken?"
   ],
   "hint": "Yes/no question with a modal: “kunt u” first, the infinitive (meekijken) after.",
+  "en": "Could you have a quick look at this form with me?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6040,6 +6366,7 @@ const EXERCISES = [
   "answer": "kunt u de afspraak met de monteur verzetten?",
   "alternatives": [],
   "hint": "Question with a modal: verb first, subject second, infinitive at the end.",
+  "en": "Could you move the appointment with the engineer?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6061,6 +6388,7 @@ const EXERCISES = [
    "hier wil de gemeente een nieuwe speeltuin realiseren"
   ],
   "hint": "Modal verb (wil) in 2nd place, infinitive (realiseren) at the end.",
+  "en": "The council wants to build a new playground here.",
   "grammar": "modaal",
   "level": 3
  },
@@ -6076,6 +6404,7 @@ const EXERCISES = [
   "answer": "u mag het afval alleen op bepaalde dagen buitenzetten",
   "alternatives": [],
   "hint": "With a modal (mag) the separable verb stays together at the end: buitenzetten.",
+  "en": "You may only put the rubbish out on certain days.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6097,6 +6426,7 @@ const EXERCISES = [
    "mijn buurvrouw kan door een ziekte niet goed lopen"
   ],
   "hint": "Phrase first → inversion: verb (kan) before the subject; infinitive at the end.",
+  "en": "Because of an illness, my neighbour can't walk well.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6118,6 +6448,7 @@ const EXERCISES = [
    "nog een jaar blijven wij in dit huis wonen"
   ],
   "hint": "“blijven + infinitive”: blijven in 2nd place, wonen at the end.",
+  "en": "We're going to stay in this house for another year.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6141,6 +6472,7 @@ const EXERCISES = [
    "wij moeten nog de lege flessen naar de glasbak brengen"
   ],
   "hint": "Modal verb (moeten) in 2nd place, infinitive (brengen) at the end.",
+  "en": "We still have to take the empty bottles to the bottle bank.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6162,6 +6494,7 @@ const EXERCISES = [
    "wij willen onze kleine flat voor een groter appartement ruilen"
   ],
   "hint": "Modal verb (willen) in 2nd place, infinitive (ruilen) near the end.",
+  "en": "We want to swap our small flat for a bigger apartment.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6181,6 +6514,7 @@ const EXERCISES = [
   "answer": "u moet bij de controle van de woning aanwezig zijn",
   "alternatives": [],
   "hint": "Modal verb (moet) in 2nd place, the infinitive (zijn) at the end.",
+  "en": "You must be present at the inspection of the property.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6203,6 +6537,7 @@ const EXERCISES = [
    "ik kan mijn messen en borden na de verhuizing niet vinden"
   ],
   "hint": "Time first → inversion (kan ik); “niet” + infinitive at the end.",
+  "en": "Since the move I can't find my knives and plates.",
   "grammar": "modaal",
   "level": 3
  },
@@ -6219,6 +6554,7 @@ const EXERCISES = [
   "answer": "u kunt de foto's ook per e-mail naar de gemeente zenden",
   "alternatives": [],
   "hint": "Modal verb (kunt) in 2nd place, infinitive (zenden) at the end; TMP: manner (per e-mail) before place.",
+  "en": "You can also send the photos to the council by email.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -6240,6 +6576,7 @@ const EXERCISES = [
    "een ambtenaar van de gemeente komt morgen de stoep bekijken"
   ],
   "hint": "“komen + infinitive”: komt in 2nd place, bekijken at the end.",
+  "en": "Tomorrow an official from the council is coming to look at the pavement.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -6262,6 +6599,7 @@ const EXERCISES = [
    "u moet zich na de verhuizing officieel bij de gemeente inschrijven"
   ],
   "hint": "Time first → inversion (moet u); the infinitive goes to the end.",
+  "en": "After the move you must officially register with the council.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -6284,6 +6622,7 @@ const EXERCISES = [
    "ik breng het oude papier vanavond weg"
   ],
   "hint": "Separable verb “wegbrengen”: “breng” in 2nd place, “weg” at the end.",
+  "en": "I'm taking the old paper out this evening.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -6303,6 +6642,7 @@ const EXERCISES = [
   "answer": "jullie nieuwe huis ziet er erg mooi uit",
   "alternatives": [],
   "hint": "Separable verb “eruitzien”: “ziet er” after the subject, “uit” at the end.",
+  "en": "Your new house looks very nice.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -6325,6 +6665,7 @@ const EXERCISES = [
    "de verhuurder kwam gisteren onverwacht langs"
   ],
   "hint": "Separable verb “langskomen”: kwam … langs. Time first → inversion.",
+  "en": "Yesterday the landlord dropped by unexpectedly.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6343,6 +6684,7 @@ const EXERCISES = [
   "answer": "wanneer krijg ik mijn borg terug?",
   "alternatives": [],
   "hint": "W-question: question word, verb, subject; “terug” goes to the end.",
+  "en": "When will I get my deposit back?",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6363,6 +6705,7 @@ const EXERCISES = [
    "ik stel mezelf aan de nieuwe buren voor"
   ],
   "hint": "Separable verb “voorstellen”: “stel” in 2nd place, “voor” after the object.",
+  "en": "I introduce myself to the new neighbours.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6384,6 +6727,7 @@ const EXERCISES = [
    "vul op het formulier uw adres en woonplaats in"
   ],
   "hint": "Imperative: the verb comes first; the particle “in” of “invullen” goes to the end.",
+  "en": "Fill in your address and place of residence on the form.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6407,6 +6751,7 @@ const EXERCISES = [
    "er komt door het open raam veel stof binnen"
   ],
   "hint": "Separable verb “binnenkomen”: “komt” in 2nd place, “binnen” at the end.",
+  "en": "A lot of dust comes in through the open window.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6431,6 +6776,7 @@ const EXERCISES = [
    "sommige bewoners zetten al op maandag hun afval buiten"
   ],
   "hint": "Separable verb “buitenzetten”: “zetten” in 2nd place, “buiten” at the end.",
+  "en": "Some residents already put their rubbish out on Monday.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6457,6 +6803,7 @@ const EXERCISES = [
    "wij ruimen voor het bezoek vlug de keuken op"
   ],
   "hint": "Separable verb “opruimen”: “ruimen” in 2nd place, “op” after the object.",
+  "en": "We quickly tidy up the kitchen before the visitors come.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6481,6 +6828,7 @@ const EXERCISES = [
    "ik lever morgen de oude sleutels bij de verhuurder in"
   ],
   "hint": "Separable verb “inleveren”: “lever” in 2nd place, “in” at the very end.",
+  "en": "I'm handing in the old keys to the landlord tomorrow.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6500,6 +6848,7 @@ const EXERCISES = [
   "answer": "de nieuwe huurder neemt onze oude kast en lampen over",
   "alternatives": [],
   "hint": "Separable verb “overnemen”: “neemt” in 2nd place, “over” at the end.",
+  "en": "The new tenant is taking over our old cupboard and lamps.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -6526,6 +6875,7 @@ const EXERCISES = [
    "zaterdag doet de hele buurt aan een actie voor een schone straat mee"
   ],
   "hint": "Separable verb “meedoen”: doet … mee; the “aan …” phrase may follow the particle.",
+  "en": "On Saturday the whole neighbourhood is taking part in a clean-street campaign.",
   "grammar": "scheidbaar",
   "level": 4,
   "senses": {
@@ -6547,6 +6897,7 @@ const EXERCISES = [
   "answer": "is het gelukt met de verhuizing?",
   "alternatives": [],
   "hint": "Yes/no question in the perfect: “is” first, participle “gelukt” after the subject.",
+  "en": "Did the move go well?",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -6567,6 +6918,7 @@ const EXERCISES = [
    "ik heb aan de verhuurder een brief geschreven"
   ],
   "hint": "Perfect tense: “heb” in 2nd place, the participle “geschreven” at the end.",
+  "en": "I have written a letter to the landlord.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -6587,6 +6939,7 @@ const EXERCISES = [
    "mijn buurvrouw heeft voor mijn dochter een jurk gemaakt"
   ],
   "hint": "Perfect tense: “heeft” in 2nd place, “gemaakt” at the end.",
+  "en": "My neighbour has made a dress for my daughter.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -6607,6 +6960,7 @@ const EXERCISES = [
    "ik ben vorige week naar Utrecht verhuisd"
   ],
   "hint": "Perfect with “zijn” (ben … verhuisd); time first → inversion.",
+  "en": "Last week I moved to Utrecht.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -6622,6 +6976,7 @@ const EXERCISES = [
   "answer": "de waarde van ons huis is flink gestegen",
   "alternatives": [],
   "hint": "Perfect with “zijn”: “is … gestegen”, participle at the end.",
+  "en": "The value of our house has risen considerably.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -6643,6 +6998,7 @@ const EXERCISES = [
    "er is door de harde wind een steen van het dak gevallen"
   ],
   "hint": "Perfect with “zijn” (is … gevallen); the participle goes to the end.",
+  "en": "Because of the strong wind, a tile has fallen off the roof.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -6664,6 +7020,7 @@ const EXERCISES = [
    "de keuken is vreselijk klein, maar de woonkamer is breed"
   ],
   "hint": "Two main clauses joined by “maar”: normal order (subject + verb) in both.",
+  "en": "The living room is wide, but the kitchen is terribly small.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -6682,6 +7039,7 @@ const EXERCISES = [
    "het huis heeft dubbel glas, dus is het binnen lekker stil"
   ],
   "hint": "After “dus” both orders are fine: “dus het is” or “dus is het”.",
+  "en": "The house has double glazing, so it's nice and quiet inside.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -6702,6 +7060,7 @@ const EXERCISES = [
   "answer": "mijn buurvrouw heeft pijn in haar keel en blijft vandaag thuis",
   "alternatives": [],
   "hint": "Two verbs joined by “en” share one subject; time (vandaag) before place (thuis).",
+  "en": "My neighbour has a sore throat and is staying at home today.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -6718,6 +7077,7 @@ const EXERCISES = [
   "answer": "mijn buurvrouw kan niet slapen, want de hond blaft de hele nacht",
   "alternatives": [],
   "hint": "After “want” the normal word order stays: subject + verb.",
+  "en": "My neighbour can't sleep, because the dog barks all night.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -6740,6 +7100,7 @@ const EXERCISES = [
    "de muren zijn niet dik, dus hoor ik alles van de buren"
   ],
   "hint": "After “dus” you may keep subject + verb or use inversion (dus hoor ik).",
+  "en": "The walls aren't thick, so I hear everything from the neighbours.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -6758,6 +7119,7 @@ const EXERCISES = [
   "answer": "ik ben trots op ons nieuwe huis, want het is strak en modern",
   "alternatives": [],
   "hint": "After “want” the normal order stays: subject (het) + verb (is).",
+  "en": "I'm proud of our new house, because it's sleek and modern.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -6779,6 +7141,7 @@ const EXERCISES = [
   "answer": "onze straat is internationaal, want de buren komen uit verschillende landen",
   "alternatives": [],
   "hint": "After “want” the normal word order stays: subject + verb.",
+  "en": "Our street is international, because the neighbours come from different countries.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -6799,6 +7162,7 @@ const EXERCISES = [
   "answer": "wij hebben besloten om naar een kleiner huis te verhuizen",
   "alternatives": [],
   "hint": "Perfect tense (hebben besloten), then “om … te + infinitive” at the end.",
+  "en": "We have decided to move to a smaller house.",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -6818,6 +7182,7 @@ const EXERCISES = [
   "answer": "is er een mogelijkheid om een grotere woning te huren?",
   "alternatives": [],
   "hint": "Yes/no question: verb first; “om … te + infinitive” at the end.",
+  "en": "Is it possible to rent a bigger home?",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -6840,6 +7205,7 @@ const EXERCISES = [
    "het is in onze straat een gewoonte om nieuwe buren te begroeten"
   ],
   "hint": "Place first → inversion (is het); “om … te + infinitive” at the end.",
+  "en": "In our street it is customary to welcome new neighbours.",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -6861,6 +7227,7 @@ const EXERCISES = [
   "answer": "ik denk dat er niemand thuis is",
   "alternatives": [],
   "hint": "After “dat” the verb (is) goes to the end.",
+  "en": "I think nobody is home.",
   "grammar": "bijzin",
   "level": 2
  },
@@ -6878,6 +7245,7 @@ const EXERCISES = [
    "omdat ik niet veel verdien, krijg ik huurtoeslag"
   ],
   "hint": "After “omdat” the verb (verdien) goes to the end.",
+  "en": "I get housing benefit because I don't earn much.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -6898,6 +7266,7 @@ const EXERCISES = [
    "omdat de stoep kapot is, is mijn moeder gevallen"
   ],
   "hint": "Perfect tense: is … gevallen. After “omdat” the verb goes to the end.",
+  "en": "My mother fell because the pavement is broken.",
   "grammar": "bijzin",
   "level": 3
  },
@@ -6913,6 +7282,7 @@ const EXERCISES = [
   "answer": "ik hoop dat de gemeente het probleem snel oplost",
   "alternatives": [],
   "hint": "In a dat-clause a separable verb stays together at the end: “oplost”.",
+  "en": "I hope the council solves the problem quickly.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -6933,6 +7303,7 @@ const EXERCISES = [
   "answer": "wij weten niet wat de bron van het geluid is",
   "alternatives": [],
   "hint": "Indirect question after “wat”: the verb (is) goes to the end.",
+  "en": "We don't know what the source of the noise is.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -6953,6 +7324,7 @@ const EXERCISES = [
   "answer": "het is een feit dat de huren elk jaar stijgen",
   "alternatives": [],
   "hint": "After “dat” the verb (stijgen) goes to the end.",
+  "en": "It is a fact that rents go up every year.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -6973,6 +7345,7 @@ const EXERCISES = [
    "het is jammer dat de speeltuin dicht is in de winter"
   ],
   "hint": "After “dat” the verb (is) goes to the end.",
+  "en": "It's a pity that the playground is closed in winter.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -6992,6 +7365,7 @@ const EXERCISES = [
   "answer": "op het bord staat dat u hier niet mag parkeren",
   "alternatives": [],
   "hint": "In the dat-clause the verbs go to the end: “mag parkeren”.",
+  "en": "The sign says that you are not allowed to park here.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7011,6 +7385,7 @@ const EXERCISES = [
   "answer": "de stoep is zo smal dat de kinderen op straat lopen",
   "alternatives": [],
   "hint": "“zo … dat”: in the dat-clause the verb (lopen) goes to the end.",
+  "en": "The pavement is so narrow that the children walk in the street.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7032,6 +7407,7 @@ const EXERCISES = [
    "in de straat is het donker doordat de lamp kapot is"
   ],
   "hint": "After “doordat” the verb goes to the end of the clause.",
+  "en": "It is dark in the street because the lamp is broken.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7052,6 +7428,7 @@ const EXERCISES = [
    "als ik in de keuken kook, gaat de rookmelder vaak af"
   ],
   "hint": "Separable verb “afgaan” splits (gaat … af); after “als” the verb (kook) goes to the end.",
+  "en": "The smoke alarm often goes off when I cook in the kitchen.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7073,6 +7450,7 @@ const EXERCISES = [
    "omdat mijn fiets gestolen is, doe ik aangifte bij de politie"
   ],
   "hint": "After “omdat” the verbs go to the end: “gestolen is”.",
+  "en": "I'm reporting it to the police because my bike has been stolen.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7091,6 +7469,7 @@ const EXERCISES = [
   "answer": "een goede eigenschap van mijn buurman is dat hij altijd helpt",
   "alternatives": [],
   "hint": "After “dat” the verb (helpt) goes to the end.",
+  "en": "A good quality of my neighbour is that he always helps.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -7109,6 +7488,7 @@ const EXERCISES = [
    "als wij weg zijn, geeft de vrouw van de buurman onze planten water"
   ],
   "hint": "After “als” the verb goes to the end (weg zijn). If the als-clause comes first, the main verb follows directly.",
+  "en": "Our neighbour's wife waters our plants when we are away.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -7130,6 +7510,7 @@ const EXERCISES = [
   "answer": "de verhuurder en ik hebben afgesproken dat hij de verwarming repareert",
   "alternatives": [],
   "hint": "Perfect tense (hebben afgesproken), then a dat-clause with the verb at the end.",
+  "en": "The landlord and I have agreed that he will repair the heating.",
   "grammar": "bijzin",
   "level": 5
  },
@@ -7149,6 +7530,7 @@ const EXERCISES = [
    "de regel is dat u grofvuil eerst moet melden bij de gemeente"
   ],
   "hint": "In a dat-clause all verbs go to the end: “moet melden”.",
+  "en": "The rule is that you must first report bulky waste to the council.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -7170,6 +7552,7 @@ const EXERCISES = [
    "het is logisch dat de buren over de nieuwe flat negatief zijn"
   ],
   "hint": "After “dat” the verb (zijn) goes to the end; an “over …” phrase may follow it.",
+  "en": "It's understandable that the neighbours are negative about the new block of flats.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -7194,6 +7577,7 @@ const EXERCISES = [
    "omdat de buren lawaai maken, kan mijn zoon niet voor zijn toets leren"
   ],
   "hint": "After “omdat” the verb (maken) goes to the end.",
+  "en": "My son can't study for his test because the neighbours are making noise.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -7218,6 +7602,7 @@ const EXERCISES = [
    "rond zes uur eten we meestal"
   ],
   "hint": "Verb 2nd; whatever starts the sentence, the verb stays in 2nd place.",
+  "en": "We usually eat at around six o'clock.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -7237,6 +7622,7 @@ const EXERCISES = [
   "answer": "kinderen, het eten is gauw klaar",
   "alternatives": [],
   "hint": "Subject (het eten), verb 2nd (is), then the rest.",
+  "en": "Children, dinner will be ready soon.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -7254,6 +7640,7 @@ const EXERCISES = [
   "answer": "de nieuwe supermarkt is ruim en licht",
   "alternatives": [],
   "hint": "Subject, verb 2nd, then adjectives.",
+  "en": "The new supermarket is spacious and bright.",
   "grammar": "basis",
   "level": 1
  },
@@ -7272,6 +7659,7 @@ const EXERCISES = [
    "de bakker bakt in de nacht het brood"
   ],
   "hint": "Verb 2nd; a time phrase at the start causes inversion.",
+  "en": "The baker bakes the bread during the night.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -7290,6 +7678,7 @@ const EXERCISES = [
   "answer": "ik koop een blik tomaten voor de soep",
   "alternatives": [],
   "hint": "Subject, verb 2nd, object, then purpose (voor de soep).",
+  "en": "I'm buying a tin of tomatoes for the soup.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -7308,6 +7697,7 @@ const EXERCISES = [
   "answer": "de verkoopster geeft me goede raad",
   "alternatives": [],
   "hint": "Verb 2nd; the person (me) before the thing (goede raad).",
+  "en": "The shop assistant gives me good advice.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7326,6 +7716,7 @@ const EXERCISES = [
   "answer": "de supermarkt verkoopt geen sigaretten meer",
   "alternatives": [],
   "hint": "“geen … meer” = no longer any; “meer” comes after the noun.",
+  "en": "The supermarket no longer sells cigarettes.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7347,6 +7738,7 @@ const EXERCISES = [
    "vanavond zorg ik voor het eten"
   ],
   "hint": "“zorgen voor” = take care of; time (vanavond) comes before the “voor …” part.",
+  "en": "I'll take care of dinner this evening.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7367,6 +7759,7 @@ const EXERCISES = [
   "answer": "deze verse vruchten komen uit Spanje",
   "alternatives": [],
   "hint": "Subject, verb 2nd, then where from.",
+  "en": "This fresh fruit comes from Spain.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7389,6 +7782,7 @@ const EXERCISES = [
    "wij doen soms over de grens boodschappen"
   ],
   "hint": "Verb 2nd; start with “soms” and the subject moves behind the verb (soms doen wij).",
+  "en": "We sometimes do our shopping across the border.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7408,6 +7802,7 @@ const EXERCISES = [
   "answer": "deze sjaal houdt mijn nek lekker warm",
   "alternatives": [],
   "hint": "Verb 2nd; “warm houden”: the adjective (warm) comes after the object.",
+  "en": "This scarf keeps my neck nice and warm.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7429,6 +7824,7 @@ const EXERCISES = [
    "volgende week begint de kookcursus op dinsdagavond"
   ],
   "hint": "Time first (volgende week) → verb before subject: begint de kookcursus.",
+  "en": "The cooking course starts next week on Tuesday evening.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7447,6 +7843,7 @@ const EXERCISES = [
   "answer": "de ober brengt ons twee glazen water",
   "alternatives": [],
   "hint": "Verb 2nd; the person (ons) comes before the thing (twee glazen water).",
+  "en": "The waiter brings us two glasses of water.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7466,6 +7863,7 @@ const EXERCISES = [
   "answer": "ik heb goede ervaringen met deze kledingzaak",
   "alternatives": [],
   "hint": "Subject, verb 2nd, object.",
+  "en": "I have had good experiences with this clothes shop.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7484,6 +7882,7 @@ const EXERCISES = [
   "answer": "mijn nieuwe computer heeft veel handige functies",
   "alternatives": [],
   "hint": "Subject, verb 2nd, object.",
+  "en": "My new computer has lots of useful features.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7502,6 +7901,7 @@ const EXERCISES = [
   "answer": "de verkoper wenst ons een fijne dag",
   "alternatives": [],
   "hint": "Verb 2nd; the person (ons) before the thing (een fijne dag).",
+  "en": "The salesman wishes us a nice day.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7520,6 +7920,7 @@ const EXERCISES = [
   "answer": "deze kledingzaak verkoopt jassen in verschillende kleuren",
   "alternatives": [],
   "hint": "Subject, verb 2nd (verkoopt), then object.",
+  "en": "This clothes shop sells coats in different colours.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7541,6 +7942,7 @@ const EXERCISES = [
    "al meer dan een eeuw bestaat deze markt"
   ],
   "hint": "Subject, verb 2nd, then the time phrase.",
+  "en": "This market has existed for more than a century.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7560,6 +7962,7 @@ const EXERCISES = [
   "answer": "deze lekkere kaas komt van het eiland Texel",
   "alternatives": [],
   "hint": "Subject (deze lekkere kaas), verb 2nd (komt), then where it comes from.",
+  "en": "This delicious cheese comes from the island of Texel.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7578,6 +7981,7 @@ const EXERCISES = [
   "answer": "ik krijg tien procent korting op deze jas",
   "alternatives": [],
   "hint": "Subject, verb 2nd, object, then “op …”.",
+  "en": "I'm getting ten percent off this coat.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7596,6 +8000,7 @@ const EXERCISES = [
   "answer": "deze tweedehands fiets is nog in goede staat",
   "alternatives": [],
   "hint": "Subject, verb 2nd, then the rest. “in goede staat” = in good condition.",
+  "en": "This second-hand bike is still in good condition.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7616,6 +8021,7 @@ const EXERCISES = [
   "answer": "hallo, ik zoek een cadeau voor mijn vriendin",
   "alternatives": [],
   "hint": "Greeting first, then a normal sentence: subject + verb (ik zoek).",
+  "en": "Hello, I'm looking for a present for my girlfriend.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7634,6 +8040,7 @@ const EXERCISES = [
   "answer": "de jongeman achter de kassa is erg vriendelijk",
   "alternatives": [],
   "hint": "The whole phrase “de jongeman achter de kassa” is the subject; verb (is) follows.",
+  "en": "The young man at the till is very friendly.",
   "grammar": "basis",
   "level": 2
  },
@@ -7648,6 +8055,7 @@ const EXERCISES = [
   "answer": "de schrijver van dit kookboek komt uit Marokko",
   "alternatives": [],
   "hint": "Long subject, then the verb in 2nd position.",
+  "en": "The author of this cookbook is from Morocco.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7666,6 +8074,7 @@ const EXERCISES = [
   "answer": "gezond eten en sporten zijn goed voor je lichaam",
   "alternatives": [],
   "hint": "Two things together form a plural subject, so the verb is plural: zijn.",
+  "en": "Healthy eating and exercise are good for your body.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7689,6 +8098,7 @@ const EXERCISES = [
   "answer": "ik koop mijn vlees altijd bij mijn vaste slager",
   "alternatives": [],
   "hint": "Verb 2nd; “altijd” after the object, the place at the end.",
+  "en": "I always buy my meat from my regular butcher.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7706,6 +8116,7 @@ const EXERCISES = [
   "answer": "de helft van onze groente komt uit de tuin",
   "alternatives": [],
   "hint": "“de helft van …” is the subject; verb 2nd.",
+  "en": "Half of our vegetables come from the garden.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7726,6 +8137,7 @@ const EXERCISES = [
    "het liefst draag ik een spijkerbroek en een zachte trui"
   ],
   "hint": "Verb in 2nd place; “het liefst” (most of all) comes right after the verb, or first with inversion.",
+  "en": "I prefer to wear jeans and a soft jumper.",
   "grammar": "basis",
   "level": 2
  },
@@ -7743,6 +8155,7 @@ const EXERCISES = [
    "op de derde verdieping van het winkelcentrum is de kledingzaak"
   ],
   "hint": "Verb in 2nd place; the place phrase can also start the sentence with inversion.",
+  "en": "The clothes shop is on the third floor of the shopping centre.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7766,6 +8179,7 @@ const EXERCISES = [
    "we bespreken elke keer in de les een nieuw recept"
   ],
   "hint": "Verb 2nd; start with a place or time phrase and the subject follows the verb.",
+  "en": "In every lesson we discuss a new recipe.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7786,6 +8200,7 @@ const EXERCISES = [
    "in de keuken is mijn partner bezig met het eten"
   ],
   "hint": "“bezig zijn met” = to be busy with. Verb (is) 2nd.",
+  "en": "My partner is in the kitchen making dinner.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7808,6 +8223,7 @@ const EXERCISES = [
    "ik sta al een poos bij de kassa in de rij"
   ],
   "hint": "TMP: time (al een poos) before place (in de rij bij de kassa).",
+  "en": "I've been standing in the queue at the till for a while.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7828,6 +8244,7 @@ const EXERCISES = [
   "answer": "de winkel stuurt mij een e-mail met de datum en de tijd",
   "alternatives": [],
   "hint": "Verb 2nd; the person (mij) comes before the thing (een e-mail).",
+  "en": "The shop sends me an email with the date and the time.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -7848,6 +8265,7 @@ const EXERCISES = [
   "answer": "de jonge generatie doet vaak online boodschappen",
   "alternatives": [],
   "hint": "Verb 2nd; frequency words like “vaak” come right after the verb.",
+  "en": "The young generation often does its shopping online.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -7868,6 +8286,7 @@ const EXERCISES = [
    "op de markt is groente relatief goedkoop"
   ],
   "hint": "Place first → inversion: is groente.",
+  "en": "Vegetables are relatively cheap at the market.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -7888,6 +8307,7 @@ const EXERCISES = [
    "de arbeiders verdienen in de fabriek nauwelijks geld"
   ],
   "hint": "The verb (verdienen) is 2nd; “de arbeiders in de fabriek” together is the subject.",
+  "en": "The workers in the factory earn hardly any money.",
   "grammar": "basis",
   "level": 3
  },
@@ -7902,6 +8322,7 @@ const EXERCISES = [
   "answer": "de afstand naar de markt is ongeveer twee kilometer",
   "alternatives": [],
   "hint": "The whole phrase “de afstand naar de markt” is the subject; the verb (is) comes right after it.",
+  "en": "The distance to the market is about two kilometres.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -7919,6 +8340,7 @@ const EXERCISES = [
   "answer": "onze nieuwe woning ligt vlak bij een grote supermarkt",
   "alternatives": [],
   "hint": "Subject, verb 2nd (ligt), then the place.",
+  "en": "Our new home is very close to a big supermarket.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -7939,6 +8361,7 @@ const EXERCISES = [
   "answer": "een bekende kok leidt de kookcursus in het buurthuis",
   "alternatives": [],
   "hint": "Subject, verb 2nd (leidt), object, then place.",
+  "en": "A well-known chef runs the cooking course at the community centre.",
   "grammar": "basis",
   "level": 3
  },
@@ -7954,6 +8377,7 @@ const EXERCISES = [
   "answer": "ik doe dagelijks boodschappen bij de supermarkt om de hoek",
   "alternatives": [],
   "hint": "TMP: time (dagelijks) before place (bij de supermarkt).",
+  "en": "I go shopping every day at the supermarket around the corner.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -7973,6 +8397,7 @@ const EXERCISES = [
   "answer": "te veel suiker eten heeft slechte gevolgen voor je tanden",
   "alternatives": [],
   "hint": "“te veel suiker eten” is the subject; the verb (heeft) comes right after it.",
+  "en": "Eating too much sugar has bad consequences for your teeth.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -7995,6 +8420,7 @@ const EXERCISES = [
   "answer": "de supermarkt neemt maatregelen tegen de lange rijen bij de kassa",
   "alternatives": [],
   "hint": "Subject, verb 2nd (neemt), then object.",
+  "en": "The supermarket is taking measures against the long queues at the tills.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -8017,6 +8443,7 @@ const EXERCISES = [
    "ik heb na het winkelen pijnlijke voeten"
   ],
   "hint": "Time phrase first (na het winkelen) → inversion: heb ik.",
+  "en": "After shopping my feet hurt.",
   "grammar": "inversie",
   "level": 2
  },
@@ -8034,6 +8461,7 @@ const EXERCISES = [
    "het water voor de pasta kookt intussen"
   ],
   "hint": "“intussen” first → inversion: kookt het water.",
+  "en": "Meanwhile, the water for the pasta is boiling.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8054,6 +8482,7 @@ const EXERCISES = [
    "wij gebruiken bij het koken weinig zout"
   ],
   "hint": "Phrase first (bij het koken) → inversion: gebruiken wij.",
+  "en": "We use little salt when we cook.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8078,6 +8507,7 @@ const EXERCISES = [
    "ik koop misschien morgen een nieuwe jas"
   ],
   "hint": "“misschien” first → inversion: koop ik.",
+  "en": "Maybe I'll buy a new coat tomorrow.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8098,6 +8528,7 @@ const EXERCISES = [
    "u bent na die mevrouw aan de beurt"
   ],
   "hint": "Starting with “na die mevrouw” causes inversion: bent u.",
+  "en": "You're next after that lady.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8121,6 +8552,7 @@ const EXERCISES = [
    "ik koop pleisters en verband bij de drogist"
   ],
   "hint": "Place first → inversion (koop ik).",
+  "en": "At the chemist I buy plasters and bandages.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8142,6 +8574,7 @@ const EXERCISES = [
    "er is altijd veel keuze op de markt"
   ],
   "hint": "“er is” = there is. With the place first, the order becomes: op de markt is er …",
+  "en": "There is always a lot of choice at the market.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8165,6 +8598,7 @@ const EXERCISES = [
    "in de winkel pin ik nu bijna altijd"
   ],
   "hint": "Time word first (nu) → verb before subject: pin ik.",
+  "en": "Now I almost always pay by card in the shop.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8186,6 +8620,7 @@ const EXERCISES = [
    "we eten een enkele keer in een restaurant"
   ],
   "hint": "Time phrase first (een enkele keer) → inversion: eten we.",
+  "en": "Once in a while we eat in a restaurant.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8208,6 +8643,7 @@ const EXERCISES = [
    "ik draag altijd mijn warme schoenen in de sneeuw"
   ],
   "hint": "When a phrase like “in de sneeuw” starts the sentence, the verb stays 2nd and the subject follows (inversion).",
+  "en": "In the snow I always wear my warm shoes.",
   "grammar": "inversie",
   "level": 2
  },
@@ -8225,6 +8661,7 @@ const EXERCISES = [
    "ik eet voor de lunch meestal een broodje kaas"
   ],
   "hint": "Time first (voor de lunch) → inversion: eet ik.",
+  "en": "For lunch I usually have a cheese roll.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8247,6 +8684,7 @@ const EXERCISES = [
    "we gaan na het winkelen nog naar een museum"
   ],
   "hint": "Time first → inversion (gaan we); place (naar een museum) at the end.",
+  "en": "After shopping we're going to a museum as well.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -8267,6 +8705,7 @@ const EXERCISES = [
    "gezond eten is in theorie makkelijk"
   ],
   "hint": "Verb (is) 2nd; with “in theorie” first, the subject follows the verb.",
+  "en": "In theory, eating healthily is easy.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8287,6 +8726,7 @@ const EXERCISES = [
    "mensen betaalden in het verleden vaak contant"
   ],
   "hint": "Time first (in het verleden) → inversion: betaalden mensen.",
+  "en": "In the past people often paid in cash.",
   "grammar": "inversie",
   "level": 3
  },
@@ -8304,6 +8744,7 @@ const EXERCISES = [
    "Nederlanders eten volgens een onderzoek elke dag brood"
   ],
   "hint": "“volgens een onderzoek” first → inversion: verb (eten) before subject (Nederlanders).",
+  "en": "According to a study, Dutch people eat bread every day.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8325,6 +8766,7 @@ const EXERCISES = [
    "boodschappen doen is in ons gezin mijn taak"
   ],
   "hint": "Verb (is) stays 2nd; with “in ons gezin” first, the subject comes after the verb.",
+  "en": "In our family, doing the shopping is my job.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8348,6 +8790,7 @@ const EXERCISES = [
    "we doen voor ons vertrek nog snel boodschappen"
   ],
   "hint": "Time phrase first (voor ons vertrek) → inversion: doen we.",
+  "en": "Before we leave, we quickly do some shopping.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8372,6 +8815,7 @@ const EXERCISES = [
    "koken is voor mijn oma een grote vreugde"
   ],
   "hint": "Phrase first (voor mijn oma) → inversion: is koken.",
+  "en": "For my grandma, cooking is a great joy.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8393,6 +8837,7 @@ const EXERCISES = [
    "de kinderen hebben op de camping veel vrijheid"
   ],
   "hint": "Place first → inversion: hebben de kinderen.",
+  "en": "At the campsite the children have a lot of freedom.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8414,6 +8859,7 @@ const EXERCISES = [
    "ik draag op kantoor praktische kleding in een rustige stijl"
   ],
   "hint": "Place phrase first → inversion: verb (draag) 2nd, subject (ik) 3rd.",
+  "en": "At the office I wear practical clothes in a sober style.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8434,6 +8880,7 @@ const EXERCISES = [
    "aan de aardappels van de markt zit er nog aarde"
   ],
   "hint": "“er zit …” = there is: er first, verb 2nd.",
+  "en": "There's still soil on the potatoes from the market.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8455,6 +8902,7 @@ const EXERCISES = [
    "u heeft met de bon recht op uw geld terug"
   ],
   "hint": "Starting with “met de bon” → inversion: heeft u.",
+  "en": "With the receipt you are entitled to your money back.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8474,6 +8922,7 @@ const EXERCISES = [
   "answer": "in de uitverkoop krijg je een flinke korting op kleding",
   "alternatives": [],
   "hint": "Phrase first (in de uitverkoop) → inversion: krijg je (no -t with je after the verb).",
+  "en": "In the sales you get a big discount on clothes.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8495,6 +8944,7 @@ const EXERCISES = [
    "ik ga na een lange dag winkelen vroeg naar bed"
   ],
   "hint": "Time first → inversion: ga ik. TMP: time (vroeg) before place (naar bed).",
+  "en": "After a long day of shopping I'm going to bed early.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8515,6 +8965,7 @@ const EXERCISES = [
    "de kinderen doen op school een project over gezond eten"
   ],
   "hint": "Place first → inversion: doen de kinderen.",
+  "en": "At school the children are doing a project on healthy eating.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8537,6 +8988,7 @@ const EXERCISES = [
    "de jassen staan op de website in de categorie winterkleding"
   ],
   "hint": "Phrase first → inversion: staan de jassen.",
+  "en": "On the website the coats are in the winter clothing category.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -8558,6 +9010,7 @@ const EXERCISES = [
    "samen eten is in onze cultuur een belangrijke traditie"
   ],
   "hint": "Verb (is) in 2nd place; “samen eten” is the subject and comes after the verb when you start with “in onze cultuur”.",
+  "en": "In our culture, eating together is an important tradition.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -8578,6 +9031,7 @@ const EXERCISES = [
    "mensen eten in de westerse samenleving veel vlees en weinig groente"
   ],
   "hint": "Place phrase first → inversion: eten mensen.",
+  "en": "In Western society people eat a lot of meat and few vegetables.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -8598,6 +9052,7 @@ const EXERCISES = [
   "answer": "wat drinken jullie bij het eten?",
   "alternatives": [],
   "hint": "W-question: question word, verb, subject.",
+  "en": "What are you all drinking with your meal?",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -8617,6 +9072,7 @@ const EXERCISES = [
   "answer": "doe de groeten aan je vader",
   "alternatives": [],
   "hint": "Imperative: verb (doe) first. “de groeten doen aan” = say hello to.",
+  "en": "Say hello to your father for me.",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -8636,6 +9092,7 @@ const EXERCISES = [
   "answer": "ben je al klaar met de soep?",
   "alternatives": [],
   "hint": "Yes/no question: verb first, then subject.",
+  "en": "Have you finished the soup yet?",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -8655,6 +9112,7 @@ const EXERCISES = [
   "answer": "vind jij deze koffie ook zo bitter?",
   "alternatives": [],
   "hint": "Yes/no question: verb (vind) first, subject (jij) second.",
+  "en": "Do you also find this coffee so bitter?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -8673,6 +9131,7 @@ const EXERCISES = [
   "answer": "bewaar het brood niet op een vochtige plek",
   "alternatives": [],
   "hint": "Imperative: the verb comes first. “niet” comes after the object and before the place.",
+  "en": "Don't keep the bread in a damp place.",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -8691,6 +9150,7 @@ const EXERCISES = [
   "answer": "geef eens een voorbeeld van een gezond ontbijt",
   "alternatives": [],
   "hint": "Imperative: verb first. “eens” makes the request softer.",
+  "en": "Give an example of a healthy breakfast.",
   "grammar": "vraag",
   "level": 2
  },
@@ -8706,6 +9166,7 @@ const EXERCISES = [
   "answer": "hoeveel kost een kilo appels op de markt?",
   "alternatives": [],
   "hint": "W-question: hoeveel + verb + subject.",
+  "en": "How much does a kilo of apples cost at the market?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -8725,6 +9186,7 @@ const EXERCISES = [
   "answer": "heeft u deze schoenen ook in een andere maat?",
   "alternatives": [],
   "hint": "Yes/no question: the verb comes first, then the subject.",
+  "en": "Do you also have these shoes in a different size?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -8743,6 +9205,7 @@ const EXERCISES = [
   "answer": "ken jij deze Nederlandse uitdrukking over eten?",
   "alternatives": [],
   "hint": "Yes/no question: verb first. With jij after the verb, the -t drops: ken jij.",
+  "en": "Do you know this Dutch expression about food?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -8763,6 +9226,7 @@ const EXERCISES = [
   "answer": "wat is jouw oordeel over dit nieuwe restaurant?",
   "alternatives": [],
   "hint": "W-question: question word (wat), then verb (is), then subject.",
+  "en": "What's your opinion of this new restaurant?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -8786,6 +9250,7 @@ const EXERCISES = [
    "bij het stoplicht moet u oversteken"
   ],
   "hint": "Modal verb (moet) 2nd, infinitive (oversteken) at the end.",
+  "en": "You have to cross at the traffic lights.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -8804,6 +9269,7 @@ const EXERCISES = [
   "answer": "mag ik u een verzoek doen?",
   "alternatives": [],
   "hint": "Question: modal (mag) first, infinitive (doen) at the end.",
+  "en": "May I ask you a favour?",
   "grammar": "modaal",
   "level": 2
  },
@@ -8821,6 +9287,7 @@ const EXERCISES = [
    "bij de volgende halte moet u uitstappen"
   ],
   "hint": "Modal + infinitive: a separable verb stays one word at the end (uitstappen).",
+  "en": "You have to get off at the next stop.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -8841,6 +9308,7 @@ const EXERCISES = [
    "ik ga even bij de bakker een boodschap doen"
   ],
   "hint": "gaan + infinitive: ga 2nd, the infinitive (doen) at the end.",
+  "en": "I'm just popping to the baker's for some shopping.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -8862,6 +9330,7 @@ const EXERCISES = [
    "wilt u pinnen of contant betalen, meneer?"
   ],
   "hint": "Question: modal verb (wilt) before the subject, infinitives (pinnen, betalen) at the end.",
+  "en": "Sir, would you like to pay by card or in cash?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -8883,6 +9352,7 @@ const EXERCISES = [
    "iedereen mag in de speelgoedwinkel één ding kiezen"
   ],
   "hint": "Modal (mag) 2nd, infinitive (kiezen) at the end.",
+  "en": "In the toy shop everyone may choose one thing.",
   "grammar": "modaal",
   "level": 3
  },
@@ -8900,6 +9370,7 @@ const EXERCISES = [
    "ik moet op zaterdag stofzuigen en boodschappen doen"
   ],
   "hint": "Modal (moet) 2nd, infinitives at the end; time first → inversion.",
+  "en": "On Saturdays I have to vacuum and do the shopping.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -8922,6 +9393,7 @@ const EXERCISES = [
    "rauw vlees kan een gevaar voor je gezondheid zijn"
   ],
   "hint": "Modal (kan) 2nd, infinitive (zijn) near the end.",
+  "en": "Raw meat can be a danger to your health.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -8943,6 +9415,7 @@ const EXERCISES = [
   "answer": "je moet de soep nog vijf minuten zacht laten koken",
   "alternatives": [],
   "hint": "Modal (moet) 2nd; “laten + infinitive” goes to the end: … laten koken.",
+  "en": "You have to let the soup simmer for another five minutes.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -8968,6 +9441,7 @@ const EXERCISES = [
    "je mag volgens de regeling de schoenen binnen dertig dagen ruilen"
   ],
   "hint": "Modal (mag) 2nd, infinitive (ruilen) at the end; starting with “volgens de regeling” → mag je.",
+  "en": "Under the policy, you can exchange the shoes within thirty days.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -8988,6 +9462,7 @@ const EXERCISES = [
   "answer": "de docent legt alles duidelijk uit",
   "alternatives": [],
   "hint": "Separable verb uitleggen: “legt” in 2nd place, “uit” at the end.",
+  "en": "The teacher explains everything clearly.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9010,6 +9485,7 @@ const EXERCISES = [
    "eerst maak ik de saus af"
   ],
   "hint": "Separable verb afmaken: “maak” 2nd, “af” at the very end.",
+  "en": "I'll finish the sauce first.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9033,6 +9509,7 @@ const EXERCISES = [
    "ik haal het pakket straks op"
   ],
   "hint": "Separable verb ophalen: “haal” 2nd, “op” at the end.",
+  "en": "I'll pick up the parcel in a bit.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9052,6 +9529,7 @@ const EXERCISES = [
   "answer": "kom jij morgen mee naar de markt?",
   "alternatives": [],
   "hint": "Question with separable verb meekomen: kom … mee.",
+  "en": "Are you coming to the market with me tomorrow?",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9076,6 +9554,7 @@ const EXERCISES = [
    "morgen kom ik met de bon terug"
   ],
   "hint": "Separable verb terugkomen: “kom” 2nd, “terug” usually at the end.",
+  "en": "I'll come back tomorrow with the receipt.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9094,6 +9573,7 @@ const EXERCISES = [
   "answer": "mijn gele jas ziet er nogal oud uit",
   "alternatives": [],
   "hint": "Separable verb eruitzien: “ziet” is in 2nd place, “er … uit” goes around the description, “uit” at the end.",
+  "en": "My yellow coat looks rather old.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9112,6 +9592,7 @@ const EXERCISES = [
   "answer": "de deur van de supermarkt gaat automatisch open",
   "alternatives": [],
   "hint": "Separable verb opengaan: “gaat” in 2nd place, the particle “open” at the end.",
+  "en": "The supermarket door opens automatically.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -9130,6 +9611,7 @@ const EXERCISES = [
   "answer": "wanneer gaat de nieuwe kledingzaak open?",
   "alternatives": [],
   "hint": "W-question with separable verb opengaan: wanneer + gaat + subject + open.",
+  "en": "When is the new clothes shop opening?",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -9152,6 +9634,7 @@ const EXERCISES = [
    "ook bij slecht weer gaat de markt door"
   ],
   "hint": "Separable verb doorgaan (to go ahead): gaat 2nd, door at the end.",
+  "en": "The market also goes ahead in bad weather.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -9175,6 +9658,7 @@ const EXERCISES = [
    "je ziet er in dat pak knap uit"
   ],
   "hint": "Separable verb eruitzien: ziet … er … uit.",
+  "en": "You look handsome in that suit.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -9198,6 +9682,7 @@ const EXERCISES = [
    "mijn nieuwe schoenen komen morgen met de post aan"
   ],
   "hint": "Separable verb aankomen: “komen” 2nd, “aan” at the end; time first → inversion.",
+  "en": "Tomorrow my new shoes are arriving in the post.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -9216,6 +9701,7 @@ const EXERCISES = [
   "answer": "de prijzen in de supermarkt gaan steeds verder omhoog",
   "alternatives": [],
   "hint": "Subject, verb 2nd (gaan), “omhoog” at the end.",
+  "en": "Prices in the supermarket keep going up.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -9236,6 +9722,7 @@ const EXERCISES = [
    "ik heb thuis mijn tas vergeten"
   ],
   "hint": "Perfect: heb 2nd, participle (vergeten) at the end.",
+  "en": "I left my bag at home.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -9256,6 +9743,7 @@ const EXERCISES = [
    "ik heb inmiddels de jas teruggebracht"
   ],
   "hint": "Perfect of a separable verb: the participle is one word (teruggebracht) at the end.",
+  "en": "I have taken the coat back in the meantime.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -9275,6 +9763,7 @@ const EXERCISES = [
    "iemand heeft gisteren mijn fiets bij de supermarkt gestolen"
   ],
   "hint": "Perfect tense: heeft in 2nd place, participle (gestolen) at the end.",
+  "en": "Someone stole my bike at the supermarket yesterday.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -9298,6 +9787,7 @@ const EXERCISES = [
    "ik heb een nieuw bureau voor mijn kamer gekocht"
   ],
   "hint": "Perfect: heb 2nd, participle (gekocht) at the end; a phrase first causes inversion.",
+  "en": "I've bought a new desk for my room.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -9320,6 +9810,7 @@ const EXERCISES = [
    "ik heb mijn leraar gisteren toevallig in de supermarkt ontmoet"
   ],
   "hint": "Perfect: heb 2nd, participle (ontmoet) at the end. Time (gisteren) early.",
+  "en": "Yesterday I happened to meet my teacher in the supermarket.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -9338,6 +9829,7 @@ const EXERCISES = [
   "answer": "iedereen kookt eerst individueel en daarna eten we samen",
   "alternatives": [],
   "hint": "After “daarna” (a time word) the verb comes before the subject: daarna eten we.",
+  "en": "Everyone cooks individually first and then we eat together.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9356,6 +9848,7 @@ const EXERCISES = [
   "answer": "ik heb honger, want ik heb nog niet gegeten",
   "alternatives": [],
   "hint": "“want” keeps normal order; in the perfect tense the participle (gegeten) goes to the end.",
+  "en": "I'm hungry, because I haven't eaten yet.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9376,6 +9869,7 @@ const EXERCISES = [
    "de soep is te zout, dus maak ik hem opnieuw"
   ],
   "hint": "After “dus” you may use normal order (dus ik maak) or inversion (dus maak ik).",
+  "en": "The soup is too salty, so I'm making it again.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9396,6 +9890,7 @@ const EXERCISES = [
   "answer": "de jas is nogal duur, maar hij is tenminste warm",
   "alternatives": [],
   "hint": "“maar” joins two main clauses; both have the verb in 2nd place.",
+  "en": "The coat is rather expensive, but at least it is warm.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -9414,6 +9909,7 @@ const EXERCISES = [
    "op zaterdag loop ik naar de markt, want die is dichtbij"
   ],
   "hint": "TMP: time (op zaterdag) before place (naar de markt).",
+  "en": "On Saturdays I walk to the market, because it is close by.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9434,6 +9930,7 @@ const EXERCISES = [
   "answer": "de jas past niet, want hij is te klein bij de borst",
   "alternatives": [],
   "hint": "“want” (because) does not change word order: subject + verb follow normally (hij is).",
+  "en": "The coat doesn't fit, because it's too small across the chest.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9455,6 +9952,7 @@ const EXERCISES = [
    "straks ga ik naar de bakker, want het brood is bijna op"
   ],
   "hint": "TMP: time (straks) before place (naar de bakker). After “want” the order stays normal.",
+  "en": "I'm going to the baker's in a bit, because the bread has almost run out.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9474,6 +9972,7 @@ const EXERCISES = [
   "answer": "de supermarkt is niet ver, maar ik ga toch met de fiets",
   "alternatives": [],
   "hint": "“maar” does not change word order: ik ga …",
+  "en": "The supermarket isn't far, but I still go by bike.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -9489,6 +9988,7 @@ const EXERCISES = [
   "answer": "je hebt geluk, want dit is de laatste jas in jouw maat",
   "alternatives": [],
   "hint": "“want” keeps normal main-clause order: dit is …",
+  "en": "You're lucky, because this is the last coat in your size.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -9509,6 +10009,7 @@ const EXERCISES = [
   "answer": "in het algemeen eten wij gezond, maar soms halen we patat",
   "alternatives": [],
   "hint": "Time/frequency phrase first → inversion in both parts: eten wij, soms halen we.",
+  "en": "In general we eat healthily, but sometimes we get chips.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -9528,6 +10029,7 @@ const EXERCISES = [
   "answer": "ik ben de bon kwijt, maar ik wil de jas toch ruilen",
   "alternatives": [],
   "hint": "“kwijt zijn” = to have lost. After maar: modal (wil) 2nd, infinitive (ruilen) at the end.",
+  "en": "I've lost the receipt, but I still want to exchange the coat.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -9546,6 +10048,7 @@ const EXERCISES = [
   "answer": "mijn voorstel is om vanavond samen te koken",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te koken comes at the end.",
+  "en": "My suggestion is that we cook together this evening.",
   "grammar": "om-te",
   "level": 3,
   "senses": {
@@ -9565,6 +10068,7 @@ const EXERCISES = [
   "answer": "het is dom om met honger boodschappen te doen",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te doen at the very end.",
+  "en": "It's silly to go shopping when you're hungry.",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -9584,6 +10088,7 @@ const EXERCISES = [
   "answer": "is dit gerecht makkelijk of moeilijk om te maken?",
   "alternatives": [],
   "hint": "Yes/no question: verb first. “om te maken” at the end.",
+  "en": "Is this dish easy or difficult to make?",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -9606,6 +10111,7 @@ const EXERCISES = [
    "ben jij bereid om meer voor biologisch vlees te betalen?"
   ],
   "hint": "Yes/no question: verb first. “bereid zijn om … te + infinitive”.",
+  "en": "Are you willing to pay more for organic meat?",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -9629,6 +10135,7 @@ const EXERCISES = [
    "ik zie opeens dat mijn tas weg is"
   ],
   "hint": "“opeens” first → inversion (zie ik); after “dat” the verb (is) goes to the end.",
+  "en": "Suddenly I see that my bag is gone.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -9647,6 +10154,7 @@ const EXERCISES = [
   "answer": "de verkoopster zegt dat de trui te wijd is",
   "alternatives": [],
   "hint": "After “dat” the verb (is) goes to the end of the clause.",
+  "en": "The shop assistant says the jumper is too loose.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -9664,6 +10172,7 @@ const EXERCISES = [
   "answer": "ik weet niet of de verkoper de waarheid zegt",
   "alternatives": [],
   "hint": "“of” (whether) sends the verb (zegt) to the end.",
+  "en": "I don't know whether the salesman is telling the truth.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -9684,6 +10193,7 @@ const EXERCISES = [
    "terwijl wij winkelen, spelen de kinderen in de speelhoek"
   ],
   "hint": "“terwijl” (while) sends the verb (winkelen) to the end.",
+  "en": "The children play in the play area while we shop.",
   "grammar": "bijzin",
   "level": 3
  },
@@ -9698,6 +10208,7 @@ const EXERCISES = [
   "answer": "ik hoor dat de nieuwe bakker lekkere taart verkoopt",
   "alternatives": [],
   "hint": "After “dat” the verb (verkoopt) goes to the end.",
+  "en": "I hear that the new baker sells delicious cake.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -9716,6 +10227,7 @@ const EXERCISES = [
   "answer": "reclame beïnvloedt vaak wat mensen kopen",
   "alternatives": [],
   "hint": "In the clause “wat mensen kopen” the verb goes to the end.",
+  "en": "Advertising often influences what people buy.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9734,6 +10246,7 @@ const EXERCISES = [
   "answer": "we gaan pas weg als alles klaar is",
   "alternatives": [],
   "hint": "Separable verb weggaan: gaan … weg. After “als” the verb (is) goes to the end.",
+  "en": "We won't leave until everything is ready.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9756,6 +10269,7 @@ const EXERCISES = [
    "ik draag vaak sportkleding omdat ik graag actief ben"
   ],
   "hint": "“omdat” sends the verb (ben) to the end; a sentence that starts with the omdat-clause continues with verb + subject (draag ik).",
+  "en": "Because I like being active, I often wear sportswear.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9774,6 +10288,7 @@ const EXERCISES = [
   "answer": "mijn huisarts zegt dat ik minder vlees moet eten",
   "alternatives": [],
   "hint": "In a dat-clause both verbs go to the end: … moet eten.",
+  "en": "My GP says I should eat less meat.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9793,6 +10308,7 @@ const EXERCISES = [
   "answer": "zolang je de bon hebt, kun je de jas ruilen",
   "alternatives": [],
   "hint": "“zolang” sends the verb (hebt) to the end; the main clause then starts with the verb (kun je).",
+  "en": "As long as you have the receipt, you can exchange the coat.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9815,6 +10331,7 @@ const EXERCISES = [
    "omdat hij een zwakke maag heeft, eet mijn vader geen pittig eten"
   ],
   "hint": "“omdat” sends the verb (heeft) to the end of its clause.",
+  "en": "My father doesn't eat spicy food, because he has a weak stomach.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -9836,6 +10353,7 @@ const EXERCISES = [
    "ik koop een nieuwe jurk omdat mijn zus gaat trouwen"
   ],
   "hint": "In the omdat-clause the verbs go to the end (gaat trouwen); after that clause the main sentence starts with the verb (koop ik).",
+  "en": "Because my sister is getting married, I'm buying a new dress.",
   "grammar": "bijzin",
   "level": 5
  },
@@ -9851,6 +10369,7 @@ const EXERCISES = [
   "answer": "ik wil graag leren hoe je een gezond gerecht maakt",
   "alternatives": [],
   "hint": "Modal (wil) 2nd, then the infinitive (leren); in the hoe-clause the verb (maakt) goes to the end.",
+  "en": "I would like to learn how to make a healthy dish.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -9874,6 +10393,7 @@ const EXERCISES = [
    "mijn horloge is heel dun en grijs"
   ],
   "hint": "Subject first, then the verb “is”, then the description.",
+  "en": "My watch is grey and very thin.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -9892,6 +10412,7 @@ const EXERCISES = [
   "answer": "ik heb pijn in mijn hals en in mijn hoofd",
   "alternatives": [],
   "hint": "Subject – verb – object – place: “pijn hebben in …”.",
+  "en": "I have a pain in my neck and in my head.",
   "grammar": "basis",
   "level": 1
  },
@@ -9906,6 +10427,7 @@ const EXERCISES = [
   "answer": "dat meen je niet!",
   "alternatives": [],
   "hint": "Inversion: object “dat” first, then verb, then subject; “meen je” drops the -t.",
+  "en": "You can't be serious!",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -9925,6 +10447,7 @@ const EXERCISES = [
    "trouwens ontbreekt mijn portemonnee ook"
   ],
   "hint": "Verb in 2nd place; “trouwens” at the start causes inversion.",
+  "en": "My wallet is missing too, by the way.",
   "grammar": "basis",
   "level": 2
  },
@@ -9939,6 +10462,7 @@ const EXERCISES = [
   "answer": "dit medicijn bevat geen suiker",
   "alternatives": [],
   "hint": "Subject – verb – object.",
+  "en": "This medicine does not contain any sugar.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -9957,6 +10481,7 @@ const EXERCISES = [
   "answer": "deze organisatie helpt mensen met schulden",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place.",
+  "en": "This organisation helps people with debts.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -9976,6 +10501,7 @@ const EXERCISES = [
    "vanavond eten we een traditionele maaltijd"
   ],
   "hint": "Time before the object; time first causes inversion.",
+  "en": "We are having a traditional meal tonight.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -9993,6 +10519,7 @@ const EXERCISES = [
   "answer": "de uitslag van de test is positief",
   "alternatives": [],
   "hint": "Subject – verb – adjective.",
+  "en": "The test result is positive.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10010,6 +10537,7 @@ const EXERCISES = [
   "answer": "het buurthuis heeft veel activiteiten voor ouderen",
   "alternatives": [],
   "hint": "Subject – verb – object.",
+  "en": "The community centre has lots of activities for older people.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10029,6 +10557,7 @@ const EXERCISES = [
   "answer": "bedankt voor uw hulp bij de aangifte",
   "alternatives": [],
   "hint": "“bedankt voor …” = thanks for …",
+  "en": "Thank you for your help with the police report.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10049,6 +10578,7 @@ const EXERCISES = [
   "answer": "de zorg in dit ziekenhuis is uitstekend",
   "alternatives": [],
   "hint": "The whole subject comes before the verb.",
+  "en": "The care in this hospital is excellent.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10069,6 +10599,7 @@ const EXERCISES = [
    "op school is Nederlands mijn favoriete vak"
   ],
   "hint": "Subject – verb – rest; place first causes inversion.",
+  "en": "Dutch is my favourite subject at school.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10090,6 +10621,7 @@ const EXERCISES = [
    "op dinsdagavond en donderdagavond is de apotheek open"
   ],
   "hint": "Time phrase after the verb, or first with inversion; “open” comes last.",
+  "en": "The pharmacy is open on Tuesday evening and Thursday evening.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10108,6 +10640,7 @@ const EXERCISES = [
   "answer": "de burgemeester is de leider van de gemeente",
   "alternatives": [],
   "hint": "Simple sentence: subject – verb – rest.",
+  "en": "The mayor is the head of the municipality.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10126,6 +10659,7 @@ const EXERCISES = [
   "answer": "het kleed in de woonkamer is heel oud",
   "alternatives": [],
   "hint": "The subject “het kleed in de woonkamer” comes before the verb.",
+  "en": "The rug in the living room is very old.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10145,6 +10679,7 @@ const EXERCISES = [
   "answer": "de verpleegkundige helpt mij altijd met een glimlach",
   "alternatives": [],
   "hint": "Object pronoun (mij) right after the verb, then time (altijd), then manner.",
+  "en": "The nurse always helps me with a smile.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10165,6 +10700,7 @@ const EXERCISES = [
    "in het ziekenhuis werk ik met veel plezier"
   ],
   "hint": "TMP: manner (met veel plezier) before place (in het ziekenhuis).",
+  "en": "I really enjoy working in the hospital.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10184,6 +10720,7 @@ const EXERCISES = [
   "answer": "het bezoek van mijn vrienden was heel gezellig",
   "alternatives": [],
   "hint": "The whole subject comes before the verb “was”.",
+  "en": "My friends' visit was very enjoyable.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10204,6 +10741,7 @@ const EXERCISES = [
   "answer": "de politie vraagt naar mijn gegevens en mijn woonplaats",
   "alternatives": [],
   "hint": "Subject – verb – rest: “vragen naar” = to ask for.",
+  "en": "The police ask for my details and my place of residence.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10222,6 +10760,7 @@ const EXERCISES = [
   "answer": "hij rende snel langs de supermarkt naar het station",
   "alternatives": [],
   "hint": "TMP: manner (snel) before the place/direction phrases.",
+  "en": "He ran quickly past the supermarket to the station.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10243,6 +10782,7 @@ const EXERCISES = [
   "answer": "het verlies van mijn laptop is een groot probleem",
   "alternatives": [],
   "hint": "The whole subject “het verlies van mijn laptop” comes before the verb.",
+  "en": "The loss of my laptop is a big problem.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10263,6 +10803,7 @@ const EXERCISES = [
   "answer": "mijn opa vertelt vaak een verhaal over de oorlog",
   "alternatives": [],
   "hint": "Verb in 2nd place, then “vaak”, then the object.",
+  "en": "My grandad often tells a story about the war.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10281,6 +10822,7 @@ const EXERCISES = [
   "answer": "de koning en de regering werken in Den Haag",
   "alternatives": [],
   "hint": "Two subjects joined by “en” take a plural verb: werken.",
+  "en": "The King and the government work in The Hague.",
   "grammar": "basis",
   "level": 2
  },
@@ -10295,6 +10837,7 @@ const EXERCISES = [
   "answer": "het Rode Kruis helpt mensen over de hele wereld",
   "alternatives": [],
   "hint": "Subject – verb – object – place.",
+  "en": "The Red Cross helps people all over the world.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10313,6 +10856,7 @@ const EXERCISES = [
   "answer": "de afspraak is aan het eind van de middag",
   "alternatives": [],
   "hint": "Subject – verb – time.",
+  "en": "The appointment is at the end of the afternoon.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10334,6 +10878,7 @@ const EXERCISES = [
   "answer": "mijn sleutel zat ook in de zak van mijn jas",
   "alternatives": [],
   "hint": "Verb in 2nd place; “ook” follows the verb; the place phrase comes last.",
+  "en": "My key was also in my coat pocket.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10353,6 +10898,7 @@ const EXERCISES = [
   "answer": "de agent heeft nog een vraag over mijn nieuwe laptop",
   "alternatives": [],
   "hint": "Verb “heeft” in 2nd place; the “over …” phrase comes after the object.",
+  "en": "The officer has another question about my new laptop.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10374,6 +10920,7 @@ const EXERCISES = [
    "de man droeg een rode jas en een grijze hoed"
   ],
   "hint": "Past tense: the verb “droeg” is in 2nd place.",
+  "en": "The man was wearing a grey hat and a red coat.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -10391,6 +10938,7 @@ const EXERCISES = [
   "answer": "dat is nu eenmaal zo",
   "alternatives": [],
   "hint": "Verb in 2nd place; “nu eenmaal” sits between the verb and “zo”.",
+  "en": "That's just the way it is.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10408,6 +10956,7 @@ const EXERCISES = [
   "answer": "vrijwilligerswerk is goed voor de maatschappij",
   "alternatives": [],
   "hint": "Subject – verb – rest.",
+  "en": "Volunteering is good for society.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10426,6 +10975,7 @@ const EXERCISES = [
   "answer": "deze medicijnen hebben nog geen effect",
   "alternatives": [],
   "hint": "Plural subject, plural verb: hebben.",
+  "en": "These medicines are not having any effect yet.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10445,6 +10995,7 @@ const EXERCISES = [
   "answer": "mijn opa heeft moeilijkheden met lopen",
   "alternatives": [],
   "hint": "Subject – verb – object – “met …”.",
+  "en": "My grandad has difficulty walking.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10463,6 +11014,7 @@ const EXERCISES = [
   "answer": "mijn zorgverzekering betaalt niet alle medische kosten",
   "alternatives": [],
   "hint": "“niet” comes before the part it negates (alle medische kosten).",
+  "en": "My health insurance does not pay all the medical costs.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10481,6 +11033,7 @@ const EXERCISES = [
   "answer": "geweld is in Nederland verboden, ook thuis",
   "alternatives": [],
   "hint": "Subject – verb – place – adjective; “ook thuis” is added at the end.",
+  "en": "Violence is forbidden in the Netherlands, at home too.",
   "grammar": "basis",
   "level": 3
  },
@@ -10495,6 +11048,7 @@ const EXERCISES = [
   "answer": "de nieuwe huisarts maakt een goede indruk",
   "alternatives": [],
   "hint": "“een goede indruk maken” = to make a good impression.",
+  "en": "The new GP makes a good impression.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10512,6 +11066,7 @@ const EXERCISES = [
   "answer": "stress heeft veel invloed op je gezondheid",
   "alternatives": [],
   "hint": "“invloed hebben op” = to have influence on.",
+  "en": "Stress has a big influence on your health.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10533,6 +11088,7 @@ const EXERCISES = [
    "gisteren vochten twee mannen voor de supermarkt"
   ],
   "hint": "TMP: time (gisteren) before place (voor de supermarkt).",
+  "en": "Two men were fighting in front of the supermarket yesterday.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10554,6 +11110,7 @@ const EXERCISES = [
    "pas volgende week heeft de huisarts tijd"
   ],
   "hint": "Time before the object; time first causes inversion.",
+  "en": "The GP doesn't have time until next week.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10575,6 +11132,7 @@ const EXERCISES = [
    "op zondag zijn vrijwel alle apotheken dicht"
   ],
   "hint": "Subject first, or time first with inversion.",
+  "en": "Almost all pharmacies are closed on Sunday.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10595,6 +11153,7 @@ const EXERCISES = [
   "answer": "gezond voedsel is van groot belang voor kinderen",
   "alternatives": [],
   "hint": "“van groot belang zijn” = to be very important.",
+  "en": "Healthy food is very important for children.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10615,6 +11174,7 @@ const EXERCISES = [
   "answer": "ik heb nog steeds hetzelfde probleem met mijn rug",
   "alternatives": [],
   "hint": "Verb in 2nd place; “nog steeds” comes before the object.",
+  "en": "I still have the same problem with my back.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10634,6 +11194,7 @@ const EXERCISES = [
   "answer": "de aanvraag bij de IND is een lang proces",
   "alternatives": [],
   "hint": "The whole subject “de aanvraag bij de IND” comes before the verb.",
+  "en": "The application to the IND is a long process.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10652,6 +11213,7 @@ const EXERCISES = [
   "answer": "hij heeft een klacht over het personeel van het ziekenhuis",
   "alternatives": [],
   "hint": "Subject – verb – object – “over …” phrase.",
+  "en": "He has a complaint about the hospital staff.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10671,6 +11233,7 @@ const EXERCISES = [
   "answer": "ik heb hulp nodig bij het invullen van deze lijst",
   "alternatives": [],
   "hint": "“hulp nodig hebben bij …”: “nodig” comes right after the object.",
+  "en": "I need help filling in this list.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10693,6 +11256,7 @@ const EXERCISES = [
   "answer": "de dief zat achter het stuur van een grijze auto",
   "alternatives": [],
   "hint": "Past tense verb “zat” in 2nd place.",
+  "en": "The thief was behind the wheel of a grey car.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10713,6 +11277,7 @@ const EXERCISES = [
   "answer": "Utrecht is een kleine provincie in het midden van het land",
   "alternatives": [],
   "hint": "Subject – verb – rest.",
+  "en": "Utrecht is a small province in the middle of the country.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -10732,6 +11297,7 @@ const EXERCISES = [
   "answer": "mijn baas heeft veel begrip voor mijn omstandigheden",
   "alternatives": [],
   "hint": "Subject – verb – object – “voor …”.",
+  "en": "My boss is very understanding about my circumstances.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -10752,6 +11318,7 @@ const EXERCISES = [
    "het is volgens de dokter niet gevaarlijk"
   ],
   "hint": "When “volgens de dokter” starts the sentence, the verb comes next and the subject follows (inversion).",
+  "en": "According to the doctor, it is not dangerous.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -10772,6 +11339,7 @@ const EXERCISES = [
    "de ambulance was er gelukkig heel snel"
   ],
   "hint": "“gelukkig” at the start causes inversion: was de ambulance.",
+  "en": "Fortunately, the ambulance got there very quickly.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -10790,6 +11358,7 @@ const EXERCISES = [
   "answer": "als student krijg je geld van DUO",
   "alternatives": [],
   "hint": "“als student” (as a student) at the start causes inversion; with inversion “jij/je” drops the -t: krijg je.",
+  "en": "As a student, you get money from DUO.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -10812,6 +11381,7 @@ const EXERCISES = [
    "het was een verschrikkelijk moment voor mij"
   ],
   "hint": "“voor mij” at the start causes inversion: was het.",
+  "en": "For me it was a terrible moment.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10833,6 +11403,7 @@ const EXERCISES = [
    "hij heeft sinds oktober geen werk meer"
   ],
   "hint": "Time phrase first causes inversion: heeft hij.",
+  "en": "He has been out of work since October.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10855,6 +11426,7 @@ const EXERCISES = [
    "ik droom sinds het ongeluk vaak slecht"
   ],
   "hint": "Time phrase first causes inversion: droom ik.",
+  "en": "Since the accident I often have bad dreams.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10877,6 +11449,7 @@ const EXERCISES = [
    "de apotheek is echter op zondag gesloten"
   ],
   "hint": "Time first causes inversion; “echter” (however) comes after the verb/subject.",
+  "en": "On Sunday, however, the pharmacy is closed.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10895,6 +11468,7 @@ const EXERCISES = [
   "answer": "na een ongeluk heb je vaak sterke emoties",
   "alternatives": [],
   "hint": "Inversion after the time phrase; with inversion “je” drops the -t: heb je.",
+  "en": "After an accident you often have strong emotions.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10915,6 +11489,7 @@ const EXERCISES = [
    "in de wachtkamer is voor iedereen genoeg ruimte"
   ],
   "hint": "Place first, then the verb, then the subject (genoeg ruimte).",
+  "en": "There is enough room for everyone in the waiting room.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10934,6 +11509,7 @@ const EXERCISES = [
    "mijn bloeddruk is volgens de huisarts te laag"
   ],
   "hint": "Inversion after “volgens de huisarts”: is mijn bloeddruk.",
+  "en": "According to the GP, my blood pressure is too low.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10955,6 +11531,7 @@ const EXERCISES = [
    "u belt bij een ongeluk meteen het nummer 112"
   ],
   "hint": "The sentence starts with “bij een ongeluk”, so verb and subject swap: belt u.",
+  "en": "In case of an accident, call 112 immediately.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10976,6 +11553,7 @@ const EXERCISES = [
    "ik gebruik in de zomer zonnebrand met factor 30"
   ],
   "hint": "A time phrase at the start causes inversion: gebruik ik.",
+  "en": "In summer I use sunscreen with factor 30.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -10994,6 +11572,7 @@ const EXERCISES = [
   "answer": "in de wijkkrant staat een verhaal over de nieuwe huisarts",
   "alternatives": [],
   "hint": "Place first, then the verb (staat), then the subject: inversion.",
+  "en": "There is a story about the new GP in the neighbourhood newspaper.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -11015,6 +11594,7 @@ const EXERCISES = [
    "hij had na de dood van zijn vader veel verdriet"
   ],
   "hint": "A long time phrase at the start still causes inversion: had hij.",
+  "en": "After his father's death he was very sad.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -11037,6 +11617,7 @@ const EXERCISES = [
    "ik ben in tegenstelling tot mijn broer bijna nooit ziek"
   ],
   "hint": "A long phrase at the start still causes inversion: ben ik.",
+  "en": "Unlike my brother, I am hardly ever ill.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -11054,6 +11635,7 @@ const EXERCISES = [
   "answer": "neem deze tabletten na de maaltijd",
   "alternatives": [],
   "hint": "Imperative: the verb comes first.",
+  "en": "Take these tablets after the meal.",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -11071,6 +11653,7 @@ const EXERCISES = [
   "answer": "wat zijn de kenmerken van griep?",
   "alternatives": [],
   "hint": "W-question: question word, then the verb.",
+  "en": "What are the symptoms of flu?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -11089,6 +11672,7 @@ const EXERCISES = [
   "answer": "schrijf uw naam bovenaan het blad",
   "alternatives": [],
   "hint": "Imperative: the verb comes first, then object, then place.",
+  "en": "Write your name at the top of the sheet.",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -11107,6 +11691,7 @@ const EXERCISES = [
   "answer": "wat voor soort pijn heeft u?",
   "alternatives": [],
   "hint": "W-question: the question phrase “wat voor soort pijn” comes first, then the verb, then the subject.",
+  "en": "What kind of pain do you have?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -11125,6 +11710,7 @@ const EXERCISES = [
   "answer": "kan ik jou morgen bellen?",
   "alternatives": [],
   "hint": "Yes/no question: modal first; object pronoun before time; infinitive last.",
+  "en": "Can I call you tomorrow?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -11145,6 +11731,7 @@ const EXERCISES = [
    "mag ik even uw tong zien?"
   ],
   "hint": "Polite question: modal first, infinitive (zien) at the end.",
+  "en": "May I see your tongue for a moment?",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -11162,6 +11749,7 @@ const EXERCISES = [
   "answer": "u kunt bij de kassa afrekenen",
   "alternatives": [],
   "hint": "After a modal the separable verb stays whole at the end: afrekenen.",
+  "en": "You can pay at the till.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -11181,6 +11769,7 @@ const EXERCISES = [
    "je moet in het ziekenhuis stil zijn"
   ],
   "hint": "Place first causes inversion; the infinitive “zijn” is last.",
+  "en": "You have to be quiet in the hospital.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -11203,6 +11792,7 @@ const EXERCISES = [
    "ik wil graag bij de politie aangifte doen"
   ],
   "hint": "The modal verb “wil” is in 2nd place; the infinitive “doen” goes to the end of its phrase.",
+  "en": "I would like to report a crime to the police.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -11221,6 +11811,7 @@ const EXERCISES = [
   "answer": "mag ik mij even voorstellen?",
   "alternatives": [],
   "hint": "Question with a modal: the infinitive “voorstellen” goes to the end.",
+  "en": "May I introduce myself?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11239,6 +11830,7 @@ const EXERCISES = [
   "answer": "welk beroep wil je later kiezen?",
   "alternatives": [],
   "hint": "W-question: question word + noun, then the verb, then the subject; the infinitive at the end.",
+  "en": "Which profession do you want to choose later?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11259,6 +11851,7 @@ const EXERCISES = [
    "je mag in Nederland geen wapen hebben"
   ],
   "hint": "Place first causes inversion (mag je); the infinitive “hebben” is last.",
+  "en": "In the Netherlands you are not allowed to have a weapon.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11279,6 +11872,7 @@ const EXERCISES = [
    "je mag met deze medicijnen geen auto rijden"
   ],
   "hint": "Inversion after “met deze medicijnen”; the infinitive “rijden” is last.",
+  "en": "You are not allowed to drive with these medicines.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11302,6 +11896,7 @@ const EXERCISES = [
    "u mag in het ziekenhuis absoluut niet roken"
   ],
   "hint": "Modal (mag) in 2nd place, infinitive (roken) later; place first causes inversion.",
+  "en": "You are absolutely not allowed to smoke in the hospital.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11320,6 +11915,7 @@ const EXERCISES = [
   "answer": "u moet gezond eten, zoals groente en fruit",
   "alternatives": [],
   "hint": "Modal in 2nd place, infinitive (eten) at the end of the clause.",
+  "en": "You should eat healthily, such as vegetables and fruit.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -11339,6 +11935,7 @@ const EXERCISES = [
   "answer": "we zouden graag een afspraak willen maken",
   "alternatives": [],
   "hint": "Polite form: “zouden” in 2nd place, both infinitives at the end.",
+  "en": "We would like to make an appointment.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -11359,6 +11956,7 @@ const EXERCISES = [
    "iedereen moet volgens de wet een zorgverzekering hebben"
   ],
   "hint": "Inversion after “volgens de wet”; the infinitive “hebben” goes to the end.",
+  "en": "By law, everyone must have health insurance.",
   "grammar": "modaal",
   "level": 4
  },
@@ -11376,6 +11974,7 @@ const EXERCISES = [
    "krijg ik later mijn laptop terug?"
   ],
   "hint": "Yes/no question: the verb comes first. Separable “terugkrijgen”: “terug” goes to the end.",
+  "en": "Will I get my laptop back later?",
   "grammar": "scheidbaar",
   "level": 3
  },
@@ -11393,6 +11992,7 @@ const EXERCISES = [
    "volgend jaar studeert mijn dochter af"
   ],
   "hint": "Separable verb “afstuderen”: “af” goes to the end.",
+  "en": "My daughter graduates next year.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11414,6 +12014,7 @@ const EXERCISES = [
    "de agent schrijft nauwkeurig alle details op"
   ],
   "hint": "Separable verb “opschrijven”: “op” goes to the end of the sentence.",
+  "en": "The officer writes down all the details carefully.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11435,6 +12036,7 @@ const EXERCISES = [
    "we werken op ons werk goed samen"
   ],
   "hint": "Separable verb “samenwerken”: “samen” goes to the end; place first causes inversion.",
+  "en": "At work we work well together.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11459,6 +12061,7 @@ const EXERCISES = [
    "ik zet op dinsdagavond de vuilniszak buiten"
   ],
   "hint": "TMP: time (op dinsdagavond) before place (buiten).",
+  "en": "I put the rubbish bag outside on Tuesday evening.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11481,6 +12084,7 @@ const EXERCISES = [
    "ik meld me vandaag bij mijn baas ziek"
   ],
   "hint": "“zich ziek melden”: the verb is 2nd, “me” follows it, “ziek” comes after the time word.",
+  "en": "Today I am calling in sick to my boss.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11502,6 +12106,7 @@ const EXERCISES = [
    "ik neem in de zomer altijd water naar het strand mee"
   ],
   "hint": "Separable verb “meenemen”: “neem” is in 2nd place and “mee” goes near the end.",
+  "en": "In summer I always take water with me to the beach.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -11520,6 +12125,7 @@ const EXERCISES = [
   "answer": "zijn team heeft de wedstrijd gewonnen",
   "alternatives": [],
   "hint": "Perfect tense: “heeft … gewonnen”.",
+  "en": "His team won the match.",
   "grammar": "perfectum",
   "level": 2
  },
@@ -11535,6 +12141,7 @@ const EXERCISES = [
   "answer": "mijn dochter is van een paard gevallen",
   "alternatives": [],
   "hint": "“vallen” takes “zijn” in the perfect: is gevallen.",
+  "en": "My daughter fell off a horse.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -11553,6 +12160,7 @@ const EXERCISES = [
   "answer": "de hond van de buren heeft mijn zoon gebeten",
   "alternatives": [],
   "hint": "Perfect tense: “heeft” in 2nd place, the participle “gebeten” at the end.",
+  "en": "The neighbours' dog bit my son.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -11571,6 +12179,7 @@ const EXERCISES = [
   "answer": "ik ben enorm geschrokken van de dief",
   "alternatives": [],
   "hint": "“schrikken” takes “zijn” in the perfect: ik ben geschrokken.",
+  "en": "The thief gave me a terrible fright.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11590,6 +12199,7 @@ const EXERCISES = [
    "de politie heeft uiteindelijk mijn tas gevonden"
   ],
   "hint": "“uiteindelijk” first causes inversion; the participle is last.",
+  "en": "In the end the police found my bag.",
   "grammar": "perfectum",
   "level": 3
  },
@@ -11605,6 +12215,7 @@ const EXERCISES = [
   "answer": "de rechter heeft de dief een straf gegeven",
   "alternatives": [],
   "hint": "Indirect object (de dief) before the direct object (een straf); participle at the end.",
+  "en": "The judge gave the thief a sentence.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11623,6 +12234,7 @@ const EXERCISES = [
   "answer": "hij heeft de spiegel aan de muur opgehangen",
   "alternatives": [],
   "hint": "Perfect of a separable verb: op + ge + hangen = opgehangen, at the end.",
+  "en": "He hung the mirror on the wall.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11644,6 +12256,7 @@ const EXERCISES = [
    "in het centrum is het twee dagen geleden gebeurd"
   ],
   "hint": "A time phrase at the start causes inversion (is het); the participle “gebeurd” goes to the end.",
+  "en": "It happened in the centre two days ago.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11669,6 +12282,7 @@ const EXERCISES = [
    "op de brug heb ik gisteren een ongeluk gehad"
   ],
   "hint": "Perfect tense with “heb … gehad”; time (gisteren) comes early, or first with inversion.",
+  "en": "I had an accident on the bridge yesterday.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11688,6 +12302,7 @@ const EXERCISES = [
   "answer": "de dief heeft het raam van mijn auto kapotgemaakt",
   "alternatives": [],
   "hint": "Perfect tense of the separable verb “kapotmaken”: kapot + gemaakt = kapotgemaakt, at the very end.",
+  "en": "The thief broke the window of my car.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11707,6 +12322,7 @@ const EXERCISES = [
   "answer": "het bestuur van de school heeft een brief gestuurd",
   "alternatives": [],
   "hint": "Perfect tense: “heeft … gestuurd”.",
+  "en": "The school board has sent a letter.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11726,6 +12342,7 @@ const EXERCISES = [
   "answer": "de chirurg heeft een plaat in mijn been gezet",
   "alternatives": [],
   "hint": "Perfect tense: “heeft … gezet”, object before place.",
+  "en": "The surgeon put a plate in my leg.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11750,6 +12367,7 @@ const EXERCISES = [
    "in de stad heeft iemand gisteren mijn zwarte tas gestolen"
   ],
   "hint": "Perfect tense: “heeft” is in 2nd place and the participle “gestolen” goes to the very end.",
+  "en": "Someone stole my black bag in town yesterday.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11771,6 +12389,7 @@ const EXERCISES = [
    "vorige week heb ik een brief van de overheid gekregen"
   ],
   "hint": "Perfect tense: “heb” in 2nd place, “gekregen” at the end; time before the object.",
+  "en": "Last week I received a letter from the government.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11793,6 +12412,7 @@ const EXERCISES = [
    "zondag hebben we een lange tocht door het bos gemaakt"
   ],
   "hint": "Perfect tense; time (zondag) comes early or first with inversion.",
+  "en": "On Sunday we went on a long walk through the woods.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -11814,6 +12434,7 @@ const EXERCISES = [
    "iemand heeft tot mijn verbazing mijn tas teruggebracht"
   ],
   "hint": "Inversion after “tot mijn verbazing”; participle at the end.",
+  "en": "To my surprise, someone brought my bag back.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -11835,6 +12456,7 @@ const EXERCISES = [
    "ik heb via de website mijn nieuwe adres aan DUO doorgegeven"
   ],
   "hint": "Perfect tense of a separable verb: door + ge + geven = doorgegeven, at the end.",
+  "en": "I gave DUO my new address via the website.",
   "grammar": "perfectum",
   "level": 5,
   "senses": {
@@ -11852,6 +12474,7 @@ const EXERCISES = [
   "answer": "ik blijf thuis, ik ben tenslotte ziek",
   "alternatives": [],
   "hint": "Adverbs like “tenslotte” come right after the verb.",
+  "en": "I'm staying at home; after all, I'm ill.",
   "grammar": "nevenschikkend",
   "level": 3
  },
@@ -11866,6 +12489,7 @@ const EXERCISES = [
   "answer": "het regent binnen, want het dak is kapot",
   "alternatives": [],
   "hint": "After “want” you keep main-clause order: het dak is kapot.",
+  "en": "It's raining indoors, because the roof is broken.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -11885,6 +12509,7 @@ const EXERCISES = [
   "answer": "de agent bleef kalm en praatte rustig met mij",
   "alternatives": [],
   "hint": "Two verbs share one subject: de agent bleef … en praatte ….",
+  "en": "The officer stayed calm and talked to me quietly.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -11904,6 +12529,7 @@ const EXERCISES = [
   "answer": "ik kan niet opruimen, want de stofzuiger is kapot",
   "alternatives": [],
   "hint": "After a modal (kan) the separable verb stays together as an infinitive: opruimen.",
+  "en": "I can't tidy up, because the vacuum cleaner is broken.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -11923,6 +12549,7 @@ const EXERCISES = [
    "mijn mama woont ver weg, dus mis ik haar"
   ],
   "hint": "After “dus” you may use normal order (ik mis) or inversion (mis ik).",
+  "en": "My mum lives far away, so I miss her.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -11943,6 +12570,7 @@ const EXERCISES = [
    "mijn dochter heeft het koud en zij heeft rode ogen"
   ],
   "hint": "“en” joins two main clauses: both keep normal order (subject – verb).",
+  "en": "My daughter has red eyes and she is cold.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -11960,6 +12588,7 @@ const EXERCISES = [
   "answer": "ik kan niet komen, ik ben namelijk ziek",
   "alternatives": [],
   "hint": "“namelijk” (you see) comes after the verb, never at the start.",
+  "en": "I can't come; I'm ill, you see.",
   "grammar": "nevenschikkend",
   "level": 4
  },
@@ -11975,6 +12604,7 @@ const EXERCISES = [
   "answer": "we moeten 112 bellen, want hij verliest veel bloed",
   "alternatives": [],
   "hint": "After “want” the word order stays normal (subject – verb); after a modal the infinitive goes to the end.",
+  "en": "We have to call 112, because he is losing a lot of blood.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -11993,6 +12623,7 @@ const EXERCISES = [
   "answer": "je moet snel instappen, want de bus vertrekt meteen",
   "alternatives": [],
   "hint": "After a modal the separable verb stays whole at the end: instappen.",
+  "en": "You have to get on quickly, because the bus is leaving right away.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -12012,6 +12643,7 @@ const EXERCISES = [
   "answer": "ik weet het niet zeker, maar hij was waarschijnlijk jong",
   "alternatives": [],
   "hint": "“maar” joins two main clauses; both keep subject – verb order.",
+  "en": "I'm not sure, but he was probably young.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -12030,6 +12662,7 @@ const EXERCISES = [
   "answer": "ik heb bijna geen stem meer, want ik ben verkouden",
   "alternatives": [],
   "hint": "After “want” the order stays normal: ik ben.",
+  "en": "I've almost lost my voice, because I have a cold.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -12050,6 +12683,7 @@ const EXERCISES = [
   "answer": "ik heb hem niet goed gezien, want het ging heel snel",
   "alternatives": [],
   "hint": "After “want” you use normal main-clause order (het ging).",
+  "en": "I didn't see him properly, because it happened very fast.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -12072,6 +12706,7 @@ const EXERCISES = [
   "answer": "ik doe de gordijnen dicht, want het licht doet pijn aan mijn ogen",
   "alternatives": [],
   "hint": "Separable “dichtdoen”: “dicht” goes after the object. After “want” normal order.",
+  "en": "I close the curtains, because the light hurts my eyes.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -12094,6 +12729,7 @@ const EXERCISES = [
   "answer": "neem uw pasje mee, anders kunt u niet betalen",
   "alternatives": [],
   "hint": "Imperative first; “anders” (otherwise) causes inversion: kunt u.",
+  "en": "Bring your card, otherwise you can't pay.",
   "grammar": "nevenschikkend",
   "level": 5,
   "senses": {
@@ -12113,6 +12749,7 @@ const EXERCISES = [
   "answer": "gooi oude medicijnen niet weg, maar breng ze naar de apotheek",
   "alternatives": [],
   "hint": "Imperative: the verb comes first. Separable “weggooien”: “weg” goes to the end.",
+  "en": "Don't throw away old medicines, but take them to the pharmacy.",
   "grammar": "nevenschikkend",
   "level": 5,
   "senses": {
@@ -12133,6 +12770,7 @@ const EXERCISES = [
   "answer": "ik volg een cursus om de taal beter te leren",
   "alternatives": [],
   "hint": "“om … te + infinitive” explains the purpose; the infinitive is last.",
+  "en": "I am taking a course to learn the language better.",
   "grammar": "om-te",
   "level": 3,
   "senses": {
@@ -12153,6 +12791,7 @@ const EXERCISES = [
   "answer": "er is geen noodzaak om naar het ziekenhuis te gaan",
   "alternatives": [],
   "hint": "“om … te + infinitive”: the infinitive closes the sentence.",
+  "en": "There is no need to go to the hospital.",
   "grammar": "om-te",
   "level": 5,
   "senses": {
@@ -12174,6 +12813,7 @@ const EXERCISES = [
   "answer": "de tandarts zegt dat mijn tand los zit",
   "alternatives": [],
   "hint": "“dat” sends the verb (zit) to the end of the clause.",
+  "en": "The dentist says that my tooth is loose.",
   "grammar": "bijzin",
   "level": 3
  },
@@ -12190,6 +12830,7 @@ const EXERCISES = [
    "als ik zwanger ben, mag ik vliegen?"
   ],
   "hint": "Yes/no question starts with the verb; “als” sends “ben” to the end.",
+  "en": "Am I allowed to fly if I'm pregnant?",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -12209,6 +12850,7 @@ const EXERCISES = [
    "je moet thuis blijven als je ziek bent"
   ],
   "hint": "“als” sends the verb (bent) to the end; after the als-clause, the main clause starts with the verb (moet je).",
+  "en": "If you are ill, you have to stay at home.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -12232,6 +12874,7 @@ const EXERCISES = [
    "ik bel de huisarts meteen, omdat mijn knie veel pijn doet"
   ],
   "hint": "“omdat” sends the verb (doet) to the end. If the omdat-clause comes first, the main clause starts with the verb (bel ik).",
+  "en": "I call the GP straight away, because my knee hurts a lot.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -12253,6 +12896,7 @@ const EXERCISES = [
    "voordat je naar de huisarts gaat, moet je dit aanmeldformulier invullen"
   ],
   "hint": "“voordat” sends the verb (gaat) to the end of its clause; the modal “moet” takes the infinitive at the end.",
+  "en": "You have to fill in this registration form before you go to the GP.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -12273,6 +12917,7 @@ const EXERCISES = [
   "answer": "de conclusie van de dokter is dat ik rust nodig heb",
   "alternatives": [],
   "hint": "“dat” sends the verb (heb) to the very end.",
+  "en": "The doctor's conclusion is that I need rest.",
   "grammar": "bijzin",
   "level": 5,
   "senses": {
@@ -12294,6 +12939,7 @@ const EXERCISES = [
    "dat woord ken ik niet"
   ],
   "hint": "niet comes after the object (dat woord), at the end.",
+  "en": "I don't know that word.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12315,6 +12961,7 @@ const EXERCISES = [
    "al tien jaar ken ik hem"
   ],
   "hint": "Verb in 2nd place; a short object pronoun (hem) comes right after the verb.",
+  "en": "I have known him for ten years.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12334,6 +12981,7 @@ const EXERCISES = [
   "answer": "de zon schijnt in mijn gezicht",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place, then the place.",
+  "en": "The sun is shining in my face.",
   "grammar": "basis",
   "level": 1
  },
@@ -12348,6 +12996,7 @@ const EXERCISES = [
   "answer": "de tandarts kijkt in mijn mond",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place, then the place.",
+  "en": "The dentist looks in my mouth.",
   "grammar": "basis",
   "level": 1
  },
@@ -12364,6 +13013,7 @@ const EXERCISES = [
    "op de trap spelen de kinderen"
   ],
   "hint": "Subject, verb in 2nd place, then the place.",
+  "en": "The children are playing on the stairs.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12383,6 +13033,7 @@ const EXERCISES = [
    "op de vloer zitten de kinderen"
   ],
   "hint": "Subject, verb in 2nd place, then the place.",
+  "en": "The children are sitting on the floor.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12403,6 +13054,7 @@ const EXERCISES = [
    "meestal duurt het feest vier uur"
   ],
   "hint": "Verb in 2nd place; an adverb first (meestal) causes inversion.",
+  "en": "The party usually lasts four hours.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12425,6 +13077,7 @@ const EXERCISES = [
    "in de woonkamer zitten jullie met vrienden"
   ],
   "hint": "Subject first, verb second, then Manier (met vrienden) before Plaats (in de woonkamer).",
+  "en": "You are sitting in the living room with friends.",
   "grammar": "basis",
   "level": 1
  },
@@ -12441,6 +13094,7 @@ const EXERCISES = [
    "in een grote doos liggen de cadeaus"
   ],
   "hint": "Subject, verb in 2nd place, then the place.",
+  "en": "The presents are in a big box.",
   "grammar": "basis",
   "level": 1,
   "senses": {
@@ -12461,6 +13115,7 @@ const EXERCISES = [
    "om acht uur luistert de man naar de radio"
   ],
   "hint": "Verb in 2nd place. Time (om acht uur) comes early; “naar de radio” belongs to the verb “luisteren naar” and goes to the end.",
+  "en": "The man listens to the radio at eight o'clock.",
   "grammar": "basis",
   "level": 1
  },
@@ -12479,6 +13134,7 @@ const EXERCISES = [
    "ik accepteer graag de uitnodiging"
   ],
   "hint": "Verb in 2nd place; graag can go after the verb or after the object.",
+  "en": "I'm happy to accept the invitation.",
   "grammar": "basis",
   "level": 2
  },
@@ -12493,6 +13149,7 @@ const EXERCISES = [
   "answer": "de vakantie in Italië was geweldig",
   "alternatives": [],
   "hint": "The subject (de vakantie in Italië) first, then the verb, then the adjective.",
+  "en": "The holiday in Italy was fantastic.",
   "grammar": "basis",
   "level": 2
  },
@@ -12507,6 +13164,7 @@ const EXERCISES = [
   "answer": "mijn zus heeft een vrolijk karakter",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place, then the object.",
+  "en": "My sister has a cheerful personality.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12524,6 +13182,7 @@ const EXERCISES = [
   "answer": "het zwembad is vijfentwintig meter lang",
   "alternatives": [],
   "hint": "Subject, verb, then the measurement (vijfentwintig meter lang).",
+  "en": "The swimming pool is twenty-five metres long.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12542,6 +13201,7 @@ const EXERCISES = [
   "answer": "deze boerderij produceert kaas en melk",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place, then the object.",
+  "en": "This farm produces cheese and milk.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12560,6 +13220,7 @@ const EXERCISES = [
   "answer": "mijn zoon is goed in techniek",
   "alternatives": [],
   "hint": "Subject, verb, then the adjective. “goed in” = good at.",
+  "en": "My son is good at technical things.",
   "grammar": "basis",
   "level": 2
  },
@@ -12575,6 +13236,7 @@ const EXERCISES = [
   "answer": "ik reserveer een tafel voor vier personen",
   "alternatives": [],
   "hint": "Subject + verb, then the object (een tafel) and the extra information (voor vier personen).",
+  "en": "I'm booking a table for four people.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12592,6 +13254,7 @@ const EXERCISES = [
   "answer": "de machine op het station is kapot",
   "alternatives": [],
   "hint": "The subject with its place (de machine op het station) first, then the verb.",
+  "en": "The machine at the station is broken.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12612,6 +13275,7 @@ const EXERCISES = [
   "answer": "mijn nicht is studente psychologie in Utrecht",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the rest.",
+  "en": "My cousin is a psychology student in Utrecht.",
   "grammar": "basis",
   "level": 2
  },
@@ -12630,6 +13294,7 @@ const EXERCISES = [
    "ik zet altijd mijn fiets op slot"
   ],
   "hint": "Verb in 2nd place. “op slot zetten”: op slot comes at the end.",
+  "en": "I always lock my bike.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12648,6 +13313,7 @@ const EXERCISES = [
   "answer": "de trein rijdt met een hoge snelheid",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the manner.",
+  "en": "The train is travelling at high speed.",
   "grammar": "basis",
   "level": 2
  },
@@ -12663,6 +13329,7 @@ const EXERCISES = [
   "answer": "ik schrijf een verslag van onze reis",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the object.",
+  "en": "I'm writing a report of our trip.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12684,6 +13351,7 @@ const EXERCISES = [
    "elk jaar organiseert mijn bedrijf een groot feest"
   ],
   "hint": "Verb in 2nd place; time (elk jaar) before the object.",
+  "en": "My company organises a big party every year.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12705,6 +13373,7 @@ const EXERCISES = [
    "boven slaapt de baby in zijn eigen kamer"
   ],
   "hint": "Verb in 2nd place; the short place word (boven) comes before the longer place phrase.",
+  "en": "The baby sleeps upstairs in his own room.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12724,6 +13393,7 @@ const EXERCISES = [
   "answer": "de chef maakt een eenvoudig gerecht met vis",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the object.",
+  "en": "The chef makes a simple fish dish.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12741,6 +13411,7 @@ const EXERCISES = [
   "answer": "een deel van mijn familie woont in Marokko",
   "alternatives": [],
   "hint": "The whole subject (een deel van mijn familie) comes first, then the verb.",
+  "en": "Part of my family lives in Morocco.",
   "grammar": "basis",
   "level": 2
  },
@@ -12756,6 +13427,7 @@ const EXERCISES = [
   "answer": "je bakt de vis in een beetje olie",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, object, then the manner (in een beetje olie).",
+  "en": "You fry the fish in a little oil.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12775,6 +13447,7 @@ const EXERCISES = [
   "answer": "we wachten op de bus naar het strand",
   "alternatives": [],
   "hint": "Verb in 2nd place. “wachten op” = to wait for.",
+  "en": "We are waiting for the bus to the beach.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12793,6 +13466,7 @@ const EXERCISES = [
   "answer": "het café is op de hoek van de straat",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the place.",
+  "en": "The café is on the corner of the street.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12811,6 +13485,7 @@ const EXERCISES = [
   "answer": "de bus stopt voor de deur van het hotel",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the place.",
+  "en": "The bus stops in front of the hotel.",
   "grammar": "basis",
   "level": 2,
   "senses": {
@@ -12832,6 +13507,7 @@ const EXERCISES = [
    "sinds een jaar is mijn zoon lid van de zwemclub"
   ],
   "hint": "Verb in 2nd place; time (sinds een jaar) before the rest.",
+  "en": "My son has been a member of the swimming club for a year.",
   "grammar": "basis",
   "level": 2
  },
@@ -12846,6 +13522,7 @@ const EXERCISES = [
   "answer": "het wordt ongetwijfeld een gezellig feest",
   "alternatives": [],
   "hint": "Verb in 2nd place; the adverb (ongetwijfeld) comes right after the verb.",
+  "en": "It will undoubtedly be a fun party.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12864,6 +13541,7 @@ const EXERCISES = [
   "answer": "het weer is gunstig voor een fietstocht",
   "alternatives": [],
   "hint": "Subject + verb, then the adjective and its phrase.",
+  "en": "The weather is good for a bike ride.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12885,6 +13563,7 @@ const EXERCISES = [
    "na het eten komen de overige gasten"
   ],
   "hint": "Verb in 2nd place. With time first, the subject comes after the verb.",
+  "en": "The other guests are coming after dinner.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12906,6 +13585,7 @@ const EXERCISES = [
    "volgend jaar vieren mijn ouders hun gouden bruiloft"
   ],
   "hint": "Verb in 2nd place; the time phrase (volgend jaar) comes before the object.",
+  "en": "Next year my parents are celebrating their golden wedding anniversary.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12925,6 +13605,7 @@ const EXERCISES = [
   "answer": "ik heb veel hobby's, bijvoorbeeld zwemmen en fietsen",
   "alternatives": [],
   "hint": "Main clause first; bijvoorbeeld introduces the examples after the comma.",
+  "en": "I have lots of hobbies, for example swimming and cycling.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12942,6 +13623,7 @@ const EXERCISES = [
   "answer": "de bruiloft van mijn zus was heel emotioneel",
   "alternatives": [],
   "hint": "The long subject comes first, then the verb (was) in 2nd place.",
+  "en": "My sister's wedding was very emotional.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12962,6 +13644,7 @@ const EXERCISES = [
    "met gemak loopt hij tienduizend stappen per dag"
   ],
   "hint": "Verb in 2nd place; the manner (met gemak) before the object.",
+  "en": "He easily walks ten thousand steps a day.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -12981,6 +13664,7 @@ const EXERCISES = [
   "answer": "het straatfeest is een samenwerking van alle buren",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place.",
+  "en": "The street party is a joint effort by all the neighbours.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13001,6 +13685,7 @@ const EXERCISES = [
   "answer": "ik wens je veel succes met je examen",
   "alternatives": [],
   "hint": "Verb in 2nd place; the person (je) before the thing (veel succes).",
+  "en": "Good luck with your exam!",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13023,6 +13708,7 @@ const EXERCISES = [
    "ik vraag naar mijn tas bij gevonden voorwerpen"
   ],
   "hint": "Verb in 2nd place. “vragen naar” = ask about; the naar-part usually goes to the end.",
+  "en": "I ask at lost property about my bag.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13045,6 +13731,7 @@ const EXERCISES = [
    "op vakantie maakt hij veel foto's van zichzelf"
   ],
   "hint": "Verb in 2nd place; op vakantie before the object.",
+  "en": "On holiday he takes lots of photos of himself.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13067,6 +13754,7 @@ const EXERCISES = [
    "iedereen behalve mijn broer komt naar het feest"
   ],
   "hint": "Verb in 2nd place; a phrase first (behalve mijn broer) causes inversion.",
+  "en": "Everyone is coming to the party except my brother.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13089,6 +13777,7 @@ const EXERCISES = [
    "ik kom zaterdag in elk geval naar je feest"
   ],
   "hint": "Verb in 2nd place; time (zaterdag) before place (naar je feest).",
+  "en": "I'm coming to your party on Saturday in any case.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13110,6 +13799,7 @@ const EXERCISES = [
    "over tien seconden vertrekt de trein op spoor vijf"
   ],
   "hint": "The whole subject (de trein op spoor vijf) counts as one position; the verb comes next.",
+  "en": "The train on platform five leaves in ten seconds.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13133,6 +13823,7 @@ const EXERCISES = [
    "deze week is mijn man voor zaken in Duitsland"
   ],
   "hint": "TMP: Tijd (deze week), Manier/reason (voor zaken), Plaats (in Duitsland).",
+  "en": "My husband is in Germany on business this week.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13152,6 +13843,7 @@ const EXERCISES = [
   "answer": "een pet is een goede bescherming tegen de zon",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the rest.",
+  "en": "A cap is good protection against the sun.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13173,6 +13865,7 @@ const EXERCISES = [
    "ik schrijf een briefje over ons feest voor de buren"
   ],
   "hint": "Verb in 2nd place, then the object and the extra phrases.",
+  "en": "I'm writing a note to the neighbours about our party.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13196,6 +13889,7 @@ const EXERCISES = [
    "elk jaar gaan mijn echtgenoot en ik op vakantie naar Turkije"
   ],
   "hint": "“mijn echtgenoot en ik” is one subject (= wij), so the verb is gaan. Time before place.",
+  "en": "My husband and I go on holiday to Turkey every year.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13217,6 +13911,7 @@ const EXERCISES = [
    "over een smal pad lopen we naar de top van de heuvel"
   ],
   "hint": "Manier (over een smal pad) before Plaats/direction (naar de top van de heuvel).",
+  "en": "We walk along a narrow path to the top of the hill.",
   "grammar": "basis",
   "level": 3,
   "senses": {
@@ -13237,6 +13932,7 @@ const EXERCISES = [
    "onder leiding van een gids wandelen we door het bos"
   ],
   "hint": "Manier (onder leiding van een gids) before Plaats (door het bos).",
+  "en": "We walk through the woods led by a guide.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -13257,6 +13953,7 @@ const EXERCISES = [
   "answer": "het museum met moderne kunst is echt de moeite waard",
   "alternatives": [],
   "hint": "The long subject (het museum met moderne kunst) first, then the verb. “de moeite waard” = worth it.",
+  "en": "The museum of modern art is really worth a visit.",
   "grammar": "basis",
   "level": 4,
   "senses": {
@@ -13278,6 +13975,7 @@ const EXERCISES = [
    "het werd plotseling donker"
   ],
   "hint": "An adverb first (plotseling) causes inversion: werd het.",
+  "en": "Suddenly it got dark.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13298,6 +13996,7 @@ const EXERCISES = [
    "het is eindelijk weer zomer"
   ],
   "hint": "An adverb first (eindelijk) causes inversion: is het.",
+  "en": "At last it's summer again.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13319,6 +14018,7 @@ const EXERCISES = [
    "de lucht is vandaag helemaal blauw"
   ],
   "hint": "Time first (vandaag) causes inversion: is de lucht.",
+  "en": "Today the sky is completely blue.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13340,6 +14040,7 @@ const EXERCISES = [
    "het weer verandert in Nederland snel"
   ],
   "hint": "Place first causes inversion: verandert het weer.",
+  "en": "In the Netherlands the weather changes quickly.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13363,6 +14064,7 @@ const EXERCISES = [
    "mijn arm doet na het tennis pijn"
   ],
   "hint": "Time first causes inversion. In “pijn doen”, pijn goes to the end.",
+  "en": "After tennis my arm hurts.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13383,6 +14085,7 @@ const EXERCISES = [
    "ik heb na de griep weinig kracht"
   ],
   "hint": "Time first causes inversion: heb ik.",
+  "en": "After the flu I don't have much strength.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13403,6 +14106,7 @@ const EXERCISES = [
    "u gaat bij de kerk naar links"
   ],
   "hint": "A place first causes inversion: gaat u.",
+  "en": "At the church, turn left.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13424,6 +14128,7 @@ const EXERCISES = [
    "een kaart is op reis heel nuttig"
   ],
   "hint": "A phrase first causes inversion: is een kaart.",
+  "en": "When travelling, a map is very useful.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13444,6 +14149,7 @@ const EXERCISES = [
   "answer": "er komt veel rook van de barbecue",
   "alternatives": [],
   "hint": "“er” takes the first place; the verb (komt) follows in 2nd place.",
+  "en": "There is a lot of smoke coming from the barbecue.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13464,6 +14170,7 @@ const EXERCISES = [
    "er valt in de winter soms sneeuw"
   ],
   "hint": "Time first causes inversion: valt er.",
+  "en": "In winter it sometimes snows.",
   "grammar": "inversie",
   "level": 2
  },
@@ -13482,6 +14189,7 @@ const EXERCISES = [
    "ik voel me vandaag niet zo goed"
   ],
   "hint": "Time first causes inversion; the reflexive pronoun (me) comes right after the subject.",
+  "en": "I don't feel very well today.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13505,6 +14213,7 @@ const EXERCISES = [
    "ik ontmoet mijn vrienden zaterdag in het café"
   ],
   "hint": "Time first causes inversion (ontmoet ik); Plaats (in het café) at the end.",
+  "en": "On Saturday I'm meeting my friends in the café.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13527,6 +14236,7 @@ const EXERCISES = [
    "ik vind in het bos rust en stilte"
   ],
   "hint": "Place first causes inversion: vind ik.",
+  "en": "In the woods I find peace and quiet.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13550,6 +14260,7 @@ const EXERCISES = [
    "we betalen in het restaurant de rekening samen"
   ],
   "hint": "Place first causes inversion: betalen we.",
+  "en": "In the restaurant we pay the bill together.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13570,6 +14281,7 @@ const EXERCISES = [
    "mijn man heeft op zondag een late dienst"
   ],
   "hint": "Time first causes inversion: heeft mijn man.",
+  "en": "On Sunday my husband has a late shift.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13588,6 +14300,7 @@ const EXERCISES = [
   "answer": "op de website staat informatie over het festival",
   "alternatives": [],
   "hint": "Place first causes inversion: the verb (staat) before the subject (informatie).",
+  "en": "There is information about the festival on the website.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13611,6 +14324,7 @@ const EXERCISES = [
    "we blijven de rest van de dag thuis"
   ],
   "hint": "Time first causes inversion: blijven we.",
+  "en": "We're staying at home for the rest of the day.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13634,6 +14348,7 @@ const EXERCISES = [
    "daar is het in de zomer warm en droog"
   ],
   "hint": "Time first (in de zomer) causes inversion: is before het.",
+  "en": "In summer it is warm and dry there.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13657,6 +14372,7 @@ const EXERCISES = [
    "buiten is het in de herfst nat en koel"
   ],
   "hint": "Time first causes inversion (is het). The adjectives (nat en koel) come at the end.",
+  "en": "In autumn it is wet and cool outside.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13679,6 +14395,7 @@ const EXERCISES = [
    "ik ga na het werk direct naar de sportschool"
   ],
   "hint": "Time first causes inversion; direct comes before the place (naar de sportschool).",
+  "en": "After work I go straight to the gym.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13701,6 +14418,7 @@ const EXERCISES = [
    "er zijn op zaterdag veel klanten in de winkel"
   ],
   "hint": "Time first causes inversion; “er zijn” = there are.",
+  "en": "On Saturday there are lots of customers in the shop.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13724,6 +14442,7 @@ const EXERCISES = [
    "we zien op het nieuws de president van Amerika"
   ],
   "hint": "A phrase first causes inversion: zien we.",
+  "en": "On the news we see the President of America.",
   "grammar": "inversie",
   "level": 2,
   "senses": {
@@ -13746,6 +14465,7 @@ const EXERCISES = [
    "er is voor de wedstrijd veel spanning"
   ],
   "hint": "Time first causes inversion: is er.",
+  "en": "There is a lot of tension before the match.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13769,6 +14489,7 @@ const EXERCISES = [
    "ik geef mijn moeder voor haar verjaardag bloemen"
   ],
   "hint": "Inversion after the first phrase; the person (mijn moeder) comes before the thing (bloemen).",
+  "en": "I'm giving my mother flowers for her birthday.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13789,6 +14510,7 @@ const EXERCISES = [
    "ik sport op mijn leeftijd niet meer zoveel"
   ],
   "hint": "A phrase first (op mijn leeftijd) causes inversion: sport ik.",
+  "en": "At my age I don't do as much sport any more.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13811,6 +14533,7 @@ const EXERCISES = [
    "we geven elkaar bij het afscheid een hand"
   ],
   "hint": "A phrase first causes inversion (geven we). “elkaar een hand geven” = to shake hands.",
+  "en": "When we say goodbye, we shake hands.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13834,6 +14557,7 @@ const EXERCISES = [
    "de heuvels in deze streek zijn erg hoog"
   ],
   "hint": "Place first causes inversion: zijn de heuvels.",
+  "en": "In this region the hills are very high.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13857,6 +14581,7 @@ const EXERCISES = [
    "ik speelde in mijn jeugd elke dag buiten"
   ],
   "hint": "Time first causes inversion: speelde ik. Tijd (elke dag) before Plaats (buiten).",
+  "en": "In my childhood I played outside every day.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13878,6 +14603,7 @@ const EXERCISES = [
    "de bus passeert elk half uur ons huis"
   ],
   "hint": "Time first causes inversion: passeert de bus.",
+  "en": "Every half hour the bus passes our house.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13900,6 +14626,7 @@ const EXERCISES = [
    "ik heb na een lange reis veel slaap nodig"
   ],
   "hint": "Time first causes inversion. “nodig hebben”: nodig goes to the end.",
+  "en": "After a long journey I need a lot of sleep.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13922,6 +14649,7 @@ const EXERCISES = [
    "we krijgen in de zomer veel bezoek van familie"
   ],
   "hint": "Time first causes inversion: krijgen we.",
+  "en": "In summer we get lots of visits from family.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13944,6 +14672,7 @@ const EXERCISES = [
    "ik vul mijn fles met water voor de wandeling"
   ],
   "hint": "A phrase first causes inversion: vul ik.",
+  "en": "Before the walk I fill my bottle with water.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13966,6 +14695,7 @@ const EXERCISES = [
    "ik ga op zondag met mijn familie naar het bos"
   ],
   "hint": "Time first (op zondag) causes inversion: verb before subject. Then Manier (met mijn familie) before Plaats (naar het bos).",
+  "en": "On Sunday I go to the woods with my family.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -13989,6 +14719,7 @@ const EXERCISES = [
    "de bladeren van de bomen worden in de herfst bruin"
   ],
   "hint": "Time first causes inversion: the verb (worden) comes before the long subject.",
+  "en": "In autumn the leaves on the trees turn brown.",
   "grammar": "inversie",
   "level": 3
  },
@@ -14007,6 +14738,7 @@ const EXERCISES = [
    "we kijken op zaterdag met de hele familie naar het voetbal"
   ],
   "hint": "Time first causes inversion. “kijken naar” = to watch; the naar-part goes to the end.",
+  "en": "On Saturday we watch the football with the whole family.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -14032,6 +14764,7 @@ const EXERCISES = [
    "ik luister op zondag het liefst naar muziek op de radio"
   ],
   "hint": "Time first causes inversion. “het liefst” = most of all; naar-phrase near the end.",
+  "en": "On Sunday I like listening to music on the radio best.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -14055,6 +14788,7 @@ const EXERCISES = [
    "we slapen in de vakantie in een kleine hut in het bos"
   ],
   "hint": "Time first causes inversion; Tijd before Plaats (TMP).",
+  "en": "On holiday we sleep in a small cabin in the woods.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -14077,6 +14811,7 @@ const EXERCISES = [
    "ik fiets in het weekend met een paar vrienden langs de zee"
   ],
   "hint": "TMP: Tijd (in het weekend), Manier (met een paar vrienden), Plaats (langs de zee).",
+  "en": "At the weekend I cycle along the sea with a few friends.",
   "grammar": "inversie",
   "level": 3,
   "senses": {
@@ -14101,6 +14836,7 @@ const EXERCISES = [
    "een paspoort is voor deze reis noodzakelijk"
   ],
   "hint": "A phrase first causes inversion: is een paspoort.",
+  "en": "A passport is required for this trip.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -14123,6 +14859,7 @@ const EXERCISES = [
    "een groot aantal mensen komt dit jaar naar het festival"
   ],
   "hint": "Time first causes inversion: komt before the subject.",
+  "en": "This year a large number of people are coming to the festival.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -14144,6 +14881,7 @@ const EXERCISES = [
    "we gaan het grootste gedeelte van de reis met de trein"
   ],
   "hint": "A time/extent phrase first causes inversion: gaan we.",
+  "en": "We are doing most of the journey by train.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -14167,6 +14905,7 @@ const EXERCISES = [
    "ik schrijf een korte tekst over mijn weekend voor de wijkkrant"
   ],
   "hint": "A phrase first causes inversion: schrijf ik.",
+  "en": "I'm writing a short piece about my weekend for the neighbourhood newspaper.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -14189,6 +14928,7 @@ const EXERCISES = [
    "de gemeente verbiedt met oud en nieuw vuurwerk in het centrum"
   ],
   "hint": "Time first (met oud en nieuw) causes inversion: verbiedt de gemeente.",
+  "en": "On New Year's Eve the municipality bans fireworks in the centre.",
   "grammar": "inversie",
   "level": 4,
   "senses": {
@@ -14208,6 +14948,7 @@ const EXERCISES = [
   "answer": "is deze plaats nog vrij?",
   "alternatives": [],
   "hint": "Yes/no question: the verb (is) comes first.",
+  "en": "Is this seat free?",
   "grammar": "vraag",
   "level": 1,
   "senses": {
@@ -14227,6 +14968,7 @@ const EXERCISES = [
   "answer": "speelt jouw zoon ook een instrument?",
   "alternatives": [],
   "hint": "Yes/no question: the verb comes first, then the subject.",
+  "en": "Does your son play an instrument too?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -14245,6 +14987,7 @@ const EXERCISES = [
   "answer": "is dit de juiste trein naar Utrecht?",
   "alternatives": [],
   "hint": "Yes/no question: the verb (is) comes first.",
+  "en": "Is this the right train to Utrecht?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -14262,6 +15005,7 @@ const EXERCISES = [
   "answer": "wat is jouw mening over het feest?",
   "alternatives": [],
   "hint": "W-question: question word (wat), then the verb, then the subject.",
+  "en": "What do you think of the party?",
   "grammar": "vraag",
   "level": 2,
   "senses": {
@@ -14282,6 +15026,7 @@ const EXERCISES = [
   "answer": "wat is de oorzaak van de vertraging?",
   "alternatives": [],
   "hint": "W-question: question word, verb, then the subject.",
+  "en": "What is the cause of the delay?",
   "grammar": "vraag",
   "level": 3,
   "senses": {
@@ -14303,6 +15048,7 @@ const EXERCISES = [
    "nee, ik kan zaterdag niet komen"
   ],
   "hint": "nee does not count as a position. Time first causes inversion (kan ik); the infinitive at the end.",
+  "en": "No, I can't come on Saturday.",
   "grammar": "modaal",
   "level": 2,
   "senses": {
@@ -14321,6 +15067,7 @@ const EXERCISES = [
   "answer": "ik kan mijn fietssleutel nergens vinden",
   "alternatives": [],
   "hint": "Modal (kan) in 2nd place, infinitive (vinden) at the end; nergens comes before the infinitive.",
+  "en": "I can't find my bike key anywhere.",
   "grammar": "modaal",
   "level": 2
  },
@@ -14337,6 +15084,7 @@ const EXERCISES = [
   "answer": "kun je morgen een fles wijn meebrengen?",
   "alternatives": [],
   "hint": "Yes/no question: the modal (kun) comes first, the infinitive (meebrengen) goes to the end.",
+  "en": "Can you bring a bottle of wine tomorrow?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -14357,6 +15105,7 @@ const EXERCISES = [
    "mijn dochter wil na haar opleiding reizen"
   ],
   "hint": "Modal (wil) in 2nd place, infinitive (reizen) at the end. Time first causes inversion.",
+  "en": "After her studies my daughter wants to travel.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -14378,6 +15127,7 @@ const EXERCISES = [
    "kun je even je adres en postcode opschrijven?"
   ],
   "hint": "Question with the modal first; the infinitive (opschrijven) goes to the end.",
+  "en": "Can you write down your address and postcode?",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -14399,6 +15149,7 @@ const EXERCISES = [
    "we kunnen vanavond de maan en de sterren zien"
   ],
   "hint": "Modal verb (kunnen) in 2nd place, the infinitive (zien) at the end.",
+  "en": "Tonight we can see the moon and the stars.",
   "grammar": "modaal",
   "level": 3,
   "senses": {
@@ -14420,6 +15171,7 @@ const EXERCISES = [
    "ik wil in de toekomst een eigen huis kopen"
   ],
   "hint": "Modal (wil) in 2nd place, infinitive (kopen) at the end.",
+  "en": "In the future I want to buy a house of my own.",
   "grammar": "modaal",
   "level": 3
  },
@@ -14438,6 +15190,7 @@ const EXERCISES = [
    "we gaan ondanks de regen toch fietsen"
   ],
   "hint": "A phrase first (ondanks de regen) causes inversion; the infinitive (fietsen) goes to the end.",
+  "en": "Despite the rain, we're going cycling anyway.",
   "grammar": "modaal",
   "level": 4,
   "senses": {
@@ -14461,6 +15214,7 @@ const EXERCISES = [
    "zaterdagavond gaan we in de stad uit"
   ],
   "hint": "Separable verb uitgaan: gaan in 2nd place, uit near the end. Time first causes inversion.",
+  "en": "On Saturday evening we're going out in town.",
   "grammar": "scheidbaar",
   "level": 2,
   "senses": {
@@ -14481,6 +15235,7 @@ const EXERCISES = [
    "tien vrienden komen op mijn verjaardag langs"
   ],
   "hint": "Separable verb langskomen: komen goes in 2nd place, the particle langs goes to the end.",
+  "en": "Ten friends are coming round on my birthday.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -14503,6 +15258,7 @@ const EXERCISES = [
    "waar gaan jullie heen in de vakantie?"
   ],
   "hint": "W-question: question word, verb, subject. “waar … heen” = where to; heen goes to the end.",
+  "en": "Where are you going on holiday?",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -14524,6 +15280,7 @@ const EXERCISES = [
    "ik neem voor de zekerheid een paraplu mee"
   ],
   "hint": "Separable verb meenemen: neem in 2nd place, mee at the very end.",
+  "en": "I'm taking an umbrella just in case.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -14547,6 +15304,7 @@ const EXERCISES = [
    "we nemen na de picknick ons afval mee"
   ],
   "hint": "Separable verb meenemen: nemen in 2nd place, mee at the end.",
+  "en": "After the picnic we take our rubbish with us.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -14572,6 +15330,7 @@ const EXERCISES = [
    "we maken na het feest samen het huis schoon"
   ],
   "hint": "Separable verb schoonmaken: maken in 2nd place, schoon at the end.",
+  "en": "After the party we clean the house together.",
   "grammar": "scheidbaar",
   "level": 3,
   "senses": {
@@ -14592,6 +15351,7 @@ const EXERCISES = [
   "answer": "op het formulier vul je je burgerlijke staat in",
   "alternatives": [],
   "hint": "Separable verb invullen: vul in 2nd place, in at the end. After inversion jij/je loses the -t: vul je.",
+  "en": "On the form you fill in your marital status.",
   "grammar": "scheidbaar",
   "level": 4,
   "senses": {
@@ -14615,6 +15375,7 @@ const EXERCISES = [
   "answer": "ben jij ooit in Amsterdam geweest?",
   "alternatives": [],
   "hint": "Question in the perfect: ben first, geweest at the end.",
+  "en": "Have you ever been to Amsterdam?",
   "grammar": "perfectum",
   "level": 2
  },
@@ -14630,6 +15391,7 @@ const EXERCISES = [
   "answer": "onze club heeft de wedstrijd verloren",
   "alternatives": [],
   "hint": "Perfect tense: heeft in 2nd place, verloren at the end.",
+  "en": "Our club lost the match.",
   "grammar": "perfectum",
   "level": 2,
   "senses": {
@@ -14652,6 +15414,7 @@ const EXERCISES = [
    "hij heeft bij het voetbal zijn vinger gebroken"
   ],
   "hint": "Perfect tense: heeft in 2nd place, gebroken at the end of the main part.",
+  "en": "He broke his finger playing football.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -14675,6 +15438,7 @@ const EXERCISES = [
    "de koningin heeft vorig jaar onze stad bezocht"
   ],
   "hint": "Perfect tense: heeft in 2nd place, bezocht at the end. Time first causes inversion.",
+  "en": "Last year the Queen visited our town.",
   "grammar": "perfectum",
   "level": 3,
   "senses": {
@@ -14697,6 +15461,7 @@ const EXERCISES = [
    "wij hebben vorige week een leuke reis naar Spanje gemaakt"
   ],
   "hint": "Perfect tense: hebben in 2nd place, the past participle (gemaakt) at the end. Time first causes inversion.",
+  "en": "Last week we went on a nice trip to Spain.",
   "grammar": "perfectum",
   "level": 4,
   "senses": {
@@ -14717,6 +15482,7 @@ const EXERCISES = [
    "eerst eten we en vervolgens gaan we dansen"
   ],
   "hint": "vervolgens at the start of a clause causes inversion: gaan we.",
+  "en": "We eat first and then we go dancing.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -14737,6 +15503,7 @@ const EXERCISES = [
    "hij heeft angst voor water, dus zwemt hij niet"
   ],
   "hint": "After dus both orders are used: “dus hij zwemt” and “dus zwemt hij”.",
+  "en": "He is afraid of water, so he doesn't swim.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -14755,6 +15522,7 @@ const EXERCISES = [
   "answer": "ik heb twee broers en ze komen allebei naar mijn feest",
   "alternatives": [],
   "hint": "Two main clauses joined by en; allebei comes right after the verb.",
+  "en": "I have two brothers and they are both coming to my party.",
   "grammar": "nevenschikkend",
   "level": 3,
   "senses": {
@@ -14773,6 +15541,7 @@ const EXERCISES = [
   "answer": "het hotel was redelijk goedkoop en de mensen waren erg vriendelijk",
   "alternatives": [],
   "hint": "Two main clauses joined by en: each has the verb in 2nd place.",
+  "en": "The hotel was fairly cheap and the people were very friendly.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -14793,6 +15562,7 @@ const EXERCISES = [
    "mijn familie woont ver weg, dus bel ik ze vaak op"
   ],
   "hint": "Separable verb opbellen: bel in 2nd place, op at the end.",
+  "en": "My family lives far away, so I often call them.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -14817,6 +15587,7 @@ const EXERCISES = [
    "we gaan eerst naar het strand en dan eten we daar een ijsje"
   ],
   "hint": "eerst and dan at the start cause inversion: gaan we, eten we.",
+  "en": "First we go to the beach and then we have an ice cream there.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -14837,6 +15608,7 @@ const EXERCISES = [
   "answer": "ik reis met het openbaar vervoer, want dat is beter voor het milieu",
   "alternatives": [],
   "hint": "want keeps normal word order: the verb stays in 2nd place (dat is).",
+  "en": "I travel by public transport, because it is better for the environment.",
   "grammar": "nevenschikkend",
   "level": 4,
   "senses": {
@@ -14860,6 +15632,7 @@ const EXERCISES = [
   "answer": "we vieren het suikerfeest, want het is een belangrijk feest in onze godsdienst",
   "alternatives": [],
   "hint": "want does not change the word order: after want the verb stays in 2nd place (het is …).",
+  "en": "We celebrate Eid al-Fitr, because it is an important festival in our religion.",
   "grammar": "nevenschikkend",
   "level": 5,
   "senses": {
@@ -14879,6 +15652,7 @@ const EXERCISES = [
   "answer": "in dit dorp is niks te doen",
   "alternatives": [],
   "hint": "Place first, then the verb. “niks te doen” = nothing to do.",
+  "en": "There is nothing to do in this village.",
   "grammar": "om-te",
   "level": 3,
   "senses": {
@@ -14898,6 +15672,7 @@ const EXERCISES = [
   "answer": "mijn doel is om elke week te sporten",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te sporten comes at the end.",
+  "en": "My goal is to do sport every week.",
   "grammar": "om-te",
   "level": 3,
   "senses": {
@@ -14918,6 +15693,7 @@ const EXERCISES = [
   "answer": "ik vind het fijn om elke dag te bewegen",
   "alternatives": [],
   "hint": "“om … te + infinitive”: the infinitive (te bewegen) comes at the end.",
+  "en": "I like to exercise every day.",
   "grammar": "om-te",
   "level": 3,
   "senses": {
@@ -14941,6 +15717,7 @@ const EXERCISES = [
    "het is in dit gebied verboden om te fietsen"
   ],
   "hint": "Place first causes inversion (is het). “om te + infinitive” at the end.",
+  "en": "Cycling is forbidden in this area.",
   "grammar": "om-te",
   "level": 4,
   "senses": {
@@ -14962,6 +15739,7 @@ const EXERCISES = [
   "answer": "een verjaardag is een goede gelegenheid om de familie te zien",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te zien comes at the end.",
+  "en": "A birthday is a good opportunity to see the family.",
   "grammar": "om-te",
   "level": 5,
   "senses": {
@@ -14980,6 +15758,7 @@ const EXERCISES = [
   "answer": "mijn zoon doet alsof hij slaapt",
   "alternatives": [],
   "hint": "alsof sends the verb (slaapt) to the end of its clause.",
+  "en": "My son is pretending to be asleep.",
   "grammar": "bijzin",
   "level": 3
  },
@@ -14995,6 +15774,7 @@ const EXERCISES = [
   "answer": "weet jij hoe laat het feest begint?",
   "alternatives": [],
   "hint": "Yes/no question with verb first. In the indirect question (hoe laat …) the verb goes to the end.",
+  "en": "Do you know what time the party starts?",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -15019,6 +15799,7 @@ const EXERCISES = [
    "omdat de vakantie voorbij is, zijn de kinderen verdrietig"
   ],
   "hint": "omdat sends the verb (is) to the end of its clause. If the omdat-clause comes first, the main verb follows directly: zijn de kinderen.",
+  "en": "The children are sad because the holiday is over.",
   "grammar": "bijzin",
   "level": 3,
   "senses": {
@@ -15039,6 +15820,7 @@ const EXERCISES = [
    "ik lees een boek terwijl de kinderen zwemmen"
   ],
   "hint": "terwijl sends the verb (zwemmen) to the end. After the terwijl-clause the main verb comes first: lees ik.",
+  "en": "While the children are swimming, I read a book.",
   "grammar": "bijzin",
   "level": 4
  },
@@ -15054,6 +15836,7 @@ const EXERCISES = [
   "answer": "ik ga vroeg naar bed, zodat ik morgen fit ben",
   "alternatives": [],
   "hint": "zodat sends the verb (ben) to the end of its clause.",
+  "en": "I'm going to bed early so that I'm fit tomorrow.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -15074,6 +15857,7 @@ const EXERCISES = [
    "ik maak een reis om de wereld als ik rijk word"
   ],
   "hint": "als sends the verb (word) to the end. After the als-clause the main verb comes first: maak ik.",
+  "en": "If I get rich, I'll travel around the world.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {
@@ -15094,6 +15878,7 @@ const EXERCISES = [
   "answer": "het voordeel van de fiets is dat je geen file hebt",
   "alternatives": [],
   "hint": "dat sends the verb (hebt) to the end of its clause.",
+  "en": "The advantage of the bike is that you don't get stuck in traffic jams.",
   "grammar": "bijzin",
   "level": 4,
   "senses": {

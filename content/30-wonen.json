@@ -17,6 +17,7 @@
         "al drie weken zit er een groot gat in de stoep"
       ],
       "hint": "Verb in 2nd place after “er”; time (al drie weken) comes before place (in de stoep).",
+      "en": "There has been a big hole in the pavement for three weeks.",
       "covers": []
     },
     {
@@ -40,6 +41,7 @@
         "ik wil graag dit probleem melden bij de gemeente"
       ],
       "hint": "Modal verb (wil) in 2nd place, the infinitive (melden) goes to the end.",
+      "en": "I would like to report this problem to the council.",
       "covers": []
     },
     {
@@ -58,6 +60,7 @@
         "kunt u uw voornaam en postcode hier invullen?"
       ],
       "hint": "Yes/no question: verb first, then the subject; the infinitive goes to the end.",
+      "en": "Could you fill in your first name and postcode here?",
       "covers": []
     },
     {
@@ -76,6 +79,7 @@
         "vul op het formulier uw adres en woonplaats in"
       ],
       "hint": "Imperative: the verb comes first; the particle “in” of “invullen” goes to the end.",
+      "en": "Fill in your address and place of residence on the form.",
       "covers": [
         "invullen"
       ]
@@ -96,6 +100,7 @@
         "al de hele dag liggen de vuilniszakken op straat"
       ],
       "hint": "Verb in 2nd place; time (al de hele dag) before place (op straat).",
+      "en": "The rubbish bags have been lying in the street all day.",
       "covers": []
     },
     {
@@ -114,6 +119,7 @@
         "omdat de stoep kapot is, is mijn moeder gevallen"
       ],
       "hint": "Perfect tense: is … gevallen. After “omdat” the verb goes to the end.",
+      "en": "My mother fell because the pavement is broken.",
       "covers": []
     },
     {
@@ -130,6 +136,7 @@
       "answer": "de stoep is zo smal dat de kinderen op straat lopen",
       "alternatives": [],
       "hint": "“zo … dat”: in the dat-clause the verb (lopen) goes to the end.",
+      "en": "The pavement is so narrow that the children walk in the street.",
       "covers": []
     },
     {
@@ -150,6 +157,7 @@
         "wij hebben op vrijdagavond vaak last van het geluid van de buren"
       ],
       "hint": "Inversion: after a time phrase at the start, the verb comes before the subject.",
+      "en": "On Friday evenings we are often bothered by the noise from the neighbours.",
       "covers": []
     },
     {
@@ -167,6 +175,7 @@
       "answer": "mijn buurvrouw kan niet slapen, want de hond blaft de hele nacht",
       "alternatives": [],
       "hint": "After “want” the normal word order stays: subject + verb.",
+      "en": "My neighbour can't sleep, because the dog barks all night.",
       "covers": []
     },
     {
@@ -185,6 +194,7 @@
         "ik heb aan de verhuurder een brief geschreven"
       ],
       "hint": "Perfect tense: “heb” in 2nd place, the participle “geschreven” at the end.",
+      "en": "I have written a letter to the landlord.",
       "covers": []
     },
     {
@@ -203,6 +213,7 @@
         "wij verhuizen volgende maand naar een goedkoper huis"
       ],
       "hint": "Time first → inversion: verb (verhuizen) before subject (wij).",
+      "en": "Next month we are moving to a cheaper house.",
       "covers": []
     },
     {
@@ -221,6 +232,7 @@
         "de keuken is vreselijk klein, maar de woonkamer is breed"
       ],
       "hint": "Two main clauses joined by “maar”: normal order (subject + verb) in both.",
+      "en": "The living room is wide, but the kitchen is terribly small.",
       "covers": []
     },
     {
@@ -239,6 +251,7 @@
         "al twintig jaar woont mijn tante tegenover het café"
       ],
       "hint": "TMP: time (al twintig jaar) before place (tegenover het café).",
+      "en": "My aunt has lived opposite the café for twenty years.",
       "covers": []
     },
     {
@@ -258,6 +271,7 @@
         "ik breng het oude papier vanavond weg"
       ],
       "hint": "Separable verb “wegbrengen”: “breng” in 2nd place, “weg” at the end.",
+      "en": "I'm taking the old paper out this evening.",
       "covers": [
         "wegbrengen"
       ]
@@ -279,6 +293,7 @@
         "wij moeten nog de lege flessen naar de glasbak brengen"
       ],
       "hint": "Modal verb (moeten) in 2nd place, infinitive (brengen) at the end.",
+      "en": "We still have to take the empty bottles to the bottle bank.",
       "covers": []
     },
     {
@@ -299,6 +314,7 @@
         "ik lever morgen de oude sleutels bij de verhuurder in"
       ],
       "hint": "Separable verb “inleveren”: “lever” in 2nd place, “in” at the very end.",
+      "en": "I'm handing in the old keys to the landlord tomorrow.",
       "covers": [
         "inleveren"
       ]
@@ -320,6 +336,7 @@
         "er komt door het open raam veel stof binnen"
       ],
       "hint": "Separable verb “binnenkomen”: “komt” in 2nd place, “binnen” at the end.",
+      "en": "A lot of dust comes in through the open window.",
       "covers": [
         "binnenkomen"
       ]
@@ -341,6 +358,7 @@
         "er is door de harde wind een steen van het dak gevallen"
       ],
       "hint": "Perfect with “zijn” (is … gevallen); the participle goes to the end.",
+      "en": "Because of the strong wind, a tile has fallen off the roof.",
       "covers": []
     },
     {
@@ -360,6 +378,7 @@
         "in de straat is het donker doordat de lamp kapot is"
       ],
       "hint": "After “doordat” the verb goes to the end of the clause.",
+      "en": "It is dark in the street because the lamp is broken.",
       "covers": []
     },
     {
@@ -379,6 +398,7 @@
         "in ons huis is er sinds gisteren geen stroom"
       ],
       "hint": "Time phrase first → inversion: “is er”.",
+      "en": "Since yesterday there has been no electricity in our house.",
       "covers": []
     },
     {
@@ -397,6 +417,7 @@
         "wij willen onze kleine flat voor een groter appartement ruilen"
       ],
       "hint": "Modal verb (willen) in 2nd place, infinitive (ruilen) near the end.",
+      "en": "We want to swap our small flat for a bigger apartment.",
       "covers": []
     },
     {
@@ -415,6 +436,7 @@
         "parkeren is in onze straat bijna onmogelijk"
       ],
       "hint": "Place phrase first → inversion: the verb (is) comes before the subject (parkeren).",
+      "en": "In our street, parking is almost impossible.",
       "covers": []
     },
     {
@@ -431,6 +453,7 @@
       "answer": "de auto van de buren staat vaak dwars op de stoep",
       "alternatives": [],
       "hint": "Verb in 2nd place; “vaak” comes right after the verb, the place at the end.",
+      "en": "The neighbours' car is often parked across the pavement.",
       "covers": []
     },
     {
@@ -450,6 +473,7 @@
         "ik zit in de zomer graag in de schaduw van de boom"
       ],
       "hint": "Time first → inversion (zit ik); place (in de schaduw …) at the end.",
+      "en": "In summer I like to sit in the shade of the tree.",
       "covers": []
     },
     {
@@ -469,6 +493,7 @@
         "als wij weg zijn, geeft de vrouw van de buurman onze planten water"
       ],
       "hint": "After “als” the verb goes to the end (weg zijn). If the als-clause comes first, the main verb follows directly.",
+      "en": "Our neighbour's wife waters our plants when we are away.",
       "covers": []
     },
     {
@@ -485,6 +510,7 @@
       "answer": "geef de sleutel van het huis aan de buurvrouw",
       "alternatives": [],
       "hint": "Imperative: the verb (geef) comes first, without a subject.",
+      "en": "Give the house key to the neighbour.",
       "covers": []
     },
     {
@@ -503,6 +529,7 @@
         "alle huurders krijgen volgend jaar een helemaal nieuwe keuken"
       ],
       "hint": "Time first → inversion: verb (krijgen) before subject (alle huurders).",
+      "en": "Next year all tenants will get a completely new kitchen.",
       "covers": []
     },
     {
@@ -522,6 +549,7 @@
         "ik schrijf deze maand een kort stukje voor de wijkkrant"
       ],
       "hint": "Time first → inversion: “schrijf ik”.",
+      "en": "This month I'm writing a short piece for the neighbourhood newspaper.",
       "covers": []
     },
     {
@@ -541,6 +569,7 @@
         "de wijkkrant publiceert elke maand een bijdrage van een bewoner"
       ],
       "hint": "Time first → inversion: verb (publiceert) before subject (de wijkkrant).",
+      "en": "Every month the neighbourhood newspaper publishes a contribution from a resident.",
       "covers": []
     },
     {
@@ -558,6 +587,7 @@
       "answer": "de auteur van dit artikel woont al jaren in onze wijk",
       "alternatives": [],
       "hint": "The whole subject (de auteur van dit artikel) comes first, then the verb; time before place.",
+      "en": "The author of this article has lived in our neighbourhood for years.",
       "covers": []
     },
     {
@@ -575,6 +605,7 @@
       "answer": "wat is de titel van uw stukje voor de wijkkrant?",
       "alternatives": [],
       "hint": "W-question: question word first, then the verb.",
+      "en": "What is the title of your piece for the neighbourhood newspaper?",
       "covers": []
     },
     {
@@ -594,6 +625,7 @@
         "de sfeer in de wijk is sinds het nieuwe buurthuis veel beter"
       ],
       "hint": "Time phrase first → inversion: verb (is) before subject (de sfeer).",
+      "en": "Since the new community centre opened, the atmosphere in the neighbourhood has been much better.",
       "covers": []
     },
     {
@@ -611,6 +643,7 @@
       "answer": "heeft u nog vragen of opmerkingen?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, then the subject.",
+      "en": "Do you have any questions or comments?",
       "covers": []
     },
     {
@@ -631,6 +664,7 @@
         "samen met de buren organiseren wij op zaterdag een straatfeest"
       ],
       "hint": "TMP: time (op zaterdag) before manner (samen met de buren).",
+      "en": "On Saturday we're organising a street party together with the neighbours.",
       "covers": []
     },
     {
@@ -650,6 +684,7 @@
         "sommige bewoners zetten al op maandag hun afval buiten"
       ],
       "hint": "Separable verb “buitenzetten”: “zetten” in 2nd place, “buiten” at the end.",
+      "en": "Some residents already put their rubbish out on Monday.",
       "covers": []
     },
     {
@@ -670,6 +705,7 @@
         "de regel is dat u grofvuil eerst moet melden bij de gemeente"
       ],
       "hint": "In a dat-clause all verbs go to the end: “moet melden”.",
+      "en": "The rule is that you must first report bulky waste to the council.",
       "covers": []
     },
     {
@@ -686,6 +722,7 @@
       "answer": "ik denk dat er niemand thuis is",
       "alternatives": [],
       "hint": "After “dat” the verb (is) goes to the end.",
+      "en": "I think nobody is home.",
       "covers": []
     },
     {
@@ -702,6 +739,7 @@
       "answer": "ik hoop dat de gemeente het probleem snel oplost",
       "alternatives": [],
       "hint": "In a dat-clause a separable verb stays together at the end: “oplost”.",
+      "en": "I hope the council solves the problem quickly.",
       "covers": []
     },
     {
@@ -720,6 +758,7 @@
         "het is jammer dat de speeltuin dicht is in de winter"
       ],
       "hint": "After “dat” the verb (is) goes to the end.",
+      "en": "It's a pity that the playground is closed in winter.",
       "covers": []
     },
     {
@@ -739,6 +778,7 @@
         "elke dag vertelt mijn buurvrouw mij het nieuws uit de straat"
       ],
       "hint": "A short pronoun (mij) comes right after the verb, before the time phrase.",
+      "en": "My neighbour tells me the news from the street every day.",
       "covers": []
     },
     {
@@ -755,6 +795,7 @@
       "answer": "jullie nieuwe huis ziet er erg mooi uit",
       "alternatives": [],
       "hint": "Separable verb “eruitzien”: “ziet er” after the subject, “uit” at the end.",
+      "en": "Your new house looks very nice.",
       "covers": [
         "eruitzien"
       ]
@@ -773,6 +814,7 @@
       "answer": "de verhuurder en ik hebben afgesproken dat hij de verwarming repareert",
       "alternatives": [],
       "hint": "Perfect tense (hebben afgesproken), then a dat-clause with the verb at the end.",
+      "en": "The landlord and I have agreed that he will repair the heating.",
       "covers": []
     },
     {
@@ -791,6 +833,7 @@
         "kunt u even naar dit formulier meekijken?"
       ],
       "hint": "Yes/no question with a modal: “kunt u” first, the infinitive (meekijken) after.",
+      "en": "Could you have a quick look at this form with me?",
       "covers": []
     },
     {
@@ -807,6 +850,7 @@
       "answer": "de nieuwe huurder neemt onze oude kast en lampen over",
       "alternatives": [],
       "hint": "Separable verb “overnemen”: “neemt” in 2nd place, “over” at the end.",
+      "en": "The new tenant is taking over our old cupboard and lamps.",
       "covers": [
         "overnemen"
       ]
@@ -825,6 +869,7 @@
       "answer": "kunt u de afspraak met de monteur verzetten?",
       "alternatives": [],
       "hint": "Question with a modal: verb first, subject second, infinitive at the end.",
+      "en": "Could you move the appointment with the engineer?",
       "covers": []
     },
     {
@@ -843,6 +888,7 @@
         "als ik in de keuken kook, gaat de rookmelder vaak af"
       ],
       "hint": "Separable verb “afgaan” splits (gaat … af); after “als” the verb (kook) goes to the end.",
+      "en": "The smoke alarm often goes off when I cook in the kitchen.",
       "covers": [
         "afgaan"
       ]
@@ -863,6 +909,7 @@
         "de huur van onze woning stijgt dit jaar weer"
       ],
       "hint": "Time first → inversion: verb (stijgt) before the subject.",
+      "en": "This year the rent for our home is going up again.",
       "covers": []
     },
     {
@@ -881,6 +928,7 @@
         "omdat ik niet veel verdien, krijg ik huurtoeslag"
       ],
       "hint": "After “omdat” the verb (verdien) goes to the end.",
+      "en": "I get housing benefit because I don't earn much.",
       "covers": []
     },
     {
@@ -899,6 +947,7 @@
         "is er in de schuur voldoende ruimte voor een fiets?"
       ],
       "hint": "Yes/no question: the verb comes first (is er …).",
+      "en": "Is there enough room for a bike in the shed?",
       "covers": []
     },
     {
@@ -915,6 +964,7 @@
       "answer": "de verhuurder koopt altijd goedkoop materiaal van slechte kwaliteit",
       "alternatives": [],
       "hint": "Verb in 2nd place, “altijd” right after the verb.",
+      "en": "The landlord always buys cheap, poor-quality materials.",
       "covers": []
     },
     {
@@ -933,6 +983,7 @@
         "vooral in de zomer gebruik ik de tuin"
       ],
       "hint": "Verb in 2nd place; the object (de tuin) comes before “vooral in de zomer”.",
+      "en": "I mainly use the garden in summer.",
       "covers": []
     },
     {
@@ -952,6 +1003,7 @@
         "mijn vrienden helpen mij bij het verhuizen met de zware dozen"
       ],
       "hint": "Phrase first → inversion: verb (helpen) before subject (mijn vrienden).",
+      "en": "When I move house, my friends help me with the heavy boxes.",
       "covers": []
     },
     {
@@ -968,6 +1020,7 @@
       "answer": "in de kelder staat een oude kist met speelgoed",
       "alternatives": [],
       "hint": "Place first → inversion: the verb (staat) comes before the subject.",
+      "en": "In the cellar there is an old chest of toys.",
       "covers": []
     },
     {
@@ -986,6 +1039,7 @@
         "de vuilniswagen komt op dinsdag om half acht"
       ],
       "hint": "Time first → inversion: verb (komt) before subject.",
+      "en": "On Tuesdays the bin lorry comes at half past seven.",
       "covers": []
     },
     {
@@ -1002,6 +1056,7 @@
       "answer": "ons huis ligt op vijf minuten lopen van het station",
       "alternatives": [],
       "hint": "Subject + verb (ligt) + place. “op vijf minuten lopen van” = a five-minute walk from.",
+      "en": "Our house is a five-minute walk from the station.",
       "covers": []
     },
     {
@@ -1022,6 +1077,7 @@
         "het onderwijs is in de omgeving van ons huis erg goed"
       ],
       "hint": "Place first → inversion: verb (is) before subject (het onderwijs).",
+      "en": "In the area around our house, the schools are very good.",
       "covers": []
     },
     {
@@ -1039,6 +1095,7 @@
         "wij zien vanuit ons raam een mooi landschap"
       ],
       "hint": "Place first → inversion: “zien wij”.",
+      "en": "From our window we see a beautiful landscape.",
       "covers": []
     },
     {
@@ -1056,6 +1113,7 @@
       "answer": "mijn ouders wonen in een dorp in het westen van het land",
       "alternatives": [],
       "hint": "Subject + verb, then the place phrases: small place (dorp) before the larger area.",
+      "en": "My parents live in a village in the west of the country.",
       "covers": []
     },
     {
@@ -1074,6 +1132,7 @@
         "een boer met veel koeien woont naast ons huis"
       ],
       "hint": "Place first → inversion: verb (woont) before subject (een boer).",
+      "en": "Next to our house lives a farmer with lots of cows.",
       "covers": []
     },
     {
@@ -1089,6 +1148,7 @@
       "answer": "wij wonen in een historisch huis aan de gracht",
       "alternatives": [],
       "hint": "Subject + verb + place. Note: “een historisch huis” — no -e with een + het-word.",
+      "en": "We live in a historic house on the canal.",
       "covers": []
     },
     {
@@ -1108,6 +1168,7 @@
         "mijn buurman speelt elke avond heel hard klassieke muziek"
       ],
       "hint": "TMP: time (elke avond) before manner (heel hard).",
+      "en": "Every evening my neighbour plays classical music very loudly.",
       "covers": []
     },
     {
@@ -1126,6 +1187,7 @@
         "het buurthuis heeft elke maand een cultureel programma"
       ],
       "hint": "Time first → inversion: “heeft het buurthuis”.",
+      "en": "Every month the community centre has a cultural programme.",
       "covers": []
     },
     {
@@ -1142,6 +1204,7 @@
       "answer": "onze straat is internationaal, want de buren komen uit verschillende landen",
       "alternatives": [],
       "hint": "After “want” the normal word order stays: subject + verb.",
+      "en": "Our street is international, because the neighbours come from different countries.",
       "covers": []
     },
     {
@@ -1158,6 +1221,7 @@
       "answer": "veel buitenlandse studenten in onze straat spreken alleen Engels",
       "alternatives": [],
       "hint": "The whole subject (veel buitenlandse studenten in onze straat) comes first, then the verb.",
+      "en": "Many foreign students in our street only speak English.",
       "covers": []
     },
     {
@@ -1174,6 +1238,7 @@
       "answer": "de bewonersvergadering is in de grote zaal van het buurthuis",
       "alternatives": [],
       "hint": "Subject + verb (is) + place.",
+      "en": "The residents' meeting is in the large hall of the community centre.",
       "covers": []
     },
     {
@@ -1190,6 +1255,7 @@
       "answer": "u moet bij de controle van de woning aanwezig zijn",
       "alternatives": [],
       "hint": "Modal verb (moet) in 2nd place, the infinitive (zijn) at the end.",
+      "en": "You must be present at the inspection of the property.",
       "covers": []
     },
     {
@@ -1209,6 +1275,7 @@
         "een ambtenaar van de gemeente komt morgen de stoep bekijken"
       ],
       "hint": "“komen + infinitive”: komt in 2nd place, bekijken at the end.",
+      "en": "Tomorrow an official from the council is coming to look at the pavement.",
       "covers": []
     },
     {
@@ -1227,6 +1294,7 @@
         "omdat mijn fiets gestolen is, doe ik aangifte bij de politie"
       ],
       "hint": "After “omdat” the verbs go to the end: “gestolen is”.",
+      "en": "I'm reporting it to the police because my bike has been stolen.",
       "covers": []
     },
     {
@@ -1249,6 +1317,7 @@
         "zaterdag doet de hele buurt aan een actie voor een schone straat mee"
       ],
       "hint": "Separable verb “meedoen”: doet … mee; the “aan …” phrase may follow the particle.",
+      "en": "On Saturday the whole neighbourhood is taking part in a clean-street campaign.",
       "covers": [
         "meedoen"
       ]
@@ -1269,6 +1338,7 @@
         "ik wil u allen voor uw hulp bedanken"
       ],
       "hint": "Modal verb (wil) in 2nd place, infinitive (bedanken) near the end.",
+      "en": "I would like to thank you all for your help.",
       "covers": []
     },
     {
@@ -1287,6 +1357,7 @@
         "ik vond de buurt in het begin erg stil"
       ],
       "hint": "Time phrase first → inversion: “vond ik”.",
+      "en": "At first I found the neighbourhood very quiet.",
       "covers": []
     },
     {
@@ -1303,6 +1374,7 @@
       "answer": "beide slaapkamers liggen aan de kant van de tuin",
       "alternatives": [],
       "hint": "Subject + verb (liggen) + place.",
+      "en": "Both bedrooms are on the garden side.",
       "covers": []
     },
     {
@@ -1319,6 +1391,7 @@
       "answer": "u mag het afval alleen op bepaalde dagen buitenzetten",
       "alternatives": [],
       "hint": "With a modal (mag) the separable verb stays together at the end: buitenzetten.",
+      "en": "You may only put the rubbish out on certain days.",
       "covers": []
     },
     {
@@ -1335,6 +1408,7 @@
       "answer": "wij hebben besloten om naar een kleiner huis te verhuizen",
       "alternatives": [],
       "hint": "Perfect tense (hebben besloten), then “om … te + infinitive” at the end.",
+      "en": "We have decided to move to a smaller house.",
       "covers": []
     },
     {
@@ -1351,6 +1425,7 @@
       "answer": "wij kiezen bewust voor een woning dicht bij het station",
       "alternatives": [],
       "hint": "Verb in 2nd place; “bewust” (manner) right after the verb.",
+      "en": "We are deliberately choosing a home close to the station.",
       "covers": []
     },
     {
@@ -1367,6 +1442,7 @@
       "answer": "op het bord staat dat u hier niet mag parkeren",
       "alternatives": [],
       "hint": "In the dat-clause the verbs go to the end: “mag parkeren”.",
+      "en": "The sign says that you are not allowed to park here.",
       "covers": []
     },
     {
@@ -1383,6 +1459,7 @@
       "answer": "wij weten niet wat de bron van het geluid is",
       "alternatives": [],
       "hint": "Indirect question after “wat”: the verb (is) goes to the end.",
+      "en": "We don't know what the source of the noise is.",
       "covers": []
     },
     {
@@ -1398,6 +1475,7 @@
       "answer": "de communicatie met de verhuurder is erg slecht",
       "alternatives": [],
       "hint": "The whole subject (de communicatie met de verhuurder) comes first, then the verb.",
+      "en": "Communication with the landlord is very poor.",
       "covers": []
     },
     {
@@ -1417,6 +1495,7 @@
         "de muren zijn niet dik, dus hoor ik alles van de buren"
       ],
       "hint": "After “dus” you may keep subject + verb or use inversion (dus hoor ik).",
+      "en": "The walls aren't thick, so I hear everything from the neighbours.",
       "covers": []
     },
     {
@@ -1433,6 +1512,7 @@
       "answer": "de praktijk van de dokter is vlak bij ons huis",
       "alternatives": [],
       "hint": "Subject + verb (is) + place.",
+      "en": "The doctor's surgery is very close to our house.",
       "covers": []
     },
     {
@@ -1452,6 +1532,7 @@
         "het huis heeft dubbel glas, dus is het binnen lekker stil"
       ],
       "hint": "After “dus” both orders are fine: “dus het is” or “dus is het”.",
+      "en": "The house has double glazing, so it's nice and quiet inside.",
       "covers": []
     },
     {
@@ -1468,6 +1549,7 @@
       "answer": "een goede eigenschap van mijn buurman is dat hij altijd helpt",
       "alternatives": [],
       "hint": "After “dat” the verb (helpt) goes to the end.",
+      "en": "A good quality of my neighbour is that he always helps.",
       "covers": []
     },
     {
@@ -1484,6 +1566,7 @@
       "answer": "de woningcorporatie heeft strenge eisen voor nieuwe huurders",
       "alternatives": [],
       "hint": "Subject + verb + object; the “voor …” phrase at the end.",
+      "en": "The housing association has strict requirements for new tenants.",
       "covers": []
     },
     {
@@ -1500,6 +1583,7 @@
       "answer": "de gemeente doet een experiment met nieuwe afvalcontainers",
       "alternatives": [],
       "hint": "Subject + verb (doet) + object.",
+      "en": "The council is running an experiment with new waste containers.",
       "covers": []
     },
     {
@@ -1517,6 +1601,7 @@
       "answer": "het is een feit dat de huren elk jaar stijgen",
       "alternatives": [],
       "hint": "After “dat” the verb (stijgen) goes to the end.",
+      "en": "It is a fact that rents go up every year.",
       "covers": []
     },
     {
@@ -1536,6 +1621,7 @@
         "ik koop op de markt in onze wijk vers fruit"
       ],
       "hint": "Place first → inversion: “koop ik”.",
+      "en": "I buy fresh fruit at the market in our neighbourhood.",
       "covers": []
     },
     {
@@ -1552,6 +1638,7 @@
       "answer": "mijn buurman is een beetje gek, maar zeer aardig",
       "alternatives": [],
       "hint": "Subject + verb (is) + description; “maar” adds a contrast.",
+      "en": "My neighbour is a bit crazy, but very nice.",
       "covers": []
     },
     {
@@ -1568,6 +1655,7 @@
       "answer": "er hangt een vieze geur in het trappenhuis",
       "alternatives": [],
       "hint": "“er” + verb in 2nd place; the place comes at the end.",
+      "en": "There is a nasty smell in the stairwell.",
       "covers": []
     },
     {
@@ -1585,6 +1673,7 @@
         "ik heb in deze buurt een veilig gevoel"
       ],
       "hint": "Place first → inversion: “heb ik”.",
+      "en": "I feel safe in this neighbourhood.",
       "covers": []
     },
     {
@@ -1604,6 +1693,7 @@
         "het is in onze straat een gewoonte om nieuwe buren te begroeten"
       ],
       "hint": "Place first → inversion (is het); “om … te + infinitive” at the end.",
+      "en": "In our street it is customary to welcome new neighbours.",
       "covers": []
     },
     {
@@ -1622,6 +1712,7 @@
         "ik zoek voor mijn gezondheid een woning zonder trap"
       ],
       "hint": "Phrase first → inversion: “zoek ik”.",
+      "en": "For health reasons I'm looking for a home without stairs.",
       "covers": []
     },
     {
@@ -1641,6 +1732,7 @@
         "een groep jongeren maakt elke avond lawaai op het plein"
       ],
       "hint": "Time first → inversion: verb (maakt) before subject (een groep jongeren).",
+      "en": "Every evening a group of young people makes noise in the square.",
       "covers": []
     },
     {
@@ -1657,6 +1749,7 @@
       "answer": "ons huis ligt in het hart van de stad",
       "alternatives": [],
       "hint": "Subject + verb (ligt) + place.",
+      "en": "Our house is in the heart of the city.",
       "covers": []
     },
     {
@@ -1673,6 +1766,7 @@
       "answer": "heeft u een goed idee voor de wijkkrant?",
       "alternatives": [],
       "hint": "Yes/no question: verb first, subject second.",
+      "en": "Do you have a good idea for the neighbourhood newspaper?",
       "covers": []
     },
     {
@@ -1691,6 +1785,7 @@
         "mijn buurvrouw heeft voor mijn dochter een jurk gemaakt"
       ],
       "hint": "Perfect tense: “heeft” in 2nd place, “gemaakt” at the end.",
+      "en": "My neighbour has made a dress for my daughter.",
       "covers": []
     },
     {
@@ -1709,6 +1804,7 @@
         "ik heb door het lawaai van de buren pijn aan mijn oren"
       ],
       "hint": "Phrase first → inversion: “heb ik”.",
+      "en": "My ears hurt because of the neighbours' noise.",
       "covers": []
     },
     {
@@ -1725,6 +1821,7 @@
       "answer": "mijn buurvrouw heeft pijn in haar keel en blijft vandaag thuis",
       "alternatives": [],
       "hint": "Two verbs joined by “en” share one subject; time (vandaag) before place (thuis).",
+      "en": "My neighbour has a sore throat and is staying at home today.",
       "covers": []
     },
     {
@@ -1741,6 +1838,7 @@
       "answer": "de kat van de buren klimt altijd over de schutting",
       "alternatives": [],
       "hint": "Verb in 2nd place, “altijd” right after it, place at the end.",
+      "en": "The neighbours' cat always climbs over the fence.",
       "covers": []
     },
     {
@@ -1757,6 +1855,7 @@
       "answer": "de hond van de buren heeft pijn aan zijn poot",
       "alternatives": [],
       "hint": "The whole subject (de hond van de buren) first, then the verb.",
+      "en": "The neighbours' dog has a sore paw.",
       "covers": []
     },
     {
@@ -1775,6 +1874,7 @@
         "elke ochtend fietsen de leerlingen van de school door onze straat"
       ],
       "hint": "TMP: time (elke ochtend) before place (door onze straat).",
+      "en": "The pupils from the school cycle through our street every morning.",
       "covers": []
     },
     {
@@ -1795,6 +1895,7 @@
         "ik lees de wijkkrant altijd op zondag"
       ],
       "hint": "Time first → inversion: “lees ik”.",
+      "en": "On Sundays I always read the neighbourhood newspaper.",
       "covers": []
     },
     {
@@ -1813,6 +1914,7 @@
         "het is logisch dat de buren over de nieuwe flat negatief zijn"
       ],
       "hint": "After “dat” the verb (zijn) goes to the end; an “over …” phrase may follow it.",
+      "en": "It's understandable that the neighbours are negative about the new block of flats.",
       "covers": []
     },
     {
@@ -1828,6 +1930,7 @@
       "answer": "is het gelukt met de verhuizing?",
       "alternatives": [],
       "hint": "Yes/no question in the perfect: “is” first, participle “gelukt” after the subject.",
+      "en": "Did the move go well?",
       "covers": []
     },
     {
@@ -1844,6 +1947,7 @@
       "answer": "wat zijn de maten van de slaapkamer?",
       "alternatives": [],
       "hint": "W-question: question word first, then the verb.",
+      "en": "What are the measurements of the bedroom?",
       "covers": []
     },
     {
@@ -1863,6 +1967,7 @@
         "ik kan mijn messen en borden na de verhuizing niet vinden"
       ],
       "hint": "Time first → inversion (kan ik); “niet” + infinitive at the end.",
+      "en": "Since the move I can't find my knives and plates.",
       "covers": []
     },
     {
@@ -1881,6 +1986,7 @@
         "ik stel mezelf aan de nieuwe buren voor"
       ],
       "hint": "Separable verb “voorstellen”: “stel” in 2nd place, “voor” after the object.",
+      "en": "I introduce myself to the new neighbours.",
       "covers": [
         "voorstellen"
       ]
@@ -1901,6 +2007,7 @@
         "ik help je natuurlijk met de verhuizing"
       ],
       "hint": "“natuurlijk” first → inversion: “help ik”.",
+      "en": "Of course I'll help you with the move.",
       "covers": []
     },
     {
@@ -1916,6 +2023,7 @@
       "answer": "nou, wat vind je van het nieuwe huis?",
       "alternatives": [],
       "hint": "W-question: question word (wat) first, then the verb, then the subject. “nou” stands outside the sentence.",
+      "en": "So, what do you think of the new house?",
       "covers": []
     },
     {
@@ -1936,6 +2044,7 @@
         "u moet zich na de verhuizing officieel bij de gemeente inschrijven"
       ],
       "hint": "Time first → inversion (moet u); the infinitive goes to the end.",
+      "en": "After the move you must officially register with the council.",
       "covers": []
     },
     {
@@ -1955,6 +2064,7 @@
         "de verhuurder kwam gisteren onverwacht langs"
       ],
       "hint": "Separable verb “langskomen”: kwam … langs. Time first → inversion.",
+      "en": "Yesterday the landlord dropped by unexpectedly.",
       "covers": [
         "langskomen"
       ]
@@ -1975,6 +2085,7 @@
         "mijn buurvrouw doet na mijn operatie de boodschappen voor mij"
       ],
       "hint": "Time first → inversion: “doet mijn buurvrouw”.",
+      "en": "Since my operation, my neighbour has been doing the shopping for me.",
       "covers": []
     },
     {
@@ -1993,6 +2104,7 @@
         "er ligt in het park overal afval"
       ],
       "hint": "“er” + verb in 2nd place; place (in het park) at the end.",
+      "en": "There is rubbish everywhere in the park.",
       "covers": []
     },
     {
@@ -2012,6 +2124,7 @@
         "wij huren een klein appartement voor een korte periode"
       ],
       "hint": "Time phrase (voor een korte periode) usually right after the verb.",
+      "en": "We're renting a small apartment for a short period.",
       "covers": []
     },
     {
@@ -2031,6 +2144,7 @@
         "hier wil de gemeente een nieuwe speeltuin realiseren"
       ],
       "hint": "Modal verb (wil) in 2nd place, infinitive (realiseren) at the end.",
+      "en": "The council wants to build a new playground here.",
       "covers": []
     },
     {
@@ -2046,6 +2160,7 @@
       "answer": "ik heb een goede relatie met mijn jonge buren",
       "alternatives": [],
       "hint": "Subject + verb + object; the “met …” phrase at the end.",
+      "en": "I have a good relationship with my young neighbours.",
       "covers": []
     },
     {
@@ -2062,6 +2177,7 @@
       "answer": "de bus rijdt in de richting van het centrum",
       "alternatives": [],
       "hint": "Subject + verb + direction.",
+      "en": "The bus goes in the direction of the city centre.",
       "covers": []
     },
     {
@@ -2082,6 +2198,7 @@
         "omdat de buren lawaai maken, kan mijn zoon niet voor zijn toets leren"
       ],
       "hint": "After “omdat” the verb (maken) goes to the end.",
+      "en": "My son can't study for his test because the neighbours are making noise.",
       "covers": []
     },
     {
@@ -2101,6 +2218,7 @@
         "de kinderen spelen op woensdagmiddag een spel in het buurthuis"
       ],
       "hint": "Time first → inversion: verb (spelen) before subject (de kinderen).",
+      "en": "On Wednesday afternoons the children play a game at the community centre.",
       "covers": []
     },
     {
@@ -2117,6 +2235,7 @@
       "answer": "ik ben trots op ons nieuwe huis, want het is strak en modern",
       "alternatives": [],
       "hint": "After “want” the normal order stays: subject (het) + verb (is).",
+      "en": "I'm proud of our new house, because it's sleek and modern.",
       "covers": []
     },
     {
@@ -2133,6 +2252,7 @@
       "answer": "de gemeente heeft een nieuw systeem voor het afval",
       "alternatives": [],
       "hint": "Subject + verb + object. “een nieuw systeem”: no -e with een + het-word.",
+      "en": "The council has a new system for rubbish.",
       "covers": []
     },
     {
@@ -2151,6 +2271,7 @@
         "elke avond staat de televisie van de buren heel hard"
       ],
       "hint": "TMP: time (elke avond) before manner (heel hard).",
+      "en": "The neighbours' television is on very loud every evening.",
       "covers": []
     },
     {
@@ -2167,6 +2288,7 @@
       "answer": "wanneer krijg ik mijn borg terug?",
       "alternatives": [],
       "hint": "W-question: question word, verb, subject; “terug” goes to the end.",
+      "en": "When will I get my deposit back?",
       "covers": []
     },
     {
@@ -2182,6 +2304,7 @@
       "answer": "de uitspraak van onze straatnaam is erg moeilijk",
       "alternatives": [],
       "hint": "The whole subject first, then the verb (is).",
+      "en": "The pronunciation of our street name is very difficult.",
       "covers": []
     },
     {
@@ -2197,6 +2320,7 @@
       "answer": "ik was verbaasd over de hoge huur",
       "alternatives": [],
       "hint": "Subject + verb (was) + adjective; “verbaasd over” = surprised about.",
+      "en": "I was surprised by the high rent.",
       "covers": []
     },
     {
@@ -2215,6 +2339,7 @@
         "dit huis is in vergelijking met ons oude huis erg groot"
       ],
       "hint": "Phrase first → inversion: “is dit huis”.",
+      "en": "Compared with our old house, this house is very big.",
       "covers": []
     },
     {
@@ -2230,6 +2355,7 @@
       "answer": "ik verlang naar mijn oude buurt",
       "alternatives": [],
       "hint": "“verlangen naar” = long for; the “naar …” phrase follows the verb.",
+      "en": "I miss my old neighbourhood.",
       "covers": []
     },
     {
@@ -2250,6 +2376,7 @@
         "wij ruimen voor het bezoek vlug de keuken op"
       ],
       "hint": "Separable verb “opruimen”: “ruimen” in 2nd place, “op” after the object.",
+      "en": "We quickly tidy up the kitchen before the visitors come.",
       "covers": [
         "opruimen"
       ]
@@ -2270,6 +2397,7 @@
         "ik ben vorige week naar Utrecht verhuisd"
       ],
       "hint": "Perfect with “zijn” (ben … verhuisd); time first → inversion.",
+      "en": "Last week I moved to Utrecht.",
       "covers": []
     },
     {
@@ -2286,6 +2414,7 @@
       "answer": "de waarde van ons huis is flink gestegen",
       "alternatives": [],
       "hint": "Perfect with “zijn”: “is … gestegen”, participle at the end.",
+      "en": "The value of our house has risen considerably.",
       "covers": []
     },
     {
@@ -2302,6 +2431,7 @@
       "answer": "mijn grootste wens is een huis met een tuin",
       "alternatives": [],
       "hint": "Subject (mijn grootste wens) + verb (is) + the rest.",
+      "en": "My biggest wish is a house with a garden.",
       "covers": []
     },
     {
@@ -2319,6 +2449,7 @@
       "answer": "u kunt de foto's ook per e-mail naar de gemeente zenden",
       "alternatives": [],
       "hint": "Modal verb (kunt) in 2nd place, infinitive (zenden) at the end; TMP: manner (per e-mail) before place.",
+      "en": "You can also send the photos to the council by email.",
       "covers": []
     },
     {
@@ -2337,6 +2468,7 @@
         "mijn buurvrouw kan door een ziekte niet goed lopen"
       ],
       "hint": "Phrase first → inversion: verb (kan) before the subject; infinitive at the end.",
+      "en": "Because of an illness, my neighbour can't walk well.",
       "covers": []
     },
     {
@@ -2353,6 +2485,7 @@
       "answer": "ik maak me zorgen over het gat in de stoep",
       "alternatives": [],
       "hint": "“zich zorgen maken over” = to worry about; the reflexive “me” comes right after the verb.",
+      "en": "I'm worried about the hole in the pavement.",
       "covers": []
     },
     {
@@ -2370,6 +2503,7 @@
       "answer": "de buurvrouw bakt zoete koekjes voor alle kinderen in de straat",
       "alternatives": [],
       "hint": "Subject + verb + object; the “voor …” phrase after the object.",
+      "en": "The neighbour bakes sweet biscuits for all the children in the street.",
       "covers": []
     },
     {
@@ -2388,6 +2522,7 @@
         "wij krijgen over een paar weken de sleutel van onze nieuwe woning"
       ],
       "hint": "Time first → inversion: “krijgen wij”.",
+      "en": "In a few weeks we'll get the key to our new home.",
       "covers": [
         "een paar"
       ]
@@ -2408,6 +2543,7 @@
         "nog een jaar blijven wij in dit huis wonen"
       ],
       "hint": "“blijven + infinitive”: blijven in 2nd place, wonen at the end.",
+      "en": "We're going to stay in this house for another year.",
       "covers": []
     },
     {
@@ -2424,6 +2560,7 @@
       "answer": "is er een mogelijkheid om een grotere woning te huren?",
       "alternatives": [],
       "hint": "Yes/no question: verb first; “om … te + infinitive” at the end.",
+      "en": "Is it possible to rent a bigger home?",
       "covers": []
     },
     {
@@ -2442,6 +2579,7 @@
         "mag ik morgen uw ladder even lenen?"
       ],
       "hint": "Question with a modal: “mag ik” first, infinitive (lenen) at the end.",
+      "en": "May I borrow your ladder tomorrow?",
       "covers": []
     },
     {
@@ -2457,6 +2595,7 @@
       "answer": "hoeveel huur betaalt u per maand?",
       "alternatives": [],
       "hint": "W-question: question phrase (hoeveel huur) first, then verb, then subject.",
+      "en": "How much rent do you pay per month?",
       "covers": []
     },
     {
@@ -2475,6 +2614,7 @@
         "al twee weken is de lift in onze flat kapot"
       ],
       "hint": "Subject + verb (is); time (al twee weken) before the rest.",
+      "en": "The lift in our block of flats has been broken for two weeks.",
       "covers": []
     }
   ],
