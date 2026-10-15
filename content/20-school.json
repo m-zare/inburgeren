@@ -3,6 +3,8 @@
     {
       "id": "school-01",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "komen",
         "morgen",
@@ -20,6 +22,8 @@
     {
       "id": "school-02",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "voor de fout",
         "aan",
@@ -38,6 +42,8 @@
     {
       "id": "school-03",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "een dag eerder",
         "maken",
@@ -52,6 +58,8 @@
     {
       "id": "school-04",
       "topic": "school",
+      "grammar": "om-te",
+      "level": 5,
       "parts": [
         "te verzetten",
         "is het mogelijk",
@@ -66,6 +74,8 @@
     {
       "id": "school-05",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "een voorkeur",
         "voor dinsdag of donderdag",
@@ -79,6 +89,8 @@
     {
       "id": "school-06",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "een nieuwe afspraak",
         "maken",
@@ -98,6 +110,8 @@
     {
       "id": "school-07",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "alvast",
         "mijn nieuwe telefoonnummer",
@@ -111,6 +125,8 @@
     {
       "id": "school-08",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "van meneer Bakker",
         "nog",
@@ -125,6 +141,8 @@
     {
       "id": "school-09",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over de nieuwe datum",
         "vandaag",
@@ -142,6 +160,8 @@
     {
       "id": "school-10",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "tot vrijdag",
         "lenen",
@@ -156,6 +176,8 @@
     {
       "id": "school-11",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "terug",
         "volgende week",
@@ -174,6 +196,8 @@
     {
       "id": "school-12",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "volgen",
         "een cursus gezond koken",
@@ -188,6 +212,8 @@
     {
       "id": "school-13",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "ingevuld",
         "gisteren",
@@ -205,6 +231,8 @@
     {
       "id": "school-14",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "al vol",
         "de groep",
@@ -219,6 +247,8 @@
     {
       "id": "school-15",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van de gemeente",
         "is",
@@ -233,6 +263,8 @@
     {
       "id": "school-16",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "in de groep",
         "twaalf mensen",
@@ -249,6 +281,8 @@
     {
       "id": "school-17",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "lekker",
         "van de kookcursus",
@@ -265,6 +299,8 @@
     {
       "id": "school-18",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "en een goede smaak",
         "heeft",
@@ -279,6 +315,8 @@
     {
       "id": "school-19",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "de opleiding is duur",
         "helpt mij financieel",
@@ -293,6 +331,8 @@
     {
       "id": "school-20",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "via de bank",
         "van de cursus",
@@ -307,6 +347,8 @@
     {
       "id": "school-21",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 5,
       "parts": [
         "nog niet betaald",
         "want wij",
@@ -322,6 +364,8 @@
     {
       "id": "school-22",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "in juni",
         "een jaar",
@@ -336,6 +380,8 @@
     {
       "id": "school-23",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een computercursus",
         "ik",
@@ -350,6 +396,8 @@
     {
       "id": "school-24",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van computers",
         "heeft",
@@ -364,6 +412,8 @@
     {
       "id": "school-25",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "vergeten",
         "in de klas",
@@ -382,6 +432,8 @@
     {
       "id": "school-26",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "invullen",
         "uw achternaam en telefoonnummer",
@@ -396,6 +448,8 @@
     {
       "id": "school-27",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "altijd verkeerd",
         "uit",
@@ -411,6 +465,8 @@
     {
       "id": "school-28",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "gehad",
         "met de docent",
@@ -428,6 +484,8 @@
     {
       "id": "school-29",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "over dit onderwerp",
         "gehad",
@@ -445,6 +503,8 @@
     {
       "id": "school-30",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "van dit woord",
         "de betekenis",
@@ -458,6 +518,8 @@
     {
       "id": "school-31",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "antwoord jij niet",
         "op mijn vraag",
@@ -471,6 +533,8 @@
     {
       "id": "school-32",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "er vandaag niet is",
         "het is vreemd",
@@ -484,6 +548,8 @@
     {
       "id": "school-33",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "vandaag ziek",
         "blijkbaar",
@@ -500,6 +566,8 @@
     {
       "id": "school-34",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "dat de toets",
         "morgen is",
@@ -513,6 +581,8 @@
     {
       "id": "school-35",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "heel moeilijk",
         "was inderdaad",
@@ -526,6 +596,8 @@
     {
       "id": "school-36",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "de toets allemaal",
         "gehaald",
@@ -542,6 +614,8 @@
     {
       "id": "school-37",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "boven verwachting",
         "was",
@@ -555,6 +629,8 @@
     {
       "id": "school-38",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor de toets",
         "nog een kans",
@@ -569,6 +645,8 @@
     {
       "id": "school-39",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "heb geslapen",
         "omdat ik",
@@ -587,6 +665,8 @@
     {
       "id": "school-40",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "voor mijn huiswerk",
         "behoefte",
@@ -601,6 +681,8 @@
     {
       "id": "school-41",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor de cursus",
         "ik heb",
@@ -617,6 +699,8 @@
     {
       "id": "school-42",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "zijn huiswerk",
         "en doet",
@@ -633,6 +717,8 @@
     {
       "id": "school-43",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "als mijn zoon",
         "zit",
@@ -647,6 +733,8 @@
     {
       "id": "school-44",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar school",
         "elke ochtend",
@@ -665,6 +753,8 @@
     {
       "id": "school-45",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "ook heel vrolijk",
         "de meester is streng",
@@ -678,6 +768,8 @@
     {
       "id": "school-46",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "van de meester",
         "lachen vaak",
@@ -692,6 +784,8 @@
     {
       "id": "school-47",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "koffie of thee",
         "gewoonlijk",
@@ -709,6 +803,8 @@
     {
       "id": "school-48",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "de krant of een tijdschrift",
         "lees ik",
@@ -724,6 +820,8 @@
     {
       "id": "school-49",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "buiten",
         "in de pauze",
@@ -740,6 +838,8 @@
     {
       "id": "school-50",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "binnen",
         "als het regent",
@@ -755,6 +855,8 @@
     {
       "id": "school-51",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "de kinderen",
         "zingen en dansen",
@@ -770,6 +872,8 @@
     {
       "id": "school-52",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "gezongen",
         "een prachtig lied",
@@ -783,6 +887,8 @@
     {
       "id": "school-53",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "en de natuur",
         "interesseert",
@@ -797,6 +903,8 @@
     {
       "id": "school-54",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een rustige persoonlijkheid",
         "heeft",
@@ -810,6 +918,8 @@
     {
       "id": "school-55",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "voor nieuwe woorden",
         "een goed geheugen",
@@ -824,6 +934,8 @@
     {
       "id": "school-56",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "over de ontwikkeling",
         "praten wij",
@@ -840,6 +952,8 @@
     {
       "id": "school-57",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "beter is",
         "de juf zegt",
@@ -854,6 +968,8 @@
     {
       "id": "school-58",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "een goede houding",
         "de docent is blij",
@@ -870,6 +986,8 @@
     {
       "id": "school-59",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "tegen mijn zoon",
         "doet gemeen",
@@ -883,6 +1001,8 @@
     {
       "id": "school-60",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "heeft gemaakt",
         "hij krijgt straf",
@@ -901,6 +1021,8 @@
     {
       "id": "school-61",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "goed om",
         "met moeilijke kinderen",
@@ -918,6 +1040,8 @@
     {
       "id": "school-62",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "veel liefde en aandacht",
         "de juf",
@@ -932,6 +1056,8 @@
     {
       "id": "school-63",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "erg druk was",
         "ik ben te laat",
@@ -948,6 +1074,8 @@
     {
       "id": "school-64",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "over vijf minuten",
         "want de les",
@@ -962,6 +1090,8 @@
     {
       "id": "school-65",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 1,
       "parts": [
         "om negen uur",
         "begint",
@@ -978,6 +1108,8 @@
     {
       "id": "school-66",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "naar de les",
         "daarom kom ik",
@@ -992,6 +1124,8 @@
     {
       "id": "school-67",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "kende ik niemand",
         "naar Holland kwam",
@@ -1007,6 +1141,8 @@
     {
       "id": "school-68",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "gevlucht",
         "uit hun land",
@@ -1021,6 +1157,8 @@
     {
       "id": "school-69",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "veel moed",
         "nodig",
@@ -1035,6 +1173,8 @@
     {
       "id": "school-70",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "tussen de scholen",
         "hier en in mijn land",
@@ -1049,6 +1189,8 @@
     {
       "id": "school-71",
       "topic": "school",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "soms zwaar",
         "is",
@@ -1063,6 +1205,8 @@
     {
       "id": "school-72",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "jouw plan",
         "na de inburgeringscursus",
@@ -1076,6 +1220,8 @@
     {
       "id": "school-73",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "aan de universiteit",
         "literatuur",
@@ -1090,6 +1236,8 @@
     {
       "id": "school-74",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 5,
       "parts": [
         "tegengekomen",
         "een oude vriendin",
@@ -1109,6 +1257,8 @@
     {
       "id": "school-75",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "gewerkt",
         "op een boot op zee",
@@ -1125,6 +1275,8 @@
     {
       "id": "school-76",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "naar de kust",
         "de klas",
@@ -1142,6 +1294,8 @@
     {
       "id": "school-77",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "bij de rivier",
         "op het veld",
@@ -1159,6 +1313,8 @@
     {
       "id": "school-78",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "samen de troep",
         "op",
@@ -1178,6 +1334,8 @@
     {
       "id": "school-79",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "vies zijn",
         "onze handen",
@@ -1192,6 +1350,8 @@
     {
       "id": "school-80",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "groen en wit",
         "geverfd",
@@ -1206,6 +1366,8 @@
     {
       "id": "school-81",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een beetje lelijk",
         "die kleur",
@@ -1219,6 +1381,8 @@
     {
       "id": "school-82",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "het raam",
         "omdat het heet is",
@@ -1237,6 +1401,8 @@
     {
       "id": "school-83",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "om acht uur",
         "de vergadering",
@@ -1254,6 +1420,8 @@
     {
       "id": "school-84",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een andere groep",
         "kies ik",
@@ -1269,6 +1437,8 @@
     {
       "id": "school-85",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "in de klas",
         "een psycholoog",
@@ -1285,6 +1455,8 @@
     {
       "id": "school-86",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "op school",
         "komt",
@@ -1301,6 +1473,8 @@
     {
       "id": "school-87",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "in het gebouw",
         "als er brand is",
@@ -1317,6 +1491,8 @@
     {
       "id": "school-88",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in het ziekenhuis",
         "werkt",
@@ -1331,6 +1507,8 @@
     {
       "id": "school-89",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "aan zijn been en zijn schouder",
         "heeft hij",
@@ -1347,6 +1525,8 @@
     {
       "id": "school-90",
       "topic": "school",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een tand",
         "verloren",
@@ -1364,6 +1544,8 @@
     {
       "id": "school-91",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "verkouden is",
         "hij heeft",
@@ -1378,6 +1560,8 @@
     {
       "id": "school-92",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "maar hij",
         "niet ernstig ziek",
@@ -1392,6 +1576,8 @@
     {
       "id": "school-93",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "altijd serieus",
         "neemt",
@@ -1406,6 +1592,8 @@
     {
       "id": "school-94",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een beetje stijf",
         "altijd",
@@ -1422,6 +1610,8 @@
     {
       "id": "school-95",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "voor het schoolkamp",
         "mee",
@@ -1438,6 +1628,8 @@
     {
       "id": "school-96",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "in een tas van leer",
         "zijn spullen",
@@ -1452,6 +1644,8 @@
     {
       "id": "school-97",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "met de les",
         "pak je boek",
@@ -1468,6 +1662,8 @@
     {
       "id": "school-98",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "uw tas",
         "neerzetten",
@@ -1482,6 +1678,8 @@
     {
       "id": "school-99",
       "topic": "school",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "mee",
         "mijn zoon",
@@ -1501,6 +1699,8 @@
     {
       "id": "school-100",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "onmiddellijk",
         "op",
@@ -1520,6 +1720,8 @@
     {
       "id": "school-101",
       "topic": "school",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "de prijs is hoog",
         "kopen",
@@ -1534,6 +1736,8 @@
     {
       "id": "school-102",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "op de markt",
         "koekjes",
@@ -1550,6 +1754,8 @@
     {
       "id": "school-103",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "op school",
         "de nieuwe boeken",
@@ -1567,6 +1773,8 @@
     {
       "id": "school-104",
       "topic": "school",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "over de groep",
         "een besluit",
@@ -1583,6 +1791,8 @@
     {
       "id": "school-105",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "voor het probleem",
         "zoeken wij",
@@ -1599,6 +1809,8 @@
     {
       "id": "school-106",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "klaar is",
         "een bewijs",
@@ -1615,6 +1827,8 @@
     {
       "id": "school-107",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "over de toets",
         "een specifieke vraag",
@@ -1628,6 +1842,8 @@
     {
       "id": "school-108",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "ideaal",
         "een cursus in de avond",
@@ -1643,6 +1859,8 @@
     {
       "id": "school-109",
       "topic": "school",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van de school",
         "schade",
@@ -1657,6 +1875,8 @@
     {
       "id": "school-110",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "niet roken",
         "mag je",
@@ -1672,6 +1892,8 @@
     {
       "id": "school-111",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op de stoep",
         "de ouders",
@@ -1686,6 +1908,8 @@
     {
       "id": "school-112",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "door het park",
         "naar school",
@@ -1702,6 +1926,8 @@
     {
       "id": "school-113",
       "topic": "school",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "al weg",
         "is",
@@ -1715,6 +1941,8 @@
     {
       "id": "school-114",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "vrij",
         "zijn de kinderen",
@@ -1730,6 +1958,8 @@
     {
       "id": "school-115",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de stad",
         "een eigen zaak",
@@ -1744,6 +1974,8 @@
     {
       "id": "school-116",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "schrijven",
         "over onze kat",
@@ -1758,6 +1990,8 @@
     {
       "id": "school-117",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "geven",
         "meer geld",
@@ -1775,6 +2009,8 @@
     {
       "id": "school-118",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "soldaat",
         "in het leger",
@@ -1791,6 +2027,8 @@
     {
       "id": "school-119",
       "topic": "school",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "over geloof en cultuur",
         "praten wij",
@@ -1806,6 +2044,8 @@
     {
       "id": "school-120",
       "topic": "school",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "altijd te laat komt",
         "dat hij",
@@ -1819,6 +2059,8 @@
     {
       "id": "school-121",
       "topic": "school",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de kantine",
         "staat",
@@ -1833,6 +2075,8 @@
     {
       "id": "school-122",
       "topic": "school",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "aanmelden",
         "via de website",

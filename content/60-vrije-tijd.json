@@ -3,6 +3,8 @@
     {
       "id": "vrije-tijd-01",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "met mijn familie",
         "ik",
@@ -20,6 +22,8 @@
     {
       "id": "vrije-tijd-02",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "hun gouden bruiloft",
         "vieren",
@@ -36,6 +40,8 @@
     {
       "id": "vrije-tijd-03",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "langs",
         "tien vrienden",
@@ -54,6 +60,8 @@
     {
       "id": "vrije-tijd-04",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "een fles wijn",
         "je",
@@ -69,6 +77,8 @@
     {
       "id": "vrije-tijd-05",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor vier personen",
         "reserveer",
@@ -83,6 +93,8 @@
     {
       "id": "vrije-tijd-06",
       "topic": "vrije-tijd",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "gemaakt",
         "een leuke reis",
@@ -101,6 +113,8 @@
     {
       "id": "vrije-tijd-07",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "warm en droog",
         "is",
@@ -120,6 +134,8 @@
     {
       "id": "vrije-tijd-08",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "nat en koel",
         "in de herfst",
@@ -138,6 +154,8 @@
     {
       "id": "vrije-tijd-09",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "mee",
         "een paraplu",
@@ -157,6 +175,8 @@
     {
       "id": "vrije-tijd-10",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "de maan en de sterren",
         "we",
@@ -174,6 +194,8 @@
     {
       "id": "vrije-tijd-11",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "bloemen",
         "geef",
@@ -192,6 +214,8 @@
     {
       "id": "vrije-tijd-12",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "naar de top van de heuvel",
         "we",
@@ -208,6 +232,8 @@
     {
       "id": "vrije-tijd-13",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "met de hele familie",
         "kijken",
@@ -225,6 +251,8 @@
     {
       "id": "vrije-tijd-14",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "al tien jaar",
         "ken",
@@ -242,6 +270,8 @@
     {
       "id": "vrije-tijd-15",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "het feest begint",
         "jij",
@@ -256,6 +286,8 @@
     {
       "id": "vrije-tijd-16",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "in het café",
         "ik",
@@ -274,6 +306,8 @@
     {
       "id": "vrije-tijd-17",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een groot feest",
         "organiseert",
@@ -290,6 +324,8 @@
     {
       "id": "vrije-tijd-18",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "in de stad",
         "uit",
@@ -311,6 +347,8 @@
     {
       "id": "vrije-tijd-19",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "opschrijven",
         "je adres en postcode",
@@ -328,6 +366,8 @@
     {
       "id": "vrije-tijd-20",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "je burgerlijke staat",
         "vul",
@@ -345,6 +385,8 @@
     {
       "id": "vrije-tijd-21",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "lid van de zwemclub",
         "is",
@@ -361,6 +403,8 @@
     {
       "id": "vrije-tijd-22",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "niet meer zoveel",
         "sport",
@@ -377,6 +421,8 @@
     {
       "id": "vrije-tijd-23",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "rust en stilte",
         "vind",
@@ -394,6 +440,8 @@
     {
       "id": "vrije-tijd-24",
       "topic": "vrije-tijd",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "een instrument",
         "jouw zoon",
@@ -408,6 +456,8 @@
     {
       "id": "vrije-tijd-25",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "verdrietig",
         "de vakantie",
@@ -426,6 +476,8 @@
     {
       "id": "vrije-tijd-26",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een hand",
         "we",
@@ -443,6 +495,8 @@
     {
       "id": "vrije-tijd-27",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in zijn eigen kamer",
         "boven",
@@ -459,6 +513,8 @@
     {
       "id": "vrije-tijd-28",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "veel slaap",
         "ik",
@@ -476,6 +532,8 @@
     {
       "id": "vrije-tijd-29",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "de rekening",
         "samen",
@@ -493,6 +551,8 @@
     {
       "id": "vrije-tijd-30",
       "topic": "vrije-tijd",
+      "grammar": "om-te",
+      "level": 3,
       "parts": [
         "om",
         "te bewegen",
@@ -507,6 +567,8 @@
     {
       "id": "vrije-tijd-31",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "veel bezoek",
         "we",
@@ -524,6 +586,8 @@
     {
       "id": "vrije-tijd-32",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "bijvoorbeeld",
         "zwemmen en fietsen",
@@ -538,6 +602,8 @@
     {
       "id": "vrije-tijd-33",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "bruin",
         "worden",
@@ -554,6 +620,8 @@
     {
       "id": "vrije-tijd-34",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "helemaal blauw",
         "de lucht",
@@ -570,6 +638,8 @@
     {
       "id": "vrije-tijd-35",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een eenvoudig gerecht",
         "met vis",
@@ -584,6 +654,8 @@
     {
       "id": "vrije-tijd-36",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "en dan",
         "eten we daar",
@@ -601,6 +673,8 @@
     {
       "id": "vrije-tijd-37",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in Marokko",
         "woont",
@@ -614,6 +688,8 @@
     {
       "id": "vrije-tijd-38",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "met de trein",
         "we",
@@ -630,6 +706,8 @@
     {
       "id": "vrije-tijd-39",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een late dienst",
         "mijn man",
@@ -646,6 +724,8 @@
     {
       "id": "vrije-tijd-40",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 5,
       "parts": [
         "want",
         "we vieren het suikerfeest",
@@ -661,6 +741,8 @@
     {
       "id": "vrije-tijd-41",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "direct",
         "ga",
@@ -678,6 +760,8 @@
     {
       "id": "vrije-tijd-42",
       "topic": "vrije-tijd",
+      "grammar": "om-te",
+      "level": 3,
       "parts": [
         "te sporten",
         "om",
@@ -692,6 +776,8 @@
     {
       "id": "vrije-tijd-43",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "in een grote doos",
         "liggen",
@@ -707,6 +793,8 @@
     {
       "id": "vrije-tijd-44",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "weer zomer",
         "het",
@@ -723,6 +811,8 @@
     {
       "id": "vrije-tijd-45",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "was",
         "heel emotioneel",
@@ -736,6 +826,8 @@
     {
       "id": "vrije-tijd-46",
       "topic": "vrije-tijd",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "om te fietsen",
         "is",
@@ -753,6 +845,8 @@
     {
       "id": "vrije-tijd-47",
       "topic": "vrije-tijd",
+      "grammar": "om-te",
+      "level": 5,
       "parts": [
         "om de familie te zien",
         "een goede gelegenheid",
@@ -767,6 +861,8 @@
     {
       "id": "vrije-tijd-48",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "tienduizend stappen per dag",
         "met gemak",
@@ -783,6 +879,8 @@
     {
       "id": "vrije-tijd-49",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "naar je feest",
         "zaterdag",
@@ -801,6 +899,8 @@
     {
       "id": "vrije-tijd-50",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "geweldig",
         "de vakantie in Italië",
@@ -814,6 +914,8 @@
     {
       "id": "vrije-tijd-51",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "in mijn gezicht",
         "schijnt",
@@ -827,6 +929,8 @@
     {
       "id": "vrije-tijd-52",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "pijn",
         "mijn arm",
@@ -844,6 +948,8 @@
     {
       "id": "vrije-tijd-53",
       "topic": "vrije-tijd",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "gebroken",
         "bij het voetbal",
@@ -862,6 +968,8 @@
     {
       "id": "vrije-tijd-54",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "in mijn mond",
         "de tandarts",
@@ -875,6 +983,8 @@
     {
       "id": "vrije-tijd-55",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "voor een fietstocht",
         "gunstig",
@@ -888,6 +998,8 @@
     {
       "id": "vrije-tijd-56",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "heen",
         "in de vakantie",
@@ -904,6 +1016,8 @@
     {
       "id": "vrije-tijd-57",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op de hoek van de straat",
         "is",
@@ -917,6 +1031,8 @@
     {
       "id": "vrije-tijd-58",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "erg hoog",
         "de heuvels",
@@ -934,6 +1050,8 @@
     {
       "id": "vrije-tijd-59",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "in een kleine hut",
         "we",
@@ -951,6 +1069,8 @@
     {
       "id": "vrije-tijd-60",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "informatie over het festival",
         "staat",
@@ -964,6 +1084,8 @@
     {
       "id": "vrije-tijd-61",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "buiten",
         "speelde",
@@ -981,6 +1103,8 @@
     {
       "id": "vrije-tijd-62",
       "topic": "vrije-tijd",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "de juiste trein",
         "naar Utrecht",
@@ -995,6 +1119,8 @@
     {
       "id": "vrije-tijd-63",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een vrolijk karakter",
         "heeft",
@@ -1008,6 +1134,8 @@
     {
       "id": "vrije-tijd-64",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "veel klanten",
         "er",
@@ -1025,6 +1153,8 @@
     {
       "id": "vrije-tijd-65",
       "topic": "vrije-tijd",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "bezocht",
         "de koningin",
@@ -1042,6 +1172,8 @@
     {
       "id": "vrije-tijd-66",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "weinig kracht",
         "ik",
@@ -1058,6 +1190,8 @@
     {
       "id": "vrije-tijd-67",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "door het bos",
         "we",
@@ -1074,6 +1208,8 @@
     {
       "id": "vrije-tijd-68",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "naar links",
         "u",
@@ -1090,6 +1226,8 @@
     {
       "id": "vrije-tijd-69",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is kapot",
         "op het station",
@@ -1103,6 +1241,8 @@
     {
       "id": "vrije-tijd-70",
       "topic": "vrije-tijd",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "over het feest",
         "jouw mening",
@@ -1116,6 +1256,8 @@
     {
       "id": "vrije-tijd-71",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "vijfentwintig meter lang",
         "is",
@@ -1129,6 +1271,8 @@
     {
       "id": "vrije-tijd-72",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want dat is",
         "beter voor het milieu",
@@ -1143,6 +1287,8 @@
     {
       "id": "vrije-tijd-73",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "is echt",
         "de moeite waard",
@@ -1157,6 +1303,8 @@
     {
       "id": "vrije-tijd-74",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "niet komen",
         "kan",
@@ -1174,6 +1322,8 @@
     {
       "id": "vrije-tijd-75",
       "topic": "vrije-tijd",
+      "grammar": "om-te",
+      "level": 3,
       "parts": [
         "niks",
         "te doen",
@@ -1188,6 +1338,8 @@
     {
       "id": "vrije-tijd-76",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "nergens",
         "vinden",
@@ -1202,6 +1354,8 @@
     {
       "id": "vrije-tijd-77",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "een paspoort",
         "noodzakelijk",
@@ -1219,6 +1373,8 @@
     {
       "id": "vrije-tijd-78",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "heel nuttig",
         "een kaart",
@@ -1235,6 +1391,8 @@
     {
       "id": "vrije-tijd-79",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in een beetje olie",
         "bakt",
@@ -1249,6 +1407,8 @@
     {
       "id": "vrije-tijd-80",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "toch",
         "fietsen",
@@ -1266,6 +1426,8 @@
     {
       "id": "vrije-tijd-81",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een gezellig feest",
         "ongetwijfeld",
@@ -1279,6 +1441,8 @@
     {
       "id": "vrije-tijd-82",
       "topic": "vrije-tijd",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "geweest",
         "in Amsterdam",
@@ -1294,6 +1458,8 @@
     {
       "id": "vrije-tijd-83",
       "topic": "vrije-tijd",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "van de vertraging",
         "de oorzaak",
@@ -1307,6 +1473,8 @@
     {
       "id": "vrije-tijd-84",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "reizen",
         "mijn dochter",
@@ -1323,6 +1491,8 @@
     {
       "id": "vrije-tijd-85",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "na het eten",
         "komen",
@@ -1338,6 +1508,8 @@
     {
       "id": "vrije-tijd-86",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "ons huis",
         "passeert",
@@ -1354,6 +1526,8 @@
     {
       "id": "vrije-tijd-87",
       "topic": "vrije-tijd",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "nog vrij",
         "deze plaats",
@@ -1367,6 +1541,8 @@
     {
       "id": "vrije-tijd-88",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "donker",
         "werd",
@@ -1383,6 +1559,8 @@
     {
       "id": "vrije-tijd-89",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "de president van Amerika",
         "we",
@@ -1399,6 +1577,8 @@
     {
       "id": "vrije-tijd-90",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "kaas en melk",
         "produceert",
@@ -1412,6 +1592,8 @@
     {
       "id": "vrije-tijd-91",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in Utrecht",
         "studente psychologie",
@@ -1426,6 +1608,8 @@
     {
       "id": "vrije-tijd-92",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "erg vriendelijk",
         "het hotel was",
@@ -1440,6 +1624,8 @@
     {
       "id": "vrije-tijd-93",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "thuis",
         "we",
@@ -1456,6 +1642,8 @@
     {
       "id": "vrije-tijd-94",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "maak ik",
         "een reis om de wereld",
@@ -1472,6 +1660,8 @@
     {
       "id": "vrije-tijd-95",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "van de barbecue",
         "veel rook",
@@ -1486,6 +1676,8 @@
     {
       "id": "vrije-tijd-96",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van alle buren",
         "is",
@@ -1500,6 +1692,8 @@
     {
       "id": "vrije-tijd-97",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "schoon",
         "het huis",
@@ -1520,6 +1714,8 @@
     {
       "id": "vrije-tijd-98",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "over tien seconden",
         "vertrekt",
@@ -1535,6 +1731,8 @@
     {
       "id": "vrije-tijd-99",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op slot",
         "altijd",
@@ -1552,6 +1750,8 @@
     {
       "id": "vrije-tijd-100",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "met een hoge snelheid",
         "rijdt",
@@ -1565,6 +1765,8 @@
     {
       "id": "vrije-tijd-101",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "veel spanning",
         "er",
@@ -1582,6 +1784,8 @@
     {
       "id": "vrije-tijd-102",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor de deur van het hotel",
         "stopt",
@@ -1595,6 +1799,8 @@
     {
       "id": "vrije-tijd-103",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "met je examen",
         "veel succes",
@@ -1610,6 +1816,8 @@
     {
       "id": "vrije-tijd-104",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "een korte tekst",
         "ik",
@@ -1628,6 +1836,8 @@
     {
       "id": "vrije-tijd-105",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "niet",
         "dat woord",
@@ -1644,6 +1854,8 @@
     {
       "id": "vrije-tijd-106",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in techniek",
         "goed",
@@ -1658,6 +1870,8 @@
     {
       "id": "vrije-tijd-107",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "een boek",
         "de kinderen zwemmen",
@@ -1674,6 +1888,8 @@
     {
       "id": "vrije-tijd-108",
       "topic": "vrije-tijd",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "een eigen huis",
         "ik",
@@ -1691,6 +1907,8 @@
     {
       "id": "vrije-tijd-109",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "op de trap",
         "spelen",
@@ -1706,6 +1924,8 @@
     {
       "id": "vrije-tijd-110",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "naar mijn feest",
         "ze komen allebei",
@@ -1720,6 +1940,8 @@
     {
       "id": "vrije-tijd-111",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "soms sneeuw",
         "er",
@@ -1736,6 +1958,8 @@
     {
       "id": "vrije-tijd-112",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "snel",
         "het weer",
@@ -1753,6 +1977,8 @@
     {
       "id": "vrije-tijd-113",
       "topic": "vrije-tijd",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "verloren",
         "de wedstrijd",
@@ -1767,6 +1993,8 @@
     {
       "id": "vrije-tijd-114",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "van onze reis",
         "schrijf",
@@ -1781,6 +2009,8 @@
     {
       "id": "vrije-tijd-115",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "gaan we dansen",
         "eerst",
@@ -1797,6 +2027,8 @@
     {
       "id": "vrije-tijd-116",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "op de vloer",
         "zitten",
@@ -1812,6 +2044,8 @@
     {
       "id": "vrije-tijd-117",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "niet zo goed",
         "ik",
@@ -1829,6 +2063,8 @@
     {
       "id": "vrije-tijd-118",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "dat je",
         "geen file hebt",
@@ -1843,6 +2079,8 @@
     {
       "id": "vrije-tijd-119",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "naar mijn tas",
         "vraag",
@@ -1859,6 +2097,8 @@
     {
       "id": "vrije-tijd-120",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "met water",
         "mijn fles",
@@ -1877,6 +2117,8 @@
     {
       "id": "vrije-tijd-121",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar het strand",
         "op de bus",
@@ -1891,6 +2133,8 @@
     {
       "id": "vrije-tijd-122",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "in Duitsland",
         "is",
@@ -1908,6 +2152,8 @@
     {
       "id": "vrije-tijd-123",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van zichzelf",
         "veel foto's",
@@ -1925,6 +2171,8 @@
     {
       "id": "vrije-tijd-124",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "fit ben",
         "naar bed",
@@ -1939,6 +2187,8 @@
     {
       "id": "vrije-tijd-125",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "naar het festival",
         "een groot aantal mensen",
@@ -1955,6 +2205,8 @@
     {
       "id": "vrije-tijd-126",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "graag",
         "de uitnodiging",
@@ -1972,6 +2224,8 @@
     {
       "id": "vrije-tijd-127",
       "topic": "vrije-tijd",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "mee",
         "ons afval",
@@ -1991,6 +2245,8 @@
     {
       "id": "vrije-tijd-128",
       "topic": "vrije-tijd",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "hij slaapt",
         "alsof",
@@ -2005,6 +2261,8 @@
     {
       "id": "vrije-tijd-129",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "dus",
         "hij zwemt niet",
@@ -2021,6 +2279,8 @@
     {
       "id": "vrije-tijd-130",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "behalve mijn broer",
         "naar het feest",
@@ -2038,6 +2298,8 @@
     {
       "id": "vrije-tijd-131",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "tegen de zon",
         "is",
@@ -2052,6 +2314,8 @@
     {
       "id": "vrije-tijd-132",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "over ons feest",
         "voor de buren",
@@ -2069,6 +2333,8 @@
     {
       "id": "vrije-tijd-133",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "naar muziek",
         "ik",
@@ -2089,6 +2355,8 @@
     {
       "id": "vrije-tijd-134",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "langs de zee",
         "met een paar vrienden",
@@ -2108,6 +2376,8 @@
     {
       "id": "vrije-tijd-135",
       "topic": "vrije-tijd",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "op",
         "dus ik bel ze vaak",
@@ -2127,6 +2397,8 @@
     {
       "id": "vrije-tijd-136",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "vier uur",
         "duurt",
@@ -2143,6 +2415,8 @@
     {
       "id": "vrije-tijd-137",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "op vakantie",
         "gaan",
@@ -2160,6 +2434,8 @@
     {
       "id": "vrije-tijd-138",
       "topic": "vrije-tijd",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "vuurwerk",
         "de gemeente",

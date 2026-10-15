@@ -36,6 +36,10 @@ button.link:hover { text-decoration: underline; }
 .topic.current { background: #2a6fb0; border-color: #2a6fb0; color: #fff; }
 .topic.current small { color: #dce8f5; }
 
+.group { margin: 36px 0 0; padding-bottom: 6px; border-bottom: 2px solid #dfe5ec; }
+.group h2 { margin: 0; font-size: 1.15rem; color: #2a6fb0; }
+.group p { margin: 2px 0 0; font-size: .9rem; color: #666; }
+
 .exercise { margin: 22px 0; }
 
 .parts { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; align-items: center; }
@@ -71,6 +75,14 @@ button.link:hover { text-decoration: underline; }
 .speak:disabled { cursor: not-allowed; opacity: .25; filter: grayscale(1); }
 #info h2 .speak { font-size: 1rem; vertical-align: middle; }
 .no-voice .speak { display: none; }
+
+.check {
+  font: inherit; font-size: .95rem; font-weight: 600; cursor: pointer;
+  padding: 10px 16px; border: 0; border-radius: 4px;
+  background: #2a6fb0; color: #fff;
+}
+.check:hover { background: #235d94; }
+.check:focus-visible { outline: 2px solid #8fb6dd; outline-offset: 2px; }
 
 .mark { width: 20px; font-size: 1.2rem; font-weight: bold; text-align: center; }
 .mark.ok { color: #2aa84a; }

@@ -1,2 +1,5 @@
 .DS_Store
 node_modules/
+.venv/
+vits-piper-*/
+vits-piper-*.tar.bz2

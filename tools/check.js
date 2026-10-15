@@ -11,6 +11,9 @@ const allFiles = fs.readdirSync("content").filter((f) => f.endsWith(".json")).ma
 const targets = files.length ? files : allFiles;
 
 const TOPICS = ["werk", "school", "wonen", "winkelen", "gezondheid", "vrije-tijd"];
+// Grammar groups, from easiest to hardest. A sentence is tagged with the
+// hardest one it uses. Keep in sync with GRAMMAR in tools/build.js.
+const GRAMMAR = ["basis", "inversie", "vraag", "modaal", "scheidbaar", "perfectum", "nevenschikkend", "om-te", "bijzin"];
 
 const master = fs
   .readFileSync("words/all-words.tsv", "utf8")
@@ -53,6 +56,8 @@ for (const f of allFiles) {
     if (ids.has(ex.id)) err("duplicate id");
     ids.add(ex.id);
     if (!TOPICS.includes(ex.topic)) err(`unknown topic "${ex.topic}"`);
+    if (!GRAMMAR.includes(ex.grammar)) err(`unknown grammar "${ex.grammar}"`);
+    if (![1, 2, 3, 4, 5].includes(ex.level)) err(`level must be 1-5, got ${ex.level}`);
     if (!Array.isArray(ex.parts) || ex.parts.length < 3) err("needs at least 3 parts");
     if (!ex.answer) { err("missing answer"); continue; }
 

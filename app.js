@@ -17,33 +17,74 @@ function save() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
-// ---- Speech (browser text-to-speech, Dutch voice) ----
+// ---- Speech ----
+// Prefer the generated audio files (audio/index.js, voice Ronnie); fall back
+// to the browser's Dutch voice for texts without a file.
 
+const AUDIO_FILES = typeof AUDIO === "undefined" ? {} : AUDIO;
+const hasAudioFiles = Object.keys(AUDIO_FILES).length > 0;
 let dutchVoice = null;
 
 function pickVoice() {
   const voices = speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().replace("_", "-").startsWith("nl"));
   dutchVoice = voices.find((v) => /nl-nl/i.test(v.lang.replace("_", "-"))) || voices[0] || null;
-  document.body.classList.toggle("no-voice", !dutchVoice);
+  document.body.classList.toggle("no-voice", !dutchVoice && !hasAudioFiles);
 }
 
 if ("speechSynthesis" in window) {
   pickVoice();
   speechSynthesis.addEventListener("voiceschanged", pickVoice);
 } else {
-  document.body.classList.add("no-voice");
+  document.body.classList.toggle("no-voice", !hasAudioFiles);
 }
 
-// Speak one or more texts in a row, a bit slower than normal for learners.
-function speak(...texts) {
-  if (!dutchVoice) return;
-  speechSynthesis.cancel();
-  for (const text of texts) {
+let currentAudio = null;
+let speakRun = 0;
+
+function playFile(text) {
+  return new Promise((resolve, reject) => {
+    currentAudio = new Audio(`audio/${AUDIO_FILES[text]}.mp3`);
+    currentAudio.addEventListener("ended", resolve);
+    currentAudio.addEventListener("error", reject);
+    currentAudio.play().catch(reject);
+  });
+}
+
+function playVoice(text) {
+  return new Promise((resolve) => {
+    if (!dutchVoice) return resolve();
     const u = new SpeechSynthesisUtterance(text);
     u.voice = dutchVoice;
     u.lang = dutchVoice.lang;
-    u.rate = 0.85;
+    u.rate = 0.85; // a bit slower than normal for learners
+    u.addEventListener("end", resolve);
+    u.addEventListener("error", resolve);
     speechSynthesis.speak(u);
+  });
+}
+
+function stopSpeaking() {
+  speakRun++;
+  currentAudio?.pause();
+  currentAudio = null;
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+
+// Speak one or more texts in a row. A new call stops the previous one.
+async function speak(...texts) {
+  stopSpeaking();
+  const run = speakRun;
+  for (const text of texts) {
+    if (run !== speakRun) return;
+    if (AUDIO_FILES[text]) {
+      try {
+        await playFile(text);
+        continue;
+      } catch {
+        if (run !== speakRun) return;
+      }
+    }
+    await playVoice(text);
   }
 }
 
@@ -96,7 +137,21 @@ function wordSpans(text, senses = {}) {
 function render() {
   const main = document.getElementById("exercises");
   main.innerHTML = "";
-  EXERCISES.filter((ex) => ex.topic === currentTopic).forEach((ex) => main.append(renderExercise(ex)));
+  // Exercises are pre-sorted by grammar group; add a heading per group.
+  let group = null;
+  EXERCISES.filter((ex) => ex.topic === currentTopic).forEach((ex) => {
+    if (ex.grammar !== group) {
+      group = ex.grammar;
+      const g = GRAMMAR.find((g) => g.id === group);
+      if (g) {
+        const h = document.createElement("div");
+        h.className = "group";
+        h.append(textEl("h2", "", g.name), textEl("p", "", g.info));
+        main.append(h);
+      }
+    }
+    main.append(renderExercise(ex));
+  });
   renderTopics();
   updateScore();
 }
@@ -147,7 +202,7 @@ function renderExercise(ex) {
   row.className = "row";
   const input = document.createElement("input");
   input.type = "text";
-  input.placeholder = "Type the sentence and press Enter";
+  input.placeholder = "Type the sentence, then press Enter or Check";
   input.autocomplete = "off";
   input.spellcheck = false;
   input.value = state.input || "";
@@ -161,7 +216,11 @@ function renderExercise(ex) {
     listen.disabled = !unlocked;
     listen.title = unlocked ? "Listen to the sentence" : "Answer first (or Show answer) to hear the sentence";
   };
-  row.append(input, mark, listen);
+  const checkBtn = document.createElement("button");
+  checkBtn.type = "button";
+  checkBtn.className = "check";
+  checkBtn.textContent = "Check";
+  row.append(input, checkBtn, mark, listen);
 
   const feedback = document.createElement("div");
   feedback.className = "feedback";
@@ -221,8 +280,8 @@ function renderExercise(ex) {
     save();
   });
 
-  input.addEventListener("keydown", (e) => {
-    if (e.key !== "Enter" || !input.value.trim()) return;
+  const check = () => {
+    if (!input.value.trim()) return input.focus();
     const result = grade(ex, input.value);
     state.input = input.value;
     state.result = result;
@@ -233,8 +292,12 @@ function renderExercise(ex) {
     showResult(result, state.revealed);
     renderTopics();
     updateScore();
-    if (result !== "bad") focusNext(el);
+    input.focus();
+  };
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") check();
   });
+  checkBtn.addEventListener("click", check);
 
   showResult(state.result, state.revealed);
   return el;
@@ -253,11 +316,6 @@ function button(label, onClick) {
   b.textContent = label;
   b.addEventListener("click", onClick);
   return b;
-}
-
-function focusNext(section) {
-  const next = section.nextElementSibling;
-  if (next) next.querySelector("input").focus();
 }
 
 function updateScore() {

@@ -3,6 +3,8 @@
     {
       "id": "winkelen-01",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "het liefst",
         "ik",
@@ -21,6 +23,8 @@
     {
       "id": "winkelen-02",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "er nogal oud",
         "uit",
@@ -37,6 +41,8 @@
     {
       "id": "winkelen-03",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "mijn warme schoenen",
         "draag",
@@ -55,6 +61,8 @@
     {
       "id": "winkelen-04",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "graag actief",
         "draag ik vaak sportkleding",
@@ -71,6 +79,8 @@
     {
       "id": "winkelen-05",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "ik",
         "praktische kleding in een rustige stijl",
@@ -87,6 +97,8 @@
     {
       "id": "winkelen-06",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "te wijd is",
         "de verkoopster",
@@ -101,6 +113,8 @@
     {
       "id": "winkelen-07",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "te klein bij de borst",
         "de jas past niet",
@@ -115,6 +129,8 @@
     {
       "id": "winkelen-08",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "deze schoenen",
         "u",
@@ -129,6 +145,8 @@
     {
       "id": "winkelen-09",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "gaat trouwen",
         "koop ik",
@@ -145,6 +163,8 @@
     {
       "id": "winkelen-10",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is",
         "van het winkelcentrum",
@@ -161,6 +181,8 @@
     {
       "id": "winkelen-11",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "nauwelijks geld",
         "de arbeiders",
@@ -177,6 +199,8 @@
     {
       "id": "winkelen-12",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "gaat",
         "automatisch open",
@@ -190,6 +214,8 @@
     {
       "id": "winkelen-13",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "u",
         "na die mevrouw",
@@ -206,6 +232,8 @@
     {
       "id": "winkelen-14",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "pinnen of contant betalen",
         "wilt",
@@ -222,6 +250,8 @@
     {
       "id": "winkelen-15",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de rij",
         "ik",
@@ -242,6 +272,8 @@
     {
       "id": "winkelen-16",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "eten",
         "elke dag brood",
@@ -258,6 +290,8 @@
     {
       "id": "winkelen-17",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "minder vlees",
         "dat ik",
@@ -272,6 +306,8 @@
     {
       "id": "winkelen-18",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "veel vlees en weinig groente",
         "in de westerse samenleving",
@@ -288,6 +324,8 @@
     {
       "id": "winkelen-19",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "een belangrijke traditie",
         "is",
@@ -304,6 +342,8 @@
     {
       "id": "winkelen-20",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "al meer dan een eeuw",
         "bestaat",
@@ -319,6 +359,8 @@
     {
       "id": "winkelen-21",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "doet",
         "de jonge generatie",
@@ -333,6 +375,8 @@
     {
       "id": "winkelen-22",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "wat mensen kopen",
         "vaak",
@@ -347,6 +391,8 @@
     {
       "id": "winkelen-23",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "komt",
         "van het eiland Texel",
@@ -360,6 +406,8 @@
     {
       "id": "winkelen-24",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "doen",
         "wij",
@@ -377,6 +425,8 @@
     {
       "id": "winkelen-25",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "pleisters en verband",
         "koop",
@@ -394,6 +444,8 @@
     {
       "id": "winkelen-26",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "zijn",
         "goed voor je lichaam",
@@ -407,6 +459,8 @@
     {
       "id": "winkelen-27",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "eet",
         "mijn vader",
@@ -424,6 +478,8 @@
     {
       "id": "winkelen-28",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "pijnlijke voeten",
         "ik",
@@ -440,6 +496,8 @@
     {
       "id": "winkelen-29",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "lekker warm",
         "houdt",
@@ -454,6 +512,8 @@
     {
       "id": "winkelen-30",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "nog aarde",
         "zit",
@@ -470,6 +530,8 @@
     {
       "id": "winkelen-31",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "op een vochtige plek",
         "het brood",
@@ -484,6 +546,8 @@
     {
       "id": "winkelen-32",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "in de nacht",
         "bakt",
@@ -501,6 +565,8 @@
     {
       "id": "winkelen-33",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op dinsdagavond",
         "de kookcursus",
@@ -517,6 +583,8 @@
     {
       "id": "winkelen-34",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "leren",
         "ik wil graag",
@@ -531,6 +599,8 @@
     {
       "id": "winkelen-35",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "alles",
         "de docent",
@@ -547,6 +617,8 @@
     {
       "id": "winkelen-36",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "we",
         "bespreken",
@@ -565,6 +637,8 @@
     {
       "id": "winkelen-37",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "en daarna",
         "iedereen kookt eerst",
@@ -579,6 +653,8 @@
     {
       "id": "winkelen-38",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "al klaar",
         "je",
@@ -593,6 +669,8 @@
     {
       "id": "winkelen-39",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is",
         "mijn partner",
@@ -609,6 +687,8 @@
     {
       "id": "winkelen-40",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "voor de pasta",
         "het water",
@@ -625,6 +705,8 @@
     {
       "id": "winkelen-41",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "zacht laten koken",
         "je",
@@ -640,6 +722,8 @@
     {
       "id": "winkelen-42",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "opnieuw",
         "hem",
@@ -656,6 +740,8 @@
     {
       "id": "winkelen-43",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "maak",
         "ik",
@@ -674,6 +760,8 @@
     {
       "id": "winkelen-44",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "ook zo bitter",
         "deze koffie",
@@ -688,6 +776,8 @@
     {
       "id": "winkelen-45",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "twee glazen water",
         "ons",
@@ -702,6 +792,8 @@
     {
       "id": "winkelen-46",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "jullie",
         "bij het eten",
@@ -716,6 +808,8 @@
     {
       "id": "winkelen-47",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "over dit nieuwe restaurant",
         "jouw oordeel",
@@ -730,6 +824,8 @@
     {
       "id": "winkelen-48",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "rond zes uur",
         "eten",
@@ -747,6 +843,8 @@
     {
       "id": "winkelen-49",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "gegeten",
         "ik heb honger",
@@ -761,6 +859,8 @@
     {
       "id": "winkelen-50",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want het brood",
         "naar de bakker",
@@ -777,6 +877,8 @@
     {
       "id": "winkelen-51",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "loop",
         "ik",
@@ -794,6 +896,8 @@
     {
       "id": "winkelen-52",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "maar ik ga toch",
         "met de fiets",
@@ -808,6 +912,8 @@
     {
       "id": "winkelen-53",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "is",
         "ongeveer twee kilometer",
@@ -821,6 +927,8 @@
     {
       "id": "winkelen-54",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "oversteken",
         "bij het stoplicht",
@@ -837,6 +945,8 @@
     {
       "id": "winkelen-55",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "uitstappen",
         "u",
@@ -853,6 +963,8 @@
     {
       "id": "winkelen-56",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "mee naar de markt",
         "jij",
@@ -869,6 +981,8 @@
     {
       "id": "winkelen-57",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "aan",
         "komen",
@@ -887,6 +1001,8 @@
     {
       "id": "winkelen-58",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "het pakket",
         "op",
@@ -907,6 +1023,8 @@
     {
       "id": "winkelen-59",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "kom",
         "ik",
@@ -928,6 +1046,8 @@
     {
       "id": "winkelen-60",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "de bon hebt",
         "kun je",
@@ -942,6 +1062,8 @@
     {
       "id": "winkelen-61",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "recht op uw geld terug",
         "u",
@@ -958,6 +1080,8 @@
     {
       "id": "winkelen-62",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "de bon kwijt",
         "maar ik wil",
@@ -972,6 +1096,8 @@
     {
       "id": "winkelen-63",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een e-mail",
         "de winkel",
@@ -986,6 +1112,8 @@
     {
       "id": "winkelen-64",
       "topic": "winkelen",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "heeft",
         "iemand",
@@ -1004,6 +1132,8 @@
     {
       "id": "winkelen-65",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "maatregelen",
         "neemt",
@@ -1018,6 +1148,8 @@
     {
       "id": "winkelen-66",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "mag",
         "je",
@@ -1036,6 +1168,8 @@
     {
       "id": "winkelen-67",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op deze jas",
         "tien procent korting",
@@ -1050,6 +1184,8 @@
     {
       "id": "winkelen-68",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een flinke korting",
         "krijg je",
@@ -1064,6 +1200,8 @@
     {
       "id": "winkelen-69",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "maar hij is",
         "tenminste warm",
@@ -1078,6 +1216,8 @@
     {
       "id": "winkelen-70",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "relatief goedkoop",
         "groente",
@@ -1094,6 +1234,8 @@
     {
       "id": "winkelen-71",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "er",
         "is",
@@ -1111,6 +1253,8 @@
     {
       "id": "winkelen-72",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "goede raad",
         "geeft",
@@ -1125,6 +1269,8 @@
     {
       "id": "winkelen-73",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "met deze kledingzaak",
         "goede ervaringen",
@@ -1139,6 +1285,8 @@
     {
       "id": "winkelen-74",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "van een gezond ontbijt",
         "eens",
@@ -1153,6 +1301,8 @@
     {
       "id": "winkelen-75",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "deze Nederlandse uitdrukking",
         "ken",
@@ -1167,6 +1317,8 @@
     {
       "id": "winkelen-76",
       "topic": "winkelen",
+      "grammar": "om-te",
+      "level": 3,
       "parts": [
         "om vanavond",
         "samen te koken",
@@ -1181,6 +1333,8 @@
     {
       "id": "winkelen-77",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "een verzoek",
         "mag",
@@ -1195,6 +1349,8 @@
     {
       "id": "winkelen-78",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "de waarheid zegt",
         "ik weet niet",
@@ -1208,6 +1364,8 @@
     {
       "id": "winkelen-79",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want dit is",
         "je hebt geluk",
@@ -1222,6 +1380,8 @@
     {
       "id": "winkelen-80",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "nog in goede staat",
         "is",
@@ -1235,6 +1395,8 @@
     {
       "id": "winkelen-81",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "heeft",
         "veel handige functies",
@@ -1248,6 +1410,8 @@
     {
       "id": "winkelen-82",
       "topic": "winkelen",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een nieuw bureau",
         "voor mijn kamer",
@@ -1266,6 +1430,8 @@
     {
       "id": "winkelen-83",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "vroeg naar bed",
         "na een lange dag winkelen",
@@ -1282,6 +1448,8 @@
     {
       "id": "winkelen-84",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "meestal een broodje kaas",
         "ik",
@@ -1298,6 +1466,8 @@
     {
       "id": "winkelen-85",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "naar een museum",
         "gaan",
@@ -1315,6 +1485,8 @@
     {
       "id": "winkelen-86",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "geen sigaretten",
         "verkoopt",
@@ -1329,6 +1501,8 @@
     {
       "id": "winkelen-87",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "vaak contant",
         "in het verleden",
@@ -1345,6 +1519,8 @@
     {
       "id": "winkelen-88",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "bijna altijd",
         "pin",
@@ -1363,6 +1539,8 @@
     {
       "id": "winkelen-89",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "één ding kiezen",
         "mag",
@@ -1379,6 +1557,8 @@
     {
       "id": "winkelen-90",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "terwijl wij winkelen",
         "spelen",
@@ -1395,6 +1575,8 @@
     {
       "id": "winkelen-91",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "mijn taak",
         "in ons gezin",
@@ -1411,6 +1593,8 @@
     {
       "id": "winkelen-92",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "stofzuigen en boodschappen doen",
         "op zaterdag",
@@ -1427,6 +1611,8 @@
     {
       "id": "winkelen-93",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor het eten",
         "zorg",
@@ -1443,6 +1629,8 @@
     {
       "id": "winkelen-94",
       "topic": "winkelen",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "vergeten",
         "mijn tas",
@@ -1459,6 +1647,8 @@
     {
       "id": "winkelen-95",
       "topic": "winkelen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "om met honger",
         "het is dom",
@@ -1472,6 +1662,8 @@
     {
       "id": "winkelen-96",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "weg is",
         "ik",
@@ -1489,6 +1681,8 @@
     {
       "id": "winkelen-97",
       "topic": "winkelen",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "toevallig mijn leraar",
         "heb",
@@ -1507,6 +1701,8 @@
     {
       "id": "winkelen-98",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "aan je vader",
         "de groeten",
@@ -1520,6 +1716,8 @@
     {
       "id": "winkelen-99",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor mijn vriendin",
         "hallo",
@@ -1534,6 +1732,8 @@
     {
       "id": "winkelen-100",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een fijne dag",
         "wenst",
@@ -1548,6 +1748,8 @@
     {
       "id": "winkelen-101",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "voor ons vertrek",
         "nog snel boodschappen",
@@ -1564,6 +1766,8 @@
     {
       "id": "winkelen-102",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "vlak bij een grote supermarkt",
         "ligt",
@@ -1577,6 +1781,8 @@
     {
       "id": "winkelen-103",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "de nieuwe kledingzaak",
         "open",
@@ -1591,6 +1797,8 @@
     {
       "id": "winkelen-104",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "door",
         "ook bij slecht weer",
@@ -1609,6 +1817,8 @@
     {
       "id": "winkelen-105",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "lekkere taart verkoopt",
         "ik hoor",
@@ -1622,6 +1832,8 @@
     {
       "id": "winkelen-106",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "weinig zout",
         "gebruiken",
@@ -1638,6 +1850,8 @@
     {
       "id": "winkelen-107",
       "topic": "winkelen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "een kilo appels",
         "kost",
@@ -1652,6 +1866,8 @@
     {
       "id": "winkelen-108",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "uit Spanje",
         "deze verse vruchten",
@@ -1665,6 +1881,8 @@
     {
       "id": "winkelen-109",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "leidt",
         "in het buurthuis",
@@ -1679,6 +1897,8 @@
     {
       "id": "winkelen-110",
       "topic": "winkelen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "weg",
         "we gaan pas",
@@ -1695,6 +1915,8 @@
     {
       "id": "winkelen-111",
       "topic": "winkelen",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "inmiddels",
         "ik heb",
@@ -1711,6 +1933,8 @@
     {
       "id": "winkelen-112",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "gauw klaar",
         "het eten is",
@@ -1724,6 +1948,8 @@
     {
       "id": "winkelen-113",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "altijd",
         "mijn vlees",
@@ -1738,6 +1964,8 @@
     {
       "id": "winkelen-114",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "ruim en licht",
         "is",
@@ -1751,6 +1979,8 @@
     {
       "id": "winkelen-115",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "er knap",
         "uit",
@@ -1769,6 +1999,8 @@
     {
       "id": "winkelen-116",
       "topic": "winkelen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "om meer te betalen",
         "bereid",
@@ -1785,6 +2017,8 @@
     {
       "id": "winkelen-117",
       "topic": "winkelen",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "eten wij gezond",
         "in het algemeen",
@@ -1799,6 +2033,8 @@
     {
       "id": "winkelen-118",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "boodschappen",
         "bij de supermarkt om de hoek",
@@ -1813,6 +2049,8 @@
     {
       "id": "winkelen-119",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "in een restaurant",
         "een enkele keer",
@@ -1829,6 +2067,8 @@
     {
       "id": "winkelen-120",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "komt",
         "uit de tuin",
@@ -1842,6 +2082,8 @@
     {
       "id": "winkelen-121",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "slechte gevolgen",
         "heeft",
@@ -1856,6 +2098,8 @@
     {
       "id": "winkelen-122",
       "topic": "winkelen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "dit gerecht",
         "makkelijk of moeilijk",
@@ -1870,6 +2114,8 @@
     {
       "id": "winkelen-123",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een nieuwe jas",
         "koop",
@@ -1888,6 +2134,8 @@
     {
       "id": "winkelen-124",
       "topic": "winkelen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "steeds verder omhoog",
         "gaan",
@@ -1901,6 +2149,8 @@
     {
       "id": "winkelen-125",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "is",
         "koken",
@@ -1917,6 +2167,8 @@
     {
       "id": "winkelen-126",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "veel vrijheid",
         "hebben",
@@ -1933,6 +2185,8 @@
     {
       "id": "winkelen-127",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "gezond eten",
         "in theorie",
@@ -1949,6 +2203,8 @@
     {
       "id": "winkelen-128",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een project over gezond eten",
         "doen",
@@ -1965,6 +2221,8 @@
     {
       "id": "winkelen-129",
       "topic": "winkelen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "in de categorie winterkleding",
         "de jassen",
@@ -1981,6 +2239,8 @@
     {
       "id": "winkelen-130",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is",
         "erg vriendelijk",
@@ -1994,6 +2254,8 @@
     {
       "id": "winkelen-131",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "komt",
         "uit Marokko",
@@ -2007,6 +2269,8 @@
     {
       "id": "winkelen-132",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "voor de soep",
         "een blik tomaten",
@@ -2021,6 +2285,8 @@
     {
       "id": "winkelen-133",
       "topic": "winkelen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in verschillende kleuren",
         "verkoopt",
@@ -2035,6 +2301,8 @@
     {
       "id": "winkelen-134",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "een boodschap doen",
         "ik ga",
@@ -2051,6 +2319,8 @@
     {
       "id": "winkelen-135",
       "topic": "winkelen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "een gevaar zijn",
         "kan",

@@ -3,6 +3,8 @@
     {
       "id": "werk-01",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "omdat ik ziek ben",
         "neemt morgen",
@@ -22,6 +24,8 @@
     {
       "id": "werk-02",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want",
         "al sinds vijf uur wakker",
@@ -36,6 +40,8 @@
     {
       "id": "werk-03",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "met de sleutel af",
         "de winkel",
@@ -55,6 +61,8 @@
     {
       "id": "werk-04",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "op de kast",
         "leggen",
@@ -71,6 +79,8 @@
     {
       "id": "werk-05",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "legt de telefoon",
         "neer",
@@ -87,6 +97,8 @@
     {
       "id": "werk-06",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "ook",
         "in een andere maat?",
@@ -101,6 +113,8 @@
     {
       "id": "werk-07",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "die goed Nederlands spreekt",
         "een collega",
@@ -115,6 +129,8 @@
     {
       "id": "werk-08",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "met de directeur",
         "gehad",
@@ -132,6 +148,8 @@
     {
       "id": "werk-09",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "nog niet definitief is",
         "de chef zegt",
@@ -146,6 +164,8 @@
     {
       "id": "werk-10",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "van negen tot vijf uur",
         "werk ik",
@@ -161,6 +181,8 @@
     {
       "id": "werk-11",
       "topic": "werk",
+      "grammar": "om-te",
+      "level": 5,
       "parts": [
         "want de winkel is gesloten",
         "niet te werken,",
@@ -174,6 +196,8 @@
     {
       "id": "werk-12",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "herhalen?",
         "de vraag",
@@ -188,6 +212,8 @@
     {
       "id": "werk-13",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "langzaam uit",
         "de nieuwe methode",
@@ -206,6 +232,8 @@
     {
       "id": "werk-14",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "bel ik",
         "meneer Jansen",
@@ -221,6 +249,8 @@
     {
       "id": "werk-15",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "te laat op mijn werk kom",
         "ik ben bang",
@@ -236,6 +266,8 @@
     {
       "id": "werk-16",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over haar nieuwe baan",
         "erg tevreden",
@@ -249,6 +281,8 @@
     {
       "id": "werk-17",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "en maakt",
         "mooie beelden",
@@ -263,6 +297,8 @@
     {
       "id": "werk-18",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "kookt zelf",
         "heerlijke vis",
@@ -276,6 +312,8 @@
     {
       "id": "werk-19",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "op het terras",
         "is het",
@@ -293,6 +331,8 @@
     {
       "id": "werk-20",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "om zes uur op",
         "sta ik",
@@ -310,6 +350,8 @@
     {
       "id": "werk-21",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "neem ik",
         "als de trein",
@@ -326,6 +368,8 @@
     {
       "id": "werk-22",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar mijn werk",
         "ongeveer veertig kilometer",
@@ -342,6 +386,8 @@
     {
       "id": "werk-23",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een biertje",
         "na het werk",
@@ -359,6 +405,8 @@
     {
       "id": "werk-24",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een interessant artikel",
         "staat",
@@ -373,6 +421,8 @@
     {
       "id": "werk-25",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "het huwelijk van onze collega",
         "vieren",
@@ -389,6 +439,8 @@
     {
       "id": "werk-26",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "aan de cursus?",
         "ook mee",
@@ -407,6 +459,8 @@
     {
       "id": "werk-27",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "een kop koffie aan",
         "zij biedt",
@@ -422,6 +476,8 @@
     {
       "id": "werk-28",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "de deur van de winkel",
         "open",
@@ -440,6 +496,8 @@
     {
       "id": "werk-29",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in het noorden",
         "een eigen restaurant",
@@ -456,6 +514,8 @@
     {
       "id": "werk-30",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "als bewaker",
         "werkte",
@@ -473,6 +533,8 @@
     {
       "id": "werk-31",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "geboren",
         "in een klein dorp",
@@ -489,6 +551,8 @@
     {
       "id": "werk-32",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "gestudeerd",
         "aan de universiteit",
@@ -505,6 +569,8 @@
     {
       "id": "werk-33",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 4,
       "parts": [
         "tussen een vast",
         "wat is",
@@ -519,6 +585,8 @@
     {
       "id": "werk-34",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "weten",
         "wil graag",
@@ -535,6 +603,8 @@
     {
       "id": "werk-35",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "advies geven",
         "over mijn contract?",
@@ -550,6 +620,8 @@
     {
       "id": "werk-36",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "van het bedrijf",
         "gekregen",
@@ -566,6 +638,8 @@
     {
       "id": "werk-37",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want je moet",
         "sterk zijn",
@@ -580,6 +654,8 @@
     {
       "id": "werk-38",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "voorzichtig zijn",
         "met het vuur",
@@ -598,6 +674,8 @@
     {
       "id": "werk-39",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor mijn collega's",
         "een pot thee",
@@ -614,6 +692,8 @@
     {
       "id": "werk-40",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "zetten?",
         "in de gang",
@@ -628,6 +708,8 @@
     {
       "id": "werk-41",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want ik ben",
         "met mensen,",
@@ -642,6 +724,8 @@
     {
       "id": "werk-42",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "op mijn werk",
         "veilig",
@@ -657,6 +741,8 @@
     {
       "id": "werk-43",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "heb ik",
         "een druk leven",
@@ -672,6 +758,8 @@
     {
       "id": "werk-44",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "door de oude stoel",
         "ik heb pijn",
@@ -688,6 +776,8 @@
     {
       "id": "werk-45",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "dus ik blijf",
         "ik heb pijn",
@@ -704,6 +794,8 @@
     {
       "id": "werk-46",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "pijn",
         "doen mijn voeten",
@@ -719,6 +811,8 @@
     {
       "id": "werk-47",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "lekker rusten",
         "ga ik",
@@ -734,6 +828,8 @@
     {
       "id": "werk-48",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "met mij",
         "ruilen?",
@@ -748,6 +844,8 @@
     {
       "id": "werk-49",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "praten",
         "met de directeur",
@@ -764,6 +862,8 @@
     {
       "id": "werk-50",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "verdien ik goed",
         "het werk is leuk",
@@ -777,6 +877,8 @@
     {
       "id": "werk-51",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "op vakantie",
         "ben ik",
@@ -793,6 +895,8 @@
     {
       "id": "werk-52",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "verloren",
         "ergens in de bus",
@@ -809,6 +913,8 @@
     {
       "id": "werk-53",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "is het risico",
         "zonder helm",
@@ -824,6 +930,8 @@
     {
       "id": "werk-54",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "snel opgelost",
         "het probleem met de computer",
@@ -837,6 +945,8 @@
     {
       "id": "werk-55",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "aan de chef vragen",
         "zelf",
@@ -852,6 +962,8 @@
     {
       "id": "werk-56",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "stel je",
         "jezelf voor",
@@ -867,6 +979,8 @@
     {
       "id": "werk-57",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "de slaapkamers schoon",
         "maak ik",
@@ -886,6 +1000,8 @@
     {
       "id": "werk-58",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "vaak afwassen",
         "moet ik",
@@ -901,6 +1017,8 @@
     {
       "id": "werk-59",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "met mijn vriendin",
         "samen",
@@ -919,6 +1037,8 @@
     {
       "id": "werk-60",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar het bedrijf",
         "met een foto",
@@ -933,6 +1053,8 @@
     {
       "id": "werk-61",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "naar de film",
         "gaan we",
@@ -949,6 +1071,8 @@
     {
       "id": "werk-62",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "omdat ik",
         "werk ik niet,",
@@ -967,6 +1091,8 @@
     {
       "id": "werk-63",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "geen speciaal diploma",
         "nodig",
@@ -981,6 +1107,8 @@
     {
       "id": "werk-64",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een heel bijzondere dag",
         "was",
@@ -994,6 +1122,8 @@
     {
       "id": "werk-65",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "gewoon weer",
         "werk ik",
@@ -1010,6 +1140,8 @@
     {
       "id": "werk-66",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "bij een nieuw bedrijf",
         "net begonnen",
@@ -1023,6 +1155,8 @@
     {
       "id": "werk-67",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "hier al?",
         "werkt u",
@@ -1036,6 +1170,8 @@
     {
       "id": "werk-68",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "werken",
         "voor jou",
@@ -1052,6 +1188,8 @@
     {
       "id": "werk-69",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "geen geheim",
         "is",
@@ -1065,6 +1203,8 @@
     {
       "id": "werk-70",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "over het nieuwe contract",
         "ik twijfel",
@@ -1078,6 +1218,8 @@
     {
       "id": "werk-71",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "contact op",
         "met het uitzendbureau",
@@ -1095,6 +1237,8 @@
     {
       "id": "werk-72",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "bij een vereniging",
         "als vrijwilliger",
@@ -1111,6 +1255,8 @@
     {
       "id": "werk-73",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "vroeg vertrekt",
         "omdat mijn vlucht",
@@ -1127,6 +1273,8 @@
     {
       "id": "werk-74",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "voor een kort gesprek?",
         "tijd",
@@ -1140,6 +1288,8 @@
     {
       "id": "werk-75",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "werkt het",
         "veel sneller",
@@ -1155,6 +1305,8 @@
     {
       "id": "werk-76",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "erg lief",
         "tijdens de eerste ontmoeting",
@@ -1171,6 +1323,8 @@
     {
       "id": "werk-77",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "met melk",
         "en suiker?",
@@ -1185,6 +1339,8 @@
     {
       "id": "werk-78",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "helemaal leeg",
         "is het kantoor",
@@ -1200,6 +1356,8 @@
     {
       "id": "werk-79",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "diep adem",
         "haal ik",
@@ -1215,6 +1373,8 @@
     {
       "id": "werk-80",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "is de winkel",
         "dicht",
@@ -1230,6 +1390,8 @@
     {
       "id": "werk-81",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de technische sector",
         "veel werk",
@@ -1245,6 +1407,8 @@
     {
       "id": "werk-82",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "is het formulier",
         "niet volledig",
@@ -1260,6 +1424,8 @@
     {
       "id": "werk-83",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "de winkel gaat",
         "je hebt gelijk,",
@@ -1274,6 +1440,8 @@
     {
       "id": "werk-84",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is erg aantrekkelijk",
         "van deze baan",
@@ -1287,6 +1455,8 @@
     {
       "id": "werk-85",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "snel schoon",
         "is de winkel",
@@ -1302,6 +1472,8 @@
     {
       "id": "werk-86",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "eindeloos",
         "een werkdag op kantoor",
@@ -1318,6 +1490,8 @@
     {
       "id": "werk-87",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "over mijn achtergrond",
         "vertel ik",
@@ -1333,6 +1507,8 @@
     {
       "id": "werk-88",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "dus ik heb",
         "weinig beweging",
@@ -1349,6 +1525,8 @@
     {
       "id": "werk-89",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een behandeling",
         "heb ik",
@@ -1365,6 +1543,8 @@
     {
       "id": "werk-90",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want niemand",
         "is dood,",
@@ -1379,6 +1559,8 @@
     {
       "id": "werk-91",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "uit Nederland",
         "alleen producten",
@@ -1393,6 +1575,8 @@
     {
       "id": "werk-92",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "tussen mannen en vrouwen",
         "wij maken",
@@ -1406,6 +1590,8 @@
     {
       "id": "werk-93",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "de doelstellingen",
         "bespreken wij",
@@ -1422,6 +1608,8 @@
     {
       "id": "werk-94",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "een gedicht",
         "schrijven wij",
@@ -1437,6 +1625,8 @@
     {
       "id": "werk-95",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "in een kamp voor kinderen",
         "werk ik",
@@ -1452,6 +1642,8 @@
     {
       "id": "werk-96",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "en verdient nu",
         "een miljoen euro",
@@ -1466,6 +1658,8 @@
     {
       "id": "werk-97",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "van de patiënt",
         "voelt",
@@ -1480,6 +1674,8 @@
     {
       "id": "werk-98",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "op de bodem van mijn tas",
         "ligt",
@@ -1493,6 +1689,8 @@
     {
       "id": "werk-99",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "op de rand van de tafel",
         "pas op,",
@@ -1506,6 +1704,8 @@
     {
       "id": "werk-100",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "in de wijk",
         "folders",
@@ -1522,6 +1722,8 @@
     {
       "id": "werk-101",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "al vervuld",
         "is de vacature",
@@ -1537,6 +1739,8 @@
     {
       "id": "werk-102",
       "topic": "werk",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "in",
         "gaat",
@@ -1555,6 +1759,8 @@
     {
       "id": "werk-103",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 2,
       "parts": [
         "en ga",
         "op de fiets",
@@ -1569,6 +1775,8 @@
     {
       "id": "werk-104",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "op internet",
         "de vacature",
@@ -1587,6 +1795,8 @@
     {
       "id": "werk-105",
       "topic": "werk",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "eindelijk een baan",
         "gevonden",
@@ -1603,6 +1813,8 @@
     {
       "id": "werk-106",
       "topic": "werk",
+      "grammar": "vraag",
+      "level": 3,
       "parts": [
         "in mijn contract?",
         "deze zin",
@@ -1616,6 +1828,8 @@
     {
       "id": "werk-107",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor het prettige gesprek",
         "u",
@@ -1629,6 +1843,8 @@
     {
       "id": "werk-108",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van mijn werk",
         "ik houd echt",
@@ -1642,6 +1858,8 @@
     {
       "id": "werk-109",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "verpleegkundige worden",
         "wil ik graag",
@@ -1657,6 +1875,8 @@
     {
       "id": "werk-110",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een pak",
         "draag ik",
@@ -1672,6 +1892,8 @@
     {
       "id": "werk-111",
       "topic": "werk",
+      "grammar": "nevenschikkend",
+      "level": 5,
       "parts": [
         "en daarna hang ik",
         "de kleren op",
@@ -1688,6 +1910,8 @@
     {
       "id": "werk-112",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "over het contract",
         "heb ik",
@@ -1704,6 +1928,8 @@
     {
       "id": "werk-113",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van de nieuwe regels",
         "ik ben",
@@ -1717,6 +1943,8 @@
     {
       "id": "werk-114",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de laatste fase",
         "nu",
@@ -1732,6 +1960,8 @@
     {
       "id": "werk-115",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "in de winkel",
         "veel veranderingen",
@@ -1746,6 +1976,8 @@
     {
       "id": "werk-116",
       "topic": "werk",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "een vaste baan heb",
         "ik ben blij",
@@ -1759,6 +1991,8 @@
     {
       "id": "werk-117",
       "topic": "werk",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "bij een nieuw bedrijf",
         "begin ik",
@@ -1774,6 +2008,8 @@
     {
       "id": "werk-118",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "in een drukke straat",
         "is",
@@ -1788,6 +2024,8 @@
     {
       "id": "werk-119",
       "topic": "werk",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "tegen de warmte",
         "ik kan",
@@ -1802,6 +2040,8 @@
     {
       "id": "werk-120",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "is belangrijk",
         "tussen werk en vrije tijd",

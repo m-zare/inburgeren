@@ -3,6 +3,8 @@
     {
       "id": "radio",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "de man",
         "naar de radio",
@@ -19,6 +21,8 @@
     {
       "id": "buurman",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "zij",
         "met haar buurman",
@@ -35,6 +39,8 @@
     {
       "id": "supermarkt",
       "topic": "werk",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "werkt",
         "hij",
@@ -52,6 +58,8 @@
     {
       "id": "woonkamer",
       "topic": "vrije-tijd",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "zitten",
         "jullie",

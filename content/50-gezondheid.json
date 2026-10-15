@@ -3,6 +3,8 @@
     {
       "id": "gezondheid-01",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "mijn zwarte tas",
         "iemand",
@@ -23,6 +25,8 @@
     {
       "id": "gezondheid-02",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "aangifte doen",
         "bij de politie",
@@ -39,6 +43,8 @@
     {
       "id": "gezondheid-03",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "gebeurd",
         "is het",
@@ -56,6 +62,8 @@
     {
       "id": "gezondheid-04",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "heel dun",
         "is",
@@ -72,6 +80,8 @@
     {
       "id": "gezondheid-05",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in de zak",
         "zat ook",
@@ -86,6 +96,8 @@
     {
       "id": "gezondheid-06",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over mijn nieuwe laptop",
         "de agent",
@@ -100,6 +112,8 @@
     {
       "id": "gezondheid-07",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar mijn gegevens",
         "vraagt",
@@ -114,6 +128,8 @@
     {
       "id": "gezondheid-08",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "voordat je",
         "dit aanmeldformulier invullen",
@@ -130,6 +146,8 @@
     {
       "id": "gezondheid-09",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "omdat mijn knie",
         "ik bel",
@@ -147,6 +165,8 @@
     {
       "id": "gezondheid-10",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "rode ogen",
         "mijn dochter heeft",
@@ -163,6 +183,8 @@
     {
       "id": "gezondheid-11",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "in mijn hals",
         "ik heb",
@@ -177,6 +199,8 @@
     {
       "id": "gezondheid-12",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "mijn zoon",
         "gebeten",
@@ -191,6 +215,8 @@
     {
       "id": "gezondheid-13",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "is het",
         "niet gevaarlijk",
@@ -206,6 +232,8 @@
     {
       "id": "gezondheid-14",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een ongeluk gehad",
         "op de brug",
@@ -225,6 +253,8 @@
     {
       "id": "gezondheid-15",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "het nummer 112",
         "belt u",
@@ -241,6 +271,8 @@
     {
       "id": "gezondheid-16",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "veel bloed",
         "we moeten",
@@ -255,6 +287,8 @@
     {
       "id": "gezondheid-17",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "was",
         "de ambulance",
@@ -271,6 +305,8 @@
     {
       "id": "gezondheid-18",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "ziek",
         "bij mijn baas",
@@ -288,6 +324,8 @@
     {
       "id": "gezondheid-19",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "moet je",
         "als je ziek bent",
@@ -303,6 +341,8 @@
     {
       "id": "gezondheid-20",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "open",
         "op dinsdagavond en donderdagavond",
@@ -319,6 +359,8 @@
     {
       "id": "gezondheid-21",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "naar het strand",
         "ik neem",
@@ -338,6 +380,8 @@
     {
       "id": "gezondheid-22",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "gebruik ik",
         "zonnebrand",
@@ -354,6 +398,8 @@
     {
       "id": "gezondheid-23",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "los zit",
         "de tandarts zegt",
@@ -368,6 +414,8 @@
     {
       "id": "gezondheid-24",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "alle medische kosten",
         "betaalt",
@@ -382,6 +430,8 @@
     {
       "id": "gezondheid-25",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "over het personeel",
         "van het ziekenhuis",
@@ -396,6 +446,8 @@
     {
       "id": "gezondheid-26",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een brief van de overheid",
         "gekregen",
@@ -412,6 +464,8 @@
     {
       "id": "gezondheid-27",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "moet iedereen",
         "een zorgverzekering hebben",
@@ -427,6 +481,8 @@
     {
       "id": "gezondheid-28",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "de leider",
         "de burgemeester",
@@ -441,6 +497,8 @@
     {
       "id": "gezondheid-29",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "mensen met schulden",
         "helpt",
@@ -454,6 +512,8 @@
     {
       "id": "gezondheid-30",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "nodig",
         "bij het invullen",
@@ -468,6 +528,8 @@
     {
       "id": "gezondheid-31",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "kapotgemaakt",
         "de dief",
@@ -482,6 +544,8 @@
     {
       "id": "gezondheid-32",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een rode jas",
         "de man droeg",
@@ -498,6 +562,8 @@
     {
       "id": "gezondheid-33",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar het station",
         "hij rende",
@@ -512,6 +578,8 @@
     {
       "id": "gezondheid-34",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want het ging",
         "ik heb hem",
@@ -526,6 +594,8 @@
     {
       "id": "gezondheid-35",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "maar hij was",
         "ik weet het",
@@ -540,6 +610,8 @@
     {
       "id": "gezondheid-36",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "ontbreekt",
         "trouwens ook",
@@ -555,6 +627,8 @@
     {
       "id": "gezondheid-37",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "terug?",
         "mijn laptop",
@@ -573,6 +647,8 @@
     {
       "id": "gezondheid-38",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is",
         "een groot probleem",
@@ -587,6 +663,8 @@
     {
       "id": "gezondheid-39",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "was het",
         "een verschrikkelijk moment",
@@ -603,6 +681,8 @@
     {
       "id": "gezondheid-40",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "van de dief",
         "enorm",
@@ -617,6 +697,8 @@
     {
       "id": "gezondheid-41",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "en praatte rustig",
         "de agent",
@@ -631,6 +713,8 @@
     {
       "id": "gezondheid-42",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "op",
         "de agent schrijft",
@@ -649,6 +733,8 @@
     {
       "id": "gezondheid-43",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 5,
       "parts": [
         "aan DUO",
         "ik heb",
@@ -666,6 +752,8 @@
     {
       "id": "gezondheid-44",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "krijg je",
         "als student",
@@ -679,6 +767,8 @@
     {
       "id": "gezondheid-45",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "af",
         "volgend jaar",
@@ -697,6 +787,8 @@
     {
       "id": "gezondheid-46",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "later kiezen?",
         "welk beroep",
@@ -710,6 +802,8 @@
     {
       "id": "gezondheid-47",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "geen werk meer",
         "heeft hij",
@@ -725,6 +819,8 @@
     {
       "id": "gezondheid-48",
       "topic": "gezondheid",
+      "grammar": "om-te",
+      "level": 3,
       "parts": [
         "om de taal",
         "ik volg",
@@ -739,6 +835,8 @@
     {
       "id": "gezondheid-49",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een verhaal",
         "over de oorlog",
@@ -753,6 +851,8 @@
     {
       "id": "gezondheid-50",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in Den Haag",
         "werken",
@@ -767,6 +867,8 @@
     {
       "id": "gezondheid-51",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "werken we",
         "goed samen",
@@ -784,6 +886,8 @@
     {
       "id": "gezondheid-52",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een kleine provincie",
         "Utrecht is",
@@ -798,6 +902,8 @@
     {
       "id": "gezondheid-53",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een straf gegeven",
         "de rechter",
@@ -812,6 +918,8 @@
     {
       "id": "gezondheid-54",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "ook thuis",
         "in Nederland verboden",
@@ -825,6 +933,8 @@
     {
       "id": "gezondheid-55",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "geen wapen hebben",
         "in Nederland",
@@ -840,6 +950,8 @@
     {
       "id": "gezondheid-56",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een brief gestuurd",
         "heeft",
@@ -854,6 +966,8 @@
     {
       "id": "gezondheid-57",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "is goed",
         "voor de maatschappij",
@@ -867,6 +981,8 @@
     {
       "id": "gezondheid-58",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "dicht",
         "ik doe de gordijnen",
@@ -883,6 +999,8 @@
     {
       "id": "gezondheid-59",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "is kapot",
         "ik kan niet opruimen",
@@ -896,6 +1014,8 @@
     {
       "id": "gezondheid-60",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 5,
       "parts": [
         "maar breng ze",
         "gooi oude medicijnen",
@@ -912,6 +1032,8 @@
     {
       "id": "gezondheid-61",
       "topic": "gezondheid",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "op dinsdagavond",
         "ik zet",
@@ -929,6 +1051,8 @@
     {
       "id": "gezondheid-62",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "aan de muur",
         "opgehangen",
@@ -943,6 +1067,8 @@
     {
       "id": "gezondheid-63",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "het regent binnen",
         "is kapot",
@@ -956,6 +1082,8 @@
     {
       "id": "gezondheid-64",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is heel oud",
         "het kleed",
@@ -969,6 +1097,8 @@
     {
       "id": "gezondheid-65",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een verhaal",
         "staat",
@@ -983,6 +1113,8 @@
     {
       "id": "gezondheid-66",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "dus ik mis haar",
         "ver weg",
@@ -1000,6 +1132,8 @@
     {
       "id": "gezondheid-67",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want de bus",
         "je moet",
@@ -1014,6 +1148,8 @@
     {
       "id": "gezondheid-68",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "geen auto rijden",
         "mag je",
@@ -1029,6 +1165,8 @@
     {
       "id": "gezondheid-69",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "gevallen",
         "is",
@@ -1043,6 +1181,8 @@
     {
       "id": "gezondheid-70",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "door het bos",
         "we hebben",
@@ -1060,6 +1200,8 @@
     {
       "id": "gezondheid-71",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "als ik",
         "zwanger ben?",
@@ -1075,6 +1217,8 @@
     {
       "id": "gezondheid-72",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "droom ik",
         "vaak slecht",
@@ -1090,6 +1234,8 @@
     {
       "id": "gezondheid-73",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "had hij",
         "veel verdriet",
@@ -1106,6 +1252,8 @@
     {
       "id": "gezondheid-74",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "heb je",
         "vaak sterke emoties",
@@ -1119,6 +1267,8 @@
     {
       "id": "gezondheid-75",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "met een glimlach",
         "helpt mij",
@@ -1133,6 +1283,8 @@
     {
       "id": "gezondheid-76",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in het ziekenhuis",
         "met veel plezier",
@@ -1149,6 +1301,8 @@
     {
       "id": "gezondheid-77",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "was heel gezellig",
         "van mijn vrienden",
@@ -1162,6 +1316,8 @@
     {
       "id": "gezondheid-78",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een goede indruk",
         "maakt",
@@ -1175,6 +1331,8 @@
     {
       "id": "gezondheid-79",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 4,
       "parts": [
         "veel begrip",
         "voor mijn omstandigheden",
@@ -1188,6 +1346,8 @@
     {
       "id": "gezondheid-80",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "absoluut niet roken",
         "u mag",
@@ -1204,6 +1364,8 @@
     {
       "id": "gezondheid-81",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is positief",
         "de uitslag",
@@ -1217,6 +1379,8 @@
     {
       "id": "gezondheid-82",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "nog geen effect",
         "hebben",
@@ -1230,6 +1394,8 @@
     {
       "id": "gezondheid-83",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "op je gezondheid",
         "heeft veel invloed",
@@ -1243,6 +1409,8 @@
     {
       "id": "gezondheid-84",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van groot belang",
         "voor kinderen",
@@ -1256,6 +1424,8 @@
     {
       "id": "gezondheid-85",
       "topic": "gezondheid",
+      "grammar": "om-te",
+      "level": 5,
       "parts": [
         "om naar het ziekenhuis",
         "er is",
@@ -1270,6 +1440,8 @@
     {
       "id": "gezondheid-86",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "met lopen",
         "mijn opa",
@@ -1283,6 +1455,8 @@
     {
       "id": "gezondheid-87",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor ouderen",
         "heeft veel activiteiten",
@@ -1296,6 +1470,8 @@
     {
       "id": "gezondheid-88",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 5,
       "parts": [
         "anders kunt u",
         "niet betalen",
@@ -1312,6 +1488,8 @@
     {
       "id": "gezondheid-89",
       "topic": "gezondheid",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "dat ik rust",
         "de conclusie",
@@ -1326,6 +1504,8 @@
     {
       "id": "gezondheid-90",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over de hele wereld",
         "helpt mensen",
@@ -1339,6 +1519,8 @@
     {
       "id": "gezondheid-91",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "even zien?",
         "uw tong",
@@ -1354,6 +1536,8 @@
     {
       "id": "gezondheid-92",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "want ik ben",
         "ik heb bijna",
@@ -1368,6 +1552,8 @@
     {
       "id": "gezondheid-93",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "stil zijn",
         "moet je",
@@ -1383,6 +1569,8 @@
     {
       "id": "gezondheid-94",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van een grijze auto",
         "de dief",
@@ -1397,6 +1585,8 @@
     {
       "id": "gezondheid-95",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "genoeg ruimte",
         "voor iedereen",
@@ -1413,6 +1603,8 @@
     {
       "id": "gezondheid-96",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "te laag",
         "volgens de huisarts",
@@ -1428,6 +1620,8 @@
     {
       "id": "gezondheid-97",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "aan het eind",
         "de afspraak is",
@@ -1441,6 +1635,8 @@
     {
       "id": "gezondheid-98",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "met mijn rug",
         "hetzelfde probleem",
@@ -1455,6 +1651,8 @@
     {
       "id": "gezondheid-99",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "gisteren",
         "twee mannen vochten",
@@ -1470,6 +1668,8 @@
     {
       "id": "gezondheid-100",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "gewonnen",
         "zijn team heeft",
@@ -1483,6 +1683,8 @@
     {
       "id": "gezondheid-101",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "pas volgende week",
         "tijd",
@@ -1498,6 +1700,8 @@
     {
       "id": "gezondheid-102",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "een afspraak",
         "we zouden",
@@ -1512,6 +1716,8 @@
     {
       "id": "gezondheid-103",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "mijn tas gevonden",
         "heeft de politie",
@@ -1527,6 +1733,8 @@
     {
       "id": "gezondheid-104",
       "topic": "gezondheid",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "na de maaltijd",
         "deze tabletten",
@@ -1540,6 +1748,8 @@
     {
       "id": "gezondheid-105",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "bij de kassa",
         "afrekenen",
@@ -1553,6 +1763,8 @@
     {
       "id": "gezondheid-106",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "bij de aangifte",
         "bedankt",
@@ -1566,6 +1778,8 @@
     {
       "id": "gezondheid-107",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "even voorstellen?",
         "mag ik",
@@ -1579,6 +1793,8 @@
     {
       "id": "gezondheid-108",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "is uitstekend",
         "de zorg",
@@ -1592,6 +1808,8 @@
     {
       "id": "gezondheid-109",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "mijn tas teruggebracht",
         "heeft iemand",
@@ -1607,6 +1825,8 @@
     {
       "id": "gezondheid-110",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "zijn op zondag dicht",
         "alle apotheken",
@@ -1622,6 +1842,8 @@
     {
       "id": "gezondheid-111",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "ik ben namelijk ziek",
         "niet komen",
@@ -1635,6 +1857,8 @@
     {
       "id": "gezondheid-112",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "zoals groente",
         "gezond eten",
@@ -1649,6 +1873,8 @@
     {
       "id": "gezondheid-113",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "nu eenmaal",
         "zo",
@@ -1662,6 +1888,8 @@
     {
       "id": "gezondheid-114",
       "topic": "gezondheid",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "ik ben tenslotte",
         "ziek",
@@ -1675,6 +1903,8 @@
     {
       "id": "gezondheid-115",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "echter gesloten",
         "is de apotheek",
@@ -1691,6 +1921,8 @@
     {
       "id": "gezondheid-116",
       "topic": "gezondheid",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "tot mijn broer",
         "ben ik",
@@ -1707,6 +1939,8 @@
     {
       "id": "gezondheid-117",
       "topic": "gezondheid",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "van griep?",
         "de kenmerken",
@@ -1720,6 +1954,8 @@
     {
       "id": "gezondheid-118",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "je niet!",
         "meen",
@@ -1733,6 +1969,8 @@
     {
       "id": "gezondheid-119",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "geen suiker",
         "bevat",
@@ -1746,6 +1984,8 @@
     {
       "id": "gezondheid-120",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een traditionele maaltijd",
         "vanavond",
@@ -1761,6 +2001,8 @@
     {
       "id": "gezondheid-121",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een lang proces",
         "bij de IND",
@@ -1775,6 +2017,8 @@
     {
       "id": "gezondheid-122",
       "topic": "gezondheid",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op school",
         "mijn favoriete vak",
@@ -1790,6 +2034,8 @@
     {
       "id": "gezondheid-123",
       "topic": "gezondheid",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "een plaat",
         "in mijn been",
@@ -1804,6 +2050,8 @@
     {
       "id": "gezondheid-124",
       "topic": "gezondheid",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "uw naam",
         "bovenaan het blad",
@@ -1817,6 +2065,8 @@
     {
       "id": "gezondheid-125",
       "topic": "gezondheid",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "morgen bellen?",
         "jou",
@@ -1830,6 +2080,8 @@
     {
       "id": "gezondheid-126",
       "topic": "gezondheid",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "pijn",
         "heeft u?",

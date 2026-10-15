@@ -3,6 +3,8 @@
     {
       "id": "wonen-01",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een groot gat",
         "er",
@@ -20,6 +22,8 @@
     {
       "id": "wonen-02",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "melden",
         "ik",
@@ -41,6 +45,8 @@
     {
       "id": "wonen-03",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "uw voornaam en postcode",
         "invullen?",
@@ -57,6 +63,8 @@
     {
       "id": "wonen-04",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "in",
         "op het formulier",
@@ -75,6 +83,8 @@
     {
       "id": "wonen-05",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "op straat",
         "al de hele dag",
@@ -91,6 +101,8 @@
     {
       "id": "wonen-06",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "kapot is",
         "omdat de stoep",
@@ -107,6 +119,8 @@
     {
       "id": "wonen-07",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "op straat lopen",
         "de stoep",
@@ -121,6 +135,8 @@
     {
       "id": "wonen-08",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "vaak",
         "hebben",
@@ -139,6 +155,8 @@
     {
       "id": "wonen-09",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want",
         "de hele nacht",
@@ -154,6 +172,8 @@
     {
       "id": "wonen-10",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "geschreven",
         "een brief",
@@ -170,6 +190,8 @@
     {
       "id": "wonen-11",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "wij",
         "naar een goedkoper huis",
@@ -186,6 +208,8 @@
     {
       "id": "wonen-12",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "is vreselijk klein",
         "de woonkamer",
@@ -202,6 +226,8 @@
     {
       "id": "wonen-13",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "tegenover het café",
         "al twintig jaar",
@@ -218,6 +244,8 @@
     {
       "id": "wonen-14",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "weg",
         "het oude papier",
@@ -237,6 +265,8 @@
     {
       "id": "wonen-15",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "naar de glasbak",
         "wij moeten",
@@ -254,6 +284,8 @@
     {
       "id": "wonen-16",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "in",
         "morgen",
@@ -274,6 +306,8 @@
     {
       "id": "wonen-17",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "veel stof",
         "binnen",
@@ -293,6 +327,8 @@
     {
       "id": "wonen-18",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 4,
       "parts": [
         "van het dak",
         "door de harde wind",
@@ -310,6 +346,8 @@
     {
       "id": "wonen-19",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "kapot is",
         "doordat de lamp",
@@ -327,6 +365,8 @@
     {
       "id": "wonen-20",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "geen stroom",
         "is er",
@@ -344,6 +384,8 @@
     {
       "id": "wonen-21",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "voor een groter appartement",
         "ruilen",
@@ -360,6 +402,8 @@
     {
       "id": "wonen-22",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "bijna onmogelijk",
         "is",
@@ -376,6 +420,8 @@
     {
       "id": "wonen-23",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "dwars op de stoep",
         "staat",
@@ -390,6 +436,8 @@
     {
       "id": "wonen-24",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "in de schaduw",
         "zit ik",
@@ -407,6 +455,8 @@
     {
       "id": "wonen-25",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "als wij weg zijn",
         "water",
@@ -424,6 +474,8 @@
     {
       "id": "wonen-26",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "aan de buurvrouw",
         "de sleutel",
@@ -438,6 +490,8 @@
     {
       "id": "wonen-27",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een helemaal nieuwe keuken",
         "alle huurders",
@@ -454,6 +508,8 @@
     {
       "id": "wonen-28",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "voor de wijkkrant",
         "schrijf",
@@ -471,6 +527,8 @@
     {
       "id": "wonen-29",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een bijdrage",
         "de wijkkrant",
@@ -488,6 +546,8 @@
     {
       "id": "wonen-30",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in onze wijk",
         "woont",
@@ -503,6 +563,8 @@
     {
       "id": "wonen-31",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "van uw stukje",
         "wat",
@@ -518,6 +580,8 @@
     {
       "id": "wonen-32",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "is",
         "in de wijk",
@@ -535,6 +599,8 @@
     {
       "id": "wonen-33",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "vragen",
         "u",
@@ -550,6 +616,8 @@
     {
       "id": "wonen-34",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een straatfeest",
         "samen met de buren",
@@ -568,6 +636,8 @@
     {
       "id": "wonen-35",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "al op maandag",
         "hun afval",
@@ -585,6 +655,8 @@
     {
       "id": "wonen-36",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "bij de gemeente",
         "de regel is",
@@ -603,6 +675,8 @@
     {
       "id": "wonen-37",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 2,
       "parts": [
         "thuis is",
         "ik denk",
@@ -617,6 +691,8 @@
     {
       "id": "wonen-38",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "snel oplost",
         "het probleem",
@@ -631,6 +707,8 @@
     {
       "id": "wonen-39",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "in de winter",
         "het is jammer",
@@ -647,6 +725,8 @@
     {
       "id": "wonen-40",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "vertelt",
         "het nieuws uit de straat",
@@ -664,6 +744,8 @@
     {
       "id": "wonen-41",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 2,
       "parts": [
         "erg mooi",
         "ziet er",
@@ -680,6 +762,8 @@
     {
       "id": "wonen-42",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "dat hij",
         "de verhuurder en ik",
@@ -694,6 +778,8 @@
     {
       "id": "wonen-43",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "naar dit formulier?",
         "even",
@@ -710,6 +796,8 @@
     {
       "id": "wonen-44",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "over",
         "de nieuwe huurder",
@@ -726,6 +814,8 @@
     {
       "id": "wonen-45",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "verzetten?",
         "de afspraak",
@@ -740,6 +830,8 @@
     {
       "id": "wonen-46",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "af",
         "als ik in de keuken kook",
@@ -758,6 +850,8 @@
     {
       "id": "wonen-47",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "de huur van onze woning",
         "weer",
@@ -774,6 +868,8 @@
     {
       "id": "wonen-48",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "niet veel verdien",
         "huurtoeslag",
@@ -790,6 +886,8 @@
     {
       "id": "wonen-49",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "in de schuur?",
         "voldoende ruimte",
@@ -806,6 +904,8 @@
     {
       "id": "wonen-50",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "van slechte kwaliteit",
         "koopt altijd",
@@ -820,6 +920,8 @@
     {
       "id": "wonen-51",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 1,
       "parts": [
         "vooral",
         "de tuin",
@@ -836,6 +938,8 @@
     {
       "id": "wonen-52",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "mijn vrienden",
         "met de zware dozen",
@@ -853,6 +957,8 @@
     {
       "id": "wonen-53",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een oude kist",
         "staat",
@@ -867,6 +973,8 @@
     {
       "id": "wonen-54",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "om half acht",
         "de vuilniswagen",
@@ -883,6 +991,8 @@
     {
       "id": "wonen-55",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "van het station",
         "ligt",
@@ -897,6 +1007,8 @@
     {
       "id": "wonen-56",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "is",
         "het onderwijs",
@@ -915,6 +1027,8 @@
     {
       "id": "wonen-57",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een mooi landschap",
         "zien wij",
@@ -930,6 +1044,8 @@
     {
       "id": "wonen-58",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in het westen",
         "mijn ouders",
@@ -945,6 +1061,8 @@
     {
       "id": "wonen-59",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een boer",
         "woont",
@@ -961,6 +1079,8 @@
     {
       "id": "wonen-60",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "aan de gracht",
         "wij wonen",
@@ -974,6 +1094,8 @@
     {
       "id": "wonen-61",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "klassieke muziek",
         "mijn buurman",
@@ -991,6 +1113,8 @@
     {
       "id": "wonen-62",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een cultureel programma",
         "het buurthuis",
@@ -1007,6 +1131,8 @@
     {
       "id": "wonen-63",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 4,
       "parts": [
         "uit verschillende landen",
         "want",
@@ -1021,6 +1147,8 @@
     {
       "id": "wonen-64",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "alleen Engels",
         "in onze straat",
@@ -1035,6 +1163,8 @@
     {
       "id": "wonen-65",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "van het buurthuis",
         "is",
@@ -1049,6 +1179,8 @@
     {
       "id": "wonen-66",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "aanwezig zijn",
         "u moet",
@@ -1063,6 +1195,8 @@
     {
       "id": "wonen-67",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "de stoep bekijken",
         "een ambtenaar",
@@ -1080,6 +1214,8 @@
     {
       "id": "wonen-68",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "omdat mijn fiets",
         "ik doe aangifte",
@@ -1096,6 +1232,8 @@
     {
       "id": "wonen-69",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 4,
       "parts": [
         "mee",
         "de hele buurt",
@@ -1118,6 +1256,8 @@
     {
       "id": "wonen-70",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "voor uw hulp",
         "bedanken",
@@ -1134,6 +1274,8 @@
     {
       "id": "wonen-71",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "erg stil",
         "vond ik",
@@ -1150,6 +1292,8 @@
     {
       "id": "wonen-72",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "aan de kant",
         "liggen",
@@ -1164,6 +1308,8 @@
     {
       "id": "wonen-73",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "buitenzetten",
         "alleen op bepaalde dagen",
@@ -1178,6 +1324,8 @@
     {
       "id": "wonen-74",
       "topic": "wonen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "om naar een kleiner huis",
         "te verhuizen",
@@ -1192,6 +1340,8 @@
     {
       "id": "wonen-75",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "voor een woning",
         "bewust",
@@ -1206,6 +1356,8 @@
     {
       "id": "wonen-76",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "dat u hier",
         "op het bord",
@@ -1220,6 +1372,8 @@
     {
       "id": "wonen-77",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "wat",
         "wij weten niet",
@@ -1234,6 +1388,8 @@
     {
       "id": "wonen-78",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "is erg slecht",
         "met de verhuurder",
@@ -1247,6 +1403,8 @@
     {
       "id": "wonen-79",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "ik hoor alles",
         "de muren",
@@ -1264,6 +1422,8 @@
     {
       "id": "wonen-80",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "vlak bij ons huis",
         "is",
@@ -1278,6 +1438,8 @@
     {
       "id": "wonen-81",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "dubbel glas",
         "het huis heeft",
@@ -1295,6 +1457,8 @@
     {
       "id": "wonen-82",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 4,
       "parts": [
         "dat hij",
         "een goede eigenschap",
@@ -1309,6 +1473,8 @@
     {
       "id": "wonen-83",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "voor nieuwe huurders",
         "heeft",
@@ -1323,6 +1489,8 @@
     {
       "id": "wonen-84",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "een experiment",
         "doet",
@@ -1337,6 +1505,8 @@
     {
       "id": "wonen-85",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 3,
       "parts": [
         "het is",
         "dat de huren",
@@ -1352,6 +1522,8 @@
     {
       "id": "wonen-86",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "vers fruit",
         "koop ik",
@@ -1369,6 +1541,8 @@
     {
       "id": "wonen-87",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "maar zeer aardig",
         "een beetje gek",
@@ -1383,6 +1557,8 @@
     {
       "id": "wonen-88",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "in het trappenhuis",
         "een vieze geur",
@@ -1397,6 +1573,8 @@
     {
       "id": "wonen-89",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "een veilig gevoel",
         "heb ik",
@@ -1412,6 +1590,8 @@
     {
       "id": "wonen-90",
       "topic": "wonen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "om nieuwe buren",
         "is het",
@@ -1429,6 +1609,8 @@
     {
       "id": "wonen-91",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een woning",
         "zoek ik",
@@ -1445,6 +1627,8 @@
     {
       "id": "wonen-92",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "lawaai",
         "een groep jongeren",
@@ -1462,6 +1646,8 @@
     {
       "id": "wonen-93",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "in het hart",
         "ligt",
@@ -1476,6 +1662,8 @@
     {
       "id": "wonen-94",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 1,
       "parts": [
         "een goed idee",
         "u",
@@ -1490,6 +1678,8 @@
     {
       "id": "wonen-95",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "gemaakt",
         "een jurk",
@@ -1506,6 +1696,8 @@
     {
       "id": "wonen-96",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "pijn aan mijn oren",
         "door het lawaai",
@@ -1522,6 +1714,8 @@
     {
       "id": "wonen-97",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "vandaag thuis",
         "en blijft",
@@ -1536,6 +1730,8 @@
     {
       "id": "wonen-98",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over de schutting",
         "klimt",
@@ -1550,6 +1746,8 @@
     {
       "id": "wonen-99",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "aan zijn poot",
         "heeft",
@@ -1564,6 +1762,8 @@
     {
       "id": "wonen-100",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "door onze straat",
         "fietsen",
@@ -1580,6 +1780,8 @@
     {
       "id": "wonen-101",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "altijd",
         "de wijkkrant",
@@ -1598,6 +1800,8 @@
     {
       "id": "wonen-102",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "over de nieuwe flat",
         "het is logisch",
@@ -1614,6 +1818,8 @@
     {
       "id": "wonen-103",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 2,
       "parts": [
         "met de verhuizing?",
         "gelukt",
@@ -1627,6 +1833,8 @@
     {
       "id": "wonen-104",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "de maten",
         "wat",
@@ -1641,6 +1849,8 @@
     {
       "id": "wonen-105",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "niet vinden",
         "mijn messen en borden",
@@ -1658,6 +1868,8 @@
     {
       "id": "wonen-106",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "aan de nieuwe buren",
         "voor",
@@ -1676,6 +1888,8 @@
     {
       "id": "wonen-107",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 2,
       "parts": [
         "met de verhuizing",
         "help ik",
@@ -1692,6 +1906,8 @@
     {
       "id": "wonen-108",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "vind je",
         "van het nieuwe huis?",
@@ -1705,6 +1921,8 @@
     {
       "id": "wonen-109",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 4,
       "parts": [
         "bij de gemeente",
         "moet u zich",
@@ -1723,6 +1941,8 @@
     {
       "id": "wonen-110",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "langs",
         "de verhuurder",
@@ -1742,6 +1962,8 @@
     {
       "id": "wonen-111",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "voor mij",
         "doet mijn buurvrouw",
@@ -1758,6 +1980,8 @@
     {
       "id": "wonen-112",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 1,
       "parts": [
         "overal",
         "afval",
@@ -1774,6 +1998,8 @@
     {
       "id": "wonen-113",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een klein appartement",
         "voor een korte periode",
@@ -1791,6 +2017,8 @@
     {
       "id": "wonen-114",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "een nieuwe speeltuin",
         "wil",
@@ -1808,6 +2036,8 @@
     {
       "id": "wonen-115",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "met mijn jonge buren",
         "een goede relatie",
@@ -1821,6 +2051,8 @@
     {
       "id": "wonen-116",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "rijdt",
         "in de richting",
@@ -1835,6 +2067,8 @@
     {
       "id": "wonen-117",
       "topic": "wonen",
+      "grammar": "bijzin",
+      "level": 5,
       "parts": [
         "omdat de buren",
         "voor zijn toets",
@@ -1853,6 +2087,8 @@
     {
       "id": "wonen-118",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "een spel",
         "de kinderen",
@@ -1870,6 +2106,8 @@
     {
       "id": "wonen-119",
       "topic": "wonen",
+      "grammar": "nevenschikkend",
+      "level": 3,
       "parts": [
         "want het is",
         "op ons nieuwe huis",
@@ -1884,6 +2122,8 @@
     {
       "id": "wonen-120",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "voor het afval",
         "heeft",
@@ -1898,6 +2138,8 @@
     {
       "id": "wonen-121",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "heel hard",
         "staat",
@@ -1914,6 +2156,8 @@
     {
       "id": "wonen-122",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "mijn borg",
         "krijg ik",
@@ -1928,6 +2172,8 @@
     {
       "id": "wonen-123",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 3,
       "parts": [
         "is erg moeilijk",
         "van onze straatnaam",
@@ -1941,6 +2187,8 @@
     {
       "id": "wonen-124",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over de hoge huur",
         "verbaasd",
@@ -1954,6 +2202,8 @@
     {
       "id": "wonen-125",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 4,
       "parts": [
         "is dit huis",
         "in vergelijking",
@@ -1970,6 +2220,8 @@
     {
       "id": "wonen-126",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "naar",
         "mijn oude buurt",
@@ -1983,6 +2235,8 @@
     {
       "id": "wonen-127",
       "topic": "wonen",
+      "grammar": "scheidbaar",
+      "level": 3,
       "parts": [
         "op",
         "de keuken",
@@ -2003,6 +2257,8 @@
     {
       "id": "wonen-128",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "verhuisd",
         "ben ik",
@@ -2019,6 +2275,8 @@
     {
       "id": "wonen-129",
       "topic": "wonen",
+      "grammar": "perfectum",
+      "level": 3,
       "parts": [
         "is flink",
         "de waarde",
@@ -2033,6 +2291,8 @@
     {
       "id": "wonen-130",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "een huis",
         "is",
@@ -2047,6 +2307,8 @@
     {
       "id": "wonen-131",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "ook per e-mail",
         "u kunt",
@@ -2062,6 +2324,8 @@
     {
       "id": "wonen-132",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "niet goed lopen",
         "mijn buurvrouw",
@@ -2078,6 +2342,8 @@
     {
       "id": "wonen-133",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "over het gat",
         "me zorgen",
@@ -2092,6 +2358,8 @@
     {
       "id": "wonen-134",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "zoete koekjes",
         "de buurvrouw",
@@ -2107,6 +2375,8 @@
     {
       "id": "wonen-135",
       "topic": "wonen",
+      "grammar": "inversie",
+      "level": 3,
       "parts": [
         "de sleutel",
         "krijgen wij",
@@ -2125,6 +2395,8 @@
     {
       "id": "wonen-136",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 3,
       "parts": [
         "in dit huis",
         "wij blijven",
@@ -2141,6 +2413,8 @@
     {
       "id": "wonen-137",
       "topic": "wonen",
+      "grammar": "om-te",
+      "level": 4,
       "parts": [
         "een grotere woning",
         "is er",
@@ -2155,6 +2429,8 @@
     {
       "id": "wonen-138",
       "topic": "wonen",
+      "grammar": "modaal",
+      "level": 2,
       "parts": [
         "uw ladder",
         "mag ik",
@@ -2171,6 +2447,8 @@
     {
       "id": "wonen-139",
       "topic": "wonen",
+      "grammar": "vraag",
+      "level": 2,
       "parts": [
         "per maand?",
         "hoeveel huur",
@@ -2184,6 +2462,8 @@
     {
       "id": "wonen-140",
       "topic": "wonen",
+      "grammar": "basis",
+      "level": 2,
       "parts": [
         "al twee weken",
         "is",

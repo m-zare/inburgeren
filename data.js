@@ -26,7 +26,188 @@ const TOPICS = [
   }
 ];
 
+const GRAMMAR = [
+  {
+    "id": "basis",
+    "name": "Basic order",
+    "info": "Subject – verb – rest. After the verb: time, manner, place."
+  },
+  {
+    "id": "inversie",
+    "name": "Inversion",
+    "info": "Something else comes first, so the verb comes before the subject."
+  },
+  {
+    "id": "vraag",
+    "name": "Questions & commands",
+    "info": "The verb comes first, or right after the question word."
+  },
+  {
+    "id": "modaal",
+    "name": "Modal verb + infinitive",
+    "info": "kunnen, moeten, willen, mogen, gaan … in 2nd place, the infinitive at the end."
+  },
+  {
+    "id": "scheidbaar",
+    "name": "Separable verbs",
+    "info": "The verb is 2nd, its particle (op, mee, aan …) goes to the end."
+  },
+  {
+    "id": "perfectum",
+    "name": "Perfect tense",
+    "info": "heeft/is in 2nd place, the past participle (ge…) at the end."
+  },
+  {
+    "id": "nevenschikkend",
+    "name": "Two main clauses",
+    "info": "en, maar, want, of, dus: both parts keep normal main-clause order."
+  },
+  {
+    "id": "om-te",
+    "name": "om … te + infinitive",
+    "info": "te + infinitive at the end of the phrase."
+  },
+  {
+    "id": "bijzin",
+    "name": "Subordinate clause",
+    "info": "After omdat, dat, als, die … the verbs go to the end."
+  }
+];
+
 const EXERCISES = [
+ {
+  "id": "werk-69",
+  "topic": "werk",
+  "parts": [
+   "geen geheim",
+   "is",
+   "mijn salaris"
+  ],
+  "answer": "mijn salaris is geen geheim",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the rest.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "werk-42",
+  "topic": "werk",
+  "parts": [
+   "op mijn werk",
+   "veilig",
+   "ik voel me"
+  ],
+  "answer": "ik voel me veilig op mijn werk",
+  "alternatives": [
+   "op mijn werk voel ik me veilig"
+  ],
+  "hint": "Reflexive verb \"zich voelen\": \"me\" comes right after the verb (or after the subject in inversion).",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "werk-91",
+  "topic": "werk",
+  "parts": [
+   "uit Nederland",
+   "alleen producten",
+   "verkoopt",
+   "deze winkel"
+  ],
+  "answer": "deze winkel verkoopt alleen producten uit Nederland",
+  "alternatives": [],
+  "hint": "Subject first, verb 2nd; \"alleen\" comes just before what it limits.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-107",
+  "topic": "werk",
+  "parts": [
+   "voor het prettige gesprek",
+   "u",
+   "ik dank"
+  ],
+  "answer": "ik dank u voor het prettige gesprek",
+  "alternatives": [],
+  "hint": "Subject, verb, object (u), then the \"voor\" phrase.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-16",
+  "topic": "werk",
+  "parts": [
+   "over haar nieuwe baan",
+   "erg tevreden",
+   "zij is"
+  ],
+  "answer": "zij is erg tevreden over haar nieuwe baan",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the rest; \"tevreden over\" = satisfied with.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-64",
+  "topic": "werk",
+  "parts": [
+   "een heel bijzondere dag",
+   "was",
+   "mijn eerste werkdag"
+  ],
+  "answer": "mijn eerste werkdag was een heel bijzondere dag",
+  "alternatives": [],
+  "hint": "Subject first, past tense verb \"was\" in 2nd place.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-81",
+  "topic": "werk",
+  "parts": [
+   "in de technische sector",
+   "veel werk",
+   "er is"
+  ],
+  "answer": "er is veel werk in de technische sector",
+  "alternatives": [
+   "in de technische sector is er veel werk"
+  ],
+  "hint": "\"er is\" = there is; with the place first, invert: \"is er\".",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-84",
+  "topic": "werk",
+  "parts": [
+   "is erg aantrekkelijk",
+   "van deze baan",
+   "het salaris"
+  ],
+  "answer": "het salaris van deze baan is erg aantrekkelijk",
+  "alternatives": [],
+  "hint": "The subject \"het salaris van deze baan\" is one block; the verb follows it.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "werk-114",
+  "topic": "werk",
+  "parts": [
+   "in de laatste fase",
+   "nu",
+   "het project is"
+  ],
+  "answer": "het project is nu in de laatste fase",
+  "alternatives": [
+   "nu is het project in de laatste fase"
+  ],
+  "hint": "Verb 2nd; \"nu\" comes right after the verb.",
+  "grammar": "basis",
+  "level": 2
+ },
  {
   "id": "supermarkt",
   "topic": "werk",
@@ -41,240 +222,9 @@ const EXERCISES = [
    "hij werkt in de supermarkt met zijn beste vriend",
    "in de supermarkt werkt hij met zijn beste vriend"
   ],
-  "hint": "TMP rule: Manier (met zijn beste vriend) before Plaats (in de supermarkt)."
- },
- {
-  "id": "werk-01",
-  "topic": "werk",
-  "parts": [
-   "omdat ik ziek ben",
-   "neemt morgen",
-   "mijn collega",
-   "mijn taken over,"
-  ],
-  "answer": "mijn collega neemt morgen mijn taken over, omdat ik ziek ben",
-  "alternatives": [
-   "omdat ik ziek ben, neemt mijn collega morgen mijn taken over",
-   "morgen neemt mijn collega mijn taken over, omdat ik ziek ben"
-  ],
-  "hint": "Separable verb \"overnemen\": \"neemt\" is 2nd, \"over\" goes to the end; \"omdat\" sends \"ben\" to the end."
- },
- {
-  "id": "werk-02",
-  "topic": "werk",
-  "parts": [
-   "want",
-   "al sinds vijf uur wakker",
-   "ik ben moe,",
-   "ik ben"
-  ],
-  "answer": "ik ben moe, want ik ben al sinds vijf uur wakker",
-  "alternatives": [],
-  "hint": "\"want\" does not change the word order: after \"want\" comes subject + verb, as normal."
- },
- {
-  "id": "werk-03",
-  "topic": "werk",
-  "parts": [
-   "met de sleutel af",
-   "de winkel",
-   "sluit ik",
-   "om zes uur"
-  ],
-  "answer": "om zes uur sluit ik de winkel met de sleutel af",
-  "alternatives": [
-   "ik sluit om zes uur de winkel met de sleutel af",
-   "ik sluit de winkel om zes uur met de sleutel af"
-  ],
-  "hint": "Time first, so inversion (sluit ik); the particle \"af\" of \"afsluiten\" goes to the very end."
- },
- {
-  "id": "werk-04",
-  "topic": "werk",
-  "parts": [
-   "op de kast",
-   "leggen",
-   "ik zal",
-   "een briefje voor mijn collega"
-  ],
-  "answer": "ik zal een briefje voor mijn collega op de kast leggen",
-  "alternatives": [],
-  "hint": "\"zullen\" is in 2nd place; the infinitive (leggen) goes to the end."
- },
- {
-  "id": "werk-05",
-  "topic": "werk",
-  "parts": [
-   "legt de telefoon",
-   "neer",
-   "de klant is boos",
-   "en"
-  ],
-  "answer": "de klant is boos en legt de telefoon neer",
-  "alternatives": [],
-  "hint": "\"neerleggen\" is separable: \"legt\" in 2nd place, \"neer\" at the end."
- },
- {
-  "id": "werk-06",
-  "topic": "werk",
-  "parts": [
-   "ook",
-   "in een andere maat?",
-   "heeft u",
-   "deze broek"
-  ],
-  "answer": "heeft u deze broek ook in een andere maat?",
-  "alternatives": [],
-  "hint": "Yes/no question: the verb comes first, then the subject."
- },
- {
-  "id": "werk-07",
-  "topic": "werk",
-  "parts": [
-   "die goed Nederlands spreekt",
-   "een collega",
-   "zoeken",
-   "wij"
-  ],
-  "answer": "wij zoeken een collega die goed Nederlands spreekt",
-  "alternatives": [],
-  "hint": "In a \"die\" clause (who/that) the verb goes to the end."
- },
- {
-  "id": "werk-08",
-  "topic": "werk",
-  "parts": [
-   "met de directeur",
-   "gehad",
-   "ik heb",
-   "een prettig gesprek",
-   "gisteren"
-  ],
-  "answer": "ik heb gisteren een prettig gesprek met de directeur gehad",
-  "alternatives": [
-   "gisteren heb ik een prettig gesprek met de directeur gehad"
-  ],
-  "hint": "Perfect tense: \"heb\" in 2nd place, the participle \"gehad\" at the end."
- },
- {
-  "id": "werk-09",
-  "topic": "werk",
-  "parts": [
-   "nog niet definitief is",
-   "de chef zegt",
-   "de beslissing",
-   "dat"
-  ],
-  "answer": "de chef zegt dat de beslissing nog niet definitief is",
-  "alternatives": [],
-  "hint": "\"dat\" starts a subordinate clause: the verb \"is\" goes to the end."
- },
- {
-  "id": "werk-10",
-  "topic": "werk",
-  "parts": [
-   "van negen tot vijf uur",
-   "werk ik",
-   "meestal"
-  ],
-  "answer": "meestal werk ik van negen tot vijf uur",
-  "alternatives": [
-   "ik werk meestal van negen tot vijf uur"
-  ],
-  "hint": "When an adverb like \"meestal\" comes first, the verb stays 2nd and the subject follows it."
- },
- {
-  "id": "werk-11",
-  "topic": "werk",
-  "parts": [
-   "want de winkel is gesloten",
-   "niet te werken,",
-   "je hoeft morgen"
-  ],
-  "answer": "je hoeft morgen niet te werken, want de winkel is gesloten",
-  "alternatives": [],
-  "hint": "\"hoeven\" + niet + te + infinitive at the end; \"want\" keeps normal word order."
- },
- {
-  "id": "werk-12",
-  "topic": "werk",
-  "parts": [
-   "herhalen?",
-   "de vraag",
-   "kunt u",
-   "nog een keer"
-  ],
-  "answer": "kunt u de vraag nog een keer herhalen?",
-  "alternatives": [],
-  "hint": "Polite question: modal verb first, infinitive (herhalen) at the end."
- },
- {
-  "id": "werk-13",
-  "topic": "werk",
-  "parts": [
-   "langzaam uit",
-   "de nieuwe methode",
-   "legt",
-   "de chef"
-  ],
-  "answer": "de chef legt de nieuwe methode langzaam uit",
-  "alternatives": [
-   "de chef legt langzaam de nieuwe methode uit"
-  ],
-  "hint": "Separable verb \"uitleggen\": \"legt\" 2nd, \"uit\" at the end."
- },
- {
-  "id": "werk-14",
-  "topic": "werk",
-  "parts": [
-   "bel ik",
-   "meneer Jansen",
-   "zodra ik thuis ben,"
-  ],
-  "answer": "zodra ik thuis ben, bel ik meneer Jansen",
-  "alternatives": [
-   "ik bel meneer Jansen zodra ik thuis ben"
-  ],
-  "hint": "\"zodra\" sends its verb to the end; a sentence that starts with that clause continues with verb + subject."
- },
- {
-  "id": "werk-15",
-  "topic": "werk",
-  "parts": [
-   "te laat op mijn werk kom",
-   "ik ben bang",
-   "dat ik morgen"
-  ],
-  "answer": "ik ben bang dat ik morgen te laat op mijn werk kom",
-  "alternatives": [
-   "ik ben bang dat ik morgen op mijn werk te laat kom"
-  ],
-  "hint": "After \"dat\" the verb (kom) goes to the end of the sentence."
- },
- {
-  "id": "werk-16",
-  "topic": "werk",
-  "parts": [
-   "over haar nieuwe baan",
-   "erg tevreden",
-   "zij is"
-  ],
-  "answer": "zij is erg tevreden over haar nieuwe baan",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the rest; \"tevreden over\" = satisfied with."
- },
- {
-  "id": "werk-17",
-  "topic": "werk",
-  "parts": [
-   "en maakt",
-   "mooie beelden",
-   "is kunstenaar",
-   "mijn vriendin"
-  ],
-  "answer": "mijn vriendin is kunstenaar en maakt mooie beelden",
-  "alternatives": [],
-  "hint": "Two main clauses joined by \"en\": both have the verb right after the subject."
+  "hint": "TMP rule: Manier (met zijn beste vriend) before Plaats (in de supermarkt).",
+  "grammar": "basis",
+  "level": 2
  },
  {
   "id": "werk-18",
@@ -286,153 +236,9 @@ const EXERCISES = [
   ],
   "answer": "de eigenaar van het restaurant kookt zelf heerlijke vis",
   "alternatives": [],
-  "hint": "The whole subject \"de eigenaar van het restaurant\" counts as one place; the verb follows it."
- },
- {
-  "id": "werk-19",
-  "topic": "werk",
-  "parts": [
-   "op het terras",
-   "is het",
-   "altijd erg druk",
-   "in de zomer"
-  ],
-  "answer": "in de zomer is het op het terras altijd erg druk",
-  "alternatives": [
-   "op het terras is het in de zomer altijd erg druk",
-   "het is in de zomer op het terras altijd erg druk"
-  ],
-  "hint": "Time first, so inversion (is het); time comes before place."
- },
- {
-  "id": "werk-20",
-  "topic": "werk",
-  "parts": [
-   "om zes uur op",
-   "sta ik",
-   "in de winter"
-  ],
-  "answer": "in de winter sta ik om zes uur op",
-  "alternatives": [
-   "ik sta in de winter om zes uur op"
-  ],
-  "hint": "Separable verb \"opstaan\": \"sta\" 2nd, \"op\" at the end."
- },
- {
-  "id": "werk-21",
-  "topic": "werk",
-  "parts": [
-   "neem ik",
-   "als de trein",
-   "de bus",
-   "niet rijdt,"
-  ],
-  "answer": "als de trein niet rijdt, neem ik de bus",
-  "alternatives": [
-   "ik neem de bus als de trein niet rijdt"
-  ],
-  "hint": "\"als\" sends its verb (rijdt) to the end; after the \"als\" clause comes verb + subject."
- },
- {
-  "id": "werk-22",
-  "topic": "werk",
-  "parts": [
-   "naar mijn werk",
-   "ongeveer veertig kilometer",
-   "ik reis",
-   "elke dag"
-  ],
-  "answer": "ik reis elke dag ongeveer veertig kilometer naar mijn werk",
-  "alternatives": [
-   "elke dag reis ik ongeveer veertig kilometer naar mijn werk"
-  ],
-  "hint": "Time (elke dag) before place (naar mijn werk)."
- },
- {
-  "id": "werk-23",
-  "topic": "werk",
-  "parts": [
-   "een biertje",
-   "na het werk",
-   "drinken wij",
-   "op vrijdag"
-  ],
-  "answer": "op vrijdag drinken wij na het werk een biertje",
-  "alternatives": [
-   "wij drinken op vrijdag na het werk een biertje",
-   "na het werk drinken wij op vrijdag een biertje"
-  ],
-  "hint": "Time first, so inversion: verb (drinken) before subject (wij)."
- },
- {
-  "id": "werk-24",
-  "topic": "werk",
-  "parts": [
-   "een interessant artikel",
-   "staat",
-   "over de economie",
-   "in de krant"
-  ],
-  "answer": "in de krant staat een interessant artikel over de economie",
-  "alternatives": [],
-  "hint": "Place first, so the verb comes 2nd and the subject (een interessant artikel) after it."
- },
- {
-  "id": "werk-25",
-  "topic": "werk",
-  "parts": [
-   "het huwelijk van onze collega",
-   "vieren",
-   "wij",
-   "vrijdag"
-  ],
-  "answer": "vrijdag vieren wij het huwelijk van onze collega",
-  "alternatives": [
-   "wij vieren vrijdag het huwelijk van onze collega"
-  ],
-  "hint": "Time first, so inversion: \"vieren wij\"."
- },
- {
-  "id": "werk-26",
-  "topic": "werk",
-  "parts": [
-   "aan de cursus?",
-   "ook mee",
-   "doe jij",
-   "zaterdag"
-  ],
-  "answer": "doe jij zaterdag ook mee aan de cursus?",
-  "alternatives": [
-   "doe jij zaterdag ook aan de cursus mee?"
-  ],
-  "hint": "Yes/no question with separable \"meedoen\": verb first, \"mee\" near the end."
- },
- {
-  "id": "werk-27",
-  "topic": "werk",
-  "parts": [
-   "een kop koffie aan",
-   "zij biedt",
-   "de klant"
-  ],
-  "answer": "zij biedt de klant een kop koffie aan",
-  "alternatives": [],
-  "hint": "Separable verb \"aanbieden\": \"biedt\" 2nd, \"aan\" at the end."
- },
- {
-  "id": "werk-28",
-  "topic": "werk",
-  "parts": [
-   "de deur van de winkel",
-   "open",
-   "doe ik",
-   "om negen uur"
-  ],
-  "answer": "om negen uur doe ik de deur van de winkel open",
-  "alternatives": [
-   "ik doe om negen uur de deur van de winkel open"
-  ],
-  "hint": "Separable verb \"opendoen\": \"doe\" 2nd, \"open\" at the end."
+  "hint": "The whole subject \"de eigenaar van het restaurant\" counts as one place; the verb follows it.",
+  "grammar": "basis",
+  "level": 2
  },
  {
   "id": "werk-29",
@@ -447,140 +253,26 @@ const EXERCISES = [
   "alternatives": [
    "een eigen restaurant in het noorden is mijn droom"
   ],
-  "hint": "Simple main clause: subject, verb in 2nd place, then the rest."
+  "hint": "Simple main clause: subject, verb in 2nd place, then the rest.",
+  "grammar": "basis",
+  "level": 2
  },
  {
-  "id": "werk-30",
+  "id": "werk-22",
   "topic": "werk",
   "parts": [
-   "als bewaker",
-   "werkte",
-   "in de gevangenis",
-   "mijn oom",
-   "vroeger"
+   "naar mijn werk",
+   "ongeveer veertig kilometer",
+   "ik reis",
+   "elke dag"
   ],
-  "answer": "vroeger werkte mijn oom als bewaker in de gevangenis",
+  "answer": "ik reis elke dag ongeveer veertig kilometer naar mijn werk",
   "alternatives": [
-   "mijn oom werkte vroeger als bewaker in de gevangenis"
+   "elke dag reis ik ongeveer veertig kilometer naar mijn werk"
   ],
-  "hint": "Time word first (vroeger), so inversion: \"werkte mijn oom\"."
- },
- {
-  "id": "werk-31",
-  "topic": "werk",
-  "parts": [
-   "geboren",
-   "in een klein dorp",
-   "in 1990",
-   "ik ben"
-  ],
-  "answer": "ik ben in 1990 in een klein dorp geboren",
-  "alternatives": [
-   "in 1990 ben ik in een klein dorp geboren"
-  ],
-  "hint": "\"ik ben geboren\": the participle \"geboren\" goes to the end; time before place."
- },
- {
-  "id": "werk-32",
-  "topic": "werk",
-  "parts": [
-   "gestudeerd",
-   "aan de universiteit",
-   "twee jaar geschiedenis",
-   "ik heb"
-  ],
-  "answer": "ik heb twee jaar geschiedenis aan de universiteit gestudeerd",
-  "alternatives": [
-   "ik heb twee jaar aan de universiteit geschiedenis gestudeerd"
-  ],
-  "hint": "Perfect tense: \"heb\" 2nd, participle \"gestudeerd\" at the end."
- },
- {
-  "id": "werk-33",
-  "topic": "werk",
-  "parts": [
-   "tussen een vast",
-   "wat is",
-   "en een tijdelijk contract?",
-   "het verschil"
-  ],
-  "answer": "wat is het verschil tussen een vast en een tijdelijk contract?",
-  "alternatives": [],
-  "hint": "Question word first, then the verb."
- },
- {
-  "id": "werk-34",
-  "topic": "werk",
-  "parts": [
-   "weten",
-   "wil graag",
-   "de reden",
-   "meneer Jansen"
-  ],
-  "answer": "meneer Jansen wil graag de reden weten",
-  "alternatives": [
-   "meneer Jansen wil de reden graag weten"
-  ],
-  "hint": "Modal verb (wil) 2nd, infinitive (weten) at the end."
- },
- {
-  "id": "werk-35",
-  "topic": "werk",
-  "parts": [
-   "advies geven",
-   "over mijn contract?",
-   "kunt u mij"
-  ],
-  "answer": "kunt u mij advies geven over mijn contract?",
-  "alternatives": [
-   "kunt u mij over mijn contract advies geven?"
-  ],
-  "hint": "Question: modal verb first; \"over mijn contract\" may also come after the infinitive."
- },
- {
-  "id": "werk-36",
-  "topic": "werk",
-  "parts": [
-   "van het bedrijf",
-   "gekregen",
-   "nog geen antwoord",
-   "ik heb"
-  ],
-  "answer": "ik heb nog geen antwoord van het bedrijf gekregen",
-  "alternatives": [
-   "ik heb van het bedrijf nog geen antwoord gekregen"
-  ],
-  "hint": "Perfect tense: \"heb\" 2nd, participle \"gekregen\" at the end."
- },
- {
-  "id": "werk-37",
-  "topic": "werk",
-  "parts": [
-   "want je moet",
-   "sterk zijn",
-   "is niet gemakkelijk,",
-   "dit werk"
-  ],
-  "answer": "dit werk is niet gemakkelijk, want je moet sterk zijn",
-  "alternatives": [],
-  "hint": "After \"want\" normal order: subject, verb, ... infinitive (zijn) at the end."
- },
- {
-  "id": "werk-38",
-  "topic": "werk",
-  "parts": [
-   "voorzichtig zijn",
-   "met het vuur",
-   "moet je",
-   "in de keuken"
-  ],
-  "answer": "in de keuken moet je voorzichtig zijn met het vuur",
-  "alternatives": [
-   "je moet in de keuken voorzichtig zijn met het vuur",
-   "in de keuken moet je met het vuur voorzichtig zijn",
-   "je moet in de keuken met het vuur voorzichtig zijn"
-  ],
-  "hint": "Place first, so inversion (moet je); \"zijn\" goes to the end of the middle part."
+  "hint": "Time (elke dag) before place (naar mijn werk).",
+  "grammar": "basis",
+  "level": 2
  },
  {
   "id": "werk-39",
@@ -595,61 +287,110 @@ const EXERCISES = [
   "alternatives": [
    "elke ochtend zet ik een pot thee voor mijn collega's"
   ],
-  "hint": "Time (elke ochtend) comes early, straight after the verb."
+  "hint": "Time (elke ochtend) comes early, straight after the verb.",
+  "grammar": "basis",
+  "level": 2
  },
  {
-  "id": "werk-40",
+  "id": "werk-60",
   "topic": "werk",
   "parts": [
-   "zetten?",
-   "in de gang",
-   "mag ik",
-   "mijn koffer even"
+   "naar het bedrijf",
+   "met een foto",
+   "ik stuur",
+   "mijn cv"
   ],
-  "answer": "mag ik mijn koffer even in de gang zetten?",
+  "answer": "ik stuur mijn cv met een foto naar het bedrijf",
   "alternatives": [],
-  "hint": "Question with a modal: \"mag ik\" first, infinitive (zetten) at the end."
+  "hint": "Manner (met een foto) before place (naar het bedrijf).",
+  "grammar": "basis",
+  "level": 2
  },
  {
-  "id": "werk-41",
+  "id": "werk-70",
   "topic": "werk",
   "parts": [
-   "want ik ben",
-   "met mensen,",
-   "erg sociaal",
-   "ik werk graag"
+   "over het nieuwe contract",
+   "ik twijfel",
+   "nog"
   ],
-  "answer": "ik werk graag met mensen, want ik ben erg sociaal",
+  "answer": "ik twijfel nog over het nieuwe contract",
   "alternatives": [],
-  "hint": "\"graag\" comes right after the verb; \"want\" keeps normal word order."
+  "hint": "Verb in 2nd place; \"nog\" comes right after the verb.",
+  "grammar": "basis",
+  "level": 3
  },
  {
-  "id": "werk-42",
+  "id": "werk-92",
   "topic": "werk",
   "parts": [
-   "op mijn werk",
-   "veilig",
-   "ik voel me"
+   "tussen mannen en vrouwen",
+   "wij maken",
+   "geen onderscheid"
   ],
-  "answer": "ik voel me veilig op mijn werk",
-  "alternatives": [
-   "op mijn werk voel ik me veilig"
-  ],
-  "hint": "Reflexive verb \"zich voelen\": \"me\" comes right after the verb (or after the subject in inversion)."
+  "answer": "wij maken geen onderscheid tussen mannen en vrouwen",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, object, then the \"tussen\" phrase.",
+  "grammar": "basis",
+  "level": 3
  },
  {
-  "id": "werk-43",
+  "id": "werk-108",
   "topic": "werk",
   "parts": [
-   "heb ik",
-   "een druk leven",
-   "door mijn werk en mijn gezin"
+   "van mijn werk",
+   "ik houd echt",
+   "in de kledingzaak"
   ],
-  "answer": "door mijn werk en mijn gezin heb ik een druk leven",
-  "alternatives": [
-   "ik heb een druk leven door mijn werk en mijn gezin"
+  "answer": "ik houd echt van mijn werk in de kledingzaak",
+  "alternatives": [],
+  "hint": "\"houden van\" = to love; \"echt\" comes right after the verb.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "werk-113",
+  "topic": "werk",
+  "parts": [
+   "van de nieuwe regels",
+   "ik ben",
+   "op de hoogte"
   ],
-  "hint": "A long first part still counts as one place, so the verb follows: \"heb ik\"."
+  "answer": "ik ben op de hoogte van de nieuwe regels",
+  "alternatives": [],
+  "hint": "\"op de hoogte zijn van\" = to be informed about; verb 2nd.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "werk-115",
+  "topic": "werk",
+  "parts": [
+   "in de winkel",
+   "veel veranderingen",
+   "wil",
+   "de nieuwe chef"
+  ],
+  "answer": "de nieuwe chef wil veel veranderingen in de winkel",
+  "alternatives": [],
+  "hint": "Subject first, verb 2nd; here \"wil\" is used without an infinitive.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "werk-118",
+  "topic": "werk",
+  "parts": [
+   "in een drukke straat",
+   "is",
+   "in het centrum",
+   "de kledingzaak"
+  ],
+  "answer": "de kledingzaak is in een drukke straat in het centrum",
+  "alternatives": [],
+  "hint": "Subject first, verb 2nd; the smaller place (straat) before the bigger one (centrum).",
+  "grammar": "basis",
+  "level": 3
  },
  {
   "id": "werk-44",
@@ -664,437 +405,38 @@ const EXERCISES = [
   "alternatives": [
    "door de oude stoel op kantoor heb ik pijn in mijn rug"
   ],
-  "hint": "Subject + verb, then the rest; if you start with \"door ...\", invert: \"heb ik\"."
+  "hint": "Subject + verb, then the rest; if you start with \"door ...\", invert: \"heb ik\".",
+  "grammar": "basis",
+  "level": 3
  },
  {
-  "id": "werk-45",
+  "id": "werk-98",
   "topic": "werk",
   "parts": [
-   "dus ik blijf",
-   "ik heb pijn",
-   "vandaag thuis",
-   "in mijn buik,"
+   "op de bodem van mijn tas",
+   "ligt",
+   "de sleutel van de winkel"
   ],
-  "answer": "ik heb pijn in mijn buik, dus ik blijf vandaag thuis",
-  "alternatives": [
-   "ik heb pijn in mijn buik, dus blijf ik vandaag thuis"
-  ],
-  "hint": "After \"dus\" both orders are fine: \"dus ik blijf\" or \"dus blijf ik\"."
- },
- {
-  "id": "werk-46",
-  "topic": "werk",
-  "parts": [
-   "pijn",
-   "doen mijn voeten",
-   "na een lange dag"
-  ],
-  "answer": "na een lange dag doen mijn voeten pijn",
-  "alternatives": [
-   "mijn voeten doen pijn na een lange dag"
-  ],
-  "hint": "Time first, so inversion: \"doen mijn voeten\"."
- },
- {
-  "id": "werk-47",
-  "topic": "werk",
-  "parts": [
-   "lekker rusten",
-   "ga ik",
-   "in het weekend"
-  ],
-  "answer": "in het weekend ga ik lekker rusten",
-  "alternatives": [
-   "ik ga in het weekend lekker rusten"
-  ],
-  "hint": "\"gaan\" + infinitive: \"ga\" 2nd, \"rusten\" at the end."
- },
- {
-  "id": "werk-48",
-  "topic": "werk",
-  "parts": [
-   "met mij",
-   "ruilen?",
-   "wil jij",
-   "welke dienst"
-  ],
-  "answer": "welke dienst wil jij met mij ruilen?",
+  "answer": "de sleutel van de winkel ligt op de bodem van mijn tas",
   "alternatives": [],
-  "hint": "Question: \"welke dienst\" first, then the modal verb, infinitive at the end."
+  "hint": "Subject block first, verb \"ligt\" 2nd, then the place.",
+  "grammar": "basis",
+  "level": 3
  },
  {
-  "id": "werk-49",
+  "id": "werk-97",
   "topic": "werk",
   "parts": [
-   "praten",
-   "met de directeur",
-   "ik ga morgen",
-   "persoonlijk"
+   "van de patiënt",
+   "voelt",
+   "aan het voorhoofd",
+   "de verpleegkundige"
   ],
-  "answer": "ik ga morgen persoonlijk met de directeur praten",
-  "alternatives": [
-   "morgen ga ik persoonlijk met de directeur praten"
-  ],
-  "hint": "TMP: time (morgen), manner (persoonlijk), then \"met de directeur\"; infinitive at the end."
- },
- {
-  "id": "werk-50",
-  "topic": "werk",
-  "parts": [
-   "verdien ik goed",
-   "het werk is leuk",
-   "en bovendien"
-  ],
-  "answer": "het werk is leuk en bovendien verdien ik goed",
+  "answer": "de verpleegkundige voelt aan het voorhoofd van de patiënt",
   "alternatives": [],
-  "hint": "\"bovendien\" counts as the first place, so inversion follows: \"verdien ik\"."
- },
- {
-  "id": "werk-51",
-  "topic": "werk",
-  "parts": [
-   "op vakantie",
-   "ben ik",
-   "volgende week",
-   "overigens"
-  ],
-  "answer": "overigens ben ik volgende week op vakantie",
-  "alternatives": [
-   "ik ben overigens volgende week op vakantie"
-  ],
-  "hint": "\"overigens\" first, so inversion: \"ben ik\"."
- },
- {
-  "id": "werk-52",
-  "topic": "werk",
-  "parts": [
-   "verloren",
-   "ergens in de bus",
-   "ik heb",
-   "mijn portemonnee"
-  ],
-  "answer": "ik heb mijn portemonnee ergens in de bus verloren",
-  "alternatives": [
-   "ik heb ergens in de bus mijn portemonnee verloren"
-  ],
-  "hint": "Perfect tense: \"heb\" 2nd, participle \"verloren\" at the end."
- },
- {
-  "id": "werk-53",
-  "topic": "werk",
-  "parts": [
-   "is het risico",
-   "zonder helm",
-   "te groot"
-  ],
-  "answer": "zonder helm is het risico te groot",
-  "alternatives": [
-   "het risico is zonder helm te groot"
-  ],
-  "hint": "Starting with \"zonder helm\" causes inversion: \"is het risico\"."
- },
- {
-  "id": "werk-54",
-  "topic": "werk",
-  "parts": [
-   "snel opgelost",
-   "het probleem met de computer",
-   "hij heeft"
-  ],
-  "answer": "hij heeft het probleem met de computer snel opgelost",
-  "alternatives": [],
-  "hint": "Perfect tense: \"heeft\" 2nd, participle \"opgelost\" at the end."
- },
- {
-  "id": "werk-55",
-  "topic": "werk",
-  "parts": [
-   "aan de chef vragen",
-   "zelf",
-   "dat moet je"
-  ],
-  "answer": "dat moet je zelf aan de chef vragen",
-  "alternatives": [
-   "je moet dat zelf aan de chef vragen"
-  ],
-  "hint": "Object \"dat\" first, so inversion (moet je); infinitive at the end."
- },
- {
-  "id": "werk-56",
-  "topic": "werk",
-  "parts": [
-   "stel je",
-   "jezelf voor",
-   "aan het begin van het gesprek"
-  ],
-  "answer": "aan het begin van het gesprek stel je jezelf voor",
-  "alternatives": [],
-  "hint": "Separable \"voorstellen\": \"stel\" 2nd (inversion after the time phrase), \"voor\" at the end."
- },
- {
-  "id": "werk-57",
-  "topic": "werk",
-  "parts": [
-   "de slaapkamers schoon",
-   "maak ik",
-   "elke ochtend",
-   "in het hotel"
-  ],
-  "answer": "in het hotel maak ik elke ochtend de slaapkamers schoon",
-  "alternatives": [
-   "ik maak elke ochtend in het hotel de slaapkamers schoon",
-   "elke ochtend maak ik in het hotel de slaapkamers schoon"
-  ],
-  "hint": "Separable \"schoonmaken\": \"maak\" 2nd, \"schoon\" at the end."
- },
- {
-  "id": "werk-58",
-  "topic": "werk",
-  "parts": [
-   "vaak afwassen",
-   "moet ik",
-   "in de keuken"
-  ],
-  "answer": "in de keuken moet ik vaak afwassen",
-  "alternatives": [
-   "ik moet in de keuken vaak afwassen"
-  ],
-  "hint": "Modal + infinitive: the separable verb stays together as infinitive at the end (afwassen)."
- },
- {
-  "id": "werk-59",
-  "topic": "werk",
-  "parts": [
-   "met mijn vriendin",
-   "samen",
-   "ik woon",
-   "sinds een jaar"
-  ],
-  "answer": "ik woon sinds een jaar samen met mijn vriendin",
-  "alternatives": [
-   "sinds een jaar woon ik samen met mijn vriendin"
-  ],
-  "hint": "Separable \"samenwonen\": \"woon\" 2nd, \"samen\" goes after the time phrase."
- },
- {
-  "id": "werk-60",
-  "topic": "werk",
-  "parts": [
-   "naar het bedrijf",
-   "met een foto",
-   "ik stuur",
-   "mijn cv"
-  ],
-  "answer": "ik stuur mijn cv met een foto naar het bedrijf",
-  "alternatives": [],
-  "hint": "Manner (met een foto) before place (naar het bedrijf)."
- },
- {
-  "id": "werk-61",
-  "topic": "werk",
-  "parts": [
-   "naar de film",
-   "gaan we",
-   "met collega's",
-   "vrijdag"
-  ],
-  "answer": "vrijdag gaan we met collega's naar de film",
-  "alternatives": [
-   "we gaan vrijdag met collega's naar de film"
-  ],
-  "hint": "TMP: time (vrijdag), manner (met collega's), place (naar de film)."
- },
- {
-  "id": "werk-62",
-  "topic": "werk",
-  "parts": [
-   "omdat ik",
-   "werk ik niet,",
-   "naar de kerk ga",
-   "op zondag"
-  ],
-  "answer": "op zondag werk ik niet, omdat ik naar de kerk ga",
-  "alternatives": [
-   "ik werk op zondag niet, omdat ik naar de kerk ga",
-   "ik werk niet op zondag, omdat ik naar de kerk ga",
-   "omdat ik naar de kerk ga, werk ik op zondag niet"
-  ],
-  "hint": "\"omdat\" sends the verb (ga) to the end."
- },
- {
-  "id": "werk-63",
-  "topic": "werk",
-  "parts": [
-   "geen speciaal diploma",
-   "nodig",
-   "heb je",
-   "voor deze baan"
-  ],
-  "answer": "voor deze baan heb je geen speciaal diploma nodig",
-  "alternatives": [],
-  "hint": "\"nodig hebben\": \"heb\" 2nd, \"nodig\" at the end."
- },
- {
-  "id": "werk-64",
-  "topic": "werk",
-  "parts": [
-   "een heel bijzondere dag",
-   "was",
-   "mijn eerste werkdag"
-  ],
-  "answer": "mijn eerste werkdag was een heel bijzondere dag",
-  "alternatives": [],
-  "hint": "Subject first, past tense verb \"was\" in 2nd place."
- },
- {
-  "id": "werk-65",
-  "topic": "werk",
-  "parts": [
-   "gewoon weer",
-   "werk ik",
-   "in de winkel",
-   "morgen"
-  ],
-  "answer": "morgen werk ik gewoon weer in de winkel",
-  "alternatives": [
-   "ik werk morgen gewoon weer in de winkel"
-  ],
-  "hint": "Time first, so inversion: \"werk ik\"."
- },
- {
-  "id": "werk-66",
-  "topic": "werk",
-  "parts": [
-   "bij een nieuw bedrijf",
-   "net begonnen",
-   "ik ben"
-  ],
-  "answer": "ik ben net begonnen bij een nieuw bedrijf",
-  "alternatives": [],
-  "hint": "Perfect with \"zijn\": \"ben\" 2nd, \"begonnen\" late in the sentence."
- },
- {
-  "id": "werk-67",
-  "topic": "werk",
-  "parts": [
-   "hier al?",
-   "werkt u",
-   "hoe lang"
-  ],
-  "answer": "hoe lang werkt u hier al?",
-  "alternatives": [],
-  "hint": "Question word first (hoe lang), then verb, then subject."
- },
- {
-  "id": "werk-68",
-  "topic": "werk",
-  "parts": [
-   "werken",
-   "voor jou",
-   "ik kan zaterdag",
-   "ja,"
-  ],
-  "answer": "ja, ik kan zaterdag voor jou werken",
-  "alternatives": [
-   "ja, zaterdag kan ik voor jou werken"
-  ],
-  "hint": "\"ja,\" does not count as a place: the sentence after it starts normally."
- },
- {
-  "id": "werk-69",
-  "topic": "werk",
-  "parts": [
-   "geen geheim",
-   "is",
-   "mijn salaris"
-  ],
-  "answer": "mijn salaris is geen geheim",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the rest."
- },
- {
-  "id": "werk-70",
-  "topic": "werk",
-  "parts": [
-   "over het nieuwe contract",
-   "ik twijfel",
-   "nog"
-  ],
-  "answer": "ik twijfel nog over het nieuwe contract",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; \"nog\" comes right after the verb."
- },
- {
-  "id": "werk-71",
-  "topic": "werk",
-  "parts": [
-   "contact op",
-   "met het uitzendbureau",
-   "ik neem morgen"
-  ],
-  "answer": "ik neem morgen contact op met het uitzendbureau",
-  "alternatives": [
-   "morgen neem ik contact op met het uitzendbureau",
-   "ik neem morgen met het uitzendbureau contact op",
-   "morgen neem ik met het uitzendbureau contact op"
-  ],
-  "hint": "\"contact opnemen met\": \"neem\" 2nd, \"op\" near the end."
- },
- {
-  "id": "werk-72",
-  "topic": "werk",
-  "parts": [
-   "bij een vereniging",
-   "als vrijwilliger",
-   "werk ik",
-   "elke zaterdag"
-  ],
-  "answer": "elke zaterdag werk ik als vrijwilliger bij een vereniging",
-  "alternatives": [
-   "ik werk elke zaterdag als vrijwilliger bij een vereniging"
-  ],
-  "hint": "Time first, so inversion: \"werk ik\"."
- },
- {
-  "id": "werk-73",
-  "topic": "werk",
-  "parts": [
-   "vroeg vertrekt",
-   "omdat mijn vlucht",
-   "vrij hebben,",
-   "ik wil vrijdag"
-  ],
-  "answer": "ik wil vrijdag vrij hebben, omdat mijn vlucht vroeg vertrekt",
-  "alternatives": [
-   "omdat mijn vlucht vroeg vertrekt, wil ik vrijdag vrij hebben"
-  ],
-  "hint": "\"omdat\" sends \"vertrekt\" to the end; modal \"wil\" + infinitive \"hebben\" at the end."
- },
- {
-  "id": "werk-74",
-  "topic": "werk",
-  "parts": [
-   "voor een kort gesprek?",
-   "tijd",
-   "heeft u morgen"
-  ],
-  "answer": "heeft u morgen tijd voor een kort gesprek?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first, then subject, then time."
- },
- {
-  "id": "werk-75",
-  "topic": "werk",
-  "parts": [
-   "werkt het",
-   "veel sneller",
-   "op deze manier"
-  ],
-  "answer": "op deze manier werkt het veel sneller",
-  "alternatives": [
-   "het werkt op deze manier veel sneller"
-  ],
-  "hint": "\"op deze manier\" first, so inversion: \"werkt het\"."
+  "hint": "Subject first, verb 2nd, then the \"aan\" phrase.",
+  "grammar": "basis",
+  "level": 4
  },
  {
   "id": "werk-76",
@@ -1109,20 +451,105 @@ const EXERCISES = [
   "alternatives": [
    "tijdens de eerste ontmoeting waren mijn toekomstige collega's erg lief"
   ],
-  "hint": "Verb \"waren\" in 2nd place; with the time phrase first, invert."
+  "hint": "Verb \"waren\" in 2nd place; with the time phrase first, invert.",
+  "grammar": "basis",
+  "level": 4
  },
  {
-  "id": "werk-77",
+  "id": "werk-120",
   "topic": "werk",
   "parts": [
-   "met melk",
-   "en suiker?",
-   "koffie",
-   "wil je"
+   "is belangrijk",
+   "tussen werk en vrije tijd",
+   "een goed evenwicht"
   ],
-  "answer": "wil je koffie met melk en suiker?",
+  "answer": "een goed evenwicht tussen werk en vrije tijd is belangrijk",
   "alternatives": [],
-  "hint": "Yes/no question: verb first, then subject."
+  "hint": "The long subject \"een goed evenwicht tussen werk en vrije tijd\" is one block; the verb follows it.",
+  "grammar": "basis",
+  "level": 4
+ },
+ {
+  "id": "werk-75",
+  "topic": "werk",
+  "parts": [
+   "werkt het",
+   "veel sneller",
+   "op deze manier"
+  ],
+  "answer": "op deze manier werkt het veel sneller",
+  "alternatives": [
+   "het werkt op deze manier veel sneller"
+  ],
+  "hint": "\"op deze manier\" first, so inversion: \"werkt het\".",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "werk-10",
+  "topic": "werk",
+  "parts": [
+   "van negen tot vijf uur",
+   "werk ik",
+   "meestal"
+  ],
+  "answer": "meestal werk ik van negen tot vijf uur",
+  "alternatives": [
+   "ik werk meestal van negen tot vijf uur"
+  ],
+  "hint": "When an adverb like \"meestal\" comes first, the verb stays 2nd and the subject follows it.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "werk-46",
+  "topic": "werk",
+  "parts": [
+   "pijn",
+   "doen mijn voeten",
+   "na een lange dag"
+  ],
+  "answer": "na een lange dag doen mijn voeten pijn",
+  "alternatives": [
+   "mijn voeten doen pijn na een lange dag"
+  ],
+  "hint": "Time first, so inversion: \"doen mijn voeten\".",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "werk-61",
+  "topic": "werk",
+  "parts": [
+   "naar de film",
+   "gaan we",
+   "met collega's",
+   "vrijdag"
+  ],
+  "answer": "vrijdag gaan we met collega's naar de film",
+  "alternatives": [
+   "we gaan vrijdag met collega's naar de film"
+  ],
+  "hint": "TMP: time (vrijdag), manner (met collega's), place (naar de film).",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "werk-65",
+  "topic": "werk",
+  "parts": [
+   "gewoon weer",
+   "werk ik",
+   "in de winkel",
+   "morgen"
+  ],
+  "answer": "morgen werk ik gewoon weer in de winkel",
+  "alternatives": [
+   "ik werk morgen gewoon weer in de winkel"
+  ],
+  "hint": "Time first, so inversion: \"werk ik\".",
+  "grammar": "inversie",
+  "level": 2
  },
  {
   "id": "werk-78",
@@ -1136,146 +563,9 @@ const EXERCISES = [
   "alternatives": [
    "het kantoor is na zes uur helemaal leeg"
   ],
-  "hint": "Time first, so inversion: \"is het kantoor\"."
- },
- {
-  "id": "werk-79",
-  "topic": "werk",
-  "parts": [
-   "diep adem",
-   "haal ik",
-   "voor het gesprek"
-  ],
-  "answer": "voor het gesprek haal ik diep adem",
-  "alternatives": [
-   "ik haal voor het gesprek diep adem"
-  ],
-  "hint": "Time phrase first, so inversion: \"haal ik\"."
- },
- {
-  "id": "werk-80",
-  "topic": "werk",
-  "parts": [
-   "is de winkel",
-   "dicht",
-   "op nationale feestdagen"
-  ],
-  "answer": "op nationale feestdagen is de winkel dicht",
-  "alternatives": [
-   "de winkel is op nationale feestdagen dicht"
-  ],
-  "hint": "Time first, so inversion: \"is de winkel\"."
- },
- {
-  "id": "werk-81",
-  "topic": "werk",
-  "parts": [
-   "in de technische sector",
-   "veel werk",
-   "er is"
-  ],
-  "answer": "er is veel werk in de technische sector",
-  "alternatives": [
-   "in de technische sector is er veel werk"
-  ],
-  "hint": "\"er is\" = there is; with the place first, invert: \"is er\"."
- },
- {
-  "id": "werk-82",
-  "topic": "werk",
-  "parts": [
-   "is het formulier",
-   "niet volledig",
-   "zonder verklaring van de huisarts"
-  ],
-  "answer": "zonder verklaring van de huisarts is het formulier niet volledig",
-  "alternatives": [
-   "het formulier is zonder verklaring van de huisarts niet volledig"
-  ],
-  "hint": "Starting with \"zonder ...\" causes inversion: \"is het formulier\"."
- },
- {
-  "id": "werk-83",
-  "topic": "werk",
-  "parts": [
-   "de winkel gaat",
-   "je hebt gelijk,",
-   "dicht",
-   "om zes uur"
-  ],
-  "answer": "je hebt gelijk, de winkel gaat om zes uur dicht",
-  "alternatives": [],
-  "hint": "\"dichtgaan\" (to close) is separable: \"gaat\" 2nd, \"dicht\" at the end."
- },
- {
-  "id": "werk-84",
-  "topic": "werk",
-  "parts": [
-   "is erg aantrekkelijk",
-   "van deze baan",
-   "het salaris"
-  ],
-  "answer": "het salaris van deze baan is erg aantrekkelijk",
-  "alternatives": [],
-  "hint": "The subject \"het salaris van deze baan\" is one block; the verb follows it."
- },
- {
-  "id": "werk-85",
-  "topic": "werk",
-  "parts": [
-   "snel schoon",
-   "is de winkel",
-   "met de krachtige stofzuiger"
-  ],
-  "answer": "met de krachtige stofzuiger is de winkel snel schoon",
-  "alternatives": [
-   "de winkel is met de krachtige stofzuiger snel schoon"
-  ],
-  "hint": "Starting with \"met ...\" causes inversion: \"is de winkel\"."
- },
- {
-  "id": "werk-86",
-  "topic": "werk",
-  "parts": [
-   "eindeloos",
-   "een werkdag op kantoor",
-   "lijkt",
-   "soms"
-  ],
-  "answer": "soms lijkt een werkdag op kantoor eindeloos",
-  "alternatives": [
-   "een werkdag op kantoor lijkt soms eindeloos"
-  ],
-  "hint": "\"soms\" first, so inversion: \"lijkt een werkdag\"."
- },
- {
-  "id": "werk-87",
-  "topic": "werk",
-  "parts": [
-   "over mijn achtergrond",
-   "vertel ik",
-   "in het gesprek"
-  ],
-  "answer": "in het gesprek vertel ik over mijn achtergrond",
-  "alternatives": [
-   "ik vertel in het gesprek over mijn achtergrond"
-  ],
-  "hint": "Phrase first, so inversion: \"vertel ik\"."
- },
- {
-  "id": "werk-88",
-  "topic": "werk",
-  "parts": [
-   "dus ik heb",
-   "weinig beweging",
-   "ik zit de hele dag",
-   "op kantoor,"
-  ],
-  "answer": "ik zit de hele dag op kantoor, dus ik heb weinig beweging",
-  "alternatives": [
-   "ik zit de hele dag op kantoor, dus heb ik weinig beweging"
-  ],
-  "hint": "After \"dus\" both \"dus ik heb\" and \"dus heb ik\" are correct."
+  "hint": "Time first, so inversion: \"is het kantoor\".",
+  "grammar": "inversie",
+  "level": 2
  },
  {
   "id": "werk-89",
@@ -1290,74 +580,25 @@ const EXERCISES = [
   "alternatives": [
    "ik heb morgen een behandeling bij de fysiotherapeut"
   ],
-  "hint": "Time first, so inversion: \"heb ik\"."
+  "hint": "Time first, so inversion: \"heb ik\".",
+  "grammar": "inversie",
+  "level": 2
  },
  {
-  "id": "werk-90",
+  "id": "werk-117",
   "topic": "werk",
   "parts": [
-   "want niemand",
-   "is dood,",
-   "geeft hem water",
-   "de plant in de winkel"
+   "bij een nieuw bedrijf",
+   "begin ik",
+   "volgende maand"
   ],
-  "answer": "de plant in de winkel is dood, want niemand geeft hem water",
-  "alternatives": [],
-  "hint": "\"want\" keeps normal order: subject (niemand) + verb (geeft)."
- },
- {
-  "id": "werk-91",
-  "topic": "werk",
-  "parts": [
-   "uit Nederland",
-   "alleen producten",
-   "verkoopt",
-   "deze winkel"
-  ],
-  "answer": "deze winkel verkoopt alleen producten uit Nederland",
-  "alternatives": [],
-  "hint": "Subject first, verb 2nd; \"alleen\" comes just before what it limits."
- },
- {
-  "id": "werk-92",
-  "topic": "werk",
-  "parts": [
-   "tussen mannen en vrouwen",
-   "wij maken",
-   "geen onderscheid"
-  ],
-  "answer": "wij maken geen onderscheid tussen mannen en vrouwen",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, object, then the \"tussen\" phrase."
- },
- {
-  "id": "werk-93",
-  "topic": "werk",
-  "parts": [
-   "de doelstellingen",
-   "bespreken wij",
-   "voor dit jaar",
-   "vandaag"
-  ],
-  "answer": "vandaag bespreken wij de doelstellingen voor dit jaar",
+  "answer": "volgende maand begin ik bij een nieuw bedrijf",
   "alternatives": [
-   "wij bespreken vandaag de doelstellingen voor dit jaar"
+   "ik begin volgende maand bij een nieuw bedrijf"
   ],
-  "hint": "Time first, so inversion: \"bespreken wij\"."
- },
- {
-  "id": "werk-94",
-  "topic": "werk",
-  "parts": [
-   "een gedicht",
-   "schrijven wij",
-   "voor het afscheid van meneer Jansen"
-  ],
-  "answer": "voor het afscheid van meneer Jansen schrijven wij een gedicht",
-  "alternatives": [
-   "wij schrijven een gedicht voor het afscheid van meneer Jansen"
-  ],
-  "hint": "Long first phrase, still one place: then verb + subject."
+  "hint": "Time first, so inversion: \"begin ik\".",
+  "grammar": "inversie",
+  "level": 2
  },
  {
   "id": "werk-95",
@@ -1371,57 +612,140 @@ const EXERCISES = [
   "alternatives": [
    "ik werk in de zomer in een kamp voor kinderen"
   ],
-  "hint": "Time first, so inversion; time comes before place."
+  "hint": "Time first, so inversion; time comes before place.",
+  "grammar": "inversie",
+  "level": 2
  },
  {
-  "id": "werk-96",
+  "id": "werk-51",
   "topic": "werk",
   "parts": [
-   "en verdient nu",
-   "een miljoen euro",
-   "per jaar",
-   "het bedrijf groeit snel"
+   "op vakantie",
+   "ben ik",
+   "volgende week",
+   "overigens"
   ],
-  "answer": "het bedrijf groeit snel en verdient nu een miljoen euro per jaar",
-  "alternatives": [],
-  "hint": "Two verbs with one subject, joined by \"en\": no subject is repeated."
+  "answer": "overigens ben ik volgende week op vakantie",
+  "alternatives": [
+   "ik ben overigens volgende week op vakantie"
+  ],
+  "hint": "\"overigens\" first, so inversion: \"ben ik\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-97",
+  "id": "werk-53",
   "topic": "werk",
   "parts": [
-   "van de patiënt",
-   "voelt",
-   "aan het voorhoofd",
-   "de verpleegkundige"
+   "is het risico",
+   "zonder helm",
+   "te groot"
   ],
-  "answer": "de verpleegkundige voelt aan het voorhoofd van de patiënt",
-  "alternatives": [],
-  "hint": "Subject first, verb 2nd, then the \"aan\" phrase."
+  "answer": "zonder helm is het risico te groot",
+  "alternatives": [
+   "het risico is zonder helm te groot"
+  ],
+  "hint": "Starting with \"zonder helm\" causes inversion: \"is het risico\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-98",
+  "id": "werk-79",
   "topic": "werk",
   "parts": [
-   "op de bodem van mijn tas",
-   "ligt",
-   "de sleutel van de winkel"
+   "diep adem",
+   "haal ik",
+   "voor het gesprek"
   ],
-  "answer": "de sleutel van de winkel ligt op de bodem van mijn tas",
-  "alternatives": [],
-  "hint": "Subject block first, verb \"ligt\" 2nd, then the place."
+  "answer": "voor het gesprek haal ik diep adem",
+  "alternatives": [
+   "ik haal voor het gesprek diep adem"
+  ],
+  "hint": "Time phrase first, so inversion: \"haal ik\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-99",
+  "id": "werk-80",
   "topic": "werk",
   "parts": [
-   "op de rand van de tafel",
-   "pas op,",
-   "het glas staat"
+   "is de winkel",
+   "dicht",
+   "op nationale feestdagen"
   ],
-  "answer": "pas op, het glas staat op de rand van de tafel",
-  "alternatives": [],
-  "hint": "\"pas op\" (imperative of oppassen): verb first; then a normal main clause."
+  "answer": "op nationale feestdagen is de winkel dicht",
+  "alternatives": [
+   "de winkel is op nationale feestdagen dicht"
+  ],
+  "hint": "Time first, so inversion: \"is de winkel\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-86",
+  "topic": "werk",
+  "parts": [
+   "eindeloos",
+   "een werkdag op kantoor",
+   "lijkt",
+   "soms"
+  ],
+  "answer": "soms lijkt een werkdag op kantoor eindeloos",
+  "alternatives": [
+   "een werkdag op kantoor lijkt soms eindeloos"
+  ],
+  "hint": "\"soms\" first, so inversion: \"lijkt een werkdag\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-110",
+  "topic": "werk",
+  "parts": [
+   "een pak",
+   "draag ik",
+   "voor het sollicitatiegesprek"
+  ],
+  "answer": "voor het sollicitatiegesprek draag ik een pak",
+  "alternatives": [
+   "ik draag een pak voor het sollicitatiegesprek"
+  ],
+  "hint": "Phrase first, so inversion: \"draag ik\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-25",
+  "topic": "werk",
+  "parts": [
+   "het huwelijk van onze collega",
+   "vieren",
+   "wij",
+   "vrijdag"
+  ],
+  "answer": "vrijdag vieren wij het huwelijk van onze collega",
+  "alternatives": [
+   "wij vieren vrijdag het huwelijk van onze collega"
+  ],
+  "hint": "Time first, so inversion: \"vieren wij\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-87",
+  "topic": "werk",
+  "parts": [
+   "over mijn achtergrond",
+   "vertel ik",
+   "in het gesprek"
+  ],
+  "answer": "in het gesprek vertel ik over mijn achtergrond",
+  "alternatives": [
+   "ik vertel in het gesprek over mijn achtergrond"
+  ],
+  "hint": "Phrase first, so inversion: \"vertel ik\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
   "id": "werk-100",
@@ -1436,49 +760,9 @@ const EXERCISES = [
   "alternatives": [
    "ik verspreid elke zaterdag folders in de wijk"
   ],
-  "hint": "Time first, so inversion: \"verspreid ik\"."
- },
- {
-  "id": "werk-101",
-  "topic": "werk",
-  "parts": [
-   "al vervuld",
-   "is de vacature",
-   "helaas"
-  ],
-  "answer": "helaas is de vacature al vervuld",
-  "alternatives": [
-   "de vacature is helaas al vervuld"
-  ],
-  "hint": "\"helaas\" first, so inversion: \"is de vacature\"."
- },
- {
-  "id": "werk-102",
-  "topic": "werk",
-  "parts": [
-   "in",
-   "gaat",
-   "op 1 mei",
-   "mijn nieuwe contract"
-  ],
-  "answer": "mijn nieuwe contract gaat op 1 mei in",
-  "alternatives": [
-   "op 1 mei gaat mijn nieuwe contract in"
-  ],
-  "hint": "Separable \"ingaan\" (to start): \"gaat\" 2nd, \"in\" at the very end."
- },
- {
-  "id": "werk-103",
-  "topic": "werk",
-  "parts": [
-   "en ga",
-   "op de fiets",
-   "naar mijn werk",
-   "ik stap"
-  ],
-  "answer": "ik stap op de fiets en ga naar mijn werk",
-  "alternatives": [],
-  "hint": "Two verbs with one subject joined by \"en\"."
+  "hint": "Time first, so inversion: \"verspreid ik\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
   "id": "werk-104",
@@ -1495,99 +779,9 @@ const EXERCISES = [
    "het bedrijf plaatst morgen de vacature op internet",
    "het bedrijf plaatst de vacature morgen op internet"
   ],
-  "hint": "Time first, so inversion: \"plaatst het bedrijf\"."
- },
- {
-  "id": "werk-105",
-  "topic": "werk",
-  "parts": [
-   "eindelijk een baan",
-   "gevonden",
-   "heb ik",
-   "na drie pogingen"
-  ],
-  "answer": "na drie pogingen heb ik eindelijk een baan gevonden",
-  "alternatives": [
-   "ik heb na drie pogingen eindelijk een baan gevonden"
-  ],
-  "hint": "Perfect tense with inversion: \"heb ik ... gevonden\"."
- },
- {
-  "id": "werk-106",
-  "topic": "werk",
-  "parts": [
-   "in mijn contract?",
-   "deze zin",
-   "wat betekent"
-  ],
-  "answer": "wat betekent deze zin in mijn contract?",
-  "alternatives": [],
-  "hint": "Question word first, verb second, then subject."
- },
- {
-  "id": "werk-107",
-  "topic": "werk",
-  "parts": [
-   "voor het prettige gesprek",
-   "u",
-   "ik dank"
-  ],
-  "answer": "ik dank u voor het prettige gesprek",
-  "alternatives": [],
-  "hint": "Subject, verb, object (u), then the \"voor\" phrase."
- },
- {
-  "id": "werk-108",
-  "topic": "werk",
-  "parts": [
-   "van mijn werk",
-   "ik houd echt",
-   "in de kledingzaak"
-  ],
-  "answer": "ik houd echt van mijn werk in de kledingzaak",
-  "alternatives": [],
-  "hint": "\"houden van\" = to love; \"echt\" comes right after the verb."
- },
- {
-  "id": "werk-109",
-  "topic": "werk",
-  "parts": [
-   "verpleegkundige worden",
-   "wil ik graag",
-   "later"
-  ],
-  "answer": "later wil ik graag verpleegkundige worden",
-  "alternatives": [
-   "ik wil later graag verpleegkundige worden"
-  ],
-  "hint": "Modal \"wil\" 2nd, infinitive \"worden\" at the end."
- },
- {
-  "id": "werk-110",
-  "topic": "werk",
-  "parts": [
-   "een pak",
-   "draag ik",
-   "voor het sollicitatiegesprek"
-  ],
-  "answer": "voor het sollicitatiegesprek draag ik een pak",
-  "alternatives": [
-   "ik draag een pak voor het sollicitatiegesprek"
-  ],
-  "hint": "Phrase first, so inversion: \"draag ik\"."
- },
- {
-  "id": "werk-111",
-  "topic": "werk",
-  "parts": [
-   "en daarna hang ik",
-   "de kleren op",
-   "eerst stofzuig ik",
-   "de winkel"
-  ],
-  "answer": "eerst stofzuig ik de winkel en daarna hang ik de kleren op",
-  "alternatives": [],
-  "hint": "\"eerst\" and \"daarna\" both cause inversion; \"ophangen\" splits: \"hang ... op\"."
+  "hint": "Time first, so inversion: \"plaatst het bedrijf\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
   "id": "werk-112",
@@ -1602,85 +796,473 @@ const EXERCISES = [
   "alternatives": [
    "ik heb verder geen vragen over het contract"
   ],
-  "hint": "\"verder\" first, so inversion: \"heb ik\"."
+  "hint": "\"verder\" first, so inversion: \"heb ik\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-113",
+  "id": "werk-23",
   "topic": "werk",
   "parts": [
-   "van de nieuwe regels",
-   "ik ben",
-   "op de hoogte"
+   "een biertje",
+   "na het werk",
+   "drinken wij",
+   "op vrijdag"
   ],
-  "answer": "ik ben op de hoogte van de nieuwe regels",
-  "alternatives": [],
-  "hint": "\"op de hoogte zijn van\" = to be informed about; verb 2nd."
- },
- {
-  "id": "werk-114",
-  "topic": "werk",
-  "parts": [
-   "in de laatste fase",
-   "nu",
-   "het project is"
-  ],
-  "answer": "het project is nu in de laatste fase",
+  "answer": "op vrijdag drinken wij na het werk een biertje",
   "alternatives": [
-   "nu is het project in de laatste fase"
+   "wij drinken op vrijdag na het werk een biertje",
+   "na het werk drinken wij op vrijdag een biertje"
   ],
-  "hint": "Verb 2nd; \"nu\" comes right after the verb."
+  "hint": "Time first, so inversion: verb (drinken) before subject (wij).",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-115",
+  "id": "werk-30",
   "topic": "werk",
   "parts": [
-   "in de winkel",
-   "veel veranderingen",
-   "wil",
-   "de nieuwe chef"
+   "als bewaker",
+   "werkte",
+   "in de gevangenis",
+   "mijn oom",
+   "vroeger"
   ],
-  "answer": "de nieuwe chef wil veel veranderingen in de winkel",
-  "alternatives": [],
-  "hint": "Subject first, verb 2nd; here \"wil\" is used without an infinitive."
- },
- {
-  "id": "werk-116",
-  "topic": "werk",
-  "parts": [
-   "een vaste baan heb",
-   "ik ben blij",
-   "dat ik eindelijk"
-  ],
-  "answer": "ik ben blij dat ik eindelijk een vaste baan heb",
-  "alternatives": [],
-  "hint": "After \"dat\" the verb (heb) goes to the end."
- },
- {
-  "id": "werk-117",
-  "topic": "werk",
-  "parts": [
-   "bij een nieuw bedrijf",
-   "begin ik",
-   "volgende maand"
-  ],
-  "answer": "volgende maand begin ik bij een nieuw bedrijf",
+  "answer": "vroeger werkte mijn oom als bewaker in de gevangenis",
   "alternatives": [
-   "ik begin volgende maand bij een nieuw bedrijf"
+   "mijn oom werkte vroeger als bewaker in de gevangenis"
   ],
-  "hint": "Time first, so inversion: \"begin ik\"."
+  "hint": "Time word first (vroeger), so inversion: \"werkte mijn oom\".",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "werk-118",
+  "id": "werk-63",
   "topic": "werk",
   "parts": [
-   "in een drukke straat",
-   "is",
-   "in het centrum",
-   "de kledingzaak"
+   "geen speciaal diploma",
+   "nodig",
+   "heb je",
+   "voor deze baan"
   ],
-  "answer": "de kledingzaak is in een drukke straat in het centrum",
+  "answer": "voor deze baan heb je geen speciaal diploma nodig",
   "alternatives": [],
-  "hint": "Subject first, verb 2nd; the smaller place (straat) before the bigger one (centrum)."
+  "hint": "\"nodig hebben\": \"heb\" 2nd, \"nodig\" at the end.",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-72",
+  "topic": "werk",
+  "parts": [
+   "bij een vereniging",
+   "als vrijwilliger",
+   "werk ik",
+   "elke zaterdag"
+  ],
+  "answer": "elke zaterdag werk ik als vrijwilliger bij een vereniging",
+  "alternatives": [
+   "ik werk elke zaterdag als vrijwilliger bij een vereniging"
+  ],
+  "hint": "Time first, so inversion: \"werk ik\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-85",
+  "topic": "werk",
+  "parts": [
+   "snel schoon",
+   "is de winkel",
+   "met de krachtige stofzuiger"
+  ],
+  "answer": "met de krachtige stofzuiger is de winkel snel schoon",
+  "alternatives": [
+   "de winkel is met de krachtige stofzuiger snel schoon"
+  ],
+  "hint": "Starting with \"met ...\" causes inversion: \"is de winkel\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-24",
+  "topic": "werk",
+  "parts": [
+   "een interessant artikel",
+   "staat",
+   "over de economie",
+   "in de krant"
+  ],
+  "answer": "in de krant staat een interessant artikel over de economie",
+  "alternatives": [],
+  "hint": "Place first, so the verb comes 2nd and the subject (een interessant artikel) after it.",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-19",
+  "topic": "werk",
+  "parts": [
+   "op het terras",
+   "is het",
+   "altijd erg druk",
+   "in de zomer"
+  ],
+  "answer": "in de zomer is het op het terras altijd erg druk",
+  "alternatives": [
+   "op het terras is het in de zomer altijd erg druk",
+   "het is in de zomer op het terras altijd erg druk"
+  ],
+  "hint": "Time first, so inversion (is het); time comes before place.",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-43",
+  "topic": "werk",
+  "parts": [
+   "heb ik",
+   "een druk leven",
+   "door mijn werk en mijn gezin"
+  ],
+  "answer": "door mijn werk en mijn gezin heb ik een druk leven",
+  "alternatives": [
+   "ik heb een druk leven door mijn werk en mijn gezin"
+  ],
+  "hint": "A long first part still counts as one place, so the verb follows: \"heb ik\".",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "werk-93",
+  "topic": "werk",
+  "parts": [
+   "de doelstellingen",
+   "bespreken wij",
+   "voor dit jaar",
+   "vandaag"
+  ],
+  "answer": "vandaag bespreken wij de doelstellingen voor dit jaar",
+  "alternatives": [
+   "wij bespreken vandaag de doelstellingen voor dit jaar"
+  ],
+  "hint": "Time first, so inversion: \"bespreken wij\".",
+  "grammar": "inversie",
+  "level": 4
+ },
+ {
+  "id": "werk-82",
+  "topic": "werk",
+  "parts": [
+   "is het formulier",
+   "niet volledig",
+   "zonder verklaring van de huisarts"
+  ],
+  "answer": "zonder verklaring van de huisarts is het formulier niet volledig",
+  "alternatives": [
+   "het formulier is zonder verklaring van de huisarts niet volledig"
+  ],
+  "hint": "Starting with \"zonder ...\" causes inversion: \"is het formulier\".",
+  "grammar": "inversie",
+  "level": 4
+ },
+ {
+  "id": "werk-94",
+  "topic": "werk",
+  "parts": [
+   "een gedicht",
+   "schrijven wij",
+   "voor het afscheid van meneer Jansen"
+  ],
+  "answer": "voor het afscheid van meneer Jansen schrijven wij een gedicht",
+  "alternatives": [
+   "wij schrijven een gedicht voor het afscheid van meneer Jansen"
+  ],
+  "hint": "Long first phrase, still one place: then verb + subject.",
+  "grammar": "inversie",
+  "level": 4
+ },
+ {
+  "id": "werk-67",
+  "topic": "werk",
+  "parts": [
+   "hier al?",
+   "werkt u",
+   "hoe lang"
+  ],
+  "answer": "hoe lang werkt u hier al?",
+  "alternatives": [],
+  "hint": "Question word first (hoe lang), then verb, then subject.",
+  "grammar": "vraag",
+  "level": 1
+ },
+ {
+  "id": "werk-77",
+  "topic": "werk",
+  "parts": [
+   "met melk",
+   "en suiker?",
+   "koffie",
+   "wil je"
+  ],
+  "answer": "wil je koffie met melk en suiker?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then subject.",
+  "grammar": "vraag",
+  "level": 1
+ },
+ {
+  "id": "werk-74",
+  "topic": "werk",
+  "parts": [
+   "voor een kort gesprek?",
+   "tijd",
+   "heeft u morgen"
+  ],
+  "answer": "heeft u morgen tijd voor een kort gesprek?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then subject, then time.",
+  "grammar": "vraag",
+  "level": 2
+ },
+ {
+  "id": "werk-06",
+  "topic": "werk",
+  "parts": [
+   "ook",
+   "in een andere maat?",
+   "heeft u",
+   "deze broek"
+  ],
+  "answer": "heeft u deze broek ook in een andere maat?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb comes first, then the subject.",
+  "grammar": "vraag",
+  "level": 2
+ },
+ {
+  "id": "werk-106",
+  "topic": "werk",
+  "parts": [
+   "in mijn contract?",
+   "deze zin",
+   "wat betekent"
+  ],
+  "answer": "wat betekent deze zin in mijn contract?",
+  "alternatives": [],
+  "hint": "Question word first, verb second, then subject.",
+  "grammar": "vraag",
+  "level": 3
+ },
+ {
+  "id": "werk-33",
+  "topic": "werk",
+  "parts": [
+   "tussen een vast",
+   "wat is",
+   "en een tijdelijk contract?",
+   "het verschil"
+  ],
+  "answer": "wat is het verschil tussen een vast en een tijdelijk contract?",
+  "alternatives": [],
+  "hint": "Question word first, then the verb.",
+  "grammar": "vraag",
+  "level": 4
+ },
+ {
+  "id": "werk-34",
+  "topic": "werk",
+  "parts": [
+   "weten",
+   "wil graag",
+   "de reden",
+   "meneer Jansen"
+  ],
+  "answer": "meneer Jansen wil graag de reden weten",
+  "alternatives": [
+   "meneer Jansen wil de reden graag weten"
+  ],
+  "hint": "Modal verb (wil) 2nd, infinitive (weten) at the end.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-47",
+  "topic": "werk",
+  "parts": [
+   "lekker rusten",
+   "ga ik",
+   "in het weekend"
+  ],
+  "answer": "in het weekend ga ik lekker rusten",
+  "alternatives": [
+   "ik ga in het weekend lekker rusten"
+  ],
+  "hint": "\"gaan\" + infinitive: \"ga\" 2nd, \"rusten\" at the end.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-58",
+  "topic": "werk",
+  "parts": [
+   "vaak afwassen",
+   "moet ik",
+   "in de keuken"
+  ],
+  "answer": "in de keuken moet ik vaak afwassen",
+  "alternatives": [
+   "ik moet in de keuken vaak afwassen"
+  ],
+  "hint": "Modal + infinitive: the separable verb stays together as infinitive at the end (afwassen).",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-68",
+  "topic": "werk",
+  "parts": [
+   "werken",
+   "voor jou",
+   "ik kan zaterdag",
+   "ja,"
+  ],
+  "answer": "ja, ik kan zaterdag voor jou werken",
+  "alternatives": [
+   "ja, zaterdag kan ik voor jou werken"
+  ],
+  "hint": "\"ja,\" does not count as a place: the sentence after it starts normally.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-12",
+  "topic": "werk",
+  "parts": [
+   "herhalen?",
+   "de vraag",
+   "kunt u",
+   "nog een keer"
+  ],
+  "answer": "kunt u de vraag nog een keer herhalen?",
+  "alternatives": [],
+  "hint": "Polite question: modal verb first, infinitive (herhalen) at the end.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-40",
+  "topic": "werk",
+  "parts": [
+   "zetten?",
+   "in de gang",
+   "mag ik",
+   "mijn koffer even"
+  ],
+  "answer": "mag ik mijn koffer even in de gang zetten?",
+  "alternatives": [],
+  "hint": "Question with a modal: \"mag ik\" first, infinitive (zetten) at the end.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "werk-109",
+  "topic": "werk",
+  "parts": [
+   "verpleegkundige worden",
+   "wil ik graag",
+   "later"
+  ],
+  "answer": "later wil ik graag verpleegkundige worden",
+  "alternatives": [
+   "ik wil later graag verpleegkundige worden"
+  ],
+  "hint": "Modal \"wil\" 2nd, infinitive \"worden\" at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "werk-48",
+  "topic": "werk",
+  "parts": [
+   "met mij",
+   "ruilen?",
+   "wil jij",
+   "welke dienst"
+  ],
+  "answer": "welke dienst wil jij met mij ruilen?",
+  "alternatives": [],
+  "hint": "Question: \"welke dienst\" first, then the modal verb, infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "werk-35",
+  "topic": "werk",
+  "parts": [
+   "advies geven",
+   "over mijn contract?",
+   "kunt u mij"
+  ],
+  "answer": "kunt u mij advies geven over mijn contract?",
+  "alternatives": [
+   "kunt u mij over mijn contract advies geven?"
+  ],
+  "hint": "Question: modal verb first; \"over mijn contract\" may also come after the infinitive.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "werk-49",
+  "topic": "werk",
+  "parts": [
+   "praten",
+   "met de directeur",
+   "ik ga morgen",
+   "persoonlijk"
+  ],
+  "answer": "ik ga morgen persoonlijk met de directeur praten",
+  "alternatives": [
+   "morgen ga ik persoonlijk met de directeur praten"
+  ],
+  "hint": "TMP: time (morgen), manner (persoonlijk), then \"met de directeur\"; infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "werk-55",
+  "topic": "werk",
+  "parts": [
+   "aan de chef vragen",
+   "zelf",
+   "dat moet je"
+  ],
+  "answer": "dat moet je zelf aan de chef vragen",
+  "alternatives": [
+   "je moet dat zelf aan de chef vragen"
+  ],
+  "hint": "Object \"dat\" first, so inversion (moet je); infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "werk-38",
+  "topic": "werk",
+  "parts": [
+   "voorzichtig zijn",
+   "met het vuur",
+   "moet je",
+   "in de keuken"
+  ],
+  "answer": "in de keuken moet je voorzichtig zijn met het vuur",
+  "alternatives": [
+   "je moet in de keuken voorzichtig zijn met het vuur",
+   "in de keuken moet je met het vuur voorzichtig zijn",
+   "je moet in de keuken met het vuur voorzichtig zijn"
+  ],
+  "hint": "Place first, so inversion (moet je); \"zijn\" goes to the end of the middle part.",
+  "grammar": "modaal",
+  "level": 3
  },
  {
   "id": "werk-119",
@@ -1693,146 +1275,814 @@ const EXERCISES = [
   ],
   "answer": "ik kan niet goed tegen de warmte in de keuken",
   "alternatives": [],
-  "hint": "\"tegen iets kunnen\" = to be able to stand something; \"kan\" is 2nd, \"niet goed\" follows it."
+  "hint": "\"tegen iets kunnen\" = to be able to stand something; \"kan\" is 2nd, \"niet goed\" follows it.",
+  "grammar": "modaal",
+  "level": 3
  },
  {
-  "id": "werk-120",
+  "id": "werk-04",
   "topic": "werk",
   "parts": [
-   "is belangrijk",
-   "tussen werk en vrije tijd",
-   "een goed evenwicht"
+   "op de kast",
+   "leggen",
+   "ik zal",
+   "een briefje voor mijn collega"
   ],
-  "answer": "een goed evenwicht tussen werk en vrije tijd is belangrijk",
+  "answer": "ik zal een briefje voor mijn collega op de kast leggen",
   "alternatives": [],
-  "hint": "The long subject \"een goed evenwicht tussen werk en vrije tijd\" is one block; the verb follows it."
+  "hint": "\"zullen\" is in 2nd place; the infinitive (leggen) goes to the end.",
+  "grammar": "modaal",
+  "level": 3
  },
  {
-  "id": "school-01",
-  "topic": "school",
+  "id": "werk-13",
+  "topic": "werk",
   "parts": [
-   "komen",
-   "morgen",
-   "ik",
-   "helaas niet naar de toets",
-   "kan"
+   "langzaam uit",
+   "de nieuwe methode",
+   "legt",
+   "de chef"
   ],
-  "answer": "ik kan morgen helaas niet naar de toets komen",
+  "answer": "de chef legt de nieuwe methode langzaam uit",
   "alternatives": [
-   "morgen kan ik helaas niet naar de toets komen"
+   "de chef legt langzaam de nieuwe methode uit"
   ],
-  "hint": "Modal verb (kan) in 2nd place, the infinitive (komen) goes to the end.",
-  "senses": {
-   "morgen": "morgen@20"
-  }
+  "hint": "Separable verb \"uitleggen\": \"legt\" 2nd, \"uit\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 3
  },
  {
-  "id": "school-02",
+  "id": "werk-26",
+  "topic": "werk",
+  "parts": [
+   "aan de cursus?",
+   "ook mee",
+   "doe jij",
+   "zaterdag"
+  ],
+  "answer": "doe jij zaterdag ook mee aan de cursus?",
+  "alternatives": [
+   "doe jij zaterdag ook aan de cursus mee?"
+  ],
+  "hint": "Yes/no question with separable \"meedoen\": verb first, \"mee\" near the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-27",
+  "topic": "werk",
+  "parts": [
+   "een kop koffie aan",
+   "zij biedt",
+   "de klant"
+  ],
+  "answer": "zij biedt de klant een kop koffie aan",
+  "alternatives": [],
+  "hint": "Separable verb \"aanbieden\": \"biedt\" 2nd, \"aan\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-71",
+  "topic": "werk",
+  "parts": [
+   "contact op",
+   "met het uitzendbureau",
+   "ik neem morgen"
+  ],
+  "answer": "ik neem morgen contact op met het uitzendbureau",
+  "alternatives": [
+   "morgen neem ik contact op met het uitzendbureau",
+   "ik neem morgen met het uitzendbureau contact op",
+   "morgen neem ik met het uitzendbureau contact op"
+  ],
+  "hint": "\"contact opnemen met\": \"neem\" 2nd, \"op\" near the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-102",
+  "topic": "werk",
+  "parts": [
+   "in",
+   "gaat",
+   "op 1 mei",
+   "mijn nieuwe contract"
+  ],
+  "answer": "mijn nieuwe contract gaat op 1 mei in",
+  "alternatives": [
+   "op 1 mei gaat mijn nieuwe contract in"
+  ],
+  "hint": "Separable \"ingaan\" (to start): \"gaat\" 2nd, \"in\" at the very end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-20",
+  "topic": "werk",
+  "parts": [
+   "om zes uur op",
+   "sta ik",
+   "in de winter"
+  ],
+  "answer": "in de winter sta ik om zes uur op",
+  "alternatives": [
+   "ik sta in de winter om zes uur op"
+  ],
+  "hint": "Separable verb \"opstaan\": \"sta\" 2nd, \"op\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-59",
+  "topic": "werk",
+  "parts": [
+   "met mijn vriendin",
+   "samen",
+   "ik woon",
+   "sinds een jaar"
+  ],
+  "answer": "ik woon sinds een jaar samen met mijn vriendin",
+  "alternatives": [
+   "sinds een jaar woon ik samen met mijn vriendin"
+  ],
+  "hint": "Separable \"samenwonen\": \"woon\" 2nd, \"samen\" goes after the time phrase.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-83",
+  "topic": "werk",
+  "parts": [
+   "de winkel gaat",
+   "je hebt gelijk,",
+   "dicht",
+   "om zes uur"
+  ],
+  "answer": "je hebt gelijk, de winkel gaat om zes uur dicht",
+  "alternatives": [],
+  "hint": "\"dichtgaan\" (to close) is separable: \"gaat\" 2nd, \"dicht\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-28",
+  "topic": "werk",
+  "parts": [
+   "de deur van de winkel",
+   "open",
+   "doe ik",
+   "om negen uur"
+  ],
+  "answer": "om negen uur doe ik de deur van de winkel open",
+  "alternatives": [
+   "ik doe om negen uur de deur van de winkel open"
+  ],
+  "hint": "Separable verb \"opendoen\": \"doe\" 2nd, \"open\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-99",
+  "topic": "werk",
+  "parts": [
+   "op de rand van de tafel",
+   "pas op,",
+   "het glas staat"
+  ],
+  "answer": "pas op, het glas staat op de rand van de tafel",
+  "alternatives": [],
+  "hint": "\"pas op\" (imperative of oppassen): verb first; then a normal main clause.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "werk-56",
+  "topic": "werk",
+  "parts": [
+   "stel je",
+   "jezelf voor",
+   "aan het begin van het gesprek"
+  ],
+  "answer": "aan het begin van het gesprek stel je jezelf voor",
+  "alternatives": [],
+  "hint": "Separable \"voorstellen\": \"stel\" 2nd (inversion after the time phrase), \"voor\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 4
+ },
+ {
+  "id": "werk-57",
+  "topic": "werk",
+  "parts": [
+   "de slaapkamers schoon",
+   "maak ik",
+   "elke ochtend",
+   "in het hotel"
+  ],
+  "answer": "in het hotel maak ik elke ochtend de slaapkamers schoon",
+  "alternatives": [
+   "ik maak elke ochtend in het hotel de slaapkamers schoon",
+   "elke ochtend maak ik in het hotel de slaapkamers schoon"
+  ],
+  "hint": "Separable \"schoonmaken\": \"maak\" 2nd, \"schoon\" at the end.",
+  "grammar": "scheidbaar",
+  "level": 4
+ },
+ {
+  "id": "werk-03",
+  "topic": "werk",
+  "parts": [
+   "met de sleutel af",
+   "de winkel",
+   "sluit ik",
+   "om zes uur"
+  ],
+  "answer": "om zes uur sluit ik de winkel met de sleutel af",
+  "alternatives": [
+   "ik sluit om zes uur de winkel met de sleutel af",
+   "ik sluit de winkel om zes uur met de sleutel af"
+  ],
+  "hint": "Time first, so inversion (sluit ik); the particle \"af\" of \"afsluiten\" goes to the very end.",
+  "grammar": "scheidbaar",
+  "level": 4
+ },
+ {
+  "id": "werk-101",
+  "topic": "werk",
+  "parts": [
+   "al vervuld",
+   "is de vacature",
+   "helaas"
+  ],
+  "answer": "helaas is de vacature al vervuld",
+  "alternatives": [
+   "de vacature is helaas al vervuld"
+  ],
+  "hint": "\"helaas\" first, so inversion: \"is de vacature\".",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-66",
+  "topic": "werk",
+  "parts": [
+   "bij een nieuw bedrijf",
+   "net begonnen",
+   "ik ben"
+  ],
+  "answer": "ik ben net begonnen bij een nieuw bedrijf",
+  "alternatives": [],
+  "hint": "Perfect with \"zijn\": \"ben\" 2nd, \"begonnen\" late in the sentence.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-31",
+  "topic": "werk",
+  "parts": [
+   "geboren",
+   "in een klein dorp",
+   "in 1990",
+   "ik ben"
+  ],
+  "answer": "ik ben in 1990 in een klein dorp geboren",
+  "alternatives": [
+   "in 1990 ben ik in een klein dorp geboren"
+  ],
+  "hint": "\"ik ben geboren\": the participle \"geboren\" goes to the end; time before place.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-32",
+  "topic": "werk",
+  "parts": [
+   "gestudeerd",
+   "aan de universiteit",
+   "twee jaar geschiedenis",
+   "ik heb"
+  ],
+  "answer": "ik heb twee jaar geschiedenis aan de universiteit gestudeerd",
+  "alternatives": [
+   "ik heb twee jaar aan de universiteit geschiedenis gestudeerd"
+  ],
+  "hint": "Perfect tense: \"heb\" 2nd, participle \"gestudeerd\" at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-36",
+  "topic": "werk",
+  "parts": [
+   "van het bedrijf",
+   "gekregen",
+   "nog geen antwoord",
+   "ik heb"
+  ],
+  "answer": "ik heb nog geen antwoord van het bedrijf gekregen",
+  "alternatives": [
+   "ik heb van het bedrijf nog geen antwoord gekregen"
+  ],
+  "hint": "Perfect tense: \"heb\" 2nd, participle \"gekregen\" at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-52",
+  "topic": "werk",
+  "parts": [
+   "verloren",
+   "ergens in de bus",
+   "ik heb",
+   "mijn portemonnee"
+  ],
+  "answer": "ik heb mijn portemonnee ergens in de bus verloren",
+  "alternatives": [
+   "ik heb ergens in de bus mijn portemonnee verloren"
+  ],
+  "hint": "Perfect tense: \"heb\" 2nd, participle \"verloren\" at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-54",
+  "topic": "werk",
+  "parts": [
+   "snel opgelost",
+   "het probleem met de computer",
+   "hij heeft"
+  ],
+  "answer": "hij heeft het probleem met de computer snel opgelost",
+  "alternatives": [],
+  "hint": "Perfect tense: \"heeft\" 2nd, participle \"opgelost\" at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-08",
+  "topic": "werk",
+  "parts": [
+   "met de directeur",
+   "gehad",
+   "ik heb",
+   "een prettig gesprek",
+   "gisteren"
+  ],
+  "answer": "ik heb gisteren een prettig gesprek met de directeur gehad",
+  "alternatives": [
+   "gisteren heb ik een prettig gesprek met de directeur gehad"
+  ],
+  "hint": "Perfect tense: \"heb\" in 2nd place, the participle \"gehad\" at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "werk-105",
+  "topic": "werk",
+  "parts": [
+   "eindelijk een baan",
+   "gevonden",
+   "heb ik",
+   "na drie pogingen"
+  ],
+  "answer": "na drie pogingen heb ik eindelijk een baan gevonden",
+  "alternatives": [
+   "ik heb na drie pogingen eindelijk een baan gevonden"
+  ],
+  "hint": "Perfect tense with inversion: \"heb ik ... gevonden\".",
+  "grammar": "perfectum",
+  "level": 4
+ },
+ {
+  "id": "werk-103",
+  "topic": "werk",
+  "parts": [
+   "en ga",
+   "op de fiets",
+   "naar mijn werk",
+   "ik stap"
+  ],
+  "answer": "ik stap op de fiets en ga naar mijn werk",
+  "alternatives": [],
+  "hint": "Two verbs with one subject joined by \"en\".",
+  "grammar": "nevenschikkend",
+  "level": 2
+ },
+ {
+  "id": "werk-17",
+  "topic": "werk",
+  "parts": [
+   "en maakt",
+   "mooie beelden",
+   "is kunstenaar",
+   "mijn vriendin"
+  ],
+  "answer": "mijn vriendin is kunstenaar en maakt mooie beelden",
+  "alternatives": [],
+  "hint": "Two main clauses joined by \"en\": both have the verb right after the subject.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-05",
+  "topic": "werk",
+  "parts": [
+   "legt de telefoon",
+   "neer",
+   "de klant is boos",
+   "en"
+  ],
+  "answer": "de klant is boos en legt de telefoon neer",
+  "alternatives": [],
+  "hint": "\"neerleggen\" is separable: \"legt\" in 2nd place, \"neer\" at the end.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-41",
+  "topic": "werk",
+  "parts": [
+   "want ik ben",
+   "met mensen,",
+   "erg sociaal",
+   "ik werk graag"
+  ],
+  "answer": "ik werk graag met mensen, want ik ben erg sociaal",
+  "alternatives": [],
+  "hint": "\"graag\" comes right after the verb; \"want\" keeps normal word order.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-02",
+  "topic": "werk",
+  "parts": [
+   "want",
+   "al sinds vijf uur wakker",
+   "ik ben moe,",
+   "ik ben"
+  ],
+  "answer": "ik ben moe, want ik ben al sinds vijf uur wakker",
+  "alternatives": [],
+  "hint": "\"want\" does not change the word order: after \"want\" comes subject + verb, as normal.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-45",
+  "topic": "werk",
+  "parts": [
+   "dus ik blijf",
+   "ik heb pijn",
+   "vandaag thuis",
+   "in mijn buik,"
+  ],
+  "answer": "ik heb pijn in mijn buik, dus ik blijf vandaag thuis",
+  "alternatives": [
+   "ik heb pijn in mijn buik, dus blijf ik vandaag thuis"
+  ],
+  "hint": "After \"dus\" both orders are fine: \"dus ik blijf\" or \"dus blijf ik\".",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-88",
+  "topic": "werk",
+  "parts": [
+   "dus ik heb",
+   "weinig beweging",
+   "ik zit de hele dag",
+   "op kantoor,"
+  ],
+  "answer": "ik zit de hele dag op kantoor, dus ik heb weinig beweging",
+  "alternatives": [
+   "ik zit de hele dag op kantoor, dus heb ik weinig beweging"
+  ],
+  "hint": "After \"dus\" both \"dus ik heb\" and \"dus heb ik\" are correct.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "werk-50",
+  "topic": "werk",
+  "parts": [
+   "verdien ik goed",
+   "het werk is leuk",
+   "en bovendien"
+  ],
+  "answer": "het werk is leuk en bovendien verdien ik goed",
+  "alternatives": [],
+  "hint": "\"bovendien\" counts as the first place, so inversion follows: \"verdien ik\".",
+  "grammar": "nevenschikkend",
+  "level": 4
+ },
+ {
+  "id": "werk-37",
+  "topic": "werk",
+  "parts": [
+   "want je moet",
+   "sterk zijn",
+   "is niet gemakkelijk,",
+   "dit werk"
+  ],
+  "answer": "dit werk is niet gemakkelijk, want je moet sterk zijn",
+  "alternatives": [],
+  "hint": "After \"want\" normal order: subject, verb, ... infinitive (zijn) at the end.",
+  "grammar": "nevenschikkend",
+  "level": 4
+ },
+ {
+  "id": "werk-90",
+  "topic": "werk",
+  "parts": [
+   "want niemand",
+   "is dood,",
+   "geeft hem water",
+   "de plant in de winkel"
+  ],
+  "answer": "de plant in de winkel is dood, want niemand geeft hem water",
+  "alternatives": [],
+  "hint": "\"want\" keeps normal order: subject (niemand) + verb (geeft).",
+  "grammar": "nevenschikkend",
+  "level": 4
+ },
+ {
+  "id": "werk-96",
+  "topic": "werk",
+  "parts": [
+   "en verdient nu",
+   "een miljoen euro",
+   "per jaar",
+   "het bedrijf groeit snel"
+  ],
+  "answer": "het bedrijf groeit snel en verdient nu een miljoen euro per jaar",
+  "alternatives": [],
+  "hint": "Two verbs with one subject, joined by \"en\": no subject is repeated.",
+  "grammar": "nevenschikkend",
+  "level": 4
+ },
+ {
+  "id": "werk-111",
+  "topic": "werk",
+  "parts": [
+   "en daarna hang ik",
+   "de kleren op",
+   "eerst stofzuig ik",
+   "de winkel"
+  ],
+  "answer": "eerst stofzuig ik de winkel en daarna hang ik de kleren op",
+  "alternatives": [],
+  "hint": "\"eerst\" and \"daarna\" both cause inversion; \"ophangen\" splits: \"hang ... op\".",
+  "grammar": "nevenschikkend",
+  "level": 5
+ },
+ {
+  "id": "werk-11",
+  "topic": "werk",
+  "parts": [
+   "want de winkel is gesloten",
+   "niet te werken,",
+   "je hoeft morgen"
+  ],
+  "answer": "je hoeft morgen niet te werken, want de winkel is gesloten",
+  "alternatives": [],
+  "hint": "\"hoeven\" + niet + te + infinitive at the end; \"want\" keeps normal word order.",
+  "grammar": "om-te",
+  "level": 5
+ },
+ {
+  "id": "werk-07",
+  "topic": "werk",
+  "parts": [
+   "die goed Nederlands spreekt",
+   "een collega",
+   "zoeken",
+   "wij"
+  ],
+  "answer": "wij zoeken een collega die goed Nederlands spreekt",
+  "alternatives": [],
+  "hint": "In a \"die\" clause (who/that) the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-14",
+  "topic": "werk",
+  "parts": [
+   "bel ik",
+   "meneer Jansen",
+   "zodra ik thuis ben,"
+  ],
+  "answer": "zodra ik thuis ben, bel ik meneer Jansen",
+  "alternatives": [
+   "ik bel meneer Jansen zodra ik thuis ben"
+  ],
+  "hint": "\"zodra\" sends its verb to the end; a sentence that starts with that clause continues with verb + subject.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-21",
+  "topic": "werk",
+  "parts": [
+   "neem ik",
+   "als de trein",
+   "de bus",
+   "niet rijdt,"
+  ],
+  "answer": "als de trein niet rijdt, neem ik de bus",
+  "alternatives": [
+   "ik neem de bus als de trein niet rijdt"
+  ],
+  "hint": "\"als\" sends its verb (rijdt) to the end; after the \"als\" clause comes verb + subject.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-09",
+  "topic": "werk",
+  "parts": [
+   "nog niet definitief is",
+   "de chef zegt",
+   "de beslissing",
+   "dat"
+  ],
+  "answer": "de chef zegt dat de beslissing nog niet definitief is",
+  "alternatives": [],
+  "hint": "\"dat\" starts a subordinate clause: the verb \"is\" goes to the end.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-116",
+  "topic": "werk",
+  "parts": [
+   "een vaste baan heb",
+   "ik ben blij",
+   "dat ik eindelijk"
+  ],
+  "answer": "ik ben blij dat ik eindelijk een vaste baan heb",
+  "alternatives": [],
+  "hint": "After \"dat\" the verb (heb) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-62",
+  "topic": "werk",
+  "parts": [
+   "omdat ik",
+   "werk ik niet,",
+   "naar de kerk ga",
+   "op zondag"
+  ],
+  "answer": "op zondag werk ik niet, omdat ik naar de kerk ga",
+  "alternatives": [
+   "ik werk op zondag niet, omdat ik naar de kerk ga",
+   "ik werk niet op zondag, omdat ik naar de kerk ga",
+   "omdat ik naar de kerk ga, werk ik op zondag niet"
+  ],
+  "hint": "\"omdat\" sends the verb (ga) to the end.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "werk-73",
+  "topic": "werk",
+  "parts": [
+   "vroeg vertrekt",
+   "omdat mijn vlucht",
+   "vrij hebben,",
+   "ik wil vrijdag"
+  ],
+  "answer": "ik wil vrijdag vrij hebben, omdat mijn vlucht vroeg vertrekt",
+  "alternatives": [
+   "omdat mijn vlucht vroeg vertrekt, wil ik vrijdag vrij hebben"
+  ],
+  "hint": "\"omdat\" sends \"vertrekt\" to the end; modal \"wil\" + infinitive \"hebben\" at the end.",
+  "grammar": "bijzin",
+  "level": 5
+ },
+ {
+  "id": "werk-01",
+  "topic": "werk",
+  "parts": [
+   "omdat ik ziek ben",
+   "neemt morgen",
+   "mijn collega",
+   "mijn taken over,"
+  ],
+  "answer": "mijn collega neemt morgen mijn taken over, omdat ik ziek ben",
+  "alternatives": [
+   "omdat ik ziek ben, neemt mijn collega morgen mijn taken over",
+   "morgen neemt mijn collega mijn taken over, omdat ik ziek ben"
+  ],
+  "hint": "Separable verb \"overnemen\": \"neemt\" is 2nd, \"over\" goes to the end; \"omdat\" sends \"ben\" to the end.",
+  "grammar": "bijzin",
+  "level": 5
+ },
+ {
+  "id": "werk-15",
+  "topic": "werk",
+  "parts": [
+   "te laat op mijn werk kom",
+   "ik ben bang",
+   "dat ik morgen"
+  ],
+  "answer": "ik ben bang dat ik morgen te laat op mijn werk kom",
+  "alternatives": [
+   "ik ben bang dat ik morgen op mijn werk te laat kom"
+  ],
+  "hint": "After \"dat\" the verb (kom) goes to the end of the sentence.",
+  "grammar": "bijzin",
+  "level": 5
+ },
+ {
+  "id": "school-73",
   "topic": "school",
   "parts": [
-   "voor de fout",
-   "aan",
-   "mijn excuses",
-   "ik bied u"
+   "aan de universiteit",
+   "literatuur",
+   "mijn broer",
+   "studeert"
   ],
-  "answer": "ik bied u mijn excuses aan voor de fout",
-  "alternatives": [
-   "ik bied u mijn excuses voor de fout aan"
-  ],
-  "hint": "Separable verb aanbieden: the stem (bied) is in 2nd place, the particle (aan) goes to the end of the core sentence.",
+  "answer": "mijn broer studeert literatuur aan de universiteit",
+  "alternatives": [],
+  "hint": "Verb 2nd; object before place.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "u": "u@20",
    "mijn": "mijn@20",
-   "aan": "aan@20",
-   "voor": "voor@20"
+   "aan": "aan@20"
   }
  },
  {
-  "id": "school-03",
+  "id": "school-81",
   "topic": "school",
   "parts": [
-   "een dag eerder",
-   "maken",
-   "de toets",
-   "kan ik"
+   "een beetje lelijk",
+   "die kleur",
+   "ik vind"
   ],
-  "answer": "kan ik de toets een dag eerder maken?",
+  "answer": "ik vind die kleur een beetje lelijk",
   "alternatives": [],
-  "hint": "Yes/no question: the verb comes first, then the subject; the infinitive goes to the end.",
+  "hint": "Vinden + object + opinion: ik vind die kleur lelijk.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "maken": "maken@20"
+   "die": "die@20"
   }
  },
  {
-  "id": "school-04",
+  "id": "school-111",
   "topic": "school",
   "parts": [
-   "te verzetten",
-   "is het mogelijk",
-   "naar donderdag",
-   "om de afspraak"
+   "op de stoep",
+   "de ouders",
+   "wachten",
+   "buiten"
   ],
-  "answer": "is het mogelijk om de afspraak naar donderdag te verzetten?",
+  "answer": "de ouders wachten buiten op de stoep",
   "alternatives": [],
-  "hint": "Question with verb first; in an om … te construction the te-infinitive comes last.",
+  "hint": "Verb 2nd; general place (buiten) before specific place (op de stoep).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "het": "het@20",
-   "te": "te@20"
+   "op": "op@20"
   }
  },
  {
-  "id": "school-05",
+  "id": "school-121",
   "topic": "school",
   "parts": [
-   "een voorkeur",
-   "voor dinsdag of donderdag",
-   "heeft u"
+   "in de kantine",
+   "staat",
+   "beneden",
+   "de koffie"
   ],
-  "answer": "heeft u een voorkeur voor dinsdag of donderdag?",
+  "answer": "de koffie staat beneden in de kantine",
   "alternatives": [],
-  "hint": "Yes/no question: verb (heeft) first, then the subject (u).",
-  "senses": {
-   "u": "u@20",
-   "voor": "voor@20"
-  }
+  "hint": "Verb 2nd; general place (beneden) before specific place.",
+  "grammar": "basis",
+  "level": 2
  },
  {
-  "id": "school-06",
+  "id": "school-83",
   "topic": "school",
   "parts": [
-   "een nieuwe afspraak",
-   "maken",
-   "volgende week",
-   "kunnen",
-   "wij",
-   "wellicht"
+   "om acht uur",
+   "de vergadering",
+   "de voorzitter",
+   "opent"
   ],
-  "answer": "wellicht kunnen wij volgende week een nieuwe afspraak maken",
+  "answer": "de voorzitter opent de vergadering om acht uur",
   "alternatives": [
-   "wij kunnen wellicht volgende week een nieuwe afspraak maken",
-   "volgende week kunnen wij wellicht een nieuwe afspraak maken"
+   "om acht uur opent de voorzitter de vergadering",
+   "de voorzitter opent om acht uur de vergadering"
   ],
-  "hint": "After an adverb at the start (wellicht) comes inversion: verb, then subject. The infinitive goes last.",
-  "senses": {
-   "volgende": "volgende@20",
-   "maken": "maken@20"
-  }
- },
- {
-  "id": "school-07",
-  "topic": "school",
-  "parts": [
-   "alvast",
-   "mijn nieuwe telefoonnummer",
-   "ik stuur u"
-  ],
-  "answer": "ik stuur u alvast mijn nieuwe telefoonnummer",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; the short pronoun u comes right after the verb, the adverb alvast before the object.",
-  "senses": {
-   "u": "u@20",
-   "mijn": "mijn@20"
-  }
+  "hint": "Verb 2nd. Time first → inversion.",
+  "grammar": "basis",
+  "level": 2
  },
  {
   "id": "school-08",
@@ -1846,6 +2096,8 @@ const EXERCISES = [
   "answer": "ik wacht nog op een reactie van meneer Bakker",
   "alternatives": [],
   "hint": "Verb in 2nd place; wachten op: the op-phrase follows the adverb nog.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "nog": "nog@20",
    "op": "op@20",
@@ -1868,124 +2120,11 @@ const EXERCISES = [
    "ik mail vandaag mevrouw Jansen over de nieuwe datum"
   ],
   "hint": "Verb in 2nd place. If you start with vandaag, the subject moves behind the verb.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "over": "over@20"
   }
- },
- {
-  "id": "school-10",
-  "topic": "school",
-  "parts": [
-   "tot vrijdag",
-   "lenen",
-   "jouw boek",
-   "mag ik"
-  ],
-  "answer": "mag ik jouw boek tot vrijdag lenen?",
-  "alternatives": [],
-  "hint": "Question with a modal verb: modal first, subject second, infinitive (lenen) at the end.",
-  "senses": {
-   "tot": "tot@20",
-   "vrijdag": "vrijdag@20"
-  }
- },
- {
-  "id": "school-11",
-  "topic": "school",
-  "parts": [
-   "terug",
-   "volgende week",
-   "zij krijgt",
-   "haar boek"
-  ],
-  "answer": "zij krijgt haar boek volgende week terug",
-  "alternatives": [
-   "volgende week krijgt zij haar boek terug"
-  ],
-  "hint": "Separable verb terugkrijgen: krijgt in 2nd place, terug at the end.",
-  "senses": {
-   "volgende": "volgende@20"
-  }
- },
- {
-  "id": "school-12",
-  "topic": "school",
-  "parts": [
-   "volgen",
-   "een cursus gezond koken",
-   "graag",
-   "ik wil"
-  ],
-  "answer": "ik wil graag een cursus gezond koken volgen",
-  "alternatives": [],
-  "hint": "Modal verb (wil) in 2nd place, the infinitive (volgen) at the end."
- },
- {
-  "id": "school-13",
-  "topic": "school",
-  "parts": [
-   "ingevuld",
-   "gisteren",
-   "het aanmeldformulier",
-   "ik heb"
-  ],
-  "answer": "ik heb het aanmeldformulier gisteren ingevuld",
-  "alternatives": [
-   "gisteren heb ik het aanmeldformulier ingevuld",
-   "ik heb gisteren het aanmeldformulier ingevuld"
-  ],
-  "hint": "Perfect tense: heb in 2nd place, the past participle (ingevuld) at the end.",
-  "senses": {
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-14",
-  "topic": "school",
-  "parts": [
-   "al vol",
-   "de groep",
-   "is helaas",
-   "op dinsdagavond"
-  ],
-  "answer": "de groep op dinsdagavond is helaas al vol",
-  "alternatives": [],
-  "hint": "The whole subject (de groep op dinsdagavond) comes first, then the verb.",
-  "senses": {
-   "op": "op@20",
-   "al": "al@20"
-  }
- },
- {
-  "id": "school-15",
-  "topic": "school",
-  "parts": [
-   "van de gemeente",
-   "is",
-   "de kookcursus",
-   "een initiatief"
-  ],
-  "answer": "de kookcursus is een initiatief van de gemeente",
-  "alternatives": [],
-  "hint": "Subject first, verb (is) in 2nd place.",
-  "senses": {
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-16",
-  "topic": "school",
-  "parts": [
-   "in de groep",
-   "twaalf mensen",
-   "zitten er",
-   "in totaal"
-  ],
-  "answer": "in totaal zitten er twaalf mensen in de groep",
-  "alternatives": [
-   "er zitten in totaal twaalf mensen in de groep"
-  ],
-  "hint": "After in totaal at the start, the verb comes 2nd; er + verb introduces a new, indefinite subject."
  },
  {
   "id": "school-17",
@@ -2001,86 +2140,13 @@ const EXERCISES = [
    "in de keuken van de kookcursus ruikt het lekker"
   ],
   "hint": "Verb in 2nd place; manner (lekker) before place (in de keuken).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "het": "het@20",
    "lekker": "lekker@20",
    "van": "van@20"
   }
- },
- {
-  "id": "school-18",
-  "topic": "school",
-  "parts": [
-   "en een goede smaak",
-   "heeft",
-   "de soep",
-   "een mooie kleur"
-  ],
-  "answer": "de soep heeft een mooie kleur en een goede smaak",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the objects joined by en."
- },
- {
-  "id": "school-19",
-  "topic": "school",
-  "parts": [
-   "de opleiding is duur",
-   "helpt mij financieel",
-   "want",
-   "de gemeente"
-  ],
-  "answer": "de gemeente helpt mij financieel, want de opleiding is duur",
-  "alternatives": [],
-  "hint": "After want the normal main-clause order stays: subject + verb.",
-  "senses": {
-   "mij": "mij@20"
-  }
- },
- {
-  "id": "school-20",
-  "topic": "school",
-  "parts": [
-   "via de bank",
-   "van de cursus",
-   "ik betaal",
-   "de rekening"
-  ],
-  "answer": "ik betaal de rekening van de cursus via de bank",
-  "alternatives": [],
-  "hint": "Verb in 2nd place, the object (de rekening van de cursus) before the way of paying (via de bank).",
-  "senses": {
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-21",
-  "topic": "school",
-  "parts": [
-   "nog niet betaald",
-   "want wij",
-   "hebben",
-   "de school stuurt",
-   "een herinnering"
-  ],
-  "answer": "de school stuurt een herinnering, want wij hebben nog niet betaald",
-  "alternatives": [],
-  "hint": "Want keeps main-clause order: wij hebben … betaald (participle at the end).",
-  "senses": {
-   "nog": "nog@20"
-  }
- },
- {
-  "id": "school-22",
-  "topic": "school",
-  "parts": [
-   "in juni",
-   "een jaar",
-   "en eindigt",
-   "de opleiding duurt"
-  ],
-  "answer": "de opleiding duurt een jaar en eindigt in juni",
-  "alternatives": [],
-  "hint": "Two verbs sharing one subject: both stay in 2nd position of their part."
  },
  {
   "id": "school-23",
@@ -2094,305 +2160,11 @@ const EXERCISES = [
   "answer": "ik zoek een computercursus bij mij in de buurt",
   "alternatives": [],
   "hint": "Verb in 2nd place, the object before the place.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "bij": "bij@20",
    "mij": "mij@20"
-  }
- },
- {
-  "id": "school-24",
-  "topic": "school",
-  "parts": [
-   "van computers",
-   "heeft",
-   "de docent van de computercursus",
-   "veel verstand"
-  ],
-  "answer": "de docent van de computercursus heeft veel verstand van computers",
-  "alternatives": [],
-  "hint": "Long subject first, verb in 2nd place. Verstand hebben van = to know a lot about.",
-  "senses": {
-   "van": "van@20",
-   "veel": "veel@20"
-  }
- },
- {
-  "id": "school-25",
-  "topic": "school",
-  "parts": [
-   "vergeten",
-   "in de klas",
-   "ik heb",
-   "gisteren",
-   "mijn laptop"
-  ],
-  "answer": "ik heb mijn laptop gisteren in de klas vergeten",
-  "alternatives": [
-   "gisteren heb ik mijn laptop in de klas vergeten",
-   "ik heb gisteren mijn laptop in de klas vergeten"
-  ],
-  "hint": "Perfect tense: heb 2nd, participle (vergeten) last; time before place.",
-  "senses": {
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-26",
-  "topic": "school",
-  "parts": [
-   "invullen",
-   "uw achternaam en telefoonnummer",
-   "wilt u",
-   "hier"
-  ],
-  "answer": "wilt u hier uw achternaam en telefoonnummer invullen?",
-  "alternatives": [],
-  "hint": "Polite question: wilt u … + infinitive at the end.",
-  "senses": {
-   "u": "u@20"
-  }
- },
- {
-  "id": "school-27",
-  "topic": "school",
-  "parts": [
-   "altijd verkeerd",
-   "uit",
-   "de docent",
-   "mijn naam",
-   "spreekt"
-  ],
-  "answer": "de docent spreekt mijn naam altijd verkeerd uit",
-  "alternatives": [],
-  "hint": "Separable verb uitspreken: spreekt in 2nd place, uit at the end.",
-  "senses": {
-   "spreekt": "spreekt@20",
-   "mijn": "mijn@20",
-   "uit": "uit@20"
-  }
- },
- {
-  "id": "school-28",
-  "topic": "school",
-  "parts": [
-   "gehad",
-   "met de docent",
-   "heb ik",
-   "na de les",
-   "een gesprek"
-  ],
-  "answer": "na de les heb ik een gesprek met de docent gehad",
-  "alternatives": [
-   "ik heb na de les een gesprek met de docent gehad"
-  ],
-  "hint": "Time phrase first → inversion (heb ik). The participle gehad goes last.",
-  "senses": {
-   "gesprek": "gesprek@20"
-  }
- },
- {
-  "id": "school-29",
-  "topic": "school",
-  "parts": [
-   "over dit onderwerp",
-   "gehad",
-   "hebben wij",
-   "een discussie",
-   "in de klas"
-  ],
-  "answer": "in de klas hebben wij een discussie over dit onderwerp gehad",
-  "alternatives": [
-   "wij hebben in de klas een discussie over dit onderwerp gehad"
-  ],
-  "hint": "Place phrase first → inversion. Participle (gehad) at the end.",
-  "senses": {
-   "over": "over@20",
-   "dit": "dit@20"
-  }
- },
- {
-  "id": "school-30",
-  "topic": "school",
-  "parts": [
-   "van dit woord",
-   "de betekenis",
-   "weet jij"
-  ],
-  "answer": "weet jij de betekenis van dit woord?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first, then subject.",
-  "senses": {
-   "van": "van@20",
-   "dit": "dit@20"
-  }
- },
- {
-  "id": "school-31",
-  "topic": "school",
-  "parts": [
-   "antwoord jij niet",
-   "op mijn vraag",
-   "waarom"
-  ],
-  "answer": "waarom antwoord jij niet op mijn vraag?",
-  "alternatives": [],
-  "hint": "W-question: question word, verb, subject. With jij after the verb the -t drops: antwoord jij.",
-  "senses": {
-   "antwoord": "antwoord@20",
-   "op": "op@20",
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-32",
-  "topic": "school",
-  "parts": [
-   "er vandaag niet is",
-   "het is vreemd",
-   "dat de docent"
-  ],
-  "answer": "het is vreemd dat de docent er vandaag niet is",
-  "alternatives": [],
-  "hint": "In a dat-clause the verb (is) goes to the end.",
-  "senses": {
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-33",
-  "topic": "school",
-  "parts": [
-   "vandaag ziek",
-   "blijkbaar",
-   "is meneer Bakker"
-  ],
-  "answer": "blijkbaar is meneer Bakker vandaag ziek",
-  "alternatives": [
-   "meneer Bakker is blijkbaar vandaag ziek",
-   "meneer Bakker is vandaag blijkbaar ziek"
-  ],
-  "hint": "Adverb first (blijkbaar) → inversion: verb before subject.",
-  "senses": {
-   "meneer": "meneer@20"
-  }
- },
- {
-  "id": "school-34",
-  "topic": "school",
-  "parts": [
-   "dat de toets",
-   "morgen is",
-   "is het waar"
-  ],
-  "answer": "is het waar dat de toets morgen is?",
-  "alternatives": [],
-  "hint": "Question with verb first; in the dat-clause the verb goes to the end.",
-  "senses": {
-   "het": "het@20",
-   "morgen": "morgen@20"
-  }
- },
- {
-  "id": "school-35",
-  "topic": "school",
-  "parts": [
-   "heel moeilijk",
-   "was inderdaad",
-   "de toets van gisteren"
-  ],
-  "answer": "de toets van gisteren was inderdaad heel moeilijk",
-  "alternatives": [],
-  "hint": "Subject first, verb (was) in 2nd place, then the adverb.",
-  "senses": {
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-36",
-  "topic": "school",
-  "parts": [
-   "de toets allemaal",
-   "gehaald",
-   "hebben",
-   "de leerlingen"
-  ],
-  "answer": "de leerlingen hebben de toets allemaal gehaald",
-  "alternatives": [
-   "de leerlingen hebben allemaal de toets gehaald"
-  ],
-  "hint": "Perfect tense: hebben 2nd, participle (gehaald) at the end."
- },
- {
-  "id": "school-37",
-  "topic": "school",
-  "parts": [
-   "boven verwachting",
-   "was",
-   "het resultaat van mijn toets"
-  ],
-  "answer": "het resultaat van mijn toets was boven verwachting",
-  "alternatives": [],
-  "hint": "Long subject first, then the verb in 2nd place.",
-  "senses": {
-   "het": "het@20",
-   "van": "van@20",
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-38",
-  "topic": "school",
-  "parts": [
-   "voor de toets",
-   "nog een kans",
-   "de docent",
-   "geeft mij"
-  ],
-  "answer": "de docent geeft mij nog een kans voor de toets",
-  "alternatives": [],
-  "hint": "Verb 2nd; indirect object (mij) before direct object (een kans).",
-  "senses": {
-   "mij": "mij@20",
-   "nog": "nog@20",
-   "voor": "voor@20"
-  }
- },
- {
-  "id": "school-39",
-  "topic": "school",
-  "parts": [
-   "heb geslapen",
-   "omdat ik",
-   "ik heb weinig energie",
-   "slecht"
-  ],
-  "answer": "ik heb weinig energie omdat ik slecht heb geslapen",
-  "alternatives": [
-   "ik heb weinig energie omdat ik slecht geslapen heb",
-   "omdat ik slecht heb geslapen, heb ik weinig energie",
-   "omdat ik slecht geslapen heb, heb ik weinig energie"
-  ],
-  "hint": "Omdat sends the verbs to the end of the clause.",
-  "senses": {
-   "weinig": "weinig@20"
-  }
- },
- {
-  "id": "school-40",
-  "topic": "school",
-  "parts": [
-   "voor mijn huiswerk",
-   "behoefte",
-   "ik heb",
-   "aan meer tijd"
-  ],
-  "answer": "ik heb behoefte aan meer tijd voor mijn huiswerk",
-  "alternatives": [],
-  "hint": "Verb 2nd; behoefte hebben aan = to need.",
-  "senses": {
-   "aan": "aan@20",
-   "voor": "voor@20",
-   "mijn": "mijn@20"
   }
  },
  {
@@ -2409,46 +2181,10 @@ const EXERCISES = [
    "vandaag heb ik een hoop huiswerk voor de cursus"
   ],
   "hint": "Time (vandaag) comes right after the verb, or at the start with inversion.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "voor": "voor@20"
-  }
- },
- {
-  "id": "school-42",
-  "topic": "school",
-  "parts": [
-   "zijn huiswerk",
-   "en doet",
-   "mijn zoon werkt hard",
-   "zelfs in het weekend"
-  ],
-  "answer": "mijn zoon werkt hard en doet zelfs in het weekend zijn huiswerk",
-  "alternatives": [
-   "mijn zoon werkt hard en doet zijn huiswerk zelfs in het weekend"
-  ],
-  "hint": "Two verbs with the same subject joined by en; each keeps its place after the subject.",
-  "senses": {
-   "mijn": "mijn@20",
-   "het": "het@20",
-   "zijn": "zijn@20"
-  }
- },
- {
-  "id": "school-43",
-  "topic": "school",
-  "parts": [
-   "als mijn zoon",
-   "zit",
-   "het kind van mijn broer",
-   "in dezelfde klas"
-  ],
-  "answer": "het kind van mijn broer zit in dezelfde klas als mijn zoon",
-  "alternatives": [],
-  "hint": "Long subject first, then the verb (zit) in 2nd place.",
-  "senses": {
-   "het": "het@20",
-   "van": "van@20",
-   "mijn": "mijn@20"
   }
  },
  {
@@ -2467,22 +2203,143 @@ const EXERCISES = [
    "mijn zuster brengt elke ochtend de kinderen naar school"
   ],
   "hint": "TMP: time (elke ochtend) before place (naar school). Time first → inversion.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "mijn": "mijn@20",
    "elke": "elke@20"
   }
  },
  {
-  "id": "school-45",
+  "id": "school-62",
   "topic": "school",
   "parts": [
-   "ook heel vrolijk",
-   "de meester is streng",
-   "maar eigenlijk"
+   "veel liefde en aandacht",
+   "de juf",
+   "geeft",
+   "de kinderen"
   ],
-  "answer": "de meester is streng maar eigenlijk ook heel vrolijk",
+  "answer": "de juf geeft de kinderen veel liefde en aandacht",
   "alternatives": [],
-  "hint": "Maar joins two parts; the adverbs eigenlijk and ook come before the adjective."
+  "hint": "Verb 2nd; indirect object (de kinderen) before direct object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "veel": "veel@20"
+  }
+ },
+ {
+  "id": "school-88",
+  "topic": "school",
+  "parts": [
+   "in het ziekenhuis",
+   "werkt",
+   "mijn vrouw",
+   "op een afdeling"
+  ],
+  "answer": "mijn vrouw werkt op een afdeling in het ziekenhuis",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place, then place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "mijn": "mijn@20",
+   "op": "op@20",
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-112",
+  "topic": "school",
+  "parts": [
+   "door het park",
+   "naar school",
+   "elke dag",
+   "ik loop"
+  ],
+  "answer": "ik loop elke dag door het park naar school",
+  "alternatives": [
+   "elke dag loop ik door het park naar school"
+  ],
+  "hint": "TMP: time (elke dag) first, then the route and destination.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "elke": "elke@20",
+   "door": "door@20",
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-115",
+  "topic": "school",
+  "parts": [
+   "in de stad",
+   "een eigen zaak",
+   "mijn broer",
+   "heeft"
+  ],
+  "answer": "mijn broer heeft een eigen zaak in de stad",
+  "alternatives": [],
+  "hint": "Subject first, verb 2nd.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-18",
+  "topic": "school",
+  "parts": [
+   "en een goede smaak",
+   "heeft",
+   "de soep",
+   "een mooie kleur"
+  ],
+  "answer": "de soep heeft een mooie kleur en een goede smaak",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the objects joined by en.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "school-20",
+  "topic": "school",
+  "parts": [
+   "via de bank",
+   "van de cursus",
+   "ik betaal",
+   "de rekening"
+  ],
+  "answer": "ik betaal de rekening van de cursus via de bank",
+  "alternatives": [],
+  "hint": "Verb in 2nd place, the object (de rekening van de cursus) before the way of paying (via de bank).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "van": "van@20"
+  }
+ },
+ {
+  "id": "school-38",
+  "topic": "school",
+  "parts": [
+   "voor de toets",
+   "nog een kans",
+   "de docent",
+   "geeft mij"
+  ],
+  "answer": "de docent geeft mij nog een kans voor de toets",
+  "alternatives": [],
+  "hint": "Verb 2nd; indirect object (mij) before direct object (een kans).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "mij": "mij@20",
+   "nog": "nog@20",
+   "voor": "voor@20"
+  }
  },
  {
   "id": "school-46",
@@ -2496,41 +2353,10 @@ const EXERCISES = [
   "answer": "de kinderen lachen vaak om de grappen van de meester",
   "alternatives": [],
   "hint": "Verb 2nd, adverb (vaak) right after the verb; lachen om = laugh at.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "van": "van@20"
-  }
- },
- {
-  "id": "school-47",
-  "topic": "school",
-  "parts": [
-   "koffie of thee",
-   "gewoonlijk",
-   "drinken wij",
-   "in de pauze"
-  ],
-  "answer": "in de pauze drinken wij gewoonlijk koffie of thee",
-  "alternatives": [
-   "wij drinken in de pauze gewoonlijk koffie of thee",
-   "gewoonlijk drinken wij in de pauze koffie of thee"
-  ],
-  "hint": "Time phrase first → inversion: verb, then subject."
- },
- {
-  "id": "school-48",
-  "topic": "school",
-  "parts": [
-   "de krant of een tijdschrift",
-   "lees ik",
-   "na het eten"
-  ],
-  "answer": "na het eten lees ik de krant of een tijdschrift",
-  "alternatives": [
-   "ik lees na het eten de krant of een tijdschrift"
-  ],
-  "hint": "Time phrase first → inversion (lees ik).",
-  "senses": {
-   "het": "het@20"
   }
  },
  {
@@ -2547,75 +2373,11 @@ const EXERCISES = [
    "in de pauze spelen de kinderen buiten op het gras"
   ],
   "hint": "TMP: time (in de pauze) before place (buiten op het gras).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "op": "op@20",
    "het": "het@20"
-  }
- },
- {
-  "id": "school-50",
-  "topic": "school",
-  "parts": [
-   "binnen",
-   "als het regent",
-   "blijven de kinderen"
-  ],
-  "answer": "als het regent blijven de kinderen binnen",
-  "alternatives": [
-   "de kinderen blijven binnen als het regent"
-  ],
-  "hint": "Als-clause first (verb at its end), then the main verb immediately follows: blijven de kinderen.",
-  "senses": {
-   "het": "het@20",
-   "blijven": "blijven@20"
-  }
- },
- {
-  "id": "school-51",
-  "topic": "school",
-  "parts": [
-   "de kinderen",
-   "zingen en dansen",
-   "op het feest van de school"
-  ],
-  "answer": "op het feest van de school zingen en dansen de kinderen",
-  "alternatives": [
-   "de kinderen zingen en dansen op het feest van de school"
-  ],
-  "hint": "Place phrase first → inversion: verbs before the subject.",
-  "senses": {
-   "op": "op@20",
-   "het": "het@20",
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-52",
-  "topic": "school",
-  "parts": [
-   "gezongen",
-   "een prachtig lied",
-   "de kinderen hebben"
-  ],
-  "answer": "de kinderen hebben een prachtig lied gezongen",
-  "alternatives": [],
-  "hint": "Perfect tense: hebben 2nd, participle gezongen at the end."
- },
- {
-  "id": "school-53",
-  "topic": "school",
-  "parts": [
-   "en de natuur",
-   "interesseert",
-   "mijn dochter",
-   "zich voor dieren"
-  ],
-  "answer": "mijn dochter interesseert zich voor dieren en de natuur",
-  "alternatives": [],
-  "hint": "Reflexive verb: zich comes right after the conjugated verb.",
-  "senses": {
-   "mijn": "mijn@20",
-   "voor": "voor@20"
   }
  },
  {
@@ -2629,8 +2391,173 @@ const EXERCISES = [
   "answer": "mijn zoon heeft een rustige persoonlijkheid",
   "alternatives": [],
   "hint": "Subject first, verb in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-07",
+  "topic": "school",
+  "parts": [
+   "alvast",
+   "mijn nieuwe telefoonnummer",
+   "ik stuur u"
+  ],
+  "answer": "ik stuur u alvast mijn nieuwe telefoonnummer",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; the short pronoun u comes right after the verb, the adverb alvast before the object.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "u": "u@20",
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-93",
+  "topic": "school",
+  "parts": [
+   "altijd serieus",
+   "neemt",
+   "mijn vraag",
+   "de docent"
+  ],
+  "answer": "de docent neemt mijn vraag altijd serieus",
+  "alternatives": [],
+  "hint": "Verb 2nd; the definite object comes before altijd.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "neemt": "neemt@20",
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-14",
+  "topic": "school",
+  "parts": [
+   "al vol",
+   "de groep",
+   "is helaas",
+   "op dinsdagavond"
+  ],
+  "answer": "de groep op dinsdagavond is helaas al vol",
+  "alternatives": [],
+  "hint": "The whole subject (de groep op dinsdagavond) comes first, then the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "op": "op@20",
+   "al": "al@20"
+  }
+ },
+ {
+  "id": "school-15",
+  "topic": "school",
+  "parts": [
+   "van de gemeente",
+   "is",
+   "de kookcursus",
+   "een initiatief"
+  ],
+  "answer": "de kookcursus is een initiatief van de gemeente",
+  "alternatives": [],
+  "hint": "Subject first, verb (is) in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "van": "van@20"
+  }
+ },
+ {
+  "id": "school-35",
+  "topic": "school",
+  "parts": [
+   "heel moeilijk",
+   "was inderdaad",
+   "de toets van gisteren"
+  ],
+  "answer": "de toets van gisteren was inderdaad heel moeilijk",
+  "alternatives": [],
+  "hint": "Subject first, verb (was) in 2nd place, then the adverb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "van": "van@20"
+  }
+ },
+ {
+  "id": "school-37",
+  "topic": "school",
+  "parts": [
+   "boven verwachting",
+   "was",
+   "het resultaat van mijn toets"
+  ],
+  "answer": "het resultaat van mijn toets was boven verwachting",
+  "alternatives": [],
+  "hint": "Long subject first, then the verb in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@20",
+   "van": "van@20",
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-40",
+  "topic": "school",
+  "parts": [
+   "voor mijn huiswerk",
+   "behoefte",
+   "ik heb",
+   "aan meer tijd"
+  ],
+  "answer": "ik heb behoefte aan meer tijd voor mijn huiswerk",
+  "alternatives": [],
+  "hint": "Verb 2nd; behoefte hebben aan = to need.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "aan": "aan@20",
+   "voor": "voor@20",
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-45",
+  "topic": "school",
+  "parts": [
+   "ook heel vrolijk",
+   "de meester is streng",
+   "maar eigenlijk"
+  ],
+  "answer": "de meester is streng maar eigenlijk ook heel vrolijk",
+  "alternatives": [],
+  "hint": "Maar joins two parts; the adverbs eigenlijk and ook come before the adjective.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "school-53",
+  "topic": "school",
+  "parts": [
+   "en de natuur",
+   "interesseert",
+   "mijn dochter",
+   "zich voor dieren"
+  ],
+  "answer": "mijn dochter interesseert zich voor dieren en de natuur",
+  "alternatives": [],
+  "hint": "Reflexive verb: zich comes right after the conjugated verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "mijn": "mijn@20",
+   "voor": "voor@20"
   }
  },
  {
@@ -2645,6 +2572,8 @@ const EXERCISES = [
   "answer": "mijn dochter heeft een goed geheugen voor nieuwe woorden",
   "alternatives": [],
   "hint": "Subject, verb in 2nd place, then the object.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "mijn": "mijn@20",
    "goed": "goed@20",
@@ -2652,58 +2581,65 @@ const EXERCISES = [
   }
  },
  {
-  "id": "school-56",
+  "id": "school-103",
   "topic": "school",
   "parts": [
-   "over de ontwikkeling",
-   "praten wij",
-   "van ons kind",
-   "op de ouderavond"
+   "op school",
+   "de nieuwe boeken",
+   "morgen",
+   "de winkel levert"
   ],
-  "answer": "op de ouderavond praten wij over de ontwikkeling van ons kind",
+  "answer": "de winkel levert de nieuwe boeken morgen op school",
   "alternatives": [
-   "wij praten op de ouderavond over de ontwikkeling van ons kind"
+   "morgen levert de winkel de nieuwe boeken op school",
+   "de winkel levert morgen de nieuwe boeken op school"
   ],
-  "hint": "Time/place phrase first → inversion. Praten over goes near the end.",
+  "hint": "TMP: time (morgen) before place (op school).",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "op": "op@20",
-   "over": "over@20",
-   "van": "van@20",
-   "ons": "ons@20"
+   "morgen": "morgen@20",
+   "op": "op@20"
   }
  },
  {
-  "id": "school-57",
+  "id": "school-109",
   "topic": "school",
   "parts": [
-   "beter is",
-   "de juf zegt",
-   "van mijn zoon",
-   "dat het gedrag"
+   "van de school",
+   "schade",
+   "er is",
+   "aan het dak"
   ],
-  "answer": "de juf zegt dat het gedrag van mijn zoon beter is",
+  "answer": "er is schade aan het dak van de school",
   "alternatives": [],
-  "hint": "In a dat-clause the verb (is) goes to the end.",
+  "hint": "Er is + new subject (schade).",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
+   "aan": "aan@20",
    "het": "het@20",
-   "van": "van@20",
-   "mijn": "mijn@20"
+   "van": "van@20"
   }
  },
  {
-  "id": "school-58",
+  "id": "school-24",
   "topic": "school",
   "parts": [
-   "een goede houding",
-   "de docent is blij",
-   "heb",
-   "omdat ik"
+   "van computers",
+   "heeft",
+   "de docent van de computercursus",
+   "veel verstand"
   ],
-  "answer": "de docent is blij omdat ik een goede houding heb",
-  "alternatives": [
-   "omdat ik een goede houding heb, is de docent blij"
-  ],
-  "hint": "Omdat sends the verb (heb) to the end."
+  "answer": "de docent van de computercursus heeft veel verstand van computers",
+  "alternatives": [],
+  "hint": "Long subject first, verb in 2nd place. Verstand hebben van = to know a lot about.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "van": "van@20",
+   "veel": "veel@20"
+  }
  },
  {
   "id": "school-59",
@@ -2716,179 +2652,51 @@ const EXERCISES = [
   "answer": "een jongen uit de klas doet gemeen tegen mijn zoon",
   "alternatives": [],
   "hint": "Long subject first, then the verb. Gemeen doen tegen = to be mean to.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "uit": "uit@20",
    "mijn": "mijn@20"
   }
  },
  {
-  "id": "school-60",
+  "id": "school-96",
   "topic": "school",
   "parts": [
-   "heeft gemaakt",
-   "hij krijgt straf",
-   "zijn huiswerk niet",
-   "omdat hij"
+   "in een tas van leer",
+   "zijn spullen",
+   "draagt",
+   "mijn zoon"
   ],
-  "answer": "hij krijgt straf omdat hij zijn huiswerk niet heeft gemaakt",
-  "alternatives": [
-   "hij krijgt straf omdat hij zijn huiswerk niet gemaakt heeft",
-   "omdat hij zijn huiswerk niet heeft gemaakt, krijgt hij straf",
-   "omdat hij zijn huiswerk niet gemaakt heeft, krijgt hij straf"
-  ],
-  "hint": "Omdat sends the verbs to the end; niet comes before them.",
-  "senses": {
-   "zijn": "zijn@20"
-  }
- },
- {
-  "id": "school-61",
-  "topic": "school",
-  "parts": [
-   "goed om",
-   "met moeilijke kinderen",
-   "de juf gaat"
-  ],
-  "answer": "de juf gaat goed om met moeilijke kinderen",
-  "alternatives": [
-   "de juf gaat goed met moeilijke kinderen om"
-  ],
-  "hint": "Separable verb omgaan met: gaat 2nd, om at the end, met-phrase after it.",
-  "senses": {
-   "goed": "goed@20"
-  }
- },
- {
-  "id": "school-62",
-  "topic": "school",
-  "parts": [
-   "veel liefde en aandacht",
-   "de juf",
-   "geeft",
-   "de kinderen"
-  ],
-  "answer": "de juf geeft de kinderen veel liefde en aandacht",
+  "answer": "mijn zoon draagt zijn spullen in een tas van leer",
   "alternatives": [],
-  "hint": "Verb 2nd; indirect object (de kinderen) before direct object.",
+  "hint": "Verb 2nd; object before the place.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "veel": "veel@20"
-  }
- },
- {
-  "id": "school-63",
-  "topic": "school",
-  "parts": [
-   "erg druk was",
-   "ik ben te laat",
-   "bij het station",
-   "omdat het"
-  ],
-  "answer": "ik ben te laat omdat het bij het station erg druk was",
-  "alternatives": [
-   "ik ben te laat omdat het erg druk was bij het station"
-  ],
-  "hint": "Omdat sends the verb (was) to the end of the clause.",
-  "senses": {
-   "te": "te@20",
-   "laat": "laat@20",
-   "het": "het@20",
-   "bij": "bij@20",
-   "erg": "erg@20"
-  }
- },
- {
-  "id": "school-64",
-  "topic": "school",
-  "parts": [
-   "over vijf minuten",
-   "want de les",
-   "ik heb haast",
-   "begint"
-  ],
-  "answer": "ik heb haast want de les begint over vijf minuten",
-  "alternatives": [],
-  "hint": "Want does not change word order: de les begint.",
-  "senses": {
-   "over": "over@20"
-  }
- },
- {
-  "id": "school-65",
-  "topic": "school",
-  "parts": [
-   "om negen uur",
-   "begint",
-   "normaal",
-   "de les"
-  ],
-  "answer": "normaal begint de les om negen uur",
-  "alternatives": [
-   "de les begint normaal om negen uur"
-  ],
-  "hint": "Adverb first (normaal) → inversion: begint de les."
- },
- {
-  "id": "school-66",
-  "topic": "school",
-  "parts": [
-   "naar de les",
-   "daarom kom ik",
-   "ik ben ziek",
-   "vandaag niet"
-  ],
-  "answer": "ik ben ziek, daarom kom ik vandaag niet naar de les",
-  "alternatives": [],
-  "hint": "Daarom at the start of a clause causes inversion: daarom kom ik."
- },
- {
-  "id": "school-67",
-  "topic": "school",
-  "parts": [
-   "kende ik niemand",
-   "naar Holland kwam",
-   "toen ik"
-  ],
-  "answer": "toen ik naar Holland kwam, kende ik niemand",
-  "alternatives": [
-   "ik kende niemand toen ik naar Holland kwam"
-  ],
-  "hint": "Toen-clause: verb at the end (kwam). After it, the main verb comes first: kende ik."
- },
- {
-  "id": "school-68",
-  "topic": "school",
-  "parts": [
-   "gevlucht",
-   "uit hun land",
-   "zijn",
-   "veel mensen in mijn klas"
-  ],
-  "answer": "veel mensen in mijn klas zijn uit hun land gevlucht",
-  "alternatives": [],
-  "hint": "Perfect with zijn (movement): zijn 2nd, participle gevlucht at the end.",
-  "senses": {
-   "veel": "veel@20",
    "mijn": "mijn@20",
    "zijn": "zijn@20",
-   "uit": "uit@20"
+   "van": "van@20"
   }
  },
  {
-  "id": "school-69",
+  "id": "school-43",
   "topic": "school",
   "parts": [
-   "veel moed",
-   "nodig",
-   "heb je",
-   "in een nieuw land"
+   "als mijn zoon",
+   "zit",
+   "het kind van mijn broer",
+   "in dezelfde klas"
   ],
-  "answer": "in een nieuw land heb je veel moed nodig",
+  "answer": "het kind van mijn broer zit in dezelfde klas als mijn zoon",
   "alternatives": [],
-  "hint": "Place first → inversion (heb je; the -t drops before je). Nodig goes to the end.",
+  "hint": "Long subject first, then the verb (zit) in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "je": "je@20",
-   "veel": "veel@20",
-   "nodig": "nodig@20"
+   "het": "het@20",
+   "van": "van@20",
+   "mijn": "mijn@20"
   }
  },
  {
@@ -2903,6 +2711,8 @@ const EXERCISES = [
   "answer": "er zijn grote verschillen tussen de scholen hier en in mijn land",
   "alternatives": [],
   "hint": "Er zijn + subject: introduces something new.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "zijn": "zijn@20",
    "mijn": "mijn@20"
@@ -2920,9 +2730,489 @@ const EXERCISES = [
   "answer": "de combinatie van werk en studie is soms zwaar",
   "alternatives": [],
   "hint": "Long subject first, verb (is) in 2nd place.",
+  "grammar": "basis",
+  "level": 4,
   "senses": {
    "van": "van@20",
    "werk": "werk@20"
+  }
+ },
+ {
+  "id": "school-104",
+  "topic": "school",
+  "parts": [
+   "over de groep",
+   "een besluit",
+   "volgende week",
+   "de directeur neemt"
+  ],
+  "answer": "de directeur neemt volgende week een besluit over de groep",
+  "alternatives": [
+   "volgende week neemt de directeur een besluit over de groep"
+  ],
+  "hint": "Time before the indefinite object; time first → inversion.",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "directeur": "directeur@20",
+   "neemt": "neemt@20",
+   "volgende": "volgende@20",
+   "over": "over@20"
+  }
+ },
+ {
+  "id": "school-65",
+  "topic": "school",
+  "parts": [
+   "om negen uur",
+   "begint",
+   "normaal",
+   "de les"
+  ],
+  "answer": "normaal begint de les om negen uur",
+  "alternatives": [
+   "de les begint normaal om negen uur"
+  ],
+  "hint": "Adverb first (normaal) → inversion: begint de les.",
+  "grammar": "inversie",
+  "level": 1
+ },
+ {
+  "id": "school-114",
+  "topic": "school",
+  "parts": [
+   "vrij",
+   "zijn de kinderen",
+   "op woensdagmiddag"
+  ],
+  "answer": "op woensdagmiddag zijn de kinderen vrij",
+  "alternatives": [
+   "de kinderen zijn op woensdagmiddag vrij"
+  ],
+  "hint": "Time first → inversion: zijn de kinderen.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@20",
+   "zijn": "zijn@20",
+   "vrij": "vrij@20"
+  }
+ },
+ {
+  "id": "school-47",
+  "topic": "school",
+  "parts": [
+   "koffie of thee",
+   "gewoonlijk",
+   "drinken wij",
+   "in de pauze"
+  ],
+  "answer": "in de pauze drinken wij gewoonlijk koffie of thee",
+  "alternatives": [
+   "wij drinken in de pauze gewoonlijk koffie of thee",
+   "gewoonlijk drinken wij in de pauze koffie of thee"
+  ],
+  "hint": "Time phrase first → inversion: verb, then subject.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "school-48",
+  "topic": "school",
+  "parts": [
+   "de krant of een tijdschrift",
+   "lees ik",
+   "na het eten"
+  ],
+  "answer": "na het eten lees ik de krant of een tijdschrift",
+  "alternatives": [
+   "ik lees na het eten de krant of een tijdschrift"
+  ],
+  "hint": "Time phrase first → inversion (lees ik).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-76",
+  "topic": "school",
+  "parts": [
+   "naar de kust",
+   "de klas",
+   "in juni",
+   "een dag",
+   "gaat"
+  ],
+  "answer": "in juni gaat de klas een dag naar de kust",
+  "alternatives": [
+   "de klas gaat in juni een dag naar de kust"
+  ],
+  "hint": "Time first → inversion. TMP: time before place (naar de kust).",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "school-33",
+  "topic": "school",
+  "parts": [
+   "vandaag ziek",
+   "blijkbaar",
+   "is meneer Bakker"
+  ],
+  "answer": "blijkbaar is meneer Bakker vandaag ziek",
+  "alternatives": [
+   "meneer Bakker is blijkbaar vandaag ziek",
+   "meneer Bakker is vandaag blijkbaar ziek"
+  ],
+  "hint": "Adverb first (blijkbaar) → inversion: verb before subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "meneer": "meneer@20"
+  }
+ },
+ {
+  "id": "school-105",
+  "topic": "school",
+  "parts": [
+   "voor het probleem",
+   "zoeken wij",
+   "een oplossing",
+   "samen"
+  ],
+  "answer": "samen zoeken wij een oplossing voor het probleem",
+  "alternatives": [
+   "wij zoeken samen een oplossing voor het probleem"
+  ],
+  "hint": "Adverb first (samen) → inversion: zoeken wij.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "zoeken": "zoeken@20",
+   "voor": "voor@20",
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-118",
+  "topic": "school",
+  "parts": [
+   "soldaat",
+   "in het leger",
+   "vroeger",
+   "was mijn opa"
+  ],
+  "answer": "vroeger was mijn opa soldaat in het leger",
+  "alternatives": [
+   "mijn opa was vroeger soldaat in het leger"
+  ],
+  "hint": "Time word first (vroeger) → inversion: was mijn opa.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "vroeger": "vroeger@20",
+   "mijn": "mijn@20",
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-16",
+  "topic": "school",
+  "parts": [
+   "in de groep",
+   "twaalf mensen",
+   "zitten er",
+   "in totaal"
+  ],
+  "answer": "in totaal zitten er twaalf mensen in de groep",
+  "alternatives": [
+   "er zitten in totaal twaalf mensen in de groep"
+  ],
+  "hint": "After in totaal at the start, the verb comes 2nd; er + verb introduces a new, indefinite subject.",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "school-69",
+  "topic": "school",
+  "parts": [
+   "veel moed",
+   "nodig",
+   "heb je",
+   "in een nieuw land"
+  ],
+  "answer": "in een nieuw land heb je veel moed nodig",
+  "alternatives": [],
+  "hint": "Place first → inversion (heb je; the -t drops before je). Nodig goes to the end.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "je": "je@20",
+   "veel": "veel@20",
+   "nodig": "nodig@20"
+  }
+ },
+ {
+  "id": "school-86",
+  "topic": "school",
+  "parts": [
+   "op school",
+   "komt",
+   "een agent van de politie",
+   "morgen"
+  ],
+  "answer": "morgen komt een agent van de politie op school",
+  "alternatives": [
+   "een agent van de politie komt morgen op school"
+  ],
+  "hint": "Time first → inversion: komt + subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "morgen": "morgen@20",
+   "van": "van@20",
+   "op": "op@20"
+  }
+ },
+ {
+  "id": "school-94",
+  "topic": "school",
+  "parts": [
+   "een beetje stijf",
+   "altijd",
+   "ben ik",
+   "na het sporten"
+  ],
+  "answer": "na het sporten ben ik altijd een beetje stijf",
+  "alternatives": [
+   "ik ben na het sporten altijd een beetje stijf"
+  ],
+  "hint": "Time phrase first → inversion: ben ik.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-108",
+  "topic": "school",
+  "parts": [
+   "ideaal",
+   "een cursus in de avond",
+   "voor mij is"
+  ],
+  "answer": "voor mij is een cursus in de avond ideaal",
+  "alternatives": [
+   "een cursus in de avond is voor mij ideaal"
+  ],
+  "hint": "Phrase first → inversion: is + subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@20",
+   "mij": "mij@20"
+  }
+ },
+ {
+  "id": "school-119",
+  "topic": "school",
+  "parts": [
+   "over geloof en cultuur",
+   "praten wij",
+   "in de les"
+  ],
+  "answer": "in de les praten wij over geloof en cultuur",
+  "alternatives": [
+   "wij praten in de les over geloof en cultuur"
+  ],
+  "hint": "Phrase first → inversion; praten over at the end.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "over": "over@20"
+  }
+ },
+ {
+  "id": "school-84",
+  "topic": "school",
+  "parts": [
+   "een andere groep",
+   "kies ik",
+   "na overleg met de docent"
+  ],
+  "answer": "na overleg met de docent kies ik een andere groep",
+  "alternatives": [
+   "ik kies na overleg met de docent een andere groep"
+  ],
+  "hint": "Phrase first → inversion: kies ik.",
+  "grammar": "inversie",
+  "level": 3
+ },
+ {
+  "id": "school-102",
+  "topic": "school",
+  "parts": [
+   "op de markt",
+   "koekjes",
+   "voor het feest",
+   "verkopen de kinderen"
+  ],
+  "answer": "voor het feest verkopen de kinderen koekjes op de markt",
+  "alternatives": [
+   "de kinderen verkopen voor het feest koekjes op de markt"
+  ],
+  "hint": "Phrase first → inversion: verkopen de kinderen.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@20",
+   "het": "het@20",
+   "op": "op@20"
+  }
+ },
+ {
+  "id": "school-51",
+  "topic": "school",
+  "parts": [
+   "de kinderen",
+   "zingen en dansen",
+   "op het feest van de school"
+  ],
+  "answer": "op het feest van de school zingen en dansen de kinderen",
+  "alternatives": [
+   "de kinderen zingen en dansen op het feest van de school"
+  ],
+  "hint": "Place phrase first → inversion: verbs before the subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@20",
+   "het": "het@20",
+   "van": "van@20"
+  }
+ },
+ {
+  "id": "school-77",
+  "topic": "school",
+  "parts": [
+   "bij de rivier",
+   "op het veld",
+   "de kinderen",
+   "voetballen",
+   "na school"
+  ],
+  "answer": "na school voetballen de kinderen op het veld bij de rivier",
+  "alternatives": [
+   "de kinderen voetballen na school op het veld bij de rivier"
+  ],
+  "hint": "Time first → inversion: verb, then subject; place at the end.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@20",
+   "het": "het@20",
+   "bij": "bij@20"
+  }
+ },
+ {
+  "id": "school-89",
+  "topic": "school",
+  "parts": [
+   "aan zijn been en zijn schouder",
+   "heeft hij",
+   "pijn",
+   "na de gymles"
+  ],
+  "answer": "na de gymles heeft hij pijn aan zijn been en zijn schouder",
+  "alternatives": [
+   "hij heeft na de gymles pijn aan zijn been en zijn schouder"
+  ],
+  "hint": "Time phrase first → inversion: heeft hij.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "aan": "aan@20",
+   "zijn": "zijn@20"
+  }
+ },
+ {
+  "id": "school-85",
+  "topic": "school",
+  "parts": [
+   "in de klas",
+   "een psycholoog",
+   "vandaag komt er",
+   "als gast"
+  ],
+  "answer": "vandaag komt er een psycholoog als gast in de klas",
+  "alternatives": [
+   "er komt vandaag een psycholoog als gast in de klas"
+  ],
+  "hint": "Time first → inversion; er introduces a new subject (een psycholoog).",
+  "grammar": "inversie",
+  "level": 4
+ },
+ {
+  "id": "school-56",
+  "topic": "school",
+  "parts": [
+   "over de ontwikkeling",
+   "praten wij",
+   "van ons kind",
+   "op de ouderavond"
+  ],
+  "answer": "op de ouderavond praten wij over de ontwikkeling van ons kind",
+  "alternatives": [
+   "wij praten op de ouderavond over de ontwikkeling van ons kind"
+  ],
+  "hint": "Time/place phrase first → inversion. Praten over goes near the end.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "op": "op@20",
+   "over": "over@20",
+   "van": "van@20",
+   "ons": "ons@20"
+  }
+ },
+ {
+  "id": "school-30",
+  "topic": "school",
+  "parts": [
+   "van dit woord",
+   "de betekenis",
+   "weet jij"
+  ],
+  "answer": "weet jij de betekenis van dit woord?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "van": "van@20",
+   "dit": "dit@20"
+  }
+ },
+ {
+  "id": "school-31",
+  "topic": "school",
+  "parts": [
+   "antwoord jij niet",
+   "op mijn vraag",
+   "waarom"
+  ],
+  "answer": "waarom antwoord jij niet op mijn vraag?",
+  "alternatives": [],
+  "hint": "W-question: question word, verb, subject. With jij after the verb the -t drops: antwoord jij.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "antwoord": "antwoord@20",
+   "op": "op@20",
+   "mijn": "mijn@20"
   }
  },
  {
@@ -2936,25 +3226,623 @@ const EXERCISES = [
   "answer": "wat is jouw plan na de inburgeringscursus?",
   "alternatives": [],
   "hint": "W-question: question word, verb, then subject.",
+  "grammar": "vraag",
+  "level": 3,
   "senses": {
    "wat": "wat@20"
   }
  },
  {
-  "id": "school-73",
+  "id": "school-05",
   "topic": "school",
   "parts": [
-   "aan de universiteit",
-   "literatuur",
-   "mijn broer",
-   "studeert"
+   "een voorkeur",
+   "voor dinsdag of donderdag",
+   "heeft u"
   ],
-  "answer": "mijn broer studeert literatuur aan de universiteit",
+  "answer": "heeft u een voorkeur voor dinsdag of donderdag?",
   "alternatives": [],
-  "hint": "Verb 2nd; object before place.",
+  "hint": "Yes/no question: verb (heeft) first, then the subject (u).",
+  "grammar": "vraag",
+  "level": 3,
+  "senses": {
+   "u": "u@20",
+   "voor": "voor@20"
+  }
+ },
+ {
+  "id": "school-107",
+  "topic": "school",
+  "parts": [
+   "over de toets",
+   "een specifieke vraag",
+   "heeft u"
+  ],
+  "answer": "heeft u een specifieke vraag over de toets?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then subject.",
+  "grammar": "vraag",
+  "level": 3,
+  "senses": {
+   "u": "u@20",
+   "over": "over@20"
+  }
+ },
+ {
+  "id": "school-113",
+  "topic": "school",
+  "parts": [
+   "al weg",
+   "is",
+   "de docent van de computercursus"
+  ],
+  "answer": "is de docent van de computercursus al weg?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb (is) first.",
+  "grammar": "vraag",
+  "level": 3,
+  "senses": {
+   "van": "van@20",
+   "al": "al@20"
+  }
+ },
+ {
+  "id": "school-10",
+  "topic": "school",
+  "parts": [
+   "tot vrijdag",
+   "lenen",
+   "jouw boek",
+   "mag ik"
+  ],
+  "answer": "mag ik jouw boek tot vrijdag lenen?",
+  "alternatives": [],
+  "hint": "Question with a modal verb: modal first, subject second, infinitive (lenen) at the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "tot": "tot@20",
+   "vrijdag": "vrijdag@20"
+  }
+ },
+ {
+  "id": "school-03",
+  "topic": "school",
+  "parts": [
+   "een dag eerder",
+   "maken",
+   "de toets",
+   "kan ik"
+  ],
+  "answer": "kan ik de toets een dag eerder maken?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb comes first, then the subject; the infinitive goes to the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "maken": "maken@20"
+  }
+ },
+ {
+  "id": "school-12",
+  "topic": "school",
+  "parts": [
+   "volgen",
+   "een cursus gezond koken",
+   "graag",
+   "ik wil"
+  ],
+  "answer": "ik wil graag een cursus gezond koken volgen",
+  "alternatives": [],
+  "hint": "Modal verb (wil) in 2nd place, the infinitive (volgen) at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "school-26",
+  "topic": "school",
+  "parts": [
+   "invullen",
+   "uw achternaam en telefoonnummer",
+   "wilt u",
+   "hier"
+  ],
+  "answer": "wilt u hier uw achternaam en telefoonnummer invullen?",
+  "alternatives": [],
+  "hint": "Polite question: wilt u … + infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "u": "u@20"
+  }
+ },
+ {
+  "id": "school-98",
+  "topic": "school",
+  "parts": [
+   "uw tas",
+   "neerzetten",
+   "bij de deur",
+   "u kunt"
+  ],
+  "answer": "u kunt uw tas bij de deur neerzetten",
+  "alternatives": [],
+  "hint": "Modal (kunt) 2nd; with a modal the separable verb stays whole at the end: neerzetten.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "u": "u@20",
+   "bij": "bij@20"
+  }
+ },
+ {
+  "id": "school-01",
+  "topic": "school",
+  "parts": [
+   "komen",
+   "morgen",
+   "ik",
+   "helaas niet naar de toets",
+   "kan"
+  ],
+  "answer": "ik kan morgen helaas niet naar de toets komen",
+  "alternatives": [
+   "morgen kan ik helaas niet naar de toets komen"
+  ],
+  "hint": "Modal verb (kan) in 2nd place, the infinitive (komen) goes to the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "morgen": "morgen@20"
+  }
+ },
+ {
+  "id": "school-116",
+  "topic": "school",
+  "parts": [
+   "schrijven",
+   "over onze kat",
+   "mijn dochter wil",
+   "een verhaal"
+  ],
+  "answer": "mijn dochter wil een verhaal over onze kat schrijven",
+  "alternatives": [],
+  "hint": "Modal (wil) 2nd, infinitive (schrijven) at the end.",
+  "grammar": "modaal",
+  "level": 3,
   "senses": {
    "mijn": "mijn@20",
+   "over": "over@20",
+   "onze": "onze@20"
+  }
+ },
+ {
+  "id": "school-110",
+  "topic": "school",
+  "parts": [
+   "niet roken",
+   "mag je",
+   "op het terrein van de school"
+  ],
+  "answer": "op het terrein van de school mag je niet roken",
+  "alternatives": [
+   "je mag op het terrein van de school niet roken"
+  ],
+  "hint": "Place first → inversion; modal (mag) 2nd, infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "op": "op@20",
+   "het": "het@20",
+   "van": "van@20",
+   "je": "je@20"
+  }
+ },
+ {
+  "id": "school-122",
+  "topic": "school",
+  "parts": [
+   "aanmelden",
+   "via de website",
+   "u kunt zich",
+   "uitsluitend"
+  ],
+  "answer": "u kunt zich uitsluitend via de website aanmelden",
+  "alternatives": [],
+  "hint": "Modal 2nd, zich right after it, infinitive (aanmelden) at the end.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "u": "u@20"
+  }
+ },
+ {
+  "id": "school-06",
+  "topic": "school",
+  "parts": [
+   "een nieuwe afspraak",
+   "maken",
+   "volgende week",
+   "kunnen",
+   "wij",
+   "wellicht"
+  ],
+  "answer": "wellicht kunnen wij volgende week een nieuwe afspraak maken",
+  "alternatives": [
+   "wij kunnen wellicht volgende week een nieuwe afspraak maken",
+   "volgende week kunnen wij wellicht een nieuwe afspraak maken"
+  ],
+  "hint": "After an adverb at the start (wellicht) comes inversion: verb, then subject. The infinitive goes last.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "volgende": "volgende@20",
+   "maken": "maken@20"
+  }
+ },
+ {
+  "id": "school-117",
+  "topic": "school",
+  "parts": [
+   "geven",
+   "meer geld",
+   "volgend jaar",
+   "de minister wil",
+   "aan scholen"
+  ],
+  "answer": "de minister wil volgend jaar meer geld aan scholen geven",
+  "alternatives": [
+   "volgend jaar wil de minister meer geld aan scholen geven"
+  ],
+  "hint": "Modal 2nd, infinitive last; time first → inversion.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
    "aan": "aan@20"
+  }
+ },
+ {
+  "id": "school-11",
+  "topic": "school",
+  "parts": [
+   "terug",
+   "volgende week",
+   "zij krijgt",
+   "haar boek"
+  ],
+  "answer": "zij krijgt haar boek volgende week terug",
+  "alternatives": [
+   "volgende week krijgt zij haar boek terug"
+  ],
+  "hint": "Separable verb terugkrijgen: krijgt in 2nd place, terug at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "volgende": "volgende@20"
+  }
+ },
+ {
+  "id": "school-95",
+  "topic": "school",
+  "parts": [
+   "voor het schoolkamp",
+   "mee",
+   "een deken",
+   "neem"
+  ],
+  "answer": "neem een deken mee voor het schoolkamp",
+  "alternatives": [],
+  "hint": "Imperative: verb first. Meenemen splits: mee goes after the object.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "mee": "mee@20",
+   "voor": "voor@20",
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-27",
+  "topic": "school",
+  "parts": [
+   "altijd verkeerd",
+   "uit",
+   "de docent",
+   "mijn naam",
+   "spreekt"
+  ],
+  "answer": "de docent spreekt mijn naam altijd verkeerd uit",
+  "alternatives": [],
+  "hint": "Separable verb uitspreken: spreekt in 2nd place, uit at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "spreekt": "spreekt@20",
+   "mijn": "mijn@20",
+   "uit": "uit@20"
+  }
+ },
+ {
+  "id": "school-02",
+  "topic": "school",
+  "parts": [
+   "voor de fout",
+   "aan",
+   "mijn excuses",
+   "ik bied u"
+  ],
+  "answer": "ik bied u mijn excuses aan voor de fout",
+  "alternatives": [
+   "ik bied u mijn excuses voor de fout aan"
+  ],
+  "hint": "Separable verb aanbieden: the stem (bied) is in 2nd place, the particle (aan) goes to the end of the core sentence.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "u": "u@20",
+   "mijn": "mijn@20",
+   "aan": "aan@20",
+   "voor": "voor@20"
+  }
+ },
+ {
+  "id": "school-78",
+  "topic": "school",
+  "parts": [
+   "samen de troep",
+   "op",
+   "wij",
+   "na de les",
+   "ruimen"
+  ],
+  "answer": "na de les ruimen wij samen de troep op",
+  "alternatives": [
+   "wij ruimen na de les samen de troep op"
+  ],
+  "hint": "Separable verb opruimen: ruimen 2nd, op at the very end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "op": "op@20"
+  }
+ },
+ {
+  "id": "school-99",
+  "topic": "school",
+  "parts": [
+   "mee",
+   "mijn zoon",
+   "een boterham",
+   "ik geef",
+   "elke dag"
+  ],
+  "answer": "ik geef mijn zoon elke dag een boterham mee",
+  "alternatives": [
+   "elke dag geef ik mijn zoon een boterham mee"
+  ],
+  "hint": "Meegeven splits: geef 2nd, mee at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "mijn": "mijn@20",
+   "elke": "elke@20",
+   "mee": "mee@20"
+  }
+ },
+ {
+  "id": "school-61",
+  "topic": "school",
+  "parts": [
+   "goed om",
+   "met moeilijke kinderen",
+   "de juf gaat"
+  ],
+  "answer": "de juf gaat goed om met moeilijke kinderen",
+  "alternatives": [
+   "de juf gaat goed met moeilijke kinderen om"
+  ],
+  "hint": "Separable verb omgaan met: gaat 2nd, om at the end, met-phrase after it.",
+  "grammar": "scheidbaar",
+  "level": 4,
+  "senses": {
+   "goed": "goed@20"
+  }
+ },
+ {
+  "id": "school-52",
+  "topic": "school",
+  "parts": [
+   "gezongen",
+   "een prachtig lied",
+   "de kinderen hebben"
+  ],
+  "answer": "de kinderen hebben een prachtig lied gezongen",
+  "alternatives": [],
+  "hint": "Perfect tense: hebben 2nd, participle gezongen at the end.",
+  "grammar": "perfectum",
+  "level": 2
+ },
+ {
+  "id": "school-13",
+  "topic": "school",
+  "parts": [
+   "ingevuld",
+   "gisteren",
+   "het aanmeldformulier",
+   "ik heb"
+  ],
+  "answer": "ik heb het aanmeldformulier gisteren ingevuld",
+  "alternatives": [
+   "gisteren heb ik het aanmeldformulier ingevuld",
+   "ik heb gisteren het aanmeldformulier ingevuld"
+  ],
+  "hint": "Perfect tense: heb in 2nd place, the past participle (ingevuld) at the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-36",
+  "topic": "school",
+  "parts": [
+   "de toets allemaal",
+   "gehaald",
+   "hebben",
+   "de leerlingen"
+  ],
+  "answer": "de leerlingen hebben de toets allemaal gehaald",
+  "alternatives": [
+   "de leerlingen hebben allemaal de toets gehaald"
+  ],
+  "hint": "Perfect tense: hebben 2nd, participle (gehaald) at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "school-25",
+  "topic": "school",
+  "parts": [
+   "vergeten",
+   "in de klas",
+   "ik heb",
+   "gisteren",
+   "mijn laptop"
+  ],
+  "answer": "ik heb mijn laptop gisteren in de klas vergeten",
+  "alternatives": [
+   "gisteren heb ik mijn laptop in de klas vergeten",
+   "ik heb gisteren mijn laptop in de klas vergeten"
+  ],
+  "hint": "Perfect tense: heb 2nd, participle (vergeten) last; time before place.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-80",
+  "topic": "school",
+  "parts": [
+   "groen en wit",
+   "geverfd",
+   "de wand",
+   "de kinderen hebben"
+  ],
+  "answer": "de kinderen hebben de wand groen en wit geverfd",
+  "alternatives": [],
+  "hint": "Perfect tense: hebben 2nd, participle geverfd at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "school-90",
+  "topic": "school",
+  "parts": [
+   "een tand",
+   "verloren",
+   "mijn zoontje heeft",
+   "op school",
+   "vandaag"
+  ],
+  "answer": "mijn zoontje heeft vandaag op school een tand verloren",
+  "alternatives": [
+   "vandaag heeft mijn zoontje op school een tand verloren"
+  ],
+  "hint": "TMP: time (vandaag) before place (op school); participle at the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "mijn": "mijn@20",
+   "op": "op@20"
+  }
+ },
+ {
+  "id": "school-28",
+  "topic": "school",
+  "parts": [
+   "gehad",
+   "met de docent",
+   "heb ik",
+   "na de les",
+   "een gesprek"
+  ],
+  "answer": "na de les heb ik een gesprek met de docent gehad",
+  "alternatives": [
+   "ik heb na de les een gesprek met de docent gehad"
+  ],
+  "hint": "Time phrase first → inversion (heb ik). The participle gehad goes last.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "gesprek": "gesprek@20"
+  }
+ },
+ {
+  "id": "school-68",
+  "topic": "school",
+  "parts": [
+   "gevlucht",
+   "uit hun land",
+   "zijn",
+   "veel mensen in mijn klas"
+  ],
+  "answer": "veel mensen in mijn klas zijn uit hun land gevlucht",
+  "alternatives": [],
+  "hint": "Perfect with zijn (movement): zijn 2nd, participle gevlucht at the end.",
+  "grammar": "perfectum",
+  "level": 4,
+  "senses": {
+   "veel": "veel@20",
+   "mijn": "mijn@20",
+   "zijn": "zijn@20",
+   "uit": "uit@20"
+  }
+ },
+ {
+  "id": "school-75",
+  "topic": "school",
+  "parts": [
+   "gewerkt",
+   "op een boot op zee",
+   "heeft vroeger",
+   "mijn oom"
+  ],
+  "answer": "mijn oom heeft vroeger op een boot op zee gewerkt",
+  "alternatives": [
+   "vroeger heeft mijn oom op een boot op zee gewerkt"
+  ],
+  "hint": "Perfect: heeft 2nd, participle last; time (vroeger) before place.",
+  "grammar": "perfectum",
+  "level": 4,
+  "senses": {
+   "mijn": "mijn@20",
+   "vroeger": "vroeger@20",
+   "op": "op@20"
+  }
+ },
+ {
+  "id": "school-29",
+  "topic": "school",
+  "parts": [
+   "over dit onderwerp",
+   "gehad",
+   "hebben wij",
+   "een discussie",
+   "in de klas"
+  ],
+  "answer": "in de klas hebben wij een discussie over dit onderwerp gehad",
+  "alternatives": [
+   "wij hebben in de klas een discussie over dit onderwerp gehad"
+  ],
+  "hint": "Place phrase first → inversion. Participle (gehad) at the end.",
+  "grammar": "perfectum",
+  "level": 4,
+  "senses": {
+   "over": "over@20",
+   "dit": "dit@20"
   }
  },
  {
@@ -2974,84 +3862,212 @@ const EXERCISES = [
    "ik ben vanochtend een oude vriendin in de bus tegengekomen"
   ],
   "hint": "Tegenkomen takes zijn in the perfect; the participle tegengekomen goes last.",
+  "grammar": "perfectum",
+  "level": 5,
   "senses": {
    "vriendin": "vriendin@20"
   }
  },
  {
-  "id": "school-75",
+  "id": "school-22",
   "topic": "school",
   "parts": [
-   "gewerkt",
-   "op een boot op zee",
-   "heeft vroeger",
-   "mijn oom"
+   "in juni",
+   "een jaar",
+   "en eindigt",
+   "de opleiding duurt"
   ],
-  "answer": "mijn oom heeft vroeger op een boot op zee gewerkt",
+  "answer": "de opleiding duurt een jaar en eindigt in juni",
+  "alternatives": [],
+  "hint": "Two verbs sharing one subject: both stay in 2nd position of their part.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "school-64",
+  "topic": "school",
+  "parts": [
+   "over vijf minuten",
+   "want de les",
+   "ik heb haast",
+   "begint"
+  ],
+  "answer": "ik heb haast want de les begint over vijf minuten",
+  "alternatives": [],
+  "hint": "Want does not change word order: de les begint.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "over": "over@20"
+  }
+ },
+ {
+  "id": "school-92",
+  "topic": "school",
+  "parts": [
+   "maar hij",
+   "niet ernstig ziek",
+   "mijn zoon is",
+   "blijft thuis"
+  ],
+  "answer": "mijn zoon is niet ernstig ziek, maar hij blijft thuis",
+  "alternatives": [],
+  "hint": "Maar keeps normal word order: hij blijft.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-97",
+  "topic": "school",
+  "parts": [
+   "met de les",
+   "pak je boek",
+   "want wij gaan",
+   "verder"
+  ],
+  "answer": "pak je boek, want wij gaan verder met de les",
+  "alternatives": [],
+  "hint": "Imperative first; after want normal order. Verdergaan splits: gaan … verder.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "pak": "pak@20",
+   "je": "je@20",
+   "verder": "verder@20"
+  }
+ },
+ {
+  "id": "school-101",
+  "topic": "school",
+  "parts": [
+   "de prijs is hoog",
+   "kopen",
+   "maar",
+   "ik wil het boek"
+  ],
+  "answer": "ik wil het boek kopen, maar de prijs is hoog",
+  "alternatives": [],
+  "hint": "Modal + infinitive at the end; after maar normal order.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-66",
+  "topic": "school",
+  "parts": [
+   "naar de les",
+   "daarom kom ik",
+   "ik ben ziek",
+   "vandaag niet"
+  ],
+  "answer": "ik ben ziek, daarom kom ik vandaag niet naar de les",
+  "alternatives": [],
+  "hint": "Daarom at the start of a clause causes inversion: daarom kom ik.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "school-19",
+  "topic": "school",
+  "parts": [
+   "de opleiding is duur",
+   "helpt mij financieel",
+   "want",
+   "de gemeente"
+  ],
+  "answer": "de gemeente helpt mij financieel, want de opleiding is duur",
+  "alternatives": [],
+  "hint": "After want the normal main-clause order stays: subject + verb.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "mij": "mij@20"
+  }
+ },
+ {
+  "id": "school-42",
+  "topic": "school",
+  "parts": [
+   "zijn huiswerk",
+   "en doet",
+   "mijn zoon werkt hard",
+   "zelfs in het weekend"
+  ],
+  "answer": "mijn zoon werkt hard en doet zelfs in het weekend zijn huiswerk",
   "alternatives": [
-   "vroeger heeft mijn oom op een boot op zee gewerkt"
+   "mijn zoon werkt hard en doet zijn huiswerk zelfs in het weekend"
   ],
-  "hint": "Perfect: heeft 2nd, participle last; time (vroeger) before place.",
+  "hint": "Two verbs with the same subject joined by en; each keeps its place after the subject.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
    "mijn": "mijn@20",
-   "vroeger": "vroeger@20",
-   "op": "op@20"
-  }
- },
- {
-  "id": "school-76",
-  "topic": "school",
-  "parts": [
-   "naar de kust",
-   "de klas",
-   "in juni",
-   "een dag",
-   "gaat"
-  ],
-  "answer": "in juni gaat de klas een dag naar de kust",
-  "alternatives": [
-   "de klas gaat in juni een dag naar de kust"
-  ],
-  "hint": "Time first → inversion. TMP: time before place (naar de kust)."
- },
- {
-  "id": "school-77",
-  "topic": "school",
-  "parts": [
-   "bij de rivier",
-   "op het veld",
-   "de kinderen",
-   "voetballen",
-   "na school"
-  ],
-  "answer": "na school voetballen de kinderen op het veld bij de rivier",
-  "alternatives": [
-   "de kinderen voetballen na school op het veld bij de rivier"
-  ],
-  "hint": "Time first → inversion: verb, then subject; place at the end.",
-  "senses": {
-   "op": "op@20",
    "het": "het@20",
-   "bij": "bij@20"
+   "zijn": "zijn@20"
   }
  },
  {
-  "id": "school-78",
+  "id": "school-21",
   "topic": "school",
   "parts": [
-   "samen de troep",
-   "op",
-   "wij",
-   "na de les",
-   "ruimen"
+   "nog niet betaald",
+   "want wij",
+   "hebben",
+   "de school stuurt",
+   "een herinnering"
   ],
-  "answer": "na de les ruimen wij samen de troep op",
-  "alternatives": [
-   "wij ruimen na de les samen de troep op"
-  ],
-  "hint": "Separable verb opruimen: ruimen 2nd, op at the very end.",
+  "answer": "de school stuurt een herinnering, want wij hebben nog niet betaald",
+  "alternatives": [],
+  "hint": "Want keeps main-clause order: wij hebben … betaald (participle at the end).",
+  "grammar": "nevenschikkend",
+  "level": 5,
   "senses": {
-   "op": "op@20"
+   "nog": "nog@20"
+  }
+ },
+ {
+  "id": "school-04",
+  "topic": "school",
+  "parts": [
+   "te verzetten",
+   "is het mogelijk",
+   "naar donderdag",
+   "om de afspraak"
+  ],
+  "answer": "is het mogelijk om de afspraak naar donderdag te verzetten?",
+  "alternatives": [],
+  "hint": "Question with verb first; in an om … te construction the te-infinitive comes last.",
+  "grammar": "om-te",
+  "level": 5,
+  "senses": {
+   "het": "het@20",
+   "te": "te@20"
+  }
+ },
+ {
+  "id": "school-50",
+  "topic": "school",
+  "parts": [
+   "binnen",
+   "als het regent",
+   "blijven de kinderen"
+  ],
+  "answer": "als het regent blijven de kinderen binnen",
+  "alternatives": [
+   "de kinderen blijven binnen als het regent"
+  ],
+  "hint": "Als-clause first (verb at its end), then the main verb immediately follows: blijven de kinderen.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "het": "het@20",
+   "blijven": "blijven@20"
   }
  },
  {
@@ -3066,37 +4082,223 @@ const EXERCISES = [
   "answer": "wij wassen onze handen omdat ze vies zijn",
   "alternatives": [],
   "hint": "Omdat sends the verb (zijn) to the end.",
+  "grammar": "bijzin",
+  "level": 3,
   "senses": {
    "onze": "onze@20",
    "zijn": "zijn@20"
   }
  },
  {
-  "id": "school-80",
+  "id": "school-91",
   "topic": "school",
   "parts": [
-   "groen en wit",
-   "geverfd",
-   "de wand",
-   "de kinderen hebben"
+   "verkouden is",
+   "hij heeft",
+   "omdat hij",
+   "een rode neus"
   ],
-  "answer": "de kinderen hebben de wand groen en wit geverfd",
+  "answer": "hij heeft een rode neus omdat hij verkouden is",
   "alternatives": [],
-  "hint": "Perfect tense: hebben 2nd, participle geverfd at the end."
+  "hint": "Omdat sends the verb (is) to the end.",
+  "grammar": "bijzin",
+  "level": 3
  },
  {
-  "id": "school-81",
+  "id": "school-34",
   "topic": "school",
   "parts": [
-   "een beetje lelijk",
-   "die kleur",
-   "ik vind"
+   "dat de toets",
+   "morgen is",
+   "is het waar"
   ],
-  "answer": "ik vind die kleur een beetje lelijk",
+  "answer": "is het waar dat de toets morgen is?",
   "alternatives": [],
-  "hint": "Vinden + object + opinion: ik vind die kleur lelijk.",
+  "hint": "Question with verb first; in the dat-clause the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "die": "die@20"
+   "het": "het@20",
+   "morgen": "morgen@20"
+  }
+ },
+ {
+  "id": "school-67",
+  "topic": "school",
+  "parts": [
+   "kende ik niemand",
+   "naar Holland kwam",
+   "toen ik"
+  ],
+  "answer": "toen ik naar Holland kwam, kende ik niemand",
+  "alternatives": [
+   "ik kende niemand toen ik naar Holland kwam"
+  ],
+  "hint": "Toen-clause: verb at the end (kwam). After it, the main verb comes first: kende ik.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "school-39",
+  "topic": "school",
+  "parts": [
+   "heb geslapen",
+   "omdat ik",
+   "ik heb weinig energie",
+   "slecht"
+  ],
+  "answer": "ik heb weinig energie omdat ik slecht heb geslapen",
+  "alternatives": [
+   "ik heb weinig energie omdat ik slecht geslapen heb",
+   "omdat ik slecht heb geslapen, heb ik weinig energie",
+   "omdat ik slecht geslapen heb, heb ik weinig energie"
+  ],
+  "hint": "Omdat sends the verbs to the end of the clause.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "weinig": "weinig@20"
+  }
+ },
+ {
+  "id": "school-106",
+  "topic": "school",
+  "parts": [
+   "klaar is",
+   "een bewijs",
+   "u krijgt",
+   "als de cursus"
+  ],
+  "answer": "u krijgt een bewijs als de cursus klaar is",
+  "alternatives": [
+   "als de cursus klaar is, krijgt u een bewijs"
+  ],
+  "hint": "Als-clause: verb at the end. Als-clause first → inversion (krijgt u).",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "u": "u@20"
+  }
+ },
+ {
+  "id": "school-32",
+  "topic": "school",
+  "parts": [
+   "er vandaag niet is",
+   "het is vreemd",
+   "dat de docent"
+  ],
+  "answer": "het is vreemd dat de docent er vandaag niet is",
+  "alternatives": [],
+  "hint": "In a dat-clause the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "het": "het@20"
+  }
+ },
+ {
+  "id": "school-58",
+  "topic": "school",
+  "parts": [
+   "een goede houding",
+   "de docent is blij",
+   "heb",
+   "omdat ik"
+  ],
+  "answer": "de docent is blij omdat ik een goede houding heb",
+  "alternatives": [
+   "omdat ik een goede houding heb, is de docent blij"
+  ],
+  "hint": "Omdat sends the verb (heb) to the end.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "school-57",
+  "topic": "school",
+  "parts": [
+   "beter is",
+   "de juf zegt",
+   "van mijn zoon",
+   "dat het gedrag"
+  ],
+  "answer": "de juf zegt dat het gedrag van mijn zoon beter is",
+  "alternatives": [],
+  "hint": "In a dat-clause the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "het": "het@20",
+   "van": "van@20",
+   "mijn": "mijn@20"
+  }
+ },
+ {
+  "id": "school-120",
+  "topic": "school",
+  "parts": [
+   "altijd te laat komt",
+   "dat hij",
+   "het is typisch voor hem"
+  ],
+  "answer": "het is typisch voor hem dat hij altijd te laat komt",
+  "alternatives": [],
+  "hint": "In a dat-clause the verb (komt) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "het": "het@20",
+   "voor": "voor@20",
+   "hem": "hem@20",
+   "te": "te@20",
+   "laat": "laat@20"
+  }
+ },
+ {
+  "id": "school-63",
+  "topic": "school",
+  "parts": [
+   "erg druk was",
+   "ik ben te laat",
+   "bij het station",
+   "omdat het"
+  ],
+  "answer": "ik ben te laat omdat het bij het station erg druk was",
+  "alternatives": [
+   "ik ben te laat omdat het erg druk was bij het station"
+  ],
+  "hint": "Omdat sends the verb (was) to the end of the clause.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "te": "te@20",
+   "laat": "laat@20",
+   "het": "het@20",
+   "bij": "bij@20",
+   "erg": "erg@20"
+  }
+ },
+ {
+  "id": "school-60",
+  "topic": "school",
+  "parts": [
+   "heeft gemaakt",
+   "hij krijgt straf",
+   "zijn huiswerk niet",
+   "omdat hij"
+  ],
+  "answer": "hij krijgt straf omdat hij zijn huiswerk niet heeft gemaakt",
+  "alternatives": [
+   "hij krijgt straf omdat hij zijn huiswerk niet gemaakt heeft",
+   "omdat hij zijn huiswerk niet heeft gemaakt, krijgt hij straf",
+   "omdat hij zijn huiswerk niet gemaakt heeft, krijgt hij straf"
+  ],
+  "hint": "Omdat sends the verbs to the end; niet comes before them.",
+  "grammar": "bijzin",
+  "level": 5,
+  "senses": {
+   "zijn": "zijn@20"
   }
  },
  {
@@ -3113,307 +4315,11 @@ const EXERCISES = [
    "de docent doet het raam open omdat het heet is"
   ],
   "hint": "Omdat-clause first → main verb comes next (doet de docent). Opendoen splits: open at the end.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
    "het": "het@20",
    "open": "open@20"
-  }
- },
- {
-  "id": "school-83",
-  "topic": "school",
-  "parts": [
-   "om acht uur",
-   "de vergadering",
-   "de voorzitter",
-   "opent"
-  ],
-  "answer": "de voorzitter opent de vergadering om acht uur",
-  "alternatives": [
-   "om acht uur opent de voorzitter de vergadering",
-   "de voorzitter opent om acht uur de vergadering"
-  ],
-  "hint": "Verb 2nd. Time first → inversion."
- },
- {
-  "id": "school-84",
-  "topic": "school",
-  "parts": [
-   "een andere groep",
-   "kies ik",
-   "na overleg met de docent"
-  ],
-  "answer": "na overleg met de docent kies ik een andere groep",
-  "alternatives": [
-   "ik kies na overleg met de docent een andere groep"
-  ],
-  "hint": "Phrase first → inversion: kies ik."
- },
- {
-  "id": "school-85",
-  "topic": "school",
-  "parts": [
-   "in de klas",
-   "een psycholoog",
-   "vandaag komt er",
-   "als gast"
-  ],
-  "answer": "vandaag komt er een psycholoog als gast in de klas",
-  "alternatives": [
-   "er komt vandaag een psycholoog als gast in de klas"
-  ],
-  "hint": "Time first → inversion; er introduces a new subject (een psycholoog)."
- },
- {
-  "id": "school-86",
-  "topic": "school",
-  "parts": [
-   "op school",
-   "komt",
-   "een agent van de politie",
-   "morgen"
-  ],
-  "answer": "morgen komt een agent van de politie op school",
-  "alternatives": [
-   "een agent van de politie komt morgen op school"
-  ],
-  "hint": "Time first → inversion: komt + subject.",
-  "senses": {
-   "morgen": "morgen@20",
-   "van": "van@20",
-   "op": "op@20"
-  }
- },
- {
-  "id": "school-87",
-  "topic": "school",
-  "parts": [
-   "in het gebouw",
-   "als er brand is",
-   "doen",
-   "wat moet je"
-  ],
-  "answer": "wat moet je doen als er brand is in het gebouw?",
-  "alternatives": [
-   "wat moet je doen als er in het gebouw brand is?"
-  ],
-  "hint": "W-question with modal: wat moet je … doen. In the als-clause the verb goes to the end.",
-  "senses": {
-   "wat": "wat@20",
-   "je": "je@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-88",
-  "topic": "school",
-  "parts": [
-   "in het ziekenhuis",
-   "werkt",
-   "mijn vrouw",
-   "op een afdeling"
-  ],
-  "answer": "mijn vrouw werkt op een afdeling in het ziekenhuis",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place, then place.",
-  "senses": {
-   "mijn": "mijn@20",
-   "op": "op@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-89",
-  "topic": "school",
-  "parts": [
-   "aan zijn been en zijn schouder",
-   "heeft hij",
-   "pijn",
-   "na de gymles"
-  ],
-  "answer": "na de gymles heeft hij pijn aan zijn been en zijn schouder",
-  "alternatives": [
-   "hij heeft na de gymles pijn aan zijn been en zijn schouder"
-  ],
-  "hint": "Time phrase first → inversion: heeft hij.",
-  "senses": {
-   "aan": "aan@20",
-   "zijn": "zijn@20"
-  }
- },
- {
-  "id": "school-90",
-  "topic": "school",
-  "parts": [
-   "een tand",
-   "verloren",
-   "mijn zoontje heeft",
-   "op school",
-   "vandaag"
-  ],
-  "answer": "mijn zoontje heeft vandaag op school een tand verloren",
-  "alternatives": [
-   "vandaag heeft mijn zoontje op school een tand verloren"
-  ],
-  "hint": "TMP: time (vandaag) before place (op school); participle at the end.",
-  "senses": {
-   "mijn": "mijn@20",
-   "op": "op@20"
-  }
- },
- {
-  "id": "school-91",
-  "topic": "school",
-  "parts": [
-   "verkouden is",
-   "hij heeft",
-   "omdat hij",
-   "een rode neus"
-  ],
-  "answer": "hij heeft een rode neus omdat hij verkouden is",
-  "alternatives": [],
-  "hint": "Omdat sends the verb (is) to the end."
- },
- {
-  "id": "school-92",
-  "topic": "school",
-  "parts": [
-   "maar hij",
-   "niet ernstig ziek",
-   "mijn zoon is",
-   "blijft thuis"
-  ],
-  "answer": "mijn zoon is niet ernstig ziek, maar hij blijft thuis",
-  "alternatives": [],
-  "hint": "Maar keeps normal word order: hij blijft.",
-  "senses": {
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-93",
-  "topic": "school",
-  "parts": [
-   "altijd serieus",
-   "neemt",
-   "mijn vraag",
-   "de docent"
-  ],
-  "answer": "de docent neemt mijn vraag altijd serieus",
-  "alternatives": [],
-  "hint": "Verb 2nd; the definite object comes before altijd.",
-  "senses": {
-   "neemt": "neemt@20",
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-94",
-  "topic": "school",
-  "parts": [
-   "een beetje stijf",
-   "altijd",
-   "ben ik",
-   "na het sporten"
-  ],
-  "answer": "na het sporten ben ik altijd een beetje stijf",
-  "alternatives": [
-   "ik ben na het sporten altijd een beetje stijf"
-  ],
-  "hint": "Time phrase first → inversion: ben ik.",
-  "senses": {
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-95",
-  "topic": "school",
-  "parts": [
-   "voor het schoolkamp",
-   "mee",
-   "een deken",
-   "neem"
-  ],
-  "answer": "neem een deken mee voor het schoolkamp",
-  "alternatives": [],
-  "hint": "Imperative: verb first. Meenemen splits: mee goes after the object.",
-  "senses": {
-   "mee": "mee@20",
-   "voor": "voor@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-96",
-  "topic": "school",
-  "parts": [
-   "in een tas van leer",
-   "zijn spullen",
-   "draagt",
-   "mijn zoon"
-  ],
-  "answer": "mijn zoon draagt zijn spullen in een tas van leer",
-  "alternatives": [],
-  "hint": "Verb 2nd; object before the place.",
-  "senses": {
-   "mijn": "mijn@20",
-   "zijn": "zijn@20",
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-97",
-  "topic": "school",
-  "parts": [
-   "met de les",
-   "pak je boek",
-   "want wij gaan",
-   "verder"
-  ],
-  "answer": "pak je boek, want wij gaan verder met de les",
-  "alternatives": [],
-  "hint": "Imperative first; after want normal order. Verdergaan splits: gaan … verder.",
-  "senses": {
-   "pak": "pak@20",
-   "je": "je@20",
-   "verder": "verder@20"
-  }
- },
- {
-  "id": "school-98",
-  "topic": "school",
-  "parts": [
-   "uw tas",
-   "neerzetten",
-   "bij de deur",
-   "u kunt"
-  ],
-  "answer": "u kunt uw tas bij de deur neerzetten",
-  "alternatives": [],
-  "hint": "Modal (kunt) 2nd; with a modal the separable verb stays whole at the end: neerzetten.",
-  "senses": {
-   "u": "u@20",
-   "bij": "bij@20"
-  }
- },
- {
-  "id": "school-99",
-  "topic": "school",
-  "parts": [
-   "mee",
-   "mijn zoon",
-   "een boterham",
-   "ik geef",
-   "elke dag"
-  ],
-  "answer": "ik geef mijn zoon elke dag een boterham mee",
-  "alternatives": [
-   "elke dag geef ik mijn zoon een boterham mee"
-  ],
-  "hint": "Meegeven splits: geef 2nd, mee at the end.",
-  "senses": {
-   "mijn": "mijn@20",
-   "elke": "elke@20",
-   "mee": "mee@20"
   }
  },
  {
@@ -3431,6 +4337,8 @@ const EXERCISES = [
    "als je kind ziek is, bel de school onmiddellijk op"
   ],
   "hint": "Imperative: verb first, particle op at the end; the als-clause has its verb last.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
    "bel": "bel@20",
    "op": "op@20",
@@ -3438,399 +4346,73 @@ const EXERCISES = [
   }
  },
  {
-  "id": "school-101",
+  "id": "school-87",
   "topic": "school",
   "parts": [
-   "de prijs is hoog",
-   "kopen",
-   "maar",
-   "ik wil het boek"
+   "in het gebouw",
+   "als er brand is",
+   "doen",
+   "wat moet je"
   ],
-  "answer": "ik wil het boek kopen, maar de prijs is hoog",
-  "alternatives": [],
-  "hint": "Modal + infinitive at the end; after maar normal order.",
+  "answer": "wat moet je doen als er brand is in het gebouw?",
+  "alternatives": [
+   "wat moet je doen als er in het gebouw brand is?"
+  ],
+  "hint": "W-question with modal: wat moet je … doen. In the als-clause the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
+   "wat": "wat@20",
+   "je": "je@20",
    "het": "het@20"
   }
  },
  {
-  "id": "school-102",
-  "topic": "school",
+  "id": "wonen-51",
+  "topic": "wonen",
   "parts": [
-   "op de markt",
-   "koekjes",
-   "voor het feest",
-   "verkopen de kinderen"
+   "vooral",
+   "de tuin",
+   "ik gebruik",
+   "in de zomer"
   ],
-  "answer": "voor het feest verkopen de kinderen koekjes op de markt",
+  "answer": "ik gebruik de tuin vooral in de zomer",
   "alternatives": [
-   "de kinderen verkopen voor het feest koekjes op de markt"
+   "vooral in de zomer gebruik ik de tuin"
   ],
-  "hint": "Phrase first → inversion: verkopen de kinderen.",
-  "senses": {
-   "voor": "voor@20",
-   "het": "het@20",
-   "op": "op@20"
-  }
+  "hint": "Verb in 2nd place; the object (de tuin) comes before “vooral in de zomer”.",
+  "grammar": "basis",
+  "level": 1
  },
  {
-  "id": "school-103",
-  "topic": "school",
+  "id": "wonen-126",
+  "topic": "wonen",
   "parts": [
-   "op school",
-   "de nieuwe boeken",
-   "morgen",
-   "de winkel levert"
+   "naar",
+   "mijn oude buurt",
+   "ik verlang"
   ],
-  "answer": "de winkel levert de nieuwe boeken morgen op school",
-  "alternatives": [
-   "morgen levert de winkel de nieuwe boeken op school",
-   "de winkel levert morgen de nieuwe boeken op school"
-  ],
-  "hint": "TMP: time (morgen) before place (op school).",
-  "senses": {
-   "morgen": "morgen@20",
-   "op": "op@20"
-  }
- },
- {
-  "id": "school-104",
-  "topic": "school",
-  "parts": [
-   "over de groep",
-   "een besluit",
-   "volgende week",
-   "de directeur neemt"
-  ],
-  "answer": "de directeur neemt volgende week een besluit over de groep",
-  "alternatives": [
-   "volgende week neemt de directeur een besluit over de groep"
-  ],
-  "hint": "Time before the indefinite object; time first → inversion.",
-  "senses": {
-   "directeur": "directeur@20",
-   "neemt": "neemt@20",
-   "volgende": "volgende@20",
-   "over": "over@20"
-  }
- },
- {
-  "id": "school-105",
-  "topic": "school",
-  "parts": [
-   "voor het probleem",
-   "zoeken wij",
-   "een oplossing",
-   "samen"
-  ],
-  "answer": "samen zoeken wij een oplossing voor het probleem",
-  "alternatives": [
-   "wij zoeken samen een oplossing voor het probleem"
-  ],
-  "hint": "Adverb first (samen) → inversion: zoeken wij.",
-  "senses": {
-   "zoeken": "zoeken@20",
-   "voor": "voor@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-106",
-  "topic": "school",
-  "parts": [
-   "klaar is",
-   "een bewijs",
-   "u krijgt",
-   "als de cursus"
-  ],
-  "answer": "u krijgt een bewijs als de cursus klaar is",
-  "alternatives": [
-   "als de cursus klaar is, krijgt u een bewijs"
-  ],
-  "hint": "Als-clause: verb at the end. Als-clause first → inversion (krijgt u).",
-  "senses": {
-   "u": "u@20"
-  }
- },
- {
-  "id": "school-107",
-  "topic": "school",
-  "parts": [
-   "over de toets",
-   "een specifieke vraag",
-   "heeft u"
-  ],
-  "answer": "heeft u een specifieke vraag over de toets?",
+  "answer": "ik verlang naar mijn oude buurt",
   "alternatives": [],
-  "hint": "Yes/no question: verb first, then subject.",
-  "senses": {
-   "u": "u@20",
-   "over": "over@20"
-  }
+  "hint": "“verlangen naar” = long for; the “naar …” phrase follows the verb.",
+  "grammar": "basis",
+  "level": 2
  },
  {
-  "id": "school-108",
-  "topic": "school",
+  "id": "wonen-124",
+  "topic": "wonen",
   "parts": [
-   "ideaal",
-   "een cursus in de avond",
-   "voor mij is"
+   "over de hoge huur",
+   "verbaasd",
+   "ik was"
   ],
-  "answer": "voor mij is een cursus in de avond ideaal",
-  "alternatives": [
-   "een cursus in de avond is voor mij ideaal"
-  ],
-  "hint": "Phrase first → inversion: is + subject.",
-  "senses": {
-   "voor": "voor@20",
-   "mij": "mij@20"
-  }
- },
- {
-  "id": "school-109",
-  "topic": "school",
-  "parts": [
-   "van de school",
-   "schade",
-   "er is",
-   "aan het dak"
-  ],
-  "answer": "er is schade aan het dak van de school",
+  "answer": "ik was verbaasd over de hoge huur",
   "alternatives": [],
-  "hint": "Er is + new subject (schade).",
+  "hint": "Subject + verb (was) + adjective; “verbaasd over” = surprised about.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "aan": "aan@20",
-   "het": "het@20",
-   "van": "van@20"
-  }
- },
- {
-  "id": "school-110",
-  "topic": "school",
-  "parts": [
-   "niet roken",
-   "mag je",
-   "op het terrein van de school"
-  ],
-  "answer": "op het terrein van de school mag je niet roken",
-  "alternatives": [
-   "je mag op het terrein van de school niet roken"
-  ],
-  "hint": "Place first → inversion; modal (mag) 2nd, infinitive at the end.",
-  "senses": {
-   "op": "op@20",
-   "het": "het@20",
-   "van": "van@20",
-   "je": "je@20"
-  }
- },
- {
-  "id": "school-111",
-  "topic": "school",
-  "parts": [
-   "op de stoep",
-   "de ouders",
-   "wachten",
-   "buiten"
-  ],
-  "answer": "de ouders wachten buiten op de stoep",
-  "alternatives": [],
-  "hint": "Verb 2nd; general place (buiten) before specific place (op de stoep).",
-  "senses": {
-   "op": "op@20"
-  }
- },
- {
-  "id": "school-112",
-  "topic": "school",
-  "parts": [
-   "door het park",
-   "naar school",
-   "elke dag",
-   "ik loop"
-  ],
-  "answer": "ik loop elke dag door het park naar school",
-  "alternatives": [
-   "elke dag loop ik door het park naar school"
-  ],
-  "hint": "TMP: time (elke dag) first, then the route and destination.",
-  "senses": {
-   "elke": "elke@20",
-   "door": "door@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-113",
-  "topic": "school",
-  "parts": [
-   "al weg",
-   "is",
-   "de docent van de computercursus"
-  ],
-  "answer": "is de docent van de computercursus al weg?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb (is) first.",
-  "senses": {
-   "van": "van@20",
-   "al": "al@20"
-  }
- },
- {
-  "id": "school-114",
-  "topic": "school",
-  "parts": [
-   "vrij",
-   "zijn de kinderen",
-   "op woensdagmiddag"
-  ],
-  "answer": "op woensdagmiddag zijn de kinderen vrij",
-  "alternatives": [
-   "de kinderen zijn op woensdagmiddag vrij"
-  ],
-  "hint": "Time first → inversion: zijn de kinderen.",
-  "senses": {
-   "op": "op@20",
-   "zijn": "zijn@20",
-   "vrij": "vrij@20"
-  }
- },
- {
-  "id": "school-115",
-  "topic": "school",
-  "parts": [
-   "in de stad",
-   "een eigen zaak",
-   "mijn broer",
-   "heeft"
-  ],
-  "answer": "mijn broer heeft een eigen zaak in de stad",
-  "alternatives": [],
-  "hint": "Subject first, verb 2nd.",
-  "senses": {
-   "mijn": "mijn@20"
-  }
- },
- {
-  "id": "school-116",
-  "topic": "school",
-  "parts": [
-   "schrijven",
-   "over onze kat",
-   "mijn dochter wil",
-   "een verhaal"
-  ],
-  "answer": "mijn dochter wil een verhaal over onze kat schrijven",
-  "alternatives": [],
-  "hint": "Modal (wil) 2nd, infinitive (schrijven) at the end.",
-  "senses": {
-   "mijn": "mijn@20",
-   "over": "over@20",
-   "onze": "onze@20"
-  }
- },
- {
-  "id": "school-117",
-  "topic": "school",
-  "parts": [
-   "geven",
-   "meer geld",
-   "volgend jaar",
-   "de minister wil",
-   "aan scholen"
-  ],
-  "answer": "de minister wil volgend jaar meer geld aan scholen geven",
-  "alternatives": [
-   "volgend jaar wil de minister meer geld aan scholen geven"
-  ],
-  "hint": "Modal 2nd, infinitive last; time first → inversion.",
-  "senses": {
-   "aan": "aan@20"
-  }
- },
- {
-  "id": "school-118",
-  "topic": "school",
-  "parts": [
-   "soldaat",
-   "in het leger",
-   "vroeger",
-   "was mijn opa"
-  ],
-  "answer": "vroeger was mijn opa soldaat in het leger",
-  "alternatives": [
-   "mijn opa was vroeger soldaat in het leger"
-  ],
-  "hint": "Time word first (vroeger) → inversion: was mijn opa.",
-  "senses": {
-   "vroeger": "vroeger@20",
-   "mijn": "mijn@20",
-   "het": "het@20"
-  }
- },
- {
-  "id": "school-119",
-  "topic": "school",
-  "parts": [
-   "over geloof en cultuur",
-   "praten wij",
-   "in de les"
-  ],
-  "answer": "in de les praten wij over geloof en cultuur",
-  "alternatives": [
-   "wij praten in de les over geloof en cultuur"
-  ],
-  "hint": "Phrase first → inversion; praten over at the end.",
-  "senses": {
-   "over": "over@20"
-  }
- },
- {
-  "id": "school-120",
-  "topic": "school",
-  "parts": [
-   "altijd te laat komt",
-   "dat hij",
-   "het is typisch voor hem"
-  ],
-  "answer": "het is typisch voor hem dat hij altijd te laat komt",
-  "alternatives": [],
-  "hint": "In a dat-clause the verb (komt) goes to the end.",
-  "senses": {
-   "het": "het@20",
-   "voor": "voor@20",
-   "hem": "hem@20",
-   "te": "te@20",
-   "laat": "laat@20"
-  }
- },
- {
-  "id": "school-121",
-  "topic": "school",
-  "parts": [
-   "in de kantine",
-   "staat",
-   "beneden",
-   "de koffie"
-  ],
-  "answer": "de koffie staat beneden in de kantine",
-  "alternatives": [],
-  "hint": "Verb 2nd; general place (beneden) before specific place."
- },
- {
-  "id": "school-122",
-  "topic": "school",
-  "parts": [
-   "aanmelden",
-   "via de website",
-   "u kunt zich",
-   "uitsluitend"
-  ],
-  "answer": "u kunt zich uitsluitend via de website aanmelden",
-  "alternatives": [],
-  "hint": "Modal 2nd, zich right after it, infinitive (aanmelden) at the end.",
-  "senses": {
-   "u": "u@20"
+   "over": "over@30"
   }
  },
  {
@@ -3846,7 +4428,926 @@ const EXERCISES = [
   "alternatives": [
    "vandaag praat zij een uur met haar buurman"
   ],
-  "hint": "TMP rule: Tijd (vandaag een uur) before Manier (met haar buurman)."
+  "hint": "TMP rule: Tijd (vandaag een uur) before Manier (met haar buurman).",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "wonen-05",
+  "topic": "wonen",
+  "parts": [
+   "op straat",
+   "al de hele dag",
+   "liggen",
+   "de vuilniszakken"
+  ],
+  "answer": "de vuilniszakken liggen al de hele dag op straat",
+  "alternatives": [
+   "al de hele dag liggen de vuilniszakken op straat"
+  ],
+  "hint": "Verb in 2nd place; time (al de hele dag) before place (op straat).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "liggen": "liggen@30",
+   "al": "al@30",
+   "hele": "hele@30",
+   "op": "op@30"
+  }
+ },
+ {
+  "id": "wonen-13",
+  "topic": "wonen",
+  "parts": [
+   "tegenover het café",
+   "al twintig jaar",
+   "woont",
+   "mijn tante"
+  ],
+  "answer": "mijn tante woont al twintig jaar tegenover het café",
+  "alternatives": [
+   "al twintig jaar woont mijn tante tegenover het café"
+  ],
+  "hint": "TMP: time (al twintig jaar) before place (tegenover het café).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "al": "al@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-60",
+  "topic": "wonen",
+  "parts": [
+   "aan de gracht",
+   "wij wonen",
+   "in een historisch huis"
+  ],
+  "answer": "wij wonen in een historisch huis aan de gracht",
+  "alternatives": [],
+  "hint": "Subject + verb + place. Note: “een historisch huis” — no -e with een + het-word.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "aan": "aan@30"
+  }
+ },
+ {
+  "id": "wonen-72",
+  "topic": "wonen",
+  "parts": [
+   "aan de kant",
+   "liggen",
+   "van de tuin",
+   "beide slaapkamers"
+  ],
+  "answer": "beide slaapkamers liggen aan de kant van de tuin",
+  "alternatives": [],
+  "hint": "Subject + verb (liggen) + place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "liggen": "liggen@30",
+   "aan": "aan@30"
+  }
+ },
+ {
+  "id": "wonen-87",
+  "topic": "wonen",
+  "parts": [
+   "maar zeer aardig",
+   "een beetje gek",
+   "is",
+   "mijn buurman"
+  ],
+  "answer": "mijn buurman is een beetje gek, maar zeer aardig",
+  "alternatives": [],
+  "hint": "Subject + verb (is) + description; “maar” adds a contrast.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "beetje": "beetje@30"
+  }
+ },
+ {
+  "id": "wonen-93",
+  "topic": "wonen",
+  "parts": [
+   "in het hart",
+   "ligt",
+   "ons huis",
+   "van de stad"
+  ],
+  "answer": "ons huis ligt in het hart van de stad",
+  "alternatives": [],
+  "hint": "Subject + verb (ligt) + place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "ons": "ons@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-113",
+  "topic": "wonen",
+  "parts": [
+   "een klein appartement",
+   "voor een korte periode",
+   "huren",
+   "wij"
+  ],
+  "answer": "wij huren voor een korte periode een klein appartement",
+  "alternatives": [
+   "voor een korte periode huren wij een klein appartement",
+   "wij huren een klein appartement voor een korte periode"
+  ],
+  "hint": "Time phrase (voor een korte periode) usually right after the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-115",
+  "topic": "wonen",
+  "parts": [
+   "met mijn jonge buren",
+   "een goede relatie",
+   "ik heb"
+  ],
+  "answer": "ik heb een goede relatie met mijn jonge buren",
+  "alternatives": [],
+  "hint": "Subject + verb + object; the “met …” phrase at the end.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "wonen-116",
+  "topic": "wonen",
+  "parts": [
+   "rijdt",
+   "in de richting",
+   "de bus",
+   "van het centrum"
+  ],
+  "answer": "de bus rijdt in de richting van het centrum",
+  "alternatives": [],
+  "hint": "Subject + verb + direction.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@30",
+   "centrum": "centrum@30"
+  }
+ },
+ {
+  "id": "wonen-120",
+  "topic": "wonen",
+  "parts": [
+   "voor het afval",
+   "heeft",
+   "een nieuw systeem",
+   "de gemeente"
+  ],
+  "answer": "de gemeente heeft een nieuw systeem voor het afval",
+  "alternatives": [],
+  "hint": "Subject + verb + object. “een nieuw systeem”: no -e with een + het-word.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-130",
+  "topic": "wonen",
+  "parts": [
+   "een huis",
+   "is",
+   "met een tuin",
+   "mijn grootste wens"
+  ],
+  "answer": "mijn grootste wens is een huis met een tuin",
+  "alternatives": [],
+  "hint": "Subject (mijn grootste wens) + verb (is) + the rest.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "wonen-55",
+  "topic": "wonen",
+  "parts": [
+   "van het station",
+   "ligt",
+   "ons huis",
+   "op vijf minuten lopen"
+  ],
+  "answer": "ons huis ligt op vijf minuten lopen van het station",
+  "alternatives": [],
+  "hint": "Subject + verb (ligt) + place. “op vijf minuten lopen van” = a five-minute walk from.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "ons": "ons@30",
+   "op": "op@30",
+   "vijf": "vijf@30",
+   "het": "het@30",
+   "station": "station@30"
+  }
+ },
+ {
+  "id": "wonen-65",
+  "topic": "wonen",
+  "parts": [
+   "van het buurthuis",
+   "is",
+   "de bewonersvergadering",
+   "in de grote zaal"
+  ],
+  "answer": "de bewonersvergadering is in de grote zaal van het buurthuis",
+  "alternatives": [],
+  "hint": "Subject + verb (is) + place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-80",
+  "topic": "wonen",
+  "parts": [
+   "vlak bij ons huis",
+   "is",
+   "van de dokter",
+   "de praktijk"
+  ],
+  "answer": "de praktijk van de dokter is vlak bij ons huis",
+  "alternatives": [],
+  "hint": "Subject + verb (is) + place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "bij": "bij@30",
+   "ons": "ons@30"
+  }
+ },
+ {
+  "id": "wonen-98",
+  "topic": "wonen",
+  "parts": [
+   "over de schutting",
+   "klimt",
+   "altijd",
+   "de kat van de buren"
+  ],
+  "answer": "de kat van de buren klimt altijd over de schutting",
+  "alternatives": [],
+  "hint": "Verb in 2nd place, “altijd” right after it, place at the end.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "over": "over@30"
+  }
+ },
+ {
+  "id": "wonen-99",
+  "topic": "wonen",
+  "parts": [
+   "aan zijn poot",
+   "heeft",
+   "pijn",
+   "de hond van de buren"
+  ],
+  "answer": "de hond van de buren heeft pijn aan zijn poot",
+  "alternatives": [],
+  "hint": "The whole subject (de hond van de buren) first, then the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "aan": "aan@30",
+   "zijn": "zijn@30"
+  }
+ },
+ {
+  "id": "wonen-121",
+  "topic": "wonen",
+  "parts": [
+   "heel hard",
+   "staat",
+   "elke avond",
+   "de televisie van de buren"
+  ],
+  "answer": "de televisie van de buren staat elke avond heel hard",
+  "alternatives": [
+   "elke avond staat de televisie van de buren heel hard"
+  ],
+  "hint": "TMP: time (elke avond) before manner (heel hard).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "elke": "elke@30",
+   "hard": "hard@30"
+  }
+ },
+ {
+  "id": "wonen-133",
+  "topic": "wonen",
+  "parts": [
+   "over het gat",
+   "me zorgen",
+   "ik maak",
+   "in de stoep"
+  ],
+  "answer": "ik maak me zorgen over het gat in de stoep",
+  "alternatives": [],
+  "hint": "“zich zorgen maken over” = to worry about; the reflexive “me” comes right after the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "maak": "maak@30",
+   "over": "over@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-140",
+  "topic": "wonen",
+  "parts": [
+   "al twee weken",
+   "is",
+   "kapot",
+   "de lift in onze flat"
+  ],
+  "answer": "de lift in onze flat is al twee weken kapot",
+  "alternatives": [
+   "al twee weken is de lift in onze flat kapot"
+  ],
+  "hint": "Subject + verb (is); time (al twee weken) before the rest.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "onze": "onze@30",
+   "al": "al@30",
+   "twee": "twee@30"
+  }
+ },
+ {
+  "id": "wonen-23",
+  "topic": "wonen",
+  "parts": [
+   "dwars op de stoep",
+   "staat",
+   "vaak",
+   "de auto van de buren"
+  ],
+  "answer": "de auto van de buren staat vaak dwars op de stoep",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; “vaak” comes right after the verb, the place at the end.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "op": "op@30"
+  }
+ },
+ {
+  "id": "wonen-30",
+  "topic": "wonen",
+  "parts": [
+   "in onze wijk",
+   "woont",
+   "de auteur",
+   "al jaren",
+   "van dit artikel"
+  ],
+  "answer": "de auteur van dit artikel woont al jaren in onze wijk",
+  "alternatives": [],
+  "hint": "The whole subject (de auteur van dit artikel) comes first, then the verb; time before place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "dit": "dit@30",
+   "al": "al@30",
+   "onze": "onze@30",
+   "wijk": "wijk@30"
+  }
+ },
+ {
+  "id": "wonen-40",
+  "topic": "wonen",
+  "parts": [
+   "vertelt",
+   "het nieuws uit de straat",
+   "mijn buurvrouw",
+   "elke dag",
+   "mij"
+  ],
+  "answer": "mijn buurvrouw vertelt mij elke dag het nieuws uit de straat",
+  "alternatives": [
+   "elke dag vertelt mijn buurvrouw mij het nieuws uit de straat"
+  ],
+  "hint": "A short pronoun (mij) comes right after the verb, before the time phrase.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "mij": "mij@30",
+   "elke": "elke@30",
+   "het": "het@30",
+   "uit": "uit@30"
+  }
+ },
+ {
+  "id": "wonen-134",
+  "topic": "wonen",
+  "parts": [
+   "zoete koekjes",
+   "de buurvrouw",
+   "voor alle kinderen",
+   "bakt",
+   "in de straat"
+  ],
+  "answer": "de buurvrouw bakt zoete koekjes voor alle kinderen in de straat",
+  "alternatives": [],
+  "hint": "Subject + verb + object; the “voor …” phrase after the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-58",
+  "topic": "wonen",
+  "parts": [
+   "in het westen",
+   "mijn ouders",
+   "van het land",
+   "wonen",
+   "in een dorp"
+  ],
+  "answer": "mijn ouders wonen in een dorp in het westen van het land",
+  "alternatives": [],
+  "hint": "Subject + verb, then the place phrases: small place (dorp) before the larger area.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "ouders": "ouders@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-78",
+  "topic": "wonen",
+  "parts": [
+   "is erg slecht",
+   "met de verhuurder",
+   "de communicatie"
+  ],
+  "answer": "de communicatie met de verhuurder is erg slecht",
+  "alternatives": [],
+  "hint": "The whole subject (de communicatie met de verhuurder) comes first, then the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "slecht": "slecht@30"
+  }
+ },
+ {
+  "id": "wonen-83",
+  "topic": "wonen",
+  "parts": [
+   "voor nieuwe huurders",
+   "heeft",
+   "de woningcorporatie",
+   "strenge eisen"
+  ],
+  "answer": "de woningcorporatie heeft strenge eisen voor nieuwe huurders",
+  "alternatives": [],
+  "hint": "Subject + verb + object; the “voor …” phrase at the end.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-84",
+  "topic": "wonen",
+  "parts": [
+   "een experiment",
+   "doet",
+   "de gemeente",
+   "met nieuwe afvalcontainers"
+  ],
+  "answer": "de gemeente doet een experiment met nieuwe afvalcontainers",
+  "alternatives": [],
+  "hint": "Subject + verb (doet) + object.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "wonen-123",
+  "topic": "wonen",
+  "parts": [
+   "is erg moeilijk",
+   "van onze straatnaam",
+   "de uitspraak"
+  ],
+  "answer": "de uitspraak van onze straatnaam is erg moeilijk",
+  "alternatives": [],
+  "hint": "The whole subject first, then the verb (is).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-50",
+  "topic": "wonen",
+  "parts": [
+   "van slechte kwaliteit",
+   "koopt altijd",
+   "de verhuurder",
+   "goedkoop materiaal"
+  ],
+  "answer": "de verhuurder koopt altijd goedkoop materiaal van slechte kwaliteit",
+  "alternatives": [],
+  "hint": "Verb in 2nd place, “altijd” right after the verb.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "wonen-64",
+  "topic": "wonen",
+  "parts": [
+   "alleen Engels",
+   "in onze straat",
+   "spreken",
+   "veel buitenlandse studenten"
+  ],
+  "answer": "veel buitenlandse studenten in onze straat spreken alleen Engels",
+  "alternatives": [],
+  "hint": "The whole subject (veel buitenlandse studenten in onze straat) comes first, then the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "veel": "veel@30",
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-75",
+  "topic": "wonen",
+  "parts": [
+   "voor een woning",
+   "bewust",
+   "wij kiezen",
+   "dicht bij het station"
+  ],
+  "answer": "wij kiezen bewust voor een woning dicht bij het station",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; “bewust” (manner) right after the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "voor": "voor@30",
+   "dicht": "dicht@30",
+   "bij": "bij@30",
+   "het": "het@30",
+   "station": "station@30"
+  }
+ },
+ {
+  "id": "wonen-100",
+  "topic": "wonen",
+  "parts": [
+   "door onze straat",
+   "fietsen",
+   "elke ochtend",
+   "de leerlingen van de school"
+  ],
+  "answer": "de leerlingen van de school fietsen elke ochtend door onze straat",
+  "alternatives": [
+   "elke ochtend fietsen de leerlingen van de school door onze straat"
+  ],
+  "hint": "TMP: time (elke ochtend) before place (door onze straat).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "elke": "elke@30",
+   "door": "door@30",
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-112",
+  "topic": "wonen",
+  "parts": [
+   "overal",
+   "afval",
+   "er ligt",
+   "in het park"
+  ],
+  "answer": "er ligt overal afval in het park",
+  "alternatives": [
+   "er ligt in het park overal afval"
+  ],
+  "hint": "“er” + verb in 2nd place; place (in het park) at the end.",
+  "grammar": "inversie",
+  "level": 1,
+  "senses": {
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-22",
+  "topic": "wonen",
+  "parts": [
+   "bijna onmogelijk",
+   "is",
+   "parkeren",
+   "in onze straat"
+  ],
+  "answer": "in onze straat is parkeren bijna onmogelijk",
+  "alternatives": [
+   "parkeren is in onze straat bijna onmogelijk"
+  ],
+  "hint": "Place phrase first → inversion: the verb (is) comes before the subject (parkeren).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-101",
+  "topic": "wonen",
+  "parts": [
+   "altijd",
+   "de wijkkrant",
+   "lees ik",
+   "op zondag"
+  ],
+  "answer": "op zondag lees ik altijd de wijkkrant",
+  "alternatives": [
+   "ik lees op zondag altijd de wijkkrant",
+   "ik lees altijd op zondag de wijkkrant",
+   "ik lees de wijkkrant altijd op zondag"
+  ],
+  "hint": "Time first → inversion: “lees ik”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@30",
+   "zondag": "zondag@30"
+  }
+ },
+ {
+  "id": "wonen-107",
+  "topic": "wonen",
+  "parts": [
+   "met de verhuizing",
+   "help ik",
+   "je",
+   "natuurlijk"
+  ],
+  "answer": "natuurlijk help ik je met de verhuizing",
+  "alternatives": [
+   "ik help je natuurlijk met de verhuizing"
+  ],
+  "hint": "“natuurlijk” first → inversion: “help ik”.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "wonen-11",
+  "topic": "wonen",
+  "parts": [
+   "wij",
+   "naar een goedkoper huis",
+   "verhuizen",
+   "volgende maand"
+  ],
+  "answer": "volgende maand verhuizen wij naar een goedkoper huis",
+  "alternatives": [
+   "wij verhuizen volgende maand naar een goedkoper huis"
+  ],
+  "hint": "Time first → inversion: verb (verhuizen) before subject (wij).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "volgende": "volgende@30"
+  }
+ },
+ {
+  "id": "wonen-54",
+  "topic": "wonen",
+  "parts": [
+   "om half acht",
+   "de vuilniswagen",
+   "op dinsdag",
+   "komt"
+  ],
+  "answer": "op dinsdag komt de vuilniswagen om half acht",
+  "alternatives": [
+   "de vuilniswagen komt op dinsdag om half acht"
+  ],
+  "hint": "Time first → inversion: verb (komt) before subject.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@30",
+   "dinsdag": "dinsdag@30",
+   "om": "om@30"
+  }
+ },
+ {
+  "id": "wonen-88",
+  "topic": "wonen",
+  "parts": [
+   "in het trappenhuis",
+   "een vieze geur",
+   "hangt",
+   "er"
+  ],
+  "answer": "er hangt een vieze geur in het trappenhuis",
+  "alternatives": [],
+  "hint": "“er” + verb in 2nd place; the place comes at the end.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-89",
+  "topic": "wonen",
+  "parts": [
+   "een veilig gevoel",
+   "heb ik",
+   "in deze buurt"
+  ],
+  "answer": "in deze buurt heb ik een veilig gevoel",
+  "alternatives": [
+   "ik heb in deze buurt een veilig gevoel"
+  ],
+  "hint": "Place first → inversion: “heb ik”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "deze": "deze@30"
+  }
+ },
+ {
+  "id": "wonen-20",
+  "topic": "wonen",
+  "parts": [
+   "geen stroom",
+   "is er",
+   "in ons huis",
+   "sinds gisteren"
+  ],
+  "answer": "sinds gisteren is er geen stroom in ons huis",
+  "alternatives": [
+   "er is sinds gisteren geen stroom in ons huis",
+   "in ons huis is er sinds gisteren geen stroom"
+  ],
+  "hint": "Time phrase first → inversion: “is er”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "sinds": "sinds@30",
+   "gisteren": "gisteren@30",
+   "geen": "geen@30",
+   "ons": "ons@30"
+  }
+ },
+ {
+  "id": "wonen-47",
+  "topic": "wonen",
+  "parts": [
+   "de huur van onze woning",
+   "weer",
+   "stijgt",
+   "dit jaar"
+  ],
+  "answer": "dit jaar stijgt de huur van onze woning weer",
+  "alternatives": [
+   "de huur van onze woning stijgt dit jaar weer"
+  ],
+  "hint": "Time first → inversion: verb (stijgt) before the subject.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "dit": "dit@30",
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-53",
+  "topic": "wonen",
+  "parts": [
+   "een oude kist",
+   "staat",
+   "met speelgoed",
+   "in de kelder"
+  ],
+  "answer": "in de kelder staat een oude kist met speelgoed",
+  "alternatives": [],
+  "hint": "Place first → inversion: the verb (staat) comes before the subject.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "wonen-59",
+  "topic": "wonen",
+  "parts": [
+   "een boer",
+   "woont",
+   "met veel koeien",
+   "naast ons huis"
+  ],
+  "answer": "naast ons huis woont een boer met veel koeien",
+  "alternatives": [
+   "een boer met veel koeien woont naast ons huis"
+  ],
+  "hint": "Place first → inversion: verb (woont) before subject (een boer).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "ons": "ons@30",
+   "veel": "veel@30"
+  }
+ },
+ {
+  "id": "wonen-71",
+  "topic": "wonen",
+  "parts": [
+   "erg stil",
+   "vond ik",
+   "de buurt",
+   "in het begin"
+  ],
+  "answer": "in het begin vond ik de buurt erg stil",
+  "alternatives": [
+   "ik vond de buurt in het begin erg stil"
+  ],
+  "hint": "Time phrase first → inversion: “vond ik”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-28",
+  "topic": "wonen",
+  "parts": [
+   "voor de wijkkrant",
+   "schrijf",
+   "een kort stukje",
+   "ik",
+   "deze maand"
+  ],
+  "answer": "deze maand schrijf ik een kort stukje voor de wijkkrant",
+  "alternatives": [
+   "ik schrijf deze maand een kort stukje voor de wijkkrant"
+  ],
+  "hint": "Time first → inversion: “schrijf ik”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "deze": "deze@30",
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-86",
+  "topic": "wonen",
+  "parts": [
+   "vers fruit",
+   "koop ik",
+   "in onze wijk",
+   "op de markt"
+  ],
+  "answer": "op de markt in onze wijk koop ik vers fruit",
+  "alternatives": [
+   "ik koop vers fruit op de markt in onze wijk",
+   "ik koop op de markt in onze wijk vers fruit"
+  ],
+  "hint": "Place first → inversion: “koop ik”.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@30",
+   "onze": "onze@30",
+   "wijk": "wijk@30"
+  }
  },
  {
   "id": "wonen-01",
@@ -3863,9 +5364,621 @@ const EXERCISES = [
    "al drie weken zit er een groot gat in de stoep"
   ],
   "hint": "Verb in 2nd place after “er”; time (al drie weken) comes before place (in de stoep).",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "al": "al@30",
    "drie": "drie@30"
+  }
+ },
+ {
+  "id": "wonen-24",
+  "topic": "wonen",
+  "parts": [
+   "in de schaduw",
+   "zit ik",
+   "van de boom",
+   "graag",
+   "in de zomer"
+  ],
+  "answer": "in de zomer zit ik graag in de schaduw van de boom",
+  "alternatives": [
+   "ik zit in de zomer graag in de schaduw van de boom"
+  ],
+  "hint": "Time first → inversion (zit ik); place (in de schaduw …) at the end.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "graag": "graag@30"
+  }
+ },
+ {
+  "id": "wonen-57",
+  "topic": "wonen",
+  "parts": [
+   "een mooi landschap",
+   "zien wij",
+   "vanuit ons raam"
+  ],
+  "answer": "vanuit ons raam zien wij een mooi landschap",
+  "alternatives": [
+   "wij zien vanuit ons raam een mooi landschap"
+  ],
+  "hint": "Place first → inversion: “zien wij”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "ons": "ons@30",
+   "mooi": "mooi@30"
+  }
+ },
+ {
+  "id": "wonen-62",
+  "topic": "wonen",
+  "parts": [
+   "een cultureel programma",
+   "het buurthuis",
+   "heeft",
+   "elke maand"
+  ],
+  "answer": "elke maand heeft het buurthuis een cultureel programma",
+  "alternatives": [
+   "het buurthuis heeft elke maand een cultureel programma"
+  ],
+  "hint": "Time first → inversion: “heeft het buurthuis”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elke": "elke@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-27",
+  "topic": "wonen",
+  "parts": [
+   "een helemaal nieuwe keuken",
+   "alle huurders",
+   "krijgen",
+   "volgend jaar"
+  ],
+  "answer": "volgend jaar krijgen alle huurders een helemaal nieuwe keuken",
+  "alternatives": [
+   "alle huurders krijgen volgend jaar een helemaal nieuwe keuken"
+  ],
+  "hint": "Time first → inversion: verb (krijgen) before subject (alle huurders).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "helemaal": "helemaal@30"
+  }
+ },
+ {
+  "id": "wonen-61",
+  "topic": "wonen",
+  "parts": [
+   "klassieke muziek",
+   "mijn buurman",
+   "heel hard",
+   "speelt",
+   "elke avond"
+  ],
+  "answer": "elke avond speelt mijn buurman heel hard klassieke muziek",
+  "alternatives": [
+   "mijn buurman speelt elke avond heel hard klassieke muziek"
+  ],
+  "hint": "TMP: time (elke avond) before manner (heel hard).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elke": "elke@30",
+   "hard": "hard@30"
+  }
+ },
+ {
+  "id": "wonen-91",
+  "topic": "wonen",
+  "parts": [
+   "een woning",
+   "zoek ik",
+   "zonder trap",
+   "voor mijn gezondheid"
+  ],
+  "answer": "voor mijn gezondheid zoek ik een woning zonder trap",
+  "alternatives": [
+   "ik zoek voor mijn gezondheid een woning zonder trap"
+  ],
+  "hint": "Phrase first → inversion: “zoek ik”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-29",
+  "topic": "wonen",
+  "parts": [
+   "een bijdrage",
+   "de wijkkrant",
+   "van een bewoner",
+   "publiceert",
+   "elke maand"
+  ],
+  "answer": "elke maand publiceert de wijkkrant een bijdrage van een bewoner",
+  "alternatives": [
+   "de wijkkrant publiceert elke maand een bijdrage van een bewoner"
+  ],
+  "hint": "Time first → inversion: verb (publiceert) before subject (de wijkkrant).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elke": "elke@30"
+  }
+ },
+ {
+  "id": "wonen-34",
+  "topic": "wonen",
+  "parts": [
+   "een straatfeest",
+   "samen met de buren",
+   "wij",
+   "organiseren",
+   "op zaterdag"
+  ],
+  "answer": "op zaterdag organiseren wij samen met de buren een straatfeest",
+  "alternatives": [
+   "wij organiseren op zaterdag samen met de buren een straatfeest",
+   "samen met de buren organiseren wij op zaterdag een straatfeest"
+  ],
+  "hint": "TMP: time (op zaterdag) before manner (samen met de buren).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@30",
+   "zaterdag": "zaterdag@30"
+  }
+ },
+ {
+  "id": "wonen-92",
+  "topic": "wonen",
+  "parts": [
+   "lawaai",
+   "een groep jongeren",
+   "op het plein",
+   "maakt",
+   "elke avond"
+  ],
+  "answer": "elke avond maakt een groep jongeren lawaai op het plein",
+  "alternatives": [
+   "een groep jongeren maakt elke avond lawaai op het plein"
+  ],
+  "hint": "Time first → inversion: verb (maakt) before subject (een groep jongeren).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elke": "elke@30",
+   "groep": "groep@30",
+   "op": "op@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-111",
+  "topic": "wonen",
+  "parts": [
+   "voor mij",
+   "doet mijn buurvrouw",
+   "de boodschappen",
+   "na mijn operatie"
+  ],
+  "answer": "na mijn operatie doet mijn buurvrouw de boodschappen voor mij",
+  "alternatives": [
+   "mijn buurvrouw doet na mijn operatie de boodschappen voor mij"
+  ],
+  "hint": "Time first → inversion: “doet mijn buurvrouw”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@30",
+   "mij": "mij@30"
+  }
+ },
+ {
+  "id": "wonen-118",
+  "topic": "wonen",
+  "parts": [
+   "een spel",
+   "de kinderen",
+   "spelen",
+   "in het buurthuis",
+   "op woensdagmiddag"
+  ],
+  "answer": "op woensdagmiddag spelen de kinderen een spel in het buurthuis",
+  "alternatives": [
+   "de kinderen spelen op woensdagmiddag een spel in het buurthuis"
+  ],
+  "hint": "Time first → inversion: verb (spelen) before subject (de kinderen).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-52",
+  "topic": "wonen",
+  "parts": [
+   "mijn vrienden",
+   "met de zware dozen",
+   "helpen",
+   "mij",
+   "bij het verhuizen"
+  ],
+  "answer": "bij het verhuizen helpen mijn vrienden mij met de zware dozen",
+  "alternatives": [
+   "mijn vrienden helpen mij bij het verhuizen met de zware dozen"
+  ],
+  "hint": "Phrase first → inversion: verb (helpen) before subject (mijn vrienden).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "bij": "bij@30",
+   "het": "het@30",
+   "mij": "mij@30"
+  }
+ },
+ {
+  "id": "wonen-56",
+  "topic": "wonen",
+  "parts": [
+   "is",
+   "het onderwijs",
+   "van ons huis",
+   "erg goed",
+   "in de omgeving"
+  ],
+  "answer": "in de omgeving van ons huis is het onderwijs erg goed",
+  "alternatives": [
+   "het onderwijs in de omgeving van ons huis is erg goed",
+   "het onderwijs is in de omgeving van ons huis erg goed"
+  ],
+  "hint": "Place first → inversion: verb (is) before subject (het onderwijs).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "ons": "ons@30",
+   "het": "het@30",
+   "goed": "goed@30"
+  }
+ },
+ {
+  "id": "wonen-08",
+  "topic": "wonen",
+  "parts": [
+   "vaak",
+   "hebben",
+   "last van het geluid",
+   "wij",
+   "van de buren",
+   "op vrijdagavond"
+  ],
+  "answer": "op vrijdagavond hebben wij vaak last van het geluid van de buren",
+  "alternatives": [
+   "wij hebben op vrijdagavond vaak last van het geluid van de buren"
+  ],
+  "hint": "Inversion: after a time phrase at the start, the verb comes before the subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-32",
+  "topic": "wonen",
+  "parts": [
+   "is",
+   "in de wijk",
+   "de sfeer",
+   "veel beter",
+   "sinds het nieuwe buurthuis"
+  ],
+  "answer": "sinds het nieuwe buurthuis is de sfeer in de wijk veel beter",
+  "alternatives": [
+   "de sfeer in de wijk is sinds het nieuwe buurthuis veel beter"
+  ],
+  "hint": "Time phrase first → inversion: verb (is) before subject (de sfeer).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "sinds": "sinds@30",
+   "het": "het@30",
+   "wijk": "wijk@30",
+   "veel": "veel@30",
+   "beter": "beter@30"
+  }
+ },
+ {
+  "id": "wonen-96",
+  "topic": "wonen",
+  "parts": [
+   "pijn aan mijn oren",
+   "door het lawaai",
+   "heb ik",
+   "van de buren"
+  ],
+  "answer": "door het lawaai van de buren heb ik pijn aan mijn oren",
+  "alternatives": [
+   "ik heb door het lawaai van de buren pijn aan mijn oren"
+  ],
+  "hint": "Phrase first → inversion: “heb ik”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "door": "door@30",
+   "het": "het@30",
+   "aan": "aan@30"
+  }
+ },
+ {
+  "id": "wonen-135",
+  "topic": "wonen",
+  "parts": [
+   "de sleutel",
+   "krijgen wij",
+   "van onze nieuwe woning",
+   "over een paar weken"
+  ],
+  "answer": "over een paar weken krijgen wij de sleutel van onze nieuwe woning",
+  "alternatives": [
+   "wij krijgen over een paar weken de sleutel van onze nieuwe woning"
+  ],
+  "hint": "Time first → inversion: “krijgen wij”.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "over": "over@30",
+   "onze": "onze@30"
+  }
+ },
+ {
+  "id": "wonen-125",
+  "topic": "wonen",
+  "parts": [
+   "is dit huis",
+   "in vergelijking",
+   "erg groot",
+   "met ons oude huis"
+  ],
+  "answer": "in vergelijking met ons oude huis is dit huis erg groot",
+  "alternatives": [
+   "dit huis is in vergelijking met ons oude huis erg groot"
+  ],
+  "hint": "Phrase first → inversion: “is dit huis”.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "ons": "ons@30",
+   "dit": "dit@30"
+  }
+ },
+ {
+  "id": "wonen-33",
+  "topic": "wonen",
+  "parts": [
+   "vragen",
+   "u",
+   "of opmerkingen?",
+   "heeft",
+   "nog"
+  ],
+  "answer": "heeft u nog vragen of opmerkingen?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then the subject.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "nog": "nog@30",
+   "vragen": "vragen@30",
+   "of": "of@30"
+  }
+ },
+ {
+  "id": "wonen-94",
+  "topic": "wonen",
+  "parts": [
+   "een goed idee",
+   "u",
+   "heeft",
+   "voor de wijkkrant?"
+  ],
+  "answer": "heeft u een goed idee voor de wijkkrant?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, subject second.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "goed": "goed@30",
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-139",
+  "topic": "wonen",
+  "parts": [
+   "per maand?",
+   "hoeveel huur",
+   "betaalt u"
+  ],
+  "answer": "hoeveel huur betaalt u per maand?",
+  "alternatives": [],
+  "hint": "W-question: question phrase (hoeveel huur) first, then verb, then subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "per": "per@30"
+  }
+ },
+ {
+  "id": "wonen-104",
+  "topic": "wonen",
+  "parts": [
+   "de maten",
+   "wat",
+   "van de slaapkamer?",
+   "zijn"
+  ],
+  "answer": "wat zijn de maten van de slaapkamer?",
+  "alternatives": [],
+  "hint": "W-question: question word first, then the verb.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@30",
+   "zijn": "zijn@30"
+  }
+ },
+ {
+  "id": "wonen-108",
+  "topic": "wonen",
+  "parts": [
+   "vind je",
+   "van het nieuwe huis?",
+   "nou, wat"
+  ],
+  "answer": "nou, wat vind je van het nieuwe huis?",
+  "alternatives": [],
+  "hint": "W-question: question word (wat) first, then the verb, then the subject. “nou” stands outside the sentence.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-26",
+  "topic": "wonen",
+  "parts": [
+   "aan de buurvrouw",
+   "de sleutel",
+   "geef",
+   "van het huis"
+  ],
+  "answer": "geef de sleutel van het huis aan de buurvrouw",
+  "alternatives": [],
+  "hint": "Imperative: the verb (geef) comes first, without a subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "het": "het@30",
+   "aan": "aan@30"
+  }
+ },
+ {
+  "id": "wonen-31",
+  "topic": "wonen",
+  "parts": [
+   "van uw stukje",
+   "wat",
+   "de titel",
+   "is",
+   "voor de wijkkrant?"
+  ],
+  "answer": "wat is de titel van uw stukje voor de wijkkrant?",
+  "alternatives": [],
+  "hint": "W-question: question word first, then the verb.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@30",
+   "uw": "uw@30",
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-49",
+  "topic": "wonen",
+  "parts": [
+   "in de schuur?",
+   "voldoende ruimte",
+   "is er",
+   "voor een fiets"
+  ],
+  "answer": "is er voldoende ruimte voor een fiets in de schuur?",
+  "alternatives": [
+   "is er in de schuur voldoende ruimte voor een fiets?"
+  ],
+  "hint": "Yes/no question: the verb comes first (is er …).",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-138",
+  "topic": "wonen",
+  "parts": [
+   "uw ladder",
+   "mag ik",
+   "lenen?",
+   "morgen even"
+  ],
+  "answer": "mag ik morgen even uw ladder lenen?",
+  "alternatives": [
+   "mag ik morgen uw ladder even lenen?"
+  ],
+  "hint": "Question with a modal: “mag ik” first, infinitive (lenen) at the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "morgen": "morgen@30",
+   "uw": "uw@30"
+  }
+ },
+ {
+  "id": "wonen-03",
+  "topic": "wonen",
+  "parts": [
+   "uw voornaam en postcode",
+   "invullen?",
+   "kunt u",
+   "hier"
+  ],
+  "answer": "kunt u hier uw voornaam en postcode invullen?",
+  "alternatives": [
+   "kunt u uw voornaam en postcode hier invullen?"
+  ],
+  "hint": "Yes/no question: verb first, then the subject; the infinitive goes to the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "uw": "uw@30"
+  }
+ },
+ {
+  "id": "wonen-70",
+  "topic": "wonen",
+  "parts": [
+   "voor uw hulp",
+   "bedanken",
+   "ik wil",
+   "u allen"
+  ],
+  "answer": "ik wil u allen bedanken voor uw hulp",
+  "alternatives": [
+   "ik wil u allen voor uw hulp bedanken"
+  ],
+  "hint": "Modal verb (wil) in 2nd place, infinitive (bedanken) near the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "voor": "voor@30",
+   "uw": "uw@30"
   }
  },
  {
@@ -3887,6 +6000,8 @@ const EXERCISES = [
    "ik wil graag dit probleem melden bij de gemeente"
   ],
   "hint": "Modal verb (wil) in 2nd place, the infinitive (melden) goes to the end.",
+  "grammar": "modaal",
+  "level": 2,
   "senses": {
    "dit": "dit@30",
    "graag": "graag@30",
@@ -3894,222 +6009,121 @@ const EXERCISES = [
   }
  },
  {
-  "id": "wonen-03",
+  "id": "wonen-43",
   "topic": "wonen",
   "parts": [
-   "uw voornaam en postcode",
-   "invullen?",
+   "naar dit formulier?",
+   "even",
+   "meekijken",
+   "kunt u"
+  ],
+  "answer": "kunt u even meekijken naar dit formulier?",
+  "alternatives": [
+   "kunt u even naar dit formulier meekijken?"
+  ],
+  "hint": "Yes/no question with a modal: “kunt u” first, the infinitive (meekijken) after.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "dit": "dit@30"
+  }
+ },
+ {
+  "id": "wonen-45",
+  "topic": "wonen",
+  "parts": [
+   "verzetten?",
+   "de afspraak",
    "kunt u",
+   "met de monteur"
+  ],
+  "answer": "kunt u de afspraak met de monteur verzetten?",
+  "alternatives": [],
+  "hint": "Question with a modal: verb first, subject second, infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "verzetten": "verzetten@30"
+  }
+ },
+ {
+  "id": "wonen-114",
+  "topic": "wonen",
+  "parts": [
+   "een nieuwe speeltuin",
+   "wil",
+   "realiseren",
+   "de gemeente",
    "hier"
   ],
-  "answer": "kunt u hier uw voornaam en postcode invullen?",
+  "answer": "de gemeente wil hier een nieuwe speeltuin realiseren",
   "alternatives": [
-   "kunt u uw voornaam en postcode hier invullen?"
+   "hier wil de gemeente een nieuwe speeltuin realiseren"
   ],
-  "hint": "Yes/no question: verb first, then the subject; the infinitive goes to the end.",
-  "senses": {
-   "uw": "uw@30"
-  }
+  "hint": "Modal verb (wil) in 2nd place, infinitive (realiseren) at the end.",
+  "grammar": "modaal",
+  "level": 3
  },
  {
-  "id": "wonen-04",
+  "id": "wonen-73",
   "topic": "wonen",
   "parts": [
-   "in",
-   "op het formulier",
-   "vul",
-   "uw adres en woonplaats"
+   "buitenzetten",
+   "alleen op bepaalde dagen",
+   "u mag",
+   "het afval"
   ],
-  "answer": "vul uw adres en woonplaats in op het formulier",
-  "alternatives": [
-   "vul op het formulier uw adres en woonplaats in"
-  ],
-  "hint": "Imperative: the verb comes first; the particle “in” of “invullen” goes to the end.",
-  "senses": {
-   "uw": "uw@30",
-   "op": "op@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-05",
-  "topic": "wonen",
-  "parts": [
-   "op straat",
-   "al de hele dag",
-   "liggen",
-   "de vuilniszakken"
-  ],
-  "answer": "de vuilniszakken liggen al de hele dag op straat",
-  "alternatives": [
-   "al de hele dag liggen de vuilniszakken op straat"
-  ],
-  "hint": "Verb in 2nd place; time (al de hele dag) before place (op straat).",
-  "senses": {
-   "liggen": "liggen@30",
-   "al": "al@30",
-   "hele": "hele@30",
-   "op": "op@30"
-  }
- },
- {
-  "id": "wonen-06",
-  "topic": "wonen",
-  "parts": [
-   "kapot is",
-   "omdat de stoep",
-   "is gevallen",
-   "mijn moeder"
-  ],
-  "answer": "mijn moeder is gevallen omdat de stoep kapot is",
-  "alternatives": [
-   "omdat de stoep kapot is, is mijn moeder gevallen"
-  ],
-  "hint": "Perfect tense: is … gevallen. After “omdat” the verb goes to the end."
- },
- {
-  "id": "wonen-07",
-  "topic": "wonen",
-  "parts": [
-   "op straat lopen",
-   "de stoep",
-   "dat de kinderen",
-   "is zo smal"
-  ],
-  "answer": "de stoep is zo smal dat de kinderen op straat lopen",
+  "answer": "u mag het afval alleen op bepaalde dagen buitenzetten",
   "alternatives": [],
-  "hint": "“zo … dat”: in the dat-clause the verb (lopen) goes to the end.",
-  "senses": {
-   "op": "op@30"
-  }
- },
- {
-  "id": "wonen-08",
-  "topic": "wonen",
-  "parts": [
-   "vaak",
-   "hebben",
-   "last van het geluid",
-   "wij",
-   "van de buren",
-   "op vrijdagavond"
-  ],
-  "answer": "op vrijdagavond hebben wij vaak last van het geluid van de buren",
-  "alternatives": [
-   "wij hebben op vrijdagavond vaak last van het geluid van de buren"
-  ],
-  "hint": "Inversion: after a time phrase at the start, the verb comes before the subject.",
-  "senses": {
-   "op": "op@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-09",
-  "topic": "wonen",
-  "parts": [
-   "want",
-   "de hele nacht",
-   "niet slapen",
-   "mijn buurvrouw kan",
-   "de hond blaft"
-  ],
-  "answer": "mijn buurvrouw kan niet slapen, want de hond blaft de hele nacht",
-  "alternatives": [],
-  "hint": "After “want” the normal word order stays: subject + verb.",
-  "senses": {
-   "want": "want@30",
-   "hele": "hele@30"
-  }
- },
- {
-  "id": "wonen-10",
-  "topic": "wonen",
-  "parts": [
-   "geschreven",
-   "een brief",
-   "ik heb",
-   "aan de verhuurder"
-  ],
-  "answer": "ik heb een brief aan de verhuurder geschreven",
-  "alternatives": [
-   "ik heb aan de verhuurder een brief geschreven"
-  ],
-  "hint": "Perfect tense: “heb” in 2nd place, the participle “geschreven” at the end.",
-  "senses": {
-   "aan": "aan@30"
-  }
- },
- {
-  "id": "wonen-11",
-  "topic": "wonen",
-  "parts": [
-   "wij",
-   "naar een goedkoper huis",
-   "verhuizen",
-   "volgende maand"
-  ],
-  "answer": "volgende maand verhuizen wij naar een goedkoper huis",
-  "alternatives": [
-   "wij verhuizen volgende maand naar een goedkoper huis"
-  ],
-  "hint": "Time first → inversion: verb (verhuizen) before subject (wij).",
-  "senses": {
-   "volgende": "volgende@30"
-  }
- },
- {
-  "id": "wonen-12",
-  "topic": "wonen",
-  "parts": [
-   "is vreselijk klein",
-   "de woonkamer",
-   "maar de keuken",
-   "is breed"
-  ],
-  "answer": "de woonkamer is breed, maar de keuken is vreselijk klein",
-  "alternatives": [
-   "de keuken is vreselijk klein, maar de woonkamer is breed"
-  ],
-  "hint": "Two main clauses joined by “maar”: normal order (subject + verb) in both."
- },
- {
-  "id": "wonen-13",
-  "topic": "wonen",
-  "parts": [
-   "tegenover het café",
-   "al twintig jaar",
-   "woont",
-   "mijn tante"
-  ],
-  "answer": "mijn tante woont al twintig jaar tegenover het café",
-  "alternatives": [
-   "al twintig jaar woont mijn tante tegenover het café"
-  ],
-  "hint": "TMP: time (al twintig jaar) before place (tegenover het café).",
-  "senses": {
-   "al": "al@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-14",
-  "topic": "wonen",
-  "parts": [
-   "weg",
-   "het oude papier",
-   "ik breng",
-   "vanavond"
-  ],
-  "answer": "ik breng vanavond het oude papier weg",
-  "alternatives": [
-   "vanavond breng ik het oude papier weg",
-   "ik breng het oude papier vanavond weg"
-  ],
-  "hint": "Separable verb “wegbrengen”: “breng” in 2nd place, “weg” at the end.",
+  "hint": "With a modal (mag) the separable verb stays together at the end: buitenzetten.",
+  "grammar": "modaal",
+  "level": 3,
   "senses": {
    "het": "het@30",
-   "weg": "weg@30"
+   "op": "op@30"
+  }
+ },
+ {
+  "id": "wonen-132",
+  "topic": "wonen",
+  "parts": [
+   "niet goed lopen",
+   "mijn buurvrouw",
+   "door een ziekte",
+   "kan"
+  ],
+  "answer": "door een ziekte kan mijn buurvrouw niet goed lopen",
+  "alternatives": [
+   "mijn buurvrouw kan door een ziekte niet goed lopen"
+  ],
+  "hint": "Phrase first → inversion: verb (kan) before the subject; infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "door": "door@30",
+   "goed": "goed@30"
+  }
+ },
+ {
+  "id": "wonen-136",
+  "topic": "wonen",
+  "parts": [
+   "in dit huis",
+   "wij blijven",
+   "wonen",
+   "nog een jaar"
+  ],
+  "answer": "wij blijven nog een jaar in dit huis wonen",
+  "alternatives": [
+   "nog een jaar blijven wij in dit huis wonen"
+  ],
+  "hint": "“blijven + infinitive”: blijven in 2nd place, wonen at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "blijven": "blijven@30",
+   "nog": "nog@30",
+   "dit": "dit@30"
   }
  },
  {
@@ -4127,9 +6141,328 @@ const EXERCISES = [
    "wij moeten nog de lege flessen naar de glasbak brengen"
   ],
   "hint": "Modal verb (moeten) in 2nd place, infinitive (brengen) at the end.",
+  "grammar": "modaal",
+  "level": 3,
   "senses": {
    "nog": "nog@30",
    "brengen": "brengen@30"
+  }
+ },
+ {
+  "id": "wonen-21",
+  "topic": "wonen",
+  "parts": [
+   "voor een groter appartement",
+   "ruilen",
+   "wij willen",
+   "onze kleine flat"
+  ],
+  "answer": "wij willen onze kleine flat ruilen voor een groter appartement",
+  "alternatives": [
+   "wij willen onze kleine flat voor een groter appartement ruilen"
+  ],
+  "hint": "Modal verb (willen) in 2nd place, infinitive (ruilen) near the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "onze": "onze@30",
+   "voor": "voor@30"
+  }
+ },
+ {
+  "id": "wonen-66",
+  "topic": "wonen",
+  "parts": [
+   "aanwezig zijn",
+   "u moet",
+   "van de woning",
+   "bij de controle"
+  ],
+  "answer": "u moet bij de controle van de woning aanwezig zijn",
+  "alternatives": [],
+  "hint": "Modal verb (moet) in 2nd place, the infinitive (zijn) at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "bij": "bij@30",
+   "zijn": "zijn@30"
+  }
+ },
+ {
+  "id": "wonen-105",
+  "topic": "wonen",
+  "parts": [
+   "niet vinden",
+   "mijn messen en borden",
+   "kan ik",
+   "na de verhuizing"
+  ],
+  "answer": "na de verhuizing kan ik mijn messen en borden niet vinden",
+  "alternatives": [
+   "ik kan na de verhuizing mijn messen en borden niet vinden",
+   "ik kan mijn messen en borden na de verhuizing niet vinden"
+  ],
+  "hint": "Time first → inversion (kan ik); “niet” + infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "wonen-131",
+  "topic": "wonen",
+  "parts": [
+   "ook per e-mail",
+   "u kunt",
+   "zenden",
+   "de foto's",
+   "naar de gemeente"
+  ],
+  "answer": "u kunt de foto's ook per e-mail naar de gemeente zenden",
+  "alternatives": [],
+  "hint": "Modal verb (kunt) in 2nd place, infinitive (zenden) at the end; TMP: manner (per e-mail) before place.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "per": "per@30"
+  }
+ },
+ {
+  "id": "wonen-67",
+  "topic": "wonen",
+  "parts": [
+   "de stoep bekijken",
+   "een ambtenaar",
+   "komt",
+   "van de gemeente",
+   "morgen"
+  ],
+  "answer": "morgen komt een ambtenaar van de gemeente de stoep bekijken",
+  "alternatives": [
+   "een ambtenaar van de gemeente komt morgen de stoep bekijken"
+  ],
+  "hint": "“komen + infinitive”: komt in 2nd place, bekijken at the end.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "morgen": "morgen@30"
+  }
+ },
+ {
+  "id": "wonen-109",
+  "topic": "wonen",
+  "parts": [
+   "bij de gemeente",
+   "moet u zich",
+   "na de verhuizing",
+   "officieel inschrijven"
+  ],
+  "answer": "na de verhuizing moet u zich officieel inschrijven bij de gemeente",
+  "alternatives": [
+   "u moet zich na de verhuizing officieel inschrijven bij de gemeente",
+   "na de verhuizing moet u zich officieel bij de gemeente inschrijven",
+   "u moet zich na de verhuizing officieel bij de gemeente inschrijven"
+  ],
+  "hint": "Time first → inversion (moet u); the infinitive goes to the end.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "zich": "zich@30",
+   "bij": "bij@30"
+  }
+ },
+ {
+  "id": "wonen-14",
+  "topic": "wonen",
+  "parts": [
+   "weg",
+   "het oude papier",
+   "ik breng",
+   "vanavond"
+  ],
+  "answer": "ik breng vanavond het oude papier weg",
+  "alternatives": [
+   "vanavond breng ik het oude papier weg",
+   "ik breng het oude papier vanavond weg"
+  ],
+  "hint": "Separable verb “wegbrengen”: “breng” in 2nd place, “weg” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "het": "het@30",
+   "weg": "weg@30"
+  }
+ },
+ {
+  "id": "wonen-41",
+  "topic": "wonen",
+  "parts": [
+   "erg mooi",
+   "ziet er",
+   "uit",
+   "jullie nieuwe huis"
+  ],
+  "answer": "jullie nieuwe huis ziet er erg mooi uit",
+  "alternatives": [],
+  "hint": "Separable verb “eruitzien”: “ziet er” after the subject, “uit” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "mooi": "mooi@30",
+   "uit": "uit@30"
+  }
+ },
+ {
+  "id": "wonen-110",
+  "topic": "wonen",
+  "parts": [
+   "langs",
+   "de verhuurder",
+   "onverwacht",
+   "kwam",
+   "gisteren"
+  ],
+  "answer": "gisteren kwam de verhuurder onverwacht langs",
+  "alternatives": [
+   "de verhuurder kwam gisteren onverwacht langs"
+  ],
+  "hint": "Separable verb “langskomen”: kwam … langs. Time first → inversion.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "gisteren": "gisteren@30"
+  }
+ },
+ {
+  "id": "wonen-122",
+  "topic": "wonen",
+  "parts": [
+   "mijn borg",
+   "krijg ik",
+   "terug?",
+   "wanneer"
+  ],
+  "answer": "wanneer krijg ik mijn borg terug?",
+  "alternatives": [],
+  "hint": "W-question: question word, verb, subject; “terug” goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "terug": "terug@30"
+  }
+ },
+ {
+  "id": "wonen-106",
+  "topic": "wonen",
+  "parts": [
+   "aan de nieuwe buren",
+   "voor",
+   "ik stel",
+   "mezelf"
+  ],
+  "answer": "ik stel mezelf voor aan de nieuwe buren",
+  "alternatives": [
+   "ik stel mezelf aan de nieuwe buren voor"
+  ],
+  "hint": "Separable verb “voorstellen”: “stel” in 2nd place, “voor” after the object.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "voor": "voor@30",
+   "aan": "aan@30"
+  }
+ },
+ {
+  "id": "wonen-04",
+  "topic": "wonen",
+  "parts": [
+   "in",
+   "op het formulier",
+   "vul",
+   "uw adres en woonplaats"
+  ],
+  "answer": "vul uw adres en woonplaats in op het formulier",
+  "alternatives": [
+   "vul op het formulier uw adres en woonplaats in"
+  ],
+  "hint": "Imperative: the verb comes first; the particle “in” of “invullen” goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "uw": "uw@30",
+   "op": "op@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-17",
+  "topic": "wonen",
+  "parts": [
+   "veel stof",
+   "binnen",
+   "door het open raam",
+   "komt er"
+  ],
+  "answer": "door het open raam komt er veel stof binnen",
+  "alternatives": [
+   "er komt veel stof door het open raam binnen",
+   "er komt door het open raam veel stof binnen"
+  ],
+  "hint": "Separable verb “binnenkomen”: “komt” in 2nd place, “binnen” at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "door": "door@30",
+   "het": "het@30",
+   "veel": "veel@30",
+   "binnen": "binnen@30"
+  }
+ },
+ {
+  "id": "wonen-35",
+  "topic": "wonen",
+  "parts": [
+   "al op maandag",
+   "hun afval",
+   "buiten",
+   "zetten",
+   "sommige bewoners"
+  ],
+  "answer": "sommige bewoners zetten hun afval al op maandag buiten",
+  "alternatives": [
+   "sommige bewoners zetten al op maandag hun afval buiten"
+  ],
+  "hint": "Separable verb “buitenzetten”: “zetten” in 2nd place, “buiten” at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "zetten": "zetten@30",
+   "hun": "hun@30",
+   "al": "al@30",
+   "op": "op@30",
+   "buiten": "buiten@30"
+  }
+ },
+ {
+  "id": "wonen-127",
+  "topic": "wonen",
+  "parts": [
+   "op",
+   "de keuken",
+   "wij ruimen",
+   "voor het bezoek",
+   "vlug"
+  ],
+  "answer": "wij ruimen vlug de keuken op voor het bezoek",
+  "alternatives": [
+   "wij ruimen de keuken vlug op voor het bezoek",
+   "wij ruimen voor het bezoek vlug de keuken op"
+  ],
+  "hint": "Separable verb “opruimen”: “ruimen” in 2nd place, “op” after the object.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "op": "op@30",
+   "voor": "voor@30",
+   "het": "het@30"
   }
  },
  {
@@ -4148,526 +6481,11 @@ const EXERCISES = [
    "ik lever morgen de oude sleutels bij de verhuurder in"
   ],
   "hint": "Separable verb “inleveren”: “lever” in 2nd place, “in” at the very end.",
+  "grammar": "scheidbaar",
+  "level": 3,
   "senses": {
    "morgen": "morgen@30",
    "bij": "bij@30"
-  }
- },
- {
-  "id": "wonen-17",
-  "topic": "wonen",
-  "parts": [
-   "veel stof",
-   "binnen",
-   "door het open raam",
-   "komt er"
-  ],
-  "answer": "door het open raam komt er veel stof binnen",
-  "alternatives": [
-   "er komt veel stof door het open raam binnen",
-   "er komt door het open raam veel stof binnen"
-  ],
-  "hint": "Separable verb “binnenkomen”: “komt” in 2nd place, “binnen” at the end.",
-  "senses": {
-   "door": "door@30",
-   "het": "het@30",
-   "veel": "veel@30",
-   "binnen": "binnen@30"
-  }
- },
- {
-  "id": "wonen-18",
-  "topic": "wonen",
-  "parts": [
-   "van het dak",
-   "door de harde wind",
-   "gevallen",
-   "is er",
-   "een steen"
-  ],
-  "answer": "door de harde wind is er een steen van het dak gevallen",
-  "alternatives": [
-   "er is door de harde wind een steen van het dak gevallen"
-  ],
-  "hint": "Perfect with “zijn” (is … gevallen); the participle goes to the end.",
-  "senses": {
-   "door": "door@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-19",
-  "topic": "wonen",
-  "parts": [
-   "kapot is",
-   "doordat de lamp",
-   "in de straat",
-   "het is donker"
-  ],
-  "answer": "het is donker in de straat doordat de lamp kapot is",
-  "alternatives": [
-   "doordat de lamp kapot is, is het donker in de straat",
-   "in de straat is het donker doordat de lamp kapot is"
-  ],
-  "hint": "After “doordat” the verb goes to the end of the clause.",
-  "senses": {
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-20",
-  "topic": "wonen",
-  "parts": [
-   "geen stroom",
-   "is er",
-   "in ons huis",
-   "sinds gisteren"
-  ],
-  "answer": "sinds gisteren is er geen stroom in ons huis",
-  "alternatives": [
-   "er is sinds gisteren geen stroom in ons huis",
-   "in ons huis is er sinds gisteren geen stroom"
-  ],
-  "hint": "Time phrase first → inversion: “is er”.",
-  "senses": {
-   "sinds": "sinds@30",
-   "gisteren": "gisteren@30",
-   "geen": "geen@30",
-   "ons": "ons@30"
-  }
- },
- {
-  "id": "wonen-21",
-  "topic": "wonen",
-  "parts": [
-   "voor een groter appartement",
-   "ruilen",
-   "wij willen",
-   "onze kleine flat"
-  ],
-  "answer": "wij willen onze kleine flat ruilen voor een groter appartement",
-  "alternatives": [
-   "wij willen onze kleine flat voor een groter appartement ruilen"
-  ],
-  "hint": "Modal verb (willen) in 2nd place, infinitive (ruilen) near the end.",
-  "senses": {
-   "onze": "onze@30",
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-22",
-  "topic": "wonen",
-  "parts": [
-   "bijna onmogelijk",
-   "is",
-   "parkeren",
-   "in onze straat"
-  ],
-  "answer": "in onze straat is parkeren bijna onmogelijk",
-  "alternatives": [
-   "parkeren is in onze straat bijna onmogelijk"
-  ],
-  "hint": "Place phrase first → inversion: the verb (is) comes before the subject (parkeren).",
-  "senses": {
-   "onze": "onze@30"
-  }
- },
- {
-  "id": "wonen-23",
-  "topic": "wonen",
-  "parts": [
-   "dwars op de stoep",
-   "staat",
-   "vaak",
-   "de auto van de buren"
-  ],
-  "answer": "de auto van de buren staat vaak dwars op de stoep",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; “vaak” comes right after the verb, the place at the end.",
-  "senses": {
-   "op": "op@30"
-  }
- },
- {
-  "id": "wonen-24",
-  "topic": "wonen",
-  "parts": [
-   "in de schaduw",
-   "zit ik",
-   "van de boom",
-   "graag",
-   "in de zomer"
-  ],
-  "answer": "in de zomer zit ik graag in de schaduw van de boom",
-  "alternatives": [
-   "ik zit in de zomer graag in de schaduw van de boom"
-  ],
-  "hint": "Time first → inversion (zit ik); place (in de schaduw …) at the end.",
-  "senses": {
-   "graag": "graag@30"
-  }
- },
- {
-  "id": "wonen-25",
-  "topic": "wonen",
-  "parts": [
-   "als wij weg zijn",
-   "water",
-   "geeft",
-   "onze planten",
-   "de vrouw van de buurman"
-  ],
-  "answer": "de vrouw van de buurman geeft onze planten water als wij weg zijn",
-  "alternatives": [
-   "als wij weg zijn, geeft de vrouw van de buurman onze planten water"
-  ],
-  "hint": "After “als” the verb goes to the end (weg zijn). If the als-clause comes first, the main verb follows directly.",
-  "senses": {
-   "onze": "onze@30",
-   "als": "als@30",
-   "weg": "weg@30",
-   "zijn": "zijn@30"
-  }
- },
- {
-  "id": "wonen-26",
-  "topic": "wonen",
-  "parts": [
-   "aan de buurvrouw",
-   "de sleutel",
-   "geef",
-   "van het huis"
-  ],
-  "answer": "geef de sleutel van het huis aan de buurvrouw",
-  "alternatives": [],
-  "hint": "Imperative: the verb (geef) comes first, without a subject.",
-  "senses": {
-   "het": "het@30",
-   "aan": "aan@30"
-  }
- },
- {
-  "id": "wonen-27",
-  "topic": "wonen",
-  "parts": [
-   "een helemaal nieuwe keuken",
-   "alle huurders",
-   "krijgen",
-   "volgend jaar"
-  ],
-  "answer": "volgend jaar krijgen alle huurders een helemaal nieuwe keuken",
-  "alternatives": [
-   "alle huurders krijgen volgend jaar een helemaal nieuwe keuken"
-  ],
-  "hint": "Time first → inversion: verb (krijgen) before subject (alle huurders).",
-  "senses": {
-   "helemaal": "helemaal@30"
-  }
- },
- {
-  "id": "wonen-28",
-  "topic": "wonen",
-  "parts": [
-   "voor de wijkkrant",
-   "schrijf",
-   "een kort stukje",
-   "ik",
-   "deze maand"
-  ],
-  "answer": "deze maand schrijf ik een kort stukje voor de wijkkrant",
-  "alternatives": [
-   "ik schrijf deze maand een kort stukje voor de wijkkrant"
-  ],
-  "hint": "Time first → inversion: “schrijf ik”.",
-  "senses": {
-   "deze": "deze@30",
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-29",
-  "topic": "wonen",
-  "parts": [
-   "een bijdrage",
-   "de wijkkrant",
-   "van een bewoner",
-   "publiceert",
-   "elke maand"
-  ],
-  "answer": "elke maand publiceert de wijkkrant een bijdrage van een bewoner",
-  "alternatives": [
-   "de wijkkrant publiceert elke maand een bijdrage van een bewoner"
-  ],
-  "hint": "Time first → inversion: verb (publiceert) before subject (de wijkkrant).",
-  "senses": {
-   "elke": "elke@30"
-  }
- },
- {
-  "id": "wonen-30",
-  "topic": "wonen",
-  "parts": [
-   "in onze wijk",
-   "woont",
-   "de auteur",
-   "al jaren",
-   "van dit artikel"
-  ],
-  "answer": "de auteur van dit artikel woont al jaren in onze wijk",
-  "alternatives": [],
-  "hint": "The whole subject (de auteur van dit artikel) comes first, then the verb; time before place.",
-  "senses": {
-   "dit": "dit@30",
-   "al": "al@30",
-   "onze": "onze@30",
-   "wijk": "wijk@30"
-  }
- },
- {
-  "id": "wonen-31",
-  "topic": "wonen",
-  "parts": [
-   "van uw stukje",
-   "wat",
-   "de titel",
-   "is",
-   "voor de wijkkrant?"
-  ],
-  "answer": "wat is de titel van uw stukje voor de wijkkrant?",
-  "alternatives": [],
-  "hint": "W-question: question word first, then the verb.",
-  "senses": {
-   "wat": "wat@30",
-   "uw": "uw@30",
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-32",
-  "topic": "wonen",
-  "parts": [
-   "is",
-   "in de wijk",
-   "de sfeer",
-   "veel beter",
-   "sinds het nieuwe buurthuis"
-  ],
-  "answer": "sinds het nieuwe buurthuis is de sfeer in de wijk veel beter",
-  "alternatives": [
-   "de sfeer in de wijk is sinds het nieuwe buurthuis veel beter"
-  ],
-  "hint": "Time phrase first → inversion: verb (is) before subject (de sfeer).",
-  "senses": {
-   "sinds": "sinds@30",
-   "het": "het@30",
-   "wijk": "wijk@30",
-   "veel": "veel@30",
-   "beter": "beter@30"
-  }
- },
- {
-  "id": "wonen-33",
-  "topic": "wonen",
-  "parts": [
-   "vragen",
-   "u",
-   "of opmerkingen?",
-   "heeft",
-   "nog"
-  ],
-  "answer": "heeft u nog vragen of opmerkingen?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first, then the subject.",
-  "senses": {
-   "nog": "nog@30",
-   "vragen": "vragen@30",
-   "of": "of@30"
-  }
- },
- {
-  "id": "wonen-34",
-  "topic": "wonen",
-  "parts": [
-   "een straatfeest",
-   "samen met de buren",
-   "wij",
-   "organiseren",
-   "op zaterdag"
-  ],
-  "answer": "op zaterdag organiseren wij samen met de buren een straatfeest",
-  "alternatives": [
-   "wij organiseren op zaterdag samen met de buren een straatfeest",
-   "samen met de buren organiseren wij op zaterdag een straatfeest"
-  ],
-  "hint": "TMP: time (op zaterdag) before manner (samen met de buren).",
-  "senses": {
-   "op": "op@30",
-   "zaterdag": "zaterdag@30"
-  }
- },
- {
-  "id": "wonen-35",
-  "topic": "wonen",
-  "parts": [
-   "al op maandag",
-   "hun afval",
-   "buiten",
-   "zetten",
-   "sommige bewoners"
-  ],
-  "answer": "sommige bewoners zetten hun afval al op maandag buiten",
-  "alternatives": [
-   "sommige bewoners zetten al op maandag hun afval buiten"
-  ],
-  "hint": "Separable verb “buitenzetten”: “zetten” in 2nd place, “buiten” at the end.",
-  "senses": {
-   "zetten": "zetten@30",
-   "hun": "hun@30",
-   "al": "al@30",
-   "op": "op@30",
-   "buiten": "buiten@30"
-  }
- },
- {
-  "id": "wonen-36",
-  "topic": "wonen",
-  "parts": [
-   "bij de gemeente",
-   "de regel is",
-   "moet melden",
-   "eerst",
-   "dat u grofvuil"
-  ],
-  "answer": "de regel is dat u grofvuil eerst bij de gemeente moet melden",
-  "alternatives": [
-   "de regel is dat u eerst grofvuil bij de gemeente moet melden",
-   "de regel is dat u grofvuil eerst moet melden bij de gemeente"
-  ],
-  "hint": "In a dat-clause all verbs go to the end: “moet melden”.",
-  "senses": {
-   "regel": "regel@30",
-   "bij": "bij@30"
-  }
- },
- {
-  "id": "wonen-37",
-  "topic": "wonen",
-  "parts": [
-   "thuis is",
-   "ik denk",
-   "niemand",
-   "dat er"
-  ],
-  "answer": "ik denk dat er niemand thuis is",
-  "alternatives": [],
-  "hint": "After “dat” the verb (is) goes to the end."
- },
- {
-  "id": "wonen-38",
-  "topic": "wonen",
-  "parts": [
-   "snel oplost",
-   "het probleem",
-   "ik hoop",
-   "dat de gemeente"
-  ],
-  "answer": "ik hoop dat de gemeente het probleem snel oplost",
-  "alternatives": [],
-  "hint": "In a dat-clause a separable verb stays together at the end: “oplost”.",
-  "senses": {
-   "hoop": "hoop@30",
-   "het": "het@30",
-   "snel": "snel@30"
-  }
- },
- {
-  "id": "wonen-39",
-  "topic": "wonen",
-  "parts": [
-   "in de winter",
-   "het is jammer",
-   "dicht is",
-   "dat de speeltuin"
-  ],
-  "answer": "het is jammer dat de speeltuin in de winter dicht is",
-  "alternatives": [
-   "het is jammer dat de speeltuin dicht is in de winter"
-  ],
-  "hint": "After “dat” the verb (is) goes to the end.",
-  "senses": {
-   "het": "het@30",
-   "dicht": "dicht@30"
-  }
- },
- {
-  "id": "wonen-40",
-  "topic": "wonen",
-  "parts": [
-   "vertelt",
-   "het nieuws uit de straat",
-   "mijn buurvrouw",
-   "elke dag",
-   "mij"
-  ],
-  "answer": "mijn buurvrouw vertelt mij elke dag het nieuws uit de straat",
-  "alternatives": [
-   "elke dag vertelt mijn buurvrouw mij het nieuws uit de straat"
-  ],
-  "hint": "A short pronoun (mij) comes right after the verb, before the time phrase.",
-  "senses": {
-   "mij": "mij@30",
-   "elke": "elke@30",
-   "het": "het@30",
-   "uit": "uit@30"
-  }
- },
- {
-  "id": "wonen-41",
-  "topic": "wonen",
-  "parts": [
-   "erg mooi",
-   "ziet er",
-   "uit",
-   "jullie nieuwe huis"
-  ],
-  "answer": "jullie nieuwe huis ziet er erg mooi uit",
-  "alternatives": [],
-  "hint": "Separable verb “eruitzien”: “ziet er” after the subject, “uit” at the end.",
-  "senses": {
-   "mooi": "mooi@30",
-   "uit": "uit@30"
-  }
- },
- {
-  "id": "wonen-42",
-  "topic": "wonen",
-  "parts": [
-   "dat hij",
-   "de verhuurder en ik",
-   "de verwarming repareert",
-   "hebben afgesproken"
-  ],
-  "answer": "de verhuurder en ik hebben afgesproken dat hij de verwarming repareert",
-  "alternatives": [],
-  "hint": "Perfect tense (hebben afgesproken), then a dat-clause with the verb at the end."
- },
- {
-  "id": "wonen-43",
-  "topic": "wonen",
-  "parts": [
-   "naar dit formulier?",
-   "even",
-   "meekijken",
-   "kunt u"
-  ],
-  "answer": "kunt u even meekijken naar dit formulier?",
-  "alternatives": [
-   "kunt u even naar dit formulier meekijken?"
-  ],
-  "hint": "Yes/no question with a modal: “kunt u” first, the infinitive (meekijken) after.",
-  "senses": {
-   "dit": "dit@30"
   }
  },
  {
@@ -4682,438 +6500,12 @@ const EXERCISES = [
   "answer": "de nieuwe huurder neemt onze oude kast en lampen over",
   "alternatives": [],
   "hint": "Separable verb “overnemen”: “neemt” in 2nd place, “over” at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
   "senses": {
    "onze": "onze@30",
    "kast": "kast@30",
    "over": "over@30"
-  }
- },
- {
-  "id": "wonen-45",
-  "topic": "wonen",
-  "parts": [
-   "verzetten?",
-   "de afspraak",
-   "kunt u",
-   "met de monteur"
-  ],
-  "answer": "kunt u de afspraak met de monteur verzetten?",
-  "alternatives": [],
-  "hint": "Question with a modal: verb first, subject second, infinitive at the end.",
-  "senses": {
-   "verzetten": "verzetten@30"
-  }
- },
- {
-  "id": "wonen-46",
-  "topic": "wonen",
-  "parts": [
-   "af",
-   "als ik in de keuken kook",
-   "de rookmelder",
-   "gaat vaak"
-  ],
-  "answer": "de rookmelder gaat vaak af als ik in de keuken kook",
-  "alternatives": [
-   "als ik in de keuken kook, gaat de rookmelder vaak af"
-  ],
-  "hint": "Separable verb “afgaan” splits (gaat … af); after “als” the verb (kook) goes to the end.",
-  "senses": {
-   "af": "af@30",
-   "als": "als@30"
-  }
- },
- {
-  "id": "wonen-47",
-  "topic": "wonen",
-  "parts": [
-   "de huur van onze woning",
-   "weer",
-   "stijgt",
-   "dit jaar"
-  ],
-  "answer": "dit jaar stijgt de huur van onze woning weer",
-  "alternatives": [
-   "de huur van onze woning stijgt dit jaar weer"
-  ],
-  "hint": "Time first → inversion: verb (stijgt) before the subject.",
-  "senses": {
-   "dit": "dit@30",
-   "onze": "onze@30"
-  }
- },
- {
-  "id": "wonen-48",
-  "topic": "wonen",
-  "parts": [
-   "niet veel verdien",
-   "huurtoeslag",
-   "omdat ik",
-   "ik krijg"
-  ],
-  "answer": "ik krijg huurtoeslag omdat ik niet veel verdien",
-  "alternatives": [
-   "omdat ik niet veel verdien, krijg ik huurtoeslag"
-  ],
-  "hint": "After “omdat” the verb (verdien) goes to the end.",
-  "senses": {
-   "veel": "veel@30"
-  }
- },
- {
-  "id": "wonen-49",
-  "topic": "wonen",
-  "parts": [
-   "in de schuur?",
-   "voldoende ruimte",
-   "is er",
-   "voor een fiets"
-  ],
-  "answer": "is er voldoende ruimte voor een fiets in de schuur?",
-  "alternatives": [
-   "is er in de schuur voldoende ruimte voor een fiets?"
-  ],
-  "hint": "Yes/no question: the verb comes first (is er …).",
-  "senses": {
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-50",
-  "topic": "wonen",
-  "parts": [
-   "van slechte kwaliteit",
-   "koopt altijd",
-   "de verhuurder",
-   "goedkoop materiaal"
-  ],
-  "answer": "de verhuurder koopt altijd goedkoop materiaal van slechte kwaliteit",
-  "alternatives": [],
-  "hint": "Verb in 2nd place, “altijd” right after the verb."
- },
- {
-  "id": "wonen-51",
-  "topic": "wonen",
-  "parts": [
-   "vooral",
-   "de tuin",
-   "ik gebruik",
-   "in de zomer"
-  ],
-  "answer": "ik gebruik de tuin vooral in de zomer",
-  "alternatives": [
-   "vooral in de zomer gebruik ik de tuin"
-  ],
-  "hint": "Verb in 2nd place; the object (de tuin) comes before “vooral in de zomer”."
- },
- {
-  "id": "wonen-52",
-  "topic": "wonen",
-  "parts": [
-   "mijn vrienden",
-   "met de zware dozen",
-   "helpen",
-   "mij",
-   "bij het verhuizen"
-  ],
-  "answer": "bij het verhuizen helpen mijn vrienden mij met de zware dozen",
-  "alternatives": [
-   "mijn vrienden helpen mij bij het verhuizen met de zware dozen"
-  ],
-  "hint": "Phrase first → inversion: verb (helpen) before subject (mijn vrienden).",
-  "senses": {
-   "bij": "bij@30",
-   "het": "het@30",
-   "mij": "mij@30"
-  }
- },
- {
-  "id": "wonen-53",
-  "topic": "wonen",
-  "parts": [
-   "een oude kist",
-   "staat",
-   "met speelgoed",
-   "in de kelder"
-  ],
-  "answer": "in de kelder staat een oude kist met speelgoed",
-  "alternatives": [],
-  "hint": "Place first → inversion: the verb (staat) comes before the subject."
- },
- {
-  "id": "wonen-54",
-  "topic": "wonen",
-  "parts": [
-   "om half acht",
-   "de vuilniswagen",
-   "op dinsdag",
-   "komt"
-  ],
-  "answer": "op dinsdag komt de vuilniswagen om half acht",
-  "alternatives": [
-   "de vuilniswagen komt op dinsdag om half acht"
-  ],
-  "hint": "Time first → inversion: verb (komt) before subject.",
-  "senses": {
-   "op": "op@30",
-   "dinsdag": "dinsdag@30",
-   "om": "om@30"
-  }
- },
- {
-  "id": "wonen-55",
-  "topic": "wonen",
-  "parts": [
-   "van het station",
-   "ligt",
-   "ons huis",
-   "op vijf minuten lopen"
-  ],
-  "answer": "ons huis ligt op vijf minuten lopen van het station",
-  "alternatives": [],
-  "hint": "Subject + verb (ligt) + place. “op vijf minuten lopen van” = a five-minute walk from.",
-  "senses": {
-   "ons": "ons@30",
-   "op": "op@30",
-   "vijf": "vijf@30",
-   "het": "het@30",
-   "station": "station@30"
-  }
- },
- {
-  "id": "wonen-56",
-  "topic": "wonen",
-  "parts": [
-   "is",
-   "het onderwijs",
-   "van ons huis",
-   "erg goed",
-   "in de omgeving"
-  ],
-  "answer": "in de omgeving van ons huis is het onderwijs erg goed",
-  "alternatives": [
-   "het onderwijs in de omgeving van ons huis is erg goed",
-   "het onderwijs is in de omgeving van ons huis erg goed"
-  ],
-  "hint": "Place first → inversion: verb (is) before subject (het onderwijs).",
-  "senses": {
-   "ons": "ons@30",
-   "het": "het@30",
-   "goed": "goed@30"
-  }
- },
- {
-  "id": "wonen-57",
-  "topic": "wonen",
-  "parts": [
-   "een mooi landschap",
-   "zien wij",
-   "vanuit ons raam"
-  ],
-  "answer": "vanuit ons raam zien wij een mooi landschap",
-  "alternatives": [
-   "wij zien vanuit ons raam een mooi landschap"
-  ],
-  "hint": "Place first → inversion: “zien wij”.",
-  "senses": {
-   "ons": "ons@30",
-   "mooi": "mooi@30"
-  }
- },
- {
-  "id": "wonen-58",
-  "topic": "wonen",
-  "parts": [
-   "in het westen",
-   "mijn ouders",
-   "van het land",
-   "wonen",
-   "in een dorp"
-  ],
-  "answer": "mijn ouders wonen in een dorp in het westen van het land",
-  "alternatives": [],
-  "hint": "Subject + verb, then the place phrases: small place (dorp) before the larger area.",
-  "senses": {
-   "ouders": "ouders@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-59",
-  "topic": "wonen",
-  "parts": [
-   "een boer",
-   "woont",
-   "met veel koeien",
-   "naast ons huis"
-  ],
-  "answer": "naast ons huis woont een boer met veel koeien",
-  "alternatives": [
-   "een boer met veel koeien woont naast ons huis"
-  ],
-  "hint": "Place first → inversion: verb (woont) before subject (een boer).",
-  "senses": {
-   "ons": "ons@30",
-   "veel": "veel@30"
-  }
- },
- {
-  "id": "wonen-60",
-  "topic": "wonen",
-  "parts": [
-   "aan de gracht",
-   "wij wonen",
-   "in een historisch huis"
-  ],
-  "answer": "wij wonen in een historisch huis aan de gracht",
-  "alternatives": [],
-  "hint": "Subject + verb + place. Note: “een historisch huis” — no -e with een + het-word.",
-  "senses": {
-   "aan": "aan@30"
-  }
- },
- {
-  "id": "wonen-61",
-  "topic": "wonen",
-  "parts": [
-   "klassieke muziek",
-   "mijn buurman",
-   "heel hard",
-   "speelt",
-   "elke avond"
-  ],
-  "answer": "elke avond speelt mijn buurman heel hard klassieke muziek",
-  "alternatives": [
-   "mijn buurman speelt elke avond heel hard klassieke muziek"
-  ],
-  "hint": "TMP: time (elke avond) before manner (heel hard).",
-  "senses": {
-   "elke": "elke@30",
-   "hard": "hard@30"
-  }
- },
- {
-  "id": "wonen-62",
-  "topic": "wonen",
-  "parts": [
-   "een cultureel programma",
-   "het buurthuis",
-   "heeft",
-   "elke maand"
-  ],
-  "answer": "elke maand heeft het buurthuis een cultureel programma",
-  "alternatives": [
-   "het buurthuis heeft elke maand een cultureel programma"
-  ],
-  "hint": "Time first → inversion: “heeft het buurthuis”.",
-  "senses": {
-   "elke": "elke@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-63",
-  "topic": "wonen",
-  "parts": [
-   "uit verschillende landen",
-   "want",
-   "onze straat is internationaal",
-   "de buren komen"
-  ],
-  "answer": "onze straat is internationaal, want de buren komen uit verschillende landen",
-  "alternatives": [],
-  "hint": "After “want” the normal word order stays: subject + verb.",
-  "senses": {
-   "onze": "onze@30",
-   "want": "want@30",
-   "uit": "uit@30"
-  }
- },
- {
-  "id": "wonen-64",
-  "topic": "wonen",
-  "parts": [
-   "alleen Engels",
-   "in onze straat",
-   "spreken",
-   "veel buitenlandse studenten"
-  ],
-  "answer": "veel buitenlandse studenten in onze straat spreken alleen Engels",
-  "alternatives": [],
-  "hint": "The whole subject (veel buitenlandse studenten in onze straat) comes first, then the verb.",
-  "senses": {
-   "veel": "veel@30",
-   "onze": "onze@30"
-  }
- },
- {
-  "id": "wonen-65",
-  "topic": "wonen",
-  "parts": [
-   "van het buurthuis",
-   "is",
-   "de bewonersvergadering",
-   "in de grote zaal"
-  ],
-  "answer": "de bewonersvergadering is in de grote zaal van het buurthuis",
-  "alternatives": [],
-  "hint": "Subject + verb (is) + place.",
-  "senses": {
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-66",
-  "topic": "wonen",
-  "parts": [
-   "aanwezig zijn",
-   "u moet",
-   "van de woning",
-   "bij de controle"
-  ],
-  "answer": "u moet bij de controle van de woning aanwezig zijn",
-  "alternatives": [],
-  "hint": "Modal verb (moet) in 2nd place, the infinitive (zijn) at the end.",
-  "senses": {
-   "bij": "bij@30",
-   "zijn": "zijn@30"
-  }
- },
- {
-  "id": "wonen-67",
-  "topic": "wonen",
-  "parts": [
-   "de stoep bekijken",
-   "een ambtenaar",
-   "komt",
-   "van de gemeente",
-   "morgen"
-  ],
-  "answer": "morgen komt een ambtenaar van de gemeente de stoep bekijken",
-  "alternatives": [
-   "een ambtenaar van de gemeente komt morgen de stoep bekijken"
-  ],
-  "hint": "“komen + infinitive”: komt in 2nd place, bekijken at the end.",
-  "senses": {
-   "morgen": "morgen@30"
-  }
- },
- {
-  "id": "wonen-68",
-  "topic": "wonen",
-  "parts": [
-   "omdat mijn fiets",
-   "ik doe aangifte",
-   "gestolen is",
-   "bij de politie"
-  ],
-  "answer": "ik doe aangifte bij de politie omdat mijn fiets gestolen is",
-  "alternatives": [
-   "omdat mijn fiets gestolen is, doe ik aangifte bij de politie"
-  ],
-  "hint": "After “omdat” the verbs go to the end: “gestolen is”.",
-  "senses": {
-   "bij": "bij@30"
   }
  },
  {
@@ -5134,6 +6526,8 @@ const EXERCISES = [
    "zaterdag doet de hele buurt aan een actie voor een schone straat mee"
   ],
   "hint": "Separable verb “meedoen”: doet … mee; the “aan …” phrase may follow the particle.",
+  "grammar": "scheidbaar",
+  "level": 4,
   "senses": {
    "zaterdag": "zaterdag@30",
    "hele": "hele@30",
@@ -5143,160 +6537,192 @@ const EXERCISES = [
   }
  },
  {
-  "id": "wonen-70",
+  "id": "wonen-103",
   "topic": "wonen",
   "parts": [
-   "voor uw hulp",
-   "bedanken",
-   "ik wil",
-   "u allen"
+   "met de verhuizing?",
+   "gelukt",
+   "is het"
   ],
-  "answer": "ik wil u allen bedanken voor uw hulp",
-  "alternatives": [
-   "ik wil u allen voor uw hulp bedanken"
-  ],
-  "hint": "Modal verb (wil) in 2nd place, infinitive (bedanken) near the end.",
-  "senses": {
-   "voor": "voor@30",
-   "uw": "uw@30"
-  }
- },
- {
-  "id": "wonen-71",
-  "topic": "wonen",
-  "parts": [
-   "erg stil",
-   "vond ik",
-   "de buurt",
-   "in het begin"
-  ],
-  "answer": "in het begin vond ik de buurt erg stil",
-  "alternatives": [
-   "ik vond de buurt in het begin erg stil"
-  ],
-  "hint": "Time phrase first → inversion: “vond ik”.",
+  "answer": "is het gelukt met de verhuizing?",
+  "alternatives": [],
+  "hint": "Yes/no question in the perfect: “is” first, participle “gelukt” after the subject.",
+  "grammar": "perfectum",
+  "level": 2,
   "senses": {
    "het": "het@30"
   }
  },
  {
-  "id": "wonen-72",
+  "id": "wonen-10",
   "topic": "wonen",
   "parts": [
-   "aan de kant",
-   "liggen",
-   "van de tuin",
-   "beide slaapkamers"
+   "geschreven",
+   "een brief",
+   "ik heb",
+   "aan de verhuurder"
   ],
-  "answer": "beide slaapkamers liggen aan de kant van de tuin",
-  "alternatives": [],
-  "hint": "Subject + verb (liggen) + place.",
+  "answer": "ik heb een brief aan de verhuurder geschreven",
+  "alternatives": [
+   "ik heb aan de verhuurder een brief geschreven"
+  ],
+  "hint": "Perfect tense: “heb” in 2nd place, the participle “geschreven” at the end.",
+  "grammar": "perfectum",
+  "level": 2,
   "senses": {
-   "liggen": "liggen@30",
    "aan": "aan@30"
   }
  },
  {
-  "id": "wonen-73",
+  "id": "wonen-95",
   "topic": "wonen",
   "parts": [
-   "buitenzetten",
-   "alleen op bepaalde dagen",
-   "u mag",
-   "het afval"
+   "gemaakt",
+   "een jurk",
+   "mijn buurvrouw heeft",
+   "voor mijn dochter"
   ],
-  "answer": "u mag het afval alleen op bepaalde dagen buitenzetten",
-  "alternatives": [],
-  "hint": "With a modal (mag) the separable verb stays together at the end: buitenzetten.",
+  "answer": "mijn buurvrouw heeft een jurk voor mijn dochter gemaakt",
+  "alternatives": [
+   "mijn buurvrouw heeft voor mijn dochter een jurk gemaakt"
+  ],
+  "hint": "Perfect tense: “heeft” in 2nd place, “gemaakt” at the end.",
+  "grammar": "perfectum",
+  "level": 2,
   "senses": {
-   "het": "het@30",
-   "op": "op@30"
+   "voor": "voor@30"
   }
  },
  {
-  "id": "wonen-74",
+  "id": "wonen-128",
   "topic": "wonen",
   "parts": [
-   "om naar een kleiner huis",
-   "te verhuizen",
-   "wij",
-   "hebben besloten"
+   "verhuisd",
+   "ben ik",
+   "naar Utrecht",
+   "vorige week"
   ],
-  "answer": "wij hebben besloten om naar een kleiner huis te verhuizen",
+  "answer": "vorige week ben ik naar Utrecht verhuisd",
+  "alternatives": [
+   "ik ben vorige week naar Utrecht verhuisd"
+  ],
+  "hint": "Perfect with “zijn” (ben … verhuisd); time first → inversion.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "wonen-129",
+  "topic": "wonen",
+  "parts": [
+   "is flink",
+   "de waarde",
+   "gestegen",
+   "van ons huis"
+  ],
+  "answer": "de waarde van ons huis is flink gestegen",
   "alternatives": [],
-  "hint": "Perfect tense (hebben besloten), then “om … te + infinitive” at the end.",
+  "hint": "Perfect with “zijn”: “is … gestegen”, participle at the end.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
-   "om": "om@30",
-   "te": "te@30"
+   "ons": "ons@30"
   }
  },
  {
-  "id": "wonen-75",
+  "id": "wonen-18",
   "topic": "wonen",
   "parts": [
-   "voor een woning",
-   "bewust",
-   "wij kiezen",
-   "dicht bij het station"
+   "van het dak",
+   "door de harde wind",
+   "gevallen",
+   "is er",
+   "een steen"
   ],
-  "answer": "wij kiezen bewust voor een woning dicht bij het station",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; “bewust” (manner) right after the verb.",
-  "senses": {
-   "voor": "voor@30",
-   "dicht": "dicht@30",
-   "bij": "bij@30",
-   "het": "het@30",
-   "station": "station@30"
-  }
- },
- {
-  "id": "wonen-76",
-  "topic": "wonen",
-  "parts": [
-   "dat u hier",
-   "op het bord",
-   "niet mag parkeren",
-   "staat"
+  "answer": "door de harde wind is er een steen van het dak gevallen",
+  "alternatives": [
+   "er is door de harde wind een steen van het dak gevallen"
   ],
-  "answer": "op het bord staat dat u hier niet mag parkeren",
-  "alternatives": [],
-  "hint": "In the dat-clause the verbs go to the end: “mag parkeren”.",
+  "hint": "Perfect with “zijn” (is … gevallen); the participle goes to the end.",
+  "grammar": "perfectum",
+  "level": 4,
   "senses": {
-   "op": "op@30",
+   "door": "door@30",
    "het": "het@30"
   }
  },
  {
-  "id": "wonen-77",
+  "id": "wonen-12",
   "topic": "wonen",
   "parts": [
-   "wat",
-   "wij weten niet",
-   "van het geluid is",
-   "de bron"
+   "is vreselijk klein",
+   "de woonkamer",
+   "maar de keuken",
+   "is breed"
   ],
-  "answer": "wij weten niet wat de bron van het geluid is",
-  "alternatives": [],
-  "hint": "Indirect question after “wat”: the verb (is) goes to the end.",
+  "answer": "de woonkamer is breed, maar de keuken is vreselijk klein",
+  "alternatives": [
+   "de keuken is vreselijk klein, maar de woonkamer is breed"
+  ],
+  "hint": "Two main clauses joined by “maar”: normal order (subject + verb) in both.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "wonen-81",
+  "topic": "wonen",
+  "parts": [
+   "dubbel glas",
+   "het huis heeft",
+   "het is",
+   "dus",
+   "binnen lekker stil"
+  ],
+  "answer": "het huis heeft dubbel glas, dus het is binnen lekker stil",
+  "alternatives": [
+   "het huis heeft dubbel glas, dus is het binnen lekker stil"
+  ],
+  "hint": "After “dus” both orders are fine: “dus het is” or “dus is het”.",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
-   "wat": "wat@30",
-   "het": "het@30"
+   "het": "het@30",
+   "binnen": "binnen@30",
+   "lekker": "lekker@30"
   }
  },
  {
-  "id": "wonen-78",
+  "id": "wonen-97",
   "topic": "wonen",
   "parts": [
-   "is erg slecht",
-   "met de verhuurder",
-   "de communicatie"
+   "vandaag thuis",
+   "en blijft",
+   "mijn buurvrouw heeft",
+   "pijn in haar keel"
   ],
-  "answer": "de communicatie met de verhuurder is erg slecht",
+  "answer": "mijn buurvrouw heeft pijn in haar keel en blijft vandaag thuis",
   "alternatives": [],
-  "hint": "The whole subject (de communicatie met de verhuurder) comes first, then the verb.",
+  "hint": "Two verbs joined by “en” share one subject; time (vandaag) before place (thuis).",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "wonen-09",
+  "topic": "wonen",
+  "parts": [
+   "want",
+   "de hele nacht",
+   "niet slapen",
+   "mijn buurvrouw kan",
+   "de hond blaft"
+  ],
+  "answer": "mijn buurvrouw kan niet slapen, want de hond blaft de hele nacht",
+  "alternatives": [],
+  "hint": "After “want” the normal word order stays: subject + verb.",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
-   "slecht": "slecht@30"
+   "want": "want@30",
+   "hele": "hele@30"
   }
  },
  {
@@ -5314,175 +6740,89 @@ const EXERCISES = [
    "de muren zijn niet dik, dus hoor ik alles van de buren"
   ],
   "hint": "After “dus” you may keep subject + verb or use inversion (dus hoor ik).",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
    "zijn": "zijn@30"
   }
  },
  {
-  "id": "wonen-80",
+  "id": "wonen-119",
   "topic": "wonen",
   "parts": [
-   "vlak bij ons huis",
-   "is",
-   "van de dokter",
-   "de praktijk"
+   "want het is",
+   "op ons nieuwe huis",
+   "ik ben trots",
+   "strak en modern"
   ],
-  "answer": "de praktijk van de dokter is vlak bij ons huis",
+  "answer": "ik ben trots op ons nieuwe huis, want het is strak en modern",
   "alternatives": [],
-  "hint": "Subject + verb (is) + place.",
-  "senses": {
-   "bij": "bij@30",
-   "ons": "ons@30"
-  }
- },
- {
-  "id": "wonen-81",
-  "topic": "wonen",
-  "parts": [
-   "dubbel glas",
-   "het huis heeft",
-   "het is",
-   "dus",
-   "binnen lekker stil"
-  ],
-  "answer": "het huis heeft dubbel glas, dus het is binnen lekker stil",
-  "alternatives": [
-   "het huis heeft dubbel glas, dus is het binnen lekker stil"
-  ],
-  "hint": "After “dus” both orders are fine: “dus het is” or “dus is het”.",
-  "senses": {
-   "het": "het@30",
-   "binnen": "binnen@30",
-   "lekker": "lekker@30"
-  }
- },
- {
-  "id": "wonen-82",
-  "topic": "wonen",
-  "parts": [
-   "dat hij",
-   "een goede eigenschap",
-   "altijd helpt",
-   "van mijn buurman is"
-  ],
-  "answer": "een goede eigenschap van mijn buurman is dat hij altijd helpt",
-  "alternatives": [],
-  "hint": "After “dat” the verb (helpt) goes to the end."
- },
- {
-  "id": "wonen-83",
-  "topic": "wonen",
-  "parts": [
-   "voor nieuwe huurders",
-   "heeft",
-   "de woningcorporatie",
-   "strenge eisen"
-  ],
-  "answer": "de woningcorporatie heeft strenge eisen voor nieuwe huurders",
-  "alternatives": [],
-  "hint": "Subject + verb + object; the “voor …” phrase at the end.",
-  "senses": {
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-84",
-  "topic": "wonen",
-  "parts": [
-   "een experiment",
-   "doet",
-   "de gemeente",
-   "met nieuwe afvalcontainers"
-  ],
-  "answer": "de gemeente doet een experiment met nieuwe afvalcontainers",
-  "alternatives": [],
-  "hint": "Subject + verb (doet) + object."
- },
- {
-  "id": "wonen-85",
-  "topic": "wonen",
-  "parts": [
-   "het is",
-   "dat de huren",
-   "stijgen",
-   "een feit",
-   "elk jaar"
-  ],
-  "answer": "het is een feit dat de huren elk jaar stijgen",
-  "alternatives": [],
-  "hint": "After “dat” the verb (stijgen) goes to the end.",
-  "senses": {
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-86",
-  "topic": "wonen",
-  "parts": [
-   "vers fruit",
-   "koop ik",
-   "in onze wijk",
-   "op de markt"
-  ],
-  "answer": "op de markt in onze wijk koop ik vers fruit",
-  "alternatives": [
-   "ik koop vers fruit op de markt in onze wijk",
-   "ik koop op de markt in onze wijk vers fruit"
-  ],
-  "hint": "Place first → inversion: “koop ik”.",
+  "hint": "After “want” the normal order stays: subject (het) + verb (is).",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
    "op": "op@30",
-   "onze": "onze@30",
-   "wijk": "wijk@30"
-  }
- },
- {
-  "id": "wonen-87",
-  "topic": "wonen",
-  "parts": [
-   "maar zeer aardig",
-   "een beetje gek",
-   "is",
-   "mijn buurman"
-  ],
-  "answer": "mijn buurman is een beetje gek, maar zeer aardig",
-  "alternatives": [],
-  "hint": "Subject + verb (is) + description; “maar” adds a contrast.",
-  "senses": {
-   "beetje": "beetje@30"
-  }
- },
- {
-  "id": "wonen-88",
-  "topic": "wonen",
-  "parts": [
-   "in het trappenhuis",
-   "een vieze geur",
-   "hangt",
-   "er"
-  ],
-  "answer": "er hangt een vieze geur in het trappenhuis",
-  "alternatives": [],
-  "hint": "“er” + verb in 2nd place; the place comes at the end.",
-  "senses": {
+   "ons": "ons@30",
+   "want": "want@30",
    "het": "het@30"
   }
  },
  {
-  "id": "wonen-89",
+  "id": "wonen-63",
   "topic": "wonen",
   "parts": [
-   "een veilig gevoel",
-   "heb ik",
-   "in deze buurt"
+   "uit verschillende landen",
+   "want",
+   "onze straat is internationaal",
+   "de buren komen"
   ],
-  "answer": "in deze buurt heb ik een veilig gevoel",
-  "alternatives": [
-   "ik heb in deze buurt een veilig gevoel"
-  ],
-  "hint": "Place first → inversion: “heb ik”.",
+  "answer": "onze straat is internationaal, want de buren komen uit verschillende landen",
+  "alternatives": [],
+  "hint": "After “want” the normal word order stays: subject + verb.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
-   "deze": "deze@30"
+   "onze": "onze@30",
+   "want": "want@30",
+   "uit": "uit@30"
+  }
+ },
+ {
+  "id": "wonen-74",
+  "topic": "wonen",
+  "parts": [
+   "om naar een kleiner huis",
+   "te verhuizen",
+   "wij",
+   "hebben besloten"
+  ],
+  "answer": "wij hebben besloten om naar een kleiner huis te verhuizen",
+  "alternatives": [],
+  "hint": "Perfect tense (hebben besloten), then “om … te + infinitive” at the end.",
+  "grammar": "om-te",
+  "level": 4,
+  "senses": {
+   "om": "om@30",
+   "te": "te@30"
+  }
+ },
+ {
+  "id": "wonen-137",
+  "topic": "wonen",
+  "parts": [
+   "een grotere woning",
+   "is er",
+   "te huren?",
+   "een mogelijkheid om"
+  ],
+  "answer": "is er een mogelijkheid om een grotere woning te huren?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first; “om … te + infinitive” at the end.",
+  "grammar": "om-te",
+  "level": 4,
+  "senses": {
+   "om": "om@30",
+   "te": "te@30"
   }
  },
  {
@@ -5500,6 +6840,8 @@ const EXERCISES = [
    "het is in onze straat een gewoonte om nieuwe buren te begroeten"
   ],
   "hint": "Place first → inversion (is het); “om … te + infinitive” at the end.",
+  "grammar": "om-te",
+  "level": 4,
   "senses": {
    "onze": "onze@30",
    "het": "het@30",
@@ -5508,202 +6850,310 @@ const EXERCISES = [
   }
  },
  {
-  "id": "wonen-91",
+  "id": "wonen-37",
   "topic": "wonen",
   "parts": [
-   "een woning",
-   "zoek ik",
-   "zonder trap",
-   "voor mijn gezondheid"
+   "thuis is",
+   "ik denk",
+   "niemand",
+   "dat er"
   ],
-  "answer": "voor mijn gezondheid zoek ik een woning zonder trap",
+  "answer": "ik denk dat er niemand thuis is",
+  "alternatives": [],
+  "hint": "After “dat” the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 2
+ },
+ {
+  "id": "wonen-48",
+  "topic": "wonen",
+  "parts": [
+   "niet veel verdien",
+   "huurtoeslag",
+   "omdat ik",
+   "ik krijg"
+  ],
+  "answer": "ik krijg huurtoeslag omdat ik niet veel verdien",
   "alternatives": [
-   "ik zoek voor mijn gezondheid een woning zonder trap"
+   "omdat ik niet veel verdien, krijg ik huurtoeslag"
   ],
-  "hint": "Phrase first → inversion: “zoek ik”.",
+  "hint": "After “omdat” the verb (verdien) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
   "senses": {
-   "voor": "voor@30"
+   "veel": "veel@30"
   }
  },
  {
-  "id": "wonen-92",
+  "id": "wonen-06",
   "topic": "wonen",
   "parts": [
-   "lawaai",
-   "een groep jongeren",
-   "op het plein",
-   "maakt",
-   "elke avond"
+   "kapot is",
+   "omdat de stoep",
+   "is gevallen",
+   "mijn moeder"
   ],
-  "answer": "elke avond maakt een groep jongeren lawaai op het plein",
+  "answer": "mijn moeder is gevallen omdat de stoep kapot is",
   "alternatives": [
-   "een groep jongeren maakt elke avond lawaai op het plein"
+   "omdat de stoep kapot is, is mijn moeder gevallen"
   ],
-  "hint": "Time first → inversion: verb (maakt) before subject (een groep jongeren).",
+  "hint": "Perfect tense: is … gevallen. After “omdat” the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 3
+ },
+ {
+  "id": "wonen-38",
+  "topic": "wonen",
+  "parts": [
+   "snel oplost",
+   "het probleem",
+   "ik hoop",
+   "dat de gemeente"
+  ],
+  "answer": "ik hoop dat de gemeente het probleem snel oplost",
+  "alternatives": [],
+  "hint": "In a dat-clause a separable verb stays together at the end: “oplost”.",
+  "grammar": "bijzin",
+  "level": 3,
   "senses": {
-   "elke": "elke@30",
-   "groep": "groep@30",
+   "hoop": "hoop@30",
+   "het": "het@30",
+   "snel": "snel@30"
+  }
+ },
+ {
+  "id": "wonen-77",
+  "topic": "wonen",
+  "parts": [
+   "wat",
+   "wij weten niet",
+   "van het geluid is",
+   "de bron"
+  ],
+  "answer": "wij weten niet wat de bron van het geluid is",
+  "alternatives": [],
+  "hint": "Indirect question after “wat”: the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "wat": "wat@30",
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-85",
+  "topic": "wonen",
+  "parts": [
+   "het is",
+   "dat de huren",
+   "stijgen",
+   "een feit",
+   "elk jaar"
+  ],
+  "answer": "het is een feit dat de huren elk jaar stijgen",
+  "alternatives": [],
+  "hint": "After “dat” the verb (stijgen) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "het": "het@30"
+  }
+ },
+ {
+  "id": "wonen-39",
+  "topic": "wonen",
+  "parts": [
+   "in de winter",
+   "het is jammer",
+   "dicht is",
+   "dat de speeltuin"
+  ],
+  "answer": "het is jammer dat de speeltuin in de winter dicht is",
+  "alternatives": [
+   "het is jammer dat de speeltuin dicht is in de winter"
+  ],
+  "hint": "After “dat” the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "het": "het@30",
+   "dicht": "dicht@30"
+  }
+ },
+ {
+  "id": "wonen-76",
+  "topic": "wonen",
+  "parts": [
+   "dat u hier",
+   "op het bord",
+   "niet mag parkeren",
+   "staat"
+  ],
+  "answer": "op het bord staat dat u hier niet mag parkeren",
+  "alternatives": [],
+  "hint": "In the dat-clause the verbs go to the end: “mag parkeren”.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
    "op": "op@30",
    "het": "het@30"
   }
  },
  {
-  "id": "wonen-93",
+  "id": "wonen-07",
   "topic": "wonen",
   "parts": [
-   "in het hart",
-   "ligt",
-   "ons huis",
-   "van de stad"
+   "op straat lopen",
+   "de stoep",
+   "dat de kinderen",
+   "is zo smal"
   ],
-  "answer": "ons huis ligt in het hart van de stad",
+  "answer": "de stoep is zo smal dat de kinderen op straat lopen",
   "alternatives": [],
-  "hint": "Subject + verb (ligt) + place.",
+  "hint": "“zo … dat”: in the dat-clause the verb (lopen) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "ons": "ons@30",
+   "op": "op@30"
+  }
+ },
+ {
+  "id": "wonen-19",
+  "topic": "wonen",
+  "parts": [
+   "kapot is",
+   "doordat de lamp",
+   "in de straat",
+   "het is donker"
+  ],
+  "answer": "het is donker in de straat doordat de lamp kapot is",
+  "alternatives": [
+   "doordat de lamp kapot is, is het donker in de straat",
+   "in de straat is het donker doordat de lamp kapot is"
+  ],
+  "hint": "After “doordat” the verb goes to the end of the clause.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
    "het": "het@30"
   }
  },
  {
-  "id": "wonen-94",
+  "id": "wonen-46",
   "topic": "wonen",
   "parts": [
-   "een goed idee",
-   "u",
-   "heeft",
-   "voor de wijkkrant?"
+   "af",
+   "als ik in de keuken kook",
+   "de rookmelder",
+   "gaat vaak"
   ],
-  "answer": "heeft u een goed idee voor de wijkkrant?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first, subject second.",
-  "senses": {
-   "goed": "goed@30",
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-95",
-  "topic": "wonen",
-  "parts": [
-   "gemaakt",
-   "een jurk",
-   "mijn buurvrouw heeft",
-   "voor mijn dochter"
-  ],
-  "answer": "mijn buurvrouw heeft een jurk voor mijn dochter gemaakt",
+  "answer": "de rookmelder gaat vaak af als ik in de keuken kook",
   "alternatives": [
-   "mijn buurvrouw heeft voor mijn dochter een jurk gemaakt"
+   "als ik in de keuken kook, gaat de rookmelder vaak af"
   ],
-  "hint": "Perfect tense: “heeft” in 2nd place, “gemaakt” at the end.",
+  "hint": "Separable verb “afgaan” splits (gaat … af); after “als” the verb (kook) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "voor": "voor@30"
+   "af": "af@30",
+   "als": "als@30"
   }
  },
  {
-  "id": "wonen-96",
+  "id": "wonen-68",
   "topic": "wonen",
   "parts": [
-   "pijn aan mijn oren",
-   "door het lawaai",
-   "heb ik",
-   "van de buren"
+   "omdat mijn fiets",
+   "ik doe aangifte",
+   "gestolen is",
+   "bij de politie"
   ],
-  "answer": "door het lawaai van de buren heb ik pijn aan mijn oren",
+  "answer": "ik doe aangifte bij de politie omdat mijn fiets gestolen is",
   "alternatives": [
-   "ik heb door het lawaai van de buren pijn aan mijn oren"
+   "omdat mijn fiets gestolen is, doe ik aangifte bij de politie"
   ],
-  "hint": "Phrase first → inversion: “heb ik”.",
+  "hint": "After “omdat” the verbs go to the end: “gestolen is”.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "door": "door@30",
-   "het": "het@30",
-   "aan": "aan@30"
+   "bij": "bij@30"
   }
  },
  {
-  "id": "wonen-97",
+  "id": "wonen-82",
   "topic": "wonen",
   "parts": [
-   "vandaag thuis",
-   "en blijft",
-   "mijn buurvrouw heeft",
-   "pijn in haar keel"
+   "dat hij",
+   "een goede eigenschap",
+   "altijd helpt",
+   "van mijn buurman is"
   ],
-  "answer": "mijn buurvrouw heeft pijn in haar keel en blijft vandaag thuis",
+  "answer": "een goede eigenschap van mijn buurman is dat hij altijd helpt",
   "alternatives": [],
-  "hint": "Two verbs joined by “en” share one subject; time (vandaag) before place (thuis)."
+  "hint": "After “dat” the verb (helpt) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4
  },
  {
-  "id": "wonen-98",
+  "id": "wonen-25",
   "topic": "wonen",
   "parts": [
-   "over de schutting",
-   "klimt",
-   "altijd",
-   "de kat van de buren"
+   "als wij weg zijn",
+   "water",
+   "geeft",
+   "onze planten",
+   "de vrouw van de buurman"
   ],
-  "answer": "de kat van de buren klimt altijd over de schutting",
-  "alternatives": [],
-  "hint": "Verb in 2nd place, “altijd” right after it, place at the end.",
-  "senses": {
-   "over": "over@30"
-  }
- },
- {
-  "id": "wonen-99",
-  "topic": "wonen",
-  "parts": [
-   "aan zijn poot",
-   "heeft",
-   "pijn",
-   "de hond van de buren"
+  "answer": "de vrouw van de buurman geeft onze planten water als wij weg zijn",
+  "alternatives": [
+   "als wij weg zijn, geeft de vrouw van de buurman onze planten water"
   ],
-  "answer": "de hond van de buren heeft pijn aan zijn poot",
-  "alternatives": [],
-  "hint": "The whole subject (de hond van de buren) first, then the verb.",
+  "hint": "After “als” the verb goes to the end (weg zijn). If the als-clause comes first, the main verb follows directly.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "aan": "aan@30",
+   "onze": "onze@30",
+   "als": "als@30",
+   "weg": "weg@30",
    "zijn": "zijn@30"
   }
  },
  {
-  "id": "wonen-100",
+  "id": "wonen-42",
   "topic": "wonen",
   "parts": [
-   "door onze straat",
-   "fietsen",
-   "elke ochtend",
-   "de leerlingen van de school"
+   "dat hij",
+   "de verhuurder en ik",
+   "de verwarming repareert",
+   "hebben afgesproken"
   ],
-  "answer": "de leerlingen van de school fietsen elke ochtend door onze straat",
-  "alternatives": [
-   "elke ochtend fietsen de leerlingen van de school door onze straat"
-  ],
-  "hint": "TMP: time (elke ochtend) before place (door onze straat).",
-  "senses": {
-   "elke": "elke@30",
-   "door": "door@30",
-   "onze": "onze@30"
-  }
+  "answer": "de verhuurder en ik hebben afgesproken dat hij de verwarming repareert",
+  "alternatives": [],
+  "hint": "Perfect tense (hebben afgesproken), then a dat-clause with the verb at the end.",
+  "grammar": "bijzin",
+  "level": 5
  },
  {
-  "id": "wonen-101",
+  "id": "wonen-36",
   "topic": "wonen",
   "parts": [
-   "altijd",
-   "de wijkkrant",
-   "lees ik",
-   "op zondag"
+   "bij de gemeente",
+   "de regel is",
+   "moet melden",
+   "eerst",
+   "dat u grofvuil"
   ],
-  "answer": "op zondag lees ik altijd de wijkkrant",
+  "answer": "de regel is dat u grofvuil eerst bij de gemeente moet melden",
   "alternatives": [
-   "ik lees op zondag altijd de wijkkrant",
-   "ik lees altijd op zondag de wijkkrant",
-   "ik lees de wijkkrant altijd op zondag"
+   "de regel is dat u eerst grofvuil bij de gemeente moet melden",
+   "de regel is dat u grofvuil eerst moet melden bij de gemeente"
   ],
-  "hint": "Time first → inversion: “lees ik”.",
+  "hint": "In a dat-clause all verbs go to the end: “moet melden”.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
-   "op": "op@30",
-   "zondag": "zondag@30"
+   "regel": "regel@30",
+   "bij": "bij@30"
   }
  },
  {
@@ -5720,249 +7170,12 @@ const EXERCISES = [
    "het is logisch dat de buren over de nieuwe flat negatief zijn"
   ],
   "hint": "After “dat” the verb (zijn) goes to the end; an “over …” phrase may follow it.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
    "het": "het@30",
    "zijn": "zijn@30",
    "over": "over@30"
-  }
- },
- {
-  "id": "wonen-103",
-  "topic": "wonen",
-  "parts": [
-   "met de verhuizing?",
-   "gelukt",
-   "is het"
-  ],
-  "answer": "is het gelukt met de verhuizing?",
-  "alternatives": [],
-  "hint": "Yes/no question in the perfect: “is” first, participle “gelukt” after the subject.",
-  "senses": {
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-104",
-  "topic": "wonen",
-  "parts": [
-   "de maten",
-   "wat",
-   "van de slaapkamer?",
-   "zijn"
-  ],
-  "answer": "wat zijn de maten van de slaapkamer?",
-  "alternatives": [],
-  "hint": "W-question: question word first, then the verb.",
-  "senses": {
-   "wat": "wat@30",
-   "zijn": "zijn@30"
-  }
- },
- {
-  "id": "wonen-105",
-  "topic": "wonen",
-  "parts": [
-   "niet vinden",
-   "mijn messen en borden",
-   "kan ik",
-   "na de verhuizing"
-  ],
-  "answer": "na de verhuizing kan ik mijn messen en borden niet vinden",
-  "alternatives": [
-   "ik kan na de verhuizing mijn messen en borden niet vinden",
-   "ik kan mijn messen en borden na de verhuizing niet vinden"
-  ],
-  "hint": "Time first → inversion (kan ik); “niet” + infinitive at the end."
- },
- {
-  "id": "wonen-106",
-  "topic": "wonen",
-  "parts": [
-   "aan de nieuwe buren",
-   "voor",
-   "ik stel",
-   "mezelf"
-  ],
-  "answer": "ik stel mezelf voor aan de nieuwe buren",
-  "alternatives": [
-   "ik stel mezelf aan de nieuwe buren voor"
-  ],
-  "hint": "Separable verb “voorstellen”: “stel” in 2nd place, “voor” after the object.",
-  "senses": {
-   "voor": "voor@30",
-   "aan": "aan@30"
-  }
- },
- {
-  "id": "wonen-107",
-  "topic": "wonen",
-  "parts": [
-   "met de verhuizing",
-   "help ik",
-   "je",
-   "natuurlijk"
-  ],
-  "answer": "natuurlijk help ik je met de verhuizing",
-  "alternatives": [
-   "ik help je natuurlijk met de verhuizing"
-  ],
-  "hint": "“natuurlijk” first → inversion: “help ik”."
- },
- {
-  "id": "wonen-108",
-  "topic": "wonen",
-  "parts": [
-   "vind je",
-   "van het nieuwe huis?",
-   "nou, wat"
-  ],
-  "answer": "nou, wat vind je van het nieuwe huis?",
-  "alternatives": [],
-  "hint": "W-question: question word (wat) first, then the verb, then the subject. “nou” stands outside the sentence.",
-  "senses": {
-   "wat": "wat@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-109",
-  "topic": "wonen",
-  "parts": [
-   "bij de gemeente",
-   "moet u zich",
-   "na de verhuizing",
-   "officieel inschrijven"
-  ],
-  "answer": "na de verhuizing moet u zich officieel inschrijven bij de gemeente",
-  "alternatives": [
-   "u moet zich na de verhuizing officieel inschrijven bij de gemeente",
-   "na de verhuizing moet u zich officieel bij de gemeente inschrijven",
-   "u moet zich na de verhuizing officieel bij de gemeente inschrijven"
-  ],
-  "hint": "Time first → inversion (moet u); the infinitive goes to the end.",
-  "senses": {
-   "zich": "zich@30",
-   "bij": "bij@30"
-  }
- },
- {
-  "id": "wonen-110",
-  "topic": "wonen",
-  "parts": [
-   "langs",
-   "de verhuurder",
-   "onverwacht",
-   "kwam",
-   "gisteren"
-  ],
-  "answer": "gisteren kwam de verhuurder onverwacht langs",
-  "alternatives": [
-   "de verhuurder kwam gisteren onverwacht langs"
-  ],
-  "hint": "Separable verb “langskomen”: kwam … langs. Time first → inversion.",
-  "senses": {
-   "gisteren": "gisteren@30"
-  }
- },
- {
-  "id": "wonen-111",
-  "topic": "wonen",
-  "parts": [
-   "voor mij",
-   "doet mijn buurvrouw",
-   "de boodschappen",
-   "na mijn operatie"
-  ],
-  "answer": "na mijn operatie doet mijn buurvrouw de boodschappen voor mij",
-  "alternatives": [
-   "mijn buurvrouw doet na mijn operatie de boodschappen voor mij"
-  ],
-  "hint": "Time first → inversion: “doet mijn buurvrouw”.",
-  "senses": {
-   "voor": "voor@30",
-   "mij": "mij@30"
-  }
- },
- {
-  "id": "wonen-112",
-  "topic": "wonen",
-  "parts": [
-   "overal",
-   "afval",
-   "er ligt",
-   "in het park"
-  ],
-  "answer": "er ligt overal afval in het park",
-  "alternatives": [
-   "er ligt in het park overal afval"
-  ],
-  "hint": "“er” + verb in 2nd place; place (in het park) at the end.",
-  "senses": {
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-113",
-  "topic": "wonen",
-  "parts": [
-   "een klein appartement",
-   "voor een korte periode",
-   "huren",
-   "wij"
-  ],
-  "answer": "wij huren voor een korte periode een klein appartement",
-  "alternatives": [
-   "voor een korte periode huren wij een klein appartement",
-   "wij huren een klein appartement voor een korte periode"
-  ],
-  "hint": "Time phrase (voor een korte periode) usually right after the verb.",
-  "senses": {
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-114",
-  "topic": "wonen",
-  "parts": [
-   "een nieuwe speeltuin",
-   "wil",
-   "realiseren",
-   "de gemeente",
-   "hier"
-  ],
-  "answer": "de gemeente wil hier een nieuwe speeltuin realiseren",
-  "alternatives": [
-   "hier wil de gemeente een nieuwe speeltuin realiseren"
-  ],
-  "hint": "Modal verb (wil) in 2nd place, infinitive (realiseren) at the end."
- },
- {
-  "id": "wonen-115",
-  "topic": "wonen",
-  "parts": [
-   "met mijn jonge buren",
-   "een goede relatie",
-   "ik heb"
-  ],
-  "answer": "ik heb een goede relatie met mijn jonge buren",
-  "alternatives": [],
-  "hint": "Subject + verb + object; the “met …” phrase at the end."
- },
- {
-  "id": "wonen-116",
-  "topic": "wonen",
-  "parts": [
-   "rijdt",
-   "in de richting",
-   "de bus",
-   "van het centrum"
-  ],
-  "answer": "de bus rijdt in de richting van het centrum",
-  "alternatives": [],
-  "hint": "Subject + verb + direction.",
-  "senses": {
-   "het": "het@30",
-   "centrum": "centrum@30"
   }
  },
  {
@@ -5981,6 +7194,8 @@ const EXERCISES = [
    "omdat de buren lawaai maken, kan mijn zoon niet voor zijn toets leren"
   ],
   "hint": "After “omdat” the verb (maken) goes to the end.",
+  "grammar": "bijzin",
+  "level": 5,
   "senses": {
    "voor": "voor@30",
    "zijn": "zijn@30",
@@ -5989,801 +7204,174 @@ const EXERCISES = [
   }
  },
  {
-  "id": "wonen-118",
-  "topic": "wonen",
-  "parts": [
-   "een spel",
-   "de kinderen",
-   "spelen",
-   "in het buurthuis",
-   "op woensdagmiddag"
-  ],
-  "answer": "op woensdagmiddag spelen de kinderen een spel in het buurthuis",
-  "alternatives": [
-   "de kinderen spelen op woensdagmiddag een spel in het buurthuis"
-  ],
-  "hint": "Time first → inversion: verb (spelen) before subject (de kinderen).",
-  "senses": {
-   "op": "op@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-119",
-  "topic": "wonen",
-  "parts": [
-   "want het is",
-   "op ons nieuwe huis",
-   "ik ben trots",
-   "strak en modern"
-  ],
-  "answer": "ik ben trots op ons nieuwe huis, want het is strak en modern",
-  "alternatives": [],
-  "hint": "After “want” the normal order stays: subject (het) + verb (is).",
-  "senses": {
-   "op": "op@30",
-   "ons": "ons@30",
-   "want": "want@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-120",
-  "topic": "wonen",
-  "parts": [
-   "voor het afval",
-   "heeft",
-   "een nieuw systeem",
-   "de gemeente"
-  ],
-  "answer": "de gemeente heeft een nieuw systeem voor het afval",
-  "alternatives": [],
-  "hint": "Subject + verb + object. “een nieuw systeem”: no -e with een + het-word.",
-  "senses": {
-   "voor": "voor@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-121",
-  "topic": "wonen",
-  "parts": [
-   "heel hard",
-   "staat",
-   "elke avond",
-   "de televisie van de buren"
-  ],
-  "answer": "de televisie van de buren staat elke avond heel hard",
-  "alternatives": [
-   "elke avond staat de televisie van de buren heel hard"
-  ],
-  "hint": "TMP: time (elke avond) before manner (heel hard).",
-  "senses": {
-   "elke": "elke@30",
-   "hard": "hard@30"
-  }
- },
- {
-  "id": "wonen-122",
-  "topic": "wonen",
-  "parts": [
-   "mijn borg",
-   "krijg ik",
-   "terug?",
-   "wanneer"
-  ],
-  "answer": "wanneer krijg ik mijn borg terug?",
-  "alternatives": [],
-  "hint": "W-question: question word, verb, subject; “terug” goes to the end.",
-  "senses": {
-   "terug": "terug@30"
-  }
- },
- {
-  "id": "wonen-123",
-  "topic": "wonen",
-  "parts": [
-   "is erg moeilijk",
-   "van onze straatnaam",
-   "de uitspraak"
-  ],
-  "answer": "de uitspraak van onze straatnaam is erg moeilijk",
-  "alternatives": [],
-  "hint": "The whole subject first, then the verb (is).",
-  "senses": {
-   "onze": "onze@30"
-  }
- },
- {
-  "id": "wonen-124",
-  "topic": "wonen",
-  "parts": [
-   "over de hoge huur",
-   "verbaasd",
-   "ik was"
-  ],
-  "answer": "ik was verbaasd over de hoge huur",
-  "alternatives": [],
-  "hint": "Subject + verb (was) + adjective; “verbaasd over” = surprised about.",
-  "senses": {
-   "over": "over@30"
-  }
- },
- {
-  "id": "wonen-125",
-  "topic": "wonen",
-  "parts": [
-   "is dit huis",
-   "in vergelijking",
-   "erg groot",
-   "met ons oude huis"
-  ],
-  "answer": "in vergelijking met ons oude huis is dit huis erg groot",
-  "alternatives": [
-   "dit huis is in vergelijking met ons oude huis erg groot"
-  ],
-  "hint": "Phrase first → inversion: “is dit huis”.",
-  "senses": {
-   "ons": "ons@30",
-   "dit": "dit@30"
-  }
- },
- {
-  "id": "wonen-126",
-  "topic": "wonen",
-  "parts": [
-   "naar",
-   "mijn oude buurt",
-   "ik verlang"
-  ],
-  "answer": "ik verlang naar mijn oude buurt",
-  "alternatives": [],
-  "hint": "“verlangen naar” = long for; the “naar …” phrase follows the verb."
- },
- {
-  "id": "wonen-127",
-  "topic": "wonen",
-  "parts": [
-   "op",
-   "de keuken",
-   "wij ruimen",
-   "voor het bezoek",
-   "vlug"
-  ],
-  "answer": "wij ruimen vlug de keuken op voor het bezoek",
-  "alternatives": [
-   "wij ruimen de keuken vlug op voor het bezoek",
-   "wij ruimen voor het bezoek vlug de keuken op"
-  ],
-  "hint": "Separable verb “opruimen”: “ruimen” in 2nd place, “op” after the object.",
-  "senses": {
-   "op": "op@30",
-   "voor": "voor@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-128",
-  "topic": "wonen",
-  "parts": [
-   "verhuisd",
-   "ben ik",
-   "naar Utrecht",
-   "vorige week"
-  ],
-  "answer": "vorige week ben ik naar Utrecht verhuisd",
-  "alternatives": [
-   "ik ben vorige week naar Utrecht verhuisd"
-  ],
-  "hint": "Perfect with “zijn” (ben … verhuisd); time first → inversion."
- },
- {
-  "id": "wonen-129",
-  "topic": "wonen",
-  "parts": [
-   "is flink",
-   "de waarde",
-   "gestegen",
-   "van ons huis"
-  ],
-  "answer": "de waarde van ons huis is flink gestegen",
-  "alternatives": [],
-  "hint": "Perfect with “zijn”: “is … gestegen”, participle at the end.",
-  "senses": {
-   "ons": "ons@30"
-  }
- },
- {
-  "id": "wonen-130",
-  "topic": "wonen",
-  "parts": [
-   "een huis",
-   "is",
-   "met een tuin",
-   "mijn grootste wens"
-  ],
-  "answer": "mijn grootste wens is een huis met een tuin",
-  "alternatives": [],
-  "hint": "Subject (mijn grootste wens) + verb (is) + the rest."
- },
- {
-  "id": "wonen-131",
-  "topic": "wonen",
-  "parts": [
-   "ook per e-mail",
-   "u kunt",
-   "zenden",
-   "de foto's",
-   "naar de gemeente"
-  ],
-  "answer": "u kunt de foto's ook per e-mail naar de gemeente zenden",
-  "alternatives": [],
-  "hint": "Modal verb (kunt) in 2nd place, infinitive (zenden) at the end; TMP: manner (per e-mail) before place.",
-  "senses": {
-   "per": "per@30"
-  }
- },
- {
-  "id": "wonen-132",
-  "topic": "wonen",
-  "parts": [
-   "niet goed lopen",
-   "mijn buurvrouw",
-   "door een ziekte",
-   "kan"
-  ],
-  "answer": "door een ziekte kan mijn buurvrouw niet goed lopen",
-  "alternatives": [
-   "mijn buurvrouw kan door een ziekte niet goed lopen"
-  ],
-  "hint": "Phrase first → inversion: verb (kan) before the subject; infinitive at the end.",
-  "senses": {
-   "door": "door@30",
-   "goed": "goed@30"
-  }
- },
- {
-  "id": "wonen-133",
-  "topic": "wonen",
-  "parts": [
-   "over het gat",
-   "me zorgen",
-   "ik maak",
-   "in de stoep"
-  ],
-  "answer": "ik maak me zorgen over het gat in de stoep",
-  "alternatives": [],
-  "hint": "“zich zorgen maken over” = to worry about; the reflexive “me” comes right after the verb.",
-  "senses": {
-   "maak": "maak@30",
-   "over": "over@30",
-   "het": "het@30"
-  }
- },
- {
-  "id": "wonen-134",
-  "topic": "wonen",
-  "parts": [
-   "zoete koekjes",
-   "de buurvrouw",
-   "voor alle kinderen",
-   "bakt",
-   "in de straat"
-  ],
-  "answer": "de buurvrouw bakt zoete koekjes voor alle kinderen in de straat",
-  "alternatives": [],
-  "hint": "Subject + verb + object; the “voor …” phrase after the object.",
-  "senses": {
-   "voor": "voor@30"
-  }
- },
- {
-  "id": "wonen-135",
-  "topic": "wonen",
-  "parts": [
-   "de sleutel",
-   "krijgen wij",
-   "van onze nieuwe woning",
-   "over een paar weken"
-  ],
-  "answer": "over een paar weken krijgen wij de sleutel van onze nieuwe woning",
-  "alternatives": [
-   "wij krijgen over een paar weken de sleutel van onze nieuwe woning"
-  ],
-  "hint": "Time first → inversion: “krijgen wij”.",
-  "senses": {
-   "over": "over@30",
-   "onze": "onze@30"
-  }
- },
- {
-  "id": "wonen-136",
-  "topic": "wonen",
-  "parts": [
-   "in dit huis",
-   "wij blijven",
-   "wonen",
-   "nog een jaar"
-  ],
-  "answer": "wij blijven nog een jaar in dit huis wonen",
-  "alternatives": [
-   "nog een jaar blijven wij in dit huis wonen"
-  ],
-  "hint": "“blijven + infinitive”: blijven in 2nd place, wonen at the end.",
-  "senses": {
-   "blijven": "blijven@30",
-   "nog": "nog@30",
-   "dit": "dit@30"
-  }
- },
- {
-  "id": "wonen-137",
-  "topic": "wonen",
-  "parts": [
-   "een grotere woning",
-   "is er",
-   "te huren?",
-   "een mogelijkheid om"
-  ],
-  "answer": "is er een mogelijkheid om een grotere woning te huren?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first; “om … te + infinitive” at the end.",
-  "senses": {
-   "om": "om@30",
-   "te": "te@30"
-  }
- },
- {
-  "id": "wonen-138",
-  "topic": "wonen",
-  "parts": [
-   "uw ladder",
-   "mag ik",
-   "lenen?",
-   "morgen even"
-  ],
-  "answer": "mag ik morgen even uw ladder lenen?",
-  "alternatives": [
-   "mag ik morgen uw ladder even lenen?"
-  ],
-  "hint": "Question with a modal: “mag ik” first, infinitive (lenen) at the end.",
-  "senses": {
-   "morgen": "morgen@30",
-   "uw": "uw@30"
-  }
- },
- {
-  "id": "wonen-139",
-  "topic": "wonen",
-  "parts": [
-   "per maand?",
-   "hoeveel huur",
-   "betaalt u"
-  ],
-  "answer": "hoeveel huur betaalt u per maand?",
-  "alternatives": [],
-  "hint": "W-question: question phrase (hoeveel huur) first, then verb, then subject.",
-  "senses": {
-   "per": "per@30"
-  }
- },
- {
-  "id": "wonen-140",
-  "topic": "wonen",
-  "parts": [
-   "al twee weken",
-   "is",
-   "kapot",
-   "de lift in onze flat"
-  ],
-  "answer": "de lift in onze flat is al twee weken kapot",
-  "alternatives": [
-   "al twee weken is de lift in onze flat kapot"
-  ],
-  "hint": "Subject + verb (is); time (al twee weken) before the rest.",
-  "senses": {
-   "onze": "onze@30",
-   "al": "al@30",
-   "twee": "twee@30"
-  }
- },
- {
-  "id": "winkelen-01",
+  "id": "winkelen-48",
   "topic": "winkelen",
   "parts": [
-   "het liefst",
-   "ik",
-   "een spijkerbroek en een zachte trui",
-   "draag"
-  ],
-  "answer": "ik draag het liefst een spijkerbroek en een zachte trui",
-  "alternatives": [
-   "het liefst draag ik een spijkerbroek en een zachte trui"
-  ],
-  "hint": "Verb in 2nd place; “het liefst” (most of all) comes right after the verb, or first with inversion."
- },
- {
-  "id": "winkelen-02",
-  "topic": "winkelen",
-  "parts": [
-   "er nogal oud",
-   "uit",
-   "ziet",
-   "mijn gele jas"
-  ],
-  "answer": "mijn gele jas ziet er nogal oud uit",
-  "alternatives": [],
-  "hint": "Separable verb eruitzien: “ziet” is in 2nd place, “er … uit” goes around the description, “uit” at the end.",
-  "senses": {
-   "ziet": "ziet@40",
-   "uit": "uit@40"
-  }
- },
- {
-  "id": "winkelen-03",
-  "topic": "winkelen",
-  "parts": [
-   "mijn warme schoenen",
-   "draag",
-   "in de sneeuw",
-   "ik",
-   "altijd"
-  ],
-  "answer": "in de sneeuw draag ik altijd mijn warme schoenen",
-  "alternatives": [
-   "ik draag in de sneeuw altijd mijn warme schoenen",
-   "ik draag altijd mijn warme schoenen in de sneeuw"
-  ],
-  "hint": "When a phrase like “in de sneeuw” starts the sentence, the verb stays 2nd and the subject follows (inversion)."
- },
- {
-  "id": "winkelen-04",
-  "topic": "winkelen",
-  "parts": [
-   "graag actief",
-   "draag ik vaak sportkleding",
-   "ben",
-   "omdat ik"
-  ],
-  "answer": "omdat ik graag actief ben, draag ik vaak sportkleding",
-  "alternatives": [
-   "ik draag vaak sportkleding omdat ik graag actief ben"
-  ],
-  "hint": "“omdat” sends the verb (ben) to the end; a sentence that starts with the omdat-clause continues with verb + subject (draag ik).",
-  "senses": {
-   "graag": "graag@40"
-  }
- },
- {
-  "id": "winkelen-05",
-  "topic": "winkelen",
-  "parts": [
-   "ik",
-   "praktische kleding in een rustige stijl",
-   "op kantoor",
-   "draag"
-  ],
-  "answer": "op kantoor draag ik praktische kleding in een rustige stijl",
-  "alternatives": [
-   "ik draag op kantoor praktische kleding in een rustige stijl"
-  ],
-  "hint": "Place phrase first → inversion: verb (draag) 2nd, subject (ik) 3rd.",
-  "senses": {
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-06",
-  "topic": "winkelen",
-  "parts": [
-   "te wijd is",
-   "de verkoopster",
-   "dat de trui",
-   "zegt"
-  ],
-  "answer": "de verkoopster zegt dat de trui te wijd is",
-  "alternatives": [],
-  "hint": "After “dat” the verb (is) goes to the end of the clause.",
-  "senses": {
-   "te": "te@40"
-  }
- },
- {
-  "id": "winkelen-07",
-  "topic": "winkelen",
-  "parts": [
-   "te klein bij de borst",
-   "de jas past niet",
-   "hij is",
-   "want"
-  ],
-  "answer": "de jas past niet, want hij is te klein bij de borst",
-  "alternatives": [],
-  "hint": "“want” (because) does not change word order: subject + verb follow normally (hij is).",
-  "senses": {
-   "te": "te@40",
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-08",
-  "topic": "winkelen",
-  "parts": [
-   "deze schoenen",
-   "u",
-   "ook in een andere maat",
-   "heeft"
-  ],
-  "answer": "heeft u deze schoenen ook in een andere maat?",
-  "alternatives": [],
-  "hint": "Yes/no question: the verb comes first, then the subject.",
-  "senses": {
-   "deze": "deze@40"
-  }
- },
- {
-  "id": "winkelen-09",
-  "topic": "winkelen",
-  "parts": [
-   "gaat trouwen",
-   "koop ik",
-   "omdat mijn zus",
-   "een nieuwe jurk"
-  ],
-  "answer": "omdat mijn zus gaat trouwen, koop ik een nieuwe jurk",
-  "alternatives": [
-   "ik koop een nieuwe jurk omdat mijn zus gaat trouwen"
-  ],
-  "hint": "In the omdat-clause the verbs go to the end (gaat trouwen); after that clause the main sentence starts with the verb (koop ik)."
- },
- {
-  "id": "winkelen-10",
-  "topic": "winkelen",
-  "parts": [
-   "is",
-   "van het winkelcentrum",
-   "de kledingzaak",
-   "op de derde verdieping"
-  ],
-  "answer": "de kledingzaak is op de derde verdieping van het winkelcentrum",
-  "alternatives": [
-   "op de derde verdieping van het winkelcentrum is de kledingzaak"
-  ],
-  "hint": "Verb in 2nd place; the place phrase can also start the sentence with inversion.",
-  "senses": {
-   "kledingzaak": "kledingzaak@40",
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-11",
-  "topic": "winkelen",
-  "parts": [
-   "nauwelijks geld",
-   "de arbeiders",
-   "verdienen",
-   "in de fabriek"
-  ],
-  "answer": "de arbeiders in de fabriek verdienen nauwelijks geld",
-  "alternatives": [
-   "de arbeiders verdienen in de fabriek nauwelijks geld"
-  ],
-  "hint": "The verb (verdienen) is 2nd; “de arbeiders in de fabriek” together is the subject."
- },
- {
-  "id": "winkelen-12",
-  "topic": "winkelen",
-  "parts": [
-   "gaat",
-   "automatisch open",
-   "de deur van de supermarkt"
-  ],
-  "answer": "de deur van de supermarkt gaat automatisch open",
-  "alternatives": [],
-  "hint": "Separable verb opengaan: “gaat” in 2nd place, the particle “open” at the end.",
-  "senses": {
-   "open": "open@40"
-  }
- },
- {
-  "id": "winkelen-13",
-  "topic": "winkelen",
-  "parts": [
-   "u",
-   "na die mevrouw",
-   "aan de beurt",
-   "bent"
-  ],
-  "answer": "na die mevrouw bent u aan de beurt",
-  "alternatives": [
-   "u bent na die mevrouw aan de beurt"
-  ],
-  "hint": "Starting with “na die mevrouw” causes inversion: bent u.",
-  "senses": {
-   "die": "die@40",
-   "mevrouw": "mevrouw@40",
-   "aan": "aan@40"
-  }
- },
- {
-  "id": "winkelen-14",
-  "topic": "winkelen",
-  "parts": [
-   "pinnen of contant betalen",
-   "wilt",
-   "meneer",
-   "u"
-  ],
-  "answer": "meneer, wilt u pinnen of contant betalen?",
-  "alternatives": [
-   "wilt u pinnen of contant betalen, meneer?"
-  ],
-  "hint": "Question: modal verb (wilt) before the subject, infinitives (pinnen, betalen) at the end.",
-  "senses": {
-   "meneer": "meneer@40",
-   "of": "of@40"
-  }
- },
- {
-  "id": "winkelen-15",
-  "topic": "winkelen",
-  "parts": [
-   "in de rij",
-   "ik",
-   "al een poos",
-   "sta",
-   "bij de kassa"
-  ],
-  "answer": "ik sta al een poos in de rij bij de kassa",
-  "alternatives": [
-   "al een poos sta ik in de rij bij de kassa",
-   "ik sta al een poos bij de kassa in de rij"
-  ],
-  "hint": "TMP: time (al een poos) before place (in de rij bij de kassa).",
-  "senses": {
-   "sta": "sta@40",
-   "al": "al@40",
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-16",
-  "topic": "winkelen",
-  "parts": [
+   "rond zes uur",
    "eten",
-   "elke dag brood",
-   "Nederlanders",
-   "volgens een onderzoek"
+   "we",
+   "meestal"
   ],
-  "answer": "volgens een onderzoek eten Nederlanders elke dag brood",
+  "answer": "we eten meestal rond zes uur",
   "alternatives": [
-   "Nederlanders eten volgens een onderzoek elke dag brood"
+   "meestal eten we rond zes uur",
+   "rond zes uur eten we meestal"
   ],
-  "hint": "“volgens een onderzoek” first → inversion: verb (eten) before subject (Nederlanders).",
+  "hint": "Verb 2nd; whatever starts the sentence, the verb stays in 2nd place.",
+  "grammar": "basis",
+  "level": 1,
   "senses": {
    "eten": "eten@40",
-   "elke": "elke@40"
+   "meestal": "meestal@40",
+   "zes": "zes@40"
   }
  },
  {
-  "id": "winkelen-17",
+  "id": "winkelen-112",
   "topic": "winkelen",
   "parts": [
-   "minder vlees",
-   "dat ik",
-   "moet eten",
-   "mijn huisarts zegt"
+   "gauw klaar",
+   "het eten is",
+   "kinderen"
   ],
-  "answer": "mijn huisarts zegt dat ik minder vlees moet eten",
+  "answer": "kinderen, het eten is gauw klaar",
   "alternatives": [],
-  "hint": "In a dat-clause both verbs go to the end: … moet eten.",
+  "hint": "Subject (het eten), verb 2nd (is), then the rest.",
+  "grammar": "basis",
+  "level": 1,
   "senses": {
-   "huisarts": "huisarts@40",
    "eten": "eten@40"
   }
  },
  {
-  "id": "winkelen-18",
+  "id": "winkelen-114",
   "topic": "winkelen",
   "parts": [
-   "veel vlees en weinig groente",
-   "in de westerse samenleving",
-   "mensen",
-   "eten"
-  ],
-  "answer": "in de westerse samenleving eten mensen veel vlees en weinig groente",
-  "alternatives": [
-   "mensen eten in de westerse samenleving veel vlees en weinig groente"
-  ],
-  "hint": "Place phrase first → inversion: eten mensen.",
-  "senses": {
-   "eten": "eten@40",
-   "veel": "veel@40",
-   "weinig": "weinig@40"
-  }
- },
- {
-  "id": "winkelen-19",
-  "topic": "winkelen",
-  "parts": [
-   "een belangrijke traditie",
+   "ruim en licht",
    "is",
-   "samen eten",
-   "in onze cultuur"
+   "de nieuwe supermarkt"
   ],
-  "answer": "in onze cultuur is samen eten een belangrijke traditie",
+  "answer": "de nieuwe supermarkt is ruim en licht",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, then adjectives.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "winkelen-32",
+  "topic": "winkelen",
+  "parts": [
+   "in de nacht",
+   "bakt",
+   "de bakker",
+   "het brood"
+  ],
+  "answer": "de bakker bakt het brood in de nacht",
   "alternatives": [
-   "samen eten is in onze cultuur een belangrijke traditie"
+   "in de nacht bakt de bakker het brood",
+   "de bakker bakt in de nacht het brood"
   ],
-  "hint": "Verb (is) in 2nd place; “samen eten” is the subject and comes after the verb when you start with “in onze cultuur”.",
+  "hint": "Verb 2nd; a time phrase at the start causes inversion.",
+  "grammar": "basis",
+  "level": 1,
   "senses": {
-   "eten": "eten@40"
+   "bakker": "bakker@40"
   }
  },
  {
-  "id": "winkelen-20",
+  "id": "winkelen-132",
   "topic": "winkelen",
   "parts": [
-   "al meer dan een eeuw",
-   "bestaat",
-   "deze markt"
+   "voor de soep",
+   "een blik tomaten",
+   "koop",
+   "ik"
   ],
-  "answer": "deze markt bestaat al meer dan een eeuw",
-  "alternatives": [
-   "al meer dan een eeuw bestaat deze markt"
-  ],
-  "hint": "Subject, verb 2nd, then the time phrase.",
+  "answer": "ik koop een blik tomaten voor de soep",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, object, then purpose (voor de soep).",
+  "grammar": "basis",
+  "level": 1,
   "senses": {
-   "deze": "deze@40",
-   "al": "al@40",
+   "voor": "voor@40"
+  }
+ },
+ {
+  "id": "winkelen-72",
+  "topic": "winkelen",
+  "parts": [
+   "goede raad",
+   "geeft",
+   "de verkoopster",
+   "me"
+  ],
+  "answer": "de verkoopster geeft me goede raad",
+  "alternatives": [],
+  "hint": "Verb 2nd; the person (me) before the thing (goede raad).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "me": "me@40"
+  }
+ },
+ {
+  "id": "winkelen-86",
+  "topic": "winkelen",
+  "parts": [
+   "geen sigaretten",
+   "verkoopt",
+   "meer",
+   "de supermarkt"
+  ],
+  "answer": "de supermarkt verkoopt geen sigaretten meer",
+  "alternatives": [],
+  "hint": "“geen … meer” = no longer any; “meer” comes after the noun.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "geen": "geen@40",
    "meer": "meer@40"
   }
  },
  {
-  "id": "winkelen-21",
+  "id": "winkelen-93",
   "topic": "winkelen",
   "parts": [
-   "doet",
-   "de jonge generatie",
-   "online boodschappen",
-   "vaak"
+   "voor het eten",
+   "zorg",
+   "vanavond",
+   "ik"
   ],
-  "answer": "de jonge generatie doet vaak online boodschappen",
-  "alternatives": [],
-  "hint": "Verb 2nd; frequency words like “vaak” come right after the verb.",
+  "answer": "ik zorg vanavond voor het eten",
+  "alternatives": [
+   "vanavond zorg ik voor het eten"
+  ],
+  "hint": "“zorgen voor” = take care of; time (vanavond) comes before the “voor …” part.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "boodschappen": "boodschappen@40"
+   "zorg": "zorg@40",
+   "vanavond": "vanavond@40",
+   "voor": "voor@40",
+   "eten": "eten@40"
   }
  },
  {
-  "id": "winkelen-22",
+  "id": "winkelen-108",
   "topic": "winkelen",
   "parts": [
-   "wat mensen kopen",
-   "vaak",
-   "beïnvloedt",
-   "reclame"
+   "uit Spanje",
+   "deze verse vruchten",
+   "komen"
   ],
-  "answer": "reclame beïnvloedt vaak wat mensen kopen",
+  "answer": "deze verse vruchten komen uit Spanje",
   "alternatives": [],
-  "hint": "In the clause “wat mensen kopen” the verb goes to the end.",
+  "hint": "Subject, verb 2nd, then where from.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "wat": "wat@40"
-  }
- },
- {
-  "id": "winkelen-23",
-  "topic": "winkelen",
-  "parts": [
-   "komt",
-   "van het eiland Texel",
-   "deze lekkere kaas"
-  ],
-  "answer": "deze lekkere kaas komt van het eiland Texel",
-  "alternatives": [],
-  "hint": "Subject (deze lekkere kaas), verb 2nd (komt), then where it comes from.",
-  "senses": {
-   "deze": "deze@40"
+   "deze": "deze@40",
+   "uit": "uit@40"
   }
  },
  {
@@ -6801,84 +7389,12 @@ const EXERCISES = [
    "wij doen soms over de grens boodschappen"
   ],
   "hint": "Verb 2nd; start with “soms” and the subject moves behind the verb (soms doen wij).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "boodschappen": "boodschappen@40",
    "over": "over@40"
   }
- },
- {
-  "id": "winkelen-25",
-  "topic": "winkelen",
-  "parts": [
-   "pleisters en verband",
-   "koop",
-   "ik",
-   "bij de drogist"
-  ],
-  "answer": "bij de drogist koop ik pleisters en verband",
-  "alternatives": [
-   "ik koop bij de drogist pleisters en verband",
-   "ik koop pleisters en verband bij de drogist"
-  ],
-  "hint": "Place first → inversion (koop ik).",
-  "senses": {
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-26",
-  "topic": "winkelen",
-  "parts": [
-   "zijn",
-   "goed voor je lichaam",
-   "gezond eten en sporten"
-  ],
-  "answer": "gezond eten en sporten zijn goed voor je lichaam",
-  "alternatives": [],
-  "hint": "Two things together form a plural subject, so the verb is plural: zijn.",
-  "senses": {
-   "eten": "eten@40",
-   "sporten": "sporten@40",
-   "zijn": "zijn@40",
-   "goed": "goed@40",
-   "voor": "voor@40",
-   "je": "je@40"
-  }
- },
- {
-  "id": "winkelen-27",
-  "topic": "winkelen",
-  "parts": [
-   "eet",
-   "mijn vader",
-   "geen pittig eten",
-   "omdat hij",
-   "een zwakke maag heeft"
-  ],
-  "answer": "mijn vader eet geen pittig eten, omdat hij een zwakke maag heeft",
-  "alternatives": [
-   "omdat hij een zwakke maag heeft, eet mijn vader geen pittig eten"
-  ],
-  "hint": "“omdat” sends the verb (heeft) to the end of its clause.",
-  "senses": {
-   "geen": "geen@40",
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-28",
-  "topic": "winkelen",
-  "parts": [
-   "pijnlijke voeten",
-   "ik",
-   "heb",
-   "na het winkelen"
-  ],
-  "answer": "na het winkelen heb ik pijnlijke voeten",
-  "alternatives": [
-   "ik heb na het winkelen pijnlijke voeten"
-  ],
-  "hint": "Time phrase first (na het winkelen) → inversion: heb ik."
  },
  {
   "id": "winkelen-29",
@@ -6892,63 +7408,11 @@ const EXERCISES = [
   "answer": "deze sjaal houdt mijn nek lekker warm",
   "alternatives": [],
   "hint": "Verb 2nd; “warm houden”: the adjective (warm) comes after the object.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "deze": "deze@40",
    "lekker": "lekker@40"
-  }
- },
- {
-  "id": "winkelen-30",
-  "topic": "winkelen",
-  "parts": [
-   "nog aarde",
-   "zit",
-   "er",
-   "aan de aardappels van de markt"
-  ],
-  "answer": "er zit nog aarde aan de aardappels van de markt",
-  "alternatives": [
-   "aan de aardappels van de markt zit er nog aarde"
-  ],
-  "hint": "“er zit …” = there is: er first, verb 2nd.",
-  "senses": {
-   "nog": "nog@40",
-   "aan": "aan@40"
-  }
- },
- {
-  "id": "winkelen-31",
-  "topic": "winkelen",
-  "parts": [
-   "op een vochtige plek",
-   "het brood",
-   "bewaar",
-   "niet"
-  ],
-  "answer": "bewaar het brood niet op een vochtige plek",
-  "alternatives": [],
-  "hint": "Imperative: the verb comes first. “niet” comes after the object and before the place.",
-  "senses": {
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-32",
-  "topic": "winkelen",
-  "parts": [
-   "in de nacht",
-   "bakt",
-   "de bakker",
-   "het brood"
-  ],
-  "answer": "de bakker bakt het brood in de nacht",
-  "alternatives": [
-   "in de nacht bakt de bakker het brood",
-   "de bakker bakt in de nacht het brood"
-  ],
-  "hint": "Verb 2nd; a time phrase at the start causes inversion.",
-  "senses": {
-   "bakker": "bakker@40"
   }
  },
  {
@@ -6965,45 +7429,325 @@ const EXERCISES = [
    "volgende week begint de kookcursus op dinsdagavond"
   ],
   "hint": "Time first (volgende week) → verb before subject: begint de kookcursus.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "op": "op@40"
   }
  },
  {
-  "id": "winkelen-34",
+  "id": "winkelen-45",
   "topic": "winkelen",
   "parts": [
-   "leren",
-   "ik wil graag",
-   "hoe je",
-   "een gezond gerecht maakt"
+   "twee glazen water",
+   "ons",
+   "brengt",
+   "de ober"
   ],
-  "answer": "ik wil graag leren hoe je een gezond gerecht maakt",
+  "answer": "de ober brengt ons twee glazen water",
   "alternatives": [],
-  "hint": "Modal (wil) 2nd, then the infinitive (leren); in the hoe-clause the verb (maakt) goes to the end.",
+  "hint": "Verb 2nd; the person (ons) comes before the thing (twee glazen water).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "graag": "graag@40",
-   "leren": "leren@40",
-   "hoe": "hoe@40",
+   "ons": "ons@40",
+   "twee": "twee@40"
+  }
+ },
+ {
+  "id": "winkelen-73",
+  "topic": "winkelen",
+  "parts": [
+   "met deze kledingzaak",
+   "goede ervaringen",
+   "heb",
+   "ik"
+  ],
+  "answer": "ik heb goede ervaringen met deze kledingzaak",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40",
+   "kledingzaak": "kledingzaak@40"
+  }
+ },
+ {
+  "id": "winkelen-81",
+  "topic": "winkelen",
+  "parts": [
+   "heeft",
+   "veel handige functies",
+   "mijn nieuwe computer"
+  ],
+  "answer": "mijn nieuwe computer heeft veel handige functies",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "veel": "veel@40"
+  }
+ },
+ {
+  "id": "winkelen-100",
+  "topic": "winkelen",
+  "parts": [
+   "een fijne dag",
+   "wenst",
+   "de verkoper",
+   "ons"
+  ],
+  "answer": "de verkoper wenst ons een fijne dag",
+  "alternatives": [],
+  "hint": "Verb 2nd; the person (ons) before the thing (een fijne dag).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "ons": "ons@40"
+  }
+ },
+ {
+  "id": "winkelen-133",
+  "topic": "winkelen",
+  "parts": [
+   "in verschillende kleuren",
+   "verkoopt",
+   "jassen",
+   "deze kledingzaak"
+  ],
+  "answer": "deze kledingzaak verkoopt jassen in verschillende kleuren",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd (verkoopt), then object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40",
+   "kledingzaak": "kledingzaak@40",
+   "verschillende": "verschillende@40"
+  }
+ },
+ {
+  "id": "winkelen-20",
+  "topic": "winkelen",
+  "parts": [
+   "al meer dan een eeuw",
+   "bestaat",
+   "deze markt"
+  ],
+  "answer": "deze markt bestaat al meer dan een eeuw",
+  "alternatives": [
+   "al meer dan een eeuw bestaat deze markt"
+  ],
+  "hint": "Subject, verb 2nd, then the time phrase.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40",
+   "al": "al@40",
+   "meer": "meer@40"
+  }
+ },
+ {
+  "id": "winkelen-23",
+  "topic": "winkelen",
+  "parts": [
+   "komt",
+   "van het eiland Texel",
+   "deze lekkere kaas"
+  ],
+  "answer": "deze lekkere kaas komt van het eiland Texel",
+  "alternatives": [],
+  "hint": "Subject (deze lekkere kaas), verb 2nd (komt), then where it comes from.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40"
+  }
+ },
+ {
+  "id": "winkelen-67",
+  "topic": "winkelen",
+  "parts": [
+   "op deze jas",
+   "tien procent korting",
+   "ik",
+   "krijg"
+  ],
+  "answer": "ik krijg tien procent korting op deze jas",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, object, then “op …”.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "op": "op@40",
+   "deze": "deze@40"
+  }
+ },
+ {
+  "id": "winkelen-80",
+  "topic": "winkelen",
+  "parts": [
+   "nog in goede staat",
+   "is",
+   "deze tweedehands fiets"
+  ],
+  "answer": "deze tweedehands fiets is nog in goede staat",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd, then the rest. “in goede staat” = in good condition.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40",
+   "nog": "nog@40",
+   "staat": "staat@40"
+  }
+ },
+ {
+  "id": "winkelen-99",
+  "topic": "winkelen",
+  "parts": [
+   "voor mijn vriendin",
+   "hallo",
+   "een cadeau",
+   "ik zoek"
+  ],
+  "answer": "hallo, ik zoek een cadeau voor mijn vriendin",
+  "alternatives": [],
+  "hint": "Greeting first, then a normal sentence: subject + verb (ik zoek).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@40",
+   "vriendin": "vriendin@40"
+  }
+ },
+ {
+  "id": "winkelen-130",
+  "topic": "winkelen",
+  "parts": [
+   "is",
+   "erg vriendelijk",
+   "de jongeman achter de kassa"
+  ],
+  "answer": "de jongeman achter de kassa is erg vriendelijk",
+  "alternatives": [],
+  "hint": "The whole phrase “de jongeman achter de kassa” is the subject; verb (is) follows.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "winkelen-131",
+  "topic": "winkelen",
+  "parts": [
+   "komt",
+   "uit Marokko",
+   "de schrijver van dit kookboek"
+  ],
+  "answer": "de schrijver van dit kookboek komt uit Marokko",
+  "alternatives": [],
+  "hint": "Long subject, then the verb in 2nd position.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "dit": "dit@40",
+   "uit": "uit@40"
+  }
+ },
+ {
+  "id": "winkelen-26",
+  "topic": "winkelen",
+  "parts": [
+   "zijn",
+   "goed voor je lichaam",
+   "gezond eten en sporten"
+  ],
+  "answer": "gezond eten en sporten zijn goed voor je lichaam",
+  "alternatives": [],
+  "hint": "Two things together form a plural subject, so the verb is plural: zijn.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "eten": "eten@40",
+   "sporten": "sporten@40",
+   "zijn": "zijn@40",
+   "goed": "goed@40",
+   "voor": "voor@40",
    "je": "je@40"
   }
  },
  {
-  "id": "winkelen-35",
+  "id": "winkelen-113",
   "topic": "winkelen",
   "parts": [
-   "alles",
-   "de docent",
-   "duidelijk uit",
-   "legt"
+   "altijd",
+   "mijn vlees",
+   "ik koop",
+   "bij mijn vaste slager"
   ],
-  "answer": "de docent legt alles duidelijk uit",
+  "answer": "ik koop mijn vlees altijd bij mijn vaste slager",
   "alternatives": [],
-  "hint": "Separable verb uitleggen: “legt” in 2nd place, “uit” at the end.",
+  "hint": "Verb 2nd; “altijd” after the object, the place at the end.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "docent": "docent@40",
-   "legt": "legt@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-120",
+  "topic": "winkelen",
+  "parts": [
+   "komt",
+   "uit de tuin",
+   "de helft van onze groente"
+  ],
+  "answer": "de helft van onze groente komt uit de tuin",
+  "alternatives": [],
+  "hint": "“de helft van …” is the subject; verb 2nd.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
    "uit": "uit@40"
+  }
+ },
+ {
+  "id": "winkelen-01",
+  "topic": "winkelen",
+  "parts": [
+   "het liefst",
+   "ik",
+   "een spijkerbroek en een zachte trui",
+   "draag"
+  ],
+  "answer": "ik draag het liefst een spijkerbroek en een zachte trui",
+  "alternatives": [
+   "het liefst draag ik een spijkerbroek en een zachte trui"
+  ],
+  "hint": "Verb in 2nd place; “het liefst” (most of all) comes right after the verb, or first with inversion.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "winkelen-10",
+  "topic": "winkelen",
+  "parts": [
+   "is",
+   "van het winkelcentrum",
+   "de kledingzaak",
+   "op de derde verdieping"
+  ],
+  "answer": "de kledingzaak is op de derde verdieping van het winkelcentrum",
+  "alternatives": [
+   "op de derde verdieping van het winkelcentrum is de kledingzaak"
+  ],
+  "hint": "Verb in 2nd place; the place phrase can also start the sentence with inversion.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "kledingzaak": "kledingzaak@40",
+   "op": "op@40"
   }
  },
  {
@@ -7022,41 +7766,10 @@ const EXERCISES = [
    "we bespreken elke keer in de les een nieuw recept"
   ],
   "hint": "Verb 2nd; start with a place or time phrase and the subject follows the verb.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "elke": "elke@40"
-  }
- },
- {
-  "id": "winkelen-37",
-  "topic": "winkelen",
-  "parts": [
-   "en daarna",
-   "iedereen kookt eerst",
-   "eten we samen",
-   "individueel"
-  ],
-  "answer": "iedereen kookt eerst individueel en daarna eten we samen",
-  "alternatives": [],
-  "hint": "After “daarna” (a time word) the verb comes before the subject: daarna eten we.",
-  "senses": {
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-38",
-  "topic": "winkelen",
-  "parts": [
-   "al klaar",
-   "je",
-   "met de soep",
-   "ben"
-  ],
-  "answer": "ben je al klaar met de soep?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first, then subject.",
-  "senses": {
-   "je": "je@40",
-   "al": "al@40"
   }
  },
  {
@@ -7073,426 +7786,34 @@ const EXERCISES = [
    "in de keuken is mijn partner bezig met het eten"
   ],
   "hint": "“bezig zijn met” = to be busy with. Verb (is) 2nd.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "eten": "eten@40"
   }
  },
  {
-  "id": "winkelen-40",
+  "id": "winkelen-15",
   "topic": "winkelen",
   "parts": [
-   "voor de pasta",
-   "het water",
-   "kookt",
-   "intussen"
-  ],
-  "answer": "intussen kookt het water voor de pasta",
-  "alternatives": [
-   "het water voor de pasta kookt intussen"
-  ],
-  "hint": "“intussen” first → inversion: kookt het water.",
-  "senses": {
-   "voor": "voor@40"
-  }
- },
- {
-  "id": "winkelen-41",
-  "topic": "winkelen",
-  "parts": [
-   "zacht laten koken",
-   "je",
-   "nog vijf minuten",
-   "moet",
-   "de soep"
-  ],
-  "answer": "je moet de soep nog vijf minuten zacht laten koken",
-  "alternatives": [],
-  "hint": "Modal (moet) 2nd; “laten + infinitive” goes to the end: … laten koken.",
-  "senses": {
-   "je": "je@40",
-   "nog": "nog@40",
-   "vijf": "vijf@40",
-   "koken": "koken@40"
-  }
- },
- {
-  "id": "winkelen-42",
-  "topic": "winkelen",
-  "parts": [
-   "opnieuw",
-   "hem",
-   "dus ik maak",
-   "de soep is te zout"
-  ],
-  "answer": "de soep is te zout, dus ik maak hem opnieuw",
-  "alternatives": [
-   "de soep is te zout, dus maak ik hem opnieuw"
-  ],
-  "hint": "After “dus” you may use normal order (dus ik maak) or inversion (dus maak ik).",
-  "senses": {
-   "te": "te@40",
-   "dus": "dus@40",
-   "maak": "maak@40"
-  }
- },
- {
-  "id": "winkelen-43",
-  "topic": "winkelen",
-  "parts": [
-   "maak",
+   "in de rij",
    "ik",
-   "eerst de saus",
-   "af"
+   "al een poos",
+   "sta",
+   "bij de kassa"
   ],
-  "answer": "ik maak eerst de saus af",
+  "answer": "ik sta al een poos in de rij bij de kassa",
   "alternatives": [
-   "eerst maak ik de saus af"
+   "al een poos sta ik in de rij bij de kassa",
+   "ik sta al een poos bij de kassa in de rij"
   ],
-  "hint": "Separable verb afmaken: “maak” 2nd, “af” at the very end.",
+  "hint": "TMP: time (al een poos) before place (in de rij bij de kassa).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
-   "maak": "maak@40",
-   "af": "af@40"
-  }
- },
- {
-  "id": "winkelen-44",
-  "topic": "winkelen",
-  "parts": [
-   "ook zo bitter",
-   "deze koffie",
-   "jij",
-   "vind"
-  ],
-  "answer": "vind jij deze koffie ook zo bitter?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb (vind) first, subject (jij) second.",
-  "senses": {
-   "deze": "deze@40"
-  }
- },
- {
-  "id": "winkelen-45",
-  "topic": "winkelen",
-  "parts": [
-   "twee glazen water",
-   "ons",
-   "brengt",
-   "de ober"
-  ],
-  "answer": "de ober brengt ons twee glazen water",
-  "alternatives": [],
-  "hint": "Verb 2nd; the person (ons) comes before the thing (twee glazen water).",
-  "senses": {
-   "ons": "ons@40",
-   "twee": "twee@40"
-  }
- },
- {
-  "id": "winkelen-46",
-  "topic": "winkelen",
-  "parts": [
-   "jullie",
-   "bij het eten",
-   "drinken",
-   "wat"
-  ],
-  "answer": "wat drinken jullie bij het eten?",
-  "alternatives": [],
-  "hint": "W-question: question word, verb, subject.",
-  "senses": {
-   "wat": "wat@40",
-   "bij": "bij@40",
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-47",
-  "topic": "winkelen",
-  "parts": [
-   "over dit nieuwe restaurant",
-   "jouw oordeel",
-   "is",
-   "wat"
-  ],
-  "answer": "wat is jouw oordeel over dit nieuwe restaurant?",
-  "alternatives": [],
-  "hint": "W-question: question word (wat), then verb (is), then subject.",
-  "senses": {
-   "wat": "wat@40",
-   "jouw": "jouw@40",
-   "over": "over@40",
-   "dit": "dit@40"
-  }
- },
- {
-  "id": "winkelen-48",
-  "topic": "winkelen",
-  "parts": [
-   "rond zes uur",
-   "eten",
-   "we",
-   "meestal"
-  ],
-  "answer": "we eten meestal rond zes uur",
-  "alternatives": [
-   "meestal eten we rond zes uur",
-   "rond zes uur eten we meestal"
-  ],
-  "hint": "Verb 2nd; whatever starts the sentence, the verb stays in 2nd place.",
-  "senses": {
-   "eten": "eten@40",
-   "meestal": "meestal@40",
-   "zes": "zes@40"
-  }
- },
- {
-  "id": "winkelen-49",
-  "topic": "winkelen",
-  "parts": [
-   "gegeten",
-   "ik heb honger",
-   "want ik heb",
-   "nog niet"
-  ],
-  "answer": "ik heb honger, want ik heb nog niet gegeten",
-  "alternatives": [],
-  "hint": "“want” keeps normal order; in the perfect tense the participle (gegeten) goes to the end.",
-  "senses": {
-   "nog": "nog@40"
-  }
- },
- {
-  "id": "winkelen-50",
-  "topic": "winkelen",
-  "parts": [
-   "want het brood",
-   "naar de bakker",
-   "is bijna op",
-   "ik ga straks"
-  ],
-  "answer": "ik ga straks naar de bakker, want het brood is bijna op",
-  "alternatives": [
-   "straks ga ik naar de bakker, want het brood is bijna op"
-  ],
-  "hint": "TMP: time (straks) before place (naar de bakker). After “want” the order stays normal.",
-  "senses": {
-   "bakker": "bakker@40",
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-51",
-  "topic": "winkelen",
-  "parts": [
-   "loop",
-   "ik",
-   "op zaterdag",
-   "naar de markt",
-   "want die is dichtbij"
-  ],
-  "answer": "ik loop op zaterdag naar de markt, want die is dichtbij",
-  "alternatives": [
-   "op zaterdag loop ik naar de markt, want die is dichtbij"
-  ],
-  "hint": "TMP: time (op zaterdag) before place (naar de markt).",
-  "senses": {
-   "op": "op@40",
-   "zaterdag": "zaterdag@40",
-   "die": "die@40"
-  }
- },
- {
-  "id": "winkelen-52",
-  "topic": "winkelen",
-  "parts": [
-   "maar ik ga toch",
-   "met de fiets",
-   "niet ver",
-   "de supermarkt is"
-  ],
-  "answer": "de supermarkt is niet ver, maar ik ga toch met de fiets",
-  "alternatives": [],
-  "hint": "“maar” does not change word order: ik ga …"
- },
- {
-  "id": "winkelen-53",
-  "topic": "winkelen",
-  "parts": [
-   "is",
-   "ongeveer twee kilometer",
-   "de afstand naar de markt"
-  ],
-  "answer": "de afstand naar de markt is ongeveer twee kilometer",
-  "alternatives": [],
-  "hint": "The whole phrase “de afstand naar de markt” is the subject; the verb (is) comes right after it.",
-  "senses": {
-   "twee": "twee@40"
-  }
- },
- {
-  "id": "winkelen-54",
-  "topic": "winkelen",
-  "parts": [
-   "oversteken",
-   "bij het stoplicht",
-   "moet",
-   "u"
-  ],
-  "answer": "u moet bij het stoplicht oversteken",
-  "alternatives": [
-   "bij het stoplicht moet u oversteken"
-  ],
-  "hint": "Modal verb (moet) 2nd, infinitive (oversteken) at the end.",
-  "senses": {
+   "sta": "sta@40",
+   "al": "al@40",
    "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-55",
-  "topic": "winkelen",
-  "parts": [
-   "uitstappen",
-   "u",
-   "bij de volgende halte",
-   "moet"
-  ],
-  "answer": "u moet bij de volgende halte uitstappen",
-  "alternatives": [
-   "bij de volgende halte moet u uitstappen"
-  ],
-  "hint": "Modal + infinitive: a separable verb stays one word at the end (uitstappen).",
-  "senses": {
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-56",
-  "topic": "winkelen",
-  "parts": [
-   "mee naar de markt",
-   "jij",
-   "kom",
-   "morgen"
-  ],
-  "answer": "kom jij morgen mee naar de markt?",
-  "alternatives": [],
-  "hint": "Question with separable verb meekomen: kom … mee.",
-  "senses": {
-   "morgen": "morgen@40",
-   "mee": "mee@40"
-  }
- },
- {
-  "id": "winkelen-57",
-  "topic": "winkelen",
-  "parts": [
-   "aan",
-   "komen",
-   "mijn nieuwe schoenen",
-   "morgen met de post"
-  ],
-  "answer": "morgen komen mijn nieuwe schoenen met de post aan",
-  "alternatives": [
-   "mijn nieuwe schoenen komen morgen met de post aan"
-  ],
-  "hint": "Separable verb aankomen: “komen” 2nd, “aan” at the end; time first → inversion.",
-  "senses": {
-   "morgen": "morgen@40",
-   "aan": "aan@40"
-  }
- },
- {
-  "id": "winkelen-58",
-  "topic": "winkelen",
-  "parts": [
-   "het pakket",
-   "op",
-   "haal",
-   "ik",
-   "straks"
-  ],
-  "answer": "ik haal straks het pakket op",
-  "alternatives": [
-   "straks haal ik het pakket op",
-   "ik haal het pakket straks op"
-  ],
-  "hint": "Separable verb ophalen: “haal” 2nd, “op” at the end.",
-  "senses": {
-   "haal": "haal@40",
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-59",
-  "topic": "winkelen",
-  "parts": [
-   "kom",
-   "ik",
-   "morgen",
-   "met de bon",
-   "terug"
-  ],
-  "answer": "ik kom morgen terug met de bon",
-  "alternatives": [
-   "morgen kom ik terug met de bon",
-   "ik kom morgen met de bon terug",
-   "morgen kom ik met de bon terug"
-  ],
-  "hint": "Separable verb terugkomen: “kom” 2nd, “terug” usually at the end.",
-  "senses": {
-   "morgen": "morgen@40"
-  }
- },
- {
-  "id": "winkelen-60",
-  "topic": "winkelen",
-  "parts": [
-   "de bon hebt",
-   "kun je",
-   "de jas ruilen",
-   "zolang je"
-  ],
-  "answer": "zolang je de bon hebt, kun je de jas ruilen",
-  "alternatives": [],
-  "hint": "“zolang” sends the verb (hebt) to the end; the main clause then starts with the verb (kun je).",
-  "senses": {
-   "je": "je@40",
-   "ruilen": "ruilen@40"
-  }
- },
- {
-  "id": "winkelen-61",
-  "topic": "winkelen",
-  "parts": [
-   "recht op uw geld terug",
-   "u",
-   "met de bon",
-   "heeft"
-  ],
-  "answer": "met de bon heeft u recht op uw geld terug",
-  "alternatives": [
-   "u heeft met de bon recht op uw geld terug"
-  ],
-  "hint": "Starting with “met de bon” → inversion: heeft u.",
-  "senses": {
-   "op": "op@40",
-   "uw": "uw@40"
-  }
- },
- {
-  "id": "winkelen-62",
-  "topic": "winkelen",
-  "parts": [
-   "de bon kwijt",
-   "maar ik wil",
-   "de jas toch ruilen",
-   "ik ben"
-  ],
-  "answer": "ik ben de bon kwijt, maar ik wil de jas toch ruilen",
-  "alternatives": [],
-  "hint": "“kwijt zijn” = to have lost. After maar: modal (wil) 2nd, infinitive (ruilen) at the end.",
-  "senses": {
-   "ruilen": "ruilen@40"
   }
  },
  {
@@ -7507,6 +7828,8 @@ const EXERCISES = [
   "answer": "de winkel stuurt mij een e-mail met de datum en de tijd",
   "alternatives": [],
   "hint": "Verb 2nd; the person (mij) comes before the thing (een e-mail).",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "winkel": "winkel@40",
    "mij": "mij@40",
@@ -7514,112 +7837,22 @@ const EXERCISES = [
   }
  },
  {
-  "id": "winkelen-64",
+  "id": "winkelen-21",
   "topic": "winkelen",
   "parts": [
-   "heeft",
-   "iemand",
-   "gisteren",
-   "bij de supermarkt",
-   "mijn fiets gestolen"
+   "doet",
+   "de jonge generatie",
+   "online boodschappen",
+   "vaak"
   ],
-  "answer": "iemand heeft gisteren bij de supermarkt mijn fiets gestolen",
-  "alternatives": [
-   "gisteren heeft iemand bij de supermarkt mijn fiets gestolen",
-   "iemand heeft gisteren mijn fiets bij de supermarkt gestolen"
-  ],
-  "hint": "Perfect tense: heeft in 2nd place, participle (gestolen) at the end.",
-  "senses": {
-   "gisteren": "gisteren@40",
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-65",
-  "topic": "winkelen",
-  "parts": [
-   "maatregelen",
-   "neemt",
-   "tegen de lange rijen bij de kassa",
-   "de supermarkt"
-  ],
-  "answer": "de supermarkt neemt maatregelen tegen de lange rijen bij de kassa",
+  "answer": "de jonge generatie doet vaak online boodschappen",
   "alternatives": [],
-  "hint": "Subject, verb 2nd (neemt), then object.",
+  "hint": "Verb 2nd; frequency words like “vaak” come right after the verb.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "neemt": "neemt@40",
-   "tegen": "tegen@40",
-   "bij": "bij@40"
+   "boodschappen": "boodschappen@40"
   }
- },
- {
-  "id": "winkelen-66",
-  "topic": "winkelen",
-  "parts": [
-   "mag",
-   "je",
-   "volgens de regeling",
-   "de schoenen",
-   "binnen dertig dagen ruilen"
-  ],
-  "answer": "volgens de regeling mag je de schoenen binnen dertig dagen ruilen",
-  "alternatives": [
-   "je mag de schoenen volgens de regeling binnen dertig dagen ruilen",
-   "je mag volgens de regeling de schoenen binnen dertig dagen ruilen"
-  ],
-  "hint": "Modal (mag) 2nd, infinitive (ruilen) at the end; starting with “volgens de regeling” → mag je.",
-  "senses": {
-   "je": "je@40",
-   "binnen": "binnen@40",
-   "ruilen": "ruilen@40"
-  }
- },
- {
-  "id": "winkelen-67",
-  "topic": "winkelen",
-  "parts": [
-   "op deze jas",
-   "tien procent korting",
-   "ik",
-   "krijg"
-  ],
-  "answer": "ik krijg tien procent korting op deze jas",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, object, then “op …”.",
-  "senses": {
-   "op": "op@40",
-   "deze": "deze@40"
-  }
- },
- {
-  "id": "winkelen-68",
-  "topic": "winkelen",
-  "parts": [
-   "een flinke korting",
-   "krijg je",
-   "in de uitverkoop",
-   "op kleding"
-  ],
-  "answer": "in de uitverkoop krijg je een flinke korting op kleding",
-  "alternatives": [],
-  "hint": "Phrase first (in de uitverkoop) → inversion: krijg je (no -t with je after the verb).",
-  "senses": {
-   "je": "je@40",
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-69",
-  "topic": "winkelen",
-  "parts": [
-   "maar hij is",
-   "tenminste warm",
-   "de jas is",
-   "nogal duur"
-  ],
-  "answer": "de jas is nogal duur, maar hij is tenminste warm",
-  "alternatives": [],
-  "hint": "“maar” joins two main clauses; both have the verb in 2nd place."
  },
  {
   "id": "winkelen-70",
@@ -7635,8 +7868,263 @@ const EXERCISES = [
    "op de markt is groente relatief goedkoop"
   ],
   "hint": "Place first → inversion: is groente.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-11",
+  "topic": "winkelen",
+  "parts": [
+   "nauwelijks geld",
+   "de arbeiders",
+   "verdienen",
+   "in de fabriek"
+  ],
+  "answer": "de arbeiders in de fabriek verdienen nauwelijks geld",
+  "alternatives": [
+   "de arbeiders verdienen in de fabriek nauwelijks geld"
+  ],
+  "hint": "The verb (verdienen) is 2nd; “de arbeiders in de fabriek” together is the subject.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "winkelen-53",
+  "topic": "winkelen",
+  "parts": [
+   "is",
+   "ongeveer twee kilometer",
+   "de afstand naar de markt"
+  ],
+  "answer": "de afstand naar de markt is ongeveer twee kilometer",
+  "alternatives": [],
+  "hint": "The whole phrase “de afstand naar de markt” is the subject; the verb (is) comes right after it.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "twee": "twee@40"
+  }
+ },
+ {
+  "id": "winkelen-102",
+  "topic": "winkelen",
+  "parts": [
+   "vlak bij een grote supermarkt",
+   "ligt",
+   "onze nieuwe woning"
+  ],
+  "answer": "onze nieuwe woning ligt vlak bij een grote supermarkt",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd (ligt), then the place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "woning": "woning@40",
+   "vlak": "vlak@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-109",
+  "topic": "winkelen",
+  "parts": [
+   "leidt",
+   "in het buurthuis",
+   "een bekende kok",
+   "de kookcursus"
+  ],
+  "answer": "een bekende kok leidt de kookcursus in het buurthuis",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd (leidt), object, then place.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "winkelen-118",
+  "topic": "winkelen",
+  "parts": [
+   "boodschappen",
+   "bij de supermarkt om de hoek",
+   "ik doe",
+   "dagelijks"
+  ],
+  "answer": "ik doe dagelijks boodschappen bij de supermarkt om de hoek",
+  "alternatives": [],
+  "hint": "TMP: time (dagelijks) before place (bij de supermarkt).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "boodschappen": "boodschappen@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-121",
+  "topic": "winkelen",
+  "parts": [
+   "slechte gevolgen",
+   "heeft",
+   "te veel suiker eten",
+   "voor je tanden"
+  ],
+  "answer": "te veel suiker eten heeft slechte gevolgen voor je tanden",
+  "alternatives": [],
+  "hint": "“te veel suiker eten” is the subject; the verb (heeft) comes right after it.",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "te": "te@40",
+   "veel": "veel@40",
+   "eten": "eten@40",
+   "voor": "voor@40",
+   "je": "je@40"
+  }
+ },
+ {
+  "id": "winkelen-65",
+  "topic": "winkelen",
+  "parts": [
+   "maatregelen",
+   "neemt",
+   "tegen de lange rijen bij de kassa",
+   "de supermarkt"
+  ],
+  "answer": "de supermarkt neemt maatregelen tegen de lange rijen bij de kassa",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd (neemt), then object.",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "neemt": "neemt@40",
+   "tegen": "tegen@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-28",
+  "topic": "winkelen",
+  "parts": [
+   "pijnlijke voeten",
+   "ik",
+   "heb",
+   "na het winkelen"
+  ],
+  "answer": "na het winkelen heb ik pijnlijke voeten",
+  "alternatives": [
+   "ik heb na het winkelen pijnlijke voeten"
+  ],
+  "hint": "Time phrase first (na het winkelen) → inversion: heb ik.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "winkelen-40",
+  "topic": "winkelen",
+  "parts": [
+   "voor de pasta",
+   "het water",
+   "kookt",
+   "intussen"
+  ],
+  "answer": "intussen kookt het water voor de pasta",
+  "alternatives": [
+   "het water voor de pasta kookt intussen"
+  ],
+  "hint": "“intussen” first → inversion: kookt het water.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "voor": "voor@40"
+  }
+ },
+ {
+  "id": "winkelen-106",
+  "topic": "winkelen",
+  "parts": [
+   "weinig zout",
+   "gebruiken",
+   "wij",
+   "bij het koken"
+  ],
+  "answer": "bij het koken gebruiken wij weinig zout",
+  "alternatives": [
+   "wij gebruiken bij het koken weinig zout"
+  ],
+  "hint": "Phrase first (bij het koken) → inversion: gebruiken wij.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "bij": "bij@40",
+   "koken": "koken@40",
+   "weinig": "weinig@40"
+  }
+ },
+ {
+  "id": "winkelen-123",
+  "topic": "winkelen",
+  "parts": [
+   "een nieuwe jas",
+   "koop",
+   "ik",
+   "morgen",
+   "misschien"
+  ],
+  "answer": "misschien koop ik morgen een nieuwe jas",
+  "alternatives": [
+   "ik koop morgen misschien een nieuwe jas",
+   "ik koop misschien morgen een nieuwe jas"
+  ],
+  "hint": "“misschien” first → inversion: koop ik.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "morgen": "morgen@40"
+  }
+ },
+ {
+  "id": "winkelen-13",
+  "topic": "winkelen",
+  "parts": [
+   "u",
+   "na die mevrouw",
+   "aan de beurt",
+   "bent"
+  ],
+  "answer": "na die mevrouw bent u aan de beurt",
+  "alternatives": [
+   "u bent na die mevrouw aan de beurt"
+  ],
+  "hint": "Starting with “na die mevrouw” causes inversion: bent u.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "die": "die@40",
+   "mevrouw": "mevrouw@40",
+   "aan": "aan@40"
+  }
+ },
+ {
+  "id": "winkelen-25",
+  "topic": "winkelen",
+  "parts": [
+   "pleisters en verband",
+   "koop",
+   "ik",
+   "bij de drogist"
+  ],
+  "answer": "bij de drogist koop ik pleisters en verband",
+  "alternatives": [
+   "ik koop bij de drogist pleisters en verband",
+   "ik koop pleisters en verband bij de drogist"
+  ],
+  "hint": "Place first → inversion (koop ik).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "bij": "bij@40"
   }
  },
  {
@@ -7654,208 +8142,74 @@ const EXERCISES = [
    "er is altijd veel keuze op de markt"
   ],
   "hint": "“er is” = there is. With the place first, the order becomes: op de markt is er …",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "op": "op@40",
    "veel": "veel@40"
   }
  },
  {
-  "id": "winkelen-72",
+  "id": "winkelen-88",
   "topic": "winkelen",
   "parts": [
-   "goede raad",
-   "geeft",
-   "de verkoopster",
-   "me"
+   "bijna altijd",
+   "pin",
+   "nu",
+   "ik",
+   "in de winkel"
   ],
-  "answer": "de verkoopster geeft me goede raad",
-  "alternatives": [],
-  "hint": "Verb 2nd; the person (me) before the thing (goede raad).",
+  "answer": "nu pin ik bijna altijd in de winkel",
+  "alternatives": [
+   "ik pin nu bijna altijd in de winkel",
+   "in de winkel pin ik nu bijna altijd"
+  ],
+  "hint": "Time word first (nu) → verb before subject: pin ik.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
-   "me": "me@40"
+   "nu": "nu@40",
+   "winkel": "winkel@40"
   }
  },
  {
-  "id": "winkelen-73",
+  "id": "winkelen-119",
   "topic": "winkelen",
   "parts": [
-   "met deze kledingzaak",
-   "goede ervaringen",
-   "heb",
-   "ik"
+   "in een restaurant",
+   "een enkele keer",
+   "eten",
+   "we"
   ],
-  "answer": "ik heb goede ervaringen met deze kledingzaak",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, object.",
+  "answer": "een enkele keer eten we in een restaurant",
+  "alternatives": [
+   "we eten een enkele keer in een restaurant"
+  ],
+  "hint": "Time phrase first (een enkele keer) → inversion: eten we.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
-   "deze": "deze@40",
-   "kledingzaak": "kledingzaak@40"
-  }
- },
- {
-  "id": "winkelen-74",
-  "topic": "winkelen",
-  "parts": [
-   "van een gezond ontbijt",
-   "eens",
-   "een voorbeeld",
-   "geef"
-  ],
-  "answer": "geef eens een voorbeeld van een gezond ontbijt",
-  "alternatives": [],
-  "hint": "Imperative: verb first. “eens” makes the request softer."
- },
- {
-  "id": "winkelen-75",
-  "topic": "winkelen",
-  "parts": [
-   "deze Nederlandse uitdrukking",
-   "ken",
-   "over eten",
-   "jij"
-  ],
-  "answer": "ken jij deze Nederlandse uitdrukking over eten?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first. With jij after the verb, the -t drops: ken jij.",
-  "senses": {
-   "deze": "deze@40",
-   "over": "over@40",
    "eten": "eten@40"
   }
  },
  {
-  "id": "winkelen-76",
+  "id": "winkelen-03",
   "topic": "winkelen",
   "parts": [
-   "om vanavond",
-   "samen te koken",
-   "mijn voorstel",
-   "is"
+   "mijn warme schoenen",
+   "draag",
+   "in de sneeuw",
+   "ik",
+   "altijd"
   ],
-  "answer": "mijn voorstel is om vanavond samen te koken",
-  "alternatives": [],
-  "hint": "“om … te + infinitive”: te koken comes at the end.",
-  "senses": {
-   "vanavond": "vanavond@40",
-   "te": "te@40",
-   "koken": "koken@40"
-  }
- },
- {
-  "id": "winkelen-77",
-  "topic": "winkelen",
-  "parts": [
-   "een verzoek",
-   "mag",
-   "doen",
-   "ik u"
-  ],
-  "answer": "mag ik u een verzoek doen?",
-  "alternatives": [],
-  "hint": "Question: modal (mag) first, infinitive (doen) at the end."
- },
- {
-  "id": "winkelen-78",
-  "topic": "winkelen",
-  "parts": [
-   "de waarheid zegt",
-   "ik weet niet",
-   "of de verkoper"
-  ],
-  "answer": "ik weet niet of de verkoper de waarheid zegt",
-  "alternatives": [],
-  "hint": "“of” (whether) sends the verb (zegt) to the end.",
-  "senses": {
-   "of": "of@40"
-  }
- },
- {
-  "id": "winkelen-79",
-  "topic": "winkelen",
-  "parts": [
-   "want dit is",
-   "je hebt geluk",
-   "in jouw maat",
-   "de laatste jas"
-  ],
-  "answer": "je hebt geluk, want dit is de laatste jas in jouw maat",
-  "alternatives": [],
-  "hint": "“want” keeps normal main-clause order: dit is …",
-  "senses": {
-   "je": "je@40",
-   "dit": "dit@40",
-   "jouw": "jouw@40"
-  }
- },
- {
-  "id": "winkelen-80",
-  "topic": "winkelen",
-  "parts": [
-   "nog in goede staat",
-   "is",
-   "deze tweedehands fiets"
-  ],
-  "answer": "deze tweedehands fiets is nog in goede staat",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, then the rest. “in goede staat” = in good condition.",
-  "senses": {
-   "deze": "deze@40",
-   "nog": "nog@40",
-   "staat": "staat@40"
-  }
- },
- {
-  "id": "winkelen-81",
-  "topic": "winkelen",
-  "parts": [
-   "heeft",
-   "veel handige functies",
-   "mijn nieuwe computer"
-  ],
-  "answer": "mijn nieuwe computer heeft veel handige functies",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, object.",
-  "senses": {
-   "veel": "veel@40"
-  }
- },
- {
-  "id": "winkelen-82",
-  "topic": "winkelen",
-  "parts": [
-   "een nieuw bureau",
-   "voor mijn kamer",
-   "gekocht",
-   "heb",
-   "ik"
-  ],
-  "answer": "voor mijn kamer heb ik een nieuw bureau gekocht",
+  "answer": "in de sneeuw draag ik altijd mijn warme schoenen",
   "alternatives": [
-   "ik heb voor mijn kamer een nieuw bureau gekocht",
-   "ik heb een nieuw bureau voor mijn kamer gekocht"
+   "ik draag in de sneeuw altijd mijn warme schoenen",
+   "ik draag altijd mijn warme schoenen in de sneeuw"
   ],
-  "hint": "Perfect: heb 2nd, participle (gekocht) at the end; a phrase first causes inversion.",
-  "senses": {
-   "voor": "voor@40"
-  }
- },
- {
-  "id": "winkelen-83",
-  "topic": "winkelen",
-  "parts": [
-   "vroeg naar bed",
-   "na een lange dag winkelen",
-   "ga",
-   "ik"
-  ],
-  "answer": "na een lange dag winkelen ga ik vroeg naar bed",
-  "alternatives": [
-   "ik ga na een lange dag winkelen vroeg naar bed"
-  ],
-  "hint": "Time first → inversion: ga ik. TMP: time (vroeg) before place (naar bed).",
-  "senses": {
-   "vroeg": "vroeg@40"
-  }
+  "hint": "When a phrase like “in de sneeuw” starts the sentence, the verb stays 2nd and the subject follows (inversion).",
+  "grammar": "inversie",
+  "level": 2
  },
  {
   "id": "winkelen-84",
@@ -7871,6 +8225,8 @@ const EXERCISES = [
    "ik eet voor de lunch meestal een broodje kaas"
   ],
   "hint": "Time first (voor de lunch) → inversion: eet ik.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "voor": "voor@40",
    "meestal": "meestal@40"
@@ -7891,25 +8247,30 @@ const EXERCISES = [
    "we gaan na het winkelen nog naar een museum"
   ],
   "hint": "Time first → inversion (gaan we); place (naar een museum) at the end.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "nog": "nog@40"
   }
  },
  {
-  "id": "winkelen-86",
+  "id": "winkelen-127",
   "topic": "winkelen",
   "parts": [
-   "geen sigaretten",
-   "verkoopt",
-   "meer",
-   "de supermarkt"
+   "gezond eten",
+   "in theorie",
+   "makkelijk",
+   "is"
   ],
-  "answer": "de supermarkt verkoopt geen sigaretten meer",
-  "alternatives": [],
-  "hint": "“geen … meer” = no longer any; “meer” comes after the noun.",
+  "answer": "in theorie is gezond eten makkelijk",
+  "alternatives": [
+   "gezond eten is in theorie makkelijk"
+  ],
+  "hint": "Verb (is) 2nd; with “in theorie” first, the subject follows the verb.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
-   "geen": "geen@40",
-   "meer": "meer@40"
+   "eten": "eten@40"
   }
  },
  {
@@ -7925,58 +8286,30 @@ const EXERCISES = [
   "alternatives": [
    "mensen betaalden in het verleden vaak contant"
   ],
-  "hint": "Time first (in het verleden) → inversion: betaalden mensen."
+  "hint": "Time first (in het verleden) → inversion: betaalden mensen.",
+  "grammar": "inversie",
+  "level": 3
  },
  {
-  "id": "winkelen-88",
+  "id": "winkelen-16",
   "topic": "winkelen",
   "parts": [
-   "bijna altijd",
-   "pin",
-   "nu",
-   "ik",
-   "in de winkel"
+   "eten",
+   "elke dag brood",
+   "Nederlanders",
+   "volgens een onderzoek"
   ],
-  "answer": "nu pin ik bijna altijd in de winkel",
+  "answer": "volgens een onderzoek eten Nederlanders elke dag brood",
   "alternatives": [
-   "ik pin nu bijna altijd in de winkel",
-   "in de winkel pin ik nu bijna altijd"
+   "Nederlanders eten volgens een onderzoek elke dag brood"
   ],
-  "hint": "Time word first (nu) → verb before subject: pin ik.",
+  "hint": "“volgens een onderzoek” first → inversion: verb (eten) before subject (Nederlanders).",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
-   "nu": "nu@40",
-   "winkel": "winkel@40"
+   "eten": "eten@40",
+   "elke": "elke@40"
   }
- },
- {
-  "id": "winkelen-89",
-  "topic": "winkelen",
-  "parts": [
-   "één ding kiezen",
-   "mag",
-   "iedereen",
-   "in de speelgoedwinkel"
-  ],
-  "answer": "in de speelgoedwinkel mag iedereen één ding kiezen",
-  "alternatives": [
-   "iedereen mag in de speelgoedwinkel één ding kiezen"
-  ],
-  "hint": "Modal (mag) 2nd, infinitive (kiezen) at the end."
- },
- {
-  "id": "winkelen-90",
-  "topic": "winkelen",
-  "parts": [
-   "terwijl wij winkelen",
-   "spelen",
-   "in de speelhoek",
-   "de kinderen"
-  ],
-  "answer": "de kinderen spelen in de speelhoek terwijl wij winkelen",
-  "alternatives": [
-   "terwijl wij winkelen, spelen de kinderen in de speelhoek"
-  ],
-  "hint": "“terwijl” (while) sends the verb (winkelen) to the end."
  },
  {
   "id": "winkelen-91",
@@ -7992,174 +8325,13 @@ const EXERCISES = [
    "boodschappen doen is in ons gezin mijn taak"
   ],
   "hint": "Verb (is) stays 2nd; with “in ons gezin” first, the subject comes after the verb.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "ons": "ons@40",
    "gezin": "gezin@40",
    "boodschappen": "boodschappen@40",
    "taak": "taak@40"
-  }
- },
- {
-  "id": "winkelen-92",
-  "topic": "winkelen",
-  "parts": [
-   "stofzuigen en boodschappen doen",
-   "op zaterdag",
-   "moet",
-   "ik"
-  ],
-  "answer": "op zaterdag moet ik stofzuigen en boodschappen doen",
-  "alternatives": [
-   "ik moet op zaterdag stofzuigen en boodschappen doen"
-  ],
-  "hint": "Modal (moet) 2nd, infinitives at the end; time first → inversion.",
-  "senses": {
-   "op": "op@40",
-   "zaterdag": "zaterdag@40",
-   "boodschappen": "boodschappen@40"
-  }
- },
- {
-  "id": "winkelen-93",
-  "topic": "winkelen",
-  "parts": [
-   "voor het eten",
-   "zorg",
-   "vanavond",
-   "ik"
-  ],
-  "answer": "ik zorg vanavond voor het eten",
-  "alternatives": [
-   "vanavond zorg ik voor het eten"
-  ],
-  "hint": "“zorgen voor” = take care of; time (vanavond) comes before the “voor …” part.",
-  "senses": {
-   "zorg": "zorg@40",
-   "vanavond": "vanavond@40",
-   "voor": "voor@40",
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-94",
-  "topic": "winkelen",
-  "parts": [
-   "vergeten",
-   "mijn tas",
-   "ik heb",
-   "thuis"
-  ],
-  "answer": "ik heb mijn tas thuis vergeten",
-  "alternatives": [
-   "ik heb thuis mijn tas vergeten"
-  ],
-  "hint": "Perfect: heb 2nd, participle (vergeten) at the end.",
-  "senses": {
-   "vergeten": "vergeten@40"
-  }
- },
- {
-  "id": "winkelen-95",
-  "topic": "winkelen",
-  "parts": [
-   "om met honger",
-   "het is dom",
-   "boodschappen te doen"
-  ],
-  "answer": "het is dom om met honger boodschappen te doen",
-  "alternatives": [],
-  "hint": "“om … te + infinitive”: te doen at the very end.",
-  "senses": {
-   "boodschappen": "boodschappen@40",
-   "te": "te@40"
-  }
- },
- {
-  "id": "winkelen-96",
-  "topic": "winkelen",
-  "parts": [
-   "weg is",
-   "ik",
-   "opeens",
-   "zie",
-   "dat mijn tas"
-  ],
-  "answer": "opeens zie ik dat mijn tas weg is",
-  "alternatives": [
-   "ik zie opeens dat mijn tas weg is"
-  ],
-  "hint": "“opeens” first → inversion (zie ik); after “dat” the verb (is) goes to the end.",
-  "senses": {
-   "weg": "weg@40"
-  }
- },
- {
-  "id": "winkelen-97",
-  "topic": "winkelen",
-  "parts": [
-   "toevallig mijn leraar",
-   "heb",
-   "in de supermarkt ontmoet",
-   "ik",
-   "gisteren"
-  ],
-  "answer": "ik heb gisteren toevallig mijn leraar in de supermarkt ontmoet",
-  "alternatives": [
-   "gisteren heb ik toevallig mijn leraar in de supermarkt ontmoet",
-   "ik heb mijn leraar gisteren toevallig in de supermarkt ontmoet"
-  ],
-  "hint": "Perfect: heb 2nd, participle (ontmoet) at the end. Time (gisteren) early.",
-  "senses": {
-   "gisteren": "gisteren@40"
-  }
- },
- {
-  "id": "winkelen-98",
-  "topic": "winkelen",
-  "parts": [
-   "aan je vader",
-   "de groeten",
-   "doe"
-  ],
-  "answer": "doe de groeten aan je vader",
-  "alternatives": [],
-  "hint": "Imperative: verb (doe) first. “de groeten doen aan” = say hello to.",
-  "senses": {
-   "aan": "aan@40",
-   "je": "je@40"
-  }
- },
- {
-  "id": "winkelen-99",
-  "topic": "winkelen",
-  "parts": [
-   "voor mijn vriendin",
-   "hallo",
-   "een cadeau",
-   "ik zoek"
-  ],
-  "answer": "hallo, ik zoek een cadeau voor mijn vriendin",
-  "alternatives": [],
-  "hint": "Greeting first, then a normal sentence: subject + verb (ik zoek).",
-  "senses": {
-   "voor": "voor@40",
-   "vriendin": "vriendin@40"
-  }
- },
- {
-  "id": "winkelen-100",
-  "topic": "winkelen",
-  "parts": [
-   "een fijne dag",
-   "wenst",
-   "de verkoper",
-   "ons"
-  ],
-  "answer": "de verkoper wenst ons een fijne dag",
-  "alternatives": [],
-  "hint": "Verb 2nd; the person (ons) before the thing (een fijne dag).",
-  "senses": {
-   "ons": "ons@40"
   }
  },
  {
@@ -8176,406 +8348,14 @@ const EXERCISES = [
    "we doen voor ons vertrek nog snel boodschappen"
   ],
   "hint": "Time phrase first (voor ons vertrek) → inversion: doen we.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "voor": "voor@40",
    "ons": "ons@40",
    "nog": "nog@40",
    "snel": "snel@40",
    "boodschappen": "boodschappen@40"
-  }
- },
- {
-  "id": "winkelen-102",
-  "topic": "winkelen",
-  "parts": [
-   "vlak bij een grote supermarkt",
-   "ligt",
-   "onze nieuwe woning"
-  ],
-  "answer": "onze nieuwe woning ligt vlak bij een grote supermarkt",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd (ligt), then the place.",
-  "senses": {
-   "woning": "woning@40",
-   "vlak": "vlak@40",
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-103",
-  "topic": "winkelen",
-  "parts": [
-   "de nieuwe kledingzaak",
-   "open",
-   "gaat",
-   "wanneer"
-  ],
-  "answer": "wanneer gaat de nieuwe kledingzaak open?",
-  "alternatives": [],
-  "hint": "W-question with separable verb opengaan: wanneer + gaat + subject + open.",
-  "senses": {
-   "wanneer": "wanneer@40",
-   "kledingzaak": "kledingzaak@40",
-   "open": "open@40"
-  }
- },
- {
-  "id": "winkelen-104",
-  "topic": "winkelen",
-  "parts": [
-   "door",
-   "ook bij slecht weer",
-   "de markt",
-   "gaat"
-  ],
-  "answer": "de markt gaat ook bij slecht weer door",
-  "alternatives": [
-   "ook bij slecht weer gaat de markt door"
-  ],
-  "hint": "Separable verb doorgaan (to go ahead): gaat 2nd, door at the end.",
-  "senses": {
-   "bij": "bij@40",
-   "slecht": "slecht@40",
-   "weer": "weer@40",
-   "door": "door@40"
-  }
- },
- {
-  "id": "winkelen-105",
-  "topic": "winkelen",
-  "parts": [
-   "lekkere taart verkoopt",
-   "ik hoor",
-   "dat de nieuwe bakker"
-  ],
-  "answer": "ik hoor dat de nieuwe bakker lekkere taart verkoopt",
-  "alternatives": [],
-  "hint": "After “dat” the verb (verkoopt) goes to the end.",
-  "senses": {
-   "bakker": "bakker@40"
-  }
- },
- {
-  "id": "winkelen-106",
-  "topic": "winkelen",
-  "parts": [
-   "weinig zout",
-   "gebruiken",
-   "wij",
-   "bij het koken"
-  ],
-  "answer": "bij het koken gebruiken wij weinig zout",
-  "alternatives": [
-   "wij gebruiken bij het koken weinig zout"
-  ],
-  "hint": "Phrase first (bij het koken) → inversion: gebruiken wij.",
-  "senses": {
-   "bij": "bij@40",
-   "koken": "koken@40",
-   "weinig": "weinig@40"
-  }
- },
- {
-  "id": "winkelen-107",
-  "topic": "winkelen",
-  "parts": [
-   "een kilo appels",
-   "kost",
-   "op de markt",
-   "hoeveel"
-  ],
-  "answer": "hoeveel kost een kilo appels op de markt?",
-  "alternatives": [],
-  "hint": "W-question: hoeveel + verb + subject.",
-  "senses": {
-   "hoeveel": "hoeveel@40",
-   "op": "op@40"
-  }
- },
- {
-  "id": "winkelen-108",
-  "topic": "winkelen",
-  "parts": [
-   "uit Spanje",
-   "deze verse vruchten",
-   "komen"
-  ],
-  "answer": "deze verse vruchten komen uit Spanje",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, then where from.",
-  "senses": {
-   "deze": "deze@40",
-   "uit": "uit@40"
-  }
- },
- {
-  "id": "winkelen-109",
-  "topic": "winkelen",
-  "parts": [
-   "leidt",
-   "in het buurthuis",
-   "een bekende kok",
-   "de kookcursus"
-  ],
-  "answer": "een bekende kok leidt de kookcursus in het buurthuis",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd (leidt), object, then place."
- },
- {
-  "id": "winkelen-110",
-  "topic": "winkelen",
-  "parts": [
-   "weg",
-   "we gaan pas",
-   "als alles",
-   "klaar is"
-  ],
-  "answer": "we gaan pas weg als alles klaar is",
-  "alternatives": [],
-  "hint": "Separable verb weggaan: gaan … weg. After “als” the verb (is) goes to the end.",
-  "senses": {
-   "pas": "pas@40",
-   "weg": "weg@40",
-   "als": "als@40"
-  }
- },
- {
-  "id": "winkelen-111",
-  "topic": "winkelen",
-  "parts": [
-   "inmiddels",
-   "ik heb",
-   "teruggebracht",
-   "de jas"
-  ],
-  "answer": "ik heb de jas inmiddels teruggebracht",
-  "alternatives": [
-   "ik heb inmiddels de jas teruggebracht"
-  ],
-  "hint": "Perfect of a separable verb: the participle is one word (teruggebracht) at the end."
- },
- {
-  "id": "winkelen-112",
-  "topic": "winkelen",
-  "parts": [
-   "gauw klaar",
-   "het eten is",
-   "kinderen"
-  ],
-  "answer": "kinderen, het eten is gauw klaar",
-  "alternatives": [],
-  "hint": "Subject (het eten), verb 2nd (is), then the rest.",
-  "senses": {
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-113",
-  "topic": "winkelen",
-  "parts": [
-   "altijd",
-   "mijn vlees",
-   "ik koop",
-   "bij mijn vaste slager"
-  ],
-  "answer": "ik koop mijn vlees altijd bij mijn vaste slager",
-  "alternatives": [],
-  "hint": "Verb 2nd; “altijd” after the object, the place at the end.",
-  "senses": {
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-114",
-  "topic": "winkelen",
-  "parts": [
-   "ruim en licht",
-   "is",
-   "de nieuwe supermarkt"
-  ],
-  "answer": "de nieuwe supermarkt is ruim en licht",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, then adjectives."
- },
- {
-  "id": "winkelen-115",
-  "topic": "winkelen",
-  "parts": [
-   "er knap",
-   "uit",
-   "je ziet",
-   "in dat pak"
-  ],
-  "answer": "je ziet er knap uit in dat pak",
-  "alternatives": [
-   "je ziet er in dat pak knap uit"
-  ],
-  "hint": "Separable verb eruitzien: ziet … er … uit.",
-  "senses": {
-   "je": "je@40",
-   "ziet": "ziet@40",
-   "uit": "uit@40",
-   "pak": "pak@40"
-  }
- },
- {
-  "id": "winkelen-116",
-  "topic": "winkelen",
-  "parts": [
-   "om meer te betalen",
-   "bereid",
-   "ben jij",
-   "voor biologisch vlees"
-  ],
-  "answer": "ben jij bereid om meer te betalen voor biologisch vlees?",
-  "alternatives": [
-   "ben jij bereid om meer voor biologisch vlees te betalen?"
-  ],
-  "hint": "Yes/no question: verb first. “bereid zijn om … te + infinitive”.",
-  "senses": {
-   "meer": "meer@40",
-   "te": "te@40",
-   "voor": "voor@40"
-  }
- },
- {
-  "id": "winkelen-117",
-  "topic": "winkelen",
-  "parts": [
-   "eten wij gezond",
-   "in het algemeen",
-   "maar soms",
-   "halen we patat"
-  ],
-  "answer": "in het algemeen eten wij gezond, maar soms halen we patat",
-  "alternatives": [],
-  "hint": "Time/frequency phrase first → inversion in both parts: eten wij, soms halen we.",
-  "senses": {
-   "eten": "eten@40",
-   "halen": "halen@40"
-  }
- },
- {
-  "id": "winkelen-118",
-  "topic": "winkelen",
-  "parts": [
-   "boodschappen",
-   "bij de supermarkt om de hoek",
-   "ik doe",
-   "dagelijks"
-  ],
-  "answer": "ik doe dagelijks boodschappen bij de supermarkt om de hoek",
-  "alternatives": [],
-  "hint": "TMP: time (dagelijks) before place (bij de supermarkt).",
-  "senses": {
-   "boodschappen": "boodschappen@40",
-   "bij": "bij@40"
-  }
- },
- {
-  "id": "winkelen-119",
-  "topic": "winkelen",
-  "parts": [
-   "in een restaurant",
-   "een enkele keer",
-   "eten",
-   "we"
-  ],
-  "answer": "een enkele keer eten we in een restaurant",
-  "alternatives": [
-   "we eten een enkele keer in een restaurant"
-  ],
-  "hint": "Time phrase first (een enkele keer) → inversion: eten we.",
-  "senses": {
-   "eten": "eten@40"
-  }
- },
- {
-  "id": "winkelen-120",
-  "topic": "winkelen",
-  "parts": [
-   "komt",
-   "uit de tuin",
-   "de helft van onze groente"
-  ],
-  "answer": "de helft van onze groente komt uit de tuin",
-  "alternatives": [],
-  "hint": "“de helft van …” is the subject; verb 2nd.",
-  "senses": {
-   "uit": "uit@40"
-  }
- },
- {
-  "id": "winkelen-121",
-  "topic": "winkelen",
-  "parts": [
-   "slechte gevolgen",
-   "heeft",
-   "te veel suiker eten",
-   "voor je tanden"
-  ],
-  "answer": "te veel suiker eten heeft slechte gevolgen voor je tanden",
-  "alternatives": [],
-  "hint": "“te veel suiker eten” is the subject; the verb (heeft) comes right after it.",
-  "senses": {
-   "te": "te@40",
-   "veel": "veel@40",
-   "eten": "eten@40",
-   "voor": "voor@40",
-   "je": "je@40"
-  }
- },
- {
-  "id": "winkelen-122",
-  "topic": "winkelen",
-  "parts": [
-   "dit gerecht",
-   "makkelijk of moeilijk",
-   "is",
-   "om te maken"
-  ],
-  "answer": "is dit gerecht makkelijk of moeilijk om te maken?",
-  "alternatives": [],
-  "hint": "Yes/no question: verb first. “om te maken” at the end.",
-  "senses": {
-   "dit": "dit@40",
-   "of": "of@40",
-   "te": "te@40"
-  }
- },
- {
-  "id": "winkelen-123",
-  "topic": "winkelen",
-  "parts": [
-   "een nieuwe jas",
-   "koop",
-   "ik",
-   "morgen",
-   "misschien"
-  ],
-  "answer": "misschien koop ik morgen een nieuwe jas",
-  "alternatives": [
-   "ik koop morgen misschien een nieuwe jas",
-   "ik koop misschien morgen een nieuwe jas"
-  ],
-  "hint": "“misschien” first → inversion: koop ik.",
-  "senses": {
-   "morgen": "morgen@40"
-  }
- },
- {
-  "id": "winkelen-124",
-  "topic": "winkelen",
-  "parts": [
-   "steeds verder omhoog",
-   "gaan",
-   "de prijzen in de supermarkt"
-  ],
-  "answer": "de prijzen in de supermarkt gaan steeds verder omhoog",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd (gaan), “omhoog” at the end.",
-  "senses": {
-   "verder": "verder@40"
   }
  },
  {
@@ -8592,6 +8372,8 @@ const EXERCISES = [
    "koken is voor mijn oma een grote vreugde"
   ],
   "hint": "Phrase first (voor mijn oma) → inversion: is koken.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "voor": "voor@40",
    "koken": "koken@40"
@@ -8611,27 +8393,112 @@ const EXERCISES = [
    "de kinderen hebben op de camping veel vrijheid"
   ],
   "hint": "Place first → inversion: hebben de kinderen.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "op": "op@40",
    "veel": "veel@40"
   }
  },
  {
-  "id": "winkelen-127",
+  "id": "winkelen-05",
   "topic": "winkelen",
   "parts": [
-   "gezond eten",
-   "in theorie",
-   "makkelijk",
-   "is"
+   "ik",
+   "praktische kleding in een rustige stijl",
+   "op kantoor",
+   "draag"
   ],
-  "answer": "in theorie is gezond eten makkelijk",
+  "answer": "op kantoor draag ik praktische kleding in een rustige stijl",
   "alternatives": [
-   "gezond eten is in theorie makkelijk"
+   "ik draag op kantoor praktische kleding in een rustige stijl"
   ],
-  "hint": "Verb (is) 2nd; with “in theorie” first, the subject follows the verb.",
+  "hint": "Place phrase first → inversion: verb (draag) 2nd, subject (ik) 3rd.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
-   "eten": "eten@40"
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-30",
+  "topic": "winkelen",
+  "parts": [
+   "nog aarde",
+   "zit",
+   "er",
+   "aan de aardappels van de markt"
+  ],
+  "answer": "er zit nog aarde aan de aardappels van de markt",
+  "alternatives": [
+   "aan de aardappels van de markt zit er nog aarde"
+  ],
+  "hint": "“er zit …” = there is: er first, verb 2nd.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "nog": "nog@40",
+   "aan": "aan@40"
+  }
+ },
+ {
+  "id": "winkelen-61",
+  "topic": "winkelen",
+  "parts": [
+   "recht op uw geld terug",
+   "u",
+   "met de bon",
+   "heeft"
+  ],
+  "answer": "met de bon heeft u recht op uw geld terug",
+  "alternatives": [
+   "u heeft met de bon recht op uw geld terug"
+  ],
+  "hint": "Starting with “met de bon” → inversion: heeft u.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@40",
+   "uw": "uw@40"
+  }
+ },
+ {
+  "id": "winkelen-68",
+  "topic": "winkelen",
+  "parts": [
+   "een flinke korting",
+   "krijg je",
+   "in de uitverkoop",
+   "op kleding"
+  ],
+  "answer": "in de uitverkoop krijg je een flinke korting op kleding",
+  "alternatives": [],
+  "hint": "Phrase first (in de uitverkoop) → inversion: krijg je (no -t with je after the verb).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "je": "je@40",
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-83",
+  "topic": "winkelen",
+  "parts": [
+   "vroeg naar bed",
+   "na een lange dag winkelen",
+   "ga",
+   "ik"
+  ],
+  "answer": "na een lange dag winkelen ga ik vroeg naar bed",
+  "alternatives": [
+   "ik ga na een lange dag winkelen vroeg naar bed"
+  ],
+  "hint": "Time first → inversion: ga ik. TMP: time (vroeg) before place (naar bed).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "vroeg": "vroeg@40"
   }
  },
  {
@@ -8648,6 +8515,8 @@ const EXERCISES = [
    "de kinderen doen op school een project over gezond eten"
   ],
   "hint": "Place first → inversion: doen de kinderen.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "op": "op@40",
    "over": "over@40",
@@ -8668,71 +8537,294 @@ const EXERCISES = [
    "de jassen staan op de website in de categorie winterkleding"
   ],
   "hint": "Phrase first → inversion: staan de jassen.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "op": "op@40",
    "staan": "staan@40"
   }
  },
  {
-  "id": "winkelen-130",
+  "id": "winkelen-19",
   "topic": "winkelen",
   "parts": [
+   "een belangrijke traditie",
    "is",
-   "erg vriendelijk",
-   "de jongeman achter de kassa"
+   "samen eten",
+   "in onze cultuur"
   ],
-  "answer": "de jongeman achter de kassa is erg vriendelijk",
-  "alternatives": [],
-  "hint": "The whole phrase “de jongeman achter de kassa” is the subject; verb (is) follows."
- },
- {
-  "id": "winkelen-131",
-  "topic": "winkelen",
-  "parts": [
-   "komt",
-   "uit Marokko",
-   "de schrijver van dit kookboek"
+  "answer": "in onze cultuur is samen eten een belangrijke traditie",
+  "alternatives": [
+   "samen eten is in onze cultuur een belangrijke traditie"
   ],
-  "answer": "de schrijver van dit kookboek komt uit Marokko",
-  "alternatives": [],
-  "hint": "Long subject, then the verb in 2nd position.",
+  "hint": "Verb (is) in 2nd place; “samen eten” is the subject and comes after the verb when you start with “in onze cultuur”.",
+  "grammar": "inversie",
+  "level": 4,
   "senses": {
-   "dit": "dit@40",
-   "uit": "uit@40"
+   "eten": "eten@40"
   }
  },
  {
-  "id": "winkelen-132",
+  "id": "winkelen-18",
   "topic": "winkelen",
   "parts": [
-   "voor de soep",
-   "een blik tomaten",
-   "koop",
-   "ik"
+   "veel vlees en weinig groente",
+   "in de westerse samenleving",
+   "mensen",
+   "eten"
   ],
-  "answer": "ik koop een blik tomaten voor de soep",
-  "alternatives": [],
-  "hint": "Subject, verb 2nd, object, then purpose (voor de soep).",
+  "answer": "in de westerse samenleving eten mensen veel vlees en weinig groente",
+  "alternatives": [
+   "mensen eten in de westerse samenleving veel vlees en weinig groente"
+  ],
+  "hint": "Place phrase first → inversion: eten mensen.",
+  "grammar": "inversie",
+  "level": 4,
   "senses": {
-   "voor": "voor@40"
+   "eten": "eten@40",
+   "veel": "veel@40",
+   "weinig": "weinig@40"
   }
  },
  {
-  "id": "winkelen-133",
+  "id": "winkelen-46",
   "topic": "winkelen",
   "parts": [
-   "in verschillende kleuren",
-   "verkoopt",
-   "jassen",
-   "deze kledingzaak"
+   "jullie",
+   "bij het eten",
+   "drinken",
+   "wat"
   ],
-  "answer": "deze kledingzaak verkoopt jassen in verschillende kleuren",
+  "answer": "wat drinken jullie bij het eten?",
   "alternatives": [],
-  "hint": "Subject, verb 2nd (verkoopt), then object.",
+  "hint": "W-question: question word, verb, subject.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "wat": "wat@40",
+   "bij": "bij@40",
+   "eten": "eten@40"
+  }
+ },
+ {
+  "id": "winkelen-98",
+  "topic": "winkelen",
+  "parts": [
+   "aan je vader",
+   "de groeten",
+   "doe"
+  ],
+  "answer": "doe de groeten aan je vader",
+  "alternatives": [],
+  "hint": "Imperative: verb (doe) first. “de groeten doen aan” = say hello to.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "aan": "aan@40",
+   "je": "je@40"
+  }
+ },
+ {
+  "id": "winkelen-38",
+  "topic": "winkelen",
+  "parts": [
+   "al klaar",
+   "je",
+   "met de soep",
+   "ben"
+  ],
+  "answer": "ben je al klaar met de soep?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first, then subject.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "je": "je@40",
+   "al": "al@40"
+  }
+ },
+ {
+  "id": "winkelen-44",
+  "topic": "winkelen",
+  "parts": [
+   "ook zo bitter",
+   "deze koffie",
+   "jij",
+   "vind"
+  ],
+  "answer": "vind jij deze koffie ook zo bitter?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb (vind) first, subject (jij) second.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40"
+  }
+ },
+ {
+  "id": "winkelen-31",
+  "topic": "winkelen",
+  "parts": [
+   "op een vochtige plek",
+   "het brood",
+   "bewaar",
+   "niet"
+  ],
+  "answer": "bewaar het brood niet op een vochtige plek",
+  "alternatives": [],
+  "hint": "Imperative: the verb comes first. “niet” comes after the object and before the place.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-74",
+  "topic": "winkelen",
+  "parts": [
+   "van een gezond ontbijt",
+   "eens",
+   "een voorbeeld",
+   "geef"
+  ],
+  "answer": "geef eens een voorbeeld van een gezond ontbijt",
+  "alternatives": [],
+  "hint": "Imperative: verb first. “eens” makes the request softer.",
+  "grammar": "vraag",
+  "level": 2
+ },
+ {
+  "id": "winkelen-107",
+  "topic": "winkelen",
+  "parts": [
+   "een kilo appels",
+   "kost",
+   "op de markt",
+   "hoeveel"
+  ],
+  "answer": "hoeveel kost een kilo appels op de markt?",
+  "alternatives": [],
+  "hint": "W-question: hoeveel + verb + subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "hoeveel": "hoeveel@40",
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-08",
+  "topic": "winkelen",
+  "parts": [
+   "deze schoenen",
+   "u",
+   "ook in een andere maat",
+   "heeft"
+  ],
+  "answer": "heeft u deze schoenen ook in een andere maat?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb comes first, then the subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "deze": "deze@40"
+  }
+ },
+ {
+  "id": "winkelen-75",
+  "topic": "winkelen",
+  "parts": [
+   "deze Nederlandse uitdrukking",
+   "ken",
+   "over eten",
+   "jij"
+  ],
+  "answer": "ken jij deze Nederlandse uitdrukking over eten?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first. With jij after the verb, the -t drops: ken jij.",
+  "grammar": "vraag",
+  "level": 3,
   "senses": {
    "deze": "deze@40",
-   "kledingzaak": "kledingzaak@40",
-   "verschillende": "verschillende@40"
+   "over": "over@40",
+   "eten": "eten@40"
+  }
+ },
+ {
+  "id": "winkelen-47",
+  "topic": "winkelen",
+  "parts": [
+   "over dit nieuwe restaurant",
+   "jouw oordeel",
+   "is",
+   "wat"
+  ],
+  "answer": "wat is jouw oordeel over dit nieuwe restaurant?",
+  "alternatives": [],
+  "hint": "W-question: question word (wat), then verb (is), then subject.",
+  "grammar": "vraag",
+  "level": 3,
+  "senses": {
+   "wat": "wat@40",
+   "jouw": "jouw@40",
+   "over": "over@40",
+   "dit": "dit@40"
+  }
+ },
+ {
+  "id": "winkelen-54",
+  "topic": "winkelen",
+  "parts": [
+   "oversteken",
+   "bij het stoplicht",
+   "moet",
+   "u"
+  ],
+  "answer": "u moet bij het stoplicht oversteken",
+  "alternatives": [
+   "bij het stoplicht moet u oversteken"
+  ],
+  "hint": "Modal verb (moet) 2nd, infinitive (oversteken) at the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-77",
+  "topic": "winkelen",
+  "parts": [
+   "een verzoek",
+   "mag",
+   "doen",
+   "ik u"
+  ],
+  "answer": "mag ik u een verzoek doen?",
+  "alternatives": [],
+  "hint": "Question: modal (mag) first, infinitive (doen) at the end.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "winkelen-55",
+  "topic": "winkelen",
+  "parts": [
+   "uitstappen",
+   "u",
+   "bij de volgende halte",
+   "moet"
+  ],
+  "answer": "u moet bij de volgende halte uitstappen",
+  "alternatives": [
+   "bij de volgende halte moet u uitstappen"
+  ],
+  "hint": "Modal + infinitive: a separable verb stays one word at the end (uitstappen).",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "bij": "bij@40"
   }
  },
  {
@@ -8749,9 +8841,71 @@ const EXERCISES = [
    "ik ga even bij de bakker een boodschap doen"
   ],
   "hint": "gaan + infinitive: ga 2nd, the infinitive (doen) at the end.",
+  "grammar": "modaal",
+  "level": 2,
   "senses": {
    "bij": "bij@40",
    "bakker": "bakker@40"
+  }
+ },
+ {
+  "id": "winkelen-14",
+  "topic": "winkelen",
+  "parts": [
+   "pinnen of contant betalen",
+   "wilt",
+   "meneer",
+   "u"
+  ],
+  "answer": "meneer, wilt u pinnen of contant betalen?",
+  "alternatives": [
+   "wilt u pinnen of contant betalen, meneer?"
+  ],
+  "hint": "Question: modal verb (wilt) before the subject, infinitives (pinnen, betalen) at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "meneer": "meneer@40",
+   "of": "of@40"
+  }
+ },
+ {
+  "id": "winkelen-89",
+  "topic": "winkelen",
+  "parts": [
+   "één ding kiezen",
+   "mag",
+   "iedereen",
+   "in de speelgoedwinkel"
+  ],
+  "answer": "in de speelgoedwinkel mag iedereen één ding kiezen",
+  "alternatives": [
+   "iedereen mag in de speelgoedwinkel één ding kiezen"
+  ],
+  "hint": "Modal (mag) 2nd, infinitive (kiezen) at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "winkelen-92",
+  "topic": "winkelen",
+  "parts": [
+   "stofzuigen en boodschappen doen",
+   "op zaterdag",
+   "moet",
+   "ik"
+  ],
+  "answer": "op zaterdag moet ik stofzuigen en boodschappen doen",
+  "alternatives": [
+   "ik moet op zaterdag stofzuigen en boodschappen doen"
+  ],
+  "hint": "Modal (moet) 2nd, infinitives at the end; time first → inversion.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "op": "op@40",
+   "zaterdag": "zaterdag@40",
+   "boodschappen": "boodschappen@40"
   }
  },
  {
@@ -8768,10 +8922,2814 @@ const EXERCISES = [
    "rauw vlees kan een gevaar voor je gezondheid zijn"
   ],
   "hint": "Modal (kan) 2nd, infinitive (zijn) near the end.",
+  "grammar": "modaal",
+  "level": 3,
   "senses": {
    "zijn": "zijn@40",
    "voor": "voor@40",
    "je": "je@40"
+  }
+ },
+ {
+  "id": "winkelen-41",
+  "topic": "winkelen",
+  "parts": [
+   "zacht laten koken",
+   "je",
+   "nog vijf minuten",
+   "moet",
+   "de soep"
+  ],
+  "answer": "je moet de soep nog vijf minuten zacht laten koken",
+  "alternatives": [],
+  "hint": "Modal (moet) 2nd; “laten + infinitive” goes to the end: … laten koken.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "je": "je@40",
+   "nog": "nog@40",
+   "vijf": "vijf@40",
+   "koken": "koken@40"
+  }
+ },
+ {
+  "id": "winkelen-66",
+  "topic": "winkelen",
+  "parts": [
+   "mag",
+   "je",
+   "volgens de regeling",
+   "de schoenen",
+   "binnen dertig dagen ruilen"
+  ],
+  "answer": "volgens de regeling mag je de schoenen binnen dertig dagen ruilen",
+  "alternatives": [
+   "je mag de schoenen volgens de regeling binnen dertig dagen ruilen",
+   "je mag volgens de regeling de schoenen binnen dertig dagen ruilen"
+  ],
+  "hint": "Modal (mag) 2nd, infinitive (ruilen) at the end; starting with “volgens de regeling” → mag je.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "je": "je@40",
+   "binnen": "binnen@40",
+   "ruilen": "ruilen@40"
+  }
+ },
+ {
+  "id": "winkelen-35",
+  "topic": "winkelen",
+  "parts": [
+   "alles",
+   "de docent",
+   "duidelijk uit",
+   "legt"
+  ],
+  "answer": "de docent legt alles duidelijk uit",
+  "alternatives": [],
+  "hint": "Separable verb uitleggen: “legt” in 2nd place, “uit” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "docent": "docent@40",
+   "legt": "legt@40",
+   "uit": "uit@40"
+  }
+ },
+ {
+  "id": "winkelen-43",
+  "topic": "winkelen",
+  "parts": [
+   "maak",
+   "ik",
+   "eerst de saus",
+   "af"
+  ],
+  "answer": "ik maak eerst de saus af",
+  "alternatives": [
+   "eerst maak ik de saus af"
+  ],
+  "hint": "Separable verb afmaken: “maak” 2nd, “af” at the very end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "maak": "maak@40",
+   "af": "af@40"
+  }
+ },
+ {
+  "id": "winkelen-58",
+  "topic": "winkelen",
+  "parts": [
+   "het pakket",
+   "op",
+   "haal",
+   "ik",
+   "straks"
+  ],
+  "answer": "ik haal straks het pakket op",
+  "alternatives": [
+   "straks haal ik het pakket op",
+   "ik haal het pakket straks op"
+  ],
+  "hint": "Separable verb ophalen: “haal” 2nd, “op” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "haal": "haal@40",
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-56",
+  "topic": "winkelen",
+  "parts": [
+   "mee naar de markt",
+   "jij",
+   "kom",
+   "morgen"
+  ],
+  "answer": "kom jij morgen mee naar de markt?",
+  "alternatives": [],
+  "hint": "Question with separable verb meekomen: kom … mee.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "morgen": "morgen@40",
+   "mee": "mee@40"
+  }
+ },
+ {
+  "id": "winkelen-59",
+  "topic": "winkelen",
+  "parts": [
+   "kom",
+   "ik",
+   "morgen",
+   "met de bon",
+   "terug"
+  ],
+  "answer": "ik kom morgen terug met de bon",
+  "alternatives": [
+   "morgen kom ik terug met de bon",
+   "ik kom morgen met de bon terug",
+   "morgen kom ik met de bon terug"
+  ],
+  "hint": "Separable verb terugkomen: “kom” 2nd, “terug” usually at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "morgen": "morgen@40"
+  }
+ },
+ {
+  "id": "winkelen-02",
+  "topic": "winkelen",
+  "parts": [
+   "er nogal oud",
+   "uit",
+   "ziet",
+   "mijn gele jas"
+  ],
+  "answer": "mijn gele jas ziet er nogal oud uit",
+  "alternatives": [],
+  "hint": "Separable verb eruitzien: “ziet” is in 2nd place, “er … uit” goes around the description, “uit” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "ziet": "ziet@40",
+   "uit": "uit@40"
+  }
+ },
+ {
+  "id": "winkelen-12",
+  "topic": "winkelen",
+  "parts": [
+   "gaat",
+   "automatisch open",
+   "de deur van de supermarkt"
+  ],
+  "answer": "de deur van de supermarkt gaat automatisch open",
+  "alternatives": [],
+  "hint": "Separable verb opengaan: “gaat” in 2nd place, the particle “open” at the end.",
+  "grammar": "scheidbaar",
+  "level": 2,
+  "senses": {
+   "open": "open@40"
+  }
+ },
+ {
+  "id": "winkelen-103",
+  "topic": "winkelen",
+  "parts": [
+   "de nieuwe kledingzaak",
+   "open",
+   "gaat",
+   "wanneer"
+  ],
+  "answer": "wanneer gaat de nieuwe kledingzaak open?",
+  "alternatives": [],
+  "hint": "W-question with separable verb opengaan: wanneer + gaat + subject + open.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "wanneer": "wanneer@40",
+   "kledingzaak": "kledingzaak@40",
+   "open": "open@40"
+  }
+ },
+ {
+  "id": "winkelen-104",
+  "topic": "winkelen",
+  "parts": [
+   "door",
+   "ook bij slecht weer",
+   "de markt",
+   "gaat"
+  ],
+  "answer": "de markt gaat ook bij slecht weer door",
+  "alternatives": [
+   "ook bij slecht weer gaat de markt door"
+  ],
+  "hint": "Separable verb doorgaan (to go ahead): gaat 2nd, door at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "bij": "bij@40",
+   "slecht": "slecht@40",
+   "weer": "weer@40",
+   "door": "door@40"
+  }
+ },
+ {
+  "id": "winkelen-115",
+  "topic": "winkelen",
+  "parts": [
+   "er knap",
+   "uit",
+   "je ziet",
+   "in dat pak"
+  ],
+  "answer": "je ziet er knap uit in dat pak",
+  "alternatives": [
+   "je ziet er in dat pak knap uit"
+  ],
+  "hint": "Separable verb eruitzien: ziet … er … uit.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "je": "je@40",
+   "ziet": "ziet@40",
+   "uit": "uit@40",
+   "pak": "pak@40"
+  }
+ },
+ {
+  "id": "winkelen-57",
+  "topic": "winkelen",
+  "parts": [
+   "aan",
+   "komen",
+   "mijn nieuwe schoenen",
+   "morgen met de post"
+  ],
+  "answer": "morgen komen mijn nieuwe schoenen met de post aan",
+  "alternatives": [
+   "mijn nieuwe schoenen komen morgen met de post aan"
+  ],
+  "hint": "Separable verb aankomen: “komen” 2nd, “aan” at the end; time first → inversion.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "morgen": "morgen@40",
+   "aan": "aan@40"
+  }
+ },
+ {
+  "id": "winkelen-124",
+  "topic": "winkelen",
+  "parts": [
+   "steeds verder omhoog",
+   "gaan",
+   "de prijzen in de supermarkt"
+  ],
+  "answer": "de prijzen in de supermarkt gaan steeds verder omhoog",
+  "alternatives": [],
+  "hint": "Subject, verb 2nd (gaan), “omhoog” at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "verder": "verder@40"
+  }
+ },
+ {
+  "id": "winkelen-94",
+  "topic": "winkelen",
+  "parts": [
+   "vergeten",
+   "mijn tas",
+   "ik heb",
+   "thuis"
+  ],
+  "answer": "ik heb mijn tas thuis vergeten",
+  "alternatives": [
+   "ik heb thuis mijn tas vergeten"
+  ],
+  "hint": "Perfect: heb 2nd, participle (vergeten) at the end.",
+  "grammar": "perfectum",
+  "level": 2,
+  "senses": {
+   "vergeten": "vergeten@40"
+  }
+ },
+ {
+  "id": "winkelen-111",
+  "topic": "winkelen",
+  "parts": [
+   "inmiddels",
+   "ik heb",
+   "teruggebracht",
+   "de jas"
+  ],
+  "answer": "ik heb de jas inmiddels teruggebracht",
+  "alternatives": [
+   "ik heb inmiddels de jas teruggebracht"
+  ],
+  "hint": "Perfect of a separable verb: the participle is one word (teruggebracht) at the end.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "winkelen-64",
+  "topic": "winkelen",
+  "parts": [
+   "heeft",
+   "iemand",
+   "gisteren",
+   "bij de supermarkt",
+   "mijn fiets gestolen"
+  ],
+  "answer": "iemand heeft gisteren bij de supermarkt mijn fiets gestolen",
+  "alternatives": [
+   "gisteren heeft iemand bij de supermarkt mijn fiets gestolen",
+   "iemand heeft gisteren mijn fiets bij de supermarkt gestolen"
+  ],
+  "hint": "Perfect tense: heeft in 2nd place, participle (gestolen) at the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "gisteren": "gisteren@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-82",
+  "topic": "winkelen",
+  "parts": [
+   "een nieuw bureau",
+   "voor mijn kamer",
+   "gekocht",
+   "heb",
+   "ik"
+  ],
+  "answer": "voor mijn kamer heb ik een nieuw bureau gekocht",
+  "alternatives": [
+   "ik heb voor mijn kamer een nieuw bureau gekocht",
+   "ik heb een nieuw bureau voor mijn kamer gekocht"
+  ],
+  "hint": "Perfect: heb 2nd, participle (gekocht) at the end; a phrase first causes inversion.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "voor": "voor@40"
+  }
+ },
+ {
+  "id": "winkelen-97",
+  "topic": "winkelen",
+  "parts": [
+   "toevallig mijn leraar",
+   "heb",
+   "in de supermarkt ontmoet",
+   "ik",
+   "gisteren"
+  ],
+  "answer": "ik heb gisteren toevallig mijn leraar in de supermarkt ontmoet",
+  "alternatives": [
+   "gisteren heb ik toevallig mijn leraar in de supermarkt ontmoet",
+   "ik heb mijn leraar gisteren toevallig in de supermarkt ontmoet"
+  ],
+  "hint": "Perfect: heb 2nd, participle (ontmoet) at the end. Time (gisteren) early.",
+  "grammar": "perfectum",
+  "level": 4,
+  "senses": {
+   "gisteren": "gisteren@40"
+  }
+ },
+ {
+  "id": "winkelen-37",
+  "topic": "winkelen",
+  "parts": [
+   "en daarna",
+   "iedereen kookt eerst",
+   "eten we samen",
+   "individueel"
+  ],
+  "answer": "iedereen kookt eerst individueel en daarna eten we samen",
+  "alternatives": [],
+  "hint": "After “daarna” (a time word) the verb comes before the subject: daarna eten we.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "eten": "eten@40"
+  }
+ },
+ {
+  "id": "winkelen-49",
+  "topic": "winkelen",
+  "parts": [
+   "gegeten",
+   "ik heb honger",
+   "want ik heb",
+   "nog niet"
+  ],
+  "answer": "ik heb honger, want ik heb nog niet gegeten",
+  "alternatives": [],
+  "hint": "“want” keeps normal order; in the perfect tense the participle (gegeten) goes to the end.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "nog": "nog@40"
+  }
+ },
+ {
+  "id": "winkelen-42",
+  "topic": "winkelen",
+  "parts": [
+   "opnieuw",
+   "hem",
+   "dus ik maak",
+   "de soep is te zout"
+  ],
+  "answer": "de soep is te zout, dus ik maak hem opnieuw",
+  "alternatives": [
+   "de soep is te zout, dus maak ik hem opnieuw"
+  ],
+  "hint": "After “dus” you may use normal order (dus ik maak) or inversion (dus maak ik).",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "te": "te@40",
+   "dus": "dus@40",
+   "maak": "maak@40"
+  }
+ },
+ {
+  "id": "winkelen-69",
+  "topic": "winkelen",
+  "parts": [
+   "maar hij is",
+   "tenminste warm",
+   "de jas is",
+   "nogal duur"
+  ],
+  "answer": "de jas is nogal duur, maar hij is tenminste warm",
+  "alternatives": [],
+  "hint": "“maar” joins two main clauses; both have the verb in 2nd place.",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "winkelen-51",
+  "topic": "winkelen",
+  "parts": [
+   "loop",
+   "ik",
+   "op zaterdag",
+   "naar de markt",
+   "want die is dichtbij"
+  ],
+  "answer": "ik loop op zaterdag naar de markt, want die is dichtbij",
+  "alternatives": [
+   "op zaterdag loop ik naar de markt, want die is dichtbij"
+  ],
+  "hint": "TMP: time (op zaterdag) before place (naar de markt).",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "op": "op@40",
+   "zaterdag": "zaterdag@40",
+   "die": "die@40"
+  }
+ },
+ {
+  "id": "winkelen-07",
+  "topic": "winkelen",
+  "parts": [
+   "te klein bij de borst",
+   "de jas past niet",
+   "hij is",
+   "want"
+  ],
+  "answer": "de jas past niet, want hij is te klein bij de borst",
+  "alternatives": [],
+  "hint": "“want” (because) does not change word order: subject + verb follow normally (hij is).",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "te": "te@40",
+   "bij": "bij@40"
+  }
+ },
+ {
+  "id": "winkelen-50",
+  "topic": "winkelen",
+  "parts": [
+   "want het brood",
+   "naar de bakker",
+   "is bijna op",
+   "ik ga straks"
+  ],
+  "answer": "ik ga straks naar de bakker, want het brood is bijna op",
+  "alternatives": [
+   "straks ga ik naar de bakker, want het brood is bijna op"
+  ],
+  "hint": "TMP: time (straks) before place (naar de bakker). After “want” the order stays normal.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "bakker": "bakker@40",
+   "op": "op@40"
+  }
+ },
+ {
+  "id": "winkelen-52",
+  "topic": "winkelen",
+  "parts": [
+   "maar ik ga toch",
+   "met de fiets",
+   "niet ver",
+   "de supermarkt is"
+  ],
+  "answer": "de supermarkt is niet ver, maar ik ga toch met de fiets",
+  "alternatives": [],
+  "hint": "“maar” does not change word order: ik ga …",
+  "grammar": "nevenschikkend",
+  "level": 3
+ },
+ {
+  "id": "winkelen-79",
+  "topic": "winkelen",
+  "parts": [
+   "want dit is",
+   "je hebt geluk",
+   "in jouw maat",
+   "de laatste jas"
+  ],
+  "answer": "je hebt geluk, want dit is de laatste jas in jouw maat",
+  "alternatives": [],
+  "hint": "“want” keeps normal main-clause order: dit is …",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "je": "je@40",
+   "dit": "dit@40",
+   "jouw": "jouw@40"
+  }
+ },
+ {
+  "id": "winkelen-117",
+  "topic": "winkelen",
+  "parts": [
+   "eten wij gezond",
+   "in het algemeen",
+   "maar soms",
+   "halen we patat"
+  ],
+  "answer": "in het algemeen eten wij gezond, maar soms halen we patat",
+  "alternatives": [],
+  "hint": "Time/frequency phrase first → inversion in both parts: eten wij, soms halen we.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "eten": "eten@40",
+   "halen": "halen@40"
+  }
+ },
+ {
+  "id": "winkelen-62",
+  "topic": "winkelen",
+  "parts": [
+   "de bon kwijt",
+   "maar ik wil",
+   "de jas toch ruilen",
+   "ik ben"
+  ],
+  "answer": "ik ben de bon kwijt, maar ik wil de jas toch ruilen",
+  "alternatives": [],
+  "hint": "“kwijt zijn” = to have lost. After maar: modal (wil) 2nd, infinitive (ruilen) at the end.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "ruilen": "ruilen@40"
+  }
+ },
+ {
+  "id": "winkelen-76",
+  "topic": "winkelen",
+  "parts": [
+   "om vanavond",
+   "samen te koken",
+   "mijn voorstel",
+   "is"
+  ],
+  "answer": "mijn voorstel is om vanavond samen te koken",
+  "alternatives": [],
+  "hint": "“om … te + infinitive”: te koken comes at the end.",
+  "grammar": "om-te",
+  "level": 3,
+  "senses": {
+   "vanavond": "vanavond@40",
+   "te": "te@40",
+   "koken": "koken@40"
+  }
+ },
+ {
+  "id": "winkelen-95",
+  "topic": "winkelen",
+  "parts": [
+   "om met honger",
+   "het is dom",
+   "boodschappen te doen"
+  ],
+  "answer": "het is dom om met honger boodschappen te doen",
+  "alternatives": [],
+  "hint": "“om … te + infinitive”: te doen at the very end.",
+  "grammar": "om-te",
+  "level": 4,
+  "senses": {
+   "boodschappen": "boodschappen@40",
+   "te": "te@40"
+  }
+ },
+ {
+  "id": "winkelen-122",
+  "topic": "winkelen",
+  "parts": [
+   "dit gerecht",
+   "makkelijk of moeilijk",
+   "is",
+   "om te maken"
+  ],
+  "answer": "is dit gerecht makkelijk of moeilijk om te maken?",
+  "alternatives": [],
+  "hint": "Yes/no question: verb first. “om te maken” at the end.",
+  "grammar": "om-te",
+  "level": 4,
+  "senses": {
+   "dit": "dit@40",
+   "of": "of@40",
+   "te": "te@40"
+  }
+ },
+ {
+  "id": "winkelen-116",
+  "topic": "winkelen",
+  "parts": [
+   "om meer te betalen",
+   "bereid",
+   "ben jij",
+   "voor biologisch vlees"
+  ],
+  "answer": "ben jij bereid om meer te betalen voor biologisch vlees?",
+  "alternatives": [
+   "ben jij bereid om meer voor biologisch vlees te betalen?"
+  ],
+  "hint": "Yes/no question: verb first. “bereid zijn om … te + infinitive”.",
+  "grammar": "om-te",
+  "level": 4,
+  "senses": {
+   "meer": "meer@40",
+   "te": "te@40",
+   "voor": "voor@40"
+  }
+ },
+ {
+  "id": "winkelen-96",
+  "topic": "winkelen",
+  "parts": [
+   "weg is",
+   "ik",
+   "opeens",
+   "zie",
+   "dat mijn tas"
+  ],
+  "answer": "opeens zie ik dat mijn tas weg is",
+  "alternatives": [
+   "ik zie opeens dat mijn tas weg is"
+  ],
+  "hint": "“opeens” first → inversion (zie ik); after “dat” the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "weg": "weg@40"
+  }
+ },
+ {
+  "id": "winkelen-06",
+  "topic": "winkelen",
+  "parts": [
+   "te wijd is",
+   "de verkoopster",
+   "dat de trui",
+   "zegt"
+  ],
+  "answer": "de verkoopster zegt dat de trui te wijd is",
+  "alternatives": [],
+  "hint": "After “dat” the verb (is) goes to the end of the clause.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "te": "te@40"
+  }
+ },
+ {
+  "id": "winkelen-78",
+  "topic": "winkelen",
+  "parts": [
+   "de waarheid zegt",
+   "ik weet niet",
+   "of de verkoper"
+  ],
+  "answer": "ik weet niet of de verkoper de waarheid zegt",
+  "alternatives": [],
+  "hint": "“of” (whether) sends the verb (zegt) to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "of": "of@40"
+  }
+ },
+ {
+  "id": "winkelen-90",
+  "topic": "winkelen",
+  "parts": [
+   "terwijl wij winkelen",
+   "spelen",
+   "in de speelhoek",
+   "de kinderen"
+  ],
+  "answer": "de kinderen spelen in de speelhoek terwijl wij winkelen",
+  "alternatives": [
+   "terwijl wij winkelen, spelen de kinderen in de speelhoek"
+  ],
+  "hint": "“terwijl” (while) sends the verb (winkelen) to the end.",
+  "grammar": "bijzin",
+  "level": 3
+ },
+ {
+  "id": "winkelen-105",
+  "topic": "winkelen",
+  "parts": [
+   "lekkere taart verkoopt",
+   "ik hoor",
+   "dat de nieuwe bakker"
+  ],
+  "answer": "ik hoor dat de nieuwe bakker lekkere taart verkoopt",
+  "alternatives": [],
+  "hint": "After “dat” the verb (verkoopt) goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
+  "senses": {
+   "bakker": "bakker@40"
+  }
+ },
+ {
+  "id": "winkelen-22",
+  "topic": "winkelen",
+  "parts": [
+   "wat mensen kopen",
+   "vaak",
+   "beïnvloedt",
+   "reclame"
+  ],
+  "answer": "reclame beïnvloedt vaak wat mensen kopen",
+  "alternatives": [],
+  "hint": "In the clause “wat mensen kopen” the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "wat": "wat@40"
+  }
+ },
+ {
+  "id": "winkelen-110",
+  "topic": "winkelen",
+  "parts": [
+   "weg",
+   "we gaan pas",
+   "als alles",
+   "klaar is"
+  ],
+  "answer": "we gaan pas weg als alles klaar is",
+  "alternatives": [],
+  "hint": "Separable verb weggaan: gaan … weg. After “als” the verb (is) goes to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "pas": "pas@40",
+   "weg": "weg@40",
+   "als": "als@40"
+  }
+ },
+ {
+  "id": "winkelen-04",
+  "topic": "winkelen",
+  "parts": [
+   "graag actief",
+   "draag ik vaak sportkleding",
+   "ben",
+   "omdat ik"
+  ],
+  "answer": "omdat ik graag actief ben, draag ik vaak sportkleding",
+  "alternatives": [
+   "ik draag vaak sportkleding omdat ik graag actief ben"
+  ],
+  "hint": "“omdat” sends the verb (ben) to the end; a sentence that starts with the omdat-clause continues with verb + subject (draag ik).",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "graag": "graag@40"
+  }
+ },
+ {
+  "id": "winkelen-17",
+  "topic": "winkelen",
+  "parts": [
+   "minder vlees",
+   "dat ik",
+   "moet eten",
+   "mijn huisarts zegt"
+  ],
+  "answer": "mijn huisarts zegt dat ik minder vlees moet eten",
+  "alternatives": [],
+  "hint": "In a dat-clause both verbs go to the end: … moet eten.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "huisarts": "huisarts@40",
+   "eten": "eten@40"
+  }
+ },
+ {
+  "id": "winkelen-60",
+  "topic": "winkelen",
+  "parts": [
+   "de bon hebt",
+   "kun je",
+   "de jas ruilen",
+   "zolang je"
+  ],
+  "answer": "zolang je de bon hebt, kun je de jas ruilen",
+  "alternatives": [],
+  "hint": "“zolang” sends the verb (hebt) to the end; the main clause then starts with the verb (kun je).",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "je": "je@40",
+   "ruilen": "ruilen@40"
+  }
+ },
+ {
+  "id": "winkelen-27",
+  "topic": "winkelen",
+  "parts": [
+   "eet",
+   "mijn vader",
+   "geen pittig eten",
+   "omdat hij",
+   "een zwakke maag heeft"
+  ],
+  "answer": "mijn vader eet geen pittig eten, omdat hij een zwakke maag heeft",
+  "alternatives": [
+   "omdat hij een zwakke maag heeft, eet mijn vader geen pittig eten"
+  ],
+  "hint": "“omdat” sends the verb (heeft) to the end of its clause.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "geen": "geen@40",
+   "eten": "eten@40"
+  }
+ },
+ {
+  "id": "winkelen-09",
+  "topic": "winkelen",
+  "parts": [
+   "gaat trouwen",
+   "koop ik",
+   "omdat mijn zus",
+   "een nieuwe jurk"
+  ],
+  "answer": "omdat mijn zus gaat trouwen, koop ik een nieuwe jurk",
+  "alternatives": [
+   "ik koop een nieuwe jurk omdat mijn zus gaat trouwen"
+  ],
+  "hint": "In the omdat-clause the verbs go to the end (gaat trouwen); after that clause the main sentence starts with the verb (koop ik).",
+  "grammar": "bijzin",
+  "level": 5
+ },
+ {
+  "id": "winkelen-34",
+  "topic": "winkelen",
+  "parts": [
+   "leren",
+   "ik wil graag",
+   "hoe je",
+   "een gezond gerecht maakt"
+  ],
+  "answer": "ik wil graag leren hoe je een gezond gerecht maakt",
+  "alternatives": [],
+  "hint": "Modal (wil) 2nd, then the infinitive (leren); in the hoe-clause the verb (maakt) goes to the end.",
+  "grammar": "bijzin",
+  "level": 5,
+  "senses": {
+   "graag": "graag@40",
+   "leren": "leren@40",
+   "hoe": "hoe@40",
+   "je": "je@40"
+  }
+ },
+ {
+  "id": "gezondheid-04",
+  "topic": "gezondheid",
+  "parts": [
+   "heel dun",
+   "is",
+   "mijn horloge",
+   "grijs en"
+  ],
+  "answer": "mijn horloge is grijs en heel dun",
+  "alternatives": [
+   "mijn horloge is heel dun en grijs"
+  ],
+  "hint": "Subject first, then the verb “is”, then the description.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "heel": "heel@50"
+  }
+ },
+ {
+  "id": "gezondheid-11",
+  "topic": "gezondheid",
+  "parts": [
+   "in mijn hals",
+   "ik heb",
+   "en in mijn hoofd",
+   "pijn"
+  ],
+  "answer": "ik heb pijn in mijn hals en in mijn hoofd",
+  "alternatives": [],
+  "hint": "Subject – verb – object – place: “pijn hebben in …”.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "gezondheid-118",
+  "topic": "gezondheid",
+  "parts": [
+   "je niet!",
+   "meen",
+   "dat"
+  ],
+  "answer": "dat meen je niet!",
+  "alternatives": [],
+  "hint": "Inversion: object “dat” first, then verb, then subject; “meen je” drops the -t.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "je": "je@50"
+  }
+ },
+ {
+  "id": "gezondheid-36",
+  "topic": "gezondheid",
+  "parts": [
+   "ontbreekt",
+   "trouwens ook",
+   "mijn portemonnee"
+  ],
+  "answer": "mijn portemonnee ontbreekt trouwens ook",
+  "alternatives": [
+   "trouwens ontbreekt mijn portemonnee ook"
+  ],
+  "hint": "Verb in 2nd place; “trouwens” at the start causes inversion.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "gezondheid-119",
+  "topic": "gezondheid",
+  "parts": [
+   "geen suiker",
+   "bevat",
+   "dit medicijn"
+  ],
+  "answer": "dit medicijn bevat geen suiker",
+  "alternatives": [],
+  "hint": "Subject – verb – object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "dit": "dit@50",
+   "geen": "geen@50"
+  }
+ },
+ {
+  "id": "gezondheid-29",
+  "topic": "gezondheid",
+  "parts": [
+   "mensen met schulden",
+   "helpt",
+   "deze organisatie"
+  ],
+  "answer": "deze organisatie helpt mensen met schulden",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@50"
+  }
+ },
+ {
+  "id": "gezondheid-120",
+  "topic": "gezondheid",
+  "parts": [
+   "een traditionele maaltijd",
+   "vanavond",
+   "we eten"
+  ],
+  "answer": "we eten vanavond een traditionele maaltijd",
+  "alternatives": [
+   "vanavond eten we een traditionele maaltijd"
+  ],
+  "hint": "Time before the object; time first causes inversion.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "eten": "eten@50"
+  }
+ },
+ {
+  "id": "gezondheid-81",
+  "topic": "gezondheid",
+  "parts": [
+   "is positief",
+   "de uitslag",
+   "van de test"
+  ],
+  "answer": "de uitslag van de test is positief",
+  "alternatives": [],
+  "hint": "Subject – verb – adjective.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-87",
+  "topic": "gezondheid",
+  "parts": [
+   "voor ouderen",
+   "heeft veel activiteiten",
+   "het buurthuis"
+  ],
+  "answer": "het buurthuis heeft veel activiteiten voor ouderen",
+  "alternatives": [],
+  "hint": "Subject – verb – object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "veel": "veel@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-106",
+  "topic": "gezondheid",
+  "parts": [
+   "bij de aangifte",
+   "bedankt",
+   "voor uw hulp"
+  ],
+  "answer": "bedankt voor uw hulp bij de aangifte",
+  "alternatives": [],
+  "hint": "“bedankt voor …” = thanks for …",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@50",
+   "uw": "uw@50",
+   "bij": "bij@50",
+   "aangifte": "aangifte@50"
+  }
+ },
+ {
+  "id": "gezondheid-108",
+  "topic": "gezondheid",
+  "parts": [
+   "is uitstekend",
+   "de zorg",
+   "in dit ziekenhuis"
+  ],
+  "answer": "de zorg in dit ziekenhuis is uitstekend",
+  "alternatives": [],
+  "hint": "The whole subject comes before the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "zorg": "zorg@50",
+   "dit": "dit@50"
+  }
+ },
+ {
+  "id": "gezondheid-122",
+  "topic": "gezondheid",
+  "parts": [
+   "op school",
+   "mijn favoriete vak",
+   "Nederlands is"
+  ],
+  "answer": "Nederlands is mijn favoriete vak op school",
+  "alternatives": [
+   "op school is Nederlands mijn favoriete vak"
+  ],
+  "hint": "Subject – verb – rest; place first causes inversion.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "nederlands": "nederlands@50",
+   "op": "op@50"
+  }
+ },
+ {
+  "id": "gezondheid-20",
+  "topic": "gezondheid",
+  "parts": [
+   "open",
+   "op dinsdagavond en donderdagavond",
+   "de apotheek",
+   "is"
+  ],
+  "answer": "de apotheek is op dinsdagavond en donderdagavond open",
+  "alternatives": [
+   "op dinsdagavond en donderdagavond is de apotheek open"
+  ],
+  "hint": "Time phrase after the verb, or first with inversion; “open” comes last.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "op": "op@50"
+  }
+ },
+ {
+  "id": "gezondheid-28",
+  "topic": "gezondheid",
+  "parts": [
+   "de leider",
+   "de burgemeester",
+   "is",
+   "van de gemeente"
+  ],
+  "answer": "de burgemeester is de leider van de gemeente",
+  "alternatives": [],
+  "hint": "Simple sentence: subject – verb – rest.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "van": "van@50",
+   "gemeente": "gemeente@50"
+  }
+ },
+ {
+  "id": "gezondheid-64",
+  "topic": "gezondheid",
+  "parts": [
+   "is heel oud",
+   "het kleed",
+   "in de woonkamer"
+  ],
+  "answer": "het kleed in de woonkamer is heel oud",
+  "alternatives": [],
+  "hint": "The subject “het kleed in de woonkamer” comes before the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "heel": "heel@50"
+  }
+ },
+ {
+  "id": "gezondheid-75",
+  "topic": "gezondheid",
+  "parts": [
+   "met een glimlach",
+   "helpt mij",
+   "altijd",
+   "de verpleegkundige"
+  ],
+  "answer": "de verpleegkundige helpt mij altijd met een glimlach",
+  "alternatives": [],
+  "hint": "Object pronoun (mij) right after the verb, then time (altijd), then manner.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "mij": "mij@50"
+  }
+ },
+ {
+  "id": "gezondheid-76",
+  "topic": "gezondheid",
+  "parts": [
+   "in het ziekenhuis",
+   "met veel plezier",
+   "ik werk"
+  ],
+  "answer": "ik werk met veel plezier in het ziekenhuis",
+  "alternatives": [
+   "ik werk in het ziekenhuis met veel plezier",
+   "in het ziekenhuis werk ik met veel plezier"
+  ],
+  "hint": "TMP: manner (met veel plezier) before place (in het ziekenhuis).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "werk": "werk@50",
+   "veel": "veel@50",
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-77",
+  "topic": "gezondheid",
+  "parts": [
+   "was heel gezellig",
+   "van mijn vrienden",
+   "het bezoek"
+  ],
+  "answer": "het bezoek van mijn vrienden was heel gezellig",
+  "alternatives": [],
+  "hint": "The whole subject comes before the verb “was”.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "van": "van@50",
+   "heel": "heel@50"
+  }
+ },
+ {
+  "id": "gezondheid-07",
+  "topic": "gezondheid",
+  "parts": [
+   "naar mijn gegevens",
+   "vraagt",
+   "de politie",
+   "en mijn woonplaats"
+  ],
+  "answer": "de politie vraagt naar mijn gegevens en mijn woonplaats",
+  "alternatives": [],
+  "hint": "Subject – verb – rest: “vragen naar” = to ask for.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "woonplaats": "woonplaats@50"
+  }
+ },
+ {
+  "id": "gezondheid-33",
+  "topic": "gezondheid",
+  "parts": [
+   "naar het station",
+   "hij rende",
+   "langs de supermarkt",
+   "snel"
+  ],
+  "answer": "hij rende snel langs de supermarkt naar het station",
+  "alternatives": [],
+  "hint": "TMP: manner (snel) before the place/direction phrases.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "snel": "snel@50",
+   "langs": "langs@50",
+   "het": "het@50",
+   "station": "station@50"
+  }
+ },
+ {
+  "id": "gezondheid-38",
+  "topic": "gezondheid",
+  "parts": [
+   "is",
+   "een groot probleem",
+   "het verlies",
+   "van mijn laptop"
+  ],
+  "answer": "het verlies van mijn laptop is een groot probleem",
+  "alternatives": [],
+  "hint": "The whole subject “het verlies van mijn laptop” comes before the verb.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "van": "van@50",
+   "groot": "groot@50"
+  }
+ },
+ {
+  "id": "gezondheid-49",
+  "topic": "gezondheid",
+  "parts": [
+   "een verhaal",
+   "over de oorlog",
+   "vertelt vaak",
+   "mijn opa"
+  ],
+  "answer": "mijn opa vertelt vaak een verhaal over de oorlog",
+  "alternatives": [],
+  "hint": "Verb in 2nd place, then “vaak”, then the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "opa": "opa@50"
+  }
+ },
+ {
+  "id": "gezondheid-50",
+  "topic": "gezondheid",
+  "parts": [
+   "in Den Haag",
+   "werken",
+   "de koning",
+   "en de regering"
+  ],
+  "answer": "de koning en de regering werken in Den Haag",
+  "alternatives": [],
+  "hint": "Two subjects joined by “en” take a plural verb: werken.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "gezondheid-90",
+  "topic": "gezondheid",
+  "parts": [
+   "over de hele wereld",
+   "helpt mensen",
+   "het Rode Kruis"
+  ],
+  "answer": "het Rode Kruis helpt mensen over de hele wereld",
+  "alternatives": [],
+  "hint": "Subject – verb – object – place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "hele": "hele@50"
+  }
+ },
+ {
+  "id": "gezondheid-97",
+  "topic": "gezondheid",
+  "parts": [
+   "aan het eind",
+   "de afspraak is",
+   "van de middag"
+  ],
+  "answer": "de afspraak is aan het eind van de middag",
+  "alternatives": [],
+  "hint": "Subject – verb – time.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "afspraak": "afspraak@50",
+   "aan": "aan@50",
+   "het": "het@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-05",
+  "topic": "gezondheid",
+  "parts": [
+   "in de zak",
+   "zat ook",
+   "van mijn jas",
+   "mijn sleutel"
+  ],
+  "answer": "mijn sleutel zat ook in de zak van mijn jas",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; “ook” follows the verb; the place phrase comes last.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "van": "van@50",
+   "jas": "jas@50"
+  }
+ },
+ {
+  "id": "gezondheid-06",
+  "topic": "gezondheid",
+  "parts": [
+   "over mijn nieuwe laptop",
+   "de agent",
+   "nog een vraag",
+   "heeft"
+  ],
+  "answer": "de agent heeft nog een vraag over mijn nieuwe laptop",
+  "alternatives": [],
+  "hint": "Verb “heeft” in 2nd place; the “over …” phrase comes after the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "agent": "agent@50",
+   "nog": "nog@50"
+  }
+ },
+ {
+  "id": "gezondheid-32",
+  "topic": "gezondheid",
+  "parts": [
+   "een rode jas",
+   "de man droeg",
+   "een grijze hoed",
+   "en"
+  ],
+  "answer": "de man droeg een grijze hoed en een rode jas",
+  "alternatives": [
+   "de man droeg een rode jas en een grijze hoed"
+  ],
+  "hint": "Past tense: the verb “droeg” is in 2nd place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "jas": "jas@50"
+  }
+ },
+ {
+  "id": "gezondheid-113",
+  "topic": "gezondheid",
+  "parts": [
+   "nu eenmaal",
+   "zo",
+   "dat is"
+  ],
+  "answer": "dat is nu eenmaal zo",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; “nu eenmaal” sits between the verb and “zo”.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "zo": "zo@50"
+  }
+ },
+ {
+  "id": "gezondheid-57",
+  "topic": "gezondheid",
+  "parts": [
+   "is goed",
+   "voor de maatschappij",
+   "vrijwilligerswerk"
+  ],
+  "answer": "vrijwilligerswerk is goed voor de maatschappij",
+  "alternatives": [],
+  "hint": "Subject – verb – rest.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "goed": "goed@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-82",
+  "topic": "gezondheid",
+  "parts": [
+   "nog geen effect",
+   "hebben",
+   "deze medicijnen"
+  ],
+  "answer": "deze medicijnen hebben nog geen effect",
+  "alternatives": [],
+  "hint": "Plural subject, plural verb: hebben.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "deze": "deze@50",
+   "nog": "nog@50",
+   "geen": "geen@50"
+  }
+ },
+ {
+  "id": "gezondheid-86",
+  "topic": "gezondheid",
+  "parts": [
+   "met lopen",
+   "mijn opa",
+   "heeft moeilijkheden"
+  ],
+  "answer": "mijn opa heeft moeilijkheden met lopen",
+  "alternatives": [],
+  "hint": "Subject – verb – object – “met …”.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "opa": "opa@50"
+  }
+ },
+ {
+  "id": "gezondheid-24",
+  "topic": "gezondheid",
+  "parts": [
+   "alle medische kosten",
+   "betaalt",
+   "mijn zorgverzekering",
+   "niet"
+  ],
+  "answer": "mijn zorgverzekering betaalt niet alle medische kosten",
+  "alternatives": [],
+  "hint": "“niet” comes before the part it negates (alle medische kosten).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "alle": "alle@50",
+   "kosten": "kosten@50"
+  }
+ },
+ {
+  "id": "gezondheid-54",
+  "topic": "gezondheid",
+  "parts": [
+   "ook thuis",
+   "in Nederland verboden",
+   "geweld is"
+  ],
+  "answer": "geweld is in Nederland verboden, ook thuis",
+  "alternatives": [],
+  "hint": "Subject – verb – place – adjective; “ook thuis” is added at the end.",
+  "grammar": "basis",
+  "level": 3
+ },
+ {
+  "id": "gezondheid-78",
+  "topic": "gezondheid",
+  "parts": [
+   "een goede indruk",
+   "maakt",
+   "de nieuwe huisarts"
+  ],
+  "answer": "de nieuwe huisarts maakt een goede indruk",
+  "alternatives": [],
+  "hint": "“een goede indruk maken” = to make a good impression.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "huisarts": "huisarts@50"
+  }
+ },
+ {
+  "id": "gezondheid-83",
+  "topic": "gezondheid",
+  "parts": [
+   "op je gezondheid",
+   "heeft veel invloed",
+   "stress"
+  ],
+  "answer": "stress heeft veel invloed op je gezondheid",
+  "alternatives": [],
+  "hint": "“invloed hebben op” = to have influence on.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "veel": "veel@50",
+   "op": "op@50",
+   "je": "je@50"
+  }
+ },
+ {
+  "id": "gezondheid-99",
+  "topic": "gezondheid",
+  "parts": [
+   "gisteren",
+   "twee mannen vochten",
+   "voor de supermarkt"
+  ],
+  "answer": "twee mannen vochten gisteren voor de supermarkt",
+  "alternatives": [
+   "gisteren vochten twee mannen voor de supermarkt"
+  ],
+  "hint": "TMP: time (gisteren) before place (voor de supermarkt).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "twee": "twee@50",
+   "gisteren": "gisteren@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-101",
+  "topic": "gezondheid",
+  "parts": [
+   "pas volgende week",
+   "tijd",
+   "de huisarts heeft"
+  ],
+  "answer": "de huisarts heeft pas volgende week tijd",
+  "alternatives": [
+   "pas volgende week heeft de huisarts tijd"
+  ],
+  "hint": "Time before the object; time first causes inversion.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "huisarts": "huisarts@50",
+   "pas": "pas@50",
+   "volgende": "volgende@50"
+  }
+ },
+ {
+  "id": "gezondheid-110",
+  "topic": "gezondheid",
+  "parts": [
+   "zijn op zondag dicht",
+   "alle apotheken",
+   "vrijwel"
+  ],
+  "answer": "vrijwel alle apotheken zijn op zondag dicht",
+  "alternatives": [
+   "op zondag zijn vrijwel alle apotheken dicht"
+  ],
+  "hint": "Subject first, or time first with inversion.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "alle": "alle@50",
+   "op": "op@50",
+   "zondag": "zondag@50",
+   "dicht": "dicht@50"
+  }
+ },
+ {
+  "id": "gezondheid-84",
+  "topic": "gezondheid",
+  "parts": [
+   "van groot belang",
+   "voor kinderen",
+   "gezond voedsel is"
+  ],
+  "answer": "gezond voedsel is van groot belang voor kinderen",
+  "alternatives": [],
+  "hint": "“van groot belang zijn” = to be very important.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "van": "van@50",
+   "groot": "groot@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-98",
+  "topic": "gezondheid",
+  "parts": [
+   "met mijn rug",
+   "hetzelfde probleem",
+   "ik heb",
+   "nog steeds"
+  ],
+  "answer": "ik heb nog steeds hetzelfde probleem met mijn rug",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; “nog steeds” comes before the object.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "nog": "nog@50",
+   "steeds": "steeds@50"
+  }
+ },
+ {
+  "id": "gezondheid-121",
+  "topic": "gezondheid",
+  "parts": [
+   "een lang proces",
+   "bij de IND",
+   "de aanvraag",
+   "is"
+  ],
+  "answer": "de aanvraag bij de IND is een lang proces",
+  "alternatives": [],
+  "hint": "The whole subject “de aanvraag bij de IND” comes before the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "bij": "bij@50"
+  }
+ },
+ {
+  "id": "gezondheid-25",
+  "topic": "gezondheid",
+  "parts": [
+   "over het personeel",
+   "van het ziekenhuis",
+   "hij heeft",
+   "een klacht"
+  ],
+  "answer": "hij heeft een klacht over het personeel van het ziekenhuis",
+  "alternatives": [],
+  "hint": "Subject – verb – object – “over …” phrase.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-30",
+  "topic": "gezondheid",
+  "parts": [
+   "nodig",
+   "bij het invullen",
+   "ik heb hulp",
+   "van deze lijst"
+  ],
+  "answer": "ik heb hulp nodig bij het invullen van deze lijst",
+  "alternatives": [],
+  "hint": "“hulp nodig hebben bij …”: “nodig” comes right after the object.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "nodig": "nodig@50",
+   "bij": "bij@50",
+   "het": "het@50",
+   "van": "van@50",
+   "deze": "deze@50"
+  }
+ },
+ {
+  "id": "gezondheid-94",
+  "topic": "gezondheid",
+  "parts": [
+   "van een grijze auto",
+   "de dief",
+   "achter het stuur",
+   "zat"
+  ],
+  "answer": "de dief zat achter het stuur van een grijze auto",
+  "alternatives": [],
+  "hint": "Past tense verb “zat” in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@50",
+   "stuur": "stuur@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-52",
+  "topic": "gezondheid",
+  "parts": [
+   "een kleine provincie",
+   "Utrecht is",
+   "in het midden",
+   "van het land"
+  ],
+  "answer": "Utrecht is een kleine provincie in het midden van het land",
+  "alternatives": [],
+  "hint": "Subject – verb – rest.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "utrecht": "utrecht@50",
+   "het": "het@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-79",
+  "topic": "gezondheid",
+  "parts": [
+   "veel begrip",
+   "voor mijn omstandigheden",
+   "mijn baas heeft"
+  ],
+  "answer": "mijn baas heeft veel begrip voor mijn omstandigheden",
+  "alternatives": [],
+  "hint": "Subject – verb – object – “voor …”.",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "veel": "veel@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-13",
+  "topic": "gezondheid",
+  "parts": [
+   "is het",
+   "niet gevaarlijk",
+   "volgens de dokter"
+  ],
+  "answer": "volgens de dokter is het niet gevaarlijk",
+  "alternatives": [
+   "het is volgens de dokter niet gevaarlijk"
+  ],
+  "hint": "When “volgens de dokter” starts the sentence, the verb comes next and the subject follows (inversion).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-17",
+  "topic": "gezondheid",
+  "parts": [
+   "was",
+   "de ambulance",
+   "er heel snel",
+   "gelukkig"
+  ],
+  "answer": "gelukkig was de ambulance er heel snel",
+  "alternatives": [
+   "de ambulance was er gelukkig heel snel"
+  ],
+  "hint": "“gelukkig” at the start causes inversion: was de ambulance.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "heel": "heel@50",
+   "snel": "snel@50"
+  }
+ },
+ {
+  "id": "gezondheid-44",
+  "topic": "gezondheid",
+  "parts": [
+   "krijg je",
+   "als student",
+   "geld van DUO"
+  ],
+  "answer": "als student krijg je geld van DUO",
+  "alternatives": [],
+  "hint": "“als student” (as a student) at the start causes inversion; with inversion “jij/je” drops the -t: krijg je.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "als": "als@50",
+   "je": "je@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-39",
+  "topic": "gezondheid",
+  "parts": [
+   "was het",
+   "een verschrikkelijk moment",
+   "voor mij"
+  ],
+  "answer": "voor mij was het een verschrikkelijk moment",
+  "alternatives": [
+   "het was voor mij een verschrikkelijk moment",
+   "het was een verschrikkelijk moment voor mij"
+  ],
+  "hint": "“voor mij” at the start causes inversion: was het.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@50",
+   "mij": "mij@50",
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-47",
+  "topic": "gezondheid",
+  "parts": [
+   "geen werk meer",
+   "heeft hij",
+   "sinds oktober"
+  ],
+  "answer": "sinds oktober heeft hij geen werk meer",
+  "alternatives": [
+   "hij heeft sinds oktober geen werk meer"
+  ],
+  "hint": "Time phrase first causes inversion: heeft hij.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "sinds": "sinds@50",
+   "geen": "geen@50",
+   "werk": "werk@50",
+   "meer": "meer@50"
+  }
+ },
+ {
+  "id": "gezondheid-72",
+  "topic": "gezondheid",
+  "parts": [
+   "droom ik",
+   "vaak slecht",
+   "sinds het ongeluk"
+  ],
+  "answer": "sinds het ongeluk droom ik vaak slecht",
+  "alternatives": [
+   "ik droom sinds het ongeluk vaak slecht"
+  ],
+  "hint": "Time phrase first causes inversion: droom ik.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "sinds": "sinds@50",
+   "het": "het@50",
+   "droom": "droom@50"
+  }
+ },
+ {
+  "id": "gezondheid-115",
+  "topic": "gezondheid",
+  "parts": [
+   "echter gesloten",
+   "is de apotheek",
+   "op zondag"
+  ],
+  "answer": "op zondag is de apotheek echter gesloten",
+  "alternatives": [
+   "de apotheek is op zondag echter gesloten",
+   "de apotheek is echter op zondag gesloten"
+  ],
+  "hint": "Time first causes inversion; “echter” (however) comes after the verb/subject.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@50",
+   "zondag": "zondag@50"
+  }
+ },
+ {
+  "id": "gezondheid-74",
+  "topic": "gezondheid",
+  "parts": [
+   "heb je",
+   "vaak sterke emoties",
+   "na een ongeluk"
+  ],
+  "answer": "na een ongeluk heb je vaak sterke emoties",
+  "alternatives": [],
+  "hint": "Inversion after the time phrase; with inversion “je” drops the -t: heb je.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "je": "je@50"
+  }
+ },
+ {
+  "id": "gezondheid-95",
+  "topic": "gezondheid",
+  "parts": [
+   "genoeg ruimte",
+   "voor iedereen",
+   "is",
+   "in de wachtkamer"
+  ],
+  "answer": "in de wachtkamer is genoeg ruimte voor iedereen",
+  "alternatives": [
+   "in de wachtkamer is voor iedereen genoeg ruimte"
+  ],
+  "hint": "Place first, then the verb, then the subject (genoeg ruimte).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-96",
+  "topic": "gezondheid",
+  "parts": [
+   "te laag",
+   "volgens de huisarts",
+   "is mijn bloeddruk"
+  ],
+  "answer": "volgens de huisarts is mijn bloeddruk te laag",
+  "alternatives": [
+   "mijn bloeddruk is volgens de huisarts te laag"
+  ],
+  "hint": "Inversion after “volgens de huisarts”: is mijn bloeddruk.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "huisarts": "huisarts@50",
+   "te": "te@50"
+  }
+ },
+ {
+  "id": "gezondheid-15",
+  "topic": "gezondheid",
+  "parts": [
+   "het nummer 112",
+   "belt u",
+   "meteen",
+   "bij een ongeluk"
+  ],
+  "answer": "bij een ongeluk belt u meteen het nummer 112",
+  "alternatives": [
+   "u belt bij een ongeluk meteen het nummer 112"
+  ],
+  "hint": "The sentence starts with “bij een ongeluk”, so verb and subject swap: belt u.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "bij": "bij@50",
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-22",
+  "topic": "gezondheid",
+  "parts": [
+   "gebruik ik",
+   "zonnebrand",
+   "in de zomer",
+   "met factor 30"
+  ],
+  "answer": "in de zomer gebruik ik zonnebrand met factor 30",
+  "alternatives": [
+   "ik gebruik in de zomer zonnebrand met factor 30"
+  ],
+  "hint": "A time phrase at the start causes inversion: gebruik ik.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "gebruik": "gebruik@50"
+  }
+ },
+ {
+  "id": "gezondheid-65",
+  "topic": "gezondheid",
+  "parts": [
+   "een verhaal",
+   "staat",
+   "over de nieuwe huisarts",
+   "in de wijkkrant"
+  ],
+  "answer": "in de wijkkrant staat een verhaal over de nieuwe huisarts",
+  "alternatives": [],
+  "hint": "Place first, then the verb (staat), then the subject: inversion.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "wijkkrant": "wijkkrant@50",
+   "huisarts": "huisarts@50"
+  }
+ },
+ {
+  "id": "gezondheid-73",
+  "topic": "gezondheid",
+  "parts": [
+   "had hij",
+   "veel verdriet",
+   "na de dood",
+   "van zijn vader"
+  ],
+  "answer": "na de dood van zijn vader had hij veel verdriet",
+  "alternatives": [
+   "hij had na de dood van zijn vader veel verdriet"
+  ],
+  "hint": "A long time phrase at the start still causes inversion: had hij.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "dood": "dood@50",
+   "van": "van@50",
+   "veel": "veel@50"
+  }
+ },
+ {
+  "id": "gezondheid-116",
+  "topic": "gezondheid",
+  "parts": [
+   "tot mijn broer",
+   "ben ik",
+   "bijna nooit ziek",
+   "in tegenstelling"
+  ],
+  "answer": "in tegenstelling tot mijn broer ben ik bijna nooit ziek",
+  "alternatives": [
+   "ik ben in tegenstelling tot mijn broer bijna nooit ziek"
+  ],
+  "hint": "A long phrase at the start still causes inversion: ben ik.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "bijna": "bijna@50"
+  }
+ },
+ {
+  "id": "gezondheid-104",
+  "topic": "gezondheid",
+  "parts": [
+   "na de maaltijd",
+   "deze tabletten",
+   "neem"
+  ],
+  "answer": "neem deze tabletten na de maaltijd",
+  "alternatives": [],
+  "hint": "Imperative: the verb comes first.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "deze": "deze@50"
+  }
+ },
+ {
+  "id": "gezondheid-117",
+  "topic": "gezondheid",
+  "parts": [
+   "van griep?",
+   "de kenmerken",
+   "wat zijn"
+  ],
+  "answer": "wat zijn de kenmerken van griep?",
+  "alternatives": [],
+  "hint": "W-question: question word, then the verb.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-124",
+  "topic": "gezondheid",
+  "parts": [
+   "uw naam",
+   "bovenaan het blad",
+   "schrijf"
+  ],
+  "answer": "schrijf uw naam bovenaan het blad",
+  "alternatives": [],
+  "hint": "Imperative: the verb comes first, then object, then place.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "uw": "uw@50",
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-126",
+  "topic": "gezondheid",
+  "parts": [
+   "pijn",
+   "heeft u?",
+   "wat voor soort"
+  ],
+  "answer": "wat voor soort pijn heeft u?",
+  "alternatives": [],
+  "hint": "W-question: the question phrase “wat voor soort pijn” comes first, then the verb, then the subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@50",
+   "voor": "voor@50"
+  }
+ },
+ {
+  "id": "gezondheid-125",
+  "topic": "gezondheid",
+  "parts": [
+   "morgen bellen?",
+   "jou",
+   "kan ik"
+  ],
+  "answer": "kan ik jou morgen bellen?",
+  "alternatives": [],
+  "hint": "Yes/no question: modal first; object pronoun before time; infinitive last.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "jou": "jou@50",
+   "morgen": "morgen@50"
+  }
+ },
+ {
+  "id": "gezondheid-91",
+  "topic": "gezondheid",
+  "parts": [
+   "even zien?",
+   "uw tong",
+   "mag ik"
+  ],
+  "answer": "mag ik uw tong even zien?",
+  "alternatives": [
+   "mag ik even uw tong zien?"
+  ],
+  "hint": "Polite question: modal first, infinitive (zien) at the end.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "uw": "uw@50"
+  }
+ },
+ {
+  "id": "gezondheid-105",
+  "topic": "gezondheid",
+  "parts": [
+   "bij de kassa",
+   "afrekenen",
+   "u kunt"
+  ],
+  "answer": "u kunt bij de kassa afrekenen",
+  "alternatives": [],
+  "hint": "After a modal the separable verb stays whole at the end: afrekenen.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "bij": "bij@50"
+  }
+ },
+ {
+  "id": "gezondheid-93",
+  "topic": "gezondheid",
+  "parts": [
+   "stil zijn",
+   "moet je",
+   "in het ziekenhuis"
+  ],
+  "answer": "in het ziekenhuis moet je stil zijn",
+  "alternatives": [
+   "je moet in het ziekenhuis stil zijn"
+  ],
+  "hint": "Place first causes inversion; the infinitive “zijn” is last.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "het": "het@50",
+   "je": "je@50",
+   "stil": "stil@50"
+  }
+ },
+ {
+  "id": "gezondheid-02",
+  "topic": "gezondheid",
+  "parts": [
+   "aangifte doen",
+   "bij de politie",
+   "ik wil",
+   "graag"
+  ],
+  "answer": "ik wil graag aangifte doen bij de politie",
+  "alternatives": [
+   "ik wil graag bij de politie aangifte doen"
+  ],
+  "hint": "The modal verb “wil” is in 2nd place; the infinitive “doen” goes to the end of its phrase.",
+  "grammar": "modaal",
+  "level": 2,
+  "senses": {
+   "aangifte": "aangifte@50",
+   "bij": "bij@50"
+  }
+ },
+ {
+  "id": "gezondheid-107",
+  "topic": "gezondheid",
+  "parts": [
+   "even voorstellen?",
+   "mag ik",
+   "mij"
+  ],
+  "answer": "mag ik mij even voorstellen?",
+  "alternatives": [],
+  "hint": "Question with a modal: the infinitive “voorstellen” goes to the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "mij": "mij@50",
+   "voorstellen": "voorstellen@50"
+  }
+ },
+ {
+  "id": "gezondheid-46",
+  "topic": "gezondheid",
+  "parts": [
+   "later kiezen?",
+   "welk beroep",
+   "wil je"
+  ],
+  "answer": "welk beroep wil je later kiezen?",
+  "alternatives": [],
+  "hint": "W-question: question word + noun, then the verb, then the subject; the infinitive at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "welk": "welk@50",
+   "je": "je@50"
+  }
+ },
+ {
+  "id": "gezondheid-55",
+  "topic": "gezondheid",
+  "parts": [
+   "geen wapen hebben",
+   "in Nederland",
+   "mag je"
+  ],
+  "answer": "in Nederland mag je geen wapen hebben",
+  "alternatives": [
+   "je mag in Nederland geen wapen hebben"
+  ],
+  "hint": "Place first causes inversion (mag je); the infinitive “hebben” is last.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "je": "je@50",
+   "geen": "geen@50"
+  }
+ },
+ {
+  "id": "gezondheid-68",
+  "topic": "gezondheid",
+  "parts": [
+   "geen auto rijden",
+   "mag je",
+   "met deze medicijnen"
+  ],
+  "answer": "met deze medicijnen mag je geen auto rijden",
+  "alternatives": [
+   "je mag met deze medicijnen geen auto rijden"
+  ],
+  "hint": "Inversion after “met deze medicijnen”; the infinitive “rijden” is last.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "deze": "deze@50",
+   "je": "je@50",
+   "geen": "geen@50",
+   "rijden": "rijden@50"
+  }
+ },
+ {
+  "id": "gezondheid-80",
+  "topic": "gezondheid",
+  "parts": [
+   "absoluut niet roken",
+   "u mag",
+   "in het ziekenhuis"
+  ],
+  "answer": "u mag absoluut niet roken in het ziekenhuis",
+  "alternatives": [
+   "in het ziekenhuis mag u absoluut niet roken",
+   "u mag in het ziekenhuis absoluut niet roken"
+  ],
+  "hint": "Modal (mag) in 2nd place, infinitive (roken) later; place first causes inversion.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-112",
+  "topic": "gezondheid",
+  "parts": [
+   "zoals groente",
+   "gezond eten",
+   "en fruit",
+   "u moet"
+  ],
+  "answer": "u moet gezond eten, zoals groente en fruit",
+  "alternatives": [],
+  "hint": "Modal in 2nd place, infinitive (eten) at the end of the clause.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "eten": "eten@50",
+   "groente": "groente@50"
+  }
+ },
+ {
+  "id": "gezondheid-102",
+  "topic": "gezondheid",
+  "parts": [
+   "een afspraak",
+   "we zouden",
+   "willen maken",
+   "graag"
+  ],
+  "answer": "we zouden graag een afspraak willen maken",
+  "alternatives": [],
+  "hint": "Polite form: “zouden” in 2nd place, both infinitives at the end.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "afspraak": "afspraak@50",
+   "maken": "maken@50"
+  }
+ },
+ {
+  "id": "gezondheid-27",
+  "topic": "gezondheid",
+  "parts": [
+   "moet iedereen",
+   "een zorgverzekering hebben",
+   "volgens de wet"
+  ],
+  "answer": "volgens de wet moet iedereen een zorgverzekering hebben",
+  "alternatives": [
+   "iedereen moet volgens de wet een zorgverzekering hebben"
+  ],
+  "hint": "Inversion after “volgens de wet”; the infinitive “hebben” goes to the end.",
+  "grammar": "modaal",
+  "level": 4
+ },
+ {
+  "id": "gezondheid-37",
+  "topic": "gezondheid",
+  "parts": [
+   "terug?",
+   "mijn laptop",
+   "krijg ik",
+   "later"
+  ],
+  "answer": "krijg ik mijn laptop later terug?",
+  "alternatives": [
+   "krijg ik later mijn laptop terug?"
+  ],
+  "hint": "Yes/no question: the verb comes first. Separable “terugkrijgen”: “terug” goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3
+ },
+ {
+  "id": "gezondheid-45",
+  "topic": "gezondheid",
+  "parts": [
+   "af",
+   "volgend jaar",
+   "mijn dochter",
+   "studeert"
+  ],
+  "answer": "mijn dochter studeert volgend jaar af",
+  "alternatives": [
+   "volgend jaar studeert mijn dochter af"
+  ],
+  "hint": "Separable verb “afstuderen”: “af” goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "studeert": "studeert@50",
+   "af": "af@50"
+  }
+ },
+ {
+  "id": "gezondheid-42",
+  "topic": "gezondheid",
+  "parts": [
+   "op",
+   "de agent schrijft",
+   "nauwkeurig",
+   "alle details"
+  ],
+  "answer": "de agent schrijft alle details nauwkeurig op",
+  "alternatives": [
+   "de agent schrijft nauwkeurig alle details op"
+  ],
+  "hint": "Separable verb “opschrijven”: “op” goes to the end of the sentence.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "agent": "agent@50",
+   "alle": "alle@50",
+   "op": "op@50"
+  }
+ },
+ {
+  "id": "gezondheid-51",
+  "topic": "gezondheid",
+  "parts": [
+   "werken we",
+   "goed samen",
+   "op ons werk"
+  ],
+  "answer": "op ons werk werken we goed samen",
+  "alternatives": [
+   "we werken op ons werk goed samen"
+  ],
+  "hint": "Separable verb “samenwerken”: “samen” goes to the end; place first causes inversion.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "op": "op@50",
+   "werk": "werk@50",
+   "goed": "goed@50",
+   "samen": "samen@50"
+  }
+ },
+ {
+  "id": "gezondheid-61",
+  "topic": "gezondheid",
+  "parts": [
+   "op dinsdagavond",
+   "ik zet",
+   "buiten",
+   "de vuilniszak"
+  ],
+  "answer": "ik zet de vuilniszak op dinsdagavond buiten",
+  "alternatives": [
+   "op dinsdagavond zet ik de vuilniszak buiten",
+   "ik zet op dinsdagavond de vuilniszak buiten"
+  ],
+  "hint": "TMP: time (op dinsdagavond) before place (buiten).",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "vuilniszak": "vuilniszak@50",
+   "op": "op@50"
+  }
+ },
+ {
+  "id": "gezondheid-18",
+  "topic": "gezondheid",
+  "parts": [
+   "ziek",
+   "bij mijn baas",
+   "ik meld me",
+   "vandaag"
+  ],
+  "answer": "ik meld me vandaag ziek bij mijn baas",
+  "alternatives": [
+   "vandaag meld ik me ziek bij mijn baas",
+   "ik meld me vandaag bij mijn baas ziek"
+  ],
+  "hint": "“zich ziek melden”: the verb is 2nd, “me” follows it, “ziek” comes after the time word.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "bij": "bij@50"
+  }
+ },
+ {
+  "id": "gezondheid-21",
+  "topic": "gezondheid",
+  "parts": [
+   "naar het strand",
+   "ik neem",
+   "mee",
+   "in de zomer altijd water"
+  ],
+  "answer": "ik neem in de zomer altijd water mee naar het strand",
+  "alternatives": [
+   "in de zomer neem ik altijd water mee naar het strand",
+   "ik neem in de zomer altijd water naar het strand mee"
+  ],
+  "hint": "Separable verb “meenemen”: “neem” is in 2nd place and “mee” goes near the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "mee": "mee@50",
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-100",
+  "topic": "gezondheid",
+  "parts": [
+   "gewonnen",
+   "zijn team heeft",
+   "de wedstrijd"
+  ],
+  "answer": "zijn team heeft de wedstrijd gewonnen",
+  "alternatives": [],
+  "hint": "Perfect tense: “heeft … gewonnen”.",
+  "grammar": "perfectum",
+  "level": 2
+ },
+ {
+  "id": "gezondheid-69",
+  "topic": "gezondheid",
+  "parts": [
+   "gevallen",
+   "is",
+   "mijn dochter",
+   "van een paard"
+  ],
+  "answer": "mijn dochter is van een paard gevallen",
+  "alternatives": [],
+  "hint": "“vallen” takes “zijn” in the perfect: is gevallen.",
+  "grammar": "perfectum",
+  "level": 2,
+  "senses": {
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-12",
+  "topic": "gezondheid",
+  "parts": [
+   "mijn zoon",
+   "gebeten",
+   "de hond van de buren",
+   "heeft"
+  ],
+  "answer": "de hond van de buren heeft mijn zoon gebeten",
+  "alternatives": [],
+  "hint": "Perfect tense: “heeft” in 2nd place, the participle “gebeten” at the end.",
+  "grammar": "perfectum",
+  "level": 2,
+  "senses": {
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-40",
+  "topic": "gezondheid",
+  "parts": [
+   "van de dief",
+   "enorm",
+   "ik ben",
+   "geschrokken"
+  ],
+  "answer": "ik ben enorm geschrokken van de dief",
+  "alternatives": [],
+  "hint": "“schrikken” takes “zijn” in the perfect: ik ben geschrokken.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-103",
+  "topic": "gezondheid",
+  "parts": [
+   "mijn tas gevonden",
+   "heeft de politie",
+   "uiteindelijk"
+  ],
+  "answer": "uiteindelijk heeft de politie mijn tas gevonden",
+  "alternatives": [
+   "de politie heeft uiteindelijk mijn tas gevonden"
+  ],
+  "hint": "“uiteindelijk” first causes inversion; the participle is last.",
+  "grammar": "perfectum",
+  "level": 3
+ },
+ {
+  "id": "gezondheid-53",
+  "topic": "gezondheid",
+  "parts": [
+   "een straf gegeven",
+   "de rechter",
+   "heeft",
+   "de dief"
+  ],
+  "answer": "de rechter heeft de dief een straf gegeven",
+  "alternatives": [],
+  "hint": "Indirect object (de dief) before the direct object (een straf); participle at the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "straf": "straf@50"
+  }
+ },
+ {
+  "id": "gezondheid-62",
+  "topic": "gezondheid",
+  "parts": [
+   "aan de muur",
+   "opgehangen",
+   "hij heeft",
+   "de spiegel"
+  ],
+  "answer": "hij heeft de spiegel aan de muur opgehangen",
+  "alternatives": [],
+  "hint": "Perfect of a separable verb: op + ge + hangen = opgehangen, at the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "aan": "aan@50"
+  }
+ },
+ {
+  "id": "gezondheid-03",
+  "topic": "gezondheid",
+  "parts": [
+   "gebeurd",
+   "is het",
+   "in het centrum",
+   "twee dagen geleden"
+  ],
+  "answer": "twee dagen geleden is het in het centrum gebeurd",
+  "alternatives": [
+   "het is twee dagen geleden in het centrum gebeurd",
+   "in het centrum is het twee dagen geleden gebeurd"
+  ],
+  "hint": "A time phrase at the start causes inversion (is het); the participle “gebeurd” goes to the end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "twee": "twee@50",
+   "het": "het@50",
+   "centrum": "centrum@50"
+  }
+ },
+ {
+  "id": "gezondheid-14",
+  "topic": "gezondheid",
+  "parts": [
+   "een ongeluk gehad",
+   "op de brug",
+   "ik heb",
+   "gisteren"
+  ],
+  "answer": "ik heb gisteren op de brug een ongeluk gehad",
+  "alternatives": [
+   "ik heb gisteren een ongeluk gehad op de brug",
+   "gisteren heb ik een ongeluk gehad op de brug",
+   "gisteren heb ik op de brug een ongeluk gehad",
+   "op de brug heb ik gisteren een ongeluk gehad"
+  ],
+  "hint": "Perfect tense with “heb … gehad”; time (gisteren) comes early, or first with inversion.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "gisteren": "gisteren@50",
+   "op": "op@50"
+  }
+ },
+ {
+  "id": "gezondheid-31",
+  "topic": "gezondheid",
+  "parts": [
+   "kapotgemaakt",
+   "de dief",
+   "het raam van mijn auto",
+   "heeft"
+  ],
+  "answer": "de dief heeft het raam van mijn auto kapotgemaakt",
+  "alternatives": [],
+  "hint": "Perfect tense of the separable verb “kapotmaken”: kapot + gemaakt = kapotgemaakt, at the very end.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "het": "het@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-56",
+  "topic": "gezondheid",
+  "parts": [
+   "een brief gestuurd",
+   "heeft",
+   "van de school",
+   "het bestuur"
+  ],
+  "answer": "het bestuur van de school heeft een brief gestuurd",
+  "alternatives": [],
+  "hint": "Perfect tense: “heeft … gestuurd”.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "het": "het@50",
+   "van": "van@50"
+  }
+ },
+ {
+  "id": "gezondheid-123",
+  "topic": "gezondheid",
+  "parts": [
+   "een plaat",
+   "in mijn been",
+   "gezet",
+   "de chirurg heeft"
+  ],
+  "answer": "de chirurg heeft een plaat in mijn been gezet",
+  "alternatives": [],
+  "hint": "Perfect tense: “heeft … gezet”, object before place.",
+  "grammar": "perfectum",
+  "level": 3,
+  "senses": {
+   "been": "been@50"
   }
  },
  {
@@ -8792,438 +11750,11 @@ const EXERCISES = [
    "in de stad heeft iemand gisteren mijn zwarte tas gestolen"
   ],
   "hint": "Perfect tense: “heeft” is in 2nd place and the participle “gestolen” goes to the very end.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
    "iemand": "iemand@50",
    "gisteren": "gisteren@50"
-  }
- },
- {
-  "id": "gezondheid-02",
-  "topic": "gezondheid",
-  "parts": [
-   "aangifte doen",
-   "bij de politie",
-   "ik wil",
-   "graag"
-  ],
-  "answer": "ik wil graag aangifte doen bij de politie",
-  "alternatives": [
-   "ik wil graag bij de politie aangifte doen"
-  ],
-  "hint": "The modal verb “wil” is in 2nd place; the infinitive “doen” goes to the end of its phrase.",
-  "senses": {
-   "aangifte": "aangifte@50",
-   "bij": "bij@50"
-  }
- },
- {
-  "id": "gezondheid-03",
-  "topic": "gezondheid",
-  "parts": [
-   "gebeurd",
-   "is het",
-   "in het centrum",
-   "twee dagen geleden"
-  ],
-  "answer": "twee dagen geleden is het in het centrum gebeurd",
-  "alternatives": [
-   "het is twee dagen geleden in het centrum gebeurd",
-   "in het centrum is het twee dagen geleden gebeurd"
-  ],
-  "hint": "A time phrase at the start causes inversion (is het); the participle “gebeurd” goes to the end.",
-  "senses": {
-   "twee": "twee@50",
-   "het": "het@50",
-   "centrum": "centrum@50"
-  }
- },
- {
-  "id": "gezondheid-04",
-  "topic": "gezondheid",
-  "parts": [
-   "heel dun",
-   "is",
-   "mijn horloge",
-   "grijs en"
-  ],
-  "answer": "mijn horloge is grijs en heel dun",
-  "alternatives": [
-   "mijn horloge is heel dun en grijs"
-  ],
-  "hint": "Subject first, then the verb “is”, then the description.",
-  "senses": {
-   "heel": "heel@50"
-  }
- },
- {
-  "id": "gezondheid-05",
-  "topic": "gezondheid",
-  "parts": [
-   "in de zak",
-   "zat ook",
-   "van mijn jas",
-   "mijn sleutel"
-  ],
-  "answer": "mijn sleutel zat ook in de zak van mijn jas",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; “ook” follows the verb; the place phrase comes last.",
-  "senses": {
-   "van": "van@50",
-   "jas": "jas@50"
-  }
- },
- {
-  "id": "gezondheid-06",
-  "topic": "gezondheid",
-  "parts": [
-   "over mijn nieuwe laptop",
-   "de agent",
-   "nog een vraag",
-   "heeft"
-  ],
-  "answer": "de agent heeft nog een vraag over mijn nieuwe laptop",
-  "alternatives": [],
-  "hint": "Verb “heeft” in 2nd place; the “over …” phrase comes after the object.",
-  "senses": {
-   "agent": "agent@50",
-   "nog": "nog@50"
-  }
- },
- {
-  "id": "gezondheid-07",
-  "topic": "gezondheid",
-  "parts": [
-   "naar mijn gegevens",
-   "vraagt",
-   "de politie",
-   "en mijn woonplaats"
-  ],
-  "answer": "de politie vraagt naar mijn gegevens en mijn woonplaats",
-  "alternatives": [],
-  "hint": "Subject – verb – rest: “vragen naar” = to ask for.",
-  "senses": {
-   "woonplaats": "woonplaats@50"
-  }
- },
- {
-  "id": "gezondheid-08",
-  "topic": "gezondheid",
-  "parts": [
-   "voordat je",
-   "dit aanmeldformulier invullen",
-   "naar de huisarts gaat",
-   "je moet"
-  ],
-  "answer": "je moet dit aanmeldformulier invullen voordat je naar de huisarts gaat",
-  "alternatives": [
-   "voordat je naar de huisarts gaat, moet je dit aanmeldformulier invullen"
-  ],
-  "hint": "“voordat” sends the verb (gaat) to the end of its clause; the modal “moet” takes the infinitive at the end.",
-  "senses": {
-   "je": "je@50",
-   "dit": "dit@50",
-   "huisarts": "huisarts@50"
-  }
- },
- {
-  "id": "gezondheid-09",
-  "topic": "gezondheid",
-  "parts": [
-   "omdat mijn knie",
-   "ik bel",
-   "veel pijn doet",
-   "meteen de huisarts"
-  ],
-  "answer": "ik bel meteen de huisarts, omdat mijn knie veel pijn doet",
-  "alternatives": [
-   "omdat mijn knie veel pijn doet, bel ik meteen de huisarts",
-   "ik bel de huisarts meteen, omdat mijn knie veel pijn doet"
-  ],
-  "hint": "“omdat” sends the verb (doet) to the end. If the omdat-clause comes first, the main clause starts with the verb (bel ik).",
-  "senses": {
-   "huisarts": "huisarts@50",
-   "veel": "veel@50"
-  }
- },
- {
-  "id": "gezondheid-10",
-  "topic": "gezondheid",
-  "parts": [
-   "rode ogen",
-   "mijn dochter heeft",
-   "en zij heeft",
-   "het koud"
-  ],
-  "answer": "mijn dochter heeft rode ogen en zij heeft het koud",
-  "alternatives": [
-   "mijn dochter heeft het koud en zij heeft rode ogen"
-  ],
-  "hint": "“en” joins two main clauses: both keep normal order (subject – verb).",
-  "senses": {
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-11",
-  "topic": "gezondheid",
-  "parts": [
-   "in mijn hals",
-   "ik heb",
-   "en in mijn hoofd",
-   "pijn"
-  ],
-  "answer": "ik heb pijn in mijn hals en in mijn hoofd",
-  "alternatives": [],
-  "hint": "Subject – verb – object – place: “pijn hebben in …”."
- },
- {
-  "id": "gezondheid-12",
-  "topic": "gezondheid",
-  "parts": [
-   "mijn zoon",
-   "gebeten",
-   "de hond van de buren",
-   "heeft"
-  ],
-  "answer": "de hond van de buren heeft mijn zoon gebeten",
-  "alternatives": [],
-  "hint": "Perfect tense: “heeft” in 2nd place, the participle “gebeten” at the end.",
-  "senses": {
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-13",
-  "topic": "gezondheid",
-  "parts": [
-   "is het",
-   "niet gevaarlijk",
-   "volgens de dokter"
-  ],
-  "answer": "volgens de dokter is het niet gevaarlijk",
-  "alternatives": [
-   "het is volgens de dokter niet gevaarlijk"
-  ],
-  "hint": "When “volgens de dokter” starts the sentence, the verb comes next and the subject follows (inversion).",
-  "senses": {
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-14",
-  "topic": "gezondheid",
-  "parts": [
-   "een ongeluk gehad",
-   "op de brug",
-   "ik heb",
-   "gisteren"
-  ],
-  "answer": "ik heb gisteren op de brug een ongeluk gehad",
-  "alternatives": [
-   "ik heb gisteren een ongeluk gehad op de brug",
-   "gisteren heb ik een ongeluk gehad op de brug",
-   "gisteren heb ik op de brug een ongeluk gehad",
-   "op de brug heb ik gisteren een ongeluk gehad"
-  ],
-  "hint": "Perfect tense with “heb … gehad”; time (gisteren) comes early, or first with inversion.",
-  "senses": {
-   "gisteren": "gisteren@50",
-   "op": "op@50"
-  }
- },
- {
-  "id": "gezondheid-15",
-  "topic": "gezondheid",
-  "parts": [
-   "het nummer 112",
-   "belt u",
-   "meteen",
-   "bij een ongeluk"
-  ],
-  "answer": "bij een ongeluk belt u meteen het nummer 112",
-  "alternatives": [
-   "u belt bij een ongeluk meteen het nummer 112"
-  ],
-  "hint": "The sentence starts with “bij een ongeluk”, so verb and subject swap: belt u.",
-  "senses": {
-   "bij": "bij@50",
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-16",
-  "topic": "gezondheid",
-  "parts": [
-   "veel bloed",
-   "we moeten",
-   "want hij verliest",
-   "112 bellen"
-  ],
-  "answer": "we moeten 112 bellen, want hij verliest veel bloed",
-  "alternatives": [],
-  "hint": "After “want” the word order stays normal (subject – verb); after a modal the infinitive goes to the end.",
-  "senses": {
-   "veel": "veel@50"
-  }
- },
- {
-  "id": "gezondheid-17",
-  "topic": "gezondheid",
-  "parts": [
-   "was",
-   "de ambulance",
-   "er heel snel",
-   "gelukkig"
-  ],
-  "answer": "gelukkig was de ambulance er heel snel",
-  "alternatives": [
-   "de ambulance was er gelukkig heel snel"
-  ],
-  "hint": "“gelukkig” at the start causes inversion: was de ambulance.",
-  "senses": {
-   "heel": "heel@50",
-   "snel": "snel@50"
-  }
- },
- {
-  "id": "gezondheid-18",
-  "topic": "gezondheid",
-  "parts": [
-   "ziek",
-   "bij mijn baas",
-   "ik meld me",
-   "vandaag"
-  ],
-  "answer": "ik meld me vandaag ziek bij mijn baas",
-  "alternatives": [
-   "vandaag meld ik me ziek bij mijn baas",
-   "ik meld me vandaag bij mijn baas ziek"
-  ],
-  "hint": "“zich ziek melden”: the verb is 2nd, “me” follows it, “ziek” comes after the time word.",
-  "senses": {
-   "bij": "bij@50"
-  }
- },
- {
-  "id": "gezondheid-19",
-  "topic": "gezondheid",
-  "parts": [
-   "moet je",
-   "als je ziek bent",
-   "thuis blijven"
-  ],
-  "answer": "als je ziek bent, moet je thuis blijven",
-  "alternatives": [
-   "je moet thuis blijven als je ziek bent"
-  ],
-  "hint": "“als” sends the verb (bent) to the end; after the als-clause, the main clause starts with the verb (moet je).",
-  "senses": {
-   "als": "als@50",
-   "je": "je@50",
-   "blijven": "blijven@50"
-  }
- },
- {
-  "id": "gezondheid-20",
-  "topic": "gezondheid",
-  "parts": [
-   "open",
-   "op dinsdagavond en donderdagavond",
-   "de apotheek",
-   "is"
-  ],
-  "answer": "de apotheek is op dinsdagavond en donderdagavond open",
-  "alternatives": [
-   "op dinsdagavond en donderdagavond is de apotheek open"
-  ],
-  "hint": "Time phrase after the verb, or first with inversion; “open” comes last.",
-  "senses": {
-   "op": "op@50"
-  }
- },
- {
-  "id": "gezondheid-21",
-  "topic": "gezondheid",
-  "parts": [
-   "naar het strand",
-   "ik neem",
-   "mee",
-   "in de zomer altijd water"
-  ],
-  "answer": "ik neem in de zomer altijd water mee naar het strand",
-  "alternatives": [
-   "in de zomer neem ik altijd water mee naar het strand",
-   "ik neem in de zomer altijd water naar het strand mee"
-  ],
-  "hint": "Separable verb “meenemen”: “neem” is in 2nd place and “mee” goes near the end.",
-  "senses": {
-   "mee": "mee@50",
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-22",
-  "topic": "gezondheid",
-  "parts": [
-   "gebruik ik",
-   "zonnebrand",
-   "in de zomer",
-   "met factor 30"
-  ],
-  "answer": "in de zomer gebruik ik zonnebrand met factor 30",
-  "alternatives": [
-   "ik gebruik in de zomer zonnebrand met factor 30"
-  ],
-  "hint": "A time phrase at the start causes inversion: gebruik ik.",
-  "senses": {
-   "gebruik": "gebruik@50"
-  }
- },
- {
-  "id": "gezondheid-23",
-  "topic": "gezondheid",
-  "parts": [
-   "los zit",
-   "de tandarts zegt",
-   "mijn tand",
-   "dat"
-  ],
-  "answer": "de tandarts zegt dat mijn tand los zit",
-  "alternatives": [],
-  "hint": "“dat” sends the verb (zit) to the end of the clause."
- },
- {
-  "id": "gezondheid-24",
-  "topic": "gezondheid",
-  "parts": [
-   "alle medische kosten",
-   "betaalt",
-   "mijn zorgverzekering",
-   "niet"
-  ],
-  "answer": "mijn zorgverzekering betaalt niet alle medische kosten",
-  "alternatives": [],
-  "hint": "“niet” comes before the part it negates (alle medische kosten).",
-  "senses": {
-   "alle": "alle@50",
-   "kosten": "kosten@50"
-  }
- },
- {
-  "id": "gezondheid-25",
-  "topic": "gezondheid",
-  "parts": [
-   "over het personeel",
-   "van het ziekenhuis",
-   "hij heeft",
-   "een klacht"
-  ],
-  "answer": "hij heeft een klacht over het personeel van het ziekenhuis",
-  "alternatives": [],
-  "hint": "Subject – verb – object – “over …” phrase.",
-  "senses": {
-   "het": "het@50",
-   "van": "van@50"
   }
  },
  {
@@ -9240,748 +11771,10 @@ const EXERCISES = [
    "vorige week heb ik een brief van de overheid gekregen"
   ],
   "hint": "Perfect tense: “heb” in 2nd place, “gekregen” at the end; time before the object.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
    "vorige": "vorige@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-27",
-  "topic": "gezondheid",
-  "parts": [
-   "moet iedereen",
-   "een zorgverzekering hebben",
-   "volgens de wet"
-  ],
-  "answer": "volgens de wet moet iedereen een zorgverzekering hebben",
-  "alternatives": [
-   "iedereen moet volgens de wet een zorgverzekering hebben"
-  ],
-  "hint": "Inversion after “volgens de wet”; the infinitive “hebben” goes to the end."
- },
- {
-  "id": "gezondheid-28",
-  "topic": "gezondheid",
-  "parts": [
-   "de leider",
-   "de burgemeester",
-   "is",
-   "van de gemeente"
-  ],
-  "answer": "de burgemeester is de leider van de gemeente",
-  "alternatives": [],
-  "hint": "Simple sentence: subject – verb – rest.",
-  "senses": {
-   "van": "van@50",
-   "gemeente": "gemeente@50"
-  }
- },
- {
-  "id": "gezondheid-29",
-  "topic": "gezondheid",
-  "parts": [
-   "mensen met schulden",
-   "helpt",
-   "deze organisatie"
-  ],
-  "answer": "deze organisatie helpt mensen met schulden",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place.",
-  "senses": {
-   "deze": "deze@50"
-  }
- },
- {
-  "id": "gezondheid-30",
-  "topic": "gezondheid",
-  "parts": [
-   "nodig",
-   "bij het invullen",
-   "ik heb hulp",
-   "van deze lijst"
-  ],
-  "answer": "ik heb hulp nodig bij het invullen van deze lijst",
-  "alternatives": [],
-  "hint": "“hulp nodig hebben bij …”: “nodig” comes right after the object.",
-  "senses": {
-   "nodig": "nodig@50",
-   "bij": "bij@50",
-   "het": "het@50",
-   "van": "van@50",
-   "deze": "deze@50"
-  }
- },
- {
-  "id": "gezondheid-31",
-  "topic": "gezondheid",
-  "parts": [
-   "kapotgemaakt",
-   "de dief",
-   "het raam van mijn auto",
-   "heeft"
-  ],
-  "answer": "de dief heeft het raam van mijn auto kapotgemaakt",
-  "alternatives": [],
-  "hint": "Perfect tense of the separable verb “kapotmaken”: kapot + gemaakt = kapotgemaakt, at the very end.",
-  "senses": {
-   "het": "het@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-32",
-  "topic": "gezondheid",
-  "parts": [
-   "een rode jas",
-   "de man droeg",
-   "een grijze hoed",
-   "en"
-  ],
-  "answer": "de man droeg een grijze hoed en een rode jas",
-  "alternatives": [
-   "de man droeg een rode jas en een grijze hoed"
-  ],
-  "hint": "Past tense: the verb “droeg” is in 2nd place.",
-  "senses": {
-   "jas": "jas@50"
-  }
- },
- {
-  "id": "gezondheid-33",
-  "topic": "gezondheid",
-  "parts": [
-   "naar het station",
-   "hij rende",
-   "langs de supermarkt",
-   "snel"
-  ],
-  "answer": "hij rende snel langs de supermarkt naar het station",
-  "alternatives": [],
-  "hint": "TMP: manner (snel) before the place/direction phrases.",
-  "senses": {
-   "snel": "snel@50",
-   "langs": "langs@50",
-   "het": "het@50",
-   "station": "station@50"
-  }
- },
- {
-  "id": "gezondheid-34",
-  "topic": "gezondheid",
-  "parts": [
-   "want het ging",
-   "ik heb hem",
-   "heel snel",
-   "niet goed gezien"
-  ],
-  "answer": "ik heb hem niet goed gezien, want het ging heel snel",
-  "alternatives": [],
-  "hint": "After “want” you use normal main-clause order (het ging).",
-  "senses": {
-   "hem": "hem@50",
-   "goed": "goed@50",
-   "het": "het@50",
-   "heel": "heel@50",
-   "snel": "snel@50"
-  }
- },
- {
-  "id": "gezondheid-35",
-  "topic": "gezondheid",
-  "parts": [
-   "maar hij was",
-   "ik weet het",
-   "waarschijnlijk jong",
-   "niet zeker"
-  ],
-  "answer": "ik weet het niet zeker, maar hij was waarschijnlijk jong",
-  "alternatives": [],
-  "hint": "“maar” joins two main clauses; both keep subject – verb order.",
-  "senses": {
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-36",
-  "topic": "gezondheid",
-  "parts": [
-   "ontbreekt",
-   "trouwens ook",
-   "mijn portemonnee"
-  ],
-  "answer": "mijn portemonnee ontbreekt trouwens ook",
-  "alternatives": [
-   "trouwens ontbreekt mijn portemonnee ook"
-  ],
-  "hint": "Verb in 2nd place; “trouwens” at the start causes inversion."
- },
- {
-  "id": "gezondheid-37",
-  "topic": "gezondheid",
-  "parts": [
-   "terug?",
-   "mijn laptop",
-   "krijg ik",
-   "later"
-  ],
-  "answer": "krijg ik mijn laptop later terug?",
-  "alternatives": [
-   "krijg ik later mijn laptop terug?"
-  ],
-  "hint": "Yes/no question: the verb comes first. Separable “terugkrijgen”: “terug” goes to the end."
- },
- {
-  "id": "gezondheid-38",
-  "topic": "gezondheid",
-  "parts": [
-   "is",
-   "een groot probleem",
-   "het verlies",
-   "van mijn laptop"
-  ],
-  "answer": "het verlies van mijn laptop is een groot probleem",
-  "alternatives": [],
-  "hint": "The whole subject “het verlies van mijn laptop” comes before the verb.",
-  "senses": {
-   "het": "het@50",
-   "van": "van@50",
-   "groot": "groot@50"
-  }
- },
- {
-  "id": "gezondheid-39",
-  "topic": "gezondheid",
-  "parts": [
-   "was het",
-   "een verschrikkelijk moment",
-   "voor mij"
-  ],
-  "answer": "voor mij was het een verschrikkelijk moment",
-  "alternatives": [
-   "het was voor mij een verschrikkelijk moment",
-   "het was een verschrikkelijk moment voor mij"
-  ],
-  "hint": "“voor mij” at the start causes inversion: was het.",
-  "senses": {
-   "voor": "voor@50",
-   "mij": "mij@50",
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-40",
-  "topic": "gezondheid",
-  "parts": [
-   "van de dief",
-   "enorm",
-   "ik ben",
-   "geschrokken"
-  ],
-  "answer": "ik ben enorm geschrokken van de dief",
-  "alternatives": [],
-  "hint": "“schrikken” takes “zijn” in the perfect: ik ben geschrokken.",
-  "senses": {
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-41",
-  "topic": "gezondheid",
-  "parts": [
-   "en praatte rustig",
-   "de agent",
-   "met mij",
-   "bleef kalm"
-  ],
-  "answer": "de agent bleef kalm en praatte rustig met mij",
-  "alternatives": [],
-  "hint": "Two verbs share one subject: de agent bleef … en praatte ….",
-  "senses": {
-   "agent": "agent@50",
-   "rustig": "rustig@50",
-   "mij": "mij@50"
-  }
- },
- {
-  "id": "gezondheid-42",
-  "topic": "gezondheid",
-  "parts": [
-   "op",
-   "de agent schrijft",
-   "nauwkeurig",
-   "alle details"
-  ],
-  "answer": "de agent schrijft alle details nauwkeurig op",
-  "alternatives": [
-   "de agent schrijft nauwkeurig alle details op"
-  ],
-  "hint": "Separable verb “opschrijven”: “op” goes to the end of the sentence.",
-  "senses": {
-   "agent": "agent@50",
-   "alle": "alle@50",
-   "op": "op@50"
-  }
- },
- {
-  "id": "gezondheid-43",
-  "topic": "gezondheid",
-  "parts": [
-   "aan DUO",
-   "ik heb",
-   "doorgegeven",
-   "mijn nieuwe adres",
-   "via de website"
-  ],
-  "answer": "ik heb mijn nieuwe adres via de website aan DUO doorgegeven",
-  "alternatives": [
-   "ik heb via de website mijn nieuwe adres aan DUO doorgegeven"
-  ],
-  "hint": "Perfect tense of a separable verb: door + ge + geven = doorgegeven, at the end.",
-  "senses": {
-   "aan": "aan@50"
-  }
- },
- {
-  "id": "gezondheid-44",
-  "topic": "gezondheid",
-  "parts": [
-   "krijg je",
-   "als student",
-   "geld van DUO"
-  ],
-  "answer": "als student krijg je geld van DUO",
-  "alternatives": [],
-  "hint": "“als student” (as a student) at the start causes inversion; with inversion “jij/je” drops the -t: krijg je.",
-  "senses": {
-   "als": "als@50",
-   "je": "je@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-45",
-  "topic": "gezondheid",
-  "parts": [
-   "af",
-   "volgend jaar",
-   "mijn dochter",
-   "studeert"
-  ],
-  "answer": "mijn dochter studeert volgend jaar af",
-  "alternatives": [
-   "volgend jaar studeert mijn dochter af"
-  ],
-  "hint": "Separable verb “afstuderen”: “af” goes to the end.",
-  "senses": {
-   "studeert": "studeert@50",
-   "af": "af@50"
-  }
- },
- {
-  "id": "gezondheid-46",
-  "topic": "gezondheid",
-  "parts": [
-   "later kiezen?",
-   "welk beroep",
-   "wil je"
-  ],
-  "answer": "welk beroep wil je later kiezen?",
-  "alternatives": [],
-  "hint": "W-question: question word + noun, then the verb, then the subject; the infinitive at the end.",
-  "senses": {
-   "welk": "welk@50",
-   "je": "je@50"
-  }
- },
- {
-  "id": "gezondheid-47",
-  "topic": "gezondheid",
-  "parts": [
-   "geen werk meer",
-   "heeft hij",
-   "sinds oktober"
-  ],
-  "answer": "sinds oktober heeft hij geen werk meer",
-  "alternatives": [
-   "hij heeft sinds oktober geen werk meer"
-  ],
-  "hint": "Time phrase first causes inversion: heeft hij.",
-  "senses": {
-   "sinds": "sinds@50",
-   "geen": "geen@50",
-   "werk": "werk@50",
-   "meer": "meer@50"
-  }
- },
- {
-  "id": "gezondheid-48",
-  "topic": "gezondheid",
-  "parts": [
-   "om de taal",
-   "ik volg",
-   "beter te leren",
-   "een cursus"
-  ],
-  "answer": "ik volg een cursus om de taal beter te leren",
-  "alternatives": [],
-  "hint": "“om … te + infinitive” explains the purpose; the infinitive is last.",
-  "senses": {
-   "om": "om@50",
-   "te": "te@50",
-   "leren": "leren@50"
-  }
- },
- {
-  "id": "gezondheid-49",
-  "topic": "gezondheid",
-  "parts": [
-   "een verhaal",
-   "over de oorlog",
-   "vertelt vaak",
-   "mijn opa"
-  ],
-  "answer": "mijn opa vertelt vaak een verhaal over de oorlog",
-  "alternatives": [],
-  "hint": "Verb in 2nd place, then “vaak”, then the object.",
-  "senses": {
-   "opa": "opa@50"
-  }
- },
- {
-  "id": "gezondheid-50",
-  "topic": "gezondheid",
-  "parts": [
-   "in Den Haag",
-   "werken",
-   "de koning",
-   "en de regering"
-  ],
-  "answer": "de koning en de regering werken in Den Haag",
-  "alternatives": [],
-  "hint": "Two subjects joined by “en” take a plural verb: werken."
- },
- {
-  "id": "gezondheid-51",
-  "topic": "gezondheid",
-  "parts": [
-   "werken we",
-   "goed samen",
-   "op ons werk"
-  ],
-  "answer": "op ons werk werken we goed samen",
-  "alternatives": [
-   "we werken op ons werk goed samen"
-  ],
-  "hint": "Separable verb “samenwerken”: “samen” goes to the end; place first causes inversion.",
-  "senses": {
-   "op": "op@50",
-   "werk": "werk@50",
-   "goed": "goed@50",
-   "samen": "samen@50"
-  }
- },
- {
-  "id": "gezondheid-52",
-  "topic": "gezondheid",
-  "parts": [
-   "een kleine provincie",
-   "Utrecht is",
-   "in het midden",
-   "van het land"
-  ],
-  "answer": "Utrecht is een kleine provincie in het midden van het land",
-  "alternatives": [],
-  "hint": "Subject – verb – rest.",
-  "senses": {
-   "utrecht": "utrecht@50",
-   "het": "het@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-53",
-  "topic": "gezondheid",
-  "parts": [
-   "een straf gegeven",
-   "de rechter",
-   "heeft",
-   "de dief"
-  ],
-  "answer": "de rechter heeft de dief een straf gegeven",
-  "alternatives": [],
-  "hint": "Indirect object (de dief) before the direct object (een straf); participle at the end.",
-  "senses": {
-   "straf": "straf@50"
-  }
- },
- {
-  "id": "gezondheid-54",
-  "topic": "gezondheid",
-  "parts": [
-   "ook thuis",
-   "in Nederland verboden",
-   "geweld is"
-  ],
-  "answer": "geweld is in Nederland verboden, ook thuis",
-  "alternatives": [],
-  "hint": "Subject – verb – place – adjective; “ook thuis” is added at the end."
- },
- {
-  "id": "gezondheid-55",
-  "topic": "gezondheid",
-  "parts": [
-   "geen wapen hebben",
-   "in Nederland",
-   "mag je"
-  ],
-  "answer": "in Nederland mag je geen wapen hebben",
-  "alternatives": [
-   "je mag in Nederland geen wapen hebben"
-  ],
-  "hint": "Place first causes inversion (mag je); the infinitive “hebben” is last.",
-  "senses": {
-   "je": "je@50",
-   "geen": "geen@50"
-  }
- },
- {
-  "id": "gezondheid-56",
-  "topic": "gezondheid",
-  "parts": [
-   "een brief gestuurd",
-   "heeft",
-   "van de school",
-   "het bestuur"
-  ],
-  "answer": "het bestuur van de school heeft een brief gestuurd",
-  "alternatives": [],
-  "hint": "Perfect tense: “heeft … gestuurd”.",
-  "senses": {
-   "het": "het@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-57",
-  "topic": "gezondheid",
-  "parts": [
-   "is goed",
-   "voor de maatschappij",
-   "vrijwilligerswerk"
-  ],
-  "answer": "vrijwilligerswerk is goed voor de maatschappij",
-  "alternatives": [],
-  "hint": "Subject – verb – rest.",
-  "senses": {
-   "goed": "goed@50",
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-58",
-  "topic": "gezondheid",
-  "parts": [
-   "dicht",
-   "ik doe de gordijnen",
-   "want het licht",
-   "doet pijn aan mijn ogen"
-  ],
-  "answer": "ik doe de gordijnen dicht, want het licht doet pijn aan mijn ogen",
-  "alternatives": [],
-  "hint": "Separable “dichtdoen”: “dicht” goes after the object. After “want” normal order.",
-  "senses": {
-   "doe": "doe@50",
-   "dicht": "dicht@50",
-   "het": "het@50",
-   "licht": "licht@50",
-   "aan": "aan@50"
-  }
- },
- {
-  "id": "gezondheid-59",
-  "topic": "gezondheid",
-  "parts": [
-   "is kapot",
-   "ik kan niet opruimen",
-   "want de stofzuiger"
-  ],
-  "answer": "ik kan niet opruimen, want de stofzuiger is kapot",
-  "alternatives": [],
-  "hint": "After a modal (kan) the separable verb stays together as an infinitive: opruimen.",
-  "senses": {
-   "opruimen": "opruimen@50"
-  }
- },
- {
-  "id": "gezondheid-60",
-  "topic": "gezondheid",
-  "parts": [
-   "maar breng ze",
-   "gooi oude medicijnen",
-   "naar de apotheek",
-   "niet weg"
-  ],
-  "answer": "gooi oude medicijnen niet weg, maar breng ze naar de apotheek",
-  "alternatives": [],
-  "hint": "Imperative: the verb comes first. Separable “weggooien”: “weg” goes to the end.",
-  "senses": {
-   "weg": "weg@50",
-   "breng": "breng@50",
-   "ze": "ze@50"
-  }
- },
- {
-  "id": "gezondheid-61",
-  "topic": "gezondheid",
-  "parts": [
-   "op dinsdagavond",
-   "ik zet",
-   "buiten",
-   "de vuilniszak"
-  ],
-  "answer": "ik zet de vuilniszak op dinsdagavond buiten",
-  "alternatives": [
-   "op dinsdagavond zet ik de vuilniszak buiten",
-   "ik zet op dinsdagavond de vuilniszak buiten"
-  ],
-  "hint": "TMP: time (op dinsdagavond) before place (buiten).",
-  "senses": {
-   "vuilniszak": "vuilniszak@50",
-   "op": "op@50"
-  }
- },
- {
-  "id": "gezondheid-62",
-  "topic": "gezondheid",
-  "parts": [
-   "aan de muur",
-   "opgehangen",
-   "hij heeft",
-   "de spiegel"
-  ],
-  "answer": "hij heeft de spiegel aan de muur opgehangen",
-  "alternatives": [],
-  "hint": "Perfect of a separable verb: op + ge + hangen = opgehangen, at the end.",
-  "senses": {
-   "aan": "aan@50"
-  }
- },
- {
-  "id": "gezondheid-63",
-  "topic": "gezondheid",
-  "parts": [
-   "het regent binnen",
-   "is kapot",
-   "want het dak"
-  ],
-  "answer": "het regent binnen, want het dak is kapot",
-  "alternatives": [],
-  "hint": "After “want” you keep main-clause order: het dak is kapot.",
-  "senses": {
-   "het": "het@50",
-   "binnen": "binnen@50"
-  }
- },
- {
-  "id": "gezondheid-64",
-  "topic": "gezondheid",
-  "parts": [
-   "is heel oud",
-   "het kleed",
-   "in de woonkamer"
-  ],
-  "answer": "het kleed in de woonkamer is heel oud",
-  "alternatives": [],
-  "hint": "The subject “het kleed in de woonkamer” comes before the verb.",
-  "senses": {
-   "het": "het@50",
-   "heel": "heel@50"
-  }
- },
- {
-  "id": "gezondheid-65",
-  "topic": "gezondheid",
-  "parts": [
-   "een verhaal",
-   "staat",
-   "over de nieuwe huisarts",
-   "in de wijkkrant"
-  ],
-  "answer": "in de wijkkrant staat een verhaal over de nieuwe huisarts",
-  "alternatives": [],
-  "hint": "Place first, then the verb (staat), then the subject: inversion.",
-  "senses": {
-   "wijkkrant": "wijkkrant@50",
-   "huisarts": "huisarts@50"
-  }
- },
- {
-  "id": "gezondheid-66",
-  "topic": "gezondheid",
-  "parts": [
-   "dus ik mis haar",
-   "ver weg",
-   "mijn mama woont"
-  ],
-  "answer": "mijn mama woont ver weg, dus ik mis haar",
-  "alternatives": [
-   "mijn mama woont ver weg, dus mis ik haar"
-  ],
-  "hint": "After “dus” you may use normal order (ik mis) or inversion (mis ik).",
-  "senses": {
-   "weg": "weg@50"
-  }
- },
- {
-  "id": "gezondheid-67",
-  "topic": "gezondheid",
-  "parts": [
-   "want de bus",
-   "je moet",
-   "vertrekt meteen",
-   "snel instappen"
-  ],
-  "answer": "je moet snel instappen, want de bus vertrekt meteen",
-  "alternatives": [],
-  "hint": "After a modal the separable verb stays whole at the end: instappen.",
-  "senses": {
-   "je": "je@50",
-   "snel": "snel@50"
-  }
- },
- {
-  "id": "gezondheid-68",
-  "topic": "gezondheid",
-  "parts": [
-   "geen auto rijden",
-   "mag je",
-   "met deze medicijnen"
-  ],
-  "answer": "met deze medicijnen mag je geen auto rijden",
-  "alternatives": [
-   "je mag met deze medicijnen geen auto rijden"
-  ],
-  "hint": "Inversion after “met deze medicijnen”; the infinitive “rijden” is last.",
-  "senses": {
-   "deze": "deze@50",
-   "je": "je@50",
-   "geen": "geen@50",
-   "rijden": "rijden@50"
-  }
- },
- {
-  "id": "gezondheid-69",
-  "topic": "gezondheid",
-  "parts": [
-   "gevallen",
-   "is",
-   "mijn dochter",
-   "van een paard"
-  ],
-  "answer": "mijn dochter is van een paard gevallen",
-  "alternatives": [],
-  "hint": "“vallen” takes “zijn” in the perfect: is gevallen.",
-  "senses": {
    "van": "van@50"
   }
  },
@@ -10000,654 +11793,12 @@ const EXERCISES = [
    "zondag hebben we een lange tocht door het bos gemaakt"
   ],
   "hint": "Perfect tense; time (zondag) comes early or first with inversion.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
    "zondag": "zondag@50",
    "door": "door@50",
    "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-71",
-  "topic": "gezondheid",
-  "parts": [
-   "als ik",
-   "zwanger ben?",
-   "mag ik vliegen"
-  ],
-  "answer": "mag ik vliegen als ik zwanger ben?",
-  "alternatives": [
-   "als ik zwanger ben, mag ik vliegen?"
-  ],
-  "hint": "Yes/no question starts with the verb; “als” sends “ben” to the end.",
-  "senses": {
-   "als": "als@50"
-  }
- },
- {
-  "id": "gezondheid-72",
-  "topic": "gezondheid",
-  "parts": [
-   "droom ik",
-   "vaak slecht",
-   "sinds het ongeluk"
-  ],
-  "answer": "sinds het ongeluk droom ik vaak slecht",
-  "alternatives": [
-   "ik droom sinds het ongeluk vaak slecht"
-  ],
-  "hint": "Time phrase first causes inversion: droom ik.",
-  "senses": {
-   "sinds": "sinds@50",
-   "het": "het@50",
-   "droom": "droom@50"
-  }
- },
- {
-  "id": "gezondheid-73",
-  "topic": "gezondheid",
-  "parts": [
-   "had hij",
-   "veel verdriet",
-   "na de dood",
-   "van zijn vader"
-  ],
-  "answer": "na de dood van zijn vader had hij veel verdriet",
-  "alternatives": [
-   "hij had na de dood van zijn vader veel verdriet"
-  ],
-  "hint": "A long time phrase at the start still causes inversion: had hij.",
-  "senses": {
-   "dood": "dood@50",
-   "van": "van@50",
-   "veel": "veel@50"
-  }
- },
- {
-  "id": "gezondheid-74",
-  "topic": "gezondheid",
-  "parts": [
-   "heb je",
-   "vaak sterke emoties",
-   "na een ongeluk"
-  ],
-  "answer": "na een ongeluk heb je vaak sterke emoties",
-  "alternatives": [],
-  "hint": "Inversion after the time phrase; with inversion “je” drops the -t: heb je.",
-  "senses": {
-   "je": "je@50"
-  }
- },
- {
-  "id": "gezondheid-75",
-  "topic": "gezondheid",
-  "parts": [
-   "met een glimlach",
-   "helpt mij",
-   "altijd",
-   "de verpleegkundige"
-  ],
-  "answer": "de verpleegkundige helpt mij altijd met een glimlach",
-  "alternatives": [],
-  "hint": "Object pronoun (mij) right after the verb, then time (altijd), then manner.",
-  "senses": {
-   "mij": "mij@50"
-  }
- },
- {
-  "id": "gezondheid-76",
-  "topic": "gezondheid",
-  "parts": [
-   "in het ziekenhuis",
-   "met veel plezier",
-   "ik werk"
-  ],
-  "answer": "ik werk met veel plezier in het ziekenhuis",
-  "alternatives": [
-   "ik werk in het ziekenhuis met veel plezier",
-   "in het ziekenhuis werk ik met veel plezier"
-  ],
-  "hint": "TMP: manner (met veel plezier) before place (in het ziekenhuis).",
-  "senses": {
-   "werk": "werk@50",
-   "veel": "veel@50",
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-77",
-  "topic": "gezondheid",
-  "parts": [
-   "was heel gezellig",
-   "van mijn vrienden",
-   "het bezoek"
-  ],
-  "answer": "het bezoek van mijn vrienden was heel gezellig",
-  "alternatives": [],
-  "hint": "The whole subject comes before the verb “was”.",
-  "senses": {
-   "het": "het@50",
-   "van": "van@50",
-   "heel": "heel@50"
-  }
- },
- {
-  "id": "gezondheid-78",
-  "topic": "gezondheid",
-  "parts": [
-   "een goede indruk",
-   "maakt",
-   "de nieuwe huisarts"
-  ],
-  "answer": "de nieuwe huisarts maakt een goede indruk",
-  "alternatives": [],
-  "hint": "“een goede indruk maken” = to make a good impression.",
-  "senses": {
-   "huisarts": "huisarts@50"
-  }
- },
- {
-  "id": "gezondheid-79",
-  "topic": "gezondheid",
-  "parts": [
-   "veel begrip",
-   "voor mijn omstandigheden",
-   "mijn baas heeft"
-  ],
-  "answer": "mijn baas heeft veel begrip voor mijn omstandigheden",
-  "alternatives": [],
-  "hint": "Subject – verb – object – “voor …”.",
-  "senses": {
-   "veel": "veel@50",
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-80",
-  "topic": "gezondheid",
-  "parts": [
-   "absoluut niet roken",
-   "u mag",
-   "in het ziekenhuis"
-  ],
-  "answer": "u mag absoluut niet roken in het ziekenhuis",
-  "alternatives": [
-   "in het ziekenhuis mag u absoluut niet roken",
-   "u mag in het ziekenhuis absoluut niet roken"
-  ],
-  "hint": "Modal (mag) in 2nd place, infinitive (roken) later; place first causes inversion.",
-  "senses": {
-   "het": "het@50"
-  }
- },
- {
-  "id": "gezondheid-81",
-  "topic": "gezondheid",
-  "parts": [
-   "is positief",
-   "de uitslag",
-   "van de test"
-  ],
-  "answer": "de uitslag van de test is positief",
-  "alternatives": [],
-  "hint": "Subject – verb – adjective.",
-  "senses": {
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-82",
-  "topic": "gezondheid",
-  "parts": [
-   "nog geen effect",
-   "hebben",
-   "deze medicijnen"
-  ],
-  "answer": "deze medicijnen hebben nog geen effect",
-  "alternatives": [],
-  "hint": "Plural subject, plural verb: hebben.",
-  "senses": {
-   "deze": "deze@50",
-   "nog": "nog@50",
-   "geen": "geen@50"
-  }
- },
- {
-  "id": "gezondheid-83",
-  "topic": "gezondheid",
-  "parts": [
-   "op je gezondheid",
-   "heeft veel invloed",
-   "stress"
-  ],
-  "answer": "stress heeft veel invloed op je gezondheid",
-  "alternatives": [],
-  "hint": "“invloed hebben op” = to have influence on.",
-  "senses": {
-   "veel": "veel@50",
-   "op": "op@50",
-   "je": "je@50"
-  }
- },
- {
-  "id": "gezondheid-84",
-  "topic": "gezondheid",
-  "parts": [
-   "van groot belang",
-   "voor kinderen",
-   "gezond voedsel is"
-  ],
-  "answer": "gezond voedsel is van groot belang voor kinderen",
-  "alternatives": [],
-  "hint": "“van groot belang zijn” = to be very important.",
-  "senses": {
-   "van": "van@50",
-   "groot": "groot@50",
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-85",
-  "topic": "gezondheid",
-  "parts": [
-   "om naar het ziekenhuis",
-   "er is",
-   "te gaan",
-   "geen noodzaak"
-  ],
-  "answer": "er is geen noodzaak om naar het ziekenhuis te gaan",
-  "alternatives": [],
-  "hint": "“om … te + infinitive”: the infinitive closes the sentence.",
-  "senses": {
-   "geen": "geen@50",
-   "om": "om@50",
-   "het": "het@50",
-   "te": "te@50"
-  }
- },
- {
-  "id": "gezondheid-86",
-  "topic": "gezondheid",
-  "parts": [
-   "met lopen",
-   "mijn opa",
-   "heeft moeilijkheden"
-  ],
-  "answer": "mijn opa heeft moeilijkheden met lopen",
-  "alternatives": [],
-  "hint": "Subject – verb – object – “met …”.",
-  "senses": {
-   "opa": "opa@50"
-  }
- },
- {
-  "id": "gezondheid-87",
-  "topic": "gezondheid",
-  "parts": [
-   "voor ouderen",
-   "heeft veel activiteiten",
-   "het buurthuis"
-  ],
-  "answer": "het buurthuis heeft veel activiteiten voor ouderen",
-  "alternatives": [],
-  "hint": "Subject – verb – object.",
-  "senses": {
-   "het": "het@50",
-   "veel": "veel@50",
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-88",
-  "topic": "gezondheid",
-  "parts": [
-   "anders kunt u",
-   "niet betalen",
-   "neem uw pasje",
-   "mee"
-  ],
-  "answer": "neem uw pasje mee, anders kunt u niet betalen",
-  "alternatives": [],
-  "hint": "Imperative first; “anders” (otherwise) causes inversion: kunt u.",
-  "senses": {
-   "uw": "uw@50",
-   "mee": "mee@50"
-  }
- },
- {
-  "id": "gezondheid-89",
-  "topic": "gezondheid",
-  "parts": [
-   "dat ik rust",
-   "de conclusie",
-   "nodig heb",
-   "van de dokter is"
-  ],
-  "answer": "de conclusie van de dokter is dat ik rust nodig heb",
-  "alternatives": [],
-  "hint": "“dat” sends the verb (heb) to the very end.",
-  "senses": {
-   "van": "van@50",
-   "nodig": "nodig@50"
-  }
- },
- {
-  "id": "gezondheid-90",
-  "topic": "gezondheid",
-  "parts": [
-   "over de hele wereld",
-   "helpt mensen",
-   "het Rode Kruis"
-  ],
-  "answer": "het Rode Kruis helpt mensen over de hele wereld",
-  "alternatives": [],
-  "hint": "Subject – verb – object – place.",
-  "senses": {
-   "het": "het@50",
-   "hele": "hele@50"
-  }
- },
- {
-  "id": "gezondheid-91",
-  "topic": "gezondheid",
-  "parts": [
-   "even zien?",
-   "uw tong",
-   "mag ik"
-  ],
-  "answer": "mag ik uw tong even zien?",
-  "alternatives": [
-   "mag ik even uw tong zien?"
-  ],
-  "hint": "Polite question: modal first, infinitive (zien) at the end.",
-  "senses": {
-   "uw": "uw@50"
-  }
- },
- {
-  "id": "gezondheid-92",
-  "topic": "gezondheid",
-  "parts": [
-   "want ik ben",
-   "ik heb bijna",
-   "verkouden",
-   "geen stem meer"
-  ],
-  "answer": "ik heb bijna geen stem meer, want ik ben verkouden",
-  "alternatives": [],
-  "hint": "After “want” the order stays normal: ik ben.",
-  "senses": {
-   "bijna": "bijna@50",
-   "geen": "geen@50",
-   "meer": "meer@50"
-  }
- },
- {
-  "id": "gezondheid-93",
-  "topic": "gezondheid",
-  "parts": [
-   "stil zijn",
-   "moet je",
-   "in het ziekenhuis"
-  ],
-  "answer": "in het ziekenhuis moet je stil zijn",
-  "alternatives": [
-   "je moet in het ziekenhuis stil zijn"
-  ],
-  "hint": "Place first causes inversion; the infinitive “zijn” is last.",
-  "senses": {
-   "het": "het@50",
-   "je": "je@50",
-   "stil": "stil@50"
-  }
- },
- {
-  "id": "gezondheid-94",
-  "topic": "gezondheid",
-  "parts": [
-   "van een grijze auto",
-   "de dief",
-   "achter het stuur",
-   "zat"
-  ],
-  "answer": "de dief zat achter het stuur van een grijze auto",
-  "alternatives": [],
-  "hint": "Past tense verb “zat” in 2nd place.",
-  "senses": {
-   "het": "het@50",
-   "stuur": "stuur@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-95",
-  "topic": "gezondheid",
-  "parts": [
-   "genoeg ruimte",
-   "voor iedereen",
-   "is",
-   "in de wachtkamer"
-  ],
-  "answer": "in de wachtkamer is genoeg ruimte voor iedereen",
-  "alternatives": [
-   "in de wachtkamer is voor iedereen genoeg ruimte"
-  ],
-  "hint": "Place first, then the verb, then the subject (genoeg ruimte).",
-  "senses": {
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-96",
-  "topic": "gezondheid",
-  "parts": [
-   "te laag",
-   "volgens de huisarts",
-   "is mijn bloeddruk"
-  ],
-  "answer": "volgens de huisarts is mijn bloeddruk te laag",
-  "alternatives": [
-   "mijn bloeddruk is volgens de huisarts te laag"
-  ],
-  "hint": "Inversion after “volgens de huisarts”: is mijn bloeddruk.",
-  "senses": {
-   "huisarts": "huisarts@50",
-   "te": "te@50"
-  }
- },
- {
-  "id": "gezondheid-97",
-  "topic": "gezondheid",
-  "parts": [
-   "aan het eind",
-   "de afspraak is",
-   "van de middag"
-  ],
-  "answer": "de afspraak is aan het eind van de middag",
-  "alternatives": [],
-  "hint": "Subject – verb – time.",
-  "senses": {
-   "afspraak": "afspraak@50",
-   "aan": "aan@50",
-   "het": "het@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-98",
-  "topic": "gezondheid",
-  "parts": [
-   "met mijn rug",
-   "hetzelfde probleem",
-   "ik heb",
-   "nog steeds"
-  ],
-  "answer": "ik heb nog steeds hetzelfde probleem met mijn rug",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; “nog steeds” comes before the object.",
-  "senses": {
-   "nog": "nog@50",
-   "steeds": "steeds@50"
-  }
- },
- {
-  "id": "gezondheid-99",
-  "topic": "gezondheid",
-  "parts": [
-   "gisteren",
-   "twee mannen vochten",
-   "voor de supermarkt"
-  ],
-  "answer": "twee mannen vochten gisteren voor de supermarkt",
-  "alternatives": [
-   "gisteren vochten twee mannen voor de supermarkt"
-  ],
-  "hint": "TMP: time (gisteren) before place (voor de supermarkt).",
-  "senses": {
-   "twee": "twee@50",
-   "gisteren": "gisteren@50",
-   "voor": "voor@50"
-  }
- },
- {
-  "id": "gezondheid-100",
-  "topic": "gezondheid",
-  "parts": [
-   "gewonnen",
-   "zijn team heeft",
-   "de wedstrijd"
-  ],
-  "answer": "zijn team heeft de wedstrijd gewonnen",
-  "alternatives": [],
-  "hint": "Perfect tense: “heeft … gewonnen”."
- },
- {
-  "id": "gezondheid-101",
-  "topic": "gezondheid",
-  "parts": [
-   "pas volgende week",
-   "tijd",
-   "de huisarts heeft"
-  ],
-  "answer": "de huisarts heeft pas volgende week tijd",
-  "alternatives": [
-   "pas volgende week heeft de huisarts tijd"
-  ],
-  "hint": "Time before the object; time first causes inversion.",
-  "senses": {
-   "huisarts": "huisarts@50",
-   "pas": "pas@50",
-   "volgende": "volgende@50"
-  }
- },
- {
-  "id": "gezondheid-102",
-  "topic": "gezondheid",
-  "parts": [
-   "een afspraak",
-   "we zouden",
-   "willen maken",
-   "graag"
-  ],
-  "answer": "we zouden graag een afspraak willen maken",
-  "alternatives": [],
-  "hint": "Polite form: “zouden” in 2nd place, both infinitives at the end.",
-  "senses": {
-   "afspraak": "afspraak@50",
-   "maken": "maken@50"
-  }
- },
- {
-  "id": "gezondheid-103",
-  "topic": "gezondheid",
-  "parts": [
-   "mijn tas gevonden",
-   "heeft de politie",
-   "uiteindelijk"
-  ],
-  "answer": "uiteindelijk heeft de politie mijn tas gevonden",
-  "alternatives": [
-   "de politie heeft uiteindelijk mijn tas gevonden"
-  ],
-  "hint": "“uiteindelijk” first causes inversion; the participle is last."
- },
- {
-  "id": "gezondheid-104",
-  "topic": "gezondheid",
-  "parts": [
-   "na de maaltijd",
-   "deze tabletten",
-   "neem"
-  ],
-  "answer": "neem deze tabletten na de maaltijd",
-  "alternatives": [],
-  "hint": "Imperative: the verb comes first.",
-  "senses": {
-   "deze": "deze@50"
-  }
- },
- {
-  "id": "gezondheid-105",
-  "topic": "gezondheid",
-  "parts": [
-   "bij de kassa",
-   "afrekenen",
-   "u kunt"
-  ],
-  "answer": "u kunt bij de kassa afrekenen",
-  "alternatives": [],
-  "hint": "After a modal the separable verb stays whole at the end: afrekenen.",
-  "senses": {
-   "bij": "bij@50"
-  }
- },
- {
-  "id": "gezondheid-106",
-  "topic": "gezondheid",
-  "parts": [
-   "bij de aangifte",
-   "bedankt",
-   "voor uw hulp"
-  ],
-  "answer": "bedankt voor uw hulp bij de aangifte",
-  "alternatives": [],
-  "hint": "“bedankt voor …” = thanks for …",
-  "senses": {
-   "voor": "voor@50",
-   "uw": "uw@50",
-   "bij": "bij@50",
-   "aangifte": "aangifte@50"
-  }
- },
- {
-  "id": "gezondheid-107",
-  "topic": "gezondheid",
-  "parts": [
-   "even voorstellen?",
-   "mag ik",
-   "mij"
-  ],
-  "answer": "mag ik mij even voorstellen?",
-  "alternatives": [],
-  "hint": "Question with a modal: the infinitive “voorstellen” goes to the end.",
-  "senses": {
-   "mij": "mij@50",
-   "voorstellen": "voorstellen@50"
-  }
- },
- {
-  "id": "gezondheid-108",
-  "topic": "gezondheid",
-  "parts": [
-   "is uitstekend",
-   "de zorg",
-   "in dit ziekenhuis"
-  ],
-  "answer": "de zorg in dit ziekenhuis is uitstekend",
-  "alternatives": [],
-  "hint": "The whole subject comes before the verb.",
-  "senses": {
-   "zorg": "zorg@50",
-   "dit": "dit@50"
   }
  },
  {
@@ -10663,72 +11814,31 @@ const EXERCISES = [
    "iemand heeft tot mijn verbazing mijn tas teruggebracht"
   ],
   "hint": "Inversion after “tot mijn verbazing”; participle at the end.",
+  "grammar": "perfectum",
+  "level": 4,
   "senses": {
    "iemand": "iemand@50"
   }
  },
  {
-  "id": "gezondheid-110",
+  "id": "gezondheid-43",
   "topic": "gezondheid",
   "parts": [
-   "zijn op zondag dicht",
-   "alle apotheken",
-   "vrijwel"
+   "aan DUO",
+   "ik heb",
+   "doorgegeven",
+   "mijn nieuwe adres",
+   "via de website"
   ],
-  "answer": "vrijwel alle apotheken zijn op zondag dicht",
+  "answer": "ik heb mijn nieuwe adres via de website aan DUO doorgegeven",
   "alternatives": [
-   "op zondag zijn vrijwel alle apotheken dicht"
+   "ik heb via de website mijn nieuwe adres aan DUO doorgegeven"
   ],
-  "hint": "Subject first, or time first with inversion.",
+  "hint": "Perfect tense of a separable verb: door + ge + geven = doorgegeven, at the end.",
+  "grammar": "perfectum",
+  "level": 5,
   "senses": {
-   "alle": "alle@50",
-   "op": "op@50",
-   "zondag": "zondag@50",
-   "dicht": "dicht@50"
-  }
- },
- {
-  "id": "gezondheid-111",
-  "topic": "gezondheid",
-  "parts": [
-   "ik ben namelijk ziek",
-   "niet komen",
-   "ik kan"
-  ],
-  "answer": "ik kan niet komen, ik ben namelijk ziek",
-  "alternatives": [],
-  "hint": "“namelijk” (you see) comes after the verb, never at the start."
- },
- {
-  "id": "gezondheid-112",
-  "topic": "gezondheid",
-  "parts": [
-   "zoals groente",
-   "gezond eten",
-   "en fruit",
-   "u moet"
-  ],
-  "answer": "u moet gezond eten, zoals groente en fruit",
-  "alternatives": [],
-  "hint": "Modal in 2nd place, infinitive (eten) at the end of the clause.",
-  "senses": {
-   "eten": "eten@50",
-   "groente": "groente@50"
-  }
- },
- {
-  "id": "gezondheid-113",
-  "topic": "gezondheid",
-  "parts": [
-   "nu eenmaal",
-   "zo",
-   "dat is"
-  ],
-  "answer": "dat is nu eenmaal zo",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; “nu eenmaal” sits between the verb and “zo”.",
-  "senses": {
-   "zo": "zo@50"
+   "aan": "aan@50"
   }
  },
  {
@@ -10741,221 +11851,564 @@ const EXERCISES = [
   ],
   "answer": "ik blijf thuis, ik ben tenslotte ziek",
   "alternatives": [],
-  "hint": "Adverbs like “tenslotte” come right after the verb."
+  "hint": "Adverbs like “tenslotte” come right after the verb.",
+  "grammar": "nevenschikkend",
+  "level": 3
  },
  {
-  "id": "gezondheid-115",
+  "id": "gezondheid-63",
   "topic": "gezondheid",
   "parts": [
-   "echter gesloten",
-   "is de apotheek",
-   "op zondag"
+   "het regent binnen",
+   "is kapot",
+   "want het dak"
   ],
-  "answer": "op zondag is de apotheek echter gesloten",
+  "answer": "het regent binnen, want het dak is kapot",
+  "alternatives": [],
+  "hint": "After “want” you keep main-clause order: het dak is kapot.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "het": "het@50",
+   "binnen": "binnen@50"
+  }
+ },
+ {
+  "id": "gezondheid-41",
+  "topic": "gezondheid",
+  "parts": [
+   "en praatte rustig",
+   "de agent",
+   "met mij",
+   "bleef kalm"
+  ],
+  "answer": "de agent bleef kalm en praatte rustig met mij",
+  "alternatives": [],
+  "hint": "Two verbs share one subject: de agent bleef … en praatte ….",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "agent": "agent@50",
+   "rustig": "rustig@50",
+   "mij": "mij@50"
+  }
+ },
+ {
+  "id": "gezondheid-59",
+  "topic": "gezondheid",
+  "parts": [
+   "is kapot",
+   "ik kan niet opruimen",
+   "want de stofzuiger"
+  ],
+  "answer": "ik kan niet opruimen, want de stofzuiger is kapot",
+  "alternatives": [],
+  "hint": "After a modal (kan) the separable verb stays together as an infinitive: opruimen.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "opruimen": "opruimen@50"
+  }
+ },
+ {
+  "id": "gezondheid-66",
+  "topic": "gezondheid",
+  "parts": [
+   "dus ik mis haar",
+   "ver weg",
+   "mijn mama woont"
+  ],
+  "answer": "mijn mama woont ver weg, dus ik mis haar",
   "alternatives": [
-   "de apotheek is op zondag echter gesloten",
-   "de apotheek is echter op zondag gesloten"
+   "mijn mama woont ver weg, dus mis ik haar"
   ],
-  "hint": "Time first causes inversion; “echter” (however) comes after the verb/subject.",
+  "hint": "After “dus” you may use normal order (ik mis) or inversion (mis ik).",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
-   "op": "op@50",
-   "zondag": "zondag@50"
+   "weg": "weg@50"
   }
  },
  {
-  "id": "gezondheid-116",
+  "id": "gezondheid-10",
   "topic": "gezondheid",
   "parts": [
-   "tot mijn broer",
-   "ben ik",
-   "bijna nooit ziek",
-   "in tegenstelling"
+   "rode ogen",
+   "mijn dochter heeft",
+   "en zij heeft",
+   "het koud"
   ],
-  "answer": "in tegenstelling tot mijn broer ben ik bijna nooit ziek",
+  "answer": "mijn dochter heeft rode ogen en zij heeft het koud",
   "alternatives": [
-   "ik ben in tegenstelling tot mijn broer bijna nooit ziek"
+   "mijn dochter heeft het koud en zij heeft rode ogen"
   ],
-  "hint": "A long phrase at the start still causes inversion: ben ik.",
+  "hint": "“en” joins two main clauses: both keep normal order (subject – verb).",
+  "grammar": "nevenschikkend",
+  "level": 3,
   "senses": {
-   "bijna": "bijna@50"
-  }
- },
- {
-  "id": "gezondheid-117",
-  "topic": "gezondheid",
-  "parts": [
-   "van griep?",
-   "de kenmerken",
-   "wat zijn"
-  ],
-  "answer": "wat zijn de kenmerken van griep?",
-  "alternatives": [],
-  "hint": "W-question: question word, then the verb.",
-  "senses": {
-   "wat": "wat@50",
-   "van": "van@50"
-  }
- },
- {
-  "id": "gezondheid-118",
-  "topic": "gezondheid",
-  "parts": [
-   "je niet!",
-   "meen",
-   "dat"
-  ],
-  "answer": "dat meen je niet!",
-  "alternatives": [],
-  "hint": "Inversion: object “dat” first, then verb, then subject; “meen je” drops the -t.",
-  "senses": {
-   "je": "je@50"
-  }
- },
- {
-  "id": "gezondheid-119",
-  "topic": "gezondheid",
-  "parts": [
-   "geen suiker",
-   "bevat",
-   "dit medicijn"
-  ],
-  "answer": "dit medicijn bevat geen suiker",
-  "alternatives": [],
-  "hint": "Subject – verb – object.",
-  "senses": {
-   "dit": "dit@50",
-   "geen": "geen@50"
-  }
- },
- {
-  "id": "gezondheid-120",
-  "topic": "gezondheid",
-  "parts": [
-   "een traditionele maaltijd",
-   "vanavond",
-   "we eten"
-  ],
-  "answer": "we eten vanavond een traditionele maaltijd",
-  "alternatives": [
-   "vanavond eten we een traditionele maaltijd"
-  ],
-  "hint": "Time before the object; time first causes inversion.",
-  "senses": {
-   "eten": "eten@50"
-  }
- },
- {
-  "id": "gezondheid-121",
-  "topic": "gezondheid",
-  "parts": [
-   "een lang proces",
-   "bij de IND",
-   "de aanvraag",
-   "is"
-  ],
-  "answer": "de aanvraag bij de IND is een lang proces",
-  "alternatives": [],
-  "hint": "The whole subject “de aanvraag bij de IND” comes before the verb.",
-  "senses": {
-   "bij": "bij@50"
-  }
- },
- {
-  "id": "gezondheid-122",
-  "topic": "gezondheid",
-  "parts": [
-   "op school",
-   "mijn favoriete vak",
-   "Nederlands is"
-  ],
-  "answer": "Nederlands is mijn favoriete vak op school",
-  "alternatives": [
-   "op school is Nederlands mijn favoriete vak"
-  ],
-  "hint": "Subject – verb – rest; place first causes inversion.",
-  "senses": {
-   "nederlands": "nederlands@50",
-   "op": "op@50"
-  }
- },
- {
-  "id": "gezondheid-123",
-  "topic": "gezondheid",
-  "parts": [
-   "een plaat",
-   "in mijn been",
-   "gezet",
-   "de chirurg heeft"
-  ],
-  "answer": "de chirurg heeft een plaat in mijn been gezet",
-  "alternatives": [],
-  "hint": "Perfect tense: “heeft … gezet”, object before place.",
-  "senses": {
-   "been": "been@50"
-  }
- },
- {
-  "id": "gezondheid-124",
-  "topic": "gezondheid",
-  "parts": [
-   "uw naam",
-   "bovenaan het blad",
-   "schrijf"
-  ],
-  "answer": "schrijf uw naam bovenaan het blad",
-  "alternatives": [],
-  "hint": "Imperative: the verb comes first, then object, then place.",
-  "senses": {
-   "uw": "uw@50",
    "het": "het@50"
   }
  },
  {
-  "id": "gezondheid-125",
+  "id": "gezondheid-111",
   "topic": "gezondheid",
   "parts": [
-   "morgen bellen?",
-   "jou",
-   "kan ik"
+   "ik ben namelijk ziek",
+   "niet komen",
+   "ik kan"
   ],
-  "answer": "kan ik jou morgen bellen?",
+  "answer": "ik kan niet komen, ik ben namelijk ziek",
   "alternatives": [],
-  "hint": "Yes/no question: modal first; object pronoun before time; infinitive last.",
+  "hint": "“namelijk” (you see) comes after the verb, never at the start.",
+  "grammar": "nevenschikkend",
+  "level": 4
+ },
+ {
+  "id": "gezondheid-16",
+  "topic": "gezondheid",
+  "parts": [
+   "veel bloed",
+   "we moeten",
+   "want hij verliest",
+   "112 bellen"
+  ],
+  "answer": "we moeten 112 bellen, want hij verliest veel bloed",
+  "alternatives": [],
+  "hint": "After “want” the word order stays normal (subject – verb); after a modal the infinitive goes to the end.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
-   "jou": "jou@50",
-   "morgen": "morgen@50"
+   "veel": "veel@50"
   }
  },
  {
-  "id": "gezondheid-126",
+  "id": "gezondheid-67",
   "topic": "gezondheid",
   "parts": [
-   "pijn",
-   "heeft u?",
-   "wat voor soort"
+   "want de bus",
+   "je moet",
+   "vertrekt meteen",
+   "snel instappen"
   ],
-  "answer": "wat voor soort pijn heeft u?",
+  "answer": "je moet snel instappen, want de bus vertrekt meteen",
   "alternatives": [],
-  "hint": "W-question: the question phrase “wat voor soort pijn” comes first, then the verb, then the subject.",
+  "hint": "After a modal the separable verb stays whole at the end: instappen.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
-   "wat": "wat@50",
-   "voor": "voor@50"
+   "je": "je@50",
+   "snel": "snel@50"
   }
  },
  {
-  "id": "radio",
+  "id": "gezondheid-35",
+  "topic": "gezondheid",
+  "parts": [
+   "maar hij was",
+   "ik weet het",
+   "waarschijnlijk jong",
+   "niet zeker"
+  ],
+  "answer": "ik weet het niet zeker, maar hij was waarschijnlijk jong",
+  "alternatives": [],
+  "hint": "“maar” joins two main clauses; both keep subject – verb order.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "het": "het@50"
+  }
+ },
+ {
+  "id": "gezondheid-92",
+  "topic": "gezondheid",
+  "parts": [
+   "want ik ben",
+   "ik heb bijna",
+   "verkouden",
+   "geen stem meer"
+  ],
+  "answer": "ik heb bijna geen stem meer, want ik ben verkouden",
+  "alternatives": [],
+  "hint": "After “want” the order stays normal: ik ben.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "bijna": "bijna@50",
+   "geen": "geen@50",
+   "meer": "meer@50"
+  }
+ },
+ {
+  "id": "gezondheid-34",
+  "topic": "gezondheid",
+  "parts": [
+   "want het ging",
+   "ik heb hem",
+   "heel snel",
+   "niet goed gezien"
+  ],
+  "answer": "ik heb hem niet goed gezien, want het ging heel snel",
+  "alternatives": [],
+  "hint": "After “want” you use normal main-clause order (het ging).",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "hem": "hem@50",
+   "goed": "goed@50",
+   "het": "het@50",
+   "heel": "heel@50",
+   "snel": "snel@50"
+  }
+ },
+ {
+  "id": "gezondheid-58",
+  "topic": "gezondheid",
+  "parts": [
+   "dicht",
+   "ik doe de gordijnen",
+   "want het licht",
+   "doet pijn aan mijn ogen"
+  ],
+  "answer": "ik doe de gordijnen dicht, want het licht doet pijn aan mijn ogen",
+  "alternatives": [],
+  "hint": "Separable “dichtdoen”: “dicht” goes after the object. After “want” normal order.",
+  "grammar": "nevenschikkend",
+  "level": 4,
+  "senses": {
+   "doe": "doe@50",
+   "dicht": "dicht@50",
+   "het": "het@50",
+   "licht": "licht@50",
+   "aan": "aan@50"
+  }
+ },
+ {
+  "id": "gezondheid-88",
+  "topic": "gezondheid",
+  "parts": [
+   "anders kunt u",
+   "niet betalen",
+   "neem uw pasje",
+   "mee"
+  ],
+  "answer": "neem uw pasje mee, anders kunt u niet betalen",
+  "alternatives": [],
+  "hint": "Imperative first; “anders” (otherwise) causes inversion: kunt u.",
+  "grammar": "nevenschikkend",
+  "level": 5,
+  "senses": {
+   "uw": "uw@50",
+   "mee": "mee@50"
+  }
+ },
+ {
+  "id": "gezondheid-60",
+  "topic": "gezondheid",
+  "parts": [
+   "maar breng ze",
+   "gooi oude medicijnen",
+   "naar de apotheek",
+   "niet weg"
+  ],
+  "answer": "gooi oude medicijnen niet weg, maar breng ze naar de apotheek",
+  "alternatives": [],
+  "hint": "Imperative: the verb comes first. Separable “weggooien”: “weg” goes to the end.",
+  "grammar": "nevenschikkend",
+  "level": 5,
+  "senses": {
+   "weg": "weg@50",
+   "breng": "breng@50",
+   "ze": "ze@50"
+  }
+ },
+ {
+  "id": "gezondheid-48",
+  "topic": "gezondheid",
+  "parts": [
+   "om de taal",
+   "ik volg",
+   "beter te leren",
+   "een cursus"
+  ],
+  "answer": "ik volg een cursus om de taal beter te leren",
+  "alternatives": [],
+  "hint": "“om … te + infinitive” explains the purpose; the infinitive is last.",
+  "grammar": "om-te",
+  "level": 3,
+  "senses": {
+   "om": "om@50",
+   "te": "te@50",
+   "leren": "leren@50"
+  }
+ },
+ {
+  "id": "gezondheid-85",
+  "topic": "gezondheid",
+  "parts": [
+   "om naar het ziekenhuis",
+   "er is",
+   "te gaan",
+   "geen noodzaak"
+  ],
+  "answer": "er is geen noodzaak om naar het ziekenhuis te gaan",
+  "alternatives": [],
+  "hint": "“om … te + infinitive”: the infinitive closes the sentence.",
+  "grammar": "om-te",
+  "level": 5,
+  "senses": {
+   "geen": "geen@50",
+   "om": "om@50",
+   "het": "het@50",
+   "te": "te@50"
+  }
+ },
+ {
+  "id": "gezondheid-23",
+  "topic": "gezondheid",
+  "parts": [
+   "los zit",
+   "de tandarts zegt",
+   "mijn tand",
+   "dat"
+  ],
+  "answer": "de tandarts zegt dat mijn tand los zit",
+  "alternatives": [],
+  "hint": "“dat” sends the verb (zit) to the end of the clause.",
+  "grammar": "bijzin",
+  "level": 3
+ },
+ {
+  "id": "gezondheid-71",
+  "topic": "gezondheid",
+  "parts": [
+   "als ik",
+   "zwanger ben?",
+   "mag ik vliegen"
+  ],
+  "answer": "mag ik vliegen als ik zwanger ben?",
+  "alternatives": [
+   "als ik zwanger ben, mag ik vliegen?"
+  ],
+  "hint": "Yes/no question starts with the verb; “als” sends “ben” to the end.",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "als": "als@50"
+  }
+ },
+ {
+  "id": "gezondheid-19",
+  "topic": "gezondheid",
+  "parts": [
+   "moet je",
+   "als je ziek bent",
+   "thuis blijven"
+  ],
+  "answer": "als je ziek bent, moet je thuis blijven",
+  "alternatives": [
+   "je moet thuis blijven als je ziek bent"
+  ],
+  "hint": "“als” sends the verb (bent) to the end; after the als-clause, the main clause starts with the verb (moet je).",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "als": "als@50",
+   "je": "je@50",
+   "blijven": "blijven@50"
+  }
+ },
+ {
+  "id": "gezondheid-09",
+  "topic": "gezondheid",
+  "parts": [
+   "omdat mijn knie",
+   "ik bel",
+   "veel pijn doet",
+   "meteen de huisarts"
+  ],
+  "answer": "ik bel meteen de huisarts, omdat mijn knie veel pijn doet",
+  "alternatives": [
+   "omdat mijn knie veel pijn doet, bel ik meteen de huisarts",
+   "ik bel de huisarts meteen, omdat mijn knie veel pijn doet"
+  ],
+  "hint": "“omdat” sends the verb (doet) to the end. If the omdat-clause comes first, the main clause starts with the verb (bel ik).",
+  "grammar": "bijzin",
+  "level": 4,
+  "senses": {
+   "huisarts": "huisarts@50",
+   "veel": "veel@50"
+  }
+ },
+ {
+  "id": "gezondheid-08",
+  "topic": "gezondheid",
+  "parts": [
+   "voordat je",
+   "dit aanmeldformulier invullen",
+   "naar de huisarts gaat",
+   "je moet"
+  ],
+  "answer": "je moet dit aanmeldformulier invullen voordat je naar de huisarts gaat",
+  "alternatives": [
+   "voordat je naar de huisarts gaat, moet je dit aanmeldformulier invullen"
+  ],
+  "hint": "“voordat” sends the verb (gaat) to the end of its clause; the modal “moet” takes the infinitive at the end.",
+  "grammar": "bijzin",
+  "level": 5,
+  "senses": {
+   "je": "je@50",
+   "dit": "dit@50",
+   "huisarts": "huisarts@50"
+  }
+ },
+ {
+  "id": "gezondheid-89",
+  "topic": "gezondheid",
+  "parts": [
+   "dat ik rust",
+   "de conclusie",
+   "nodig heb",
+   "van de dokter is"
+  ],
+  "answer": "de conclusie van de dokter is dat ik rust nodig heb",
+  "alternatives": [],
+  "hint": "“dat” sends the verb (heb) to the very end.",
+  "grammar": "bijzin",
+  "level": 5,
+  "senses": {
+   "van": "van@50",
+   "nodig": "nodig@50"
+  }
+ },
+ {
+  "id": "vrije-tijd-105",
   "topic": "vrije-tijd",
   "parts": [
-   "de man",
-   "naar de radio",
-   "luistert",
-   "om acht uur"
+   "niet",
+   "dat woord",
+   "ik",
+   "ken"
   ],
-  "answer": "de man luistert om acht uur naar de radio",
+  "answer": "ik ken dat woord niet",
   "alternatives": [
-   "om acht uur luistert de man naar de radio"
+   "dat woord ken ik niet"
   ],
-  "hint": "Verb in 2nd place. Time (om acht uur) comes early; “naar de radio” belongs to the verb “luisteren naar” and goes to the end."
+  "hint": "niet comes after the object (dat woord), at the end.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "dat": "dat@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-14",
+  "topic": "vrije-tijd",
+  "parts": [
+   "al tien jaar",
+   "ken",
+   "hem",
+   "ik"
+  ],
+  "answer": "ik ken hem al tien jaar",
+  "alternatives": [
+   "hem ken ik al tien jaar",
+   "al tien jaar ken ik hem"
+  ],
+  "hint": "Verb in 2nd place; a short object pronoun (hem) comes right after the verb.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "hem": "hem@60",
+   "al": "al@60",
+   "tien": "tien@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-51",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in mijn gezicht",
+   "schijnt",
+   "de zon"
+  ],
+  "answer": "de zon schijnt in mijn gezicht",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "vrije-tijd-54",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in mijn mond",
+   "de tandarts",
+   "kijkt"
+  ],
+  "answer": "de tandarts kijkt in mijn mond",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "vrije-tijd-109",
+  "topic": "vrije-tijd",
+  "parts": [
+   "op de trap",
+   "spelen",
+   "de kinderen"
+  ],
+  "answer": "de kinderen spelen op de trap",
+  "alternatives": [
+   "op de trap spelen de kinderen"
+  ],
+  "hint": "Subject, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "op": "op@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-116",
+  "topic": "vrije-tijd",
+  "parts": [
+   "op de vloer",
+   "zitten",
+   "de kinderen"
+  ],
+  "answer": "de kinderen zitten op de vloer",
+  "alternatives": [
+   "op de vloer zitten de kinderen"
+  ],
+  "hint": "Subject, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "op": "op@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-136",
+  "topic": "vrije-tijd",
+  "parts": [
+   "vier uur",
+   "duurt",
+   "meestal",
+   "het feest"
+  ],
+  "answer": "het feest duurt meestal vier uur",
+  "alternatives": [
+   "meestal duurt het feest vier uur"
+  ],
+  "hint": "Verb in 2nd place; an adverb first (meestal) causes inversion.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "het": "het@60",
+   "meestal": "meestal@60"
+  }
  },
  {
   "id": "woonkamer",
@@ -10971,28 +12424,472 @@ const EXERCISES = [
    "jullie zitten in de woonkamer met vrienden",
    "in de woonkamer zitten jullie met vrienden"
   ],
-  "hint": "Subject first, verb second, then Manier (met vrienden) before Plaats (in de woonkamer)."
+  "hint": "Subject first, verb second, then Manier (met vrienden) before Plaats (in de woonkamer).",
+  "grammar": "basis",
+  "level": 1
  },
  {
-  "id": "vrije-tijd-01",
+  "id": "vrije-tijd-43",
   "topic": "vrije-tijd",
   "parts": [
-   "met mijn familie",
-   "ik",
-   "naar het bos",
-   "ga",
-   "op zondag"
+   "in een grote doos",
+   "liggen",
+   "de cadeaus"
   ],
-  "answer": "op zondag ga ik met mijn familie naar het bos",
+  "answer": "de cadeaus liggen in een grote doos",
   "alternatives": [
-   "ik ga op zondag met mijn familie naar het bos"
+   "in een grote doos liggen de cadeaus"
   ],
-  "hint": "Time first (op zondag) causes inversion: verb before subject. Then Manier (met mijn familie) before Plaats (naar het bos).",
+  "hint": "Subject, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 1,
+  "senses": {
+   "liggen": "liggen@60"
+  }
+ },
+ {
+  "id": "radio",
+  "topic": "vrije-tijd",
+  "parts": [
+   "de man",
+   "naar de radio",
+   "luistert",
+   "om acht uur"
+  ],
+  "answer": "de man luistert om acht uur naar de radio",
+  "alternatives": [
+   "om acht uur luistert de man naar de radio"
+  ],
+  "hint": "Verb in 2nd place. Time (om acht uur) comes early; “naar de radio” belongs to the verb “luisteren naar” and goes to the end.",
+  "grammar": "basis",
+  "level": 1
+ },
+ {
+  "id": "vrije-tijd-126",
+  "topic": "vrije-tijd",
+  "parts": [
+   "graag",
+   "de uitnodiging",
+   "accepteer",
+   "ik"
+  ],
+  "answer": "ik accepteer de uitnodiging graag",
+  "alternatives": [
+   "graag accepteer ik de uitnodiging",
+   "ik accepteer graag de uitnodiging"
+  ],
+  "hint": "Verb in 2nd place; graag can go after the verb or after the object.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-50",
+  "topic": "vrije-tijd",
+  "parts": [
+   "geweldig",
+   "de vakantie in Italië",
+   "was"
+  ],
+  "answer": "de vakantie in Italië was geweldig",
+  "alternatives": [],
+  "hint": "The subject (de vakantie in Italië) first, then the verb, then the adjective.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-63",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een vrolijk karakter",
+   "heeft",
+   "mijn zus"
+  ],
+  "answer": "mijn zus heeft een vrolijk karakter",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place, then the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "vrolijk": "vrolijk@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-71",
+  "topic": "vrije-tijd",
+  "parts": [
+   "vijfentwintig meter lang",
+   "is",
+   "het zwembad"
+  ],
+  "answer": "het zwembad is vijfentwintig meter lang",
+  "alternatives": [],
+  "hint": "Subject, verb, then the measurement (vijfentwintig meter lang).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@60",
+   "lang": "lang@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-90",
+  "topic": "vrije-tijd",
+  "parts": [
+   "kaas en melk",
+   "produceert",
+   "deze boerderij"
+  ],
+  "answer": "deze boerderij produceert kaas en melk",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place, then the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "deze": "deze@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-106",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in techniek",
+   "goed",
+   "is",
+   "mijn zoon"
+  ],
+  "answer": "mijn zoon is goed in techniek",
+  "alternatives": [],
+  "hint": "Subject, verb, then the adjective. “goed in” = good at.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-05",
+  "topic": "vrije-tijd",
+  "parts": [
+   "voor vier personen",
+   "reserveer",
+   "een tafel",
+   "ik"
+  ],
+  "answer": "ik reserveer een tafel voor vier personen",
+  "alternatives": [],
+  "hint": "Subject + verb, then the object (een tafel) and the extra information (voor vier personen).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-69",
+  "topic": "vrije-tijd",
+  "parts": [
+   "is kapot",
+   "op het station",
+   "de machine"
+  ],
+  "answer": "de machine op het station is kapot",
+  "alternatives": [],
+  "hint": "The subject with its place (de machine op het station) first, then the verb.",
+  "grammar": "basis",
+  "level": 2,
   "senses": {
    "op": "op@60",
-   "zondag": "zondag@60",
    "het": "het@60",
-   "bos": "bos@60"
+   "station": "station@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-91",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in Utrecht",
+   "studente psychologie",
+   "is",
+   "mijn nicht"
+  ],
+  "answer": "mijn nicht is studente psychologie in Utrecht",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the rest.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-99",
+  "topic": "vrije-tijd",
+  "parts": [
+   "op slot",
+   "altijd",
+   "mijn fiets",
+   "zet",
+   "ik"
+  ],
+  "answer": "ik zet mijn fiets altijd op slot",
+  "alternatives": [
+   "ik zet altijd mijn fiets op slot"
+  ],
+  "hint": "Verb in 2nd place. “op slot zetten”: op slot comes at the end.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "fiets": "fiets@60",
+   "op": "op@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-100",
+  "topic": "vrije-tijd",
+  "parts": [
+   "met een hoge snelheid",
+   "rijdt",
+   "de trein"
+  ],
+  "answer": "de trein rijdt met een hoge snelheid",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the manner.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-114",
+  "topic": "vrije-tijd",
+  "parts": [
+   "van onze reis",
+   "schrijf",
+   "een verslag",
+   "ik"
+  ],
+  "answer": "ik schrijf een verslag van onze reis",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "onze": "onze@60",
+   "reis": "reis@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-17",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een groot feest",
+   "organiseert",
+   "elk jaar",
+   "mijn bedrijf"
+  ],
+  "answer": "mijn bedrijf organiseert elk jaar een groot feest",
+  "alternatives": [
+   "elk jaar organiseert mijn bedrijf een groot feest"
+  ],
+  "hint": "Verb in 2nd place; time (elk jaar) before the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "bedrijf": "bedrijf@60",
+   "elk": "elk@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-27",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in zijn eigen kamer",
+   "boven",
+   "slaapt",
+   "de baby"
+  ],
+  "answer": "de baby slaapt boven in zijn eigen kamer",
+  "alternatives": [
+   "boven slaapt de baby in zijn eigen kamer"
+  ],
+  "hint": "Verb in 2nd place; the short place word (boven) comes before the longer place phrase.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "boven": "boven@60",
+   "zijn": "zijn@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-35",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een eenvoudig gerecht",
+   "met vis",
+   "maakt",
+   "de chef"
+  ],
+  "answer": "de chef maakt een eenvoudig gerecht met vis",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the object.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "chef": "chef@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-37",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in Marokko",
+   "woont",
+   "een deel van mijn familie"
+  ],
+  "answer": "een deel van mijn familie woont in Marokko",
+  "alternatives": [],
+  "hint": "The whole subject (een deel van mijn familie) comes first, then the verb.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-79",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in een beetje olie",
+   "bakt",
+   "de vis",
+   "je"
+  ],
+  "answer": "je bakt de vis in een beetje olie",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, object, then the manner (in een beetje olie).",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "je": "je@60",
+   "beetje": "beetje@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-121",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar het strand",
+   "op de bus",
+   "wachten",
+   "we"
+  ],
+  "answer": "we wachten op de bus naar het strand",
+  "alternatives": [],
+  "hint": "Verb in 2nd place. “wachten op” = to wait for.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "op": "op@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-57",
+  "topic": "vrije-tijd",
+  "parts": [
+   "op de hoek van de straat",
+   "is",
+   "het café"
+  ],
+  "answer": "het café is op de hoek van de straat",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "het": "het@60",
+   "op": "op@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-102",
+  "topic": "vrije-tijd",
+  "parts": [
+   "voor de deur van het hotel",
+   "stopt",
+   "de bus"
+  ],
+  "answer": "de bus stopt voor de deur van het hotel",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the place.",
+  "grammar": "basis",
+  "level": 2,
+  "senses": {
+   "voor": "voor@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-21",
+  "topic": "vrije-tijd",
+  "parts": [
+   "lid van de zwemclub",
+   "is",
+   "sinds een jaar",
+   "mijn zoon"
+  ],
+  "answer": "mijn zoon is sinds een jaar lid van de zwemclub",
+  "alternatives": [
+   "sinds een jaar is mijn zoon lid van de zwemclub"
+  ],
+  "hint": "Verb in 2nd place; time (sinds een jaar) before the rest.",
+  "grammar": "basis",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-81",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een gezellig feest",
+   "ongetwijfeld",
+   "het wordt"
+  ],
+  "answer": "het wordt ongetwijfeld een gezellig feest",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; the adverb (ongetwijfeld) comes right after the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "gezellig": "gezellig@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-55",
+  "topic": "vrije-tijd",
+  "parts": [
+   "voor een fietstocht",
+   "gunstig",
+   "het weer is"
+  ],
+  "answer": "het weer is gunstig voor een fietstocht",
+  "alternatives": [],
+  "hint": "Subject + verb, then the adjective and its phrase.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "weer": "weer@60",
+   "voor": "voor@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-85",
+  "topic": "vrije-tijd",
+  "parts": [
+   "na het eten",
+   "komen",
+   "de overige gasten"
+  ],
+  "answer": "de overige gasten komen na het eten",
+  "alternatives": [
+   "na het eten komen de overige gasten"
+  ],
+  "hint": "Verb in 2nd place. With time first, the subject comes after the verb.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "eten": "eten@60"
   }
  },
  {
@@ -11009,82 +12906,715 @@ const EXERCISES = [
    "volgend jaar vieren mijn ouders hun gouden bruiloft"
   ],
   "hint": "Verb in 2nd place; the time phrase (volgend jaar) comes before the object.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
    "ouders": "ouders@60",
    "hun": "hun@60"
   }
  },
  {
-  "id": "vrije-tijd-03",
+  "id": "vrije-tijd-32",
   "topic": "vrije-tijd",
   "parts": [
-   "langs",
-   "tien vrienden",
-   "op mijn verjaardag",
-   "komen"
+   "bijvoorbeeld",
+   "zwemmen en fietsen",
+   "veel hobby's",
+   "ik heb"
   ],
-  "answer": "op mijn verjaardag komen tien vrienden langs",
-  "alternatives": [
-   "tien vrienden komen op mijn verjaardag langs"
-  ],
-  "hint": "Separable verb langskomen: komen goes in 2nd place, the particle langs goes to the end.",
+  "answer": "ik heb veel hobby's, bijvoorbeeld zwemmen en fietsen",
+  "alternatives": [],
+  "hint": "Main clause first; bijvoorbeeld introduces the examples after the comma.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "op": "op@60",
-   "tien": "tien@60",
-   "langs": "langs@60"
+   "veel": "veel@60"
   }
  },
  {
-  "id": "vrije-tijd-04",
+  "id": "vrije-tijd-45",
   "topic": "vrije-tijd",
   "parts": [
-   "een fles wijn",
-   "je",
-   "meebrengen",
-   "morgen",
-   "kun"
+   "was",
+   "heel emotioneel",
+   "de bruiloft van mijn zus"
   ],
-  "answer": "kun je morgen een fles wijn meebrengen?",
+  "answer": "de bruiloft van mijn zus was heel emotioneel",
   "alternatives": [],
-  "hint": "Yes/no question: the modal (kun) comes first, the infinitive (meebrengen) goes to the end.",
+  "hint": "The long subject comes first, then the verb (was) in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
+   "heel": "heel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-48",
+  "topic": "vrije-tijd",
+  "parts": [
+   "tienduizend stappen per dag",
+   "met gemak",
+   "hij",
+   "loopt"
+  ],
+  "answer": "hij loopt met gemak tienduizend stappen per dag",
+  "alternatives": [
+   "met gemak loopt hij tienduizend stappen per dag"
+  ],
+  "hint": "Verb in 2nd place; the manner (met gemak) before the object.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "stappen": "stappen@60",
+   "per": "per@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-96",
+  "topic": "vrije-tijd",
+  "parts": [
+   "van alle buren",
+   "is",
+   "een samenwerking",
+   "het straatfeest"
+  ],
+  "answer": "het straatfeest is een samenwerking van alle buren",
+  "alternatives": [],
+  "hint": "Subject first, verb in 2nd place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "alle": "alle@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-103",
+  "topic": "vrije-tijd",
+  "parts": [
+   "met je examen",
+   "veel succes",
+   "je",
+   "wens",
+   "ik"
+  ],
+  "answer": "ik wens je veel succes met je examen",
+  "alternatives": [],
+  "hint": "Verb in 2nd place; the person (je) before the thing (veel succes).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "wens": "wens@60",
+   "je": "je@60",
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-119",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar mijn tas",
+   "vraag",
+   "bij gevonden voorwerpen",
+   "ik"
+  ],
+  "answer": "ik vraag bij gevonden voorwerpen naar mijn tas",
+  "alternatives": [
+   "ik vraag naar mijn tas bij gevonden voorwerpen"
+  ],
+  "hint": "Verb in 2nd place. “vragen naar” = ask about; the naar-part usually goes to the end.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "vraag": "vraag@60",
+   "bij": "bij@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-123",
+  "topic": "vrije-tijd",
+  "parts": [
+   "van zichzelf",
+   "veel foto's",
+   "op vakantie",
+   "maakt",
+   "hij"
+  ],
+  "answer": "hij maakt op vakantie veel foto's van zichzelf",
+  "alternatives": [
+   "op vakantie maakt hij veel foto's van zichzelf"
+  ],
+  "hint": "Verb in 2nd place; op vakantie before the object.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "op": "op@60",
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-130",
+  "topic": "vrije-tijd",
+  "parts": [
+   "behalve mijn broer",
+   "naar het feest",
+   "komt",
+   "iedereen"
+  ],
+  "answer": "iedereen komt naar het feest behalve mijn broer",
+  "alternatives": [
+   "behalve mijn broer komt iedereen naar het feest",
+   "iedereen behalve mijn broer komt naar het feest"
+  ],
+  "hint": "Verb in 2nd place; a phrase first (behalve mijn broer) causes inversion.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-49",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar je feest",
+   "zaterdag",
+   "in elk geval",
+   "ik",
+   "kom"
+  ],
+  "answer": "ik kom in elk geval zaterdag naar je feest",
+  "alternatives": [
+   "in elk geval kom ik zaterdag naar je feest",
+   "ik kom zaterdag in elk geval naar je feest"
+  ],
+  "hint": "Verb in 2nd place; time (zaterdag) before place (naar je feest).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "elk": "elk@60",
+   "zaterdag": "zaterdag@60",
    "je": "je@60"
   }
  },
  {
-  "id": "vrije-tijd-05",
+  "id": "vrije-tijd-98",
   "topic": "vrije-tijd",
   "parts": [
-   "voor vier personen",
-   "reserveer",
-   "een tafel",
-   "ik"
+   "over tien seconden",
+   "vertrekt",
+   "de trein op spoor vijf"
   ],
-  "answer": "ik reserveer een tafel voor vier personen",
-  "alternatives": [],
-  "hint": "Subject + verb, then the object (een tafel) and the extra information (voor vier personen).",
+  "answer": "de trein op spoor vijf vertrekt over tien seconden",
+  "alternatives": [
+   "over tien seconden vertrekt de trein op spoor vijf"
+  ],
+  "hint": "The whole subject (de trein op spoor vijf) counts as one position; the verb comes next.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
+   "op": "op@60",
+   "over": "over@60",
+   "tien": "tien@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-122",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in Duitsland",
+   "is",
+   "voor zaken",
+   "deze week",
+   "mijn man"
+  ],
+  "answer": "mijn man is deze week voor zaken in Duitsland",
+  "alternatives": [
+   "deze week is mijn man voor zaken in Duitsland"
+  ],
+  "hint": "TMP: Tijd (deze week), Manier/reason (voor zaken), Plaats (in Duitsland).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "deze": "deze@60",
    "voor": "voor@60"
   }
  },
  {
-  "id": "vrije-tijd-06",
+  "id": "vrije-tijd-131",
   "topic": "vrije-tijd",
   "parts": [
-   "gemaakt",
-   "een leuke reis",
-   "hebben",
-   "wij",
-   "naar Spanje",
-   "vorige week"
+   "tegen de zon",
+   "is",
+   "een goede bescherming",
+   "een pet"
   ],
-  "answer": "vorige week hebben wij een leuke reis naar Spanje gemaakt",
-  "alternatives": [
-   "wij hebben vorige week een leuke reis naar Spanje gemaakt"
-  ],
-  "hint": "Perfect tense: hebben in 2nd place, the past participle (gemaakt) at the end. Time first causes inversion.",
+  "answer": "een pet is een goede bescherming tegen de zon",
+  "alternatives": [],
+  "hint": "Subject, verb in 2nd place, then the rest.",
+  "grammar": "basis",
+  "level": 3,
   "senses": {
-   "reis": "reis@60"
+   "tegen": "tegen@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-132",
+  "topic": "vrije-tijd",
+  "parts": [
+   "over ons feest",
+   "voor de buren",
+   "een briefje",
+   "schrijf",
+   "ik"
+  ],
+  "answer": "ik schrijf een briefje voor de buren over ons feest",
+  "alternatives": [
+   "ik schrijf een briefje over ons feest voor de buren"
+  ],
+  "hint": "Verb in 2nd place, then the object and the extra phrases.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "voor": "voor@60",
+   "over": "over@60",
+   "ons": "ons@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-137",
+  "topic": "vrije-tijd",
+  "parts": [
+   "op vakantie",
+   "gaan",
+   "naar Turkije",
+   "elk jaar",
+   "mijn echtgenoot en ik"
+  ],
+  "answer": "mijn echtgenoot en ik gaan elk jaar op vakantie naar Turkije",
+  "alternatives": [
+   "elk jaar gaan mijn echtgenoot en ik op vakantie naar Turkije"
+  ],
+  "hint": "“mijn echtgenoot en ik” is one subject (= wij), so the verb is gaan. Time before place.",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "elk": "elk@60",
+   "op": "op@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-12",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar de top van de heuvel",
+   "we",
+   "over een smal pad",
+   "lopen"
+  ],
+  "answer": "we lopen over een smal pad naar de top van de heuvel",
+  "alternatives": [
+   "over een smal pad lopen we naar de top van de heuvel"
+  ],
+  "hint": "Manier (over een smal pad) before Plaats/direction (naar de top van de heuvel).",
+  "grammar": "basis",
+  "level": 3,
+  "senses": {
+   "over": "over@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-67",
+  "topic": "vrije-tijd",
+  "parts": [
+   "door het bos",
+   "we",
+   "onder leiding van een gids",
+   "wandelen"
+  ],
+  "answer": "we wandelen onder leiding van een gids door het bos",
+  "alternatives": [
+   "onder leiding van een gids wandelen we door het bos"
+  ],
+  "hint": "Manier (onder leiding van een gids) before Plaats (door het bos).",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "door": "door@60",
+   "het": "het@60",
+   "bos": "bos@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-73",
+  "topic": "vrije-tijd",
+  "parts": [
+   "is echt",
+   "de moeite waard",
+   "met moderne kunst",
+   "het museum"
+  ],
+  "answer": "het museum met moderne kunst is echt de moeite waard",
+  "alternatives": [],
+  "hint": "The long subject (het museum met moderne kunst) first, then the verb. “de moeite waard” = worth it.",
+  "grammar": "basis",
+  "level": 4,
+  "senses": {
+   "het": "het@60",
+   "echt": "echt@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-88",
+  "topic": "vrije-tijd",
+  "parts": [
+   "donker",
+   "werd",
+   "het",
+   "plotseling"
+  ],
+  "answer": "plotseling werd het donker",
+  "alternatives": [
+   "het werd plotseling donker"
+  ],
+  "hint": "An adverb first (plotseling) causes inversion: werd het.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-44",
+  "topic": "vrije-tijd",
+  "parts": [
+   "weer zomer",
+   "het",
+   "eindelijk",
+   "is"
+  ],
+  "answer": "eindelijk is het weer zomer",
+  "alternatives": [
+   "het is eindelijk weer zomer"
+  ],
+  "hint": "An adverb first (eindelijk) causes inversion: is het.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60",
+   "weer": "weer@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-34",
+  "topic": "vrije-tijd",
+  "parts": [
+   "helemaal blauw",
+   "de lucht",
+   "vandaag",
+   "is"
+  ],
+  "answer": "vandaag is de lucht helemaal blauw",
+  "alternatives": [
+   "de lucht is vandaag helemaal blauw"
+  ],
+  "hint": "Time first (vandaag) causes inversion: is de lucht.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "helemaal": "helemaal@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-112",
+  "topic": "vrije-tijd",
+  "parts": [
+   "snel",
+   "het weer",
+   "verandert",
+   "in Nederland"
+  ],
+  "answer": "in Nederland verandert het weer snel",
+  "alternatives": [
+   "het weer verandert snel in Nederland",
+   "het weer verandert in Nederland snel"
+  ],
+  "hint": "Place first causes inversion: verandert het weer.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60",
+   "weer": "weer@60",
+   "snel": "snel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-52",
+  "topic": "vrije-tijd",
+  "parts": [
+   "pijn",
+   "mijn arm",
+   "doet",
+   "na het tennis"
+  ],
+  "answer": "na het tennis doet mijn arm pijn",
+  "alternatives": [
+   "mijn arm doet pijn na het tennis",
+   "mijn arm doet na het tennis pijn"
+  ],
+  "hint": "Time first causes inversion. In “pijn doen”, pijn goes to the end.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-66",
+  "topic": "vrije-tijd",
+  "parts": [
+   "weinig kracht",
+   "ik",
+   "na de griep",
+   "heb"
+  ],
+  "answer": "na de griep heb ik weinig kracht",
+  "alternatives": [
+   "ik heb na de griep weinig kracht"
+  ],
+  "hint": "Time first causes inversion: heb ik.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "weinig": "weinig@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-68",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar links",
+   "u",
+   "bij de kerk",
+   "gaat"
+  ],
+  "answer": "bij de kerk gaat u naar links",
+  "alternatives": [
+   "u gaat bij de kerk naar links"
+  ],
+  "hint": "A place first causes inversion: gaat u.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "bij": "bij@60",
+   "u": "u@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-78",
+  "topic": "vrije-tijd",
+  "parts": [
+   "heel nuttig",
+   "een kaart",
+   "op reis",
+   "is"
+  ],
+  "answer": "op reis is een kaart heel nuttig",
+  "alternatives": [
+   "een kaart is op reis heel nuttig"
+  ],
+  "hint": "A phrase first causes inversion: is een kaart.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@60",
+   "reis": "reis@60",
+   "heel": "heel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-95",
+  "topic": "vrije-tijd",
+  "parts": [
+   "van de barbecue",
+   "veel rook",
+   "komt",
+   "er"
+  ],
+  "answer": "er komt veel rook van de barbecue",
+  "alternatives": [],
+  "hint": "“er” takes the first place; the verb (komt) follows in 2nd place.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-111",
+  "topic": "vrije-tijd",
+  "parts": [
+   "soms sneeuw",
+   "er",
+   "valt",
+   "in de winter"
+  ],
+  "answer": "in de winter valt er soms sneeuw",
+  "alternatives": [
+   "er valt in de winter soms sneeuw"
+  ],
+  "hint": "Time first causes inversion: valt er.",
+  "grammar": "inversie",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-117",
+  "topic": "vrije-tijd",
+  "parts": [
+   "niet zo goed",
+   "ik",
+   "me",
+   "voel",
+   "vandaag"
+  ],
+  "answer": "vandaag voel ik me niet zo goed",
+  "alternatives": [
+   "ik voel me vandaag niet zo goed"
+  ],
+  "hint": "Time first causes inversion; the reflexive pronoun (me) comes right after the subject.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "me": "me@60",
+   "zo": "zo@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-16",
+  "topic": "vrije-tijd",
+  "parts": [
+   "in het café",
+   "ik",
+   "mijn vrienden",
+   "ontmoet",
+   "zaterdag"
+  ],
+  "answer": "zaterdag ontmoet ik mijn vrienden in het café",
+  "alternatives": [
+   "ik ontmoet zaterdag mijn vrienden in het café",
+   "ik ontmoet mijn vrienden zaterdag in het café"
+  ],
+  "hint": "Time first causes inversion (ontmoet ik); Plaats (in het café) at the end.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "zaterdag": "zaterdag@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-23",
+  "topic": "vrije-tijd",
+  "parts": [
+   "rust en stilte",
+   "vind",
+   "in het bos",
+   "ik"
+  ],
+  "answer": "in het bos vind ik rust en stilte",
+  "alternatives": [
+   "ik vind rust en stilte in het bos",
+   "ik vind in het bos rust en stilte"
+  ],
+  "hint": "Place first causes inversion: vind ik.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60",
+   "bos": "bos@60",
+   "rust": "rust@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-29",
+  "topic": "vrije-tijd",
+  "parts": [
+   "de rekening",
+   "samen",
+   "we",
+   "in het restaurant",
+   "betalen"
+  ],
+  "answer": "in het restaurant betalen we de rekening samen",
+  "alternatives": [
+   "we betalen in het restaurant de rekening samen"
+  ],
+  "hint": "Place first causes inversion: betalen we.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-39",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een late dienst",
+   "mijn man",
+   "heeft",
+   "op zondag"
+  ],
+  "answer": "op zondag heeft mijn man een late dienst",
+  "alternatives": [
+   "mijn man heeft op zondag een late dienst"
+  ],
+  "hint": "Time first causes inversion: heeft mijn man.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@60",
+   "zondag": "zondag@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-60",
+  "topic": "vrije-tijd",
+  "parts": [
+   "informatie over het festival",
+   "staat",
+   "op de website"
+  ],
+  "answer": "op de website staat informatie over het festival",
+  "alternatives": [],
+  "hint": "Place first causes inversion: the verb (staat) before the subject (informatie).",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@60",
+   "staat": "staat@60",
+   "over": "over@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-93",
+  "topic": "vrije-tijd",
+  "parts": [
+   "thuis",
+   "we",
+   "de rest van de dag",
+   "blijven"
+  ],
+  "answer": "de rest van de dag blijven we thuis",
+  "alternatives": [
+   "we blijven de rest van de dag thuis"
+  ],
+  "hint": "Time first causes inversion: blijven we.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "blijven": "blijven@60"
   }
  },
  {
@@ -11104,6 +13634,8 @@ const EXERCISES = [
    "daar is het in de zomer warm en droog"
   ],
   "hint": "Time first (in de zomer) causes inversion: is before het.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "het": "het@60",
    "warm": "warm@60"
@@ -11125,49 +13657,100 @@ const EXERCISES = [
    "buiten is het in de herfst nat en koel"
   ],
   "hint": "Time first causes inversion (is het). The adjectives (nat en koel) come at the end.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
    "het": "het@60",
    "buiten": "buiten@60"
   }
  },
  {
-  "id": "vrije-tijd-09",
+  "id": "vrije-tijd-41",
   "topic": "vrije-tijd",
   "parts": [
-   "mee",
-   "een paraplu",
+   "direct",
+   "ga",
+   "naar de sportschool",
    "ik",
-   "voor de zekerheid",
-   "neem"
+   "na het werk"
   ],
-  "answer": "voor de zekerheid neem ik een paraplu mee",
+  "answer": "na het werk ga ik direct naar de sportschool",
   "alternatives": [
-   "ik neem voor de zekerheid een paraplu mee"
+   "ik ga na het werk direct naar de sportschool"
   ],
-  "hint": "Separable verb meenemen: neem in 2nd place, mee at the very end.",
+  "hint": "Time first causes inversion; direct comes before the place (naar de sportschool).",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
-   "voor": "voor@60",
-   "neem": "neem@60",
-   "mee": "mee@60"
+   "het": "het@60",
+   "werk": "werk@60"
   }
  },
  {
-  "id": "vrije-tijd-10",
+  "id": "vrije-tijd-64",
   "topic": "vrije-tijd",
   "parts": [
-   "de maan en de sterren",
-   "we",
-   "zien",
-   "vanavond",
-   "kunnen"
+   "veel klanten",
+   "er",
+   "in de winkel",
+   "zijn",
+   "op zaterdag"
   ],
-  "answer": "vanavond kunnen we de maan en de sterren zien",
+  "answer": "op zaterdag zijn er veel klanten in de winkel",
   "alternatives": [
-   "we kunnen vanavond de maan en de sterren zien"
+   "er zijn op zaterdag veel klanten in de winkel"
   ],
-  "hint": "Modal verb (kunnen) in 2nd place, the infinitive (zien) at the end.",
+  "hint": "Time first causes inversion; “er zijn” = there are.",
+  "grammar": "inversie",
+  "level": 2,
   "senses": {
-   "vanavond": "vanavond@60"
+   "op": "op@60",
+   "zaterdag": "zaterdag@60",
+   "zijn": "zijn@60",
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-89",
+  "topic": "vrije-tijd",
+  "parts": [
+   "de president van Amerika",
+   "we",
+   "op het nieuws",
+   "zien"
+  ],
+  "answer": "op het nieuws zien we de president van Amerika",
+  "alternatives": [
+   "we zien op het nieuws de president van Amerika"
+  ],
+  "hint": "A phrase first causes inversion: zien we.",
+  "grammar": "inversie",
+  "level": 2,
+  "senses": {
+   "op": "op@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-101",
+  "topic": "vrije-tijd",
+  "parts": [
+   "veel spanning",
+   "er",
+   "voor de wedstrijd",
+   "is"
+  ],
+  "answer": "voor de wedstrijd is er veel spanning",
+  "alternatives": [
+   "er is veel spanning voor de wedstrijd",
+   "er is voor de wedstrijd veel spanning"
+  ],
+  "hint": "Time first causes inversion: is er.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@60",
+   "veel": "veel@60"
   }
  },
  {
@@ -11186,27 +13769,228 @@ const EXERCISES = [
    "ik geef mijn moeder voor haar verjaardag bloemen"
   ],
   "hint": "Inversion after the first phrase; the person (mijn moeder) comes before the thing (bloemen).",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "voor": "voor@60"
   }
  },
  {
-  "id": "vrije-tijd-12",
+  "id": "vrije-tijd-22",
   "topic": "vrije-tijd",
   "parts": [
-   "naar de top van de heuvel",
-   "we",
-   "over een smal pad",
-   "lopen"
+   "niet meer zoveel",
+   "sport",
+   "op mijn leeftijd",
+   "ik"
   ],
-  "answer": "we lopen over een smal pad naar de top van de heuvel",
+  "answer": "op mijn leeftijd sport ik niet meer zoveel",
   "alternatives": [
-   "over een smal pad lopen we naar de top van de heuvel"
+   "ik sport op mijn leeftijd niet meer zoveel"
   ],
-  "hint": "Manier (over een smal pad) before Plaats/direction (naar de top van de heuvel).",
+  "hint": "A phrase first (op mijn leeftijd) causes inversion: sport ik.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
-   "over": "over@60"
+   "op": "op@60",
+   "meer": "meer@60"
   }
+ },
+ {
+  "id": "vrije-tijd-26",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een hand",
+   "we",
+   "bij het afscheid",
+   "elkaar",
+   "geven"
+  ],
+  "answer": "bij het afscheid geven we elkaar een hand",
+  "alternatives": [
+   "we geven elkaar bij het afscheid een hand"
+  ],
+  "hint": "A phrase first causes inversion (geven we). “elkaar een hand geven” = to shake hands.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "bij": "bij@60",
+   "het": "het@60",
+   "afscheid": "afscheid@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-58",
+  "topic": "vrije-tijd",
+  "parts": [
+   "erg hoog",
+   "de heuvels",
+   "in deze streek",
+   "zijn"
+  ],
+  "answer": "in deze streek zijn de heuvels erg hoog",
+  "alternatives": [
+   "de heuvels zijn in deze streek erg hoog",
+   "de heuvels in deze streek zijn erg hoog"
+  ],
+  "hint": "Place first causes inversion: zijn de heuvels.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "deze": "deze@60",
+   "zijn": "zijn@60",
+   "hoog": "hoog@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-61",
+  "topic": "vrije-tijd",
+  "parts": [
+   "buiten",
+   "speelde",
+   "elke dag",
+   "ik",
+   "in mijn jeugd"
+  ],
+  "answer": "in mijn jeugd speelde ik elke dag buiten",
+  "alternatives": [
+   "ik speelde in mijn jeugd elke dag buiten"
+  ],
+  "hint": "Time first causes inversion: speelde ik. Tijd (elke dag) before Plaats (buiten).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elke": "elke@60",
+   "buiten": "buiten@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-86",
+  "topic": "vrije-tijd",
+  "parts": [
+   "ons huis",
+   "passeert",
+   "de bus",
+   "elk half uur"
+  ],
+  "answer": "elk half uur passeert de bus ons huis",
+  "alternatives": [
+   "de bus passeert elk half uur ons huis"
+  ],
+  "hint": "Time first causes inversion: passeert de bus.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "elk": "elk@60",
+   "ons": "ons@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-28",
+  "topic": "vrije-tijd",
+  "parts": [
+   "veel slaap",
+   "ik",
+   "nodig",
+   "na een lange reis",
+   "heb"
+  ],
+  "answer": "na een lange reis heb ik veel slaap nodig",
+  "alternatives": [
+   "ik heb na een lange reis veel slaap nodig"
+  ],
+  "hint": "Time first causes inversion. “nodig hebben”: nodig goes to the end.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "reis": "reis@60",
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-31",
+  "topic": "vrije-tijd",
+  "parts": [
+   "veel bezoek",
+   "we",
+   "van familie",
+   "krijgen",
+   "in de zomer"
+  ],
+  "answer": "in de zomer krijgen we veel bezoek van familie",
+  "alternatives": [
+   "we krijgen in de zomer veel bezoek van familie"
+  ],
+  "hint": "Time first causes inversion: krijgen we.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "veel": "veel@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-120",
+  "topic": "vrije-tijd",
+  "parts": [
+   "met water",
+   "mijn fles",
+   "ik",
+   "vul",
+   "voor de wandeling"
+  ],
+  "answer": "voor de wandeling vul ik mijn fles met water",
+  "alternatives": [
+   "ik vul voor de wandeling mijn fles met water",
+   "ik vul mijn fles met water voor de wandeling"
+  ],
+  "hint": "A phrase first causes inversion: vul ik.",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "voor": "voor@60",
+   "vul": "vul@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-01",
+  "topic": "vrije-tijd",
+  "parts": [
+   "met mijn familie",
+   "ik",
+   "naar het bos",
+   "ga",
+   "op zondag"
+  ],
+  "answer": "op zondag ga ik met mijn familie naar het bos",
+  "alternatives": [
+   "ik ga op zondag met mijn familie naar het bos"
+  ],
+  "hint": "Time first (op zondag) causes inversion: verb before subject. Then Manier (met mijn familie) before Plaats (naar het bos).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "op": "op@60",
+   "zondag": "zondag@60",
+   "het": "het@60",
+   "bos": "bos@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-33",
+  "topic": "vrije-tijd",
+  "parts": [
+   "bruin",
+   "worden",
+   "de bladeren van de bomen",
+   "in de herfst"
+  ],
+  "answer": "in de herfst worden de bladeren van de bomen bruin",
+  "alternatives": [
+   "de bladeren van de bomen worden in de herfst bruin"
+  ],
+  "hint": "Time first causes inversion: the verb (worden) comes before the long subject.",
+  "grammar": "inversie",
+  "level": 3
  },
  {
   "id": "vrije-tijd-13",
@@ -11223,6 +14007,8 @@ const EXERCISES = [
    "we kijken op zaterdag met de hele familie naar het voetbal"
   ],
   "hint": "Time first causes inversion. “kijken naar” = to watch; the naar-part goes to the end.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
    "op": "op@60",
    "zaterdag": "zaterdag@60",
@@ -11231,82 +14017,431 @@ const EXERCISES = [
   }
  },
  {
-  "id": "vrije-tijd-14",
+  "id": "vrije-tijd-133",
   "topic": "vrije-tijd",
   "parts": [
-   "al tien jaar",
-   "ken",
-   "hem",
-   "ik"
+   "naar muziek",
+   "ik",
+   "op de radio",
+   "het liefst",
+   "luister",
+   "op zondag"
   ],
-  "answer": "ik ken hem al tien jaar",
+  "answer": "op zondag luister ik het liefst naar muziek op de radio",
   "alternatives": [
-   "hem ken ik al tien jaar",
-   "al tien jaar ken ik hem"
+   "ik luister op zondag het liefst naar muziek op de radio"
   ],
-  "hint": "Verb in 2nd place; a short object pronoun (hem) comes right after the verb.",
+  "hint": "Time first causes inversion. “het liefst” = most of all; naar-phrase near the end.",
+  "grammar": "inversie",
+  "level": 3,
   "senses": {
-   "hem": "hem@60",
-   "al": "al@60",
-   "tien": "tien@60"
-  }
- },
- {
-  "id": "vrije-tijd-15",
-  "topic": "vrije-tijd",
-  "parts": [
-   "het feest begint",
-   "jij",
-   "hoe laat",
-   "weet"
-  ],
-  "answer": "weet jij hoe laat het feest begint?",
-  "alternatives": [],
-  "hint": "Yes/no question with verb first. In the indirect question (hoe laat …) the verb goes to the end.",
-  "senses": {
-   "hoe": "hoe@60",
-   "laat": "laat@60",
+   "op": "op@60",
+   "zondag": "zondag@60",
    "het": "het@60"
   }
  },
  {
-  "id": "vrije-tijd-16",
+  "id": "vrije-tijd-59",
   "topic": "vrije-tijd",
   "parts": [
-   "in het café",
+   "in een kleine hut",
+   "we",
+   "in het bos",
+   "slapen",
+   "in de vakantie"
+  ],
+  "answer": "in de vakantie slapen we in een kleine hut in het bos",
+  "alternatives": [
+   "we slapen in de vakantie in een kleine hut in het bos"
+  ],
+  "hint": "Time first causes inversion; Tijd before Plaats (TMP).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "bos": "bos@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-134",
+  "topic": "vrije-tijd",
+  "parts": [
+   "langs de zee",
+   "met een paar vrienden",
    "ik",
-   "mijn vrienden",
-   "ontmoet",
+   "fiets",
+   "in het weekend"
+  ],
+  "answer": "in het weekend fiets ik met een paar vrienden langs de zee",
+  "alternatives": [
+   "ik fiets in het weekend met een paar vrienden langs de zee"
+  ],
+  "hint": "TMP: Tijd (in het weekend), Manier (met een paar vrienden), Plaats (langs de zee).",
+  "grammar": "inversie",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "fiets": "fiets@60",
+   "paar": "paar@60",
+   "langs": "langs@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-77",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een paspoort",
+   "noodzakelijk",
+   "is",
+   "voor deze reis"
+  ],
+  "answer": "voor deze reis is een paspoort noodzakelijk",
+  "alternatives": [
+   "een paspoort is noodzakelijk voor deze reis",
+   "een paspoort is voor deze reis noodzakelijk"
+  ],
+  "hint": "A phrase first causes inversion: is een paspoort.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "voor": "voor@60",
+   "deze": "deze@60",
+   "reis": "reis@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-125",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar het festival",
+   "een groot aantal mensen",
+   "komt",
+   "dit jaar"
+  ],
+  "answer": "dit jaar komt een groot aantal mensen naar het festival",
+  "alternatives": [
+   "een groot aantal mensen komt dit jaar naar het festival"
+  ],
+  "hint": "Time first causes inversion: komt before the subject.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "dit": "dit@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-38",
+  "topic": "vrije-tijd",
+  "parts": [
+   "met de trein",
+   "we",
+   "het grootste gedeelte van de reis",
+   "gaan"
+  ],
+  "answer": "het grootste gedeelte van de reis gaan we met de trein",
+  "alternatives": [
+   "we gaan het grootste gedeelte van de reis met de trein"
+  ],
+  "hint": "A time/extent phrase first causes inversion: gaan we.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "het": "het@60",
+   "reis": "reis@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-104",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een korte tekst",
+   "ik",
+   "over mijn weekend",
+   "schrijf",
+   "voor de wijkkrant"
+  ],
+  "answer": "voor de wijkkrant schrijf ik een korte tekst over mijn weekend",
+  "alternatives": [
+   "ik schrijf voor de wijkkrant een korte tekst over mijn weekend",
+   "ik schrijf een korte tekst over mijn weekend voor de wijkkrant"
+  ],
+  "hint": "A phrase first causes inversion: schrijf ik.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "voor": "voor@60",
+   "over": "over@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-138",
+  "topic": "vrije-tijd",
+  "parts": [
+   "vuurwerk",
+   "de gemeente",
+   "in het centrum",
+   "verbiedt",
+   "met oud en nieuw"
+  ],
+  "answer": "met oud en nieuw verbiedt de gemeente vuurwerk in het centrum",
+  "alternatives": [
+   "de gemeente verbiedt met oud en nieuw vuurwerk in het centrum"
+  ],
+  "hint": "Time first (met oud en nieuw) causes inversion: verbiedt de gemeente.",
+  "grammar": "inversie",
+  "level": 4,
+  "senses": {
+   "gemeente": "gemeente@60",
+   "het": "het@60",
+   "centrum": "centrum@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-87",
+  "topic": "vrije-tijd",
+  "parts": [
+   "nog vrij",
+   "deze plaats",
+   "is"
+  ],
+  "answer": "is deze plaats nog vrij?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb (is) comes first.",
+  "grammar": "vraag",
+  "level": 1,
+  "senses": {
+   "deze": "deze@60",
+   "vrij": "vrij@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-24",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een instrument",
+   "jouw zoon",
+   "ook",
+   "speelt"
+  ],
+  "answer": "speelt jouw zoon ook een instrument?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb comes first, then the subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "jouw": "jouw@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-62",
+  "topic": "vrije-tijd",
+  "parts": [
+   "de juiste trein",
+   "naar Utrecht",
+   "dit",
+   "is"
+  ],
+  "answer": "is dit de juiste trein naar Utrecht?",
+  "alternatives": [],
+  "hint": "Yes/no question: the verb (is) comes first.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "dit": "dit@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-70",
+  "topic": "vrije-tijd",
+  "parts": [
+   "over het feest",
+   "jouw mening",
+   "wat is"
+  ],
+  "answer": "wat is jouw mening over het feest?",
+  "alternatives": [],
+  "hint": "W-question: question word (wat), then the verb, then the subject.",
+  "grammar": "vraag",
+  "level": 2,
+  "senses": {
+   "wat": "wat@60",
+   "jouw": "jouw@60",
+   "over": "over@60",
+   "het": "het@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-83",
+  "topic": "vrije-tijd",
+  "parts": [
+   "van de vertraging",
+   "de oorzaak",
+   "wat is"
+  ],
+  "answer": "wat is de oorzaak van de vertraging?",
+  "alternatives": [],
+  "hint": "W-question: question word, verb, then the subject.",
+  "grammar": "vraag",
+  "level": 3,
+  "senses": {
+   "wat": "wat@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-74",
+  "topic": "vrije-tijd",
+  "parts": [
+   "niet komen",
+   "kan",
+   "ik",
+   "nee",
    "zaterdag"
   ],
-  "answer": "zaterdag ontmoet ik mijn vrienden in het café",
+  "answer": "nee, zaterdag kan ik niet komen",
   "alternatives": [
-   "ik ontmoet zaterdag mijn vrienden in het café",
-   "ik ontmoet mijn vrienden zaterdag in het café"
+   "nee, ik kan zaterdag niet komen"
   ],
-  "hint": "Time first causes inversion (ontmoet ik); Plaats (in het café) at the end.",
+  "hint": "nee does not count as a position. Time first causes inversion (kan ik); the infinitive at the end.",
+  "grammar": "modaal",
+  "level": 2,
   "senses": {
-   "zaterdag": "zaterdag@60",
-   "het": "het@60"
+   "zaterdag": "zaterdag@60"
   }
  },
  {
-  "id": "vrije-tijd-17",
+  "id": "vrije-tijd-76",
   "topic": "vrije-tijd",
   "parts": [
-   "een groot feest",
-   "organiseert",
-   "elk jaar",
-   "mijn bedrijf"
+   "nergens",
+   "vinden",
+   "mijn fietssleutel",
+   "ik kan"
   ],
-  "answer": "mijn bedrijf organiseert elk jaar een groot feest",
-  "alternatives": [
-   "elk jaar organiseert mijn bedrijf een groot feest"
+  "answer": "ik kan mijn fietssleutel nergens vinden",
+  "alternatives": [],
+  "hint": "Modal (kan) in 2nd place, infinitive (vinden) at the end; nergens comes before the infinitive.",
+  "grammar": "modaal",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-04",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een fles wijn",
+   "je",
+   "meebrengen",
+   "morgen",
+   "kun"
   ],
-  "hint": "Verb in 2nd place; time (elk jaar) before the object.",
+  "answer": "kun je morgen een fles wijn meebrengen?",
+  "alternatives": [],
+  "hint": "Yes/no question: the modal (kun) comes first, the infinitive (meebrengen) goes to the end.",
+  "grammar": "modaal",
+  "level": 3,
   "senses": {
-   "bedrijf": "bedrijf@60",
-   "elk": "elk@60"
+   "je": "je@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-84",
+  "topic": "vrije-tijd",
+  "parts": [
+   "reizen",
+   "mijn dochter",
+   "na haar opleiding",
+   "wil"
+  ],
+  "answer": "na haar opleiding wil mijn dochter reizen",
+  "alternatives": [
+   "mijn dochter wil na haar opleiding reizen"
+  ],
+  "hint": "Modal (wil) in 2nd place, infinitive (reizen) at the end. Time first causes inversion.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "opleiding": "opleiding@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-19",
+  "topic": "vrije-tijd",
+  "parts": [
+   "opschrijven",
+   "je adres en postcode",
+   "even",
+   "kun",
+   "je"
+  ],
+  "answer": "kun je je adres en postcode even opschrijven?",
+  "alternatives": [
+   "kun je even je adres en postcode opschrijven?"
+  ],
+  "hint": "Question with the modal first; the infinitive (opschrijven) goes to the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "je": "je@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-10",
+  "topic": "vrije-tijd",
+  "parts": [
+   "de maan en de sterren",
+   "we",
+   "zien",
+   "vanavond",
+   "kunnen"
+  ],
+  "answer": "vanavond kunnen we de maan en de sterren zien",
+  "alternatives": [
+   "we kunnen vanavond de maan en de sterren zien"
+  ],
+  "hint": "Modal verb (kunnen) in 2nd place, the infinitive (zien) at the end.",
+  "grammar": "modaal",
+  "level": 3,
+  "senses": {
+   "vanavond": "vanavond@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-108",
+  "topic": "vrije-tijd",
+  "parts": [
+   "een eigen huis",
+   "ik",
+   "kopen",
+   "in de toekomst",
+   "wil"
+  ],
+  "answer": "in de toekomst wil ik een eigen huis kopen",
+  "alternatives": [
+   "ik wil in de toekomst een eigen huis kopen"
+  ],
+  "hint": "Modal (wil) in 2nd place, infinitive (kopen) at the end.",
+  "grammar": "modaal",
+  "level": 3
+ },
+ {
+  "id": "vrije-tijd-80",
+  "topic": "vrije-tijd",
+  "parts": [
+   "toch",
+   "fietsen",
+   "we",
+   "ondanks de regen",
+   "gaan"
+  ],
+  "answer": "ondanks de regen gaan we toch fietsen",
+  "alternatives": [
+   "we gaan ondanks de regen toch fietsen"
+  ],
+  "hint": "A phrase first (ondanks de regen) causes inversion; the infinitive (fietsen) goes to the end.",
+  "grammar": "modaal",
+  "level": 4,
+  "senses": {
+   "toch": "toch@60"
   }
  },
  {
@@ -11326,27 +14461,122 @@ const EXERCISES = [
    "zaterdagavond gaan we in de stad uit"
   ],
   "hint": "Separable verb uitgaan: gaan in 2nd place, uit near the end. Time first causes inversion.",
+  "grammar": "scheidbaar",
+  "level": 2,
   "senses": {
    "uit": "uit@60"
   }
  },
  {
-  "id": "vrije-tijd-19",
+  "id": "vrije-tijd-03",
   "topic": "vrije-tijd",
   "parts": [
-   "opschrijven",
-   "je adres en postcode",
-   "even",
-   "kun",
-   "je"
+   "langs",
+   "tien vrienden",
+   "op mijn verjaardag",
+   "komen"
   ],
-  "answer": "kun je je adres en postcode even opschrijven?",
+  "answer": "op mijn verjaardag komen tien vrienden langs",
   "alternatives": [
-   "kun je even je adres en postcode opschrijven?"
+   "tien vrienden komen op mijn verjaardag langs"
   ],
-  "hint": "Question with the modal first; the infinitive (opschrijven) goes to the end.",
+  "hint": "Separable verb langskomen: komen goes in 2nd place, the particle langs goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
   "senses": {
-   "je": "je@60"
+   "op": "op@60",
+   "tien": "tien@60",
+   "langs": "langs@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-56",
+  "topic": "vrije-tijd",
+  "parts": [
+   "heen",
+   "in de vakantie",
+   "jullie",
+   "waar gaan"
+  ],
+  "answer": "waar gaan jullie in de vakantie heen?",
+  "alternatives": [
+   "waar gaan jullie heen in de vakantie?"
+  ],
+  "hint": "W-question: question word, verb, subject. “waar … heen” = where to; heen goes to the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "waar": "waar@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-09",
+  "topic": "vrije-tijd",
+  "parts": [
+   "mee",
+   "een paraplu",
+   "ik",
+   "voor de zekerheid",
+   "neem"
+  ],
+  "answer": "voor de zekerheid neem ik een paraplu mee",
+  "alternatives": [
+   "ik neem voor de zekerheid een paraplu mee"
+  ],
+  "hint": "Separable verb meenemen: neem in 2nd place, mee at the very end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "voor": "voor@60",
+   "neem": "neem@60",
+   "mee": "mee@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-127",
+  "topic": "vrije-tijd",
+  "parts": [
+   "mee",
+   "ons afval",
+   "we",
+   "na de picknick",
+   "nemen"
+  ],
+  "answer": "na de picknick nemen we ons afval mee",
+  "alternatives": [
+   "we nemen na de picknick ons afval mee"
+  ],
+  "hint": "Separable verb meenemen: nemen in 2nd place, mee at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "nemen": "nemen@60",
+   "ons": "ons@60",
+   "afval": "afval@60",
+   "mee": "mee@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-97",
+  "topic": "vrije-tijd",
+  "parts": [
+   "schoon",
+   "het huis",
+   "we",
+   "samen",
+   "na het feest",
+   "maken"
+  ],
+  "answer": "na het feest maken we samen het huis schoon",
+  "alternatives": [
+   "we maken na het feest samen het huis schoon"
+  ],
+  "hint": "Separable verb schoonmaken: maken in 2nd place, schoon at the end.",
+  "grammar": "scheidbaar",
+  "level": 3,
+  "senses": {
+   "het": "het@60",
+   "maken": "maken@60"
   }
  },
  {
@@ -11362,6 +14592,8 @@ const EXERCISES = [
   "answer": "op het formulier vul je je burgerlijke staat in",
   "alternatives": [],
   "hint": "Separable verb invullen: vul in 2nd place, in at the end. After inversion jij/je loses the -t: vul je.",
+  "grammar": "scheidbaar",
+  "level": 4,
   "senses": {
    "op": "op@60",
    "het": "het@60",
@@ -11371,275 +14603,203 @@ const EXERCISES = [
   }
  },
  {
-  "id": "vrije-tijd-21",
+  "id": "vrije-tijd-82",
   "topic": "vrije-tijd",
   "parts": [
-   "lid van de zwemclub",
-   "is",
-   "sinds een jaar",
-   "mijn zoon"
+   "geweest",
+   "in Amsterdam",
+   "ooit",
+   "jij",
+   "ben"
   ],
-  "answer": "mijn zoon is sinds een jaar lid van de zwemclub",
-  "alternatives": [
-   "sinds een jaar is mijn zoon lid van de zwemclub"
-  ],
-  "hint": "Verb in 2nd place; time (sinds een jaar) before the rest."
- },
- {
-  "id": "vrije-tijd-22",
-  "topic": "vrije-tijd",
-  "parts": [
-   "niet meer zoveel",
-   "sport",
-   "op mijn leeftijd",
-   "ik"
-  ],
-  "answer": "op mijn leeftijd sport ik niet meer zoveel",
-  "alternatives": [
-   "ik sport op mijn leeftijd niet meer zoveel"
-  ],
-  "hint": "A phrase first (op mijn leeftijd) causes inversion: sport ik.",
-  "senses": {
-   "op": "op@60",
-   "meer": "meer@60"
-  }
- },
- {
-  "id": "vrije-tijd-23",
-  "topic": "vrije-tijd",
-  "parts": [
-   "rust en stilte",
-   "vind",
-   "in het bos",
-   "ik"
-  ],
-  "answer": "in het bos vind ik rust en stilte",
-  "alternatives": [
-   "ik vind rust en stilte in het bos",
-   "ik vind in het bos rust en stilte"
-  ],
-  "hint": "Place first causes inversion: vind ik.",
-  "senses": {
-   "het": "het@60",
-   "bos": "bos@60",
-   "rust": "rust@60"
-  }
- },
- {
-  "id": "vrije-tijd-24",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een instrument",
-   "jouw zoon",
-   "ook",
-   "speelt"
-  ],
-  "answer": "speelt jouw zoon ook een instrument?",
+  "answer": "ben jij ooit in Amsterdam geweest?",
   "alternatives": [],
-  "hint": "Yes/no question: the verb comes first, then the subject.",
+  "hint": "Question in the perfect: ben first, geweest at the end.",
+  "grammar": "perfectum",
+  "level": 2
+ },
+ {
+  "id": "vrije-tijd-113",
+  "topic": "vrije-tijd",
+  "parts": [
+   "verloren",
+   "de wedstrijd",
+   "heeft",
+   "onze club"
+  ],
+  "answer": "onze club heeft de wedstrijd verloren",
+  "alternatives": [],
+  "hint": "Perfect tense: heeft in 2nd place, verloren at the end.",
+  "grammar": "perfectum",
+  "level": 2,
   "senses": {
-   "jouw": "jouw@60"
+   "onze": "onze@60"
   }
  },
  {
-  "id": "vrije-tijd-25",
+  "id": "vrije-tijd-53",
   "topic": "vrije-tijd",
   "parts": [
-   "verdrietig",
-   "de vakantie",
-   "omdat",
-   "zijn",
-   "de kinderen",
-   "voorbij is"
+   "gebroken",
+   "bij het voetbal",
+   "zijn vinger",
+   "heeft",
+   "hij"
   ],
-  "answer": "de kinderen zijn verdrietig omdat de vakantie voorbij is",
+  "answer": "hij heeft zijn vinger gebroken bij het voetbal",
   "alternatives": [
-   "omdat de vakantie voorbij is, zijn de kinderen verdrietig"
+   "bij het voetbal heeft hij zijn vinger gebroken",
+   "hij heeft bij het voetbal zijn vinger gebroken"
   ],
-  "hint": "omdat sends the verb (is) to the end of its clause. If the omdat-clause comes first, the main verb follows directly: zijn de kinderen.",
+  "hint": "Perfect tense: heeft in 2nd place, gebroken at the end of the main part.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
-   "zijn": "zijn@60"
-  }
- },
- {
-  "id": "vrije-tijd-26",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een hand",
-   "we",
-   "bij het afscheid",
-   "elkaar",
-   "geven"
-  ],
-  "answer": "bij het afscheid geven we elkaar een hand",
-  "alternatives": [
-   "we geven elkaar bij het afscheid een hand"
-  ],
-  "hint": "A phrase first causes inversion (geven we). “elkaar een hand geven” = to shake hands.",
-  "senses": {
+   "zijn": "zijn@60",
    "bij": "bij@60",
-   "het": "het@60",
-   "afscheid": "afscheid@60"
+   "het": "het@60"
   }
  },
  {
-  "id": "vrije-tijd-27",
+  "id": "vrije-tijd-65",
   "topic": "vrije-tijd",
   "parts": [
-   "in zijn eigen kamer",
-   "boven",
-   "slaapt",
-   "de baby"
+   "bezocht",
+   "de koningin",
+   "onze stad",
+   "heeft",
+   "vorig jaar"
   ],
-  "answer": "de baby slaapt boven in zijn eigen kamer",
+  "answer": "vorig jaar heeft de koningin onze stad bezocht",
   "alternatives": [
-   "boven slaapt de baby in zijn eigen kamer"
+   "de koningin heeft vorig jaar onze stad bezocht"
   ],
-  "hint": "Verb in 2nd place; the short place word (boven) comes before the longer place phrase.",
+  "hint": "Perfect tense: heeft in 2nd place, bezocht at the end. Time first causes inversion.",
+  "grammar": "perfectum",
+  "level": 3,
   "senses": {
-   "boven": "boven@60",
-   "zijn": "zijn@60"
+   "onze": "onze@60"
   }
  },
  {
-  "id": "vrije-tijd-28",
+  "id": "vrije-tijd-06",
   "topic": "vrije-tijd",
   "parts": [
-   "veel slaap",
-   "ik",
-   "nodig",
-   "na een lange reis",
-   "heb"
+   "gemaakt",
+   "een leuke reis",
+   "hebben",
+   "wij",
+   "naar Spanje",
+   "vorige week"
   ],
-  "answer": "na een lange reis heb ik veel slaap nodig",
+  "answer": "vorige week hebben wij een leuke reis naar Spanje gemaakt",
   "alternatives": [
-   "ik heb na een lange reis veel slaap nodig"
+   "wij hebben vorige week een leuke reis naar Spanje gemaakt"
   ],
-  "hint": "Time first causes inversion. “nodig hebben”: nodig goes to the end.",
+  "hint": "Perfect tense: hebben in 2nd place, the past participle (gemaakt) at the end. Time first causes inversion.",
+  "grammar": "perfectum",
+  "level": 4,
   "senses": {
-   "reis": "reis@60",
-   "veel": "veel@60"
+   "reis": "reis@60"
   }
  },
  {
-  "id": "vrije-tijd-29",
+  "id": "vrije-tijd-115",
   "topic": "vrije-tijd",
   "parts": [
-   "de rekening",
-   "samen",
-   "we",
-   "in het restaurant",
-   "betalen"
+   "gaan we dansen",
+   "eerst",
+   "en vervolgens",
+   "we eten"
   ],
-  "answer": "in het restaurant betalen we de rekening samen",
+  "answer": "we eten eerst en vervolgens gaan we dansen",
   "alternatives": [
-   "we betalen in het restaurant de rekening samen"
+   "eerst eten we en vervolgens gaan we dansen"
   ],
-  "hint": "Place first causes inversion: betalen we.",
+  "hint": "vervolgens at the start of a clause causes inversion: gaan we.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "eten": "eten@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-129",
+  "topic": "vrije-tijd",
+  "parts": [
+   "dus",
+   "hij zwemt niet",
+   "voor water",
+   "hij heeft angst"
+  ],
+  "answer": "hij heeft angst voor water, dus hij zwemt niet",
+  "alternatives": [
+   "hij heeft angst voor water, dus zwemt hij niet"
+  ],
+  "hint": "After dus both orders are used: “dus hij zwemt” and “dus zwemt hij”.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "voor": "voor@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-110",
+  "topic": "vrije-tijd",
+  "parts": [
+   "naar mijn feest",
+   "ze komen allebei",
+   "ik heb twee broers",
+   "en"
+  ],
+  "answer": "ik heb twee broers en ze komen allebei naar mijn feest",
+  "alternatives": [],
+  "hint": "Two main clauses joined by en; allebei comes right after the verb.",
+  "grammar": "nevenschikkend",
+  "level": 3,
+  "senses": {
+   "ze": "ze@60"
+  }
+ },
+ {
+  "id": "vrije-tijd-92",
+  "topic": "vrije-tijd",
+  "parts": [
+   "erg vriendelijk",
+   "het hotel was",
+   "en de mensen waren",
+   "redelijk goedkoop"
+  ],
+  "answer": "het hotel was redelijk goedkoop en de mensen waren erg vriendelijk",
+  "alternatives": [],
+  "hint": "Two main clauses joined by en: each has the verb in 2nd place.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
    "het": "het@60"
   }
  },
  {
-  "id": "vrije-tijd-30",
+  "id": "vrije-tijd-135",
   "topic": "vrije-tijd",
   "parts": [
-   "om",
-   "te bewegen",
-   "ik vind het fijn",
-   "elke dag"
+   "op",
+   "dus ik bel ze vaak",
+   "ver weg",
+   "mijn familie woont"
   ],
-  "answer": "ik vind het fijn om elke dag te bewegen",
-  "alternatives": [],
-  "hint": "“om … te + infinitive”: the infinitive (te bewegen) comes at the end.",
-  "senses": {
-   "het": "het@60",
-   "elke": "elke@60",
-   "te": "te@60"
-  }
- },
- {
-  "id": "vrije-tijd-31",
-  "topic": "vrije-tijd",
-  "parts": [
-   "veel bezoek",
-   "we",
-   "van familie",
-   "krijgen",
-   "in de zomer"
-  ],
-  "answer": "in de zomer krijgen we veel bezoek van familie",
+  "answer": "mijn familie woont ver weg, dus ik bel ze vaak op",
   "alternatives": [
-   "we krijgen in de zomer veel bezoek van familie"
+   "mijn familie woont ver weg, dus bel ik ze vaak op"
   ],
-  "hint": "Time first causes inversion: krijgen we.",
+  "hint": "Separable verb opbellen: bel in 2nd place, op at the end.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-32",
-  "topic": "vrije-tijd",
-  "parts": [
-   "bijvoorbeeld",
-   "zwemmen en fietsen",
-   "veel hobby's",
-   "ik heb"
-  ],
-  "answer": "ik heb veel hobby's, bijvoorbeeld zwemmen en fietsen",
-  "alternatives": [],
-  "hint": "Main clause first; bijvoorbeeld introduces the examples after the comma.",
-  "senses": {
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-33",
-  "topic": "vrije-tijd",
-  "parts": [
-   "bruin",
-   "worden",
-   "de bladeren van de bomen",
-   "in de herfst"
-  ],
-  "answer": "in de herfst worden de bladeren van de bomen bruin",
-  "alternatives": [
-   "de bladeren van de bomen worden in de herfst bruin"
-  ],
-  "hint": "Time first causes inversion: the verb (worden) comes before the long subject."
- },
- {
-  "id": "vrije-tijd-34",
-  "topic": "vrije-tijd",
-  "parts": [
-   "helemaal blauw",
-   "de lucht",
-   "vandaag",
-   "is"
-  ],
-  "answer": "vandaag is de lucht helemaal blauw",
-  "alternatives": [
-   "de lucht is vandaag helemaal blauw"
-  ],
-  "hint": "Time first (vandaag) causes inversion: is de lucht.",
-  "senses": {
-   "helemaal": "helemaal@60"
-  }
- },
- {
-  "id": "vrije-tijd-35",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een eenvoudig gerecht",
-   "met vis",
-   "maakt",
-   "de chef"
-  ],
-  "answer": "de chef maakt een eenvoudig gerecht met vis",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the object.",
-  "senses": {
-   "chef": "chef@60"
+   "weg": "weg@60",
+   "bel": "bel@60",
+   "ze": "ze@60",
+   "op": "op@60"
   }
  },
  {
@@ -11657,6 +14817,8 @@ const EXERCISES = [
    "we gaan eerst naar het strand en dan eten we daar een ijsje"
   ],
   "hint": "eerst and dan at the start cause inversion: gaan we, eten we.",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
    "het": "het@60",
    "dan": "dan@60",
@@ -11664,53 +14826,25 @@ const EXERCISES = [
   }
  },
  {
-  "id": "vrije-tijd-37",
+  "id": "vrije-tijd-72",
   "topic": "vrije-tijd",
   "parts": [
-   "in Marokko",
-   "woont",
-   "een deel van mijn familie"
+   "want dat is",
+   "beter voor het milieu",
+   "met het openbaar vervoer",
+   "ik reis"
   ],
-  "answer": "een deel van mijn familie woont in Marokko",
+  "answer": "ik reis met het openbaar vervoer, want dat is beter voor het milieu",
   "alternatives": [],
-  "hint": "The whole subject (een deel van mijn familie) comes first, then the verb."
- },
- {
-  "id": "vrije-tijd-38",
-  "topic": "vrije-tijd",
-  "parts": [
-   "met de trein",
-   "we",
-   "het grootste gedeelte van de reis",
-   "gaan"
-  ],
-  "answer": "het grootste gedeelte van de reis gaan we met de trein",
-  "alternatives": [
-   "we gaan het grootste gedeelte van de reis met de trein"
-  ],
-  "hint": "A time/extent phrase first causes inversion: gaan we.",
+  "hint": "want keeps normal word order: the verb stays in 2nd place (dat is).",
+  "grammar": "nevenschikkend",
+  "level": 4,
   "senses": {
+   "reis": "reis@60",
    "het": "het@60",
-   "reis": "reis@60"
-  }
- },
- {
-  "id": "vrije-tijd-39",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een late dienst",
-   "mijn man",
-   "heeft",
-   "op zondag"
-  ],
-  "answer": "op zondag heeft mijn man een late dienst",
-  "alternatives": [
-   "mijn man heeft op zondag een late dienst"
-  ],
-  "hint": "Time first causes inversion: heeft mijn man.",
-  "senses": {
-   "op": "op@60",
-   "zondag": "zondag@60"
+   "dat": "dat@60",
+   "beter": "beter@60",
+   "voor": "voor@60"
   }
  },
  {
@@ -11726,29 +14860,30 @@ const EXERCISES = [
   "answer": "we vieren het suikerfeest, want het is een belangrijk feest in onze godsdienst",
   "alternatives": [],
   "hint": "want does not change the word order: after want the verb stays in 2nd place (het is …).",
+  "grammar": "nevenschikkend",
+  "level": 5,
   "senses": {
    "het": "het@60",
    "onze": "onze@60"
   }
  },
  {
-  "id": "vrije-tijd-41",
+  "id": "vrije-tijd-75",
   "topic": "vrije-tijd",
   "parts": [
-   "direct",
-   "ga",
-   "naar de sportschool",
-   "ik",
-   "na het werk"
+   "niks",
+   "te doen",
+   "is",
+   "in dit dorp"
   ],
-  "answer": "na het werk ga ik direct naar de sportschool",
-  "alternatives": [
-   "ik ga na het werk direct naar de sportschool"
-  ],
-  "hint": "Time first causes inversion; direct comes before the place (naar de sportschool).",
+  "answer": "in dit dorp is niks te doen",
+  "alternatives": [],
+  "hint": "Place first, then the verb. “niks te doen” = nothing to do.",
+  "grammar": "om-te",
+  "level": 3,
   "senses": {
-   "het": "het@60",
-   "werk": "werk@60"
+   "dit": "dit@60",
+   "te": "te@60"
   }
  },
  {
@@ -11763,6 +14898,8 @@ const EXERCISES = [
   "answer": "mijn doel is om elke week te sporten",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te sporten comes at the end.",
+  "grammar": "om-te",
+  "level": 3,
   "senses": {
    "elke": "elke@60",
    "te": "te@60",
@@ -11770,54 +14907,23 @@ const EXERCISES = [
   }
  },
  {
-  "id": "vrije-tijd-43",
+  "id": "vrije-tijd-30",
   "topic": "vrije-tijd",
   "parts": [
-   "in een grote doos",
-   "liggen",
-   "de cadeaus"
+   "om",
+   "te bewegen",
+   "ik vind het fijn",
+   "elke dag"
   ],
-  "answer": "de cadeaus liggen in een grote doos",
-  "alternatives": [
-   "in een grote doos liggen de cadeaus"
-  ],
-  "hint": "Subject, verb in 2nd place, then the place.",
-  "senses": {
-   "liggen": "liggen@60"
-  }
- },
- {
-  "id": "vrije-tijd-44",
-  "topic": "vrije-tijd",
-  "parts": [
-   "weer zomer",
-   "het",
-   "eindelijk",
-   "is"
-  ],
-  "answer": "eindelijk is het weer zomer",
-  "alternatives": [
-   "het is eindelijk weer zomer"
-  ],
-  "hint": "An adverb first (eindelijk) causes inversion: is het.",
+  "answer": "ik vind het fijn om elke dag te bewegen",
+  "alternatives": [],
+  "hint": "“om … te + infinitive”: the infinitive (te bewegen) comes at the end.",
+  "grammar": "om-te",
+  "level": 3,
   "senses": {
    "het": "het@60",
-   "weer": "weer@60"
-  }
- },
- {
-  "id": "vrije-tijd-45",
-  "topic": "vrije-tijd",
-  "parts": [
-   "was",
-   "heel emotioneel",
-   "de bruiloft van mijn zus"
-  ],
-  "answer": "de bruiloft van mijn zus was heel emotioneel",
-  "alternatives": [],
-  "hint": "The long subject comes first, then the verb (was) in 2nd place.",
-  "senses": {
-   "heel": "heel@60"
+   "elke": "elke@60",
+   "te": "te@60"
   }
  },
  {
@@ -11835,6 +14941,8 @@ const EXERCISES = [
    "het is in dit gebied verboden om te fietsen"
   ],
   "hint": "Place first causes inversion (is het). “om te + infinitive” at the end.",
+  "grammar": "om-te",
+  "level": 4,
   "senses": {
    "dit": "dit@60",
    "het": "het@60",
@@ -11854,814 +14962,102 @@ const EXERCISES = [
   "answer": "een verjaardag is een goede gelegenheid om de familie te zien",
   "alternatives": [],
   "hint": "“om … te + infinitive”: te zien comes at the end.",
+  "grammar": "om-te",
+  "level": 5,
   "senses": {
    "te": "te@60"
   }
  },
  {
-  "id": "vrije-tijd-48",
+  "id": "vrije-tijd-128",
   "topic": "vrije-tijd",
   "parts": [
-   "tienduizend stappen per dag",
-   "met gemak",
-   "hij",
-   "loopt"
-  ],
-  "answer": "hij loopt met gemak tienduizend stappen per dag",
-  "alternatives": [
-   "met gemak loopt hij tienduizend stappen per dag"
-  ],
-  "hint": "Verb in 2nd place; the manner (met gemak) before the object.",
-  "senses": {
-   "stappen": "stappen@60",
-   "per": "per@60"
-  }
- },
- {
-  "id": "vrije-tijd-49",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar je feest",
-   "zaterdag",
-   "in elk geval",
-   "ik",
-   "kom"
-  ],
-  "answer": "ik kom in elk geval zaterdag naar je feest",
-  "alternatives": [
-   "in elk geval kom ik zaterdag naar je feest",
-   "ik kom zaterdag in elk geval naar je feest"
-  ],
-  "hint": "Verb in 2nd place; time (zaterdag) before place (naar je feest).",
-  "senses": {
-   "elk": "elk@60",
-   "zaterdag": "zaterdag@60",
-   "je": "je@60"
-  }
- },
- {
-  "id": "vrije-tijd-50",
-  "topic": "vrije-tijd",
-  "parts": [
-   "geweldig",
-   "de vakantie in Italië",
-   "was"
-  ],
-  "answer": "de vakantie in Italië was geweldig",
-  "alternatives": [],
-  "hint": "The subject (de vakantie in Italië) first, then the verb, then the adjective."
- },
- {
-  "id": "vrije-tijd-51",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in mijn gezicht",
-   "schijnt",
-   "de zon"
-  ],
-  "answer": "de zon schijnt in mijn gezicht",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place, then the place."
- },
- {
-  "id": "vrije-tijd-52",
-  "topic": "vrije-tijd",
-  "parts": [
-   "pijn",
-   "mijn arm",
+   "hij slaapt",
+   "alsof",
    "doet",
-   "na het tennis"
+   "mijn zoon"
   ],
-  "answer": "na het tennis doet mijn arm pijn",
-  "alternatives": [
-   "mijn arm doet pijn na het tennis",
-   "mijn arm doet na het tennis pijn"
-  ],
-  "hint": "Time first causes inversion. In “pijn doen”, pijn goes to the end.",
-  "senses": {
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-53",
-  "topic": "vrije-tijd",
-  "parts": [
-   "gebroken",
-   "bij het voetbal",
-   "zijn vinger",
-   "heeft",
-   "hij"
-  ],
-  "answer": "hij heeft zijn vinger gebroken bij het voetbal",
-  "alternatives": [
-   "bij het voetbal heeft hij zijn vinger gebroken",
-   "hij heeft bij het voetbal zijn vinger gebroken"
-  ],
-  "hint": "Perfect tense: heeft in 2nd place, gebroken at the end of the main part.",
-  "senses": {
-   "zijn": "zijn@60",
-   "bij": "bij@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-54",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in mijn mond",
-   "de tandarts",
-   "kijkt"
-  ],
-  "answer": "de tandarts kijkt in mijn mond",
+  "answer": "mijn zoon doet alsof hij slaapt",
   "alternatives": [],
-  "hint": "Subject first, verb in 2nd place, then the place."
+  "hint": "alsof sends the verb (slaapt) to the end of its clause.",
+  "grammar": "bijzin",
+  "level": 3
  },
  {
-  "id": "vrije-tijd-55",
+  "id": "vrije-tijd-15",
   "topic": "vrije-tijd",
   "parts": [
-   "voor een fietstocht",
-   "gunstig",
-   "het weer is"
-  ],
-  "answer": "het weer is gunstig voor een fietstocht",
-  "alternatives": [],
-  "hint": "Subject + verb, then the adjective and its phrase.",
-  "senses": {
-   "het": "het@60",
-   "weer": "weer@60",
-   "voor": "voor@60"
-  }
- },
- {
-  "id": "vrije-tijd-56",
-  "topic": "vrije-tijd",
-  "parts": [
-   "heen",
-   "in de vakantie",
-   "jullie",
-   "waar gaan"
-  ],
-  "answer": "waar gaan jullie in de vakantie heen?",
-  "alternatives": [
-   "waar gaan jullie heen in de vakantie?"
-  ],
-  "hint": "W-question: question word, verb, subject. “waar … heen” = where to; heen goes to the end.",
-  "senses": {
-   "waar": "waar@60"
-  }
- },
- {
-  "id": "vrije-tijd-57",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op de hoek van de straat",
-   "is",
-   "het café"
-  ],
-  "answer": "het café is op de hoek van de straat",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the place.",
-  "senses": {
-   "het": "het@60",
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-58",
-  "topic": "vrije-tijd",
-  "parts": [
-   "erg hoog",
-   "de heuvels",
-   "in deze streek",
-   "zijn"
-  ],
-  "answer": "in deze streek zijn de heuvels erg hoog",
-  "alternatives": [
-   "de heuvels zijn in deze streek erg hoog",
-   "de heuvels in deze streek zijn erg hoog"
-  ],
-  "hint": "Place first causes inversion: zijn de heuvels.",
-  "senses": {
-   "deze": "deze@60",
-   "zijn": "zijn@60",
-   "hoog": "hoog@60"
-  }
- },
- {
-  "id": "vrije-tijd-59",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in een kleine hut",
-   "we",
-   "in het bos",
-   "slapen",
-   "in de vakantie"
-  ],
-  "answer": "in de vakantie slapen we in een kleine hut in het bos",
-  "alternatives": [
-   "we slapen in de vakantie in een kleine hut in het bos"
-  ],
-  "hint": "Time first causes inversion; Tijd before Plaats (TMP).",
-  "senses": {
-   "het": "het@60",
-   "bos": "bos@60"
-  }
- },
- {
-  "id": "vrije-tijd-60",
-  "topic": "vrije-tijd",
-  "parts": [
-   "informatie over het festival",
-   "staat",
-   "op de website"
-  ],
-  "answer": "op de website staat informatie over het festival",
-  "alternatives": [],
-  "hint": "Place first causes inversion: the verb (staat) before the subject (informatie).",
-  "senses": {
-   "op": "op@60",
-   "staat": "staat@60",
-   "over": "over@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-61",
-  "topic": "vrije-tijd",
-  "parts": [
-   "buiten",
-   "speelde",
-   "elke dag",
-   "ik",
-   "in mijn jeugd"
-  ],
-  "answer": "in mijn jeugd speelde ik elke dag buiten",
-  "alternatives": [
-   "ik speelde in mijn jeugd elke dag buiten"
-  ],
-  "hint": "Time first causes inversion: speelde ik. Tijd (elke dag) before Plaats (buiten).",
-  "senses": {
-   "elke": "elke@60",
-   "buiten": "buiten@60"
-  }
- },
- {
-  "id": "vrije-tijd-62",
-  "topic": "vrije-tijd",
-  "parts": [
-   "de juiste trein",
-   "naar Utrecht",
-   "dit",
-   "is"
-  ],
-  "answer": "is dit de juiste trein naar Utrecht?",
-  "alternatives": [],
-  "hint": "Yes/no question: the verb (is) comes first.",
-  "senses": {
-   "dit": "dit@60"
-  }
- },
- {
-  "id": "vrije-tijd-63",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een vrolijk karakter",
-   "heeft",
-   "mijn zus"
-  ],
-  "answer": "mijn zus heeft een vrolijk karakter",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place, then the object.",
-  "senses": {
-   "vrolijk": "vrolijk@60"
-  }
- },
- {
-  "id": "vrije-tijd-64",
-  "topic": "vrije-tijd",
-  "parts": [
-   "veel klanten",
-   "er",
-   "in de winkel",
-   "zijn",
-   "op zaterdag"
-  ],
-  "answer": "op zaterdag zijn er veel klanten in de winkel",
-  "alternatives": [
-   "er zijn op zaterdag veel klanten in de winkel"
-  ],
-  "hint": "Time first causes inversion; “er zijn” = there are.",
-  "senses": {
-   "op": "op@60",
-   "zaterdag": "zaterdag@60",
-   "zijn": "zijn@60",
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-65",
-  "topic": "vrije-tijd",
-  "parts": [
-   "bezocht",
-   "de koningin",
-   "onze stad",
-   "heeft",
-   "vorig jaar"
-  ],
-  "answer": "vorig jaar heeft de koningin onze stad bezocht",
-  "alternatives": [
-   "de koningin heeft vorig jaar onze stad bezocht"
-  ],
-  "hint": "Perfect tense: heeft in 2nd place, bezocht at the end. Time first causes inversion.",
-  "senses": {
-   "onze": "onze@60"
-  }
- },
- {
-  "id": "vrije-tijd-66",
-  "topic": "vrije-tijd",
-  "parts": [
-   "weinig kracht",
-   "ik",
-   "na de griep",
-   "heb"
-  ],
-  "answer": "na de griep heb ik weinig kracht",
-  "alternatives": [
-   "ik heb na de griep weinig kracht"
-  ],
-  "hint": "Time first causes inversion: heb ik.",
-  "senses": {
-   "weinig": "weinig@60"
-  }
- },
- {
-  "id": "vrije-tijd-67",
-  "topic": "vrije-tijd",
-  "parts": [
-   "door het bos",
-   "we",
-   "onder leiding van een gids",
-   "wandelen"
-  ],
-  "answer": "we wandelen onder leiding van een gids door het bos",
-  "alternatives": [
-   "onder leiding van een gids wandelen we door het bos"
-  ],
-  "hint": "Manier (onder leiding van een gids) before Plaats (door het bos).",
-  "senses": {
-   "door": "door@60",
-   "het": "het@60",
-   "bos": "bos@60"
-  }
- },
- {
-  "id": "vrije-tijd-68",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar links",
-   "u",
-   "bij de kerk",
-   "gaat"
-  ],
-  "answer": "bij de kerk gaat u naar links",
-  "alternatives": [
-   "u gaat bij de kerk naar links"
-  ],
-  "hint": "A place first causes inversion: gaat u.",
-  "senses": {
-   "bij": "bij@60",
-   "u": "u@60"
-  }
- },
- {
-  "id": "vrije-tijd-69",
-  "topic": "vrije-tijd",
-  "parts": [
-   "is kapot",
-   "op het station",
-   "de machine"
-  ],
-  "answer": "de machine op het station is kapot",
-  "alternatives": [],
-  "hint": "The subject with its place (de machine op het station) first, then the verb.",
-  "senses": {
-   "op": "op@60",
-   "het": "het@60",
-   "station": "station@60"
-  }
- },
- {
-  "id": "vrije-tijd-70",
-  "topic": "vrije-tijd",
-  "parts": [
-   "over het feest",
-   "jouw mening",
-   "wat is"
-  ],
-  "answer": "wat is jouw mening over het feest?",
-  "alternatives": [],
-  "hint": "W-question: question word (wat), then the verb, then the subject.",
-  "senses": {
-   "wat": "wat@60",
-   "jouw": "jouw@60",
-   "over": "over@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-71",
-  "topic": "vrije-tijd",
-  "parts": [
-   "vijfentwintig meter lang",
-   "is",
-   "het zwembad"
-  ],
-  "answer": "het zwembad is vijfentwintig meter lang",
-  "alternatives": [],
-  "hint": "Subject, verb, then the measurement (vijfentwintig meter lang).",
-  "senses": {
-   "het": "het@60",
-   "lang": "lang@60"
-  }
- },
- {
-  "id": "vrije-tijd-72",
-  "topic": "vrije-tijd",
-  "parts": [
-   "want dat is",
-   "beter voor het milieu",
-   "met het openbaar vervoer",
-   "ik reis"
-  ],
-  "answer": "ik reis met het openbaar vervoer, want dat is beter voor het milieu",
-  "alternatives": [],
-  "hint": "want keeps normal word order: the verb stays in 2nd place (dat is).",
-  "senses": {
-   "reis": "reis@60",
-   "het": "het@60",
-   "dat": "dat@60",
-   "beter": "beter@60",
-   "voor": "voor@60"
-  }
- },
- {
-  "id": "vrije-tijd-73",
-  "topic": "vrije-tijd",
-  "parts": [
-   "is echt",
-   "de moeite waard",
-   "met moderne kunst",
-   "het museum"
-  ],
-  "answer": "het museum met moderne kunst is echt de moeite waard",
-  "alternatives": [],
-  "hint": "The long subject (het museum met moderne kunst) first, then the verb. “de moeite waard” = worth it.",
-  "senses": {
-   "het": "het@60",
-   "echt": "echt@60"
-  }
- },
- {
-  "id": "vrije-tijd-74",
-  "topic": "vrije-tijd",
-  "parts": [
-   "niet komen",
-   "kan",
-   "ik",
-   "nee",
-   "zaterdag"
-  ],
-  "answer": "nee, zaterdag kan ik niet komen",
-  "alternatives": [
-   "nee, ik kan zaterdag niet komen"
-  ],
-  "hint": "nee does not count as a position. Time first causes inversion (kan ik); the infinitive at the end.",
-  "senses": {
-   "zaterdag": "zaterdag@60"
-  }
- },
- {
-  "id": "vrije-tijd-75",
-  "topic": "vrije-tijd",
-  "parts": [
-   "niks",
-   "te doen",
-   "is",
-   "in dit dorp"
-  ],
-  "answer": "in dit dorp is niks te doen",
-  "alternatives": [],
-  "hint": "Place first, then the verb. “niks te doen” = nothing to do.",
-  "senses": {
-   "dit": "dit@60",
-   "te": "te@60"
-  }
- },
- {
-  "id": "vrije-tijd-76",
-  "topic": "vrije-tijd",
-  "parts": [
-   "nergens",
-   "vinden",
-   "mijn fietssleutel",
-   "ik kan"
-  ],
-  "answer": "ik kan mijn fietssleutel nergens vinden",
-  "alternatives": [],
-  "hint": "Modal (kan) in 2nd place, infinitive (vinden) at the end; nergens comes before the infinitive."
- },
- {
-  "id": "vrije-tijd-77",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een paspoort",
-   "noodzakelijk",
-   "is",
-   "voor deze reis"
-  ],
-  "answer": "voor deze reis is een paspoort noodzakelijk",
-  "alternatives": [
-   "een paspoort is noodzakelijk voor deze reis",
-   "een paspoort is voor deze reis noodzakelijk"
-  ],
-  "hint": "A phrase first causes inversion: is een paspoort.",
-  "senses": {
-   "voor": "voor@60",
-   "deze": "deze@60",
-   "reis": "reis@60"
-  }
- },
- {
-  "id": "vrije-tijd-78",
-  "topic": "vrije-tijd",
-  "parts": [
-   "heel nuttig",
-   "een kaart",
-   "op reis",
-   "is"
-  ],
-  "answer": "op reis is een kaart heel nuttig",
-  "alternatives": [
-   "een kaart is op reis heel nuttig"
-  ],
-  "hint": "A phrase first causes inversion: is een kaart.",
-  "senses": {
-   "op": "op@60",
-   "reis": "reis@60",
-   "heel": "heel@60"
-  }
- },
- {
-  "id": "vrije-tijd-79",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in een beetje olie",
-   "bakt",
-   "de vis",
-   "je"
-  ],
-  "answer": "je bakt de vis in een beetje olie",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, object, then the manner (in een beetje olie).",
-  "senses": {
-   "je": "je@60",
-   "beetje": "beetje@60"
-  }
- },
- {
-  "id": "vrije-tijd-80",
-  "topic": "vrije-tijd",
-  "parts": [
-   "toch",
-   "fietsen",
-   "we",
-   "ondanks de regen",
-   "gaan"
-  ],
-  "answer": "ondanks de regen gaan we toch fietsen",
-  "alternatives": [
-   "we gaan ondanks de regen toch fietsen"
-  ],
-  "hint": "A phrase first (ondanks de regen) causes inversion; the infinitive (fietsen) goes to the end.",
-  "senses": {
-   "toch": "toch@60"
-  }
- },
- {
-  "id": "vrije-tijd-81",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een gezellig feest",
-   "ongetwijfeld",
-   "het wordt"
-  ],
-  "answer": "het wordt ongetwijfeld een gezellig feest",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; the adverb (ongetwijfeld) comes right after the verb.",
-  "senses": {
-   "het": "het@60",
-   "gezellig": "gezellig@60"
-  }
- },
- {
-  "id": "vrije-tijd-82",
-  "topic": "vrije-tijd",
-  "parts": [
-   "geweest",
-   "in Amsterdam",
-   "ooit",
+   "het feest begint",
    "jij",
-   "ben"
+   "hoe laat",
+   "weet"
   ],
-  "answer": "ben jij ooit in Amsterdam geweest?",
+  "answer": "weet jij hoe laat het feest begint?",
   "alternatives": [],
-  "hint": "Question in the perfect: ben first, geweest at the end."
- },
- {
-  "id": "vrije-tijd-83",
-  "topic": "vrije-tijd",
-  "parts": [
-   "van de vertraging",
-   "de oorzaak",
-   "wat is"
-  ],
-  "answer": "wat is de oorzaak van de vertraging?",
-  "alternatives": [],
-  "hint": "W-question: question word, verb, then the subject.",
+  "hint": "Yes/no question with verb first. In the indirect question (hoe laat …) the verb goes to the end.",
+  "grammar": "bijzin",
+  "level": 3,
   "senses": {
-   "wat": "wat@60"
-  }
- },
- {
-  "id": "vrije-tijd-84",
-  "topic": "vrije-tijd",
-  "parts": [
-   "reizen",
-   "mijn dochter",
-   "na haar opleiding",
-   "wil"
-  ],
-  "answer": "na haar opleiding wil mijn dochter reizen",
-  "alternatives": [
-   "mijn dochter wil na haar opleiding reizen"
-  ],
-  "hint": "Modal (wil) in 2nd place, infinitive (reizen) at the end. Time first causes inversion.",
-  "senses": {
-   "opleiding": "opleiding@60"
-  }
- },
- {
-  "id": "vrije-tijd-85",
-  "topic": "vrije-tijd",
-  "parts": [
-   "na het eten",
-   "komen",
-   "de overige gasten"
-  ],
-  "answer": "de overige gasten komen na het eten",
-  "alternatives": [
-   "na het eten komen de overige gasten"
-  ],
-  "hint": "Verb in 2nd place. With time first, the subject comes after the verb.",
-  "senses": {
-   "het": "het@60",
-   "eten": "eten@60"
-  }
- },
- {
-  "id": "vrije-tijd-86",
-  "topic": "vrije-tijd",
-  "parts": [
-   "ons huis",
-   "passeert",
-   "de bus",
-   "elk half uur"
-  ],
-  "answer": "elk half uur passeert de bus ons huis",
-  "alternatives": [
-   "de bus passeert elk half uur ons huis"
-  ],
-  "hint": "Time first causes inversion: passeert de bus.",
-  "senses": {
-   "elk": "elk@60",
-   "ons": "ons@60"
-  }
- },
- {
-  "id": "vrije-tijd-87",
-  "topic": "vrije-tijd",
-  "parts": [
-   "nog vrij",
-   "deze plaats",
-   "is"
-  ],
-  "answer": "is deze plaats nog vrij?",
-  "alternatives": [],
-  "hint": "Yes/no question: the verb (is) comes first.",
-  "senses": {
-   "deze": "deze@60",
-   "vrij": "vrij@60"
-  }
- },
- {
-  "id": "vrije-tijd-88",
-  "topic": "vrije-tijd",
-  "parts": [
-   "donker",
-   "werd",
-   "het",
-   "plotseling"
-  ],
-  "answer": "plotseling werd het donker",
-  "alternatives": [
-   "het werd plotseling donker"
-  ],
-  "hint": "An adverb first (plotseling) causes inversion: werd het.",
-  "senses": {
+   "hoe": "hoe@60",
+   "laat": "laat@60",
    "het": "het@60"
   }
  },
  {
-  "id": "vrije-tijd-89",
+  "id": "vrije-tijd-25",
   "topic": "vrije-tijd",
   "parts": [
-   "de president van Amerika",
-   "we",
-   "op het nieuws",
-   "zien"
+   "verdrietig",
+   "de vakantie",
+   "omdat",
+   "zijn",
+   "de kinderen",
+   "voorbij is"
   ],
-  "answer": "op het nieuws zien we de president van Amerika",
+  "answer": "de kinderen zijn verdrietig omdat de vakantie voorbij is",
   "alternatives": [
-   "we zien op het nieuws de president van Amerika"
+   "omdat de vakantie voorbij is, zijn de kinderen verdrietig"
   ],
-  "hint": "A phrase first causes inversion: zien we.",
+  "hint": "omdat sends the verb (is) to the end of its clause. If the omdat-clause comes first, the main verb follows directly: zijn de kinderen.",
+  "grammar": "bijzin",
+  "level": 3,
   "senses": {
-   "op": "op@60",
-   "het": "het@60"
+   "zijn": "zijn@60"
   }
  },
  {
-  "id": "vrije-tijd-90",
+  "id": "vrije-tijd-107",
   "topic": "vrije-tijd",
   "parts": [
-   "kaas en melk",
-   "produceert",
-   "deze boerderij"
+   "een boek",
+   "de kinderen zwemmen",
+   "lees ik",
+   "terwijl"
   ],
-  "answer": "deze boerderij produceert kaas en melk",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place, then the object.",
-  "senses": {
-   "deze": "deze@60"
-  }
- },
- {
-  "id": "vrije-tijd-91",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in Utrecht",
-   "studente psychologie",
-   "is",
-   "mijn nicht"
-  ],
-  "answer": "mijn nicht is studente psychologie in Utrecht",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the rest."
- },
- {
-  "id": "vrije-tijd-92",
-  "topic": "vrije-tijd",
-  "parts": [
-   "erg vriendelijk",
-   "het hotel was",
-   "en de mensen waren",
-   "redelijk goedkoop"
-  ],
-  "answer": "het hotel was redelijk goedkoop en de mensen waren erg vriendelijk",
-  "alternatives": [],
-  "hint": "Two main clauses joined by en: each has the verb in 2nd place.",
-  "senses": {
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-93",
-  "topic": "vrije-tijd",
-  "parts": [
-   "thuis",
-   "we",
-   "de rest van de dag",
-   "blijven"
-  ],
-  "answer": "de rest van de dag blijven we thuis",
+  "answer": "terwijl de kinderen zwemmen, lees ik een boek",
   "alternatives": [
-   "we blijven de rest van de dag thuis"
+   "ik lees een boek terwijl de kinderen zwemmen"
   ],
-  "hint": "Time first causes inversion: blijven we.",
+  "hint": "terwijl sends the verb (zwemmen) to the end. After the terwijl-clause the main verb comes first: lees ik.",
+  "grammar": "bijzin",
+  "level": 4
+ },
+ {
+  "id": "vrije-tijd-124",
+  "topic": "vrije-tijd",
+  "parts": [
+   "fit ben",
+   "naar bed",
+   "ik ga vroeg",
+   "zodat ik morgen"
+  ],
+  "answer": "ik ga vroeg naar bed, zodat ik morgen fit ben",
+  "alternatives": [],
+  "hint": "zodat sends the verb (ben) to the end of its clause.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
-   "blijven": "blijven@60"
+   "vroeg": "vroeg@60"
   }
  },
  {
@@ -12678,410 +15074,12 @@ const EXERCISES = [
    "ik maak een reis om de wereld als ik rijk word"
   ],
   "hint": "als sends the verb (word) to the end. After the als-clause the main verb comes first: maak ik.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
    "als": "als@60",
    "maak": "maak@60",
    "reis": "reis@60"
-  }
- },
- {
-  "id": "vrije-tijd-95",
-  "topic": "vrije-tijd",
-  "parts": [
-   "van de barbecue",
-   "veel rook",
-   "komt",
-   "er"
-  ],
-  "answer": "er komt veel rook van de barbecue",
-  "alternatives": [],
-  "hint": "“er” takes the first place; the verb (komt) follows in 2nd place.",
-  "senses": {
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-96",
-  "topic": "vrije-tijd",
-  "parts": [
-   "van alle buren",
-   "is",
-   "een samenwerking",
-   "het straatfeest"
-  ],
-  "answer": "het straatfeest is een samenwerking van alle buren",
-  "alternatives": [],
-  "hint": "Subject first, verb in 2nd place.",
-  "senses": {
-   "het": "het@60",
-   "alle": "alle@60"
-  }
- },
- {
-  "id": "vrije-tijd-97",
-  "topic": "vrije-tijd",
-  "parts": [
-   "schoon",
-   "het huis",
-   "we",
-   "samen",
-   "na het feest",
-   "maken"
-  ],
-  "answer": "na het feest maken we samen het huis schoon",
-  "alternatives": [
-   "we maken na het feest samen het huis schoon"
-  ],
-  "hint": "Separable verb schoonmaken: maken in 2nd place, schoon at the end.",
-  "senses": {
-   "het": "het@60",
-   "maken": "maken@60"
-  }
- },
- {
-  "id": "vrije-tijd-98",
-  "topic": "vrije-tijd",
-  "parts": [
-   "over tien seconden",
-   "vertrekt",
-   "de trein op spoor vijf"
-  ],
-  "answer": "de trein op spoor vijf vertrekt over tien seconden",
-  "alternatives": [
-   "over tien seconden vertrekt de trein op spoor vijf"
-  ],
-  "hint": "The whole subject (de trein op spoor vijf) counts as one position; the verb comes next.",
-  "senses": {
-   "op": "op@60",
-   "over": "over@60",
-   "tien": "tien@60"
-  }
- },
- {
-  "id": "vrije-tijd-99",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op slot",
-   "altijd",
-   "mijn fiets",
-   "zet",
-   "ik"
-  ],
-  "answer": "ik zet mijn fiets altijd op slot",
-  "alternatives": [
-   "ik zet altijd mijn fiets op slot"
-  ],
-  "hint": "Verb in 2nd place. “op slot zetten”: op slot comes at the end.",
-  "senses": {
-   "fiets": "fiets@60",
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-100",
-  "topic": "vrije-tijd",
-  "parts": [
-   "met een hoge snelheid",
-   "rijdt",
-   "de trein"
-  ],
-  "answer": "de trein rijdt met een hoge snelheid",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the manner."
- },
- {
-  "id": "vrije-tijd-101",
-  "topic": "vrije-tijd",
-  "parts": [
-   "veel spanning",
-   "er",
-   "voor de wedstrijd",
-   "is"
-  ],
-  "answer": "voor de wedstrijd is er veel spanning",
-  "alternatives": [
-   "er is veel spanning voor de wedstrijd",
-   "er is voor de wedstrijd veel spanning"
-  ],
-  "hint": "Time first causes inversion: is er.",
-  "senses": {
-   "voor": "voor@60",
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-102",
-  "topic": "vrije-tijd",
-  "parts": [
-   "voor de deur van het hotel",
-   "stopt",
-   "de bus"
-  ],
-  "answer": "de bus stopt voor de deur van het hotel",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the place.",
-  "senses": {
-   "voor": "voor@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-103",
-  "topic": "vrije-tijd",
-  "parts": [
-   "met je examen",
-   "veel succes",
-   "je",
-   "wens",
-   "ik"
-  ],
-  "answer": "ik wens je veel succes met je examen",
-  "alternatives": [],
-  "hint": "Verb in 2nd place; the person (je) before the thing (veel succes).",
-  "senses": {
-   "wens": "wens@60",
-   "je": "je@60",
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-104",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een korte tekst",
-   "ik",
-   "over mijn weekend",
-   "schrijf",
-   "voor de wijkkrant"
-  ],
-  "answer": "voor de wijkkrant schrijf ik een korte tekst over mijn weekend",
-  "alternatives": [
-   "ik schrijf voor de wijkkrant een korte tekst over mijn weekend",
-   "ik schrijf een korte tekst over mijn weekend voor de wijkkrant"
-  ],
-  "hint": "A phrase first causes inversion: schrijf ik.",
-  "senses": {
-   "voor": "voor@60",
-   "over": "over@60"
-  }
- },
- {
-  "id": "vrije-tijd-105",
-  "topic": "vrije-tijd",
-  "parts": [
-   "niet",
-   "dat woord",
-   "ik",
-   "ken"
-  ],
-  "answer": "ik ken dat woord niet",
-  "alternatives": [
-   "dat woord ken ik niet"
-  ],
-  "hint": "niet comes after the object (dat woord), at the end.",
-  "senses": {
-   "dat": "dat@60"
-  }
- },
- {
-  "id": "vrije-tijd-106",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in techniek",
-   "goed",
-   "is",
-   "mijn zoon"
-  ],
-  "answer": "mijn zoon is goed in techniek",
-  "alternatives": [],
-  "hint": "Subject, verb, then the adjective. “goed in” = good at."
- },
- {
-  "id": "vrije-tijd-107",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een boek",
-   "de kinderen zwemmen",
-   "lees ik",
-   "terwijl"
-  ],
-  "answer": "terwijl de kinderen zwemmen, lees ik een boek",
-  "alternatives": [
-   "ik lees een boek terwijl de kinderen zwemmen"
-  ],
-  "hint": "terwijl sends the verb (zwemmen) to the end. After the terwijl-clause the main verb comes first: lees ik."
- },
- {
-  "id": "vrije-tijd-108",
-  "topic": "vrije-tijd",
-  "parts": [
-   "een eigen huis",
-   "ik",
-   "kopen",
-   "in de toekomst",
-   "wil"
-  ],
-  "answer": "in de toekomst wil ik een eigen huis kopen",
-  "alternatives": [
-   "ik wil in de toekomst een eigen huis kopen"
-  ],
-  "hint": "Modal (wil) in 2nd place, infinitive (kopen) at the end."
- },
- {
-  "id": "vrije-tijd-109",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op de trap",
-   "spelen",
-   "de kinderen"
-  ],
-  "answer": "de kinderen spelen op de trap",
-  "alternatives": [
-   "op de trap spelen de kinderen"
-  ],
-  "hint": "Subject, verb in 2nd place, then the place.",
-  "senses": {
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-110",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar mijn feest",
-   "ze komen allebei",
-   "ik heb twee broers",
-   "en"
-  ],
-  "answer": "ik heb twee broers en ze komen allebei naar mijn feest",
-  "alternatives": [],
-  "hint": "Two main clauses joined by en; allebei comes right after the verb.",
-  "senses": {
-   "ze": "ze@60"
-  }
- },
- {
-  "id": "vrije-tijd-111",
-  "topic": "vrije-tijd",
-  "parts": [
-   "soms sneeuw",
-   "er",
-   "valt",
-   "in de winter"
-  ],
-  "answer": "in de winter valt er soms sneeuw",
-  "alternatives": [
-   "er valt in de winter soms sneeuw"
-  ],
-  "hint": "Time first causes inversion: valt er."
- },
- {
-  "id": "vrije-tijd-112",
-  "topic": "vrije-tijd",
-  "parts": [
-   "snel",
-   "het weer",
-   "verandert",
-   "in Nederland"
-  ],
-  "answer": "in Nederland verandert het weer snel",
-  "alternatives": [
-   "het weer verandert snel in Nederland",
-   "het weer verandert in Nederland snel"
-  ],
-  "hint": "Place first causes inversion: verandert het weer.",
-  "senses": {
-   "het": "het@60",
-   "weer": "weer@60",
-   "snel": "snel@60"
-  }
- },
- {
-  "id": "vrije-tijd-113",
-  "topic": "vrije-tijd",
-  "parts": [
-   "verloren",
-   "de wedstrijd",
-   "heeft",
-   "onze club"
-  ],
-  "answer": "onze club heeft de wedstrijd verloren",
-  "alternatives": [],
-  "hint": "Perfect tense: heeft in 2nd place, verloren at the end.",
-  "senses": {
-   "onze": "onze@60"
-  }
- },
- {
-  "id": "vrije-tijd-114",
-  "topic": "vrije-tijd",
-  "parts": [
-   "van onze reis",
-   "schrijf",
-   "een verslag",
-   "ik"
-  ],
-  "answer": "ik schrijf een verslag van onze reis",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the object.",
-  "senses": {
-   "onze": "onze@60",
-   "reis": "reis@60"
-  }
- },
- {
-  "id": "vrije-tijd-115",
-  "topic": "vrije-tijd",
-  "parts": [
-   "gaan we dansen",
-   "eerst",
-   "en vervolgens",
-   "we eten"
-  ],
-  "answer": "we eten eerst en vervolgens gaan we dansen",
-  "alternatives": [
-   "eerst eten we en vervolgens gaan we dansen"
-  ],
-  "hint": "vervolgens at the start of a clause causes inversion: gaan we.",
-  "senses": {
-   "eten": "eten@60"
-  }
- },
- {
-  "id": "vrije-tijd-116",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op de vloer",
-   "zitten",
-   "de kinderen"
-  ],
-  "answer": "de kinderen zitten op de vloer",
-  "alternatives": [
-   "op de vloer zitten de kinderen"
-  ],
-  "hint": "Subject, verb in 2nd place, then the place.",
-  "senses": {
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-117",
-  "topic": "vrije-tijd",
-  "parts": [
-   "niet zo goed",
-   "ik",
-   "me",
-   "voel",
-   "vandaag"
-  ],
-  "answer": "vandaag voel ik me niet zo goed",
-  "alternatives": [
-   "ik voel me vandaag niet zo goed"
-  ],
-  "hint": "Time first causes inversion; the reflexive pronoun (me) comes right after the subject.",
-  "senses": {
-   "me": "me@60",
-   "zo": "zo@60"
   }
  },
  {
@@ -13096,394 +15094,14 @@ const EXERCISES = [
   "answer": "het voordeel van de fiets is dat je geen file hebt",
   "alternatives": [],
   "hint": "dat sends the verb (hebt) to the end of its clause.",
+  "grammar": "bijzin",
+  "level": 4,
   "senses": {
    "het": "het@60",
    "fiets": "fiets@60",
    "dat": "dat@60",
    "je": "je@60",
    "geen": "geen@60"
-  }
- },
- {
-  "id": "vrije-tijd-119",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar mijn tas",
-   "vraag",
-   "bij gevonden voorwerpen",
-   "ik"
-  ],
-  "answer": "ik vraag bij gevonden voorwerpen naar mijn tas",
-  "alternatives": [
-   "ik vraag naar mijn tas bij gevonden voorwerpen"
-  ],
-  "hint": "Verb in 2nd place. “vragen naar” = ask about; the naar-part usually goes to the end.",
-  "senses": {
-   "vraag": "vraag@60",
-   "bij": "bij@60"
-  }
- },
- {
-  "id": "vrije-tijd-120",
-  "topic": "vrije-tijd",
-  "parts": [
-   "met water",
-   "mijn fles",
-   "ik",
-   "vul",
-   "voor de wandeling"
-  ],
-  "answer": "voor de wandeling vul ik mijn fles met water",
-  "alternatives": [
-   "ik vul voor de wandeling mijn fles met water",
-   "ik vul mijn fles met water voor de wandeling"
-  ],
-  "hint": "A phrase first causes inversion: vul ik.",
-  "senses": {
-   "voor": "voor@60",
-   "vul": "vul@60"
-  }
- },
- {
-  "id": "vrije-tijd-121",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar het strand",
-   "op de bus",
-   "wachten",
-   "we"
-  ],
-  "answer": "we wachten op de bus naar het strand",
-  "alternatives": [],
-  "hint": "Verb in 2nd place. “wachten op” = to wait for.",
-  "senses": {
-   "op": "op@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-122",
-  "topic": "vrije-tijd",
-  "parts": [
-   "in Duitsland",
-   "is",
-   "voor zaken",
-   "deze week",
-   "mijn man"
-  ],
-  "answer": "mijn man is deze week voor zaken in Duitsland",
-  "alternatives": [
-   "deze week is mijn man voor zaken in Duitsland"
-  ],
-  "hint": "TMP: Tijd (deze week), Manier/reason (voor zaken), Plaats (in Duitsland).",
-  "senses": {
-   "deze": "deze@60",
-   "voor": "voor@60"
-  }
- },
- {
-  "id": "vrije-tijd-123",
-  "topic": "vrije-tijd",
-  "parts": [
-   "van zichzelf",
-   "veel foto's",
-   "op vakantie",
-   "maakt",
-   "hij"
-  ],
-  "answer": "hij maakt op vakantie veel foto's van zichzelf",
-  "alternatives": [
-   "op vakantie maakt hij veel foto's van zichzelf"
-  ],
-  "hint": "Verb in 2nd place; op vakantie before the object.",
-  "senses": {
-   "op": "op@60",
-   "veel": "veel@60"
-  }
- },
- {
-  "id": "vrije-tijd-124",
-  "topic": "vrije-tijd",
-  "parts": [
-   "fit ben",
-   "naar bed",
-   "ik ga vroeg",
-   "zodat ik morgen"
-  ],
-  "answer": "ik ga vroeg naar bed, zodat ik morgen fit ben",
-  "alternatives": [],
-  "hint": "zodat sends the verb (ben) to the end of its clause.",
-  "senses": {
-   "vroeg": "vroeg@60"
-  }
- },
- {
-  "id": "vrije-tijd-125",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar het festival",
-   "een groot aantal mensen",
-   "komt",
-   "dit jaar"
-  ],
-  "answer": "dit jaar komt een groot aantal mensen naar het festival",
-  "alternatives": [
-   "een groot aantal mensen komt dit jaar naar het festival"
-  ],
-  "hint": "Time first causes inversion: komt before the subject.",
-  "senses": {
-   "dit": "dit@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-126",
-  "topic": "vrije-tijd",
-  "parts": [
-   "graag",
-   "de uitnodiging",
-   "accepteer",
-   "ik"
-  ],
-  "answer": "ik accepteer de uitnodiging graag",
-  "alternatives": [
-   "graag accepteer ik de uitnodiging",
-   "ik accepteer graag de uitnodiging"
-  ],
-  "hint": "Verb in 2nd place; graag can go after the verb or after the object."
- },
- {
-  "id": "vrije-tijd-127",
-  "topic": "vrije-tijd",
-  "parts": [
-   "mee",
-   "ons afval",
-   "we",
-   "na de picknick",
-   "nemen"
-  ],
-  "answer": "na de picknick nemen we ons afval mee",
-  "alternatives": [
-   "we nemen na de picknick ons afval mee"
-  ],
-  "hint": "Separable verb meenemen: nemen in 2nd place, mee at the end.",
-  "senses": {
-   "nemen": "nemen@60",
-   "ons": "ons@60",
-   "afval": "afval@60",
-   "mee": "mee@60"
-  }
- },
- {
-  "id": "vrije-tijd-128",
-  "topic": "vrije-tijd",
-  "parts": [
-   "hij slaapt",
-   "alsof",
-   "doet",
-   "mijn zoon"
-  ],
-  "answer": "mijn zoon doet alsof hij slaapt",
-  "alternatives": [],
-  "hint": "alsof sends the verb (slaapt) to the end of its clause."
- },
- {
-  "id": "vrije-tijd-129",
-  "topic": "vrije-tijd",
-  "parts": [
-   "dus",
-   "hij zwemt niet",
-   "voor water",
-   "hij heeft angst"
-  ],
-  "answer": "hij heeft angst voor water, dus hij zwemt niet",
-  "alternatives": [
-   "hij heeft angst voor water, dus zwemt hij niet"
-  ],
-  "hint": "After dus both orders are used: “dus hij zwemt” and “dus zwemt hij”.",
-  "senses": {
-   "voor": "voor@60"
-  }
- },
- {
-  "id": "vrije-tijd-130",
-  "topic": "vrije-tijd",
-  "parts": [
-   "behalve mijn broer",
-   "naar het feest",
-   "komt",
-   "iedereen"
-  ],
-  "answer": "iedereen komt naar het feest behalve mijn broer",
-  "alternatives": [
-   "behalve mijn broer komt iedereen naar het feest",
-   "iedereen behalve mijn broer komt naar het feest"
-  ],
-  "hint": "Verb in 2nd place; a phrase first (behalve mijn broer) causes inversion.",
-  "senses": {
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-131",
-  "topic": "vrije-tijd",
-  "parts": [
-   "tegen de zon",
-   "is",
-   "een goede bescherming",
-   "een pet"
-  ],
-  "answer": "een pet is een goede bescherming tegen de zon",
-  "alternatives": [],
-  "hint": "Subject, verb in 2nd place, then the rest.",
-  "senses": {
-   "tegen": "tegen@60"
-  }
- },
- {
-  "id": "vrije-tijd-132",
-  "topic": "vrije-tijd",
-  "parts": [
-   "over ons feest",
-   "voor de buren",
-   "een briefje",
-   "schrijf",
-   "ik"
-  ],
-  "answer": "ik schrijf een briefje voor de buren over ons feest",
-  "alternatives": [
-   "ik schrijf een briefje over ons feest voor de buren"
-  ],
-  "hint": "Verb in 2nd place, then the object and the extra phrases.",
-  "senses": {
-   "voor": "voor@60",
-   "over": "over@60",
-   "ons": "ons@60"
-  }
- },
- {
-  "id": "vrije-tijd-133",
-  "topic": "vrije-tijd",
-  "parts": [
-   "naar muziek",
-   "ik",
-   "op de radio",
-   "het liefst",
-   "luister",
-   "op zondag"
-  ],
-  "answer": "op zondag luister ik het liefst naar muziek op de radio",
-  "alternatives": [
-   "ik luister op zondag het liefst naar muziek op de radio"
-  ],
-  "hint": "Time first causes inversion. “het liefst” = most of all; naar-phrase near the end.",
-  "senses": {
-   "op": "op@60",
-   "zondag": "zondag@60",
-   "het": "het@60"
-  }
- },
- {
-  "id": "vrije-tijd-134",
-  "topic": "vrije-tijd",
-  "parts": [
-   "langs de zee",
-   "met een paar vrienden",
-   "ik",
-   "fiets",
-   "in het weekend"
-  ],
-  "answer": "in het weekend fiets ik met een paar vrienden langs de zee",
-  "alternatives": [
-   "ik fiets in het weekend met een paar vrienden langs de zee"
-  ],
-  "hint": "TMP: Tijd (in het weekend), Manier (met een paar vrienden), Plaats (langs de zee).",
-  "senses": {
-   "het": "het@60",
-   "fiets": "fiets@60",
-   "paar": "paar@60",
-   "langs": "langs@60"
-  }
- },
- {
-  "id": "vrije-tijd-135",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op",
-   "dus ik bel ze vaak",
-   "ver weg",
-   "mijn familie woont"
-  ],
-  "answer": "mijn familie woont ver weg, dus ik bel ze vaak op",
-  "alternatives": [
-   "mijn familie woont ver weg, dus bel ik ze vaak op"
-  ],
-  "hint": "Separable verb opbellen: bel in 2nd place, op at the end.",
-  "senses": {
-   "weg": "weg@60",
-   "bel": "bel@60",
-   "ze": "ze@60",
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-136",
-  "topic": "vrije-tijd",
-  "parts": [
-   "vier uur",
-   "duurt",
-   "meestal",
-   "het feest"
-  ],
-  "answer": "het feest duurt meestal vier uur",
-  "alternatives": [
-   "meestal duurt het feest vier uur"
-  ],
-  "hint": "Verb in 2nd place; an adverb first (meestal) causes inversion.",
-  "senses": {
-   "het": "het@60",
-   "meestal": "meestal@60"
-  }
- },
- {
-  "id": "vrije-tijd-137",
-  "topic": "vrije-tijd",
-  "parts": [
-   "op vakantie",
-   "gaan",
-   "naar Turkije",
-   "elk jaar",
-   "mijn echtgenoot en ik"
-  ],
-  "answer": "mijn echtgenoot en ik gaan elk jaar op vakantie naar Turkije",
-  "alternatives": [
-   "elk jaar gaan mijn echtgenoot en ik op vakantie naar Turkije"
-  ],
-  "hint": "“mijn echtgenoot en ik” is one subject (= wij), so the verb is gaan. Time before place.",
-  "senses": {
-   "elk": "elk@60",
-   "op": "op@60"
-  }
- },
- {
-  "id": "vrije-tijd-138",
-  "topic": "vrije-tijd",
-  "parts": [
-   "vuurwerk",
-   "de gemeente",
-   "in het centrum",
-   "verbiedt",
-   "met oud en nieuw"
-  ],
-  "answer": "met oud en nieuw verbiedt de gemeente vuurwerk in het centrum",
-  "alternatives": [
-   "de gemeente verbiedt met oud en nieuw vuurwerk in het centrum"
-  ],
-  "hint": "Time first (met oud en nieuw) causes inversion: verbiedt de gemeente.",
-  "senses": {
-   "gemeente": "gemeente@60",
-   "het": "het@60",
-   "centrum": "centrum@60"
   }
  }
 ];
