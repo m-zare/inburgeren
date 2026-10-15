@@ -1,0 +1,320 @@
+{
+  "exercises": [
+    {
+      "id": "radio",
+      "topic": "vrije-tijd",
+      "parts": [
+        "de man",
+        "naar de radio",
+        "luistert",
+        "om acht uur"
+      ],
+      "answer": "de man luistert om acht uur naar de radio",
+      "alternatives": [
+        "om acht uur luistert de man naar de radio"
+      ],
+      "hint": "Verb in 2nd place. Time (om acht uur) comes early; “naar de radio” belongs to the verb “luisteren naar” and goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "buurman",
+      "topic": "wonen",
+      "parts": [
+        "zij",
+        "met haar buurman",
+        "vandaag een uur",
+        "praat"
+      ],
+      "answer": "zij praat vandaag een uur met haar buurman",
+      "alternatives": [
+        "vandaag praat zij een uur met haar buurman"
+      ],
+      "hint": "TMP rule: Tijd (vandaag een uur) before Manier (met haar buurman).",
+      "covers": []
+    },
+    {
+      "id": "supermarkt",
+      "topic": "werk",
+      "parts": [
+        "werkt",
+        "hij",
+        "in de supermarkt",
+        "met zijn beste vriend"
+      ],
+      "answer": "hij werkt met zijn beste vriend in de supermarkt",
+      "alternatives": [
+        "hij werkt in de supermarkt met zijn beste vriend",
+        "in de supermarkt werkt hij met zijn beste vriend"
+      ],
+      "hint": "TMP rule: Manier (met zijn beste vriend) before Plaats (in de supermarkt).",
+      "covers": []
+    },
+    {
+      "id": "woonkamer",
+      "topic": "vrije-tijd",
+      "parts": [
+        "zitten",
+        "jullie",
+        "met vrienden",
+        "in de woonkamer"
+      ],
+      "answer": "jullie zitten met vrienden in de woonkamer",
+      "alternatives": [
+        "jullie zitten in de woonkamer met vrienden",
+        "in de woonkamer zitten jullie met vrienden"
+      ],
+      "hint": "Subject first, verb second, then Manier (met vrienden) before Plaats (in de woonkamer).",
+      "covers": []
+    }
+  ],
+  "words": {
+    "de": {
+      "type": "article",
+      "en": "the",
+      "notes": [
+        "Used with de-words (common gender) and with all plurals.",
+        "Most nouns are de-words; about 1/3 are het-words."
+      ]
+    },
+    "een": {
+      "type": "article",
+      "en": "a / an",
+      "notes": [
+        "Indefinite article for both de- and het-words.",
+        "“één” (with accents) means the number one: “een uur” = an hour."
+      ]
+    },
+    "man": {
+      "type": "noun",
+      "en": "man; husband",
+      "article": "de",
+      "plural": "mannen",
+      "notes": [
+        "“mijn man” = my husband."
+      ]
+    },
+    "radio": {
+      "type": "noun",
+      "en": "radio",
+      "article": "de",
+      "plural": "radio's"
+    },
+    "uur": {
+      "type": "noun",
+      "en": "hour; o'clock",
+      "article": "het",
+      "plural": "uren",
+      "notes": [
+        "After a number it stays singular: “acht uur”, “twee uur”.",
+        "“om acht uur” = at eight o'clock; “een uur” = (for) one hour."
+      ]
+    },
+    "buurman": {
+      "type": "noun",
+      "en": "neighbour (male)",
+      "article": "de",
+      "plural": "buren / buurmannen",
+      "notes": [
+        "Female: de buurvrouw. “de buren” = the neighbours."
+      ]
+    },
+    "supermarkt": {
+      "type": "noun",
+      "en": "supermarket",
+      "article": "de",
+      "plural": "supermarkten"
+    },
+    "vriend": {
+      "type": "noun",
+      "en": "friend; boyfriend",
+      "article": "de",
+      "plural": "vrienden",
+      "notes": [
+        "Female: de vriendin (friend / girlfriend)."
+      ]
+    },
+    "vrienden": {
+      "see": "vriend",
+      "form": "plural of vriend"
+    },
+    "woonkamer": {
+      "type": "noun",
+      "en": "living room",
+      "article": "de",
+      "plural": "woonkamers",
+      "notes": [
+        "Compound: wonen (to live) + kamer (room). A compound takes the article of its last part: de kamer → de woonkamer."
+      ]
+    },
+    "luisteren": {
+      "type": "verb",
+      "en": "to listen",
+      "forms": {
+        "ik": "luister",
+        "jij/u": "luistert",
+        "hij/zij": "luistert",
+        "wij/jullie/zij": "luisteren"
+      },
+      "past": "luisterde / luisterden",
+      "perfect": "heeft geluisterd",
+      "notes": [
+        "Always “luisteren naar” = to listen to. The “naar …” part usually goes near the end."
+      ]
+    },
+    "luistert": {
+      "see": "luisteren",
+      "form": "present, jij/u/hij/zij"
+    },
+    "praten": {
+      "type": "verb",
+      "en": "to talk",
+      "forms": {
+        "ik": "praat",
+        "jij/u": "praat",
+        "hij/zij": "praat",
+        "wij/jullie/zij": "praten"
+      },
+      "past": "praatte / praatten",
+      "perfect": "heeft gepraat",
+      "notes": [
+        "Stem already ends in -t, so no extra -t: “hij praat”.",
+        "“praten met” = talk with; “praten over” = talk about."
+      ]
+    },
+    "praat": {
+      "see": "praten",
+      "form": "present, ik/jij/u/hij/zij"
+    },
+    "werken": {
+      "type": "verb",
+      "en": "to work",
+      "forms": {
+        "ik": "werk",
+        "jij/u": "werkt",
+        "hij/zij": "werkt",
+        "wij/jullie/zij": "werken"
+      },
+      "past": "werkte / werkten",
+      "perfect": "heeft gewerkt",
+      "notes": [
+        "Question with jij drops the -t: “Werk jij hier?”",
+        "“werken bij + company”, “werken in + place”."
+      ]
+    },
+    "werkt": {
+      "see": "werken",
+      "form": "present, jij/u/hij/zij"
+    },
+    "zitten": {
+      "type": "verb (irregular)",
+      "en": "to sit; to be (somewhere)",
+      "forms": {
+        "ik": "zit",
+        "jij/u": "zit",
+        "hij/zij": "zit",
+        "wij/jullie/zij": "zitten"
+      },
+      "past": "zat / zaten",
+      "perfect": "heeft gezeten",
+      "notes": [
+        "Stem ends in -t: “jij zit”, “hij zit”.",
+        "Also “to be located”: “Hij zit op school.”"
+      ]
+    },
+    "hij": {
+      "type": "pronoun",
+      "en": "he",
+      "notes": [
+        "Object form: hem. Possessive: zijn."
+      ]
+    },
+    "zij": {
+      "type": "pronoun",
+      "en": "she; they",
+      "notes": [
+        "Unstressed form: ze. The verb shows which: “zij praat” (she) vs “zij praten” (they)."
+      ]
+    },
+    "jullie": {
+      "type": "pronoun",
+      "en": "you (plural)",
+      "notes": [
+        "Takes the plural verb form: “jullie zitten”.",
+        "Also the possessive: “jullie huis” = your house."
+      ]
+    },
+    "haar": {
+      "type": "possessive / pronoun",
+      "en": "her",
+      "notes": [
+        "“haar buurman” = her neighbour. Also the object form of zij (she): “ik zie haar”."
+      ]
+    },
+    "zijn": {
+      "type": "verb (irregular) / possessive",
+      "en": "to be; his",
+      "forms": {
+        "ik": "ben",
+        "jij/u": "bent",
+        "hij/zij": "is",
+        "wij/jullie/zij": "zijn"
+      },
+      "past": "was / waren",
+      "perfect": "is geweest",
+      "notes": [
+        "Also the possessive “his”: “zijn beste vriend”.",
+        "Question with jij: “Ben jij …?”"
+      ]
+    },
+    "naar": {
+      "type": "preposition",
+      "en": "to, towards",
+      "notes": [
+        "“naar huis gaan” = go home; “luisteren naar” = listen to."
+      ]
+    },
+    "om": {
+      "type": "preposition",
+      "en": "at (clock time)",
+      "notes": [
+        "“om acht uur” = at 8 o'clock. Days use op: “op maandag”."
+      ]
+    },
+    "met": {
+      "type": "preposition",
+      "en": "with",
+      "notes": [
+        "A “met …” phrase usually tells the Manier (manner) in the TMP rule."
+      ]
+    },
+    "in": {
+      "type": "preposition",
+      "en": "in",
+      "notes": [
+        "An “in …” place phrase is Plaats in TMP and usually comes last."
+      ]
+    },
+    "acht": {
+      "type": "number",
+      "en": "eight (8)",
+      "notes": [
+        "achtste = eighth."
+      ]
+    },
+    "vandaag": {
+      "type": "adverb (time)",
+      "en": "today",
+      "notes": [
+        "gisteren = yesterday, morgen = tomorrow.",
+        "Time words come early (Tijd in TMP), or at the very start with inversion: “Vandaag praat zij …”."
+      ]
+    },
+    "beste": {
+      "type": "adjective",
+      "en": "best",
+      "notes": [
+        "goed – beter – best. Before a noun with de/mijn/zijn it gets -e: “zijn beste vriend”."
+      ]
+    }
+  }
+}

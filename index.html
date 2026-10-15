@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inburgering – Woordvolgorde</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Woordvolgorde</h1>
+    <p class="sub">Put the parts in the right order and type the sentence. Click any word to see what it means.</p>
+    <div class="progress">
+      <div class="bar"><div id="bar-fill"></div></div>
+      <span id="score"></span>
+      <button id="reset" class="link">Reset progress</button>
+    </div>
+    <details class="rule">
+      <summary>Rule of thumb</summary>
+      <p><b>Verb in 2nd place.</b> After the verb: <b>T</b>ijd (when) → <b>M</b>anier (how / with whom) → <b>P</b>laats (where). “TeMPoraal”.</p>
+    </details>
+  </header>
+
+  <nav id="topics"></nav>
+
+  <main id="exercises"></main>
+
+  <aside id="info" hidden>
+    <button id="info-close" aria-label="Close">×</button>
+    <div id="info-body"></div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

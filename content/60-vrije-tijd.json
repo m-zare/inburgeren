@@ -1,0 +1,5990 @@
+{
+  "exercises": [
+    {
+      "id": "vrije-tijd-01",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met mijn familie",
+        "ik",
+        "naar het bos",
+        "ga",
+        "op zondag"
+      ],
+      "answer": "op zondag ga ik met mijn familie naar het bos",
+      "alternatives": [
+        "ik ga op zondag met mijn familie naar het bos"
+      ],
+      "hint": "Time first (op zondag) causes inversion: verb before subject. Then Manier (met mijn familie) before Plaats (naar het bos).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-02",
+      "topic": "vrije-tijd",
+      "parts": [
+        "hun gouden bruiloft",
+        "vieren",
+        "volgend jaar",
+        "mijn ouders"
+      ],
+      "answer": "mijn ouders vieren volgend jaar hun gouden bruiloft",
+      "alternatives": [
+        "volgend jaar vieren mijn ouders hun gouden bruiloft"
+      ],
+      "hint": "Verb in 2nd place; the time phrase (volgend jaar) comes before the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-03",
+      "topic": "vrije-tijd",
+      "parts": [
+        "langs",
+        "tien vrienden",
+        "op mijn verjaardag",
+        "komen"
+      ],
+      "answer": "op mijn verjaardag komen tien vrienden langs",
+      "alternatives": [
+        "tien vrienden komen op mijn verjaardag langs"
+      ],
+      "hint": "Separable verb langskomen: komen goes in 2nd place, the particle langs goes to the end.",
+      "covers": [
+        "langskomen"
+      ]
+    },
+    {
+      "id": "vrije-tijd-04",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een fles wijn",
+        "je",
+        "meebrengen",
+        "morgen",
+        "kun"
+      ],
+      "answer": "kun je morgen een fles wijn meebrengen?",
+      "alternatives": [],
+      "hint": "Yes/no question: the modal (kun) comes first, the infinitive (meebrengen) goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-05",
+      "topic": "vrije-tijd",
+      "parts": [
+        "voor vier personen",
+        "reserveer",
+        "een tafel",
+        "ik"
+      ],
+      "answer": "ik reserveer een tafel voor vier personen",
+      "alternatives": [],
+      "hint": "Subject + verb, then the object (een tafel) and the extra information (voor vier personen).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-06",
+      "topic": "vrije-tijd",
+      "parts": [
+        "gemaakt",
+        "een leuke reis",
+        "hebben",
+        "wij",
+        "naar Spanje",
+        "vorige week"
+      ],
+      "answer": "vorige week hebben wij een leuke reis naar Spanje gemaakt",
+      "alternatives": [
+        "wij hebben vorige week een leuke reis naar Spanje gemaakt"
+      ],
+      "hint": "Perfect tense: hebben in 2nd place, the past participle (gemaakt) at the end. Time first causes inversion.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-07",
+      "topic": "vrije-tijd",
+      "parts": [
+        "warm en droog",
+        "is",
+        "het",
+        "daar",
+        "in de zomer"
+      ],
+      "answer": "in de zomer is het daar warm en droog",
+      "alternatives": [
+        "het is daar in de zomer warm en droog",
+        "het is in de zomer daar warm en droog",
+        "daar is het in de zomer warm en droog"
+      ],
+      "hint": "Time first (in de zomer) causes inversion: is before het.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-08",
+      "topic": "vrije-tijd",
+      "parts": [
+        "nat en koel",
+        "in de herfst",
+        "buiten",
+        "is",
+        "het"
+      ],
+      "answer": "in de herfst is het buiten nat en koel",
+      "alternatives": [
+        "het is in de herfst buiten nat en koel",
+        "buiten is het in de herfst nat en koel"
+      ],
+      "hint": "Time first causes inversion (is het). The adjectives (nat en koel) come at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-09",
+      "topic": "vrije-tijd",
+      "parts": [
+        "mee",
+        "een paraplu",
+        "ik",
+        "voor de zekerheid",
+        "neem"
+      ],
+      "answer": "voor de zekerheid neem ik een paraplu mee",
+      "alternatives": [
+        "ik neem voor de zekerheid een paraplu mee"
+      ],
+      "hint": "Separable verb meenemen: neem in 2nd place, mee at the very end.",
+      "covers": [
+        "meenemen"
+      ]
+    },
+    {
+      "id": "vrije-tijd-10",
+      "topic": "vrije-tijd",
+      "parts": [
+        "de maan en de sterren",
+        "we",
+        "zien",
+        "vanavond",
+        "kunnen"
+      ],
+      "answer": "vanavond kunnen we de maan en de sterren zien",
+      "alternatives": [
+        "we kunnen vanavond de maan en de sterren zien"
+      ],
+      "hint": "Modal verb (kunnen) in 2nd place, the infinitive (zien) at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-11",
+      "topic": "vrije-tijd",
+      "parts": [
+        "bloemen",
+        "geef",
+        "mijn moeder",
+        "ik",
+        "voor haar verjaardag"
+      ],
+      "answer": "voor haar verjaardag geef ik mijn moeder bloemen",
+      "alternatives": [
+        "ik geef mijn moeder bloemen voor haar verjaardag",
+        "ik geef mijn moeder voor haar verjaardag bloemen"
+      ],
+      "hint": "Inversion after the first phrase; the person (mijn moeder) comes before the thing (bloemen).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-12",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar de top van de heuvel",
+        "we",
+        "over een smal pad",
+        "lopen"
+      ],
+      "answer": "we lopen over een smal pad naar de top van de heuvel",
+      "alternatives": [
+        "over een smal pad lopen we naar de top van de heuvel"
+      ],
+      "hint": "Manier (over een smal pad) before Plaats/direction (naar de top van de heuvel).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-13",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met de hele familie",
+        "kijken",
+        "naar het voetbal",
+        "we",
+        "op zaterdag"
+      ],
+      "answer": "op zaterdag kijken we met de hele familie naar het voetbal",
+      "alternatives": [
+        "we kijken op zaterdag met de hele familie naar het voetbal"
+      ],
+      "hint": "Time first causes inversion. “kijken naar” = to watch; the naar-part goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-14",
+      "topic": "vrije-tijd",
+      "parts": [
+        "al tien jaar",
+        "ken",
+        "hem",
+        "ik"
+      ],
+      "answer": "ik ken hem al tien jaar",
+      "alternatives": [
+        "hem ken ik al tien jaar",
+        "al tien jaar ken ik hem"
+      ],
+      "hint": "Verb in 2nd place; a short object pronoun (hem) comes right after the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-15",
+      "topic": "vrije-tijd",
+      "parts": [
+        "het feest begint",
+        "jij",
+        "hoe laat",
+        "weet"
+      ],
+      "answer": "weet jij hoe laat het feest begint?",
+      "alternatives": [],
+      "hint": "Yes/no question with verb first. In the indirect question (hoe laat …) the verb goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-16",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in het café",
+        "ik",
+        "mijn vrienden",
+        "ontmoet",
+        "zaterdag"
+      ],
+      "answer": "zaterdag ontmoet ik mijn vrienden in het café",
+      "alternatives": [
+        "ik ontmoet zaterdag mijn vrienden in het café",
+        "ik ontmoet mijn vrienden zaterdag in het café"
+      ],
+      "hint": "Time first causes inversion (ontmoet ik); Plaats (in het café) at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-17",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een groot feest",
+        "organiseert",
+        "elk jaar",
+        "mijn bedrijf"
+      ],
+      "answer": "mijn bedrijf organiseert elk jaar een groot feest",
+      "alternatives": [
+        "elk jaar organiseert mijn bedrijf een groot feest"
+      ],
+      "hint": "Verb in 2nd place; time (elk jaar) before the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-18",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in de stad",
+        "uit",
+        "we",
+        "zaterdagavond",
+        "gaan"
+      ],
+      "answer": "zaterdagavond gaan we uit in de stad",
+      "alternatives": [
+        "we gaan zaterdagavond uit in de stad",
+        "we gaan zaterdagavond in de stad uit",
+        "zaterdagavond gaan we in de stad uit"
+      ],
+      "hint": "Separable verb uitgaan: gaan in 2nd place, uit near the end. Time first causes inversion.",
+      "covers": [
+        "uitgaan"
+      ]
+    },
+    {
+      "id": "vrije-tijd-19",
+      "topic": "vrije-tijd",
+      "parts": [
+        "opschrijven",
+        "je adres en postcode",
+        "even",
+        "kun",
+        "je"
+      ],
+      "answer": "kun je je adres en postcode even opschrijven?",
+      "alternatives": [
+        "kun je even je adres en postcode opschrijven?"
+      ],
+      "hint": "Question with the modal first; the infinitive (opschrijven) goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-20",
+      "topic": "vrije-tijd",
+      "parts": [
+        "je burgerlijke staat",
+        "vul",
+        "in",
+        "op het formulier",
+        "je"
+      ],
+      "answer": "op het formulier vul je je burgerlijke staat in",
+      "alternatives": [],
+      "hint": "Separable verb invullen: vul in 2nd place, in at the end. After inversion jij/je loses the -t: vul je.",
+      "covers": [
+        "invullen"
+      ]
+    },
+    {
+      "id": "vrije-tijd-21",
+      "topic": "vrije-tijd",
+      "parts": [
+        "lid van de zwemclub",
+        "is",
+        "sinds een jaar",
+        "mijn zoon"
+      ],
+      "answer": "mijn zoon is sinds een jaar lid van de zwemclub",
+      "alternatives": [
+        "sinds een jaar is mijn zoon lid van de zwemclub"
+      ],
+      "hint": "Verb in 2nd place; time (sinds een jaar) before the rest.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-22",
+      "topic": "vrije-tijd",
+      "parts": [
+        "niet meer zoveel",
+        "sport",
+        "op mijn leeftijd",
+        "ik"
+      ],
+      "answer": "op mijn leeftijd sport ik niet meer zoveel",
+      "alternatives": [
+        "ik sport op mijn leeftijd niet meer zoveel"
+      ],
+      "hint": "A phrase first (op mijn leeftijd) causes inversion: sport ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-23",
+      "topic": "vrije-tijd",
+      "parts": [
+        "rust en stilte",
+        "vind",
+        "in het bos",
+        "ik"
+      ],
+      "answer": "in het bos vind ik rust en stilte",
+      "alternatives": [
+        "ik vind rust en stilte in het bos",
+        "ik vind in het bos rust en stilte"
+      ],
+      "hint": "Place first causes inversion: vind ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-24",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een instrument",
+        "jouw zoon",
+        "ook",
+        "speelt"
+      ],
+      "answer": "speelt jouw zoon ook een instrument?",
+      "alternatives": [],
+      "hint": "Yes/no question: the verb comes first, then the subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-25",
+      "topic": "vrije-tijd",
+      "parts": [
+        "verdrietig",
+        "de vakantie",
+        "omdat",
+        "zijn",
+        "de kinderen",
+        "voorbij is"
+      ],
+      "answer": "de kinderen zijn verdrietig omdat de vakantie voorbij is",
+      "alternatives": [
+        "omdat de vakantie voorbij is, zijn de kinderen verdrietig"
+      ],
+      "hint": "omdat sends the verb (is) to the end of its clause. If the omdat-clause comes first, the main verb follows directly: zijn de kinderen.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-26",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een hand",
+        "we",
+        "bij het afscheid",
+        "elkaar",
+        "geven"
+      ],
+      "answer": "bij het afscheid geven we elkaar een hand",
+      "alternatives": [
+        "we geven elkaar bij het afscheid een hand"
+      ],
+      "hint": "A phrase first causes inversion (geven we). “elkaar een hand geven” = to shake hands.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-27",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in zijn eigen kamer",
+        "boven",
+        "slaapt",
+        "de baby"
+      ],
+      "answer": "de baby slaapt boven in zijn eigen kamer",
+      "alternatives": [
+        "boven slaapt de baby in zijn eigen kamer"
+      ],
+      "hint": "Verb in 2nd place; the short place word (boven) comes before the longer place phrase.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-28",
+      "topic": "vrije-tijd",
+      "parts": [
+        "veel slaap",
+        "ik",
+        "nodig",
+        "na een lange reis",
+        "heb"
+      ],
+      "answer": "na een lange reis heb ik veel slaap nodig",
+      "alternatives": [
+        "ik heb na een lange reis veel slaap nodig"
+      ],
+      "hint": "Time first causes inversion. “nodig hebben”: nodig goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-29",
+      "topic": "vrije-tijd",
+      "parts": [
+        "de rekening",
+        "samen",
+        "we",
+        "in het restaurant",
+        "betalen"
+      ],
+      "answer": "in het restaurant betalen we de rekening samen",
+      "alternatives": [
+        "we betalen in het restaurant de rekening samen"
+      ],
+      "hint": "Place first causes inversion: betalen we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-30",
+      "topic": "vrije-tijd",
+      "parts": [
+        "om",
+        "te bewegen",
+        "ik vind het fijn",
+        "elke dag"
+      ],
+      "answer": "ik vind het fijn om elke dag te bewegen",
+      "alternatives": [],
+      "hint": "“om … te + infinitive”: the infinitive (te bewegen) comes at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-31",
+      "topic": "vrije-tijd",
+      "parts": [
+        "veel bezoek",
+        "we",
+        "van familie",
+        "krijgen",
+        "in de zomer"
+      ],
+      "answer": "in de zomer krijgen we veel bezoek van familie",
+      "alternatives": [
+        "we krijgen in de zomer veel bezoek van familie"
+      ],
+      "hint": "Time first causes inversion: krijgen we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-32",
+      "topic": "vrije-tijd",
+      "parts": [
+        "bijvoorbeeld",
+        "zwemmen en fietsen",
+        "veel hobby's",
+        "ik heb"
+      ],
+      "answer": "ik heb veel hobby's, bijvoorbeeld zwemmen en fietsen",
+      "alternatives": [],
+      "hint": "Main clause first; bijvoorbeeld introduces the examples after the comma.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-33",
+      "topic": "vrije-tijd",
+      "parts": [
+        "bruin",
+        "worden",
+        "de bladeren van de bomen",
+        "in de herfst"
+      ],
+      "answer": "in de herfst worden de bladeren van de bomen bruin",
+      "alternatives": [
+        "de bladeren van de bomen worden in de herfst bruin"
+      ],
+      "hint": "Time first causes inversion: the verb (worden) comes before the long subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-34",
+      "topic": "vrije-tijd",
+      "parts": [
+        "helemaal blauw",
+        "de lucht",
+        "vandaag",
+        "is"
+      ],
+      "answer": "vandaag is de lucht helemaal blauw",
+      "alternatives": [
+        "de lucht is vandaag helemaal blauw"
+      ],
+      "hint": "Time first (vandaag) causes inversion: is de lucht.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-35",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een eenvoudig gerecht",
+        "met vis",
+        "maakt",
+        "de chef"
+      ],
+      "answer": "de chef maakt een eenvoudig gerecht met vis",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-36",
+      "topic": "vrije-tijd",
+      "parts": [
+        "en dan",
+        "eten we daar",
+        "eerst gaan we",
+        "een ijsje",
+        "naar het strand"
+      ],
+      "answer": "eerst gaan we naar het strand en dan eten we daar een ijsje",
+      "alternatives": [
+        "we gaan eerst naar het strand en dan eten we daar een ijsje"
+      ],
+      "hint": "eerst and dan at the start cause inversion: gaan we, eten we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-37",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in Marokko",
+        "woont",
+        "een deel van mijn familie"
+      ],
+      "answer": "een deel van mijn familie woont in Marokko",
+      "alternatives": [],
+      "hint": "The whole subject (een deel van mijn familie) comes first, then the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-38",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met de trein",
+        "we",
+        "het grootste gedeelte van de reis",
+        "gaan"
+      ],
+      "answer": "het grootste gedeelte van de reis gaan we met de trein",
+      "alternatives": [
+        "we gaan het grootste gedeelte van de reis met de trein"
+      ],
+      "hint": "A time/extent phrase first causes inversion: gaan we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-39",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een late dienst",
+        "mijn man",
+        "heeft",
+        "op zondag"
+      ],
+      "answer": "op zondag heeft mijn man een late dienst",
+      "alternatives": [
+        "mijn man heeft op zondag een late dienst"
+      ],
+      "hint": "Time first causes inversion: heeft mijn man.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-40",
+      "topic": "vrije-tijd",
+      "parts": [
+        "want",
+        "we vieren het suikerfeest",
+        "in onze godsdienst",
+        "het is",
+        "een belangrijk feest"
+      ],
+      "answer": "we vieren het suikerfeest, want het is een belangrijk feest in onze godsdienst",
+      "alternatives": [],
+      "hint": "want does not change the word order: after want the verb stays in 2nd place (het is …).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-41",
+      "topic": "vrije-tijd",
+      "parts": [
+        "direct",
+        "ga",
+        "naar de sportschool",
+        "ik",
+        "na het werk"
+      ],
+      "answer": "na het werk ga ik direct naar de sportschool",
+      "alternatives": [
+        "ik ga na het werk direct naar de sportschool"
+      ],
+      "hint": "Time first causes inversion; direct comes before the place (naar de sportschool).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-42",
+      "topic": "vrije-tijd",
+      "parts": [
+        "te sporten",
+        "om",
+        "mijn doel is",
+        "elke week"
+      ],
+      "answer": "mijn doel is om elke week te sporten",
+      "alternatives": [],
+      "hint": "“om … te + infinitive”: te sporten comes at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-43",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in een grote doos",
+        "liggen",
+        "de cadeaus"
+      ],
+      "answer": "de cadeaus liggen in een grote doos",
+      "alternatives": [
+        "in een grote doos liggen de cadeaus"
+      ],
+      "hint": "Subject, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-44",
+      "topic": "vrije-tijd",
+      "parts": [
+        "weer zomer",
+        "het",
+        "eindelijk",
+        "is"
+      ],
+      "answer": "eindelijk is het weer zomer",
+      "alternatives": [
+        "het is eindelijk weer zomer"
+      ],
+      "hint": "An adverb first (eindelijk) causes inversion: is het.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-45",
+      "topic": "vrije-tijd",
+      "parts": [
+        "was",
+        "heel emotioneel",
+        "de bruiloft van mijn zus"
+      ],
+      "answer": "de bruiloft van mijn zus was heel emotioneel",
+      "alternatives": [],
+      "hint": "The long subject comes first, then the verb (was) in 2nd place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-46",
+      "topic": "vrije-tijd",
+      "parts": [
+        "om te fietsen",
+        "is",
+        "in dit gebied",
+        "het verboden"
+      ],
+      "answer": "in dit gebied is het verboden om te fietsen",
+      "alternatives": [
+        "het is verboden om in dit gebied te fietsen",
+        "het is in dit gebied verboden om te fietsen"
+      ],
+      "hint": "Place first causes inversion (is het). “om te + infinitive” at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-47",
+      "topic": "vrije-tijd",
+      "parts": [
+        "om de familie te zien",
+        "een goede gelegenheid",
+        "is",
+        "een verjaardag"
+      ],
+      "answer": "een verjaardag is een goede gelegenheid om de familie te zien",
+      "alternatives": [],
+      "hint": "“om … te + infinitive”: te zien comes at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-48",
+      "topic": "vrije-tijd",
+      "parts": [
+        "tienduizend stappen per dag",
+        "met gemak",
+        "hij",
+        "loopt"
+      ],
+      "answer": "hij loopt met gemak tienduizend stappen per dag",
+      "alternatives": [
+        "met gemak loopt hij tienduizend stappen per dag"
+      ],
+      "hint": "Verb in 2nd place; the manner (met gemak) before the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-49",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar je feest",
+        "zaterdag",
+        "in elk geval",
+        "ik",
+        "kom"
+      ],
+      "answer": "ik kom in elk geval zaterdag naar je feest",
+      "alternatives": [
+        "in elk geval kom ik zaterdag naar je feest",
+        "ik kom zaterdag in elk geval naar je feest"
+      ],
+      "hint": "Verb in 2nd place; time (zaterdag) before place (naar je feest).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-50",
+      "topic": "vrije-tijd",
+      "parts": [
+        "geweldig",
+        "de vakantie in Italië",
+        "was"
+      ],
+      "answer": "de vakantie in Italië was geweldig",
+      "alternatives": [],
+      "hint": "The subject (de vakantie in Italië) first, then the verb, then the adjective.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-51",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in mijn gezicht",
+        "schijnt",
+        "de zon"
+      ],
+      "answer": "de zon schijnt in mijn gezicht",
+      "alternatives": [],
+      "hint": "Subject first, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-52",
+      "topic": "vrije-tijd",
+      "parts": [
+        "pijn",
+        "mijn arm",
+        "doet",
+        "na het tennis"
+      ],
+      "answer": "na het tennis doet mijn arm pijn",
+      "alternatives": [
+        "mijn arm doet pijn na het tennis",
+        "mijn arm doet na het tennis pijn"
+      ],
+      "hint": "Time first causes inversion. In “pijn doen”, pijn goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-53",
+      "topic": "vrije-tijd",
+      "parts": [
+        "gebroken",
+        "bij het voetbal",
+        "zijn vinger",
+        "heeft",
+        "hij"
+      ],
+      "answer": "hij heeft zijn vinger gebroken bij het voetbal",
+      "alternatives": [
+        "bij het voetbal heeft hij zijn vinger gebroken",
+        "hij heeft bij het voetbal zijn vinger gebroken"
+      ],
+      "hint": "Perfect tense: heeft in 2nd place, gebroken at the end of the main part.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-54",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in mijn mond",
+        "de tandarts",
+        "kijkt"
+      ],
+      "answer": "de tandarts kijkt in mijn mond",
+      "alternatives": [],
+      "hint": "Subject first, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-55",
+      "topic": "vrije-tijd",
+      "parts": [
+        "voor een fietstocht",
+        "gunstig",
+        "het weer is"
+      ],
+      "answer": "het weer is gunstig voor een fietstocht",
+      "alternatives": [],
+      "hint": "Subject + verb, then the adjective and its phrase.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-56",
+      "topic": "vrije-tijd",
+      "parts": [
+        "heen",
+        "in de vakantie",
+        "jullie",
+        "waar gaan"
+      ],
+      "answer": "waar gaan jullie in de vakantie heen?",
+      "alternatives": [
+        "waar gaan jullie heen in de vakantie?"
+      ],
+      "hint": "W-question: question word, verb, subject. “waar … heen” = where to; heen goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-57",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op de hoek van de straat",
+        "is",
+        "het café"
+      ],
+      "answer": "het café is op de hoek van de straat",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-58",
+      "topic": "vrije-tijd",
+      "parts": [
+        "erg hoog",
+        "de heuvels",
+        "in deze streek",
+        "zijn"
+      ],
+      "answer": "in deze streek zijn de heuvels erg hoog",
+      "alternatives": [
+        "de heuvels zijn in deze streek erg hoog",
+        "de heuvels in deze streek zijn erg hoog"
+      ],
+      "hint": "Place first causes inversion: zijn de heuvels.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-59",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in een kleine hut",
+        "we",
+        "in het bos",
+        "slapen",
+        "in de vakantie"
+      ],
+      "answer": "in de vakantie slapen we in een kleine hut in het bos",
+      "alternatives": [
+        "we slapen in de vakantie in een kleine hut in het bos"
+      ],
+      "hint": "Time first causes inversion; Tijd before Plaats (TMP).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-60",
+      "topic": "vrije-tijd",
+      "parts": [
+        "informatie over het festival",
+        "staat",
+        "op de website"
+      ],
+      "answer": "op de website staat informatie over het festival",
+      "alternatives": [],
+      "hint": "Place first causes inversion: the verb (staat) before the subject (informatie).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-61",
+      "topic": "vrije-tijd",
+      "parts": [
+        "buiten",
+        "speelde",
+        "elke dag",
+        "ik",
+        "in mijn jeugd"
+      ],
+      "answer": "in mijn jeugd speelde ik elke dag buiten",
+      "alternatives": [
+        "ik speelde in mijn jeugd elke dag buiten"
+      ],
+      "hint": "Time first causes inversion: speelde ik. Tijd (elke dag) before Plaats (buiten).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-62",
+      "topic": "vrije-tijd",
+      "parts": [
+        "de juiste trein",
+        "naar Utrecht",
+        "dit",
+        "is"
+      ],
+      "answer": "is dit de juiste trein naar Utrecht?",
+      "alternatives": [],
+      "hint": "Yes/no question: the verb (is) comes first.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-63",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een vrolijk karakter",
+        "heeft",
+        "mijn zus"
+      ],
+      "answer": "mijn zus heeft een vrolijk karakter",
+      "alternatives": [],
+      "hint": "Subject first, verb in 2nd place, then the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-64",
+      "topic": "vrije-tijd",
+      "parts": [
+        "veel klanten",
+        "er",
+        "in de winkel",
+        "zijn",
+        "op zaterdag"
+      ],
+      "answer": "op zaterdag zijn er veel klanten in de winkel",
+      "alternatives": [
+        "er zijn op zaterdag veel klanten in de winkel"
+      ],
+      "hint": "Time first causes inversion; “er zijn” = there are.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-65",
+      "topic": "vrije-tijd",
+      "parts": [
+        "bezocht",
+        "de koningin",
+        "onze stad",
+        "heeft",
+        "vorig jaar"
+      ],
+      "answer": "vorig jaar heeft de koningin onze stad bezocht",
+      "alternatives": [
+        "de koningin heeft vorig jaar onze stad bezocht"
+      ],
+      "hint": "Perfect tense: heeft in 2nd place, bezocht at the end. Time first causes inversion.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-66",
+      "topic": "vrije-tijd",
+      "parts": [
+        "weinig kracht",
+        "ik",
+        "na de griep",
+        "heb"
+      ],
+      "answer": "na de griep heb ik weinig kracht",
+      "alternatives": [
+        "ik heb na de griep weinig kracht"
+      ],
+      "hint": "Time first causes inversion: heb ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-67",
+      "topic": "vrije-tijd",
+      "parts": [
+        "door het bos",
+        "we",
+        "onder leiding van een gids",
+        "wandelen"
+      ],
+      "answer": "we wandelen onder leiding van een gids door het bos",
+      "alternatives": [
+        "onder leiding van een gids wandelen we door het bos"
+      ],
+      "hint": "Manier (onder leiding van een gids) before Plaats (door het bos).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-68",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar links",
+        "u",
+        "bij de kerk",
+        "gaat"
+      ],
+      "answer": "bij de kerk gaat u naar links",
+      "alternatives": [
+        "u gaat bij de kerk naar links"
+      ],
+      "hint": "A place first causes inversion: gaat u.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-69",
+      "topic": "vrije-tijd",
+      "parts": [
+        "is kapot",
+        "op het station",
+        "de machine"
+      ],
+      "answer": "de machine op het station is kapot",
+      "alternatives": [],
+      "hint": "The subject with its place (de machine op het station) first, then the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-70",
+      "topic": "vrije-tijd",
+      "parts": [
+        "over het feest",
+        "jouw mening",
+        "wat is"
+      ],
+      "answer": "wat is jouw mening over het feest?",
+      "alternatives": [],
+      "hint": "W-question: question word (wat), then the verb, then the subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-71",
+      "topic": "vrije-tijd",
+      "parts": [
+        "vijfentwintig meter lang",
+        "is",
+        "het zwembad"
+      ],
+      "answer": "het zwembad is vijfentwintig meter lang",
+      "alternatives": [],
+      "hint": "Subject, verb, then the measurement (vijfentwintig meter lang).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-72",
+      "topic": "vrije-tijd",
+      "parts": [
+        "want dat is",
+        "beter voor het milieu",
+        "met het openbaar vervoer",
+        "ik reis"
+      ],
+      "answer": "ik reis met het openbaar vervoer, want dat is beter voor het milieu",
+      "alternatives": [],
+      "hint": "want keeps normal word order: the verb stays in 2nd place (dat is).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-73",
+      "topic": "vrije-tijd",
+      "parts": [
+        "is echt",
+        "de moeite waard",
+        "met moderne kunst",
+        "het museum"
+      ],
+      "answer": "het museum met moderne kunst is echt de moeite waard",
+      "alternatives": [],
+      "hint": "The long subject (het museum met moderne kunst) first, then the verb. “de moeite waard” = worth it.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-74",
+      "topic": "vrije-tijd",
+      "parts": [
+        "niet komen",
+        "kan",
+        "ik",
+        "nee",
+        "zaterdag"
+      ],
+      "answer": "nee, zaterdag kan ik niet komen",
+      "alternatives": [
+        "nee, ik kan zaterdag niet komen"
+      ],
+      "hint": "nee does not count as a position. Time first causes inversion (kan ik); the infinitive at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-75",
+      "topic": "vrije-tijd",
+      "parts": [
+        "niks",
+        "te doen",
+        "is",
+        "in dit dorp"
+      ],
+      "answer": "in dit dorp is niks te doen",
+      "alternatives": [],
+      "hint": "Place first, then the verb. “niks te doen” = nothing to do.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-76",
+      "topic": "vrije-tijd",
+      "parts": [
+        "nergens",
+        "vinden",
+        "mijn fietssleutel",
+        "ik kan"
+      ],
+      "answer": "ik kan mijn fietssleutel nergens vinden",
+      "alternatives": [],
+      "hint": "Modal (kan) in 2nd place, infinitive (vinden) at the end; nergens comes before the infinitive.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-77",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een paspoort",
+        "noodzakelijk",
+        "is",
+        "voor deze reis"
+      ],
+      "answer": "voor deze reis is een paspoort noodzakelijk",
+      "alternatives": [
+        "een paspoort is noodzakelijk voor deze reis",
+        "een paspoort is voor deze reis noodzakelijk"
+      ],
+      "hint": "A phrase first causes inversion: is een paspoort.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-78",
+      "topic": "vrije-tijd",
+      "parts": [
+        "heel nuttig",
+        "een kaart",
+        "op reis",
+        "is"
+      ],
+      "answer": "op reis is een kaart heel nuttig",
+      "alternatives": [
+        "een kaart is op reis heel nuttig"
+      ],
+      "hint": "A phrase first causes inversion: is een kaart.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-79",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in een beetje olie",
+        "bakt",
+        "de vis",
+        "je"
+      ],
+      "answer": "je bakt de vis in een beetje olie",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, object, then the manner (in een beetje olie).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-80",
+      "topic": "vrije-tijd",
+      "parts": [
+        "toch",
+        "fietsen",
+        "we",
+        "ondanks de regen",
+        "gaan"
+      ],
+      "answer": "ondanks de regen gaan we toch fietsen",
+      "alternatives": [
+        "we gaan ondanks de regen toch fietsen"
+      ],
+      "hint": "A phrase first (ondanks de regen) causes inversion; the infinitive (fietsen) goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-81",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een gezellig feest",
+        "ongetwijfeld",
+        "het wordt"
+      ],
+      "answer": "het wordt ongetwijfeld een gezellig feest",
+      "alternatives": [],
+      "hint": "Verb in 2nd place; the adverb (ongetwijfeld) comes right after the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-82",
+      "topic": "vrije-tijd",
+      "parts": [
+        "geweest",
+        "in Amsterdam",
+        "ooit",
+        "jij",
+        "ben"
+      ],
+      "answer": "ben jij ooit in Amsterdam geweest?",
+      "alternatives": [],
+      "hint": "Question in the perfect: ben first, geweest at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-83",
+      "topic": "vrije-tijd",
+      "parts": [
+        "van de vertraging",
+        "de oorzaak",
+        "wat is"
+      ],
+      "answer": "wat is de oorzaak van de vertraging?",
+      "alternatives": [],
+      "hint": "W-question: question word, verb, then the subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-84",
+      "topic": "vrije-tijd",
+      "parts": [
+        "reizen",
+        "mijn dochter",
+        "na haar opleiding",
+        "wil"
+      ],
+      "answer": "na haar opleiding wil mijn dochter reizen",
+      "alternatives": [
+        "mijn dochter wil na haar opleiding reizen"
+      ],
+      "hint": "Modal (wil) in 2nd place, infinitive (reizen) at the end. Time first causes inversion.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-85",
+      "topic": "vrije-tijd",
+      "parts": [
+        "na het eten",
+        "komen",
+        "de overige gasten"
+      ],
+      "answer": "de overige gasten komen na het eten",
+      "alternatives": [
+        "na het eten komen de overige gasten"
+      ],
+      "hint": "Verb in 2nd place. With time first, the subject comes after the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-86",
+      "topic": "vrije-tijd",
+      "parts": [
+        "ons huis",
+        "passeert",
+        "de bus",
+        "elk half uur"
+      ],
+      "answer": "elk half uur passeert de bus ons huis",
+      "alternatives": [
+        "de bus passeert elk half uur ons huis"
+      ],
+      "hint": "Time first causes inversion: passeert de bus.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-87",
+      "topic": "vrije-tijd",
+      "parts": [
+        "nog vrij",
+        "deze plaats",
+        "is"
+      ],
+      "answer": "is deze plaats nog vrij?",
+      "alternatives": [],
+      "hint": "Yes/no question: the verb (is) comes first.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-88",
+      "topic": "vrije-tijd",
+      "parts": [
+        "donker",
+        "werd",
+        "het",
+        "plotseling"
+      ],
+      "answer": "plotseling werd het donker",
+      "alternatives": [
+        "het werd plotseling donker"
+      ],
+      "hint": "An adverb first (plotseling) causes inversion: werd het.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-89",
+      "topic": "vrije-tijd",
+      "parts": [
+        "de president van Amerika",
+        "we",
+        "op het nieuws",
+        "zien"
+      ],
+      "answer": "op het nieuws zien we de president van Amerika",
+      "alternatives": [
+        "we zien op het nieuws de president van Amerika"
+      ],
+      "hint": "A phrase first causes inversion: zien we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-90",
+      "topic": "vrije-tijd",
+      "parts": [
+        "kaas en melk",
+        "produceert",
+        "deze boerderij"
+      ],
+      "answer": "deze boerderij produceert kaas en melk",
+      "alternatives": [],
+      "hint": "Subject first, verb in 2nd place, then the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-91",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in Utrecht",
+        "studente psychologie",
+        "is",
+        "mijn nicht"
+      ],
+      "answer": "mijn nicht is studente psychologie in Utrecht",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the rest.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-92",
+      "topic": "vrije-tijd",
+      "parts": [
+        "erg vriendelijk",
+        "het hotel was",
+        "en de mensen waren",
+        "redelijk goedkoop"
+      ],
+      "answer": "het hotel was redelijk goedkoop en de mensen waren erg vriendelijk",
+      "alternatives": [],
+      "hint": "Two main clauses joined by en: each has the verb in 2nd place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-93",
+      "topic": "vrije-tijd",
+      "parts": [
+        "thuis",
+        "we",
+        "de rest van de dag",
+        "blijven"
+      ],
+      "answer": "de rest van de dag blijven we thuis",
+      "alternatives": [
+        "we blijven de rest van de dag thuis"
+      ],
+      "hint": "Time first causes inversion: blijven we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-94",
+      "topic": "vrije-tijd",
+      "parts": [
+        "maak ik",
+        "een reis om de wereld",
+        "rijk word",
+        "als ik"
+      ],
+      "answer": "als ik rijk word, maak ik een reis om de wereld",
+      "alternatives": [
+        "ik maak een reis om de wereld als ik rijk word"
+      ],
+      "hint": "als sends the verb (word) to the end. After the als-clause the main verb comes first: maak ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-95",
+      "topic": "vrije-tijd",
+      "parts": [
+        "van de barbecue",
+        "veel rook",
+        "komt",
+        "er"
+      ],
+      "answer": "er komt veel rook van de barbecue",
+      "alternatives": [],
+      "hint": "“er” takes the first place; the verb (komt) follows in 2nd place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-96",
+      "topic": "vrije-tijd",
+      "parts": [
+        "van alle buren",
+        "is",
+        "een samenwerking",
+        "het straatfeest"
+      ],
+      "answer": "het straatfeest is een samenwerking van alle buren",
+      "alternatives": [],
+      "hint": "Subject first, verb in 2nd place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-97",
+      "topic": "vrije-tijd",
+      "parts": [
+        "schoon",
+        "het huis",
+        "we",
+        "samen",
+        "na het feest",
+        "maken"
+      ],
+      "answer": "na het feest maken we samen het huis schoon",
+      "alternatives": [
+        "we maken na het feest samen het huis schoon"
+      ],
+      "hint": "Separable verb schoonmaken: maken in 2nd place, schoon at the end.",
+      "covers": [
+        "schoonmaken"
+      ]
+    },
+    {
+      "id": "vrije-tijd-98",
+      "topic": "vrije-tijd",
+      "parts": [
+        "over tien seconden",
+        "vertrekt",
+        "de trein op spoor vijf"
+      ],
+      "answer": "de trein op spoor vijf vertrekt over tien seconden",
+      "alternatives": [
+        "over tien seconden vertrekt de trein op spoor vijf"
+      ],
+      "hint": "The whole subject (de trein op spoor vijf) counts as one position; the verb comes next.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-99",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op slot",
+        "altijd",
+        "mijn fiets",
+        "zet",
+        "ik"
+      ],
+      "answer": "ik zet mijn fiets altijd op slot",
+      "alternatives": [
+        "ik zet altijd mijn fiets op slot"
+      ],
+      "hint": "Verb in 2nd place. “op slot zetten”: op slot comes at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-100",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met een hoge snelheid",
+        "rijdt",
+        "de trein"
+      ],
+      "answer": "de trein rijdt met een hoge snelheid",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the manner.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-101",
+      "topic": "vrije-tijd",
+      "parts": [
+        "veel spanning",
+        "er",
+        "voor de wedstrijd",
+        "is"
+      ],
+      "answer": "voor de wedstrijd is er veel spanning",
+      "alternatives": [
+        "er is veel spanning voor de wedstrijd",
+        "er is voor de wedstrijd veel spanning"
+      ],
+      "hint": "Time first causes inversion: is er.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-102",
+      "topic": "vrije-tijd",
+      "parts": [
+        "voor de deur van het hotel",
+        "stopt",
+        "de bus"
+      ],
+      "answer": "de bus stopt voor de deur van het hotel",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-103",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met je examen",
+        "veel succes",
+        "je",
+        "wens",
+        "ik"
+      ],
+      "answer": "ik wens je veel succes met je examen",
+      "alternatives": [],
+      "hint": "Verb in 2nd place; the person (je) before the thing (veel succes).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-104",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een korte tekst",
+        "ik",
+        "over mijn weekend",
+        "schrijf",
+        "voor de wijkkrant"
+      ],
+      "answer": "voor de wijkkrant schrijf ik een korte tekst over mijn weekend",
+      "alternatives": [
+        "ik schrijf voor de wijkkrant een korte tekst over mijn weekend",
+        "ik schrijf een korte tekst over mijn weekend voor de wijkkrant"
+      ],
+      "hint": "A phrase first causes inversion: schrijf ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-105",
+      "topic": "vrije-tijd",
+      "parts": [
+        "niet",
+        "dat woord",
+        "ik",
+        "ken"
+      ],
+      "answer": "ik ken dat woord niet",
+      "alternatives": [
+        "dat woord ken ik niet"
+      ],
+      "hint": "niet comes after the object (dat woord), at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-106",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in techniek",
+        "goed",
+        "is",
+        "mijn zoon"
+      ],
+      "answer": "mijn zoon is goed in techniek",
+      "alternatives": [],
+      "hint": "Subject, verb, then the adjective. “goed in” = good at.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-107",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een boek",
+        "de kinderen zwemmen",
+        "lees ik",
+        "terwijl"
+      ],
+      "answer": "terwijl de kinderen zwemmen, lees ik een boek",
+      "alternatives": [
+        "ik lees een boek terwijl de kinderen zwemmen"
+      ],
+      "hint": "terwijl sends the verb (zwemmen) to the end. After the terwijl-clause the main verb comes first: lees ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-108",
+      "topic": "vrije-tijd",
+      "parts": [
+        "een eigen huis",
+        "ik",
+        "kopen",
+        "in de toekomst",
+        "wil"
+      ],
+      "answer": "in de toekomst wil ik een eigen huis kopen",
+      "alternatives": [
+        "ik wil in de toekomst een eigen huis kopen"
+      ],
+      "hint": "Modal (wil) in 2nd place, infinitive (kopen) at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-109",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op de trap",
+        "spelen",
+        "de kinderen"
+      ],
+      "answer": "de kinderen spelen op de trap",
+      "alternatives": [
+        "op de trap spelen de kinderen"
+      ],
+      "hint": "Subject, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-110",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar mijn feest",
+        "ze komen allebei",
+        "ik heb twee broers",
+        "en"
+      ],
+      "answer": "ik heb twee broers en ze komen allebei naar mijn feest",
+      "alternatives": [],
+      "hint": "Two main clauses joined by en; allebei comes right after the verb.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-111",
+      "topic": "vrije-tijd",
+      "parts": [
+        "soms sneeuw",
+        "er",
+        "valt",
+        "in de winter"
+      ],
+      "answer": "in de winter valt er soms sneeuw",
+      "alternatives": [
+        "er valt in de winter soms sneeuw"
+      ],
+      "hint": "Time first causes inversion: valt er.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-112",
+      "topic": "vrije-tijd",
+      "parts": [
+        "snel",
+        "het weer",
+        "verandert",
+        "in Nederland"
+      ],
+      "answer": "in Nederland verandert het weer snel",
+      "alternatives": [
+        "het weer verandert snel in Nederland",
+        "het weer verandert in Nederland snel"
+      ],
+      "hint": "Place first causes inversion: verandert het weer.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-113",
+      "topic": "vrije-tijd",
+      "parts": [
+        "verloren",
+        "de wedstrijd",
+        "heeft",
+        "onze club"
+      ],
+      "answer": "onze club heeft de wedstrijd verloren",
+      "alternatives": [],
+      "hint": "Perfect tense: heeft in 2nd place, verloren at the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-114",
+      "topic": "vrije-tijd",
+      "parts": [
+        "van onze reis",
+        "schrijf",
+        "een verslag",
+        "ik"
+      ],
+      "answer": "ik schrijf een verslag van onze reis",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-115",
+      "topic": "vrije-tijd",
+      "parts": [
+        "gaan we dansen",
+        "eerst",
+        "en vervolgens",
+        "we eten"
+      ],
+      "answer": "we eten eerst en vervolgens gaan we dansen",
+      "alternatives": [
+        "eerst eten we en vervolgens gaan we dansen"
+      ],
+      "hint": "vervolgens at the start of a clause causes inversion: gaan we.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-116",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op de vloer",
+        "zitten",
+        "de kinderen"
+      ],
+      "answer": "de kinderen zitten op de vloer",
+      "alternatives": [
+        "op de vloer zitten de kinderen"
+      ],
+      "hint": "Subject, verb in 2nd place, then the place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-117",
+      "topic": "vrije-tijd",
+      "parts": [
+        "niet zo goed",
+        "ik",
+        "me",
+        "voel",
+        "vandaag"
+      ],
+      "answer": "vandaag voel ik me niet zo goed",
+      "alternatives": [
+        "ik voel me vandaag niet zo goed"
+      ],
+      "hint": "Time first causes inversion; the reflexive pronoun (me) comes right after the subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-118",
+      "topic": "vrije-tijd",
+      "parts": [
+        "dat je",
+        "geen file hebt",
+        "is",
+        "het voordeel van de fiets"
+      ],
+      "answer": "het voordeel van de fiets is dat je geen file hebt",
+      "alternatives": [],
+      "hint": "dat sends the verb (hebt) to the end of its clause.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-119",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar mijn tas",
+        "vraag",
+        "bij gevonden voorwerpen",
+        "ik"
+      ],
+      "answer": "ik vraag bij gevonden voorwerpen naar mijn tas",
+      "alternatives": [
+        "ik vraag naar mijn tas bij gevonden voorwerpen"
+      ],
+      "hint": "Verb in 2nd place. “vragen naar” = ask about; the naar-part usually goes to the end.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-120",
+      "topic": "vrije-tijd",
+      "parts": [
+        "met water",
+        "mijn fles",
+        "ik",
+        "vul",
+        "voor de wandeling"
+      ],
+      "answer": "voor de wandeling vul ik mijn fles met water",
+      "alternatives": [
+        "ik vul voor de wandeling mijn fles met water",
+        "ik vul mijn fles met water voor de wandeling"
+      ],
+      "hint": "A phrase first causes inversion: vul ik.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-121",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar het strand",
+        "op de bus",
+        "wachten",
+        "we"
+      ],
+      "answer": "we wachten op de bus naar het strand",
+      "alternatives": [],
+      "hint": "Verb in 2nd place. “wachten op” = to wait for.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-122",
+      "topic": "vrije-tijd",
+      "parts": [
+        "in Duitsland",
+        "is",
+        "voor zaken",
+        "deze week",
+        "mijn man"
+      ],
+      "answer": "mijn man is deze week voor zaken in Duitsland",
+      "alternatives": [
+        "deze week is mijn man voor zaken in Duitsland"
+      ],
+      "hint": "TMP: Tijd (deze week), Manier/reason (voor zaken), Plaats (in Duitsland).",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-123",
+      "topic": "vrije-tijd",
+      "parts": [
+        "van zichzelf",
+        "veel foto's",
+        "op vakantie",
+        "maakt",
+        "hij"
+      ],
+      "answer": "hij maakt op vakantie veel foto's van zichzelf",
+      "alternatives": [
+        "op vakantie maakt hij veel foto's van zichzelf"
+      ],
+      "hint": "Verb in 2nd place; op vakantie before the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-124",
+      "topic": "vrije-tijd",
+      "parts": [
+        "fit ben",
+        "naar bed",
+        "ik ga vroeg",
+        "zodat ik morgen"
+      ],
+      "answer": "ik ga vroeg naar bed, zodat ik morgen fit ben",
+      "alternatives": [],
+      "hint": "zodat sends the verb (ben) to the end of its clause.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-125",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar het festival",
+        "een groot aantal mensen",
+        "komt",
+        "dit jaar"
+      ],
+      "answer": "dit jaar komt een groot aantal mensen naar het festival",
+      "alternatives": [
+        "een groot aantal mensen komt dit jaar naar het festival"
+      ],
+      "hint": "Time first causes inversion: komt before the subject.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-126",
+      "topic": "vrije-tijd",
+      "parts": [
+        "graag",
+        "de uitnodiging",
+        "accepteer",
+        "ik"
+      ],
+      "answer": "ik accepteer de uitnodiging graag",
+      "alternatives": [
+        "graag accepteer ik de uitnodiging",
+        "ik accepteer graag de uitnodiging"
+      ],
+      "hint": "Verb in 2nd place; graag can go after the verb or after the object.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-127",
+      "topic": "vrije-tijd",
+      "parts": [
+        "mee",
+        "ons afval",
+        "we",
+        "na de picknick",
+        "nemen"
+      ],
+      "answer": "na de picknick nemen we ons afval mee",
+      "alternatives": [
+        "we nemen na de picknick ons afval mee"
+      ],
+      "hint": "Separable verb meenemen: nemen in 2nd place, mee at the end.",
+      "covers": [
+        "meenemen"
+      ]
+    },
+    {
+      "id": "vrije-tijd-128",
+      "topic": "vrije-tijd",
+      "parts": [
+        "hij slaapt",
+        "alsof",
+        "doet",
+        "mijn zoon"
+      ],
+      "answer": "mijn zoon doet alsof hij slaapt",
+      "alternatives": [],
+      "hint": "alsof sends the verb (slaapt) to the end of its clause.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-129",
+      "topic": "vrije-tijd",
+      "parts": [
+        "dus",
+        "hij zwemt niet",
+        "voor water",
+        "hij heeft angst"
+      ],
+      "answer": "hij heeft angst voor water, dus hij zwemt niet",
+      "alternatives": [
+        "hij heeft angst voor water, dus zwemt hij niet"
+      ],
+      "hint": "After dus both orders are used: “dus hij zwemt” and “dus zwemt hij”.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-130",
+      "topic": "vrije-tijd",
+      "parts": [
+        "behalve mijn broer",
+        "naar het feest",
+        "komt",
+        "iedereen"
+      ],
+      "answer": "iedereen komt naar het feest behalve mijn broer",
+      "alternatives": [
+        "behalve mijn broer komt iedereen naar het feest",
+        "iedereen behalve mijn broer komt naar het feest"
+      ],
+      "hint": "Verb in 2nd place; a phrase first (behalve mijn broer) causes inversion.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-131",
+      "topic": "vrije-tijd",
+      "parts": [
+        "tegen de zon",
+        "is",
+        "een goede bescherming",
+        "een pet"
+      ],
+      "answer": "een pet is een goede bescherming tegen de zon",
+      "alternatives": [],
+      "hint": "Subject, verb in 2nd place, then the rest.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-132",
+      "topic": "vrije-tijd",
+      "parts": [
+        "over ons feest",
+        "voor de buren",
+        "een briefje",
+        "schrijf",
+        "ik"
+      ],
+      "answer": "ik schrijf een briefje voor de buren over ons feest",
+      "alternatives": [
+        "ik schrijf een briefje over ons feest voor de buren"
+      ],
+      "hint": "Verb in 2nd place, then the object and the extra phrases.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-133",
+      "topic": "vrije-tijd",
+      "parts": [
+        "naar muziek",
+        "ik",
+        "op de radio",
+        "het liefst",
+        "luister",
+        "op zondag"
+      ],
+      "answer": "op zondag luister ik het liefst naar muziek op de radio",
+      "alternatives": [
+        "ik luister op zondag het liefst naar muziek op de radio"
+      ],
+      "hint": "Time first causes inversion. “het liefst” = most of all; naar-phrase near the end.",
+      "covers": [
+        "het liefst"
+      ]
+    },
+    {
+      "id": "vrije-tijd-134",
+      "topic": "vrije-tijd",
+      "parts": [
+        "langs de zee",
+        "met een paar vrienden",
+        "ik",
+        "fiets",
+        "in het weekend"
+      ],
+      "answer": "in het weekend fiets ik met een paar vrienden langs de zee",
+      "alternatives": [
+        "ik fiets in het weekend met een paar vrienden langs de zee"
+      ],
+      "hint": "TMP: Tijd (in het weekend), Manier (met een paar vrienden), Plaats (langs de zee).",
+      "covers": [
+        "een paar"
+      ]
+    },
+    {
+      "id": "vrije-tijd-135",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op",
+        "dus ik bel ze vaak",
+        "ver weg",
+        "mijn familie woont"
+      ],
+      "answer": "mijn familie woont ver weg, dus ik bel ze vaak op",
+      "alternatives": [
+        "mijn familie woont ver weg, dus bel ik ze vaak op"
+      ],
+      "hint": "Separable verb opbellen: bel in 2nd place, op at the end.",
+      "covers": [
+        "ver weg",
+        "opbellen"
+      ]
+    },
+    {
+      "id": "vrije-tijd-136",
+      "topic": "vrije-tijd",
+      "parts": [
+        "vier uur",
+        "duurt",
+        "meestal",
+        "het feest"
+      ],
+      "answer": "het feest duurt meestal vier uur",
+      "alternatives": [
+        "meestal duurt het feest vier uur"
+      ],
+      "hint": "Verb in 2nd place; an adverb first (meestal) causes inversion.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-137",
+      "topic": "vrije-tijd",
+      "parts": [
+        "op vakantie",
+        "gaan",
+        "naar Turkije",
+        "elk jaar",
+        "mijn echtgenoot en ik"
+      ],
+      "answer": "mijn echtgenoot en ik gaan elk jaar op vakantie naar Turkije",
+      "alternatives": [
+        "elk jaar gaan mijn echtgenoot en ik op vakantie naar Turkije"
+      ],
+      "hint": "“mijn echtgenoot en ik” is one subject (= wij), so the verb is gaan. Time before place.",
+      "covers": []
+    },
+    {
+      "id": "vrije-tijd-138",
+      "topic": "vrije-tijd",
+      "parts": [
+        "vuurwerk",
+        "de gemeente",
+        "in het centrum",
+        "verbiedt",
+        "met oud en nieuw"
+      ],
+      "answer": "met oud en nieuw verbiedt de gemeente vuurwerk in het centrum",
+      "alternatives": [
+        "de gemeente verbiedt met oud en nieuw vuurwerk in het centrum"
+      ],
+      "hint": "Time first (met oud en nieuw) causes inversion: verbiedt de gemeente.",
+      "covers": []
+    }
+  ],
+  "words": {
+    "gaan": {
+      "type": "verb (irregular)",
+      "en": "to go",
+      "forms": {
+        "ik": "ga",
+        "jij/u": "gaat",
+        "hij/zij": "gaat",
+        "wij/jullie/zij": "gaan"
+      },
+      "past": "ging / gingen",
+      "perfect": "is gegaan",
+      "notes": [
+        "Inversion with jij: “ga jij?”",
+        "“gaan + infinitive” = going to: “we gaan fietsen”."
+      ]
+    },
+    "ga": {
+      "see": "gaan",
+      "form": "present, ik (and jij in questions)"
+    },
+    "gaat": {
+      "see": "gaan",
+      "form": "present, jij/u/hij/zij"
+    },
+    "vieren": {
+      "type": "verb",
+      "en": "to celebrate",
+      "forms": {
+        "ik": "vier",
+        "jij/u": "viert",
+        "hij/zij": "viert",
+        "wij/jullie/zij": "vieren"
+      },
+      "past": "vierde / vierden",
+      "perfect": "heeft gevierd",
+      "notes": [
+        "Don't confuse “ik vier” (I celebrate) with “vier” (four).",
+        "“feest vieren” = to have a party."
+      ]
+    },
+    "komen": {
+      "type": "verb (irregular)",
+      "en": "to come",
+      "forms": {
+        "ik": "kom",
+        "jij/u": "komt",
+        "hij/zij": "komt",
+        "wij/jullie/zij": "komen"
+      },
+      "past": "kwam / kwamen",
+      "perfect": "is gekomen"
+    },
+    "kom": {
+      "see": "komen",
+      "form": "present, ik"
+    },
+    "komt": {
+      "see": "komen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "langskomen": {
+      "type": "separable verb",
+      "en": "to drop by, to visit",
+      "forms": {
+        "ik": "kom langs",
+        "jij/u": "komt langs",
+        "hij/zij": "komt langs",
+        "wij/jullie/zij": "komen langs"
+      },
+      "past": "kwam langs / kwamen langs",
+      "perfect": "is langsgekomen",
+      "notes": [
+        "Split in main clauses: “ik kom morgen langs”.",
+        "“bij iemand langskomen” = to drop in on someone."
+      ]
+    },
+    "langs": {
+      "type": "preposition / particle",
+      "en": "along; by",
+      "notes": [
+        "“langs de zee” = along the sea.",
+        "Also the particle of langskomen: “ze komen langs”."
+      ]
+    },
+    "kunnen": {
+      "type": "verb (irregular)",
+      "en": "can, to be able to",
+      "forms": {
+        "ik": "kan",
+        "jij/u": "kunt / kan",
+        "hij/zij": "kan",
+        "wij/jullie/zij": "kunnen"
+      },
+      "past": "kon / konden",
+      "perfect": "heeft gekund",
+      "notes": [
+        "Modal verb: the other verb goes to the end as an infinitive.",
+        "Question with jij: “kun je …?” / “kan je …?”"
+      ]
+    },
+    "kun": {
+      "see": "kunnen",
+      "form": "present, jij (in questions: kun je …?)"
+    },
+    "kan": {
+      "see": "kunnen",
+      "form": "present, ik/jij/u/hij/zij"
+    },
+    "meebrengen": {
+      "type": "separable verb",
+      "en": "to bring (along)",
+      "forms": {
+        "ik": "breng mee",
+        "jij/u": "brengt mee",
+        "hij/zij": "brengt mee",
+        "wij/jullie/zij": "brengen mee"
+      },
+      "past": "bracht mee / brachten mee",
+      "perfect": "heeft meegebracht",
+      "notes": [
+        "Split in main clauses: “ik breng wijn mee”.",
+        "After a modal it stays together: “kun je wijn meebrengen?”"
+      ]
+    },
+    "reserveren": {
+      "type": "verb",
+      "en": "to book, to reserve",
+      "forms": {
+        "ik": "reserveer",
+        "jij/u": "reserveert",
+        "hij/zij": "reserveert",
+        "wij/jullie/zij": "reserveren"
+      },
+      "past": "reserveerde / reserveerden",
+      "perfect": "heeft gereserveerd",
+      "notes": [
+        "Perfect: “ik heb een tafel gereserveerd”."
+      ]
+    },
+    "reserveer": {
+      "see": "reserveren",
+      "form": "present, ik"
+    },
+    "hebben": {
+      "type": "verb (irregular)",
+      "en": "to have",
+      "forms": {
+        "ik": "heb",
+        "jij/u": "hebt / heeft",
+        "hij/zij": "heeft",
+        "wij/jullie/zij": "hebben"
+      },
+      "past": "had / hadden",
+      "perfect": "heeft gehad",
+      "notes": [
+        "Also the helper verb for most perfect tenses: “ik heb gegeten”."
+      ]
+    },
+    "heb": {
+      "see": "hebben",
+      "form": "present, ik (and jij in questions: heb je?)"
+    },
+    "hebt": {
+      "see": "hebben",
+      "form": "present, jij"
+    },
+    "heeft": {
+      "see": "hebben",
+      "form": "present, u/hij/zij (u heeft / u hebt)"
+    },
+    "maken": {
+      "type": "verb",
+      "en": "to make, to do",
+      "forms": {
+        "ik": "maak",
+        "jij/u": "maakt",
+        "hij/zij": "maakt",
+        "wij/jullie/zij": "maken"
+      },
+      "past": "maakte / maakten",
+      "perfect": "heeft gemaakt",
+      "notes": [
+        "“een reis maken” = to take a trip; “foto's maken” = to take photos."
+      ]
+    },
+    "maak": {
+      "see": "maken",
+      "form": "present, ik"
+    },
+    "maakt": {
+      "see": "maken",
+      "form": "present, jij/u/hij/zij"
+    },
+    "gemaakt": {
+      "see": "maken",
+      "form": "past participle"
+    },
+    "schoonmaken": {
+      "type": "separable verb",
+      "en": "to clean",
+      "forms": {
+        "ik": "maak schoon",
+        "jij/u": "maakt schoon",
+        "hij/zij": "maakt schoon",
+        "wij/jullie/zij": "maken schoon"
+      },
+      "past": "maakte schoon / maakten schoon",
+      "perfect": "heeft schoongemaakt",
+      "notes": [
+        "Split in main clauses: “we maken het huis schoon”."
+      ]
+    },
+    "neem": {
+      "see": "meenemen",
+      "form": "present, ik (meenemen: ik neem … mee)"
+    },
+    "nemen": {
+      "see": "meenemen",
+      "form": "present, wij/jullie/zij (meenemen: we nemen … mee)"
+    },
+    "meenemen": {
+      "type": "separable verb",
+      "en": "to take along, to bring",
+      "forms": {
+        "ik": "neem mee",
+        "jij/u": "neemt mee",
+        "hij/zij": "neemt mee",
+        "wij/jullie/zij": "nemen mee"
+      },
+      "past": "nam mee / namen mee",
+      "perfect": "heeft meegenomen",
+      "notes": [
+        "Split in main clauses: “ik neem mijn tas mee”.",
+        "Irregular: nemen – nam – genomen."
+      ]
+    },
+    "mee": {
+      "type": "adverb / particle",
+      "en": "with (me/us), along",
+      "notes": [
+        "Particle of separable verbs (meenemen, meebrengen): goes to the end of the main clause."
+      ]
+    },
+    "zien": {
+      "type": "verb (irregular)",
+      "en": "to see",
+      "forms": {
+        "ik": "zie",
+        "jij/u": "ziet",
+        "hij/zij": "ziet",
+        "wij/jullie/zij": "zien"
+      },
+      "past": "zag / zagen",
+      "perfect": "heeft gezien"
+    },
+    "geven": {
+      "type": "verb (irregular)",
+      "en": "to give",
+      "forms": {
+        "ik": "geef",
+        "jij/u": "geeft",
+        "hij/zij": "geeft",
+        "wij/jullie/zij": "geven"
+      },
+      "past": "gaf / gaven",
+      "perfect": "heeft gegeven",
+      "notes": [
+        "Person before thing: “ik geef mijn moeder bloemen”."
+      ]
+    },
+    "geef": {
+      "see": "geven",
+      "form": "present, ik"
+    },
+    "lopen": {
+      "type": "verb (irregular)",
+      "en": "to walk",
+      "forms": {
+        "ik": "loop",
+        "jij/u": "loopt",
+        "hij/zij": "loopt",
+        "wij/jullie/zij": "lopen"
+      },
+      "past": "liep / liepen",
+      "perfect": "heeft / is gelopen",
+      "notes": [
+        "In Dutch “lopen” = to walk (rennen = to run)."
+      ]
+    },
+    "loopt": {
+      "see": "lopen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "kijken": {
+      "type": "verb (irregular)",
+      "en": "to look, to watch",
+      "forms": {
+        "ik": "kijk",
+        "jij/u": "kijkt",
+        "hij/zij": "kijkt",
+        "wij/jullie/zij": "kijken"
+      },
+      "past": "keek / keken",
+      "perfect": "heeft gekeken",
+      "notes": [
+        "“kijken naar” = to watch: “naar de tv kijken”."
+      ]
+    },
+    "kijkt": {
+      "see": "kijken",
+      "form": "present, jij/u/hij/zij"
+    },
+    "kennen": {
+      "type": "verb",
+      "en": "to know (a person, a word)",
+      "forms": {
+        "ik": "ken",
+        "jij/u": "kent",
+        "hij/zij": "kent",
+        "wij/jullie/zij": "kennen"
+      },
+      "past": "kende / kenden",
+      "perfect": "heeft gekend",
+      "notes": [
+        "kennen = know someone/something; weten = know a fact."
+      ]
+    },
+    "ken": {
+      "see": "kennen",
+      "form": "present, ik"
+    },
+    "weten": {
+      "type": "verb (irregular)",
+      "en": "to know (a fact)",
+      "forms": {
+        "ik": "weet",
+        "jij/u": "weet",
+        "hij/zij": "weet",
+        "wij/jullie/zij": "weten"
+      },
+      "past": "wist / wisten",
+      "perfect": "heeft geweten",
+      "notes": [
+        "weten = know a fact; kennen = know a person/thing."
+      ]
+    },
+    "weet": {
+      "see": "weten",
+      "form": "present, ik/jij/u/hij/zij"
+    },
+    "beginnen": {
+      "type": "verb (irregular)",
+      "en": "to begin, to start",
+      "forms": {
+        "ik": "begin",
+        "jij/u": "begint",
+        "hij/zij": "begint",
+        "wij/jullie/zij": "beginnen"
+      },
+      "past": "begon / begonnen",
+      "perfect": "is begonnen"
+    },
+    "begint": {
+      "see": "beginnen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "ontmoeten": {
+      "type": "verb",
+      "en": "to meet",
+      "forms": {
+        "ik": "ontmoet",
+        "jij/u": "ontmoet",
+        "hij/zij": "ontmoet",
+        "wij/jullie/zij": "ontmoeten"
+      },
+      "past": "ontmoette / ontmoetten",
+      "perfect": "heeft ontmoet",
+      "notes": [
+        "Not separable and no ge- in the perfect: “ik heb hem ontmoet”."
+      ]
+    },
+    "ontmoet": {
+      "see": "ontmoeten",
+      "form": "present, ik/jij/u/hij/zij"
+    },
+    "organiseren": {
+      "type": "verb",
+      "en": "to organise",
+      "forms": {
+        "ik": "organiseer",
+        "jij/u": "organiseert",
+        "hij/zij": "organiseert",
+        "wij/jullie/zij": "organiseren"
+      },
+      "past": "organiseerde / organiseerden",
+      "perfect": "heeft georganiseerd"
+    },
+    "organiseert": {
+      "see": "organiseren",
+      "form": "present, jij/u/hij/zij"
+    },
+    "uitgaan": {
+      "type": "separable verb",
+      "en": "to go out (for fun)",
+      "forms": {
+        "ik": "ga uit",
+        "jij/u": "gaat uit",
+        "hij/zij": "gaat uit",
+        "wij/jullie/zij": "gaan uit"
+      },
+      "past": "ging uit / gingen uit",
+      "perfect": "is uitgegaan",
+      "notes": [
+        "Split in main clauses: “we gaan zaterdag uit”."
+      ]
+    },
+    "uit": {
+      "type": "adverb / particle",
+      "en": "out; from",
+      "notes": [
+        "Particle of uitgaan: “we gaan uit”.",
+        "“uit Marokko” = from Morocco."
+      ]
+    },
+    "opschrijven": {
+      "type": "separable verb",
+      "en": "to write down",
+      "forms": {
+        "ik": "schrijf op",
+        "jij/u": "schrijft op",
+        "hij/zij": "schrijft op",
+        "wij/jullie/zij": "schrijven op"
+      },
+      "past": "schreef op / schreven op",
+      "perfect": "heeft opgeschreven",
+      "notes": [
+        "Split in main clauses: “ik schrijf het op”."
+      ]
+    },
+    "invullen": {
+      "type": "separable verb",
+      "en": "to fill in (a form)",
+      "forms": {
+        "ik": "vul in",
+        "jij/u": "vult in",
+        "hij/zij": "vult in",
+        "wij/jullie/zij": "vullen in"
+      },
+      "past": "vulde in / vulden in",
+      "perfect": "heeft ingevuld",
+      "notes": [
+        "Split in main clauses: “je vult het formulier in”."
+      ]
+    },
+    "vul": {
+      "see": "vullen",
+      "form": "present, ik (and jij in questions/inversion: vul je)"
+    },
+    "vullen": {
+      "type": "verb",
+      "en": "to fill",
+      "forms": {
+        "ik": "vul",
+        "jij/u": "vult",
+        "hij/zij": "vult",
+        "wij/jullie/zij": "vullen"
+      },
+      "past": "vulde / vulden",
+      "perfect": "heeft gevuld",
+      "notes": [
+        "“vullen met” = to fill with."
+      ]
+    },
+    "sporten": {
+      "type": "verb",
+      "en": "to do sports, to work out",
+      "forms": {
+        "ik": "sport",
+        "jij/u": "sport",
+        "hij/zij": "sport",
+        "wij/jullie/zij": "sporten"
+      },
+      "past": "sportte / sportten",
+      "perfect": "heeft gesport",
+      "notes": [
+        "Stem ends in -t: “hij sport” (no extra t)."
+      ]
+    },
+    "sport": {
+      "type": "noun / verb form",
+      "en": "sport; (I/you/he) do(es) sports",
+      "notes": [
+        "As a noun: de sport, plural sporten.",
+        "As a verb form: “ik sport” (sporten)."
+      ]
+    },
+    "vinden": {
+      "type": "verb (irregular)",
+      "en": "to find; to think (opinion)",
+      "forms": {
+        "ik": "vind",
+        "jij/u": "vindt",
+        "hij/zij": "vindt",
+        "wij/jullie/zij": "vinden"
+      },
+      "past": "vond / vonden",
+      "perfect": "heeft gevonden",
+      "notes": [
+        "“ik vind het leuk” = I like it / I think it's fun."
+      ]
+    },
+    "vind": {
+      "see": "vinden",
+      "form": "present, ik (and jij in questions: vind je?)"
+    },
+    "gevonden": {
+      "see": "vinden",
+      "form": "past participle (gevonden voorwerpen = lost and found)"
+    },
+    "spelen": {
+      "type": "verb",
+      "en": "to play",
+      "forms": {
+        "ik": "speel",
+        "jij/u": "speelt",
+        "hij/zij": "speelt",
+        "wij/jullie/zij": "spelen"
+      },
+      "past": "speelde / speelden",
+      "perfect": "heeft gespeeld",
+      "notes": [
+        "“een instrument spelen” = to play an instrument."
+      ]
+    },
+    "speelt": {
+      "see": "spelen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "speelde": {
+      "see": "spelen",
+      "form": "past, ik/jij/u/hij/zij"
+    },
+    "bewegen": {
+      "type": "verb (irregular)",
+      "en": "to move, to exercise",
+      "forms": {
+        "ik": "beweeg",
+        "jij/u": "beweegt",
+        "hij/zij": "beweegt",
+        "wij/jullie/zij": "bewegen"
+      },
+      "past": "bewoog / bewogen",
+      "perfect": "heeft bewogen",
+      "notes": [
+        "“genoeg bewegen” = get enough exercise."
+      ]
+    },
+    "krijgen": {
+      "type": "verb (irregular)",
+      "en": "to get, to receive",
+      "forms": {
+        "ik": "krijg",
+        "jij/u": "krijgt",
+        "hij/zij": "krijgt",
+        "wij/jullie/zij": "krijgen"
+      },
+      "past": "kreeg / kregen",
+      "perfect": "heeft gekregen",
+      "notes": [
+        "“bezoek krijgen” = to have visitors."
+      ]
+    },
+    "worden": {
+      "type": "verb (irregular)",
+      "en": "to become",
+      "forms": {
+        "ik": "word",
+        "jij/u": "wordt",
+        "hij/zij": "wordt",
+        "wij/jullie/zij": "worden"
+      },
+      "past": "werd / werden",
+      "perfect": "is geworden",
+      "notes": [
+        "Used for weather and changes: “het wordt koud”."
+      ]
+    },
+    "word": {
+      "see": "worden",
+      "form": "present, ik (and jij in questions)"
+    },
+    "wordt": {
+      "see": "worden",
+      "form": "present, jij/u/hij/zij"
+    },
+    "werd": {
+      "see": "worden",
+      "form": "past, ik/jij/u/hij/zij"
+    },
+    "maakte": {
+      "see": "maken",
+      "form": "past"
+    },
+    "eten": {
+      "type": "verb (irregular)",
+      "en": "to eat; food",
+      "forms": {
+        "ik": "eet",
+        "jij/u": "eet",
+        "hij/zij": "eet",
+        "wij/jullie/zij": "eten"
+      },
+      "past": "at / aten",
+      "perfect": "heeft gegeten",
+      "notes": [
+        "As a noun: het eten = food, the meal."
+      ]
+    },
+    "wonen": {
+      "type": "verb",
+      "en": "to live (somewhere)",
+      "forms": {
+        "ik": "woon",
+        "jij/u": "woont",
+        "hij/zij": "woont",
+        "wij/jullie/zij": "wonen"
+      },
+      "past": "woonde / woonden",
+      "perfect": "heeft gewoond",
+      "notes": [
+        "“wonen in” + place."
+      ]
+    },
+    "woont": {
+      "see": "wonen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "liggen": {
+      "type": "verb (irregular)",
+      "en": "to lie, to be (lying)",
+      "forms": {
+        "ik": "lig",
+        "jij/u": "ligt",
+        "hij/zij": "ligt",
+        "wij/jullie/zij": "liggen"
+      },
+      "past": "lag / lagen",
+      "perfect": "heeft gelegen",
+      "notes": [
+        "Used for things lying flat: “de cadeaus liggen in de doos”."
+      ]
+    },
+    "schijnen": {
+      "type": "verb (irregular)",
+      "en": "to shine",
+      "forms": {
+        "ik": "schijn",
+        "jij/u": "schijnt",
+        "hij/zij": "schijnt",
+        "wij/jullie/zij": "schijnen"
+      },
+      "past": "scheen / schenen",
+      "perfect": "heeft geschenen",
+      "notes": [
+        "“de zon schijnt” = the sun is shining."
+      ]
+    },
+    "schijnt": {
+      "see": "schijnen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "doen": {
+      "type": "verb (irregular)",
+      "en": "to do",
+      "forms": {
+        "ik": "doe",
+        "jij/u": "doet",
+        "hij/zij": "doet",
+        "wij/jullie/zij": "doen"
+      },
+      "past": "deed / deden",
+      "perfect": "heeft gedaan",
+      "notes": [
+        "“pijn doen” = to hurt: “mijn arm doet pijn”.",
+        "“doen alsof” = to pretend."
+      ]
+    },
+    "doet": {
+      "see": "doen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "breken": {
+      "type": "verb (irregular)",
+      "en": "to break",
+      "forms": {
+        "ik": "breek",
+        "jij/u": "breekt",
+        "hij/zij": "breekt",
+        "wij/jullie/zij": "breken"
+      },
+      "past": "brak / braken",
+      "perfect": "heeft gebroken"
+    },
+    "gebroken": {
+      "see": "breken",
+      "form": "past participle"
+    },
+    "staan": {
+      "type": "verb (irregular)",
+      "en": "to stand; to be (written)",
+      "forms": {
+        "ik": "sta",
+        "jij/u": "staat",
+        "hij/zij": "staat",
+        "wij/jullie/zij": "staan"
+      },
+      "past": "stond / stonden",
+      "perfect": "heeft gestaan",
+      "notes": [
+        "“op de website staat …” = it says on the website …"
+      ]
+    },
+    "staat": {
+      "type": "noun / verb form",
+      "en": "state, status; (it) stands",
+      "notes": [
+        "“burgerlijke staat” = marital status (on forms).",
+        "Also: present of staan (“er staat informatie”)."
+      ]
+    },
+    "slapen": {
+      "type": "verb (irregular)",
+      "en": "to sleep",
+      "forms": {
+        "ik": "slaap",
+        "jij/u": "slaapt",
+        "hij/zij": "slaapt",
+        "wij/jullie/zij": "slapen"
+      },
+      "past": "sliep / sliepen",
+      "perfect": "heeft geslapen"
+    },
+    "slaapt": {
+      "see": "slapen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "betalen": {
+      "type": "verb",
+      "en": "to pay",
+      "forms": {
+        "ik": "betaal",
+        "jij/u": "betaalt",
+        "hij/zij": "betaalt",
+        "wij/jullie/zij": "betalen"
+      },
+      "past": "betaalde / betaalden",
+      "perfect": "heeft betaald",
+      "notes": [
+        "No extra ge-: “ik heb betaald”.",
+        "“betalen voor” = to pay for."
+      ]
+    },
+    "bezoeken": {
+      "type": "verb",
+      "en": "to visit",
+      "forms": {
+        "ik": "bezoek",
+        "jij/u": "bezoekt",
+        "hij/zij": "bezoekt",
+        "wij/jullie/zij": "bezoeken"
+      },
+      "past": "bezocht / bezochten",
+      "perfect": "heeft bezocht",
+      "notes": [
+        "No ge- in the perfect (prefix be-)."
+      ]
+    },
+    "bezocht": {
+      "see": "bezoeken",
+      "form": "past participle / past"
+    },
+    "wandelen": {
+      "type": "verb",
+      "en": "to walk, to hike",
+      "forms": {
+        "ik": "wandel",
+        "jij/u": "wandelt",
+        "hij/zij": "wandelt",
+        "wij/jullie/zij": "wandelen"
+      },
+      "past": "wandelde / wandelden",
+      "perfect": "heeft / is gewandeld"
+    },
+    "willen": {
+      "type": "verb (irregular)",
+      "en": "to want",
+      "forms": {
+        "ik": "wil",
+        "jij/u": "wilt / wil",
+        "hij/zij": "wil",
+        "wij/jullie/zij": "willen"
+      },
+      "past": "wilde / wilden",
+      "perfect": "heeft gewild",
+      "notes": [
+        "Modal verb: the infinitive goes to the end."
+      ]
+    },
+    "wil": {
+      "see": "willen",
+      "form": "present, ik/hij/zij (jij wilt / wil)"
+    },
+    "reizen": {
+      "type": "verb",
+      "en": "to travel",
+      "forms": {
+        "ik": "reis",
+        "jij/u": "reist",
+        "hij/zij": "reist",
+        "wij/jullie/zij": "reizen"
+      },
+      "past": "reisde / reisden",
+      "perfect": "heeft / is gereisd"
+    },
+    "reis": {
+      "type": "noun",
+      "en": "trip, journey",
+      "article": "de",
+      "plural": "reizen",
+      "notes": [
+        "“op reis” = travelling; “een reis maken” = to take a trip.",
+        "Also verb: “ik reis” (reizen)."
+      ]
+    },
+    "passeren": {
+      "type": "verb",
+      "en": "to pass (by)",
+      "forms": {
+        "ik": "passeer",
+        "jij/u": "passeert",
+        "hij/zij": "passeert",
+        "wij/jullie/zij": "passeren"
+      },
+      "past": "passeerde / passeerden",
+      "perfect": "heeft / is gepasseerd"
+    },
+    "passeert": {
+      "see": "passeren",
+      "form": "present, jij/u/hij/zij"
+    },
+    "produceren": {
+      "type": "verb",
+      "en": "to produce",
+      "forms": {
+        "ik": "produceer",
+        "jij/u": "produceert",
+        "hij/zij": "produceert",
+        "wij/jullie/zij": "produceren"
+      },
+      "past": "produceerde / produceerden",
+      "perfect": "heeft geproduceerd"
+    },
+    "produceert": {
+      "see": "produceren",
+      "form": "present, jij/u/hij/zij"
+    },
+    "blijven": {
+      "type": "verb (irregular)",
+      "en": "to stay, to remain",
+      "forms": {
+        "ik": "blijf",
+        "jij/u": "blijft",
+        "hij/zij": "blijft",
+        "wij/jullie/zij": "blijven"
+      },
+      "past": "bleef / bleven",
+      "perfect": "is gebleven",
+      "notes": [
+        "“thuis blijven” = to stay at home."
+      ]
+    },
+    "vertrekken": {
+      "type": "verb (irregular)",
+      "en": "to leave, to depart",
+      "forms": {
+        "ik": "vertrek",
+        "jij/u": "vertrekt",
+        "hij/zij": "vertrekt",
+        "wij/jullie/zij": "vertrekken"
+      },
+      "past": "vertrok / vertrokken",
+      "perfect": "is vertrokken"
+    },
+    "vertrekt": {
+      "see": "vertrekken",
+      "form": "present, jij/u/hij/zij"
+    },
+    "zetten": {
+      "type": "verb",
+      "en": "to put, to set",
+      "forms": {
+        "ik": "zet",
+        "jij/u": "zet",
+        "hij/zij": "zet",
+        "wij/jullie/zij": "zetten"
+      },
+      "past": "zette / zetten",
+      "perfect": "heeft gezet",
+      "notes": [
+        "“op slot zetten” = to lock."
+      ]
+    },
+    "zet": {
+      "see": "zetten",
+      "form": "present, ik/jij/u/hij/zij"
+    },
+    "rijden": {
+      "type": "verb (irregular)",
+      "en": "to ride, to drive",
+      "forms": {
+        "ik": "rijd",
+        "jij/u": "rijdt",
+        "hij/zij": "rijdt",
+        "wij/jullie/zij": "rijden"
+      },
+      "past": "reed / reden",
+      "perfect": "heeft / is gereden"
+    },
+    "rijdt": {
+      "see": "rijden",
+      "form": "present, jij/u/hij/zij"
+    },
+    "stoppen": {
+      "type": "verb",
+      "en": "to stop",
+      "forms": {
+        "ik": "stop",
+        "jij/u": "stopt",
+        "hij/zij": "stopt",
+        "wij/jullie/zij": "stoppen"
+      },
+      "past": "stopte / stopten",
+      "perfect": "is / heeft gestopt"
+    },
+    "stopt": {
+      "see": "stoppen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "wensen": {
+      "type": "verb",
+      "en": "to wish",
+      "forms": {
+        "ik": "wens",
+        "jij/u": "wenst",
+        "hij/zij": "wenst",
+        "wij/jullie/zij": "wensen"
+      },
+      "past": "wenste / wensten",
+      "perfect": "heeft gewenst",
+      "notes": [
+        "“iemand succes wensen” = to wish someone luck."
+      ]
+    },
+    "wens": {
+      "see": "wensen",
+      "form": "present, ik"
+    },
+    "schrijven": {
+      "type": "verb (irregular)",
+      "en": "to write",
+      "forms": {
+        "ik": "schrijf",
+        "jij/u": "schrijft",
+        "hij/zij": "schrijft",
+        "wij/jullie/zij": "schrijven"
+      },
+      "past": "schreef / schreven",
+      "perfect": "heeft geschreven"
+    },
+    "schrijf": {
+      "see": "schrijven",
+      "form": "present, ik"
+    },
+    "lezen": {
+      "type": "verb (irregular)",
+      "en": "to read",
+      "forms": {
+        "ik": "lees",
+        "jij/u": "leest",
+        "hij/zij": "leest",
+        "wij/jullie/zij": "lezen"
+      },
+      "past": "las / lazen",
+      "perfect": "heeft gelezen"
+    },
+    "lees": {
+      "see": "lezen",
+      "form": "present, ik"
+    },
+    "kopen": {
+      "type": "verb (irregular)",
+      "en": "to buy",
+      "forms": {
+        "ik": "koop",
+        "jij/u": "koopt",
+        "hij/zij": "koopt",
+        "wij/jullie/zij": "kopen"
+      },
+      "past": "kocht / kochten",
+      "perfect": "heeft gekocht"
+    },
+    "vallen": {
+      "type": "verb (irregular)",
+      "en": "to fall",
+      "forms": {
+        "ik": "val",
+        "jij/u": "valt",
+        "hij/zij": "valt",
+        "wij/jullie/zij": "vallen"
+      },
+      "past": "viel / vielen",
+      "perfect": "is gevallen",
+      "notes": [
+        "“er valt sneeuw” = it is snowing."
+      ]
+    },
+    "valt": {
+      "see": "vallen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "veranderen": {
+      "type": "verb",
+      "en": "to change",
+      "forms": {
+        "ik": "verander",
+        "jij/u": "verandert",
+        "hij/zij": "verandert",
+        "wij/jullie/zij": "veranderen"
+      },
+      "past": "veranderde / veranderden",
+      "perfect": "is / heeft veranderd"
+    },
+    "verandert": {
+      "see": "veranderen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "verliezen": {
+      "type": "verb (irregular)",
+      "en": "to lose",
+      "forms": {
+        "ik": "verlies",
+        "jij/u": "verliest",
+        "hij/zij": "verliest",
+        "wij/jullie/zij": "verliezen"
+      },
+      "past": "verloor / verloren",
+      "perfect": "heeft verloren",
+      "notes": [
+        "Opposite: winnen."
+      ]
+    },
+    "verloren": {
+      "see": "verliezen",
+      "form": "past participle"
+    },
+    "dansen": {
+      "type": "verb",
+      "en": "to dance",
+      "forms": {
+        "ik": "dans",
+        "jij/u": "danst",
+        "hij/zij": "danst",
+        "wij/jullie/zij": "dansen"
+      },
+      "past": "danste / dansten",
+      "perfect": "heeft gedanst"
+    },
+    "zwemmen": {
+      "type": "verb (irregular)",
+      "en": "to swim",
+      "forms": {
+        "ik": "zwem",
+        "jij/u": "zwemt",
+        "hij/zij": "zwemt",
+        "wij/jullie/zij": "zwemmen"
+      },
+      "past": "zwom / zwommen",
+      "perfect": "heeft / is gezwommen"
+    },
+    "zwemt": {
+      "see": "zwemmen",
+      "form": "present, jij/u/hij/zij"
+    },
+    "fietsen": {
+      "type": "verb",
+      "en": "to cycle",
+      "forms": {
+        "ik": "fiets",
+        "jij/u": "fietst",
+        "hij/zij": "fietst",
+        "wij/jullie/zij": "fietsen"
+      },
+      "past": "fietste / fietsten",
+      "perfect": "heeft / is gefietst",
+      "notes": [
+        "Also plural of de fiets (bike)."
+      ]
+    },
+    "voelen": {
+      "type": "verb",
+      "en": "to feel",
+      "forms": {
+        "ik": "voel",
+        "jij/u": "voelt",
+        "hij/zij": "voelt",
+        "wij/jullie/zij": "voelen"
+      },
+      "past": "voelde / voelden",
+      "perfect": "heeft gevoeld",
+      "notes": [
+        "“zich voelen”: “ik voel me goed” = I feel good."
+      ]
+    },
+    "voel": {
+      "see": "voelen",
+      "form": "present, ik"
+    },
+    "vragen": {
+      "type": "verb (irregular)",
+      "en": "to ask",
+      "forms": {
+        "ik": "vraag",
+        "jij/u": "vraagt",
+        "hij/zij": "vraagt",
+        "wij/jullie/zij": "vragen"
+      },
+      "past": "vroeg / vroegen",
+      "perfect": "heeft gevraagd",
+      "notes": [
+        "“vragen naar” = to ask about/for; past “vroeg” looks like vroeg (early)."
+      ]
+    },
+    "vraag": {
+      "see": "vragen",
+      "form": "present, ik (also noun: de vraag = question)"
+    },
+    "wachten": {
+      "type": "verb",
+      "en": "to wait",
+      "forms": {
+        "ik": "wacht",
+        "jij/u": "wacht",
+        "hij/zij": "wacht",
+        "wij/jullie/zij": "wachten"
+      },
+      "past": "wachtte / wachtten",
+      "perfect": "heeft gewacht",
+      "notes": [
+        "Always “wachten op” = to wait for."
+      ]
+    },
+    "accepteren": {
+      "type": "verb",
+      "en": "to accept",
+      "forms": {
+        "ik": "accepteer",
+        "jij/u": "accepteert",
+        "hij/zij": "accepteert",
+        "wij/jullie/zij": "accepteren"
+      },
+      "past": "accepteerde / accepteerden",
+      "perfect": "heeft geaccepteerd"
+    },
+    "accepteer": {
+      "see": "accepteren",
+      "form": "present, ik"
+    },
+    "bellen": {
+      "type": "verb",
+      "en": "to call (phone); to ring",
+      "forms": {
+        "ik": "bel",
+        "jij/u": "belt",
+        "hij/zij": "belt",
+        "wij/jullie/zij": "bellen"
+      },
+      "past": "belde / belden",
+      "perfect": "heeft gebeld"
+    },
+    "opbellen": {
+      "type": "separable verb",
+      "en": "to phone, to call up",
+      "forms": {
+        "ik": "bel op",
+        "jij/u": "belt op",
+        "hij/zij": "belt op",
+        "wij/jullie/zij": "bellen op"
+      },
+      "past": "belde op / belden op",
+      "perfect": "heeft opgebeld",
+      "notes": [
+        "Split in main clauses: “ik bel je morgen op”."
+      ]
+    },
+    "bel": {
+      "see": "opbellen",
+      "form": "present, ik (opbellen: ik bel … op)"
+    },
+    "bakken": {
+      "type": "verb",
+      "en": "to fry, to bake",
+      "forms": {
+        "ik": "bak",
+        "jij/u": "bakt",
+        "hij/zij": "bakt",
+        "wij/jullie/zij": "bakken"
+      },
+      "past": "bakte / bakten",
+      "perfect": "heeft gebakken",
+      "notes": [
+        "Irregular participle: gebakken."
+      ]
+    },
+    "bakt": {
+      "see": "bakken",
+      "form": "present, jij/u/hij/zij"
+    },
+    "duren": {
+      "type": "verb",
+      "en": "to last, to take (time)",
+      "forms": {
+        "ik": "duur",
+        "jij/u": "duurt",
+        "hij/zij": "duurt",
+        "wij/jullie/zij": "duren"
+      },
+      "past": "duurde / duurden",
+      "perfect": "heeft geduurd",
+      "notes": [
+        "“Hoe lang duurt het?” = How long does it take?"
+      ]
+    },
+    "duurt": {
+      "see": "duren",
+      "form": "present, jij/u/hij/zij"
+    },
+    "ben": {
+      "see": "zijn",
+      "form": "present, ik (verb zijn = to be; and jij in questions: ben jij?)"
+    },
+    "is": {
+      "see": "zijn",
+      "form": "present, hij/zij/het (verb zijn = to be)"
+    },
+    "was": {
+      "see": "zijn",
+      "form": "past, ik/jij/u/hij/zij (verb zijn = to be)"
+    },
+    "waren": {
+      "see": "zijn",
+      "form": "past, wij/jullie/zij (verb zijn = to be)"
+    },
+    "geweest": {
+      "see": "zijn",
+      "form": "past participle (is geweest)"
+    },
+    "zijn": {
+      "type": "verb / possessive",
+      "en": "to be; his",
+      "notes": [
+        "Verb: ik ben, jij bent, hij is, wij zijn — was/waren — is geweest.",
+        "Possessive: zijn kamer = his room."
+      ]
+    },
+    "zondag": {
+      "type": "noun",
+      "en": "Sunday",
+      "article": "de",
+      "plural": "zondagen",
+      "notes": [
+        "“op zondag” = on Sunday; days are written without a capital."
+      ]
+    },
+    "zaterdag": {
+      "type": "noun",
+      "en": "Saturday",
+      "article": "de",
+      "plural": "zaterdagen",
+      "notes": [
+        "“zaterdag” alone often means “this Saturday”."
+      ]
+    },
+    "zaterdagavond": {
+      "type": "noun",
+      "en": "Saturday evening",
+      "article": "de",
+      "plural": "zaterdagavonden"
+    },
+    "familie": {
+      "type": "noun",
+      "en": "family; relatives",
+      "article": "de",
+      "plural": "families",
+      "notes": [
+        "de familie = the wider family; het gezin = parents and children."
+      ]
+    },
+    "bos": {
+      "type": "noun",
+      "en": "forest, woods",
+      "article": "het",
+      "plural": "bossen"
+    },
+    "ouders": {
+      "type": "noun",
+      "en": "parents",
+      "article": "de",
+      "plural": "(plural only)",
+      "notes": [
+        "Plural word: “mijn ouders zijn …”."
+      ]
+    },
+    "jaar": {
+      "type": "noun",
+      "en": "year",
+      "article": "het",
+      "plural": "jaren",
+      "notes": [
+        "After a number: “tien jaar” (singular)."
+      ]
+    },
+    "bruiloft": {
+      "type": "noun",
+      "en": "wedding",
+      "article": "de",
+      "plural": "bruiloften",
+      "notes": [
+        "“gouden bruiloft” = 50 years married."
+      ]
+    },
+    "verjaardag": {
+      "type": "noun",
+      "en": "birthday",
+      "article": "de",
+      "plural": "verjaardagen",
+      "notes": [
+        "“op mijn verjaardag” = on my birthday."
+      ]
+    },
+    "fles": {
+      "type": "noun",
+      "en": "bottle",
+      "article": "de",
+      "plural": "flessen"
+    },
+    "wijn": {
+      "type": "noun",
+      "en": "wine",
+      "article": "de",
+      "plural": "wijnen"
+    },
+    "tafel": {
+      "type": "noun",
+      "en": "table",
+      "article": "de",
+      "plural": "tafels",
+      "notes": [
+        "“een tafel reserveren” = to book a table."
+      ]
+    },
+    "persoon": {
+      "type": "noun",
+      "en": "person",
+      "article": "de",
+      "plural": "personen"
+    },
+    "personen": {
+      "see": "persoon",
+      "form": "plural"
+    },
+    "week": {
+      "type": "noun",
+      "en": "week",
+      "article": "de",
+      "plural": "weken",
+      "notes": [
+        "“vorige week” = last week; “deze week” = this week."
+      ]
+    },
+    "spanje": {
+      "type": "name",
+      "en": "Spain",
+      "notes": [
+        "Spaans = Spanish."
+      ]
+    },
+    "zomer": {
+      "type": "noun",
+      "en": "summer",
+      "article": "de",
+      "plural": "zomers",
+      "notes": [
+        "“in de zomer” = in summer."
+      ]
+    },
+    "herfst": {
+      "type": "noun",
+      "en": "autumn",
+      "article": "de",
+      "plural": "herfsten"
+    },
+    "winter": {
+      "type": "noun",
+      "en": "winter",
+      "article": "de",
+      "plural": "winters"
+    },
+    "zekerheid": {
+      "type": "noun",
+      "en": "certainty, security",
+      "article": "de",
+      "plural": "zekerheden",
+      "notes": [
+        "“voor de zekerheid” = just in case, to be safe."
+      ]
+    },
+    "paraplu": {
+      "type": "noun",
+      "en": "umbrella",
+      "article": "de",
+      "plural": "paraplu's"
+    },
+    "maan": {
+      "type": "noun",
+      "en": "moon",
+      "article": "de",
+      "plural": "manen"
+    },
+    "ster": {
+      "type": "noun",
+      "en": "star",
+      "article": "de",
+      "plural": "sterren"
+    },
+    "sterren": {
+      "see": "ster",
+      "form": "plural"
+    },
+    "moeder": {
+      "type": "noun",
+      "en": "mother",
+      "article": "de",
+      "plural": "moeders"
+    },
+    "bloem": {
+      "type": "noun",
+      "en": "flower",
+      "article": "de",
+      "plural": "bloemen"
+    },
+    "bloemen": {
+      "see": "bloem",
+      "form": "plural"
+    },
+    "pad": {
+      "type": "noun",
+      "en": "path",
+      "article": "het",
+      "plural": "paden"
+    },
+    "top": {
+      "type": "noun",
+      "en": "top, summit",
+      "article": "de",
+      "plural": "toppen"
+    },
+    "heuvel": {
+      "type": "noun",
+      "en": "hill",
+      "article": "de",
+      "plural": "heuvels"
+    },
+    "heuvels": {
+      "see": "heuvel",
+      "form": "plural"
+    },
+    "voetbal": {
+      "type": "noun",
+      "en": "football, soccer",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "“het voetbal” = the game; “de voetbal” = the ball."
+      ]
+    },
+    "feest": {
+      "type": "noun",
+      "en": "party, celebration",
+      "article": "het",
+      "plural": "feesten",
+      "notes": [
+        "“een feest geven/vieren” = to have a party."
+      ]
+    },
+    "vrienden": {
+      "see": "vriend",
+      "form": "plural"
+    },
+    "café": {
+      "type": "noun",
+      "en": "café, pub",
+      "article": "het",
+      "plural": "cafés"
+    },
+    "bedrijf": {
+      "type": "noun",
+      "en": "company, business",
+      "article": "het",
+      "plural": "bedrijven"
+    },
+    "stad": {
+      "type": "noun",
+      "en": "city, town",
+      "article": "de",
+      "plural": "steden"
+    },
+    "adres": {
+      "type": "noun",
+      "en": "address",
+      "article": "het",
+      "plural": "adressen"
+    },
+    "postcode": {
+      "type": "noun",
+      "en": "postcode",
+      "article": "de",
+      "plural": "postcodes",
+      "notes": [
+        "A Dutch postcode: 4 numbers + 2 letters (1234 AB)."
+      ]
+    },
+    "formulier": {
+      "type": "noun",
+      "en": "form",
+      "article": "het",
+      "plural": "formulieren",
+      "notes": [
+        "“een formulier invullen” = to fill in a form."
+      ]
+    },
+    "zoon": {
+      "type": "noun",
+      "en": "son",
+      "article": "de",
+      "plural": "zonen"
+    },
+    "lid": {
+      "type": "noun",
+      "en": "member",
+      "article": "het",
+      "plural": "leden",
+      "notes": [
+        "“lid van een club” = member of a club."
+      ]
+    },
+    "zwemclub": {
+      "type": "noun",
+      "en": "swimming club",
+      "article": "de",
+      "plural": "zwemclubs"
+    },
+    "club": {
+      "type": "noun",
+      "en": "club",
+      "article": "de",
+      "plural": "clubs"
+    },
+    "leeftijd": {
+      "type": "noun",
+      "en": "age",
+      "article": "de",
+      "plural": "leeftijden",
+      "notes": [
+        "“op mijn leeftijd” = at my age."
+      ]
+    },
+    "rust": {
+      "type": "noun",
+      "en": "rest, peace, calm",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "stilte": {
+      "type": "noun",
+      "en": "silence, quiet",
+      "article": "de",
+      "plural": "stiltes"
+    },
+    "instrument": {
+      "type": "noun",
+      "en": "(musical) instrument",
+      "article": "het",
+      "plural": "instrumenten"
+    },
+    "kinderen": {
+      "see": "kind",
+      "form": "plural (irregular)"
+    },
+    "kind": {
+      "type": "noun",
+      "en": "child",
+      "article": "het",
+      "plural": "kinderen",
+      "notes": [
+        "Irregular plural: kinderen."
+      ]
+    },
+    "vakantie": {
+      "type": "noun",
+      "en": "holiday, vacation",
+      "article": "de",
+      "plural": "vakanties",
+      "notes": [
+        "“op vakantie gaan” = to go on holiday."
+      ]
+    },
+    "afscheid": {
+      "type": "noun",
+      "en": "farewell, goodbye",
+      "article": "het",
+      "plural": "afscheiden",
+      "notes": [
+        "“afscheid nemen van” = to say goodbye to."
+      ]
+    },
+    "hand": {
+      "type": "noun",
+      "en": "hand",
+      "article": "de",
+      "plural": "handen",
+      "notes": [
+        "“iemand een hand geven” = to shake hands."
+      ]
+    },
+    "baby": {
+      "type": "noun",
+      "en": "baby",
+      "article": "de",
+      "plural": "baby's"
+    },
+    "kamer": {
+      "type": "noun",
+      "en": "room",
+      "article": "de",
+      "plural": "kamers"
+    },
+    "slaap": {
+      "type": "noun",
+      "en": "sleep",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“slaap hebben” = to be sleepy. Also: ik slaap (slapen)."
+      ]
+    },
+    "restaurant": {
+      "type": "noun",
+      "en": "restaurant",
+      "article": "het",
+      "plural": "restaurants"
+    },
+    "rekening": {
+      "type": "noun",
+      "en": "bill; account",
+      "article": "de",
+      "plural": "rekeningen",
+      "notes": [
+        "“de rekening betalen” = to pay the bill."
+      ]
+    },
+    "dag": {
+      "type": "noun",
+      "en": "day",
+      "article": "de",
+      "plural": "dagen",
+      "notes": [
+        "“elke dag” = every day; “per dag” = a day."
+      ]
+    },
+    "bezoek": {
+      "type": "noun",
+      "en": "visit; visitors",
+      "article": "het",
+      "plural": "bezoeken",
+      "notes": [
+        "“bezoek krijgen” = to get visitors. Also: ik bezoek (bezoeken)."
+      ]
+    },
+    "hobby's": {
+      "see": "hobby",
+      "form": "plural"
+    },
+    "hobby": {
+      "type": "noun",
+      "en": "hobby",
+      "article": "de",
+      "plural": "hobby's"
+    },
+    "bladeren": {
+      "see": "blad",
+      "form": "plural"
+    },
+    "blad": {
+      "type": "noun",
+      "en": "leaf",
+      "article": "het",
+      "plural": "bladeren / bladen",
+      "notes": [
+        "bladeren = leaves (of a tree)."
+      ]
+    },
+    "boom": {
+      "type": "noun",
+      "en": "tree",
+      "article": "de",
+      "plural": "bomen"
+    },
+    "bomen": {
+      "see": "boom",
+      "form": "plural"
+    },
+    "lucht": {
+      "type": "noun",
+      "en": "sky; air",
+      "article": "de",
+      "plural": "luchten"
+    },
+    "chef": {
+      "type": "noun",
+      "en": "chef; boss",
+      "article": "de",
+      "plural": "chefs"
+    },
+    "gerecht": {
+      "type": "noun",
+      "en": "dish (food)",
+      "article": "het",
+      "plural": "gerechten"
+    },
+    "vis": {
+      "type": "noun",
+      "en": "fish",
+      "article": "de",
+      "plural": "vissen"
+    },
+    "strand": {
+      "type": "noun",
+      "en": "beach",
+      "article": "het",
+      "plural": "stranden",
+      "notes": [
+        "“naar het strand” = to the beach."
+      ]
+    },
+    "ijsje": {
+      "type": "noun",
+      "en": "ice cream (a single one)",
+      "article": "het",
+      "plural": "ijsjes",
+      "notes": [
+        "-je words are always het-words."
+      ]
+    },
+    "deel": {
+      "type": "noun",
+      "en": "part",
+      "article": "het",
+      "plural": "delen",
+      "notes": [
+        "“een deel van” = part of."
+      ]
+    },
+    "marokko": {
+      "type": "name",
+      "en": "Morocco"
+    },
+    "gedeelte": {
+      "type": "noun",
+      "en": "part, section",
+      "article": "het",
+      "plural": "gedeelten / gedeeltes",
+      "notes": [
+        "Similar to “deel”."
+      ]
+    },
+    "trein": {
+      "type": "noun",
+      "en": "train",
+      "article": "de",
+      "plural": "treinen",
+      "notes": [
+        "“met de trein” = by train."
+      ]
+    },
+    "man": {
+      "type": "noun",
+      "en": "man; husband",
+      "article": "de",
+      "plural": "mannen",
+      "notes": [
+        "“mijn man” = my husband."
+      ]
+    },
+    "dienst": {
+      "type": "noun",
+      "en": "shift; service",
+      "article": "de",
+      "plural": "diensten",
+      "notes": [
+        "“een late dienst” = a late shift."
+      ]
+    },
+    "suikerfeest": {
+      "type": "noun",
+      "en": "Eid al-Fitr (end of Ramadan)",
+      "article": "het",
+      "plural": "suikerfeesten",
+      "notes": [
+        "Compound of suiker + feest: het feest → het suikerfeest."
+      ]
+    },
+    "godsdienst": {
+      "type": "noun",
+      "en": "religion",
+      "article": "de",
+      "plural": "godsdiensten"
+    },
+    "werk": {
+      "type": "noun",
+      "en": "work, job",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "“na het werk” = after work."
+      ]
+    },
+    "sportschool": {
+      "type": "noun",
+      "en": "gym",
+      "article": "de",
+      "plural": "sportscholen"
+    },
+    "doel": {
+      "type": "noun",
+      "en": "goal, aim",
+      "article": "het",
+      "plural": "doelen"
+    },
+    "cadeaus": {
+      "see": "cadeau",
+      "form": "plural"
+    },
+    "cadeau": {
+      "type": "noun",
+      "en": "present, gift",
+      "article": "het",
+      "plural": "cadeaus"
+    },
+    "doos": {
+      "type": "noun",
+      "en": "box",
+      "article": "de",
+      "plural": "dozen"
+    },
+    "weer": {
+      "type": "noun / adverb",
+      "en": "weather; again",
+      "notes": [
+        "het weer = the weather.",
+        "As an adverb: “weer zomer” = summer again."
+      ]
+    },
+    "zus": {
+      "type": "noun",
+      "en": "sister",
+      "article": "de",
+      "plural": "zussen"
+    },
+    "gebied": {
+      "type": "noun",
+      "en": "area, region",
+      "article": "het",
+      "plural": "gebieden"
+    },
+    "gelegenheid": {
+      "type": "noun",
+      "en": "opportunity, occasion",
+      "article": "de",
+      "plural": "gelegenheden"
+    },
+    "gemak": {
+      "type": "noun",
+      "en": "ease, comfort",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "“met gemak” = easily."
+      ]
+    },
+    "stappen": {
+      "see": "stap",
+      "form": "plural"
+    },
+    "stap": {
+      "type": "noun",
+      "en": "step",
+      "article": "de",
+      "plural": "stappen"
+    },
+    "geval": {
+      "type": "noun",
+      "en": "case",
+      "article": "het",
+      "plural": "gevallen",
+      "notes": [
+        "“in elk geval” = in any case, at least."
+      ]
+    },
+    "italië": {
+      "type": "name",
+      "en": "Italy"
+    },
+    "zon": {
+      "type": "noun",
+      "en": "sun",
+      "article": "de",
+      "plural": "zonnen",
+      "notes": [
+        "“de zon schijnt” = the sun is shining."
+      ]
+    },
+    "gezicht": {
+      "type": "noun",
+      "en": "face",
+      "article": "het",
+      "plural": "gezichten"
+    },
+    "tennis": {
+      "type": "noun",
+      "en": "tennis",
+      "article": "het",
+      "plural": "(no plural)"
+    },
+    "arm": {
+      "type": "noun / adjective",
+      "en": "arm; poor",
+      "notes": [
+        "de arm, plural armen.",
+        "As an adjective: arm = poor (opposite: rijk)."
+      ]
+    },
+    "pijn": {
+      "type": "noun",
+      "en": "pain",
+      "article": "de",
+      "plural": "pijnen",
+      "notes": [
+        "“pijn doen” = to hurt; “pijn hebben” = to be in pain."
+      ]
+    },
+    "vinger": {
+      "type": "noun",
+      "en": "finger",
+      "article": "de",
+      "plural": "vingers"
+    },
+    "tandarts": {
+      "type": "noun",
+      "en": "dentist",
+      "article": "de",
+      "plural": "tandartsen"
+    },
+    "mond": {
+      "type": "noun",
+      "en": "mouth",
+      "article": "de",
+      "plural": "monden"
+    },
+    "fietstocht": {
+      "type": "noun",
+      "en": "bike ride",
+      "article": "de",
+      "plural": "fietstochten"
+    },
+    "hoek": {
+      "type": "noun",
+      "en": "corner",
+      "article": "de",
+      "plural": "hoeken",
+      "notes": [
+        "“op de hoek” = on the corner."
+      ]
+    },
+    "straat": {
+      "type": "noun",
+      "en": "street",
+      "article": "de",
+      "plural": "straten"
+    },
+    "streek": {
+      "type": "noun",
+      "en": "region, area",
+      "article": "de",
+      "plural": "streken"
+    },
+    "hut": {
+      "type": "noun",
+      "en": "hut, cabin",
+      "article": "de",
+      "plural": "hutten"
+    },
+    "website": {
+      "type": "noun",
+      "en": "website",
+      "article": "de",
+      "plural": "websites"
+    },
+    "informatie": {
+      "type": "noun",
+      "en": "information",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "Uncountable: “veel informatie”."
+      ]
+    },
+    "festival": {
+      "type": "noun",
+      "en": "festival",
+      "article": "het",
+      "plural": "festivals"
+    },
+    "jeugd": {
+      "type": "noun",
+      "en": "youth, childhood",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“in mijn jeugd” = when I was young."
+      ]
+    },
+    "utrecht": {
+      "type": "name",
+      "en": "Utrecht (city)"
+    },
+    "karakter": {
+      "type": "noun",
+      "en": "character, personality",
+      "article": "het",
+      "plural": "karakters"
+    },
+    "klanten": {
+      "see": "klant",
+      "form": "plural"
+    },
+    "klant": {
+      "type": "noun",
+      "en": "customer",
+      "article": "de",
+      "plural": "klanten"
+    },
+    "winkel": {
+      "type": "noun",
+      "en": "shop",
+      "article": "de",
+      "plural": "winkels"
+    },
+    "koningin": {
+      "type": "noun",
+      "en": "queen",
+      "article": "de",
+      "plural": "koninginnen",
+      "notes": [
+        "de koning = the king."
+      ]
+    },
+    "griep": {
+      "type": "noun",
+      "en": "flu",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "kracht": {
+      "type": "noun",
+      "en": "strength, power",
+      "article": "de",
+      "plural": "krachten"
+    },
+    "leiding": {
+      "type": "noun",
+      "en": "leadership, guidance",
+      "article": "de",
+      "plural": "leidingen",
+      "notes": [
+        "“onder leiding van” = led by."
+      ]
+    },
+    "gids": {
+      "type": "noun",
+      "en": "guide",
+      "article": "de",
+      "plural": "gidsen"
+    },
+    "kerk": {
+      "type": "noun",
+      "en": "church",
+      "article": "de",
+      "plural": "kerken"
+    },
+    "machine": {
+      "type": "noun",
+      "en": "machine",
+      "article": "de",
+      "plural": "machines"
+    },
+    "station": {
+      "type": "noun",
+      "en": "station",
+      "article": "het",
+      "plural": "stations"
+    },
+    "mening": {
+      "type": "noun",
+      "en": "opinion",
+      "article": "de",
+      "plural": "meningen",
+      "notes": [
+        "“wat is jouw mening over …?” = what do you think about …?"
+      ]
+    },
+    "zwembad": {
+      "type": "noun",
+      "en": "swimming pool",
+      "article": "het",
+      "plural": "zwembaden"
+    },
+    "meter": {
+      "type": "noun",
+      "en": "metre",
+      "article": "de",
+      "plural": "meters",
+      "notes": [
+        "After a number it stays singular: “25 meter”."
+      ]
+    },
+    "vervoer": {
+      "type": "noun",
+      "en": "transport",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "“het openbaar vervoer” (OV) = public transport."
+      ]
+    },
+    "milieu": {
+      "type": "noun",
+      "en": "environment",
+      "article": "het",
+      "plural": "milieus"
+    },
+    "museum": {
+      "type": "noun",
+      "en": "museum",
+      "article": "het",
+      "plural": "musea / museums"
+    },
+    "kunst": {
+      "type": "noun",
+      "en": "art",
+      "article": "de",
+      "plural": "kunsten"
+    },
+    "moeite": {
+      "type": "noun",
+      "en": "effort, trouble",
+      "article": "de",
+      "plural": "moeites",
+      "notes": [
+        "“de moeite waard” = worth it."
+      ]
+    },
+    "dorp": {
+      "type": "noun",
+      "en": "village",
+      "article": "het",
+      "plural": "dorpen"
+    },
+    "fietssleutel": {
+      "type": "noun",
+      "en": "bike key",
+      "article": "de",
+      "plural": "fietssleutels",
+      "notes": [
+        "Compound: fiets + sleutel → de sleutel → de fietssleutel."
+      ]
+    },
+    "paspoort": {
+      "type": "noun",
+      "en": "passport",
+      "article": "het",
+      "plural": "paspoorten"
+    },
+    "kaart": {
+      "type": "noun",
+      "en": "map; card; ticket",
+      "article": "de",
+      "plural": "kaarten"
+    },
+    "olie": {
+      "type": "noun",
+      "en": "oil",
+      "article": "de",
+      "plural": "oliën"
+    },
+    "beetje": {
+      "type": "noun",
+      "en": "a little, a bit",
+      "article": "het",
+      "plural": "beetjes",
+      "notes": [
+        "“een beetje” = a bit."
+      ]
+    },
+    "regen": {
+      "type": "noun",
+      "en": "rain",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "oorzaak": {
+      "type": "noun",
+      "en": "cause",
+      "article": "de",
+      "plural": "oorzaken"
+    },
+    "vertraging": {
+      "type": "noun",
+      "en": "delay",
+      "article": "de",
+      "plural": "vertragingen"
+    },
+    "opleiding": {
+      "type": "noun",
+      "en": "education, training (course)",
+      "article": "de",
+      "plural": "opleidingen"
+    },
+    "dochter": {
+      "type": "noun",
+      "en": "daughter",
+      "article": "de",
+      "plural": "dochters"
+    },
+    "gasten": {
+      "see": "gast",
+      "form": "plural"
+    },
+    "gast": {
+      "type": "noun",
+      "en": "guest",
+      "article": "de",
+      "plural": "gasten"
+    },
+    "uur": {
+      "type": "noun",
+      "en": "hour; o'clock",
+      "article": "het",
+      "plural": "uren",
+      "notes": [
+        "“elk half uur” = every half hour."
+      ]
+    },
+    "bus": {
+      "type": "noun",
+      "en": "bus",
+      "article": "de",
+      "plural": "bussen"
+    },
+    "huis": {
+      "type": "noun",
+      "en": "house, home",
+      "article": "het",
+      "plural": "huizen"
+    },
+    "plaats": {
+      "type": "noun",
+      "en": "place; seat",
+      "article": "de",
+      "plural": "plaatsen",
+      "notes": [
+        "“is deze plaats vrij?” = is this seat free?"
+      ]
+    },
+    "nieuws": {
+      "type": "noun",
+      "en": "news",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "“op het nieuws” = on the news."
+      ]
+    },
+    "president": {
+      "type": "noun",
+      "en": "president",
+      "article": "de",
+      "plural": "presidenten"
+    },
+    "amerika": {
+      "type": "name",
+      "en": "America"
+    },
+    "boerderij": {
+      "type": "noun",
+      "en": "farm",
+      "article": "de",
+      "plural": "boerderijen"
+    },
+    "kaas": {
+      "type": "noun",
+      "en": "cheese",
+      "article": "de",
+      "plural": "kazen"
+    },
+    "melk": {
+      "type": "noun",
+      "en": "milk",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "nicht": {
+      "type": "noun",
+      "en": "niece; female cousin",
+      "article": "de",
+      "plural": "nichten"
+    },
+    "studente": {
+      "type": "noun",
+      "en": "(female) student",
+      "article": "de",
+      "plural": "studentes",
+      "notes": [
+        "Male: de student."
+      ]
+    },
+    "psychologie": {
+      "type": "noun",
+      "en": "psychology",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "hotel": {
+      "type": "noun",
+      "en": "hotel",
+      "article": "het",
+      "plural": "hotels"
+    },
+    "mensen": {
+      "see": "mens",
+      "form": "plural"
+    },
+    "mens": {
+      "type": "noun",
+      "en": "person, human being",
+      "article": "de",
+      "plural": "mensen"
+    },
+    "rest": {
+      "type": "noun",
+      "en": "rest, remainder",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“de rest van de dag” = the rest of the day."
+      ]
+    },
+    "wereld": {
+      "type": "noun",
+      "en": "world",
+      "article": "de",
+      "plural": "werelden",
+      "notes": [
+        "“een reis om de wereld” = a trip around the world."
+      ]
+    },
+    "rook": {
+      "type": "noun",
+      "en": "smoke",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "barbecue": {
+      "type": "noun",
+      "en": "barbecue",
+      "article": "de",
+      "plural": "barbecues"
+    },
+    "straatfeest": {
+      "type": "noun",
+      "en": "street party",
+      "article": "het",
+      "plural": "straatfeesten",
+      "notes": [
+        "Compound: het feest → het straatfeest."
+      ]
+    },
+    "samenwerking": {
+      "type": "noun",
+      "en": "cooperation, collaboration",
+      "article": "de",
+      "plural": "samenwerkingen"
+    },
+    "buren": {
+      "see": "buurman",
+      "form": "plural (de buren = the neighbours)"
+    },
+    "spoor": {
+      "type": "noun",
+      "en": "track, platform",
+      "article": "het",
+      "plural": "sporen",
+      "notes": [
+        "“de trein vertrekt van spoor 5” = from platform 5."
+      ]
+    },
+    "seconden": {
+      "see": "seconde",
+      "form": "plural"
+    },
+    "seconde": {
+      "type": "noun",
+      "en": "second",
+      "article": "de",
+      "plural": "seconden"
+    },
+    "fiets": {
+      "type": "noun",
+      "en": "bike",
+      "article": "de",
+      "plural": "fietsen",
+      "notes": [
+        "Also: ik fiets (fietsen)."
+      ]
+    },
+    "slot": {
+      "type": "noun",
+      "en": "lock",
+      "article": "het",
+      "plural": "sloten",
+      "notes": [
+        "“op slot” = locked; “op slot zetten” = to lock."
+      ]
+    },
+    "snelheid": {
+      "type": "noun",
+      "en": "speed",
+      "article": "de",
+      "plural": "snelheden"
+    },
+    "wedstrijd": {
+      "type": "noun",
+      "en": "match, competition",
+      "article": "de",
+      "plural": "wedstrijden"
+    },
+    "spanning": {
+      "type": "noun",
+      "en": "tension, excitement",
+      "article": "de",
+      "plural": "spanningen"
+    },
+    "deur": {
+      "type": "noun",
+      "en": "door",
+      "article": "de",
+      "plural": "deuren",
+      "notes": [
+        "“voor de deur” = in front of the door."
+      ]
+    },
+    "succes": {
+      "type": "noun",
+      "en": "success; good luck",
+      "article": "het",
+      "plural": "successen",
+      "notes": [
+        "“Succes!” / “Veel succes!” = Good luck!"
+      ]
+    },
+    "examen": {
+      "type": "noun",
+      "en": "exam",
+      "article": "het",
+      "plural": "examens"
+    },
+    "wijkkrant": {
+      "type": "noun",
+      "en": "neighbourhood newspaper",
+      "article": "de",
+      "plural": "wijkkranten",
+      "notes": [
+        "Compound: de krant → de wijkkrant."
+      ]
+    },
+    "tekst": {
+      "type": "noun",
+      "en": "text",
+      "article": "de",
+      "plural": "teksten"
+    },
+    "weekend": {
+      "type": "noun",
+      "en": "weekend",
+      "article": "het",
+      "plural": "weekenden / weekends",
+      "notes": [
+        "“in het weekend” = at the weekend."
+      ]
+    },
+    "woord": {
+      "type": "noun",
+      "en": "word",
+      "article": "het",
+      "plural": "woorden"
+    },
+    "techniek": {
+      "type": "noun",
+      "en": "technology, technique",
+      "article": "de",
+      "plural": "technieken",
+      "notes": [
+        "“goed in techniek” = good at technical things."
+      ]
+    },
+    "boek": {
+      "type": "noun",
+      "en": "book",
+      "article": "het",
+      "plural": "boeken"
+    },
+    "toekomst": {
+      "type": "noun",
+      "en": "future",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“in de toekomst” = in the future."
+      ]
+    },
+    "trap": {
+      "type": "noun",
+      "en": "stairs, staircase",
+      "article": "de",
+      "plural": "trappen"
+    },
+    "broer": {
+      "type": "noun",
+      "en": "brother",
+      "article": "de",
+      "plural": "broers"
+    },
+    "broers": {
+      "see": "broer",
+      "form": "plural"
+    },
+    "sneeuw": {
+      "type": "noun",
+      "en": "snow",
+      "article": "de",
+      "plural": "(no plural)"
+    },
+    "nederland": {
+      "type": "name",
+      "en": "the Netherlands",
+      "notes": [
+        "Nederlands = Dutch."
+      ]
+    },
+    "verslag": {
+      "type": "noun",
+      "en": "report",
+      "article": "het",
+      "plural": "verslagen",
+      "notes": [
+        "“een verslag schrijven van/over” = to write a report on."
+      ]
+    },
+    "vloer": {
+      "type": "noun",
+      "en": "floor",
+      "article": "de",
+      "plural": "vloeren"
+    },
+    "voordeel": {
+      "type": "noun",
+      "en": "advantage",
+      "article": "het",
+      "plural": "voordelen",
+      "notes": [
+        "Opposite: het nadeel."
+      ]
+    },
+    "file": {
+      "type": "noun",
+      "en": "traffic jam",
+      "article": "de",
+      "plural": "files",
+      "notes": [
+        "“in de file staan” = to be stuck in traffic."
+      ]
+    },
+    "voorwerpen": {
+      "see": "voorwerp",
+      "form": "plural (gevonden voorwerpen = lost and found)"
+    },
+    "voorwerp": {
+      "type": "noun",
+      "en": "object, item",
+      "article": "het",
+      "plural": "voorwerpen"
+    },
+    "tas": {
+      "type": "noun",
+      "en": "bag",
+      "article": "de",
+      "plural": "tassen"
+    },
+    "wandeling": {
+      "type": "noun",
+      "en": "walk",
+      "article": "de",
+      "plural": "wandelingen"
+    },
+    "water": {
+      "type": "noun",
+      "en": "water",
+      "article": "het",
+      "plural": "(no plural)"
+    },
+    "zaken": {
+      "type": "noun",
+      "en": "business; matters",
+      "article": "de",
+      "plural": "(plural of de zaak)",
+      "notes": [
+        "“voor zaken” = on business."
+      ]
+    },
+    "duitsland": {
+      "type": "name",
+      "en": "Germany"
+    },
+    "foto's": {
+      "see": "foto",
+      "form": "plural"
+    },
+    "foto": {
+      "type": "noun",
+      "en": "photo",
+      "article": "de",
+      "plural": "foto's",
+      "notes": [
+        "“foto's maken” = to take photos."
+      ]
+    },
+    "bed": {
+      "type": "noun",
+      "en": "bed",
+      "article": "het",
+      "plural": "bedden",
+      "notes": [
+        "“naar bed gaan” = to go to bed."
+      ]
+    },
+    "aantal": {
+      "type": "noun",
+      "en": "number (of), amount",
+      "article": "het",
+      "plural": "aantallen",
+      "notes": [
+        "“een groot aantal mensen” = a large number of people (verb usually singular)."
+      ]
+    },
+    "uitnodiging": {
+      "type": "noun",
+      "en": "invitation",
+      "article": "de",
+      "plural": "uitnodigingen",
+      "notes": [
+        "Words ending in -ing are de-words."
+      ]
+    },
+    "picknick": {
+      "type": "noun",
+      "en": "picnic",
+      "article": "de",
+      "plural": "picknicks"
+    },
+    "afval": {
+      "type": "noun",
+      "en": "waste, rubbish",
+      "article": "het",
+      "plural": "(no plural)"
+    },
+    "angst": {
+      "type": "noun",
+      "en": "fear",
+      "article": "de",
+      "plural": "angsten",
+      "notes": [
+        "More common in speech: “bang zijn voor”."
+      ]
+    },
+    "pet": {
+      "type": "noun",
+      "en": "cap",
+      "article": "de",
+      "plural": "petten"
+    },
+    "bescherming": {
+      "type": "noun",
+      "en": "protection",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“bescherming tegen” = protection against."
+      ]
+    },
+    "briefje": {
+      "type": "noun",
+      "en": "note",
+      "article": "het",
+      "plural": "briefjes",
+      "notes": [
+        "Small letter (de brief + -je); -je words are het-words."
+      ]
+    },
+    "radio": {
+      "type": "noun",
+      "en": "radio",
+      "article": "de",
+      "plural": "radio's"
+    },
+    "muziek": {
+      "type": "noun",
+      "en": "music",
+      "article": "de",
+      "plural": "(no plural)",
+      "notes": [
+        "“naar muziek luisteren” = to listen to music."
+      ]
+    },
+    "zee": {
+      "type": "noun",
+      "en": "sea",
+      "article": "de",
+      "plural": "zeeën",
+      "notes": [
+        "“langs de zee” = along the sea."
+      ]
+    },
+    "echtgenoot": {
+      "type": "noun",
+      "en": "husband, spouse",
+      "article": "de",
+      "plural": "echtgenoten",
+      "notes": [
+        "Formal word; female: de echtgenote. Daily speech: mijn man / mijn vrouw."
+      ]
+    },
+    "turkije": {
+      "type": "name",
+      "en": "Turkey"
+    },
+    "amsterdam": {
+      "type": "name",
+      "en": "Amsterdam"
+    },
+    "luister": {
+      "see": "luisteren",
+      "form": "present, ik"
+    },
+    "gouden": {
+      "type": "adjective",
+      "en": "golden, gold",
+      "notes": [
+        "Never changes: “een gouden ring”."
+      ]
+    },
+    "tien": {
+      "type": "number",
+      "en": "ten"
+    },
+    "vier": {
+      "type": "number",
+      "en": "four",
+      "notes": [
+        "Also: “ik vier” = I celebrate (vieren)."
+      ]
+    },
+    "twee": {
+      "type": "number",
+      "en": "two"
+    },
+    "vijf": {
+      "type": "number",
+      "en": "five"
+    },
+    "vijfentwintig": {
+      "type": "number",
+      "en": "twenty-five",
+      "notes": [
+        "Dutch says the unit first: vijf-en-twintig."
+      ]
+    },
+    "tienduizend": {
+      "type": "number",
+      "en": "ten thousand"
+    },
+    "half": {
+      "type": "adjective",
+      "en": "half",
+      "notes": [
+        "“elk half uur” = every half hour."
+      ]
+    },
+    "morgen": {
+      "type": "adverb",
+      "en": "tomorrow",
+      "notes": [
+        "Also noun: de morgen = morning."
+      ]
+    },
+    "vorige": {
+      "type": "adjective",
+      "en": "last, previous",
+      "notes": [
+        "“vorige week” (de-word), but “vorig jaar” (het-word)."
+      ]
+    },
+    "vorig": {
+      "type": "adjective",
+      "en": "last, previous",
+      "notes": [
+        "No -e with het-words: “vorig jaar”."
+      ]
+    },
+    "volgend": {
+      "type": "adjective",
+      "en": "next",
+      "notes": [
+        "“volgend jaar” (het), “volgende week” (de)."
+      ]
+    },
+    "leuk": {
+      "type": "adjective",
+      "en": "nice, fun",
+      "notes": [
+        "“ik vind het leuk” = I like it."
+      ]
+    },
+    "leuke": {
+      "see": "leuk",
+      "form": "adjective with -e (before de-words and plurals, and after de/het/dit/mijn etc.)"
+    },
+    "warm": {
+      "type": "adjective",
+      "en": "warm, hot"
+    },
+    "droog": {
+      "type": "adjective",
+      "en": "dry",
+      "notes": [
+        "Opposite: nat."
+      ]
+    },
+    "nat": {
+      "type": "adjective",
+      "en": "wet",
+      "notes": [
+        "Opposite: droog."
+      ]
+    },
+    "koel": {
+      "type": "adjective",
+      "en": "cool, chilly"
+    },
+    "buiten": {
+      "type": "adverb",
+      "en": "outside",
+      "notes": [
+        "Opposite: binnen."
+      ]
+    },
+    "daar": {
+      "type": "adverb",
+      "en": "there",
+      "notes": [
+        "Can start the sentence: “daar is het warm” (inversion)."
+      ]
+    },
+    "smal": {
+      "type": "adjective",
+      "en": "narrow",
+      "notes": [
+        "Opposite: breed."
+      ]
+    },
+    "hele": {
+      "type": "adjective",
+      "en": "whole, entire",
+      "notes": [
+        "“de hele familie” = the whole family (heel + -e)."
+      ]
+    },
+    "heel": {
+      "type": "adverb / adjective",
+      "en": "very; whole",
+      "notes": [
+        "“heel mooi” = very beautiful."
+      ]
+    },
+    "helemaal": {
+      "type": "adverb",
+      "en": "completely, totally"
+    },
+    "al": {
+      "type": "adverb",
+      "en": "already; for (time)",
+      "notes": [
+        "“al tien jaar” = for ten years (and still)."
+      ]
+    },
+    "hoe": {
+      "type": "question word",
+      "en": "how",
+      "notes": [
+        "“hoe laat?” = what time?"
+      ]
+    },
+    "laat": {
+      "type": "adjective / adverb",
+      "en": "late",
+      "notes": [
+        "“hoe laat is het?” = what time is it?",
+        "Also a form of laten (to let)."
+      ]
+    },
+    "late": {
+      "see": "laat",
+      "form": "adjective with -e"
+    },
+    "elk": {
+      "type": "determiner",
+      "en": "each, every",
+      "notes": [
+        "With het-words: “elk jaar”."
+      ]
+    },
+    "elke": {
+      "type": "determiner",
+      "en": "each, every",
+      "notes": [
+        "With de-words: “elke dag”, “elke week”."
+      ]
+    },
+    "groot": {
+      "type": "adjective",
+      "en": "big, large",
+      "notes": [
+        "“een groot feest” (het-word, no -e after een)."
+      ]
+    },
+    "grote": {
+      "see": "groot",
+      "form": "adjective with -e"
+    },
+    "grootste": {
+      "see": "groot",
+      "form": "superlative with -e: the biggest / most"
+    },
+    "even": {
+      "type": "adverb",
+      "en": "just, for a moment",
+      "notes": [
+        "Makes a request softer: “kun je even …?”"
+      ]
+    },
+    "burgerlijke": {
+      "see": "burgerlijk",
+      "form": "adjective with -e"
+    },
+    "burgerlijk": {
+      "type": "adjective",
+      "en": "civil",
+      "notes": [
+        "“burgerlijke staat” = marital status; “de burgerlijke stand” = registry office."
+      ]
+    },
+    "sinds": {
+      "type": "preposition",
+      "en": "since, for",
+      "notes": [
+        "“sinds een jaar” = for a year (and still)."
+      ]
+    },
+    "meer": {
+      "type": "adverb",
+      "en": "more; any more",
+      "notes": [
+        "“niet meer” = not any more."
+      ]
+    },
+    "zoveel": {
+      "type": "adverb",
+      "en": "so much, that much"
+    },
+    "ook": {
+      "type": "adverb",
+      "en": "also, too"
+    },
+    "verdrietig": {
+      "type": "adjective",
+      "en": "sad"
+    },
+    "voorbij": {
+      "type": "adjective / adverb",
+      "en": "over, past",
+      "notes": [
+        "“de vakantie is voorbij” = the holiday is over."
+      ]
+    },
+    "boven": {
+      "type": "adverb",
+      "en": "upstairs; above",
+      "notes": [
+        "Opposite: beneden."
+      ]
+    },
+    "eigen": {
+      "type": "adjective",
+      "en": "own",
+      "notes": [
+        "Never gets an -e: “mijn eigen kamer”."
+      ]
+    },
+    "lange": {
+      "see": "lang",
+      "form": "adjective with -e"
+    },
+    "lang": {
+      "type": "adjective",
+      "en": "long; tall"
+    },
+    "nodig": {
+      "type": "adjective",
+      "en": "needed",
+      "notes": [
+        "“nodig hebben” = to need: nodig goes to the end."
+      ]
+    },
+    "veel": {
+      "type": "adverb / determiner",
+      "en": "much, many, a lot of"
+    },
+    "samen": {
+      "type": "adverb",
+      "en": "together"
+    },
+    "fijn": {
+      "type": "adjective",
+      "en": "nice, pleasant"
+    },
+    "blauw": {
+      "type": "adjective",
+      "en": "blue"
+    },
+    "bruin": {
+      "type": "adjective",
+      "en": "brown"
+    },
+    "eenvoudig": {
+      "type": "adjective",
+      "en": "simple, easy"
+    },
+    "eerst": {
+      "type": "adverb",
+      "en": "first",
+      "notes": [
+        "At the start it causes inversion: “eerst gaan we …”."
+      ]
+    },
+    "dan": {
+      "type": "adverb",
+      "en": "then; than",
+      "notes": [
+        "At the start it causes inversion: “dan eten we …”."
+      ]
+    },
+    "direct": {
+      "type": "adverb",
+      "en": "directly, straight away"
+    },
+    "belangrijk": {
+      "type": "adjective",
+      "en": "important"
+    },
+    "eindelijk": {
+      "type": "adverb",
+      "en": "finally, at last"
+    },
+    "emotioneel": {
+      "type": "adjective",
+      "en": "emotional"
+    },
+    "verboden": {
+      "see": "verbieden",
+      "form": "past participle (verboden = forbidden)"
+    },
+    "verbieden": {
+      "type": "verb (irregular)",
+      "en": "to forbid",
+      "forms": {
+        "ik": "verbied",
+        "jij/u": "verbiedt",
+        "hij/zij": "verbiedt",
+        "wij/jullie/zij": "verbieden"
+      },
+      "past": "verbood / verboden",
+      "perfect": "heeft verboden",
+      "notes": [
+        "“het is verboden om …” = it is not allowed to …"
+      ]
+    },
+    "goede": {
+      "see": "goed",
+      "form": "adjective with -e"
+    },
+    "goed": {
+      "type": "adjective",
+      "en": "good; well",
+      "notes": [
+        "goed – beter – best."
+      ]
+    },
+    "beter": {
+      "see": "goed",
+      "form": "comparative: better"
+    },
+    "geweldig": {
+      "type": "adjective",
+      "en": "great, wonderful"
+    },
+    "gezellig": {
+      "type": "adjective",
+      "en": "cosy, fun, nice (with people)",
+      "notes": [
+        "Very Dutch word: a nice, friendly atmosphere."
+      ]
+    },
+    "gunstig": {
+      "type": "adjective",
+      "en": "favourable, good (for)"
+    },
+    "hoog": {
+      "type": "adjective",
+      "en": "high, tall"
+    },
+    "hoge": {
+      "see": "hoog",
+      "form": "adjective with -e (one o: hoge)"
+    },
+    "erg": {
+      "type": "adverb",
+      "en": "very",
+      "notes": [
+        "“erg hoog” = very high."
+      ]
+    },
+    "kleine": {
+      "see": "klein",
+      "form": "adjective with -e"
+    },
+    "klein": {
+      "type": "adjective",
+      "en": "small, little"
+    },
+    "juiste": {
+      "see": "juist",
+      "form": "adjective with -e"
+    },
+    "juist": {
+      "type": "adjective",
+      "en": "right, correct"
+    },
+    "vrolijk": {
+      "type": "adjective",
+      "en": "cheerful, happy"
+    },
+    "weinig": {
+      "type": "adverb / determiner",
+      "en": "little, few",
+      "notes": [
+        "Opposite: veel."
+      ]
+    },
+    "links": {
+      "type": "adverb",
+      "en": "left",
+      "notes": [
+        "“naar links” = to the left; opposite: rechts."
+      ]
+    },
+    "kapot": {
+      "type": "adjective",
+      "en": "broken"
+    },
+    "moderne": {
+      "see": "modern",
+      "form": "adjective with -e"
+    },
+    "modern": {
+      "type": "adjective",
+      "en": "modern"
+    },
+    "echt": {
+      "type": "adverb / adjective",
+      "en": "really; real"
+    },
+    "waard": {
+      "type": "adjective",
+      "en": "worth",
+      "notes": [
+        "“de moeite waard” = worth it."
+      ]
+    },
+    "nee": {
+      "type": "interjection",
+      "en": "no",
+      "notes": [
+        "Does not count as a position: “nee, ik kan niet”."
+      ]
+    },
+    "niks": {
+      "type": "pronoun",
+      "en": "nothing",
+      "notes": [
+        "Informal for niets."
+      ]
+    },
+    "nergens": {
+      "type": "adverb",
+      "en": "nowhere",
+      "notes": [
+        "Opposite: overal."
+      ]
+    },
+    "noodzakelijk": {
+      "type": "adjective",
+      "en": "necessary"
+    },
+    "nuttig": {
+      "type": "adjective",
+      "en": "useful"
+    },
+    "toch": {
+      "type": "adverb",
+      "en": "still, anyway"
+    },
+    "ongetwijfeld": {
+      "type": "adverb",
+      "en": "undoubtedly, surely"
+    },
+    "ooit": {
+      "type": "adverb",
+      "en": "ever",
+      "notes": [
+        "“ben je ooit … geweest?” = have you ever been …?"
+      ]
+    },
+    "overige": {
+      "see": "overig",
+      "form": "adjective with -e"
+    },
+    "overig": {
+      "type": "adjective",
+      "en": "other, remaining",
+      "notes": [
+        "Mostly used as “de overige …” = the other/remaining …"
+      ]
+    },
+    "vrij": {
+      "type": "adjective",
+      "en": "free",
+      "notes": [
+        "“is deze plaats vrij?” = is this seat free?"
+      ]
+    },
+    "nog": {
+      "type": "adverb",
+      "en": "still; yet"
+    },
+    "plotseling": {
+      "type": "adverb",
+      "en": "suddenly"
+    },
+    "donker": {
+      "type": "adjective",
+      "en": "dark",
+      "notes": [
+        "Opposite: licht."
+      ]
+    },
+    "redelijk": {
+      "type": "adjective / adverb",
+      "en": "reasonable; reasonably, fairly"
+    },
+    "goedkoop": {
+      "type": "adjective",
+      "en": "cheap",
+      "notes": [
+        "Opposite: duur."
+      ]
+    },
+    "vriendelijk": {
+      "type": "adjective",
+      "en": "friendly, kind"
+    },
+    "thuis": {
+      "type": "adverb",
+      "en": "at home",
+      "notes": [
+        "“thuis blijven” = to stay at home."
+      ]
+    },
+    "rijk": {
+      "type": "adjective",
+      "en": "rich",
+      "notes": [
+        "Opposite: arm."
+      ]
+    },
+    "schoon": {
+      "type": "adjective",
+      "en": "clean",
+      "notes": [
+        "Also the particle of schoonmaken: “we maken het schoon”."
+      ]
+    },
+    "altijd": {
+      "type": "adverb",
+      "en": "always"
+    },
+    "snel": {
+      "type": "adjective / adverb",
+      "en": "fast, quick(ly)"
+    },
+    "korte": {
+      "see": "kort",
+      "form": "adjective with -e"
+    },
+    "kort": {
+      "type": "adjective",
+      "en": "short"
+    },
+    "soms": {
+      "type": "adverb",
+      "en": "sometimes"
+    },
+    "vaak": {
+      "type": "adverb",
+      "en": "often"
+    },
+    "vroeg": {
+      "type": "adjective / adverb",
+      "en": "early",
+      "notes": [
+        "Opposite: laat. Also past of vragen: ik vroeg (I asked)."
+      ]
+    },
+    "fit": {
+      "type": "adjective",
+      "en": "fit, rested"
+    },
+    "graag": {
+      "type": "adverb",
+      "en": "gladly, with pleasure",
+      "notes": [
+        "“ik doe het graag” = I like doing it."
+      ]
+    },
+    "liefst": {
+      "type": "adverb",
+      "en": "most of all (het liefst)",
+      "notes": [
+        "graag – liever – het liefst."
+      ]
+    },
+    "allebei": {
+      "type": "pronoun",
+      "en": "both",
+      "notes": [
+        "After the verb: “ze komen allebei”."
+      ]
+    },
+    "zo": {
+      "type": "adverb",
+      "en": "so",
+      "notes": [
+        "“niet zo goed” = not so well."
+      ]
+    },
+    "ver": {
+      "type": "adjective / adverb",
+      "en": "far",
+      "notes": [
+        "“ver weg” = far away."
+      ]
+    },
+    "weg": {
+      "type": "adverb",
+      "en": "away, gone",
+      "notes": [
+        "“ver weg” = far away."
+      ]
+    },
+    "heen": {
+      "type": "adverb",
+      "en": "(to) there, away",
+      "notes": [
+        "“waar ga je heen?” = where are you going (to)?"
+      ]
+    },
+    "zichzelf": {
+      "type": "pronoun",
+      "en": "himself, herself, itself"
+    },
+    "me": {
+      "type": "pronoun",
+      "en": "me, myself",
+      "notes": [
+        "Reflexive: “ik voel me goed”."
+      ]
+    },
+    "meestal": {
+      "type": "adverb",
+      "en": "usually"
+    },
+    "bijvoorbeeld": {
+      "type": "adverb",
+      "en": "for example",
+      "notes": [
+        "Short: bijv."
+      ]
+    },
+    "iedereen": {
+      "type": "pronoun",
+      "en": "everyone",
+      "notes": [
+        "Takes a singular verb: “iedereen komt”."
+      ]
+    },
+    "geen": {
+      "type": "article (negative)",
+      "en": "no, not a",
+      "notes": [
+        "Negates a noun with een or no article: “geen file”."
+      ]
+    },
+    "niet": {
+      "type": "adverb",
+      "en": "not",
+      "notes": [
+        "Usually after the object: “ik ken dat woord niet”."
+      ]
+    },
+    "deze": {
+      "type": "demonstrative",
+      "en": "this, these (de-words)",
+      "notes": [
+        "With het-words: dit."
+      ]
+    },
+    "dit": {
+      "type": "demonstrative",
+      "en": "this (het-words); this is",
+      "notes": [
+        "“dit is …” = this is …"
+      ]
+    },
+    "dat": {
+      "type": "demonstrative / conjunction",
+      "en": "that",
+      "notes": [
+        "As a conjunction it sends the verb to the end: “… dat je geen file hebt”."
+      ]
+    },
+    "ik": {
+      "type": "pronoun",
+      "en": "I"
+    },
+    "je": {
+      "type": "pronoun / possessive",
+      "en": "you; your",
+      "notes": [
+        "Unstressed form of jij / jouw."
+      ]
+    },
+    "jij": {
+      "type": "pronoun",
+      "en": "you (informal)",
+      "notes": [
+        "When jij comes after the verb, the -t drops: “jij werkt” → “werk jij?”."
+      ]
+    },
+    "jouw": {
+      "type": "possessive",
+      "en": "your (informal)"
+    },
+    "u": {
+      "type": "pronoun",
+      "en": "you (formal)",
+      "notes": [
+        "Formal: use with strangers and officials."
+      ]
+    },
+    "we": {
+      "type": "pronoun",
+      "en": "we",
+      "notes": [
+        "Unstressed form of wij."
+      ]
+    },
+    "wij": {
+      "type": "pronoun",
+      "en": "we"
+    },
+    "ze": {
+      "type": "pronoun",
+      "en": "they; she; them",
+      "notes": [
+        "Unstressed form of zij / hen."
+      ]
+    },
+    "hem": {
+      "type": "pronoun",
+      "en": "him",
+      "notes": [
+        "Object form of hij."
+      ]
+    },
+    "mijn": {
+      "type": "possessive",
+      "en": "my"
+    },
+    "hun": {
+      "type": "possessive",
+      "en": "their"
+    },
+    "ons": {
+      "type": "possessive",
+      "en": "our (het-words); us",
+      "notes": [
+        "“ons huis” (het) but “onze stad” (de)."
+      ]
+    },
+    "onze": {
+      "type": "possessive",
+      "en": "our (de-words and plural)",
+      "notes": [
+        "“onze stad”, “onze reis”."
+      ]
+    },
+    "het": {
+      "type": "article / pronoun",
+      "en": "the (het-words); it",
+      "notes": [
+        "“het is …” = it is …"
+      ]
+    },
+    "er": {
+      "type": "adverb",
+      "en": "there",
+      "notes": [
+        "“er is / er zijn” = there is / there are."
+      ]
+    },
+    "wat": {
+      "type": "question word",
+      "en": "what"
+    },
+    "waar": {
+      "type": "question word",
+      "en": "where"
+    },
+    "en": {
+      "type": "conjunction",
+      "en": "and",
+      "notes": [
+        "Does not change the word order."
+      ]
+    },
+    "want": {
+      "type": "conjunction",
+      "en": "because, for",
+      "notes": [
+        "Normal word order after want (verb 2nd); after omdat the verb goes to the end."
+      ]
+    },
+    "omdat": {
+      "type": "conjunction",
+      "en": "because",
+      "notes": [
+        "omdat sends the verb to the end: “omdat de vakantie voorbij is”."
+      ]
+    },
+    "als": {
+      "type": "conjunction",
+      "en": "if, when",
+      "notes": [
+        "als sends the verb to the end: “als ik rijk word”."
+      ]
+    },
+    "alsof": {
+      "type": "conjunction",
+      "en": "as if",
+      "notes": [
+        "Sends the verb to the end: “hij doet alsof hij slaapt”."
+      ]
+    },
+    "terwijl": {
+      "type": "conjunction",
+      "en": "while",
+      "notes": [
+        "Sends the verb to the end: “terwijl de kinderen zwemmen”."
+      ]
+    },
+    "zodat": {
+      "type": "conjunction",
+      "en": "so that",
+      "notes": [
+        "Sends the verb to the end: “zodat ik fit ben”."
+      ]
+    },
+    "dus": {
+      "type": "conjunction / adverb",
+      "en": "so",
+      "notes": [
+        "After dus both “dus ik ga” and “dus ga ik” are correct."
+      ]
+    },
+    "vervolgens": {
+      "type": "adverb",
+      "en": "then, after that",
+      "notes": [
+        "At the start of a clause it causes inversion."
+      ]
+    },
+    "ondanks": {
+      "type": "preposition",
+      "en": "despite, in spite of"
+    },
+    "behalve": {
+      "type": "preposition",
+      "en": "except"
+    },
+    "te": {
+      "type": "particle",
+      "en": "to (before an infinitive)",
+      "notes": [
+        "“om … te + infinitive”: te + verb at the end."
+      ]
+    },
+    "op": {
+      "type": "preposition / particle",
+      "en": "on; at",
+      "notes": [
+        "“op zondag” = on Sunday. Also the particle of opbellen: “ik bel je op”."
+      ]
+    },
+    "voor": {
+      "type": "preposition",
+      "en": "for; in front of; before"
+    },
+    "over": {
+      "type": "preposition",
+      "en": "about; over; in (time)",
+      "notes": [
+        "“over tien seconden” = in ten seconds."
+      ]
+    },
+    "van": {
+      "type": "preposition",
+      "en": "of; from"
+    },
+    "bij": {
+      "type": "preposition",
+      "en": "at, near; with",
+      "notes": [
+        "“bij het voetbal” = during/at football."
+      ]
+    },
+    "na": {
+      "type": "preposition",
+      "en": "after"
+    },
+    "aan": {
+      "type": "preposition",
+      "en": "on, at"
+    },
+    "door": {
+      "type": "preposition",
+      "en": "through"
+    },
+    "onder": {
+      "type": "preposition",
+      "en": "under, below",
+      "notes": [
+        "“onder leiding van” = led by."
+      ]
+    },
+    "tegen": {
+      "type": "preposition",
+      "en": "against"
+    },
+    "per": {
+      "type": "preposition",
+      "en": "per, a",
+      "notes": [
+        "“per dag” = a day."
+      ]
+    },
+    "alle": {
+      "type": "determiner",
+      "en": "all",
+      "notes": [
+        "“alle buren” = all the neighbours."
+      ]
+    },
+    "elkaar": {
+      "type": "pronoun",
+      "en": "each other"
+    },
+    "openbaar": {
+      "type": "adjective",
+      "en": "public",
+      "notes": [
+        "“het openbaar vervoer” = public transport (no -e here: fixed expression)."
+      ]
+    },
+    "paar": {
+      "type": "noun / determiner",
+      "en": "pair; a few",
+      "notes": [
+        "“een paar” = a few: “een paar vrienden”."
+      ]
+    },
+    "verbiedt": {
+      "see": "verbieden",
+      "form": "present, jij/u/hij/zij"
+    },
+    "gemeente": {
+      "type": "noun",
+      "en": "municipality, town council",
+      "article": "de",
+      "plural": "gemeenten / gemeentes"
+    },
+    "vuurwerk": {
+      "type": "noun",
+      "en": "fireworks",
+      "article": "het",
+      "plural": "(no plural)",
+      "notes": [
+        "Compound: het werk → het vuurwerk."
+      ]
+    },
+    "centrum": {
+      "type": "noun",
+      "en": "centre, town centre",
+      "article": "het",
+      "plural": "centra / centrums"
+    },
+    "oud": {
+      "type": "adjective",
+      "en": "old",
+      "notes": [
+        "“oud en nieuw” = New Year's Eve."
+      ]
+    },
+    "nieuw": {
+      "type": "adjective",
+      "en": "new",
+      "notes": [
+        "“oud en nieuw” = New Year's Eve."
+      ]
+    },
+    "vanavond": {
+      "type": "adverb",
+      "en": "this evening, tonight"
+    }
+  }
+}
